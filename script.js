@@ -26,6 +26,7 @@ async function loadData() {
         });
 
         filteredApps = [...apps];
+        console.log('apps',filteredApps);
         init();
     } catch (error) {
         console.error('Error loading data:', error);
