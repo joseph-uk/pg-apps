@@ -2,7 +2,7 @@
     "name": "pg-apps-description-generator",
     "type": "module",
     "dependencies": {
-      "@google/generative-ai": "^0.1.7",
+      "@google/generative-ai": "^0.3.0",
       "csv-parser": "^3.0.0",
       "fs-extra": "^11.2.0"
     },

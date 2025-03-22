@@ -21,14 +21,8 @@ jobs:
       id: deps
       run: |
         cd .github/scripts
-        # Check for existing lockfile
-        if [ -f package-lock.json ]; then
-          echo "lockfile-existed=true" >> $GITHUB_OUTPUT
-          npm ci
-        else
-          echo "lockfile-existed=false" >> $GITHUB_OUTPUT
-          npm install
-        fi
+        rm -rf node_modules package-lock.json  # Clear old installations
+        npm install
 
     - name: Generate missing descriptions
       env:
@@ -42,11 +36,6 @@ jobs:
       run: |
         # Add generated descriptions
         git add data/apps/
-        
-        # Add package-lock if it was newly created
-        if [ "${{ steps.deps.outputs.lockfile-existed }}" = "false" ]; then
-          git add .github/scripts/package-lock.json
-        fi
 
         # Commit only if changes exist
         git config --global user.email "actions@github.com"
