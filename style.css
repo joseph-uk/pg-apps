@@ -36,3 +36,6 @@
 .slide-nav button[disabled] {
     @apply bg-gray-200 text-gray-400 cursor-not-allowed;
 }
+.error-message {
+    @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mt-4;
+}

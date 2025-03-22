@@ -29,7 +29,10 @@ async function loadData() {
         init();
     } catch (error) {
         console.error('Error loading data:', error);
-        alert('Failed to load data. Please try again later.');
+        const errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.textContent = 'Failed to load data. Please try again later.';
+        document.body.prepend(errorElement);
     }
 }
 
@@ -108,10 +111,15 @@ function showMainView() {
     document.getElementById('slideView').style.display = 'none';
 }
 
-// Set up event listeners
 function setupEventListeners() {
     // Search functionality
-    document.querySelector('.search-box').addEventListener('input', (e) => {
+    const searchBox = document.querySelector('.search-box');
+    if (!searchBox) {
+        console.error('Search box element not found');
+        return;
+    }
+    
+    searchBox.addEventListener('input', (e) => {
         const searchTerm = e.target.value.toLowerCase();
         filteredApps = apps.filter(app => 
             Object.values(app).some(value =>
@@ -121,14 +129,24 @@ function setupEventListeners() {
         renderTable(filteredApps);
     });
 
-    // Table sorting
-    document.querySelectorAll('th').forEach(th => {
-        th.addEventListener('click', () => {
-            const column = th.innerText.toLowerCase().replace(/ /g, '_');
-            filteredApps.sort((a, b) => a[column].localeCompare(b[column]));
-            renderTable(filteredApps);
+    // Table sorting - wait for headers to exist
+    const setupTableHeaders = () => {
+        const headers = document.querySelectorAll('th');
+        if (headers.length === 0) {
+            requestAnimationFrame(setupTableHeaders);
+            return;
+        }
+
+        headers.forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.innerText.toLowerCase().replace(/ /g, '_');
+                filteredApps.sort((a, b) => (a[column] || '').localeCompare(b[column] || '');
+                renderTable(filteredApps);
+            });
         });
-    });
+    };
+
+    setupTableHeaders();
 }
 
 // Start the application when DOM is loaded
