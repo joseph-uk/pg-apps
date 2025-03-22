@@ -18,13 +18,13 @@ async function processApps() {
             .pipe(csv())
             .on('data', (row) => {
                 // Add validation for required fields
-                if (!row.name || !row.url) {
+                if (!row.Name || !row.URL) {
                     console.warn('⚠️  Skipping invalid row:', row);
                     return;
                 }
                 apps.push({
-                    name: row.name.trim(),
-                    url: row.url.trim()
+                    name: row.Name.trim(),
+                    url: row.URL.trim()
                 });
             })
             .on('end', () => {
