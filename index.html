@@ -11,8 +11,8 @@
     <nav class="sticky top-0 bg-gray-800 text-white shadow-lg z-50">
         <div class="container mx-auto px-4 py-3">
             <input type="text" 
-       class="search-box w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-       placeholder="Search apps...">
+                   class="search-box w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                   placeholder="Search apps...">
             <div class="tag-list mt-3 flex flex-wrap gap-2" id="tagList"></div>
         </div>
     </nav>
@@ -33,6 +33,7 @@
         </div>
     </div>
 
+    <!-- Corrected slideView section -->
     <div class="container mx-auto px-4 py-6 hidden" id="slideView">
         <button onclick="showMainView()" class="mb-4 text-blue-500 hover:text-blue-600 flex items-center">
             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,10 +41,9 @@
             </svg>
             Back to List
         </button>
-        <div id="slideView" style="display: none;">
-            <div id="slideContainer" class="bg-white rounded-lg shadow p-6"></div>
-        </div>
+        <div id="slideContainer" class="bg-white rounded-lg shadow p-6"></div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
     <script src="script.js"></script>
