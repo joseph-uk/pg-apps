@@ -32,10 +32,16 @@ jobs:
         npm start
 
     - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: success()
       run: |
         # Configure git authentication
-        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        git remote set-url --push origin https://joseph-uk:$GITHUB_TOKEN@github.com/your/repo
+        
+        # Configure git
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Action"
         
         # Check for actual changes
         echo "Changed files:"
@@ -44,11 +50,7 @@ jobs:
         # Add all potential changes
         git add data/apps/
         git add .github/scripts/package-lock.json  # If needed
-
-        # Configure git
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Action"
-
+        
         # Commit only if changes exist
         if [[ -n $(git status --porcelain) ]]; then
           echo "🚀 Committing changes..."
