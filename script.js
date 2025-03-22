@@ -76,7 +76,6 @@ function filterByTag(tag) {
     renderTable(filteredApps);
 }
 
-// Show detail slide
 function showSlide(index) {
     currentSlide = index;
     document.getElementById('mainView').style.display = 'none';
@@ -85,27 +84,110 @@ function showSlide(index) {
     const app = filteredApps[index];
     const slideContainer = document.getElementById('slideContainer');
     slideContainer.innerHTML = `
-        <div class="slide active">
-            <div class="slide-header">
-                <h1>${app.name}</h1>
-                <p><a href="${app.url}" target="_blank">${app.url}</a></p>
-            </div>
-            <div class="slide-content">
-                ${app.platform ? `<p><strong>Platform:</strong> ${app.platform}</p>` : ''}
-                ${app.type ? `<p><strong>Type:</strong> ${app.type}</p>` : ''}
-                ${app.short_description ? `<p><strong>Description:</strong> ${app.short_description}</p>` : ''}
-                ${app.pros ? `<p><strong>Pros:</strong> ${app.pros}</p>` : ''}
-                ${app.cons ? `<p><strong>Cons:</strong> ${app.cons}</p>` : ''}
-                ${app.cost ? `<p><strong>Cost:</strong> ${app.cost}</p>` : ''}
-            </div>
-            <div class="slide-nav">
-                <button ${currentSlide === 0 ? 'disabled' : ''} onclick="showSlide(${currentSlide - 1})">Previous</button>
-                <button ${currentSlide === filteredApps.length - 1 ? 'disabled' : ''} onclick="showSlide(${currentSlide + 1})">Next</button>
+        <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col">
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <h1 class="text-3xl font-bold text-gray-900">${app.name}</h1>
+                        <button onclick="showMainView()" class="text-gray-500 hover:text-gray-700 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="${app.url}" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors">
+                        ${app.url}
+                    </a>
+                </div>
+
+                <div class="p-6 overflow-y-auto flex-1 space-y-4">
+                    ${app.platform ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Platform</dt>
+                        <dd class="mt-1 text-gray-900">${app.platform}</dd>
+                    </div>` : ''}
+
+                    ${app.type ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Type</dt>
+                        <dd class="mt-1 text-gray-900">${app.type}</dd>
+                    </div>` : ''}
+
+                    ${app.short_description ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Description</dt>
+                        <dd class="mt-1 text-gray-900">${app.short_description}</dd>
+                    </div>` : ''}
+
+                    ${app.pros ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Pros</dt>
+                        <dd class="mt-1 text-gray-900">${app.pros}</dd>
+                    </div>` : ''}
+
+                    ${app.cons ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Cons</dt>
+                        <dd class="mt-1 text-gray-900">${app.cons}</dd>
+                    </div>` : ''}
+
+                    ${app.cost ? `
+                    <div>
+                        <dt class="text-sm font-semibold text-gray-600 uppercase">Cost</dt>
+                        <dd class="mt-1 text-gray-900">${app.cost}</dd>
+                    </div>` : ''}
+
+                    <div id="extendedDescription" class="prose max-w-none mt-6"></div>
+                </div>
+
+                <div class="p-4 bg-gray-50 border-t border-gray-200 flex justify-between">
+                    <button 
+                        ${currentSlide === 0 ? 'disabled' : ''} 
+                        onclick="showSlide(${currentSlide - 1})"
+                        class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        Previous
+                    </button>
+                    <button 
+                        ${currentSlide === filteredApps.length - 1 ? 'disabled' : ''} 
+                        onclick="showSlide(${currentSlide + 1})"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        Next
+                    </button>
+                </div>
             </div>
         </div>
     `;
+
+    // Load extended description after initial render
+    loadExtendedDescription(app);
 }
 
+// New method to load extended description
+async function loadExtendedDescription(app) {
+    const container = document.getElementById('extendedDescription');
+    if (!container) return;
+
+    const markdownPath = `data/apps/${encodeURIComponent(app.name)}/description.md`;
+    
+    try {
+        const response = await fetch(markdownPath);
+        if (!response.ok) return; // Skip if not found
+        
+        const markdown = await response.text();
+        const unsafeHtml = marked.parse(markdown);
+        const cleanHtml = DOMPurify.sanitize(unsafeHtml, {
+            USE_PROFILES: { html: true },
+            ALLOWED_TAGS: ['p', 'h2', 'h3', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img'],
+            ALLOWED_ATTR: ['href', 'src', 'alt']
+        });
+
+        container.innerHTML = cleanHtml;
+    } catch (error) {
+        console.error('Error loading extended description:', error);
+    }
+}
 // Return to main view
 function showMainView() {
     document.getElementById('mainView').style.display = 'block';
