@@ -1,0 +1,38 @@
+/* Custom styles */
+.tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium transition-colors;
+    background-color: #3b82f6;
+    color: white;
+}
+
+.tag:hover {
+    background-color: #2563eb;
+}
+
+.data-table tr {
+    @apply transition-colors cursor-pointer;
+}
+
+.data-table tr:hover {
+    @apply bg-blue-50;
+}
+
+.slide-content p {
+    @apply mb-3 text-gray-700;
+}
+
+.slide-content strong {
+    @apply text-gray-900 font-medium;
+}
+
+.slide-nav button {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+}
+
+.slide-nav button:not([disabled]) {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.slide-nav button[disabled] {
+    @apply bg-gray-200 text-gray-400 cursor-not-allowed;
+}

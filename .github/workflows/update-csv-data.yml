@@ -19,7 +19,7 @@ jobs:
       run: |
         mkdir -p data
         curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTebtcc367STxJXR6VWwH_wDke9hrwHgwJYdUCkdKK6VgrO_L6f04OqtgruNvzEIlQ_k8bS8AxNpmg/pub?output=csv" \
-          --fail --output data/paragliding-apps.csv
+          --fail --output public/data/paragliding-apps.csv
 
     - name: Commit and push changes
       run: |
