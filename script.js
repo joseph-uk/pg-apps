@@ -140,7 +140,7 @@ function setupEventListeners() {
         headers.forEach(th => {
             th.addEventListener('click', () => {
                 const column = th.innerText.toLowerCase().replace(/ /g, '_');
-                filteredApps.sort((a, b) => (a[column] || '').localeCompare(b[column] || '');
+                filteredApps.sort((a, b) => (a[column] || '').localeCompare(b[column] || ''));
                 renderTable(filteredApps);
             });
         });
