@@ -94,6 +94,8 @@ async function processApps() {
             
             writeFileSync(descPath, mdContent);
             console.log(`✅ Saved description to ${descPath}`);
+            // BREAK AFTER CREATING ONE DESCRIPTION
+            break;
 
         } catch (error) {
             console.error(`❌ Error processing ${app.name}:`, error);
