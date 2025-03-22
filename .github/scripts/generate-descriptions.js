@@ -1,4 +1,3 @@
-console.log(process.env);
 if (!process.env.GEMINI_API_KEY) {
     console.error('❌ Missing GEMINI_API_KEY environment variable');
     process.exit(1);
@@ -11,7 +10,19 @@ const path = require('path');
 const { ensureDir } = require('fs-extra');
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+const model = genAI.getGenerativeModel({
+    model: 'gemini-1.0-pro',
+    apiVersion: 'v1'
+});
+
+// Verify model access
+try {
+    const models = await genAI.listModels();
+    console.log('✅ Available models:', models);
+} catch (error) {
+    console.error('❌ Failed to list models:', error);
+    process.exit(1);
+}
 
 async function processApps() {
     console.log('🚀 Starting description generation process');
@@ -86,7 +97,10 @@ async function processApps() {
             console.log('✅ Successfully generated description');
 
         } catch (error) {
-            console.error(`❌ Error processing ${app.name}:`, error);
+            if (error.status === 404) {
+                console.error('‼️ Model not found - verify model name and API version');
+                process.exit(1);
+            }
         }
     }
 
