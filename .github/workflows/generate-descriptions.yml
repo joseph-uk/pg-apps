@@ -17,12 +17,16 @@ jobs:
         node-version: 20.x
 
     - name: Install dependencies
-      run: npm install @google/generative-ai@latest csv-parser@latest fs-extra@latest
+      run: |
+        cd .github/scripts
+        npm ci  # Clean install for CI
 
     - name: Generate missing descriptions
       env:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      run: node .github/scripts/generate-descriptions.js
+      run: |
+        cd .github/scripts
+        npm start
 
     - name: Commit and push changes
       run: |

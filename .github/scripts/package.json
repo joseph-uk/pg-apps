@@ -1,0 +1,12 @@
+{
+    "name": "pg-apps-description-generator",
+    "type": "module",
+    "dependencies": {
+      "@google/generative-ai": "^0.1.7",
+      "csv-parser": "^3.0.0",
+      "fs-extra": "^11.2.0"
+    },
+    "scripts": {
+      "start": "node generate-descriptions.js"
+    }
+  }

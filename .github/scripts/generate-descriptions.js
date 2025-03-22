@@ -1,16 +1,19 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { createReadStream } from 'fs';
-import csv from 'csv-parser';
+import csvParser from 'csv-parser';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import { ensureDir, existsSync, writeFileSync } from 'fs-extra';
+import fsExtra from 'fs-extra';
 
-// ES module equivalent for __dirname
+// Destructure fs-extra methods
+const { ensureDir, existsSync, writeFileSync } = fsExtra;
+
+// ES module path setup
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// Initialize Gemini
+// Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ 
+const model = genAI.getGenerativeModel({
     model: 'gemini-1.0-pro',
     apiVersion: 'v1'
 });
@@ -24,7 +27,7 @@ async function processApps() {
     
     await new Promise((resolve, reject) => {
         createReadStream(join(__dirname, '..', '..', 'data', 'paragliding-apps.csv'))
-            .pipe(csv())
+            .pipe(csvParser())
             .on('data', (row) => {
                 if (!row.name || !row.url) {
                     console.warn('⚠️ Skipping invalid row:', row);
@@ -63,7 +66,7 @@ async function processApps() {
             }
 
             console.log('🛠️ Generating new description...');
-            const result = await model.generateContent(`Generate markdown for ${app.name} (${app.url})...`);
+            const result = await model.generateContent(`Generate markdown for ${app.name}...`);
             const mdContent = result.response.text();
             
             writeFileSync(descPath, mdContent);
@@ -76,5 +79,11 @@ async function processApps() {
 
     console.log('\n🎉 Process completed!');
 }
+
+// Add error handling for uncaught exceptions
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('🔥 Unhandled Rejection at:', promise, 'reason:', reason);
+    process.exit(1);
+});
 
 processApps().catch(console.error);
