@@ -31,32 +31,6 @@ jobs:
         cd .github/scripts
         npm start
 
-    - name: Commit and push changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      if: success()
-      run: |
-        # Configure git authentication
-        git remote set-url --push origin https://joseph-uk:$GITHUB_TOKEN@github.com/your/repo
-        
-        # Configure git
-        git config --global user.email "actions@github.com"
-        git config --global user.name "GitHub Action"
-        
-        # Check for actual changes
-        echo "Changed files:"
-        git status --porcelain
-
-        # Add all potential changes
-        git add data/apps/
-        git add .github/scripts/package-lock.json  # If needed
-        
-        # Commit only if changes exist
-        if [[ -n $(git status --porcelain) ]]; then
-          echo "🚀 Committing changes..."
-          git commit -m "Auto-generated missing descriptions"
-          git pull --rebase
-          git push
-        else
-          echo "❌ No changes detected - nothing to commit"
-        fi
+    - uses: EndBug/add-and-commit@v9
+      with:
+        message: Auto generated descriptions
