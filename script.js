@@ -175,7 +175,7 @@ async function loadExtendedDescription(app) {
         if (!response.ok) return; // Skip if not found
         
         const markdown = await response.text();
-        const cleanHtml=markdown;
+        const cleanHtml=marked.parse(markdown);
         // const unsafeHtml = marked.parse(markdown);
         // const cleanHtml = DOMPurify.sanitize(unsafeHtml, {
         //     USE_PROFILES: { html: true },
