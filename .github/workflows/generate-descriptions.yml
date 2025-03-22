@@ -34,6 +34,9 @@ jobs:
     - name: Commit and push changes
       if: success()
       run: |
+        # Configure git authentication
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        
         # Check for actual changes
         echo "Changed files:"
         git status --porcelain
