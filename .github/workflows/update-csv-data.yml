@@ -1,8 +1,5 @@
 name: Update CSV Data
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 on:
   workflow_dispatch:
   schedule:
