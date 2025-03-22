@@ -12,11 +12,12 @@ const { ensureDir, existsSync, writeFileSync } = fsExtra;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({
-    model: 'gemini-1.0-pro',
+const modelConfig={
+    model: 'gemini-1.5-flash',
     apiVersion: 'v1'
-});
+}
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel(modelConfig);
 
 async function processApps() {
     console.log('🚀 Starting description generation process');
@@ -66,7 +67,29 @@ async function processApps() {
             }
 
             console.log('🛠️ Generating new description...');
-            const result = await model.generateContent(`Generate markdown for ${app.name}...`);
+            const prompt = `Generate comprehensive markdown documentation for ${app.name} (${app.url}) structured as:
+
+            ## Quick Summary
+            [Brief 1-paragraph overview of the app's main purpose]
+
+            ## Key Features
+            - [Bulleted list of core features]
+            - [Focus on paragliding-specific functionality]
+
+            ## Pro/Paid Features
+            - [List of premium features requiring payment]
+            - [Include pricing structure if known]
+
+            ## Resources & Guides
+            - [Links to official tutorials] 
+            - [Community guides]
+            - [Relevant YouTube videos]
+
+            Only return the markdown content with no additional commentary. Use the exact section headers above.`;
+
+            console.log('📝 Using prompt:', prompt);
+
+            const result = await model.generateContent(prompt);
             const mdContent = result.response.text();
             
             writeFileSync(descPath, mdContent);
@@ -74,6 +97,11 @@ async function processApps() {
 
         } catch (error) {
             console.error(`❌ Error processing ${app.name}:`, error);
+            if (error.message.includes('404')) {
+                console.error('‼️ Model not found - verify API access');
+                console.error('Current model config:', { model: 'gemini-1.5-pro-latest', apiVersion: 'v1beta' });
+                process.exit(1);
+            }
         }
     }
 
