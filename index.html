@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragliding Apps & Websites Directory</title>
+    <!-- Keep the same CSS styles from previous answer -->
+    <style>
+        /* Previous CSS styles here */
+    </style>
+</head>
+<body>
+    <!-- Keep the same HTML structure from previous answer -->
+    <nav class="nav">
+        <input type="text" class="search-box" placeholder="Search apps...">
+        <div class="tag-list" id="tagList"></div>
+    </nav>
+
+    <div class="view" id="mainView">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Platform</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <div class="view" id="slideView" style="display: none;">
+        <div class="back-button" onclick="showMainView()">← Back to List</div>
+        <div id="slideContainer"></div>
+    </div>
+
+    <script>
+        let apps = [];
+        let filteredApps = [];
+        let currentSlide = 0;
+
+        async function loadData() {
+            try {
+                // Update this URL to point to your CSV file
+                const response = await fetch('Paragliding Apps + Websites - Items.csv');
+                const csvData = await response.text();
+                
+                // Parse CSV
+                const rows = csvData.split('\n').slice(1);
+                apps = rows.map(row => {
+                    // Split by commas that are not inside quotes
+                    const cells = row.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
+                    
+                    // Clean and trim each cell
+                    return {
+                        name: cells[0]?.replace(/^"|"$/g, '').trim() || '',
+                        url: cells[1]?.replace(/^"|"$/g, '').trim() || '',
+                        platform: cells[2]?.replace(/^"|"$/g, '').trim() || '',
+                        type: cells[3]?.replace(/^"|"$/g, '').trim() || '',
+                        description: cells[4]?.replace(/^"|"$/g, '').trim() || '',
+                        cost: cells[5]?.replace(/^"|"$/g, '').trim() || '',
+                        pros: cells[6]?.replace(/^"|"$/g, '').trim() || '',
+                        cons: cells[7]?.replace(/^"|"$/g, '').trim() || ''
+                    };
+                }).filter(app => app.name); // Remove empty rows
+
+                filteredApps = [...apps];
+                init();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                alert('Failed to load data. Please check the CSV file URL.');
+            }
+        }
+
+        function init() {
+            renderTable(filteredApps);
+            renderTags();
+            setupEventListeners();
+        }
+
+        // Keep the rest of the JavaScript functions from previous answer
+        // (renderTable, renderTags, filterByTag, showSlide, etc.)
+        // ...
+
+        // Start loading data when page loads
+        loadData();
+    </script>
+</body>
+</html>
