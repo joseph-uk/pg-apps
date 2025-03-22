@@ -17,7 +17,7 @@ jobs:
         node-version: 20.x
 
     - name: Install dependencies
-      run: npm install @google/generative-ai@latest csv-parser fs-extra
+      run: npm install @google/generative-ai csv-parser fs-extra
 
     - name: Generate missing descriptions
       env:
