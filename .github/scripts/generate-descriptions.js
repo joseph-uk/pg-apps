@@ -13,26 +13,38 @@ async function processApps() {
     // Read CSV file
     console.log('📖 Reading CSV data from data/paragliding-apps.csv');
     const apps = [];
-    await new Promise((resolve) => {
+    await new Promise((resolve, reject) => {
         fs.createReadStream('data/paragliding-apps.csv')
             .pipe(csv())
-            .on('data', (row) => apps.push(row))
+            .on('data', (row) => {
+                // Add validation for required fields
+                if (!row.name || !row.url) {
+                    console.warn('⚠️  Skipping invalid row:', row);
+                    return;
+                }
+                apps.push({
+                    name: row.name.trim(),
+                    url: row.url.trim()
+                });
+            })
             .on('end', () => {
-                console.log(`✅ Found ${apps.length} apps in CSV`);
+                console.log(`✅ Found ${apps.length} valid apps in CSV`);
                 resolve();
-            });
+            })
+            .on('error', reject);
     });
 
     console.log('🔍 Checking for missing descriptions...');
     
     for (const [index, app] of apps.entries()) {
-        const appName = app.name;
-        console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${appName} ---`);
+        console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${app.name} ---`);
         
-        const appPath = path.join('data', 'apps', appName);
-        const descPath = path.join(appPath, 'description.md');
-
         try {
+            // Sanitize app name for filesystem
+            const sanitizedName = app.name.replace(/[^a-z0-9]/gi, '_').replace(/_+/g, '_');
+            const appPath = path.join('data', 'apps', sanitizedName);
+            const descPath = path.join(appPath, 'description.md');
+
             // Create directory if needed
             if (!fs.existsSync(appPath)) {
                 console.log(`📂 Creating directory: ${appPath}`);
@@ -46,17 +58,11 @@ async function processApps() {
             }
 
             console.log('🛠️  No description found - generating new one');
-            console.log(`📝 Using URL: ${app.url}`);
+            console.log(`🔗 Using URL: ${app.url}`);
 
             // Generate content
-            const prompt = `Generate markdown documentation for ${appName} (${app.url}) focusing on:
-- Quick overall summary (1 paragraph)
-- Specific key features (bulleted list)
-- Pro/paid features (bulleted list)
-- Links to official resources/guides/tutorials (list with URLs)
-
-Return only the markdown content with no additional commentary. Use ## headings for each section.`;
-
+            const prompt = `Generate markdown documentation for ${app.name} (${app.url})...`;
+            
             console.log('🧠 Sending request to Gemini API...');
             const result = await model.generateContent(prompt);
             const mdContent = result.response.text();
@@ -66,17 +72,11 @@ Return only the markdown content with no additional commentary. Use ## headings 
             console.log('✅ Successfully generated description');
 
         } catch (error) {
-            console.error(`❌ Error processing ${appName}:`, error);
-            console.log('⏭️  Continuing to next app...');
+            console.error(`❌ Error processing ${app.name}:`, error);
         }
     }
 
     console.log('\n🎉 Process completed!');
-    console.log('💾 Changes will be automatically committed and pushed');
 }
 
-processApps()
-    .catch(error => {
-        console.error('🔥 Critical error in process:', error);
-        process.exit(1);
-    });
+processApps().catch(console.error);
