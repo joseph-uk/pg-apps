@@ -1,5 +1,5 @@
-import { GoogleGenerativeAI,HarmCategory,
-    HarmBlockThreshold, } from '@google/generative-ai';
+import { GoogleGenerativeAI,DynamicRetrievalMode} from '@google/generative-ai';
+
 import { createReadStream } from 'fs';
 import csvParser from 'csv-parser';
 import { dirname, join } from 'path';
@@ -14,16 +14,19 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // Initialize Gemini AI
 const modelConfig={
-    model: "gemini-2.0-flash-thinking-exp-01-21",
+    model: "models/gemini-1.5-flash",
+    tools: [
+      {
+        googleSearchRetrieval: {
+          dynamicRetrievalConfig: {
+            mode: DynamicRetrievalMode.MODE_DYNAMIC,
+            dynamicThreshold: 0.7,
+          },
+        },
+      },
+    ],
     systemInstruction: "You are a web researcher who can take the name/url of a website or app to generate a markdown article that includes.\n\nDo some research including visiting hte URL and searching for other information then generate\n\n* quick overall summary\n* specific key features\n* pro features that are paid for\n* links to useful resources/guides/tutorials\n\nreturn only markdown\n\ndo not provide any placeholders/incomplete text\n\nif you do not have clear knowledge, do not guess, you can instead just return an empty string\n\nyou must return only valid markdown, with no placeholders.\n\nuse headings with # prefix\n\nUse links in your repsonse, output the full URLs and use the correct markdown formatting to allow them to be rendered as clickable links\n\nYour goal is to provide a good number of links to useful resources at the bottom, please ensure you include at least 4 urls not including the main home page URL for the app",
   }
-const generationConfig = {
-    temperature: 0.7,
-    topP: 0.95,
-    topK: 64,
-    maxOutputTokens: 65536,
-    responseMimeType: "text/plain",
-  };
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel(modelConfig);
 
