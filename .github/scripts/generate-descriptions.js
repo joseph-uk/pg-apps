@@ -1,28 +1,19 @@
-if (!process.env.GEMINI_API_KEY) {
-    console.error('❌ Missing GEMINI_API_KEY environment variable');
-    process.exit(1);
-  }
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import { createReadStream } from 'fs';
+import csv from 'csv-parser';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+import { ensureDir, existsSync, writeFileSync } from 'fs-extra';
 
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-const fs = require('fs');
-const csv = require('csv-parser');
-const path = require('path');
-const { ensureDir } = require('fs-extra');
+// ES module equivalent for __dirname
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// Initialize Gemini
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({
+const model = genAI.getGenerativeModel({ 
     model: 'gemini-1.0-pro',
     apiVersion: 'v1'
 });
-
-// Verify model access
-try {
-    const models = await genAI.listModels();
-    console.log('✅ Available models:', models);
-} catch (error) {
-    console.error('❌ Failed to list models:', error);
-    process.exit(1);
-}
 
 async function processApps() {
     console.log('🚀 Starting description generation process');
@@ -30,18 +21,18 @@ async function processApps() {
     // Read CSV file
     console.log('📖 Reading CSV data from data/paragliding-apps.csv');
     const apps = [];
+    
     await new Promise((resolve, reject) => {
-        fs.createReadStream('data/paragliding-apps.csv')
+        createReadStream(join(__dirname, '..', '..', 'data', 'paragliding-apps.csv'))
             .pipe(csv())
             .on('data', (row) => {
-                // Add validation for required fields
-                if (!row.Name || !row.URL) {
-                    console.warn('⚠️  Skipping invalid row:', row);
+                if (!row.name || !row.url) {
+                    console.warn('⚠️ Skipping invalid row:', row);
                     return;
                 }
                 apps.push({
-                    name: row.Name.trim(),
-                    url: row.URL.trim()
+                    name: row.name.trim(),
+                    url: row.url.trim()
                 });
             })
             .on('end', () => {
@@ -51,56 +42,35 @@ async function processApps() {
             .on('error', reject);
     });
 
-    console.log('apps',apps);
-
-    console.log('🔍 Checking for apps that need description generating...');
+    console.log('🔍 Checking for missing descriptions...');
     
     for (const [index, app] of apps.entries()) {
         console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${app.name} ---`);
-        console.log('app',app);
+        
         try {
-            // Add delay between requests
-            const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-            // Inside your processing loop
-            await delay(2000); // 2 second delay between requests
-            // Sanitize app name for filesystem
             const sanitizedName = app.name.replace(/[^a-z0-9]/gi, '_').replace(/_+/g, '_');
-            console.log('sanitizedName',sanitizedName);
-            const appPath = path.join('data', 'apps', sanitizedName);
-            const descPath = path.join(appPath, 'description.md');
+            const appPath = join(__dirname, '..', '..', 'data', 'apps', sanitizedName);
+            const descPath = join(appPath, 'description.md');
 
-            // Create directory if needed
-            if (!fs.existsSync(appPath)) {
+            if (!existsSync(appPath)) {
                 console.log(`📂 Creating directory: ${appPath}`);
                 await ensureDir(appPath);
             }
 
-            // Check for existing description
-            if (fs.existsSync(descPath)) {
-                console.log(`⏩ Skipping - description already exists at ${descPath}`);
+            if (existsSync(descPath)) {
+                console.log(`⏩ Skipping - description exists at ${descPath}`);
                 continue;
             }
 
-            console.log('🛠️  No description found - generating new one');
-            console.log(`🔗 Using URL: ${app.url}`);
-
-            // Generate content
-            const prompt = `Generate markdown documentation for ${app.name} (${app.url})...`;
-            
-            console.log('🧠 Sending request to Gemini API...');
-            const result = await model.generateContent(prompt);
+            console.log('🛠️ Generating new description...');
+            const result = await model.generateContent(`Generate markdown for ${app.name} (${app.url})...`);
             const mdContent = result.response.text();
             
-            console.log(`📄 Writing generated content to ${descPath}`);
-            fs.writeFileSync(descPath, mdContent);
-            console.log('✅ Successfully generated description');
+            writeFileSync(descPath, mdContent);
+            console.log(`✅ Saved description to ${descPath}`);
 
         } catch (error) {
-            if (error.status === 404) {
-                console.error('‼️ Model not found - verify model name and API version');
-                process.exit(1);
-            }
+            console.error(`❌ Error processing ${app.name}:`, error);
         }
     }
 
