@@ -57,7 +57,7 @@ function renderTable(data) {
 function renderTags() {
     const tags = [...new Set(apps.flatMap(app => 
         app.type.split(/,\s*/).filter(t => t)
-    )];
+    ))];
     const tagList = document.getElementById('tagList');
     tagList.innerHTML = tags.map(tag => `
         <div class="tag" onclick="filterByTag('${tag}')">${tag}</div>
