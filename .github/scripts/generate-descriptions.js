@@ -34,14 +34,17 @@ async function processApps() {
             .on('error', reject);
     });
 
+    console.log('apps',apps);
+
     console.log('🔍 Checking for missing descriptions...');
     
     for (const [index, app] of apps.entries()) {
         console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${app.name} ---`);
-        
+        console.log('app',app);
         try {
             // Sanitize app name for filesystem
             const sanitizedName = app.name.replace(/[^a-z0-9]/gi, '_').replace(/_+/g, '_');
+            console.log('sanitizedName',sanitizedName);
             const appPath = path.join('data', 'apps', sanitizedName);
             const descPath = path.join(appPath, 'description.md');
 
