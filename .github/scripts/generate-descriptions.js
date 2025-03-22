@@ -1,3 +1,8 @@
+if (!process.env.GEMINI_API_KEY) {
+    console.error('❌ Missing GEMINI_API_KEY environment variable');
+    process.exit(1);
+  }
+
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 const csv = require('csv-parser');
@@ -42,6 +47,11 @@ async function processApps() {
         console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${app.name} ---`);
         console.log('app',app);
         try {
+            // Add delay between requests
+            const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+            // Inside your processing loop
+            await delay(2000); // 2 second delay between requests
             // Sanitize app name for filesystem
             const sanitizedName = app.name.replace(/[^a-z0-9]/gi, '_').replace(/_+/g, '_');
             console.log('sanitizedName',sanitizedName);
