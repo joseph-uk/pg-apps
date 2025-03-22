@@ -36,7 +36,7 @@ async function processApps() {
 
     console.log('apps',apps);
 
-    console.log('🔍 Checking for missing descriptions...');
+    console.log('🔍 Checking for apps that need description generating...');
     
     for (const [index, app] of apps.entries()) {
         console.log(`\n--- Processing app ${index + 1}/${apps.length}: ${app.name} ---`);
