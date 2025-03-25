@@ -1,0 +1,413 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Airtribune",
+        "totalResults": "29500",
+        "searchTerms": "Airtribune",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Airtribune",
+        "totalResults": "29500",
+        "searchTerms": "Airtribune",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.302126,
+    "formattedSearchTime": "0.30",
+    "totalResults": "29500",
+    "formattedTotalResults": "29,500"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Airtribune | Sports GPS tracking service. Real time personal tracking ...",
+      "htmlTitle": "\u003cb\u003eAirtribune\u003c/b\u003e | Sports GPS tracking service. Real time personal tracking ...",
+      "link": "https://airtribune.com/",
+      "displayLink": "airtribune.com",
+      "snippet": "Airtribune App turns your Android smartphone into a reliable live tracker letting your family, friends and fans follow you online during any sport activity! iOS ...",
+      "htmlSnippet": "\u003cb\u003eAirtribune\u003c/b\u003e App turns your Android smartphone into a reliable live tracker letting your family, friends and fans follow you online during any sport activity! iOS&nbsp;...",
+      "formattedUrl": "https://airtribune.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eairtribune\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpJ_-V0hPXqyyUQVsT7ns3HGwMT8MPH_MrYnhfpq5hv-3m0TTj9_YgBYc&s",
+            "width": "280",
+            "height": "140"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "static/site/img/main-og-image-2.png?1742898647",
+            "twitter:title": "Airtribune | Sports GPS tracking service. Real time personal tracking. Competition live tracking. GPS trackers and mobile app.",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@airtribune",
+            "viewport": "width=970",
+            "twitter:description": "Android App to share your adventures | Competition hosting & Live tracking",
+            "og:title": "Airtribune | Sports GPS tracking service. Real time personal tracking. Competition live tracking. GPS trackers and mobile app.",
+            "og:url": "https://airtribune.com/",
+            "og:description": "Android App to share your adventures | Competition hosting & Live tracking",
+            "twitter:creator": "@airtribune",
+            "twitter:image:src": "https://airtribune.fra1.digitaloceanspaces.com/media/static/site/img/main-og-image-2.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://airtribune.com/static/brett/SRSATbanner.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Airtribune",
+      "htmlTitle": "Profile for \u003cb\u003eAirtribune\u003c/b\u003e",
+      "link": "https://www.facebook.com/Airtribune/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Competition, event hosting & live tracking platform for paragliding & hang gliding worldwide. Follow Details Page · Internet company airtribune.com",
+      "htmlSnippet": "Competition, event hosting &amp; live tracking platform for paragliding &amp; hang gliding worldwide. Follow Details Page · Internet company \u003cb\u003eairtribune\u003c/b\u003e.com",
+      "formattedUrl": "https://www.facebook.com/Airtribune/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eAirtribune\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5glakZ254OjR2e4nsUAuCz1weko0PxGWvNBleUJXLnQksP7ztoUcKgPbT&s",
+            "width": "180",
+            "height": "180"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100057679988876",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100057679988876",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100057679988876",
+            "og:description": "Airtribune. 6,881 likes. Competition, event hosting & live tracking platform for paragliding & hang gliding worldwide.",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100057679988876",
+            "twitter:image:alt": "Airtribune",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Airtribune",
+            "twitter:title": "Airtribune",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Airtribune",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100057679988876",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Airtribune. 6,881 likes. Competition, event hosting & live tracking platform for paragliding & hang gliding worldwide.",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/Airtribune/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100057679988876"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Current events | Airtribune",
+      "htmlTitle": "Current events | \u003cb\u003eAirtribune\u003c/b\u003e",
+      "link": "https://airtribune.com/events/current",
+      "displayLink": "airtribune.com",
+      "snippet": "Upcoming events ... Competition hosting and live tracking platform. Sports GPS tracker mobile app for trainings and competition live tracking. ... Airtribune mobile ...",
+      "htmlSnippet": "Upcoming events ... Competition hosting and live tracking platform. Sports GPS tracker mobile app for trainings and competition live tracking. ... \u003cb\u003eAirtribune\u003c/b\u003e mobile&nbsp;...",
+      "formattedUrl": "https://airtribune.com/events/current",
+      "htmlFormattedUrl": "https://\u003cb\u003eairtribune\u003c/b\u003e.com/events/current",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflh6DPohsxT0QL4t7cLp6qXtXkskSHqFu0TEJdMRMNbNux_NAiz9_txsw&s",
+            "width": "353",
+            "height": "143"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "/static/site/img/logo-large.png?1742755460",
+            "twitter:title": "Current events | Airtribune",
+            "twitter:site": "@airtribune",
+            "viewport": "width=970",
+            "twitter:description": "Current competitions list",
+            "og:title": "Current events | Airtribune",
+            "og:url": "https://airtribune.com/events/current",
+            "og:description": "Current competitions list",
+            "twitter:creator": "@airtribune",
+            "twitter:image:src": "https://airtribune.fra1.digitaloceanspaces.com/media//static/site/img/logo-large.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://airtribune.com/static/site/img/promo/promo-banner-4-pg.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Airtribune not responding - new - Paragliding Forum",
+      "htmlTitle": "View topic - Airtribune not responding - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=106348",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Mar 31, 2022 ... My club is running a competition starting in 8 days, but we have not managed to open the event for the participants to register. And the ...",
+      "htmlSnippet": "Mar 31, 2022 \u003cb\u003e...\u003c/b\u003e My club is running a competition starting in 8 days, but we have not managed to open the event for the participants to register. And the&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=106348",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=106348",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Next events | Airtribune",
+      "htmlTitle": "Next events | \u003cb\u003eAirtribune\u003c/b\u003e",
+      "link": "https://airtribune.com/events/next",
+      "displayLink": "airtribune.com",
+      "snippet": "Airtribune mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow ...",
+      "htmlSnippet": "\u003cb\u003eAirtribune\u003c/b\u003e mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow&nbsp;...",
+      "formattedUrl": "https://airtribune.com/events/next",
+      "htmlFormattedUrl": "https://\u003cb\u003eairtribune\u003c/b\u003e.com/events/next",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflh6DPohsxT0QL4t7cLp6qXtXkskSHqFu0TEJdMRMNbNux_NAiz9_txsw&s",
+            "width": "353",
+            "height": "143"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "/static/site/img/logo-large.png?1742747191",
+            "twitter:title": "Next events | Airtribune",
+            "twitter:site": "@airtribune",
+            "viewport": "width=970",
+            "twitter:description": "Upcoming competitions list",
+            "og:title": "Next events | Airtribune",
+            "og:url": "https://airtribune.com/events/next",
+            "og:description": "Upcoming competitions list",
+            "twitter:creator": "@airtribune",
+            "twitter:image:src": "https://airtribune.fra1.digitaloceanspaces.com/media//static/site/img/logo-large.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://airtribune.com/static/site/img/promo/promo-banner-4-pg.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "AT Live",
+      "htmlTitle": "AT Live",
+      "link": "https://api.airtribune.com/",
+      "displayLink": "api.airtribune.com",
+      "snippet": "Live Action. Latest Task. Latest Overalls. Season Results. Results Archive. Full Screen. Powered By. English, Français, Deutsch, Italiano, Português ...",
+      "htmlSnippet": "Live Action. Latest Task. Latest Overalls. Season Results. Results Archive. Full Screen. Powered By. English, Français, Deutsch, Italiano, Português&nbsp;...",
+      "formattedUrl": "https://api.airtribune.com/",
+      "htmlFormattedUrl": "https://api.\u003cb\u003eairtribune\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNifBw13EiSwCy0KWdvHsgsu1xqHtDPgrXnJTT67d7EuXdgnsk54h57Tms&s",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://api.airtribune.com/app/img/at150.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Sign-in | Airtribune",
+      "htmlTitle": "Sign-in | \u003cb\u003eAirtribune\u003c/b\u003e",
+      "link": "https://airtribune.com/welcome/signin?next=/724/",
+      "displayLink": "airtribune.com",
+      "snippet": "Airtribune mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow ...",
+      "htmlSnippet": "\u003cb\u003eAirtribune\u003c/b\u003e mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow&nbsp;...",
+      "formattedUrl": "https://airtribune.com/welcome/signin?next=/724/",
+      "htmlFormattedUrl": "https://\u003cb\u003eairtribune\u003c/b\u003e.com/welcome/signin?next=/724/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "/static/site/img/logo-large.png",
+            "twitter:title": "Sign-in | Airtribune",
+            "twitter:site": "@airtribune",
+            "viewport": "width=970",
+            "twitter:description": "Glad to see you again!",
+            "og:title": "Sign-in | Airtribune",
+            "og:url": "https://airtribune.com/welcome/signin?next=/724/",
+            "og:description": "Glad to see you again!",
+            "twitter:creator": "@airtribune",
+            "twitter:image:src": "/static/site/img/logo-large.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "/static/site/img/logo-large.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Share*your*adventures (@airtribune) • Instagram photos and videos",
+      "htmlTitle": "Share*your*adventures (@\u003cb\u003eairtribune\u003c/b\u003e) • Instagram photos and videos",
+      "link": "https://www.instagram.com/airtribune/",
+      "displayLink": "www.instagram.com",
+      "snippet": "For all active people who FLY, ride and walk and make the world go round! Tag best achievements #airtribune to be featured! FOLLOW US to be the first!",
+      "htmlSnippet": "For all active people who FLY, ride and walk and make the world go round! Tag best achievements #\u003cb\u003eairtribune\u003c/b\u003e to be featured! FOLLOW US to be the first!",
+      "formattedUrl": "https://www.instagram.com/airtribune/",
+      "htmlFormattedUrl": "https://www.instagram.com/\u003cb\u003eairtribune\u003c/b\u003e/",
+      "pagemap": {
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/12362253_551649358325809_566931855_a.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=8YtkJA2Ys4kQ7kNvgFhTCYz&_nc_oc=AdnJtv9f7h3rXDk51YAUv_jlP211sgjEMZtdf_1ouFunUODc60-JwdED7q99agCfGI0&_nc_zt=24&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYFc-FZjwCiG1k2d_phqX12LMMvidKVh5gUptf3AKySqyA&oe=67E7AB9F",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Share*your*adventures (@airtribune) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=airtribune",
+            "color-scheme": "light",
+            "og:description": "865 Followers, 30 Following, 154 Posts - See Instagram photos and videos from Share*your*adventures (@airtribune)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/airtribune/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/airtribune/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/12362253_551649358325809_566931855_a.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=8YtkJA2Ys4kQ7kNvgFhTCYz&_nc_oc=AdnJtv9f7h3rXDk51YAUv_jlP211sgjEMZtdf_1ouFunUODc60-JwdED7q99agCfGI0&_nc_zt=24&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYFc-FZjwCiG1k2d_phqX12LMMvidKVh5gUptf3AKySqyA&oe=67E7AB9F"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Competition hosting & live tracking",
+      "htmlTitle": "Competition hosting &amp; live tracking",
+      "link": "https://airtribune.com/competition-hosting-and-live-tracking",
+      "displayLink": "airtribune.com",
+      "snippet": "Airtribune mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow ...",
+      "htmlSnippet": "\u003cb\u003eAirtribune\u003c/b\u003e mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow&nbsp;...",
+      "formattedUrl": "https://airtribune.com/competition-hosting-and-live-tracking",
+      "htmlFormattedUrl": "https://\u003cb\u003eairtribune\u003c/b\u003e.com/competition-hosting-and-live-tracking",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx843abq1fc_8zjit81K8nZl2hOBuSElG8AXLLtxe6JKzzpD29YLsFVSE&s",
+            "width": "152",
+            "height": "332"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "/static/site/img/promo-og-image.png?1742401791",
+            "twitter:site": "@airtribune",
+            "viewport": "width=970",
+            "twitter:description": "Turn-key solution for competitions. Live tracking with Android app.",
+            "og:url": "https://airtribune.com/competition-hosting-and-live-tracking",
+            "og:description": "Turn-key solution for competitions. Live tracking with Android app.",
+            "twitter:creator": "@airtribune",
+            "twitter:image:src": "https://airtribune.fra1.digitaloceanspaces.com/media//static/site/img/promo-og-image.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://airtribune.com/static/site/img/organizers/organizers-small.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Airtribune, ¦ Sports GPS Tracking Service",
+      "htmlTitle": "\u003cb\u003eAirtribune\u003c/b\u003e, ¦ Sports GPS Tracking Service",
+      "link": "https://shop.airtribune.com/",
+      "displayLink": "shop.airtribune.com",
+      "snippet": "Airtribune : - Airtribune Memorabilia Instruments Global Rescue Membership Donations to Airtribune Used Items Documents Trackers tracking, paragliding, ...",
+      "htmlSnippet": "\u003cb\u003eAirtribune\u003c/b\u003e : - \u003cb\u003eAirtribune\u003c/b\u003e Memorabilia Instruments Global Rescue Membership Donations to \u003cb\u003eAirtribune\u003c/b\u003e Used Items Documents Trackers tracking, paragliding,&nbsp;...",
+      "formattedUrl": "https://shop.airtribune.com/",
+      "htmlFormattedUrl": "https://shop.\u003cb\u003eairtribune\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQ3z8B8TZMVsVU3ScOSdGCwC8ZtYrqPY5HbxCyCnXX5y00FociIKkOs_B&s",
+            "width": "324",
+            "height": "155"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "author": "The Zen Cart® Team and others"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://shop.airtribune.com/flxbanner_mobishop/images/mbanner_708_340_3.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

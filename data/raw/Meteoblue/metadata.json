@@ -1,0 +1,9 @@
+{
+  "name": "Meteoblue",
+  "url": "https://www.meteoblue.com/en/weather/week/leeds_united-kingdom_2644688",
+  "platform": "website, phone",
+  "type": "weather",
+  "short_description": "Well respected weather app. Best known for it's Multimodel Meteogram that shows the confidence of all the weather models in the forecasts for a week ahead. Good for flying abroad too. ",
+  "timestamp": "2025-03-25T21:16:44Z",
+  "website_fetched": true
+}

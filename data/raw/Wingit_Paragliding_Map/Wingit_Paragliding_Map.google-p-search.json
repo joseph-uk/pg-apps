@@ -1,0 +1,506 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Wingit Paragliding Map",
+        "totalResults": "3140",
+        "searchTerms": "Wingit Paragliding Map",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Wingit Paragliding Map",
+        "totalResults": "3140",
+        "searchTerms": "Wingit Paragliding Map",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.356904,
+    "formattedSearchTime": "0.36",
+    "totalResults": "3140",
+    "formattedTotalResults": "3,140"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Wingit",
+      "htmlTitle": "\u003cb\u003eWingit\u003c/b\u003e",
+      "link": "https://wingit.live/",
+      "displayLink": "wingit.live",
+      "snippet": "... Wingit Map for Web. Flying Sites. Plan Adventures around 26.000+ Flying Sites Worldwide. Wingit combines a large number of flying sites from DHV, paragliding.",
+      "htmlSnippet": "... \u003cb\u003eWingit Map\u003c/b\u003e for Web. Flying Sites. Plan Adventures around 26.000+ Flying Sites Worldwide. \u003cb\u003eWingit\u003c/b\u003e combines a large number of flying sites from DHV, \u003cb\u003eparagliding\u003c/b\u003e.",
+      "formattedUrl": "https://wingit.live/",
+      "htmlFormattedUrl": "https://\u003cb\u003ewingit\u003c/b\u003e.live/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROthcFHj2llJYizAWTVI2xSMS-ZJTB4w6Gz_5g2MspDmBoA5bYSM3H3CY&s",
+            "width": "249",
+            "height": "202"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#0006565",
+            "astro-view-transitions-fallback": "animate",
+            "viewport": "width=device-width, initial-scale=1",
+            "astro-view-transitions-enabled": "true"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://wingit.live/_astro/wingit_web_banner_midground.SNO9oQOb.svg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Wingit - Free Paragliding Mobile App (Planning, Live Weather ...",
+      "htmlTitle": "\u003cb\u003eWingit\u003c/b\u003e - Free \u003cb\u003eParagliding\u003c/b\u003e Mobile App (Planning, Live Weather ...",
+      "link": "https://www.reddit.com/r/freeflight/comments/1b81z44/wingit_free_paragliding_mobile_app_planning_live/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Mar 7, 2024 ... Very nice! I love it. It's like Paragliding Maps but not a dumpster fire!",
+      "htmlSnippet": "Mar 7, 2024 \u003cb\u003e...\u003c/b\u003e Very nice! I love it. It&#39;s like \u003cb\u003eParagliding Maps\u003c/b\u003e but not a dumpster fire!",
+      "formattedUrl": "https://www.reddit.com/.../wingit_free_paragliding_mobile_app_planning_...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../\u003cb\u003ewingit\u003c/b\u003e_free_\u003cb\u003eparagliding\u003c/b\u003e_mobile_app_planning_...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1b81z44",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: Wingit - Free Paragliding Mobile App (Planning, Live Weather, Forecast, ...)",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: Wingit - Free Paragliding Mobile App (Planning, Live Weather, Forecast, ...)",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/wingit_live - 22 votes and 31 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1b81z44",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1b81z44/wingit_free_paragliding_mobile_app_planning_live/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/1b81z44"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Wingit - Paragliding Map - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eWingit\u003c/b\u003e - \u003cb\u003eParagliding Map\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=live.wingit.app&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "Jul 10, 2024 ... Flying sites, winds, airspaces, glide range, and more at your finger tips. Wingit is designed to give you everything you everything in one place ...",
+      "htmlSnippet": "Jul 10, 2024 \u003cb\u003e...\u003c/b\u003e Flying sites, winds, airspaces, glide range, and more at your finger tips. \u003cb\u003eWingit\u003c/b\u003e is designed to give you everything you everything in one place&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=live.wingit.app&hl=en...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=live.\u003cb\u003ewingit\u003c/b\u003e.app&amp;hl=en...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=live.wingit.app&rdid=live.wingit.app&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3I19W8lxd4Zcig07KJ8GVMgLuuuJUk7A8oMpd48lAtBCJJaxc5g1Mib9&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Wingit - Paragliding Map - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=live.wingit.app&hl=en_US",
+            "appstore:developer_url": "https://wingit.live",
+            "og:title": "Wingit - Paragliding Map - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "live.wingit.app",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "live.wingit.app",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "The one-stop-shop for your next epic paragliding aventure. Where and whenever 🪂",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=live.wingit.app&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Top Paragliding Apps You Don't Want To Fly Without",
+      "htmlTitle": "Top \u003cb\u003eParagliding\u003c/b\u003e Apps You Don&#39;t Want To Fly Without",
+      "link": "https://adventuro.com/top-paragliding-apps-you-dont-want-to-fly-without/",
+      "displayLink": "adventuro.com",
+      "snippet": "Oct 15, 2024 ... Wingit – Live Tracking and Flight Sharing for Paragliders. Looking to ... Paragliding Map shows pilots where it's flyable on an interactive Google ...",
+      "htmlSnippet": "Oct 15, 2024 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eWingit\u003c/b\u003e – Live Tracking and Flight Sharing for Paragliders. Looking to ... \u003cb\u003eParagliding Map\u003c/b\u003e shows pilots where it&#39;s flyable on an interactive Google&nbsp;...",
+      "formattedUrl": "https://adventuro.com/top-paragliding-apps-you-dont-want-to-fly-without/",
+      "htmlFormattedUrl": "https://adventuro.com/top-\u003cb\u003eparagliding\u003c/b\u003e-apps-you-dont-want-to-fly-without/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT9kXjMfw6ExyjWtJxaTVy56bAS19uAwfM-9vLy-AkyjdlsDRWDrksjb4I&s",
+            "width": "297",
+            "height": "170"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://adventuro.com/wp-content/uploads/2024/10/DALL·E-2024-10-15-09.01.50-A-realistic-wide-digital-painting-for-a-paragliding-blog.-The-panoramic-scene-depicts-a-paraglider-in-mid-air-over-a-stunning-landscape-with-lush-gre.webp",
+            "og:type": "article",
+            "og:image:width": "1792",
+            "article:published_time": "2024-10-15T20:53:06+00:00",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Top Paragliding Apps You Don’t Want To Fly Without",
+            "og:site_name": "adventuro - Out With The Ordinary",
+            "author": "Ermin Dzafic",
+            "og:title": "Top Paragliding Apps You Don’t Want To Fly Without",
+            "og:image:height": "1024",
+            "msapplication-tileimage": "https://adventuro.com/wp-content/uploads/2022/08/cropped-favicon_transparent_background-e1661066586524-270x270.png",
+            "og:description": "Detailed guide to top paragliding apps you don't want to fly without. Improve flights and safety with apps reviewed and recommended by experienced paragliders.",
+            "og:image:secure_url": "https://adventuro.com/wp-content/uploads/2024/10/DALL·E-2024-10-15-09.01.50-A-realistic-wide-digital-painting-for-a-paragliding-blog.-The-panoramic-scene-depicts-a-paraglider-in-mid-air-over-a-stunning-landscape-with-lush-gre.webp",
+            "article:publisher": "https://www.facebook.com/weareadventuro",
+            "twitter:image": "https://i0.wp.com/adventuro.com/wp-content/uploads/2020/01/logo_transparent_background.png?fit=34001118&ssl=1",
+            "article:modified_time": "2024-10-15T20:53:09+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Detailed guide to top paragliding apps you don't want to fly without. Improve flights and safety with apps reviewed and recommended by experienced paragliders.",
+            "og:locale": "en_GB",
+            "og:url": "https://adventuro.com/top-paragliding-apps-you-dont-want-to-fly-without/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://adventuro.com/wp-content/uploads/2024/10/DALL%C2%B7E-2024-10-15-09.01.50-A-realistic-wide-digital-painting-for-a-paragliding-blog.-The-panoramic-scene-depicts-a-paraglider-in-mid-air-over-a-stunning-landscape-with-lush-gre.webp"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Wingit - Paragliding Map - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eWingit\u003c/b\u003e - \u003cb\u003eParagliding Map\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/datasafety?id=live.wingit.app&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "The developer says that this app doesn't collect or share any user data. Learn more about data safety.",
+      "htmlSnippet": "The developer says that this app doesn&#39;t collect or share any user data. Learn more about data safety.",
+      "formattedUrl": "https://play.google.com/store/apps/datasafety?id=live.wingit.app&hl...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/datasafety?id=live.\u003cb\u003ewingit\u003c/b\u003e.app&amp;hl...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3I19W8lxd4Zcig07KJ8GVMgLuuuJUk7A8oMpd48lAtBCJJaxc5g1Mib9&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Wingit - Paragliding Map - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/datasafety?id=live.wingit.app&hl=en_US",
+            "og:title": "Wingit - Paragliding Map - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ=w600-h300-pc0xffffff-pd",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "The developer says that this app doesn't collect or share any user data. Learn more about data safety",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/datasafety?id=live.wingit.app&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/2UYWGa425My61waUPx0Bd25V_Og48WmDIPOnrvaqsXSPyC87Iyo7lZsooFyGUw5DHdmZ"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paraquip on the App Store",
+      "htmlTitle": "Paraquip on the App Store",
+      "link": "https://apps.apple.com/mt/app/paraquip/id1566910450",
+      "displayLink": "apps.apple.com",
+      "snippet": "Oct 28, 2023 ... Wingit Paragliding Map. Sports. Fly With Greg. Sports. Glidiator. Sports. Malta.",
+      "htmlSnippet": "Oct 28, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eWingit Paragliding Map\u003c/b\u003e. Sports. Fly With Greg. Sports. Glidiator. Sports. Malta.",
+      "formattedUrl": "https://apps.apple.com/mt/app/paraquip/id1566910450",
+      "htmlFormattedUrl": "https://apps.apple.com/mt/app/paraquip/id1566910450",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gLbLKFEvaF8AI-k95j6ex_rxy7tDvYdovWdNqPrkawAYH3A1-sIuK5zr&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cb/f0/a6/cbf0a65e-cdee-4e3d-598c-a63bef555d15/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200eWith Paraquip you'll never forget to check your paragliding equipment again. It's easy to keep a record and be notified of upcoming checks.\n\nSimply put your paraglider, harness, and rescue into the app and enter your checks. The app shows you directly when the next check is due and notifies you in a…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cb/f0/a6/cbf0a65e-cdee-4e3d-598c-a63bef555d15/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cb/f0/a6/cbf0a65e-cdee-4e3d-598c-a63bef555d15/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "Paraquip on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "Paraquip on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200eParaquip",
+            "og:title": "\u200eParaquip",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200eWith Paraquip you'll never forget to check your paragliding equipment again. It's easy to keep a record and be notified of upcoming checks.\n\nSimply put your paraglider, harness, and rescue into the app and enter your checks. The app shows you directly when the next check is due and notifies you in a…",
+            "og:locale": "en_GB",
+            "apple:content_id": "1566910450",
+            "og:url": "https://apps.apple.com/mt/app/paraquip/id1566910450"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cb/f0/a6/cbf0a65e-cdee-4e3d-598c-a63bef555d15/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/1200x630wa.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - concha chinas, puerto vallarta - new - Paragliding Forum",
+      "htmlTitle": "View topic - concha chinas, puerto vallarta - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=60327",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Oct 28, 2013 ... I spent a couple hours ripping weeds to make enough space to lay out my wing. It ... Coordinates of the launch as found on paragliding map are ...",
+      "htmlSnippet": "Oct 28, 2013 \u003cb\u003e...\u003c/b\u003e I spent a couple hours ripping weeds to make enough space to lay out my \u003cb\u003ewing. It\u003c/b\u003e ... Coordinates of the launch as found on \u003cb\u003eparagliding map\u003c/b\u003e are&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=60327",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparagliding\u003c/b\u003eforum.com/viewtopic.php?t=60327",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Episode 31- Russ Ogden, a Masters Class in Paragliding ...",
+      "htmlTitle": "Episode 31- Russ Ogden, a Masters Class in \u003cb\u003eParagliding\u003c/b\u003e ...",
+      "link": "https://www.cloudbasemayhem.com/episode-31-russ-ogden-and-a-masters-class-in-paragliding/",
+      "displayLink": "www.cloudbasemayhem.com",
+      "snippet": "Dec 24, 2016 ... Why paragliding remains dangerous even as wings get so much better and safer ... Just looking at the map and completely different ways. Is ...",
+      "htmlSnippet": "Dec 24, 2016 \u003cb\u003e...\u003c/b\u003e Why \u003cb\u003eparagliding\u003c/b\u003e remains dangerous even as wings get so much better and safer ... Just looking at the \u003cb\u003emap\u003c/b\u003e and completely different ways. Is&nbsp;...",
+      "formattedUrl": "https://www.cloudbasemayhem.com/episode-31-russ-ogden-and-a-masters-...",
+      "htmlFormattedUrl": "https://www.cloudbasemayhem.com/episode-31-russ-ogden-and-a-masters-...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5nrl2kEeUOW56KfC-FJRC6NeiVdjiUC1vOxw8QZQJMmI_TBp39gnWUE&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.cloudbasemayhem.com/wp-content/uploads/2016/12/DSC03344-620x930.jpg",
+            "og:type": "article",
+            "article:published_time": "2016-12-25T02:41:04+00:00",
+            "og:image:width": "3648",
+            "twitter:card": "summary",
+            "og:site_name": "Cloudbase Mayhem",
+            "og:title": "Episode 31- Russ Ogden, a Masters Class in Paragliding",
+            "og:image:height": "5472",
+            "msapplication-tileimage": "https://www.cloudbasemayhem.com/wp-content/uploads/2017/02/cropped-cloudbase-mayhem-bug-270x270.png",
+            "og:description": "We’ve got a VERY special episode for you this Holiday Season. Ozone test pilot and world cup crusher Russ Ogden, one of the great living legends of paragliding and the inspiration for the Clo…",
+            "twitter:text:title": "Episode 31- Russ Ogden, a Masters Class in Paragliding",
+            "fb:app_id": "919458604829709",
+            "article:modified_time": "2018-11-09T16:11:56+00:00",
+            "viewport": "width=device-width",
+            "ps_configurator": "thmNm=Cloudbase 2;thmVsn=;thmFmly=storyteller;hd_bgn=BeginHeader;hd_end=EndHeader;ft_bgn=BeginFooter;ft_end=EndFooter;scptInc=https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js;scptInc=//html5shiv.googlecode.com/svn/trunk/html5.js;scptInc=https://www.cloudbasemayhem.com/wp-content/themes/storyteller/js/small-menu.js;lnkInc=https://www.cloudbasemayhem.com/wp-content/themes/cloudbase-2/style.css;lnkInc=https://www.cloudbasemayhem.com/wp-content/themes/storyteller/css/light.css",
+            "og:locale": "en_US",
+            "og:url": "https://www.cloudbasemayhem.com/episode-31-russ-ogden-and-a-masters-class-in-paragliding/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.cloudbasemayhem.com/wp-content/uploads/2016/12/DSC03344-620x930.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "MOUSTACHE | 22 | GFPMOU10022",
+      "htmlTitle": "MOUSTACHE | 22 | GFPMOU10022",
+      "link": "https://go-flare.com/MOUSTACHE/GFPMOU10022",
+      "displayLink": "go-flare.com",
+      "snippet": "This first-in-class fusion from the best of both worlds paragliding and kiting gives you the following skills: ... Partner Map. Our communities. You will no ...",
+      "htmlSnippet": "This first-in-class fusion from the best of both worlds \u003cb\u003eparagliding\u003c/b\u003e and kiting gives you the following skills: ... Partner \u003cb\u003eMap\u003c/b\u003e. Our communities. You will no&nbsp;...",
+      "formattedUrl": "https://go-flare.com/MOUSTACHE/GFPMOU10022",
+      "htmlFormattedUrl": "https://go-flare.com/MOUSTACHE/GFPMOU10022",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "EUR",
+            "price": "3550",
+            "url": "https://go-flare.com/MOUSTACHE/GFPMOU10022"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7qODaUxjxpB5Xua2wyIc7QVsQpKSms_32BFVRuM0BxA3nYuECSpNnFxq&s",
+            "width": "294",
+            "height": "171"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://go-flare.com/media/1a/dc/8b/1643816845/FLARE%20Moustache%20Snowkite_Jean%20Baptiste%20Chandelier_LR.png",
+            "productid": "5181dbbbf8854f2380378367e1b5096f",
+            "name": "MOUSTACHE",
+            "width": "22 mm",
+            "description": "Here’s to all the pilots who are the first to hit the coastline and the last to leave the party – Those that work hard and play harder, here for one thing and one thing alone... The MOUSTACHE....",
+            "releasedate": "2025-03-25",
+            "sku": "GFPMOU10022"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://go-flare.com/media/a1/08/df/1638882656/FLARE-Moustache-3D-rendering-02_neu.jpg",
+            "og:type": "product",
+            "twitter:card": "product",
+            "twitter:title": "MOUSTACHE | 22 | GFPMOU10022",
+            "og:site_name": "go-flare.com",
+            "product:product_link": "https://go-flare.com/MOUSTACHE/GFPMOU10022",
+            "og:title": "MOUSTACHE | 22 | GFPMOU10022",
+            "product:price:amount": "3550",
+            "og:description": "Here’s to all the pilots who are the first to hit the coastline and the last to leave the party – Those that work hard and play harder, here for one thing and one thing alone... The MOUSTACHE. \nWe had a dream, that there is more to flying than left &amp;…",
+            "twitter:image": "https://go-flare.com/media/a1/08/df/1638882656/FLARE-Moustache-3D-rendering-02_neu.jpg",
+            "twitter:site": "go-flare.com",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "product:brand": "FLARE",
+            "twitter:description": "Here’s to all the pilots who are the first to hit the coastline and the last to leave the party – Those that work hard and play harder, here for one thing and one thing alone... The MOUSTACHE. \nWe had a dream, that there is more to flying than left &amp;…",
+            "product:price:currency": "EUR",
+            "og:url": "https://go-flare.com/MOUSTACHE/GFPMOU10022"
+          }
+        ],
+        "webpage": [
+          {
+            "copyrightholder": "go-flare.com",
+            "image": "https://go-flare.com/media/f1/8e/32/1638962923/FLARE Logo right -1c.png",
+            "isfamilyfriendly": "false",
+            "name": "MOUSTACHE | 22 | GFPMOU10022",
+            "url": "Show all Academy"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://go-flare.com/media/a1/08/df/1638882656/FLARE-Moustache-3D-rendering-02_neu.jpg"
+          }
+        ],
+        "brand": [
+          {
+            "name": "FLARE"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Products",
+            "url": "https://go-flare.com/"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "MOUSTACHE",
+            "description": "Here’s to all the pilots who are the first to hit the coastline and the last to leave the party – Those that work hard and play harder, here for one thing and one thing alone... The MOUSTACHE....",
+            "photo": "https://go-flare.com/media/1a/dc/8b/1643816845/FLARE%20Moustache%20Snowkite_Jean%20Baptiste%20Chandelier_LR.png",
+            "currency": "EUR",
+            "currency_iso4217": "978"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Products",
+            "name": "Products",
+            "position": "1",
+            "url": "https://go-flare.com/Products/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - How strong are the thermals in the ... - Paragliding Forum",
+      "htmlTitle": "View topic - How strong are the thermals in the ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=98308",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Nov 11, 2019 ... One chap was on a clock, so he unpacked his wing. It was lying on the ground, laid out nicely, with his flying suit, gloves and helmet on top of ...",
+      "htmlSnippet": "Nov 11, 2019 \u003cb\u003e...\u003c/b\u003e One chap was on a clock, so he unpacked his \u003cb\u003ewing. It\u003c/b\u003e was lying on the ground, laid out nicely, with his flying suit, gloves and helmet on top of&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=98308",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparagliding\u003c/b\u003eforum.com/viewtopic.php?t=98308",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    }
+  ]
+}

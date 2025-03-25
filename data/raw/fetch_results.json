@@ -1,0 +1,542 @@
+[
+  {
+    "name": "XCTrack",
+    "url": "https://xctrack.org/",
+    "platform": "android",
+    "type": "flight instrument",
+    "short_description": "Becoming a defacto flight instrument for phones. Task setting, live airspace, competition task features, very customisable and a big community behind it. ",
+    "timestamp": "2025-03-25T21:12:40Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XCMap",
+    "url": "https://xcmap.net/",
+    "platform": "website",
+    "type": "comp task planning, XC planning, comp/challenge platform",
+    "short_description": "Home of the NCS - Northern Challenge Series",
+    "timestamp": "2025-03-25T21:12:44Z",
+    "website_fetched": true
+  },
+  {
+    "name": "FlyXC",
+    "url": "https://flyxc.app/",
+    "platform": "website",
+    "type": "XC planning",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:12:48Z",
+    "website_fetched": true
+  },
+  {
+    "name": "RASP - Stratus",
+    "url": "https://rasp.stratus.org.uk/",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "Home of the official RASP UK",
+    "timestamp": "2025-03-25T21:12:52Z",
+    "website_fetched": true
+  },
+  {
+    "name": "RASP - Synoptic",
+    "url": "https://xcpara.co.uk/index.php/weather/rasp-synoptic",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "Friendly interface for RASP",
+    "timestamp": "2025-03-25T21:12:55Z",
+    "website_fetched": false
+  },
+  {
+    "name": "Windy",
+    "url": "https://www.windy.com/",
+    "platform": "website, phone",
+    "type": "weather",
+    "short_description": "Very good weather foreecasts",
+    "timestamp": "2025-03-25T21:13:29Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Airtribune",
+    "url": "https://airtribune.com",
+    "platform": "website",
+    "type": "comp/challenge platform",
+    "short_description": "The main comp system",
+    "timestamp": "2025-03-25T21:13:32Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Lazy Rasp",
+    "url": "https://lazyrasp.com/?p=stars",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "Quick overview of RASP forecast, for the lazy",
+    "timestamp": "2025-03-25T21:13:37Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Open Railway Map",
+    "url": "https://www.openrailwaymap.org/",
+    "platform": "website",
+    "type": "map",
+    "short_description": "Great for finding trainstations when planning XC goal/retrives. Can also be set up as a screen in XCtrack when using pro",
+    "timestamp": "2025-03-25T21:13:40Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Pure Track",
+    "url": "https://puretrack.io/",
+    "platform": "website, iphone",
+    "type": "location sharing, location viewing",
+    "short_description": "Aspiring to be the defacto location viewer - aggregates locatoin data from many sources into one view",
+    "timestamp": "2025-03-25T21:13:44Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Ribblehead Webcam",
+    "url": "https://tinyurl.com/nhdtddm5",
+    "platform": "website",
+    "type": "webcam, weather",
+    "short_description": "Live webcam view of Ribblehead and Whernside",
+    "timestamp": "2025-03-25T21:13:48Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Met Office Summit Forecasts (eg Dodd Fell)",
+    "url": "https://tinyurl.com/c38m6ds7",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "The Met Office provide summit forecasts for many Dales flying sites",
+    "timestamp": "2025-03-25T21:13:52Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XCPara",
+    "url": "xcpara.co.uk/index.php/rasp-xcplanner",
+    "platform": "website",
+    "type": "XC planning",
+    "short_description": "XC planning over a RASP forecast",
+    "timestamp": "2025-03-25T21:13:57Z",
+    "website_fetched": false
+  },
+  {
+    "name": "Trainline",
+    "url": "www.thetrainline.com",
+    "platform": "phone, website",
+    "type": "transport",
+    "short_description": "Train ticket-buying/journey-planning app",
+    "timestamp": "2025-03-25T21:14:31Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Train Split",
+    "url": "https://trainsplit.com/",
+    "platform": "website",
+    "type": "transport",
+    "short_description": "Much cheaper train tickets (ideal for self retrieve)",
+    "timestamp": "2025-03-25T21:14:34Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XC Guide",
+    "url": "https://pg-race.aero/xcguide/",
+    "platform": "android",
+    "type": "flight instrument, location sharing, location viewing, XC planning, comp task planning",
+    "short_description": "The essential paragliding app for guiding, tracking and retrieves",
+    "timestamp": "2025-03-25T21:14:39Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Tracker",
+    "url": "https://www.mycloudbase.com/tracker/index.htm",
+    "platform": "android",
+    "type": "location sharing",
+    "short_description": "Recommended app for sharing location to livetrack24. Can also share to OGN and puretrack",
+    "timestamp": "2025-03-25T21:14:43Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Live Track 24",
+    "url": "https://www.livetrack24.com/",
+    "platform": "website",
+    "type": "location viewing, location sharing",
+    "short_description": "A location sharing/viewing system",
+    "timestamp": "2025-03-25T21:14:46Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XC Retrieve",
+    "url": "https://xcrt.aero",
+    "platform": "website",
+    "type": "location viewing",
+    "short_description": "This is the website to view locations. Specifically this ties into the Telegram retrieve groups system. Primarily uses livetrack24 but can also use inreach/spot satellite trackers",
+    "timestamp": "2025-03-25T21:14:50Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Sports Track LIve",
+    "url": "https://www.sportstracklive.com/en",
+    "platform": "website, phone",
+    "type": "visualisation, location sharing",
+    "short_description": "A locatoin sharing system but killer feature is the ability to create 3D replays of tracklogs from IGC file upload",
+    "timestamp": "2025-03-25T21:14:54Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Flybubble Weather",
+    "url": "https://flybubble.com/weather/",
+    "platform": "website",
+    "type": "weather, sites finder/info",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:14:59Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Ginger Nomad Weather",
+    "url": "https://www.gingernomad.co.uk/weather/",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:15:03Z",
+    "website_fetched": false
+  },
+  {
+    "name": "Wingit Paragliding Map",
+    "url": "https://wingit.live/",
+    "platform": "phone",
+    "type": "weather, sites finder/info",
+    "short_description": "The Swiss Army knife for your next flying adventure. Sites, live conditions, forecasts, airspaces, glide range and more in one place. Wingit works well on spotty connections or even offline, letting you pivot on the go. ",
+    "timestamp": "2025-03-25T21:15:36Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Paraglidable",
+    "url": "https://paraglidable.com",
+    "platform": "website",
+    "type": "weather, sites finder/info",
+    "short_description": "Good weather forecast with simple clear is it flyable/xc - site finding features for the alps only",
+    "timestamp": "2025-03-25T21:15:40Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XC Analytics",
+    "url": "https://xcanalytics.fr/en/",
+    "platform": "phone",
+    "type": "flight analysis",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:15:43Z",
+    "website_fetched": true
+  },
+  {
+    "name": "CANP",
+    "url": "https://canp.logans.me.uk/",
+    "platform": "website",
+    "type": "canp",
+    "short_description": "Alert RAF and GA pilots about mainly weekday flying. CANPs are added to the NOTAM database. ",
+    "timestamp": "2025-03-25T21:15:47Z",
+    "website_fetched": true
+  },
+  {
+    "name": "BHPA Membership Card Online",
+    "url": "https://members.bhpa.co.uk/",
+    "platform": "website",
+    "type": "club",
+    "short_description": "Never lose your membership card, FAI sport or IPPI card - all available online",
+    "timestamp": "2025-03-25T21:15:51Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XContest UK",
+    "url": "https://www.xcontest.org/united-kingdom/",
+    "platform": "website",
+    "type": "comp/challenge platform, logbook",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:15:55Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XContest Live Tracking",
+    "url": "https://www.xcontest.org/api.s/widget/live-map/all/",
+    "platform": "website",
+    "type": "location viewing",
+    "short_description": "real time locatoin tracking of xctrack users + anyone else pushing to xcontest",
+    "timestamp": "2025-03-25T21:16:00Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XC League",
+    "url": "https://xcleague.com/xc/",
+    "platform": "website",
+    "type": "comp/challenge platform",
+    "short_description": "the original UK XC League",
+    "timestamp": "2025-03-25T21:16:03Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Met Office UK Map",
+    "url": "https://weather.metoffice.gov.uk/maps-and-charts/uk-weather-map",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:16:07Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Paragliding Earth",
+    "url": "https://paraglidingearth.com/",
+    "platform": "website",
+    "type": "sites finder/info",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:16:10Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Paragliding Map",
+    "url": "https://www.paraglidingmap.com/app/",
+    "platform": "website, phone",
+    "type": "weather, sites finder/info",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:16:14Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Meteo Parapente",
+    "url": "https://meteo-parapente.com",
+    "platform": "phone, website",
+    "type": "weather",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:16:18Z",
+    "website_fetched": true
+  },
+  {
+    "name": "NOTAM Info",
+    "url": "https://www.notaminfo.com/nationalmap",
+    "platform": "website",
+    "type": "XC planning, canp",
+    "short_description": "View all current NOTAMs for the UK. Steup alerts and customise view. Useful for XC and flying event planning. ",
+    "timestamp": "2025-03-25T21:16:22Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Fly Like a Bird, Think Like a Pilot",
+    "url": "https://nzhgpa.org.nz/thinklikeapilot/",
+    "platform": "website",
+    "type": "safety",
+    "short_description": "Coaching, safety and development site dedicated to bring you skills safely up to speed. ",
+    "timestamp": "2025-03-25T21:16:27Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Hilltop Analytics",
+    "url": "https://alerts.hilltop-analytics.com/",
+    "platform": "website, phone",
+    "type": "weather, comms, location sharing, sites finder/info",
+    "short_description": "A mixed bag of flight alerts via Telegram groups and tracking advice from Dales / PSC club member, Neil Charles. ",
+    "timestamp": "2025-03-25T21:16:33Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Haggis Wildlife Foundation",
+    "url": "https://www.youtube.com/@HaggisWildlifeFoundation",
+    "platform": "website",
+    "type": "safety",
+    "short_description": "Rare and endangered, keep an eye out for these critters whenever you land out. ",
+    "timestamp": "2025-03-25T21:16:37Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Holfuy Weather Stations",
+    "url": "https://holfuy.com/en/map/wind\u0026la=53.00000\u0026lo=-4.00000\u0026z=5.5",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "Dotted around the UK, often on flying sites, are these live weather stations. There are three for the Dales; Wether (1390), Shack 'Int Dales (1339) \u0026 YDSC (1159). ",
+    "timestamp": "2025-03-25T21:16:40Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Meteoblue",
+    "url": "https://www.meteoblue.com/en/weather/week/leeds_united-kingdom_2644688",
+    "platform": "website, phone",
+    "type": "weather",
+    "short_description": "Well respected weather app. Best known for it's Multimodel Meteogram that shows the confidence of all the weather models in the forecasts for a week ahead. Good for flying abroad too. ",
+    "timestamp": "2025-03-25T21:16:44Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Avia Weather",
+    "url": "https://play.google.com/store/apps/details?id=com.mytowntonight.aviationweather",
+    "platform": "phone",
+    "type": "weather",
+    "short_description": "TAFF and METARs for a huge number of airports and strips. Great for live weather, especially if flying sites near Leeds Bradford Airport. ",
+    "timestamp": "2025-03-25T21:16:48Z",
+    "website_fetched": true
+  },
+  {
+    "name": "UKMO MSLP Analyses Charts",
+    "url": "https://www.weathercharts.org/ukmomslp.htm",
+    "platform": "website",
+    "type": "weather",
+    "short_description": "Surface Pressure Level charts for the North Atlantic. Isobars, Fronts, Pressure Systems, you get the picture. ",
+    "timestamp": "2025-03-25T21:16:52Z",
+    "website_fetched": true
+  },
+  {
+    "name": "The Flight Vario",
+    "url": "https://www.theflightvario.com/",
+    "platform": "phone, website",
+    "type": "flight instrument",
+    "short_description": "If your phone has a half decent set of sensors this is a great backup vario in case your main fails. Has mapping too but not as accepted as XC Guide or XC Track. ",
+    "timestamp": "2025-03-25T21:16:56Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Paragliding Forum",
+    "url": "https://www.paraglidingforum.com/",
+    "platform": "website",
+    "type": "social",
+    "short_description": "Lots of history, information. discussion. It's one way to get through the off season. ",
+    "timestamp": "2025-03-25T21:17:00Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Reddit freeflight",
+    "url": "https://www.reddit.com/r/freeflight/",
+    "platform": "website",
+    "type": "social",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:17:06Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Bustimes",
+    "url": "https://bustimes.org/",
+    "platform": "website",
+    "type": "transport",
+    "short_description": "Use the live map to see what bus stops are nearby, what buses are running, when they are going to arrive and see where they are on the map.",
+    "timestamp": "2025-03-25T21:17:10Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Thermal map",
+    "url": "https://thermal.kk7.ch/",
+    "platform": "website",
+    "type": "XC planning, visualisation, weather",
+    "short_description": "Map fo thermal hot spots around the world",
+    "timestamp": "2025-03-25T21:17:14Z",
+    "website_fetched": true
+  },
+  {
+    "name": "PSC Parlick Web cam",
+    "url": "http://www.penninesoaringclub.org.uk/webcam/",
+    "platform": "website",
+    "type": "webcam",
+    "short_description": "webcam image of Parlick",
+    "timestamp": "2025-03-25T21:17:17Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Web cam near Nont Sarah",
+    "url": "https://www.lydgate.club/weather/",
+    "platform": "website",
+    "type": "weather, webcam",
+    "short_description": "Web cam and weather",
+    "timestamp": "2025-03-25T21:17:21Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Ogoy",
+    "url": "https://ogoy.app/",
+    "platform": "website",
+    "type": "visualisation, comp/challenge platform, flight analysis",
+    "short_description": "Like sports track live but with better paid features. Comps can overlay tasks onto the map and less grunt needed to play on devices",
+    "timestamp": "2025-03-25T21:17:24Z",
+    "website_fetched": true
+  },
+  {
+    "name": "50km or Bust",
+    "url": "http://50k-or-bust.com/",
+    "platform": "website",
+    "type": "theory",
+    "short_description": "Online book about getting started flying your first Cross County flights. ",
+    "timestamp": "2025-03-25T21:17:28Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Glide and seek",
+    "url": "https://glideandseek.com/",
+    "platform": "website",
+    "type": "location sharing, location viewing",
+    "short_description": "Glide and Seek is a modern and mobile friendly glider and aircraft tracker fed from OGN",
+    "timestamp": "2025-03-25T21:17:32Z",
+    "website_fetched": true
+  },
+  {
+    "name": "sky nomads aricles",
+    "url": "https://www.skynomad.com/paragliding_articles.htm",
+    "platform": "website",
+    "type": "theory",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:17:35Z",
+    "website_fetched": true
+  },
+  {
+    "name": "xc magazine ",
+    "url": "https://xcmag.com/",
+    "platform": "website",
+    "type": "theory",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:17:41Z",
+    "website_fetched": true
+  },
+  {
+    "name": "XCSoar",
+    "url": "https://www.xcsoar.org",
+    "platform": "android, windows, linux",
+    "type": "flight instrument",
+    "short_description": "Open source flight computer",
+    "timestamp": "2025-03-25T21:17:45Z",
+    "website_fetched": true
+  },
+  {
+    "name": "LK8000",
+    "url": "https://lk8000.it",
+    "platform": "android",
+    "type": "flight instrument",
+    "short_description": "Open source flight computer",
+    "timestamp": "2025-03-25T21:17:48Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Fly With Greg",
+    "url": "https://flywithgreg.com",
+    "platform": "website",
+    "type": "theory",
+    "short_description": "Video theory, courses and community powered by Greg Hammerton",
+    "timestamp": "2025-03-25T21:17:52Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Mid Pennine Sites",
+    "url": "https://godlymistle.wixsite.com/freeflyer",
+    "platform": "website",
+    "type": "sites finder/info",
+    "short_description": "A bunch of mid Pennine sites, either off piste, PSC/DHPC or DSC managed maintained by Nick C. Also, go to see a website vistitor counter... I'm getting '98 vibes all over again ;-)",
+    "timestamp": "2025-03-25T21:17:56Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Air3 Recommended Apps",
+    "url": "https://www.fly-air3.com/en/software/additional-apps/",
+    "platform": "website",
+    "type": "reviews, knowledge",
+    "short_description": "",
+    "timestamp": "2025-03-25T21:18:01Z",
+    "website_fetched": true
+  },
+  {
+    "name": "Ribblehead Webcam 2",
+    "url": "thestationinnribblehead.com/webcam",
+    "platform": "website",
+    "type": "webcam",
+    "short_description": "A high resolution view of Whernside -should be possible to see if wings in the air",
+    "timestamp": "2025-03-25T21:18:05Z",
+    "website_fetched": true
+  }
+]

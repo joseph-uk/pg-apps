@@ -1,0 +1,1458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang='en' >
+<head>
+<title>LiveTrack24 | Home</title>
+<meta name="title" content="LiveTrack24 | Home" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin,greek">
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/grouped.min.css' />
+<script language='javascript' src='https://www.livetrack24.com/js/grouped.min.js'></script>
+<script type="text/javascript">
+var site_url = '/wall/';
+
+var delete_com_alert = "Are you sure you want to delete this comment?";
+var delete_post_alert = "Are you sure you want to delete this post?";
+var language_like = "Like";
+var language_unlike = "Unlike";
+var lang_com_next = "Next";
+var lang_write_comment = "Write a comment";
+var lang_group_label = "";
+var lang_account_sett = "Account Settings";
+var lang_remove_buddy = "REMEMBER: Removing a friend will remove all the posts and sharings between you and your friend permanently. Do you still want to Continue?";
+
+var lightbox_path = '/wall/assets/lightbox/';
+
+var _lang_time_few_sec = " seconds ago";
+var _lang_time_mints_ago = "minutes ago";
+var _lang_time_hours_ago = "hours ago";
+var txt_var_49 = "Error: It seems this post is deleted or you are not allowed do this action.";
+
+var MainPage = "";
+var notMyProfile = "";
+
+var objType = "0";
+var objID = "0";
+
+</script>
+
+
+    <script type="text/javascript" src="/js/jquery-polyglot.language.switcher.js"></script>
+    <link rel='stylesheet' type='text/css' href='/css/polyglot-language-switcher-2.css' />
+
+    <script type="application/javascript">
+        function geoip(json){}
+    </script>
+    <script async src="https://geojs.srv.waymore.io/geo.js"></script>
+
+    <script type="text/javascript">
+	var translateActive=0;
+	var translateDontFollowLinks=1;
+	var language='english';
+	
+    var  server_task_ajax='https://c4.livetrack24.com';
+    var  server_track_ajax='';
+
+
+    $.fn.extend({
+        popoverClosable: function (options) {
+            var defaults = {
+                template:
+                    '<div class="popover popoverService">\
+    <div class="arrow"></div>\
+    <div class="popover-header">\
+    <button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>\
+    <h3 class="popover-title"></h3>\
+    </div>\
+    <div class="popover-content"></div>\
+    </div>'
+            };
+            options = $.extend({}, defaults, options);
+            var $popover_togglers = this;
+            $popover_togglers.popover(options);
+            $popover_togglers.on('click', function (e) {
+                e.preventDefault();
+                $popover_togglers.not(this).popover('hide');
+                // $(this).parent().parent().hide().css('display:none;');
+            });
+            $('html').on('click', '[data-dismiss="popover"]', function (e) {
+                $popover_togglers.popover('hide');
+                $(this).parent().parent().hide().css('display:none;');
+            });
+        }
+    });
+
+
+    $(document).ready(function(){
+
+        $('#langSelect').polyglotLanguageSwitcher();
+
+        $(".serviceText").each(function(){
+            var this_id=$(this).attr('id');
+            var orgHtml=$(this).html();
+            var serviceName=this_id.substring(8);
+
+            $.getJSON(  '/ajax_actions.php?op=serviceInfo&name='+serviceName, function( data ) {
+                // alert(data['title']);
+                $("#service_"+data['name']).addClass('servicePopover');
+
+                var html=data['desc'];
+
+                if ( data['until']!=0 ){
+                    html+='<BR><BR><div class="alert alert-success">You have this feature activated until '+data['until']+'</div>';
+                } else {
+                    html+='<BR><BR><div class="alert alert-info">You can get this feature too, see below on how to buy extra services</div>';
+                }
+
+                if (data['packages']) {
+                    html+='It is included in the following services:<BR><BR>';
+
+                    for (key in data['packages']) {
+                        html+=
+                            '<a class="btn btn-primary" href="'+data['packages'][key]+'"><span class="glyphicon glyphicon-chevron-down"></span> '+key+'</a>&nbsp;';
+                    }
+                    html+='<BR>';
+                }
+
+
+
+                $("#service_"+data['name']).popoverClosable({
+                    'toggle':"popover",
+                    'html':true,
+                    'placement':"top",
+                    'title':data['title'],
+                    'content':html
+                });
+            });
+
+        });
+
+
+        
+		bindActionsToTrackDivs();
+
+        initClickovers();
+		/*
+		$("#breadcrumbs a").hover(
+		    function () {
+		        $(this).addClass("hover").children().addClass("hover");
+		        $(this).parent().prev().find("span.arrow:first").addClass("pre_hover");
+		    },
+		    function () {
+		        $(this).removeClass("hover").children().removeClass("hover");
+		        $(this).parent().prev().find("span.arrow:first").removeClass("pre_hover");
+		    }
+		);*/
+
+        
+
+    });
+
+
+	function bindActionsToTrackDivs() {
+		return;
+		//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+		//Caption Sliding (Partially Hidden to Visible)
+	
+		$('.boxgrid.caption').hover(function(){
+			$(".cover", this).stop().animate({top:'73px'},{queue:false,duration:160});
+			$(this).css( 'overflow', 'visible' );
+
+		}, function() {
+			 $(".cover", this).stop().animate({top:'103px'},{queue:false,duration:160});
+			 $(this).css( 'overflow', 'hidden' );
+		});
+
+				
+		// $(".zoomImg").thumbPopup();
+	}
+
+    function switchBeta(on) {
+        $.get('/ajax_actions.php?op=switch_beta&on='+on,
+            function(result){
+                location.reload();
+            }
+        );
+    }
+    function betaOptOut() {
+        $.get('/ajax_actions.php?op=beta_opt_out',
+            function(result){
+                location.reload();
+            }
+        );
+    }
+
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"light-bottom"};
+
+</script>
+
+<script type="text/javascript" src="/js/cookieconsent.min.js"></script>
+
+
+    <style type="text/css">
+<!--
+
+#translateDiv{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgb(232, 232, 232);
+    padding: 4px;
+    border: 2px solid #B3B3B3;
+    z-index:999999;
+    display: none;
+
+
+}
+#translateDiv{
+    overflow-y: scroll;
+}
+
+.translateStringDiv {
+    margin:2px;
+
+}
+#translateControl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: auto;
+    background: #D5DCFF;
+    font-size: 12px;
+    padding: 2px;
+    border: 2px solid #B3B3B3;
+}
+#translateDontFollowLinks {
+    text-decoration: none;
+    /* cursor: pointer; */
+    font-size: 9px;
+}
+.colorgraph {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+
+.navbar-collapse.collapse {
+    display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+.navbar-right {
+    float: right!important;
+}
+.pull-right {
+    float: right!important;
+}
+
+
+body , html, * {
+    /*font-family: "Open Sans", Arial, sans-serif;*/
+    font-family: "Roboto", sans-serif ;
+
+}
+
+.popoverService {
+    max-width: 400px ! important;
+}
+
+.beta-dialog .modal-dialog {
+    width: 800px;
+}
+
+.beta-dialog p , .beta-dialog li {
+    font-size:12px;
+}
+
+
+
+.mbc_container  {padding:0}
+
+ul.token-input-list-facebook {
+    width:80px;
+    float:left;
+}
+
+ .containerMC{
+    width: 500px;
+    height: auto;
+}
+
+#dock{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
+#user_menu_div  { width: 1000px; }
+.contentMain    {    width:1040px; }
+.leftCol        {    width:780px; }
+ 
+
+.style1 {font-size: 13px}
+.smallLink , .smallLink a:link, .smallLink a:visited, .smallLink a:active {font-size: 11px}
+.style2 {
+	color: #FF0000;
+	font-style: italic;
+}
+body, #wrapperMain , #wrapper , .main_div  {
+/*height:100%;*/
+}
+
+#wrapperMain , #wrapper , .main_div  {
+/*height:100%;*/
+}
+
+
+.flag {
+    margin-left:1px;
+    margin-right:1px;
+    width:24px;
+}
+
+.flagFilter {
+    margin-left:1px;
+    margin-right:1px;
+    width:20px;
+}
+
+.activityFilter {
+    margin-left:1px;
+    margin-right:1px;
+    width:16px;
+}
+
+.flagsDiv {
+    position:relative;
+    top:-17px;
+    left:7px;
+    padding:1px;
+    padding-left:0;
+    padding-right:0;
+    background-color:#FFFFFF;
+    width:80px;
+
+    overflow:hidden;
+}
+
+.activitiesDiv {
+    position:relative;
+    top:-19px;
+    left:7px;
+    padding:1px;
+    padding-left:0;
+    padding-right:0;
+    background-color:#FFFFFF;
+    width:80px;
+
+    overflow:hidden;
+}
+
+-->
+</style>
+
+
+    <script>
+    </script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4139288-2']);
+    _gaq.push(['_setDomainName', '.livetrack24.com']);
+    _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</head>
+<body >
+
+
+
+<div width=100% align=center id='wrapperMain' class='wrapperMain'>
+
+<div id='wrapper-e' align=center>
+  <div class="wrapper-l"> 
+    <div class="wrapper-r" style='width:1040px;'> 
+
+
+
+	
+<script type="text/javascript">
+
+var hidetimer;
+var site_url='/wall/';
+
+$(function() {
+
+	$('.vid_trigger').click( function(e){
+		var URL = $(this).attr('id');
+		var htm = '<iframe width="350" height="250" src="https://www.youtube.com/embed/' + URL + '?rel=0&autoplay=1" frameborder="0" allowfullscreen ></iframe>';
+		$(this).html(htm);
+		return false;
+	});
+
+});
+
+
+function changeLanguage(lang0) {
+    var lang=lang0;
+    if (!lang) lang=$("#selectLang").val();
+    $.get("/ajax_actions.php?op=change_language&new_language="+lang,
+        function(result){
+            location.reload();
+        }
+    );
+}
+
+function changeTZ() {
+    var changeOffset=$("#changeOffset").val();
+    var showLocalTimes=$("#showLocalTimes").is(':checked')?1:0;
+
+    $.get("/ajax_actions.php?op=change_tz&changeOffset="+changeOffset+"&showLocalTimes="+showLocalTimes,
+        function(result){
+            window.location.reload(true);
+           //window.location.href=window.location.href;
+        }
+    );
+
+}
+
+
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    //js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=83965197938";
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=83965197938";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+	$(function() {
+		var pageUrl = window.location;
+		var pageTitle=$("title").text();	
+	});
+
+
+
+
+
+$(document).ready(function () {
+	$("#userSearchBox").tokenInput("/EXT_pilot_functions.php?op=findPilot&format=json",
+		 {
+		hintText: "Search for username...",
+        minChars: 2,
+        theme: "light",
+        // tokenLimit: 1,
+        onAdd: function (item) {
+            var url='https://www.livetrack24.com/user/%USERID%';
+            url=url.replace('%USERID%',item.id);
+            window.location = url;
+        }
+	});
+
+	});
+</script>
+
+<div id="fb-root"></div>
+
+<div class="topdiv" id="topdiv" width="100%" align="center">
+	<div class="hsep5"></div>
+	<table class='topMenu'>
+    	<tr>
+        	<td rowspan="2" align="left">
+        	 <a href="/" > 
+						 
+        		<img src="/img/logo.png" />
+        	</a>
+        	</td>
+            <td align="center" rowspan="2">
+                
+                <a class="btn btn-danger" style="text-decoration:none" href="/docs/mobile" alt="Install on yuor phone & start Tracking">
+                    <i class="fa fa-android fa-1x" target="_blank"></i>&nbsp;
+                    <i class="fa fa-apple fa-1x" target="_blank"></i>&nbsp; Get Started</a>
+
+            </td>
+        	<td align="right" valign="top" style="padding-top:5px;">
+
+            	            <a href="/login" class="buttonsmall bluetop">Login</a>
+	            <a href="/register" class="buttonsmall bluetop">Sign Up</a>
+             
+
+            
+            <a contact-id='2' href="javascript:;" class="contactButton buttonsmall">Contact</a>
+            </td>
+        	<td align="left" valign="top" style="padding-top:7px; padding-left:8px;" width="160">
+        	
+                            <div id="langSelect" class="polyglot-language-switcher"  data-selected-lang="english" data-grid-columns="3" data-anim-effect="slide" data-open-mode="click">
+                    <ul style="display: none">
+                        <li><a href='javascript:changeLanguage("english");' title='English' data-lang-id='english'><img src='/img/flags/uk.gif' alt='English'> English</a></li>
+<li><a href='javascript:changeLanguage("german");' title='Deutsch' data-lang-id='german'><img src='/img/flags/de.gif' alt='Deutsch'> Deutsch</a></li>
+<li><a href='javascript:changeLanguage("french");' title='Français' data-lang-id='french'><img src='/img/flags/fr.gif' alt='Français'> Français</a></li>
+<li><a href='javascript:changeLanguage("italian");' title='Italiano' data-lang-id='italian'><img src='/img/flags/it.gif' alt='Italiano'> Italiano</a></li>
+<li><a href='javascript:changeLanguage("spanish");' title='Español' data-lang-id='spanish'><img src='/img/flags/es.gif' alt='Español'> Español</a></li>
+<li><a href='javascript:changeLanguage("portuguese");' title='Português' data-lang-id='portuguese'><img src='/img/flags/pt.gif' alt='Português'> Português</a></li>
+<li><a href='javascript:changeLanguage("greek");' title='Ελληνικά' data-lang-id='greek'><img src='/img/flags/gr.gif' alt='Ελληνικά'> Ελληνικά</a></li>
+<li><a href='javascript:changeLanguage("turkish");' title='Türkçe' data-lang-id='turkish'><img src='/img/flags/tr.gif' alt='Türkçe'> Türkçe</a></li>
+<li><a href='javascript:changeLanguage("danish");' title='Dansk' data-lang-id='danish'><img src='/img/flags/dk.gif' alt='Dansk'> Dansk</a></li>
+<li><a href='javascript:changeLanguage("swedish");' title='Svenska' data-lang-id='swedish'><img src='/img/flags/se.gif' alt='Svenska'> Svenska</a></li>
+<li><a href='javascript:changeLanguage("finnish");' title='Suomi' data-lang-id='finnish'><img src='/img/flags/fi.gif' alt='Suomi'> Suomi</a></li>
+<li><a href='javascript:changeLanguage("dutch");' title='Nederlands' data-lang-id='dutch'><img src='/img/flags/nl.gif' alt='Nederlands'> Nederlands</a></li>
+<li><a href='javascript:changeLanguage("polish");' title='Polski' data-lang-id='polish'><img src='/img/flags/pl.gif' alt='Polski'> Polski</a></li>
+<li><a href='javascript:changeLanguage("czech");' title='Čeština' data-lang-id='czech'><img src='/img/flags/cz.gif' alt='Čeština'> Čeština</a></li>
+<li><a href='javascript:changeLanguage("hungarian");' title='Magyar' data-lang-id='hungarian'><img src='/img/flags/hu.gif' alt='Magyar'> Magyar</a></li>
+<li><a href='javascript:changeLanguage("slovenian");' title='Slovenščina' data-lang-id='slovenian'><img src='/img/flags/si.gif' alt='Slovenščina'> Slovenščina</a></li>
+<li><a href='javascript:changeLanguage("afrikaans");' title='Afrikaans' data-lang-id='afrikaans'><img src='/img/flags/za.gif' alt='Afrikaans'> Afrikaans</a></li>
+<li><a href='javascript:changeLanguage("romanian");' title='Română' data-lang-id='romanian'><img src='/img/flags/ro.gif' alt='Română'> Română</a></li>
+<li><a href='javascript:changeLanguage("russian");' title='Ру́сский язы́к' data-lang-id='russian'><img src='/img/flags/ru.gif' alt='Ру́сский язы́к'> Ру́сский язы́к</a></li>
+<li><a href='javascript:changeLanguage("bulgarian");' title='български език' data-lang-id='bulgarian'><img src='/img/flags/bg.gif' alt='български език'> български език</a></li>
+<li><a href='javascript:changeLanguage("serbian");' title='Cрпски језик' data-lang-id='serbian'><img src='/img/flags/cs.gif' alt='Cрпски језик'> Cрпски језик</a></li>
+<li><a href='javascript:changeLanguage("croatian");' title='Hrvatski jezik' data-lang-id='croatian'><img src='/img/flags/hr.gif' alt='Hrvatski jezik'> Hrvatski jezik</a></li>
+<li><a href='javascript:changeLanguage("chinese");' title='中文' data-lang-id='chinese'><img src='/img/flags/cn.gif' alt='中文'> 中文</a></li>
+<li><a href='javascript:changeLanguage("hebrew");' title='עברית' data-lang-id='hebrew'><img src='/img/flags/il.gif' alt='עברית'> עברית</a></li>
+                    </ul>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+        
+        <td colspan='3' align='right'>
+                 	<div align='right' style='float: right; margin-right: 22px; margin-bottom: 11px; margin-top: 10px;'>
+
+                 <a href="https://twitter.com/livetrack24" class="twitter-follow-button"
+                    data-show-screen-name="false"
+                    data-show-count="false" data-size="normal">Follow @livetrack24</a>
+                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                 </script>
+
+
+
+                <div style='line-height: 10px' class="fb-like"
+                     data-href="https://www.facebook.com/LiveTrack24"
+                     data-width="120"
+                     data-height="40"
+                     data-colorscheme="light" data-layout="button_count"
+                     data-action="like" data-show-faces="false" data-send="false"></div>
+	        </ul>
+        	</div>	
+        	        	
+        	        </td>
+        </tr>
+    </table>
+
+
+
+
+<!----   second line menu  -->
+ <div class="navbar navbar-green">
+  <div class="container-fluidX">
+
+  <!---
+  <div class="navbar-collapse collapse">
+  -->
+    <div class="" >
+
+    <ul class="nav navbar-nav">
+        <li>
+            <a class="buttonTopMenu" href="/" class="">
+                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+        </li>
+        <li class="dropdown mega-menu-6 transition">
+            <a href="/tracks" class="buttonTopMenu ">Explore LiveTracks                                    <span class="badge btn-main">72</span>
+                            </a>
+        </li><!-- Regular Menu Ends -->
+        <li class="dropdown mega-menu-6 transition">
+            <a href="/events/year/2025">Live Events                              </a>
+        </li><!-- 3 Columns -->
+        <li class="dropdown menu-large">
+            <a href="/services/index" class="dropdown-toggle" data-toggle="dropdown">Services                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu megamenu row">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services1">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-bubbles-3 left"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_takeoff_assist_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Livetracking services for individuals</h3>
+                                <p>LiveTrack24 is the answer to every pilot's need.
+                                    Combining a robust reliable device with an innovative
+                                    and easy to use service, adding security and fun to your
+                                    activity</p>
+                                <p><a class="btn btn-primary" href="/services/index#services1"><i class=" icomoon-arrow-right-2  "></i>Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services2">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-stats center"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_event_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Services for Events / Competitions</h3>
+                                <p>
+                                    The Livetrack24 service gives you more than you thought was possible
+                                    Real time tracking, Live scoreboard and Retrieve made simple, all in one simple and affordable package.
+
+                                </p>
+                                <p><a class="btn btn-primary" href="/services/index#services2"><i class=" icomoon-arrow-right-2  "></i>Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services3">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-cogs right"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_code_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Outsourcing Services / for 3rd party apps & services</h3>
+                                <p>We offer a complete set of APIs so that you can integrade Livetracking in your service very fast and easy.</p>
+                                <div style="height: 8px;"></div>
+                                <p><a class="btn btn-primary" href="/services/index#services3">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </ul>
+        </li>
+                 <li class="dropdown mega-menu-6 transition">
+                 <div class="sb-toggle-left">
+
+                     <div class="navicon-line"></div>
+                     <div class="navicon-line"></div>
+                     <div class="navicon-line"></div>
+                 </div>
+         </li>
+    </ul>
+
+
+    
+    </div><!--/.nav-collapse -->
+</div>
+
+    </div><!-- /.navbar .navbar-inverse -->
+
+
+</div>
+
+
+
+
+<script language="javascript">
+
+    function translateSeeAll() {
+        $("#translateDiv").toggle();
+
+    }
+
+var msgBoxes=[];
+
+function hideMessageAlert(mID) {
+	$.post( '/ajax_actions.php?op=alert_message&action=hide', {mID:mID} );	
+	$("#msg_close_"+mID).html("<strong>OK</strong>").parent().parent().fadeOut(300);
+}
+
+function showContact(page) {
+	//var topicID=page.substring(1);
+    var topicID=page;
+	var url="/contact.php?topicID="+topicID;
+	$.get(url, 
+		function(result){
+            $("#modalDialog .modal-title").html('Contact us');
+            $("#modalDialog .modal-body").html( result );
+            $("#modalDialog .modal-footer").html('');
+            $('#modalDialog').modal();
+
+		}
+	);
+}
+
+function closePopup() {
+	activeUserMenu='';
+	$("#actionDiv").hide();
+	$("#takeoffAddID").hide();
+	$("#smsPopupDiv").hide();
+	$("#smsPopupError").hide();
+    $("#userMenuDiv").hide();
+
+}
+
+$(document).ready(function(){
+	// initBtn();
+	
+	$(".userMenuLinkX").live('click', function(e) {
+		if ($("#userMenuDiv").is(':visible') ) {
+			$("#userMenuDiv").hide();
+			return;
+		}
+		$("#userMenuDiv").css({
+				left:$(this).offset().left-5,
+				top:$(this).offset().top+15
+			}).html("<img src='/img/ajax-loader.gif'>").show();	
+		var this_id=$(this).attr('id'); 
+		var parts=this_id.split("_");
+		var user_id=parts[1];
+		
+		$("#userMenuDiv").load('/GUI_EXT_user.php?op=usermenu&user_id='+user_id);
+	});
+
+    $(".userMenuLinkX").clickover({
+        content: function() {
+            return "###";
+        },
+        html: true,
+        global_close: true,
+        trigger: 'click',
+        placement: 'bottom'
+    });
+
+    $('.userMenuLink').clickover({
+        placement: 'bottom',
+        trigger: 'click',
+        html: true,
+        title:'',
+        content:'content',
+        container: 'body',
+        class_name: 'clickover',
+        global_close: true,
+
+        onShown: function(e){
+            var clickover=this;
+            var this_id=this.$element[0].id;
+            var parts=this_id.split("_");
+
+            var url="/GUI_EXT_user.php?op=usermenu&user_id="+parts[1];
+            $.get(url,function(response) {
+                $("div.clickover").find("div.popover-content").html(response);
+                $("div.clickover").find(".popover-title").prepend(popoverCloseButtonHtml);
+                clickover.resetPosition();
+            });
+
+        }
+
+    });
+
+
+
+    $(document.body).on('click', '.closePopupButton', function() {
+        closePopup();
+    })
+
+	$(".closePopupButton").live('click', function(e) {
+			closePopup();
+	});
+
+	$(".contactButton").click(function(f) {		
+		showContact( $(this).attr('contact-id') );
+	});	
+		
+		
+	msgBoxes[13]=$.jGrowl('Due to a change in the default view your older than 30 days tracks are not shown. <a href="https://www.livetrack24.com/news/2023_08_19">Check here on how to find them</a><HR><div id="msg_close_13"><a href="javascript:void(0);" onclick="hideMessageAlert(13);">Dont show this message again</a></div>', { 
+		header: 'Older Tracks not shown',
+		theme: 'manilla',
+		sticky: true
+	});
+	
+
+});
+
+</script>
+
+
+<div class="maindiv" id="maindiv">
+    <div class="contentMain">
+        <div id='userMenuDiv'></div>
+
+<div style='clear:both;'>
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/css/coin-slider-styles.css' />
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/css/accordion.css' />
+<script language='javascript' src='https://www.livetrack24.com/js/coin-slider.min.js'></script>
+
+<style type="text/css">
+    <!--
+    h3.frontPage {
+        text-align: center;
+        width: 100%;
+        font-weight: 300;
+        font-size: 30px;
+        margin-bottom: 40px;
+        line-height: 163%;
+        color: #535353;
+        font-family: 'helvetica neue', Helvetica, Arial;
+        text-rendering: optimizelegibility;
+        margin-top: 3px;
+        padding: 24px;
+        background-color: rgb(255, 255, 255);
+        /* color: white; */
+        border: none;
+    }
+
+    h2.frontPage {
+        text-align: center;
+        width: 100%;
+        font-weight: 300;
+        font-size: 36px;
+        margin-bottom: -16px;
+        line-height: 163%;
+        color: #535353;
+        font-family: 'helvetica neue', Helvetica, Arial;
+        text-rendering: optimizelegibility;
+        margin-top: 3px;
+        padding: 24px;
+        background-color: rgb(255, 255, 255);
+        /* color: white; */
+        border: none;
+    }
+    -->
+</style>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+   
+
+	//$('#bannersHolder').show();
+	//$('#banners').coinslider({ hoverPause: false, width:560,height:310,opacity:0.8, titleSpeed:1500, sDelay:5,navigation:true, links:true,  delay:8000 });
+	// width:565,height:290,spw:7,sph:5,delay:3000,sDelay:30,opacity:0.7,titleSpeed:500,effect:'',navigation:true,links:true,hoverPause:true
+});
+
+</script>
+
+
+
+
+<div style="padding:5px;padding-top:0; position:relative;display:block; clear:both;">
+
+    <table cellpadding=0 cellspacing=0><tr>
+        <td valign='top'>
+            
+
+<h3 class='frontPage'>We provide real-time GPS tracking<BR>
+    for  outdoor activities<BR>
+    & complete solutions for sporting events </h3>
+
+
+            
+            <h2 class='frontPage'>LiveTracks</h2>
+            <style type="text/css">
+    <!--
+
+    .trackList .badge {
+        background-color: #2A79C7;
+        margin-left: -10px;
+    }
+
+    .trackList.inactive {
+
+    }
+    .trackList.active {
+
+    }
+    .trackList {
+        margin: 4px;
+    }
+
+</style>
+
+
+
+    <a href='/tracks' class='btn btn-default btn-lg btn-warning trackList'>
+		 Show ALL&nbsp;&nbsp;&nbsp; <span class='badge'>72</span></a> <a href='/tracks/country/gb' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/gb.png'>
+ 					<span class='badge'>25</span>
+			</a><a href='/tracks/country/us' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/us.png'>
+ 					<span class='badge'>16</span>
+			</a><a href='/tracks/country/fr' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/fr.png'>
+ 					<span class='badge'>10</span>
+			</a><a href='/tracks/country/es' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/es.png'>
+ 					<span class='badge'>5</span>
+			</a><a href='/tracks/country/br' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/br.png'>
+ 					<span class='badge'>4</span>
+			</a><a href='/tracks/country/co' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/co.png'>
+ 					<span class='badge'>3</span>
+			</a><a href='/tracks/country/pl' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/pl.png'>
+ 					<span class='badge'>2</span>
+			</a><a href='/tracks/country/ch' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/ch.png'>
+ 					<span class='badge'>2</span>
+			</a><a href='/tracks/country/cz' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/cz.png'>
+ 					<span class='badge'>2</span>
+			</a><a href='/tracks/country/hn' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/hn.png'>
+ 					<span class='badge'>2</span>
+			</a><a href='/tracks/country/cu' class='btn btn-default trackList'>
+			<img  src='https://www.livetrack24.com/img/flags/32/cu.png'>
+ 					<span class='badge'>1</span>
+			</a><a href='/tracks/activity/1' class='btn btn-default trackList' >
+			<img  src='https://www.livetrack24.com/img/cat/icon_cat_1.png'>
+ 					<span class='badge'>58</span>
+			</a><a href='/tracks/activity/8' class='btn btn-default trackList' >
+			<img  src='https://www.livetrack24.com/img/cat/icon_cat_8.png'>
+ 					<span class='badge'>9</span>
+			</a><a href='/tracks/activity/16' class='btn btn-default trackList' >
+			<img  src='https://www.livetrack24.com/img/cat/icon_cat_16.png'>
+ 					<span class='badge'>3</span>
+			</a><a href='/tracks/activity/2' class='btn btn-default trackList' >
+			<img  src='https://www.livetrack24.com/img/cat/icon_cat_2.png'>
+ 					<span class='badge'>1</span>
+			</a><a href='/tracks/activity/unknown' class='btn btn-default trackList' >
+			<img  src='https://www.livetrack24.com/img/cat/icon_cat_unknown.png'>
+ 					<span class='badge'>1</span>
+			</a><div class='btn btn-default btn-success btn-lg  trackList'>
+		 Groups</div> <a href='/group/BlackSheep' class='btn btn-lg btn-default trackList' >
+ 				BlackSheep &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/SDHGPA' class='btn btn-lg btn-default trackList' >
+ 				SDHGPA &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/BurqueLoneStar' class='btn btn-lg btn-default trackList' >
+ 				BurqueLoneStar &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/SVP42' class='btn btn-lg btn-default trackList' >
+ 				SVP42 &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/SWWSC' class='btn btn-lg btn-default trackList' >
+ 				SWWSC &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/PDCS' class='btn btn-lg btn-default trackList' >
+ 				PDCS &nbsp;&nbsp;&nbsp;<span class='badge'>2</span>
+			</a><a href='/group/2023xDales' class='btn btn-lg btn-default trackList' >
+ 				2023xDales &nbsp;&nbsp;&nbsp;<span class='badge'>1</span>
+			</a><a href='/group/axispara6' class='btn btn-lg btn-default trackList' >
+ 				axispara6 &nbsp;&nbsp;&nbsp;<span class='badge'>1</span>
+			</a><a href='/group/nhpc' class='btn btn-lg btn-default trackList' >
+ 				nhpc &nbsp;&nbsp;&nbsp;<span class='badge'>1</span>
+			</a><a href='/group/bapa' class='btn btn-lg btn-default trackList' >
+ 				bapa &nbsp;&nbsp;&nbsp;<span class='badge'>1</span>
+			</a>            <h2 class='frontPage'>Events Calendar</h2>
+            <div class='statusWindow' style='width:725px;'>
+
+            
+<script language='javascript' src='https://www.livetrack24.com/js/imagesloaded.pkgd.min.js'></script>
+<script language='javascript' src='https://www.livetrack24.com/js/isotope.pkgd.min.js'></script>
+
+
+<style type="text/css">
+	<!--
+
+
+
+	.informationOverlay {
+		position:absolute;
+		bottom:74px;
+		right:20px;
+		-moz-transition: 0.4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+		background-color: rgba(255, 255, 255, 0.73);
+		color: #747474;
+		display: inline-block;
+		font-weight: bold;
+		font-size: 18px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+
+
+
+	.informationOverlayInline {
+		position:relative;
+		bottom:0px;
+		right:0px;
+		-moz-transition: 0.4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+		background-color: rgba(255, 255, 255, 0.73);
+		color: #747474;
+		display: inline-block;
+		font-weight: bold;
+		font-size:14px;
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+
+	.informationOverlay > div {
+		display: inline-block;
+		padding: 8px;
+	}
+
+	.informationOverlay > div i {
+		color: #ff453c;
+		font-size:23px;
+		margin-right: 10px;
+		vertical-align: bottom;
+	}
+
+
+
+	.eventBannerPreview {
+		/*width: 100%;*/
+		margin-left: 0px;
+		margin-top: 0px;
+		max-height: 200px;
+		max-width: 445px;
+	}
+
+
+	.eventBannerLink {
+		text-align: center;
+		width: 100%;
+		display: block;
+	}
+
+	.sectionMain  .informationDate {
+		position: relative;
+		bottom: 0px;
+		right: 0px;
+		-moz-transition: 0.4s;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+
+		background-color: rgba(255, 255, 255, 0.84);
+		color: #3C3C3C;
+
+		display: block;
+		font-weight: bold;
+		font-size: 15px;
+
+		margin-top: -38px;
+		margin-right: 4px;
+
+		text-align: right;
+		width: auto;
+		float: right;
+
+		padding: 5px;
+		padding-right: 11px;
+		padding-left: 7px;
+
+	}
+	.sectionMain .eventH2banner {
+		background-color: rgba(56, 56, 56, 0.49);
+		position: absolute;
+		top: -5px;
+		z-index: 999;
+		padding: 5px;
+		font-size: 18px;
+		font-weight: bold;
+		padding-left: 15px;
+		padding-right: 20px;
+
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	.sectionMain .eventH2bannerSimple {
+		background-color: rgba(56, 56, 56, 0.61);
+		position: relative;
+		top: -21px;
+		z-index: 999;
+		padding: 13px;
+		font-size: 18px;
+		font-weight: bold;
+		padding-left: 15px;
+		padding-right: 20px;
+		margin-right: -25px;
+		margin-left: -25px;
+		margin-top: 6px;
+	}
+
+	.sectionMain {
+
+		border-radius: 2px;
+		border-style: solid;
+		border-width: 1px 1px 1px;
+		border-color: #ddd;
+		overflow: hidden;
+		position: relative;
+
+
+		background: #fafafa;
+		padding: 4px 4px;
+	}
+
+
+	.eventH2bannerSimple a:link, .eventH2bannerSimple a:visited,  .eventH2bannerSimple a:active{
+		color:#ffffff;
+	}
+
+	.eventH2banner a:link, .eventH2banner a:visited,  .eventH2banner a:active{
+		color:#ffffff;
+	}
+
+
+	.style1 {
+		font-size: 18px;
+		font-weight: bold;
+
+	}
+	.multiday {
+		font-size: 14px;
+		font-weight: bold;
+
+	}
+	.style2 {
+
+		font-size: 12px;
+	}
+	.eventsTable a:link, .eventsTable a:visited, .eventsTable a:active {
+		color:#0066CC;
+	}
+
+	.liveNow , .liveComing{
+		display: block;
+		clear: both;
+		float: left;
+		width: 100%;
+		font-size: 18px;
+		background-color: #B5DF21;
+		text-align: center;
+		margin-bottom: 3px;
+		padding: 5px;
+		font-weight: 900;
+		color: rgb(58, 58, 58);
+	}
+
+	.liveComing {
+		background-color: #3a95fd;
+	}
+	.sectionMain .liveNowHeader {
+		top:32px;
+	}
+
+	.eventCanceledHeader{
+		display: block;
+		clear: both;
+		float: left;
+		width: 100%;
+		font-size: 18px;
+		background-color: #df3720;
+		text-align: center;
+		margin-bottom: 3px;
+		padding: 5px;
+		font-weight: 900;
+		color: rgb(255, 255, 255);
+	}
+
+	-->
+</style>
+
+
+	<div class='row'><div id='buttonEvents_current' class='col-xs-4 btn btn-lg btn-default btn-warning filters2'  data-filtertime='current'>Current Events</div> <div id='buttonEvents_past' class='col-xs-4 btn btn-lg  btn-default filters2'  data-filtertime='past'>Past Events</div> <div id='buttonEvents_future' class='col-xs-4 btn btn-lg  btn-default filters2'  data-filtertime='future'>Upcoming Events</div></div><BR><BR><div class='row isotope'><div class='event-item col-xs-6 timecurrent '> 
+<div class='sectionMainOuter'>
+<div class='sectionMain'>
+		<div class='liveNow'>Event is running</div>
+
+			<h2 class='eventH2banner liveNowHeader'><a href='/events/test'>test2</a></h2>
+			<a class='eventBannerLink' href='/events/test'><img class='eventBannerPreview' src='https://www.livetrack24.com/files/events/test/banner.small.jpg'></a>
+
+			<div class='informationOverlay informationDate'>
+					<img src='https://www.livetrack24.com/img/cat/icon_cat_1.png' width='24' alt='Paraglider' descr='Paraglider' align='absmiddle'/>
+					01 Jan 2025 - 01 Jan 2026
+			</div>
+			<div class='informationOverlay informationOverlayInline'>
+				<div><i class='fa fa-map-marker'></i> <img src='https://www.livetrack24.com/img/flags/32/si.png'  border='0' ></div>
+
+
+			</div>
+		</div>
+</div></div></div>
+<BR>
+
+<p><a href="/events/year/2025" class="btn btn-primary btn-lg" role="button">See the Full Events Calendar</a></p>
+
+
+
+<script>
+
+
+	var $container=null;
+	var currentTime='current';
+
+	$(document).ready(function() {
+
+		
+		$container = $('.isotope').imagesLoaded( function() {
+			$container.isotope({
+				itemSelector: '.event-item',
+				filter: ".time"+currentTime
+			});
+		});
+
+
+		// filterEvents();
+
+		$('.filters2').click(  function () {
+			currentTime= $(this).data('filtertime');
+			filterEvents();
+			$('.filters2').removeClass('btn-warning');
+			$(this).addClass('btn-warning');
+		});
+
+	});
+
+	function filterEvents() {
+		var filterStr="";
+		if (currentTime) {
+			filterStr+=".time"+currentTime;
+		}
+		if (filterStr) {
+			filterStr=".header, "+filterStr;
+		} else {
+			filterStr="*";
+		}
+		$container.isotope({filter: filterStr});
+	}
+
+</script>            </div>
+        </td>
+
+        <td valign='top'>
+            <div class='statusWindow' style='float:left; width:260px; clear:none; margin-left:22px'>
+            <h1>Latest News</h1>
+            <p align='left'><a href='/news/2023_08_19'><img width='90' hspace=6 align='left' src='https://www.livetrack24.com/img/content/new_search.jpg'><span class='label label-info'>Sept 2 2016</span> <p align='justify'><strong>Find your old tracks</strong> Find your old tracks</p></p></a><div class='clearfix'></div><BR><p align='left'><a href='/news/2016_09_02'><img width='90' hspace=6 align='left' src='https://www.livetrack24.com/img/content/mobile_page_icon.jpg'><span class='label label-info'>Sept 2 2016</span> <p align='justify'><strong>New view for Smarthphones</strong> Browse live tracks easily from your phone.</p></p></a><div class='clearfix'></div><BR><p align='left'><a href='/news/2016_05_26'><img width='90' hspace=6 align='left' src='https://www.livetrack24.com/img/content/sat-ogn.jpg'><span class='label label-info'>May 26 2016</span> <p align='justify'><strong>InReach Delorme Supported</strong> Connect your InReach Delorme Satellite Tracker</p></p></a><div class='clearfix'></div><BR><p align='left'><a href='/news/2016_02_16'><img width='90' hspace=6 align='left' src='https://www.livetrack24.com/img/content/cesium_screenshot2_small.jpg'><span class='label label-info'>Feb 16 2016</span> <p align='justify'><strong>New 3D views</strong> LiveTrack24 moves to Cesium for all 3D views</p></p></a><div class='clearfix'></div><BR>            
+<!--
+<div class="alert alert-warning">
+   <a href='javascript:;'
+      onclick="BootstrapDialog.show({type: BootstrapDialog.TYPE_DANGER,title:
+   'Google Earth Plugin Problem',
+    message:'The 3D views dont work in Chrome due to the deprecation of NPAPI plugins.' +
+     '<br>We are currently moving all 3D views to Cesium library'})">
+      <strong> ** Google Earth Plugin Problem **</strong></a>
+</div>
+
+<div class="alert alert-danger">
+<a href='javascript:;'
+   onclick="BootstrapDialog.show({type: BootstrapDialog.TYPE_DANGER,title:
+   'Note for OneSimcard users',
+    message:'<a href=\'/docs/setapn\'>If you cannot see your livetracks click here to update the onesimcard APN</a>'})">
+   <strong> ** Note for OneSimcard users **</strong></a>
+</div>
+
+
+-->                        
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/js/jquery.tokeninput/token-input.css' />
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/js/jquery.tokeninput/token-input-light.css' />
+
+
+<div class='statusWindow statusWindowGlow bootstro'
+     data-bootstro-title='Search for a user'
+     data-bootstro-placement='bottom'
+     data-bootstro-content='Start typing a username and you will get a list that best matches your search'
+        >
+ <h1>Quick Search</h1>
+
+ <div style='float:none;'> <input type='text' name='userSearchBox' id='userSearchBox' value='          '  placeholder="Search for username..." size=8 ></div>
+
+</div>
+
+            <div style='height:10px;'></div>
+            
+<div class='statusWindow statusWindowGlow'>
+    <h1><a target="_blank" href="https://www.facebook.com/LiveTrack24">Like us on Facebook</a></h1>
+
+    <div class="fb-like-box"
+         data-href="https://www.facebook.com/LiveTrack24"
+         data-width="260" data-height="80"
+         data-colorscheme="light" data-show-faces="false"
+         data-header="false" data-stream="false" data-show-border="false"></div>
+<!--
+    <div class="fb-facepile"
+         data-href="https://www.facebook.com/LiveTrack24"
+         data-action="like,share"
+         data-width="270" data-max-rows="3"
+         data-colorscheme="light"
+         data-size="medium"
+         data-show-count="true"></div>
+-->
+</div>
+                
+
+<div class='statusWindow statusWindowGlow'>
+    <h1>LiveTrack24 for Sporting Events</h1>
+    
+    <table align="center" border="0" cellpadding="2" cellspacing="0" width="99%">
+        <tbody>
+        <tr>
+            <td align="center">
+                <a class='btn btn-default' href="/docs/events">
+                    <img src="https://www.livetrack24.com/img/livetrack24_package.png"  width="150" >
+                    <br>
+                    Competition Organizers<br>
+                    <div class="btn btn-primary btn-sm">Read how to use <BR>
+                    Livetracking on your event<br>
+                        </div>
+                </a>
+
+                <BR><br>
+
+                <a class='btn btn-success btn-sm' href="/doc/Livetracking%20for%20Competitions.pdf">
+                    Complete PDF guide<BR>
+                    for setting up <BR>
+                    and running your event
+                </a>
+
+
+                                <BR><br>
+                <a class='btn btn-warning' href="/docs/event_pricing">See pricing for 2022</a>
+                
+                <BR><br>
+                <a class='btn btn-primary' href="/docs/events_features">Prepare for registration</a>
+
+                <BR><br>
+                <a class='btn btn-primary' href="/docs/events_automation">Automate your tasks</a>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+                
+                
+<div class='statusWindow'>
+    <h1><span class="glyphicon glyphicon-phone"></span>
+        Install / Download</h1>
+
+
+
+			<a style='    width: 100%;' class='btn btn-primary' href='/apps/index'>
+		Install <BR> on your phone</a>
+
+	<BR><BR>
+    <a style='    width: 100%;' class='btn btn-primary' href='/apps/instruments'>Instructions for <BR>Hardware instruments</a>
+
+
+</div>
+
+            </div>
+
+
+        </td>
+    </tr>
+    </table>
+
+
+</div>
+
+
+
+</div> 	</div>
+
+    <div class="hsep1 clearfix" ></div>
+</div>
+
+    <div class="modal fade" id="modalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">INFO</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="bottom1div" width="100%" style="clear:both;"></div>
+<div class="bottom2div" width="100%" style="clear:both;">
+
+    <div id="ft">
+        <div id="footer_nav">
+          <div class="yui-u first">
+            <ul class="left" style='width:180px'>
+              <li><strong>About</strong></li>
+              <li><a href="/docs/aboutus">About us</a></li>
+              <li><a href="/docs/index">How it works</a></li>
+              <li><a href="/apps/gprs_calculator">How much does it cost</a></li>
+              <li><a href="/services/index">Features and services</a></li>
+              <li><a contact-id='2' href="javascript:;" onclick="showContact( $(this).attr('contact-id') )">Contact Us</a></li>
+            </ul>
+            <ul class="left" style='width:180px'>
+              <li><strong>I want to be tracked...</strong></li>
+              <li><a href="/apps/index" >Install on the Phone </a></li>
+              <li><a href="/docs/mobile">Our App for Android/iPhone</a></li>
+              <li><a href="/store/index">Get a Tracking device</a></li>
+              <li><a href="/register">Create an account</a></li>
+              <li><a href="/docs/embed">Let your friends know</a></li>
+
+            </ul>
+            <ul class="left" style='width:200px'>
+              <li><strong>I want to track a friend</strong></li>
+              <li><a href="/docs/viewing">General FAQ for viewers</a></li>
+              <li><a href="/docs/rss">Rss feeds</a></li>
+              <li><a href="/docs/mobilepages">Pages for use on Mobile phones</a></li>
+            </ul>
+            <ul class="left" style='width:180px'>
+              <li><strong><a href="/tasks" rel="nofollow" >Events / Races / Comps</a></strong></li>
+              <li><a href="/services/events">Services for organizers</a></li>
+              <li><a href="/doc/Livetracking%20for%20Competitions.pdf">Guide for organizers</a></li>
+              <li><a contact-id='2' href="javascript:;" onclick="showContact( $(this).attr('contact-id') )">Contact Us</a></li>
+
+            </ul>
+            <div class="clearl"></div>
+          </div>
+
+
+
+            <div id="footer_copyright">
+            ©2006-2025 LiveTrack24 ::
+                <a href='/wiki'>Wiki</a> ::
+                <a href='/docs/api'>API</a>
+
+          </div>
+        </div>
+    </div>
+  
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
+

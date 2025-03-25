@@ -1,0 +1,890 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - 50km or Bust",
+        "totalResults": "137000",
+        "searchTerms": "50km or Bust",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - 50km or Bust",
+        "totalResults": "137000",
+        "searchTerms": "50km or Bust",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.17591,
+    "formattedSearchTime": "0.18",
+    "totalResults": "137000",
+    "formattedTotalResults": "137,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "'Fly 50km or Bust!' | Cross Country Magazine",
+      "htmlTitle": "&#39;Fly \u003cb\u003e50km or Bust\u003c/b\u003e!&#39; | Cross Country Magazine",
+      "link": "https://xcmag.com/fly-better/paragliding-techniques-paramotoring-skills/fly-50km-or-bust/",
+      "displayLink": "xcmag.com",
+      "snippet": "May 6, 2022 ... 'Fly 50km or Bust!' · 1. Starting ridges can be crowded. · 2. If you follow someone keep a good distance and off to one side. · 3. If there is a ...",
+      "htmlSnippet": "May 6, 2022 \u003cb\u003e...\u003c/b\u003e &#39;Fly \u003cb\u003e50km or Bust\u003c/b\u003e!&#39; &middot; 1. Starting ridges can be crowded. &middot; 2. If you follow someone keep a good distance and off to one side. &middot; 3. If there is a&nbsp;...",
+      "formattedUrl": "https://xcmag.com/fly-better/paragliding-techniques.../fly-50km-or-bust/",
+      "htmlFormattedUrl": "https://xcmag.com/fly-better/paragliding-techniques.../fly-\u003cb\u003e50km-or-bust\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-EQq1GL0iwuR_AKJXYBFs2atmGcVSb0MeXUAHE0pA96j2bviIK3-sfMQ&s",
+            "width": "316",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2022/05/Flying-50km-by-paraglider-Andy-Busslinger.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "article:published_time": "2022-05-06T12:56:17+00:00",
+            "og:image:width": "1250",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "author": "Charlie King",
+            "og:title": "'Fly 50km or Bust!'",
+            "og:image:height": "630",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Flying 50k is a landmark achievement in a new pilot's cross-country career, but it can seem elusive at first. Nigel Page explains how to make it happen",
+            "twitter:creator": "@xcmag",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2022-05-06T14:18:20+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/fly-better/paragliding-techniques-paramotoring-skills/fly-50km-or-bust/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2022/05/Flying-50km-by-paraglider-Andy-Busslinger.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "50K Or Bust!",
+      "htmlTitle": "\u003cb\u003e50K Or Bust\u003c/b\u003e!",
+      "link": "http://www.50k-or-bust.com/",
+      "displayLink": "www.50k-or-bust.com",
+      "snippet": "50K Or Bust! aims to present the early cross country pilot with the basics of cross country paragliding in an easily understood form based on techniques ...",
+      "htmlSnippet": "\u003cb\u003e50K Or Bust\u003c/b\u003e! aims to present the early cross country pilot with the basics of cross country paragliding in an easily understood form based on techniques&nbsp;...",
+      "formattedUrl": "http://www.50k-or-bust.com/",
+      "htmlFormattedUrl": "http://www.50k-or-\u003cb\u003ebust\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvXPk65JcD6TgClx_mvODTzAUDQbh7lqKgxGmfYfHEwBLKHXLd66fAvk&s",
+            "width": "183",
+            "height": "276"
+          }
+        ],
+        "metatags": [
+          {
+            "author": "Nigel Page"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://www.50k-or-bust.com/Images/Cover_Front_04.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Anyone else get the pre run jitters the week of your run? 50k or bust ...",
+      "htmlTitle": "Anyone else get the pre run jitters the week of your run? \u003cb\u003e50k or bust\u003c/b\u003e ...",
+      "link": "https://www.facebook.com/groups/1253037471963670/posts/anyone-else-get-the-pre-run-jitters-the-week-of-your-run-50k-or-bust-slow-and-st/1600772307190183/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+      "htmlSnippet": "Anyone else get the pre run jitters the week of your run? \u003cb\u003e50k or bust\u003c/b\u003e slow and steady!",
+      "formattedUrl": "https://www.facebook.com/groups/...bust.../1600772307190183/",
+      "htmlFormattedUrl": "https://www.facebook.com/groups/...\u003cb\u003ebust\u003c/b\u003e.../1600772307190183/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZ2HAKmsxB99qMKZTTt6xeJxapPJp3Uz1sCZKu7zDhVX6EYw9QTB8du6S&s",
+            "width": "291",
+            "height": "173"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://story/?graphqlid=UzpfSTEwMDA5MzgxMzg0ODUwMTpWSzoxNjAwNzcyMzA3MTkwMTgz",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=438834479253677",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://story/?graphqlid=UzpfSTEwMDA5MzgxMzg0ODUwMTpWSzoxNjAwNzcyMzA3MTkwMTgz",
+            "og:description": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=438834479253677",
+            "twitter:image:alt": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+            "twitter:site": "@facebookapp",
+            "application-name": "Facebook Groups",
+            "og:type": "video.other",
+            "og:image:alt": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+            "twitter:title": "Anyone else get the pre run jitters the week of your run? 50k or bust...",
+            "al:ios:app_name": "Facebook",
+            "application-url": "https://www.facebook.com/groups/",
+            "og:title": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+            "google": "notranslate",
+            "al:android:url": "fb://native_post/UzpfSTEwMDA5MzgxMzg0ODUwMTpWSzoxNjAwNzcyMzA3MTkwMTgz",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Anyone else get the pre run jitters the week of your run? 50k or bust slow and steady!",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.20:2737",
+            "og:url": "https://www.facebook.com/groups/1253037471963670/posts/1600772307190183/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10232045079603373"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Skywings Review - 50K Or Bust!",
+      "htmlTitle": "Skywings Review - 50K Or Bust!",
+      "link": "http://www.50k-or-bust.com/Skywings_Review_01.html",
+      "displayLink": "www.50k-or-bust.com",
+      "snippet": "50k or bust is a very good primer to get you on your way. It doesn't overcomplicate, it's written in a very easy style.",
+      "htmlSnippet": "\u003cb\u003e50k or bust\u003c/b\u003e is a very good primer to get you on your way. It doesn&#39;t overcomplicate, it&#39;s written in a very easy style.",
+      "formattedUrl": "http://www.50k-or-bust.com/Skywings_Review_01.html",
+      "htmlFormattedUrl": "http://www.50k-or-\u003cb\u003ebust\u003c/b\u003e.com/Skywings_Review_01.html",
+      "pagemap": {
+        "metatags": [
+          {
+            "author": "Nigel Page",
+            "created": "0;0",
+            "changedby": "Nigel Page",
+            "changed": "20121204;15255346"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Run With Woody - YouTube",
+      "htmlTitle": "Run With Woody - YouTube",
+      "link": "https://www.youtube.com/@runwithwoody",
+      "displayLink": "www.youtube.com",
+      "snippet": "EPISODE 3: Gold Coast 50 or Bust (0-50k in 66 days). Run With Woody. 327 views ... Tarawera Ultramarathon 50km trail race. Run With Woody. 2.3K views. 5 ...",
+      "htmlSnippet": "EPISODE 3: Gold Coast 50 or \u003cb\u003eBust\u003c/b\u003e (0-\u003cb\u003e50k\u003c/b\u003e in 66 days). Run With Woody. 327 views ... Tarawera Ultramarathon \u003cb\u003e50km\u003c/b\u003e trail race. Run With Woody. 2.3K views. 5&nbsp;...",
+      "formattedUrl": "https://www.youtube.com/@runwithwoody",
+      "htmlFormattedUrl": "https://www.youtube.com/@runwithwoody",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Run With Woody",
+            "url": "https://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Moz1jNZx8G_u3F-WeQxlsYq7sQr3vNt7I6JPuxlYR9MQ2TRtQKeeqkYm&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/whfdlW0RmKZaDy3AkbOTqSiqfPUvec9JbSmo4J-ZtX55IyLHaygB06KZxMBokk3jM9qIBUGF9cU=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "Run With Woody",
+            "url": "https://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/@runwithwoody?referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://yt3.googleusercontent.com/whfdlW0RmKZaDy3AkbOTqSiqfPUvec9JbSmo4J-ZtX55IyLHaygB06KZxMBokk3jM9qIBUGF9cU=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw",
+            "twitter:app:id:googleplay": "com.google.android.youtube",
+            "theme-color": "rgba(255, 255, 255, 0.9)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/@runwithwoody",
+            "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw",
+            "al:android:package": "com.google.android.youtube",
+            "twitter:app:name:googleplay": "YouTube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "I am a long-time runner with experience running track events to ultra distance trail runs. Road running has been my go to in recent times, running three sub-3 hour marathons in my 50s. I'm also a coach, having started almost 40 years ago, and through my love of running I want to help others achieve their running dreams. \n\nI have been documenting my running journey on YouTube since 2019. There are hundreds of videos on the Run With Woody channel covering a wide range of topics from reviews to running tips, training series to race day vlogs - really anything to do with running in general.\n\nJoin me on my running journey as I head towards my 60s!\n\nCome chat to me on  Insta, Facebook and Twitter.",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/whfdlW0RmKZaDy3AkbOTqSiqfPUvec9JbSmo4J-ZtX55IyLHaygB06KZxMBokk3jM9qIBUGF9cU=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "fb:profile_id": "runwithwoody",
+            "twitter:title": "Run With Woody",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Run With Woody",
+            "og:image:height": "900",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "https://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw?feature=applinks",
+            "og:video:tag": "“Running”",
+            "al:android:url": "https://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw?feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:url:googleplay": "https://www.youtube.com/channel/UCy6heSiL_nJdzWug55nlTgw",
+            "twitter:app:name:ipad": "YouTube",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "I am a long-time runner with experience running track events to ultra distance trail runs. Road running has been my go to in recent times, running three sub-3 hour marathons in my 50s. I'm also a coach, having started almost 40 years ago, and through my love of running I want to help others achieve their running dreams. \n\nI have been documenting my running journey on YouTube since 2019. There are hundreds of videos on the Run With Woody channel covering a wide range of topics from reviews to running tips, training series to race day vlogs - really anything to do with running in general.\n\nJoin me on my running journey as I head towards my 60s!\n\nCome chat to me on  Insta, Facebook and Twitter.",
+            "og:url": "https://www.youtube.com/@runwithwoody",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://yt3.googleusercontent.com/whfdlW0RmKZaDy3AkbOTqSiqfPUvec9JbSmo4J-ZtX55IyLHaygB06KZxMBokk3jM9qIBUGF9cU=s900-c-k-c0x00ffffff-no-rj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "nature or bust – Journal of a Health Junkie",
+      "htmlTitle": "nature or \u003cb\u003ebust\u003c/b\u003e – Journal of a Health Junkie",
+      "link": "https://natureorbust.wordpress.com/",
+      "displayLink": "natureorbust.wordpress.com",
+      "snippet": "A 50km loop from Laguna Tortuguero in Cabo Rojo to Hacienda La Esperanza in Manatí, Puerto Rico. Turn by turn directions and route file is located at Fastest ...",
+      "htmlSnippet": "A \u003cb\u003e50km\u003c/b\u003e loop from Laguna Tortuguero in Cabo Rojo to Hacienda La Esperanza in Manatí, Puerto Rico. Turn by turn directions and route file is located at Fastest&nbsp;...",
+      "formattedUrl": "https://natureorbust.wordpress.com/",
+      "htmlFormattedUrl": "https://natureor\u003cb\u003ebust\u003c/b\u003e.wordpress.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWFd3H4RHfOldxeesuf5INtso9lDvoaCpBocXJaRRmC-FLpHMaF4tw1Uk&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://s0.wp.com/i/blank.jpg",
+            "og:type": "website",
+            "fb:app_id": "249643311490",
+            "og:site_name": "nature or bust",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "nature or bust",
+            "og:locale": "en_US",
+            "og:url": "https://natureorbust.wordpress.com/",
+            "og:description": "Journal of a Health Junkie"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://s0.wp.com/i/blank.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Motor mount screwslots bust - esk8.news: DIY Electric Skateboard ...",
+      "htmlTitle": "Motor mount screwslots \u003cb\u003ebust\u003c/b\u003e - esk8.news: DIY Electric Skateboard ...",
+      "link": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812",
+      "displayLink": "forum.esk8.news",
+      "snippet": "Dec 21, 2019 ... Heard a rattle noise and vibration as I hit the brakes descending a steep as f**k hill (seriously steep) doing approx. 50km/h and I glanced ...",
+      "htmlSnippet": "Dec 21, 2019 \u003cb\u003e...\u003c/b\u003e Heard a rattle noise and vibration as I hit the brakes descending a steep as f**k hill (seriously steep) doing approx. \u003cb\u003e50km\u003c/b\u003e/h and I glanced&nbsp;...",
+      "formattedUrl": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812",
+      "htmlFormattedUrl": "https://forum.esk8.news/t/motor-mount-screwslots-\u003cb\u003ebust\u003c/b\u003e/15812",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpXgNFyhMxN9MH2nJM5ndDtDZl8Dlisdl1nbt5G1j_VYSraJsVmMn-Pk&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://forum.esk8.news/uploads/default/original/1X/13910aabcb49f18608d13c733d625d002b47d0ec.png"
+          }
+        ],
+        "person": [
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "pookybear",
+            "url": "pookybear"
+          },
+          {
+            "name": "Skunk",
+            "url": "Skunk"
+          },
+          {
+            "name": "pookybear",
+            "url": "pookybear"
+          },
+          {
+            "name": "Skunk",
+            "url": "Skunk"
+          },
+          {
+            "name": "pookybear",
+            "url": "pookybear"
+          },
+          {
+            "name": "pookybear",
+            "url": "pookybear"
+          },
+          {
+            "name": "torqueboards",
+            "url": "torqueboards"
+          },
+          {
+            "name": "torqueboards",
+            "url": "torqueboards"
+          },
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "Skunk",
+            "url": "Skunk"
+          },
+          {
+            "name": "Skunk",
+            "url": "Skunk"
+          },
+          {
+            "name": "torqueboards",
+            "url": "torqueboards"
+          },
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "torqueboards",
+            "url": "torqueboards"
+          },
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "Swish",
+            "url": "Swish"
+          },
+          {
+            "name": "Skunk",
+            "url": "Skunk"
+          },
+          {
+            "name": "pookybear",
+            "url": "pookybear"
+          }
+        ],
+        "organization": [
+          {
+            "name": "esk8.news"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/CommentAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/optimized/3X/d/8/d804c11d98d195959b4e866d3fa94080c43f0b9b_2_768x1024.jpeg",
+            "theme-color": "#111111",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "Motor mount screwslots bust",
+            "article:published_time": "2019-12-21T05:05:37+00:00",
+            "og:site_name": "esk8.news: DIY Electric Skateboard Forums",
+            "twitter:url": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812",
+            "og:title": "Motor mount screwslots bust",
+            "og:description": "Heard a rattle noise and vibration as I hit the brakes descending a steep as f**k hill (seriously steep) doing approx. 50km/h and I glanced down and noticed the motor at an angle and realised the board wouldn’t slow down.  Luckily had a long view ahead with plenty of run off so I just put my foot down once going slow enough not to speed wobble one legged and came to a safe stop.  Pant crapping moment, but after inspecting the motor I realised it had pulled the screws through the mount.  Anyone k...",
+            "twitter:image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/optimized/3X/d/8/d804c11d98d195959b4e866d3fa94080c43f0b9b_2_768x1024.jpeg",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover",
+            "twitter:description": "Heard a rattle noise and vibration as I hit the brakes descending a steep as f**k hill (seriously steep) doing approx. 50km/h and I glanced down and noticed the motor at an angle and realised the board wouldn’t slow down.  Luckily had a long view ahead with plenty of run off so I just put my foot down once going slow enough not to speed wobble one legged and came to a safe stop.  Pant crapping moment, but after inspecting the motor I realised it had pulled the screws through the mount.  Anyone k...",
+            "og:url": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/original/3X/d/8/d804c11d98d195959b4e866d3fa94080c43f0b9b.jpeg",
+            "datemodified": "2019-12-21T05:05:37Z",
+            "articlesection": "General Discussion",
+            "position": "1",
+            "text": "Heard a rattle noise and vibration as I hit the brakes descending a steep as f**k hill (seriously steep) doing approx. 50km/h and I glanced down and noticed the motor at an angle and realised...",
+            "headline": "Motor mount screwslots bust",
+            "url": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812",
+            "datepublished": "2019-12-21T05:05:37Z",
+            "mainentityofpage": "https://forum.esk8.news/t/motor-mount-screwslots-bust/15812"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2019-12-21T05:11:45Z",
+            "position": "2",
+            "text": "@torqueboards",
+            "datepublished": "2019-12-21T05:11:45Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:12:29Z",
+            "position": "3",
+            "text": "What Hardware were you using?",
+            "datepublished": "2019-12-21T05:12:29Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:15:13Z",
+            "position": "4",
+            "text": "He’s got sum mAd DopE gorilla Grip yO. You must have torqued the screw down pretty deep. Were you using a tool when you were tightening the screws down?",
+            "datepublished": "2019-12-21T05:15:13Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:15:54Z",
+            "position": "5",
+            "text": "I’m curious what type of head bolt was used",
+            "datepublished": "2019-12-21T05:15:54Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:16:54Z",
+            "position": "6",
+            "text": "Same. You usually just put a dab of red loctite and screw it tight enough. No need to torque it down. Just let it cure. It shouldn’t move",
+            "datepublished": "2019-12-21T05:16:54Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:17:48Z",
+            "position": "7",
+            "text": "It could also be that the screw was loose and it was rattling and shaving the slots.",
+            "datepublished": "2019-12-21T05:17:48Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:18:58Z",
+            "position": "8",
+            "text": "Oh wow. That’s pretty bad. We can send a new one over just pay for shipping. Could be loose bolt, bolted too tight (but I don’t think that’s usually an issue) would take a ton of effort...",
+            "datepublished": "2019-12-21T05:18:58Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:19:42Z",
+            "position": "9",
+            "text": "Have you checked the other side to see if it’s similar?",
+            "datepublished": "2019-12-21T05:19:42Z"
+          },
+          {
+            "image": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/original/3X/5/5/55b3a02c55bbb0500eca590f43e3222d0077441c.jpeg",
+            "datemodified": "2019-12-21T05:19:59Z",
+            "position": "10",
+            "text": "I used the small cap heads from the mount package - used blue loctite but then after a couple rides the belt was going loose and realised the motor had shift forward towards the wheels. Re...",
+            "datepublished": "2019-12-21T05:19:59Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:21:25Z",
+            "position": "11",
+            "text": "How much Loctite and how long did you let it cure?",
+            "datepublished": "2019-12-21T05:21:25Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:22:02Z",
+            "position": "12",
+            "text": "I ask because a LOT of people use way to much and then don’t let it sit long enough.",
+            "datepublished": "2019-12-21T05:22:02Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:22:15Z",
+            "position": "13",
+            "text": "Yeah, looks either over-tightened and/or loose overtime.",
+            "datepublished": "2019-12-21T05:22:15Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:22:33Z",
+            "position": "14",
+            "text": "I mean, I’m an aggressive rider in a town of 30% + hills everywhere and I ride as fast as I can. Maybe just my weight of 82kg and rough riding contributed? I have built and rebuilt go karts,...",
+            "datepublished": "2019-12-21T05:22:33Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:23:38Z",
+            "position": "15",
+            "text": "I’d consider that average but that plus a loose bolt that’s threaded. It can easily eat up that motor mount overtime. First I’ve seen though.",
+            "datepublished": "2019-12-21T05:23:38Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:29:59Z",
+            "position": "16",
+            "text": "Red better than blue?",
+            "datepublished": "2019-12-21T05:29:59Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:30:38Z",
+            "position": "17",
+            "text": "there were definitely a couple times that I noticed a loose screw over time. And thats not just talking about me.",
+            "datepublished": "2019-12-21T05:30:38Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:31:28Z",
+            "position": "18",
+            "text": "I’d say, a little dab? and then sometimes overnight, but hey, being honest, i also went for a ride within 4-6 hours…",
+            "datepublished": "2019-12-21T05:31:28Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:32:00Z",
+            "position": "19",
+            "text": "Yeah if you don’t give it a full 24 hours it’s basically useless. I honestly try to wait 36 on problematic parts There’s a whole lot of vibrations being transferred into those tiny little...",
+            "datepublished": "2019-12-21T05:32:00Z"
+          },
+          {
+            "datemodified": "2019-12-21T05:49:21Z",
+            "position": "20",
+            "text": "I use red since it’s stronger. Just a preference. I went for a ride last weekend. I remembered using blue loctite on my wheel pulley (aluminum) and it got loose during mid ride. Luckily,...",
+            "datepublished": "2019-12-21T05:49:21Z"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://esk8-news-objects.s3.dualstack.us-east-1.amazonaws.com/uploads/optimized/3X/d/8/d804c11d98d195959b4e866d3fa94080c43f0b9b_2_768x1024.jpeg"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "next page →",
+            "url": "next page →"
+          },
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "FAQ/Guidelines",
+            "url": "FAQ/Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - From zero to paragliding xc solo ... - Paragliding Forum",
+      "htmlTitle": "View topic - From zero to paragliding xc solo ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p649387",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Aug 19, 2022 ... A highly talented person is able to do big flights after 1 year (\u003e50 km). ... 50k or Bust too) 4. you'll not ponce about trying to do other things ...",
+      "htmlSnippet": "Aug 19, 2022 \u003cb\u003e...\u003c/b\u003e A highly talented person is able to do big flights after 1 year (&gt;50 km). ... \u003cb\u003e50k or Bust\u003c/b\u003e too) 4. you&#39;ll not ponce about trying to do other things&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p649387",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p649387",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Those who have reached 50k: how long did you spend writing every ...",
+      "htmlTitle": "Those who have reached \u003cb\u003e50k\u003c/b\u003e: how long did you spend writing every ...",
+      "link": "https://www.reddit.com/r/nanowrimo/comments/77v025/those_who_have_reached_50k_how_long_did_you_spend/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 21, 2017 ... ... 50k or bust. Upvote 6. Downvote Reply reply. Award ... 50k words in a month is about 1600 words per day. At a relatively slow pace of 60 WPM ...",
+      "htmlSnippet": "Oct 21, 2017 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003e50k or bust\u003c/b\u003e. Upvote 6. Downvote Reply reply. Award ... 50k words in a month is about 1600 words per day. At a relatively slow pace of 60 WPM&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../those_who_have_reached_50k_how_long_did_...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../those_who_have_reached_50k_how_long_did_...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/77v025",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/nanowrimo on Reddit: Those who have reached 50k: how long did you spend writing every day?",
+            "og:site_name": "Reddit",
+            "og:title": "r/nanowrimo on Reddit: Those who have reached 50k: how long did you spend writing every day?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/a-nna - 36 votes and 86 comments",
+            "twitter:image": "https://share.redd.it/preview/post/77v025",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/nanowrimo/comments/77v025/those_who_have_reached_50k_how_long_did_you_spend/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/77v025"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Superior Spring Trail Race Schedule of Events | Superior Spring ...",
+      "htmlTitle": "Superior Spring Trail Race Schedule of Events | Superior Spring ...",
+      "link": "https://www.superiorspringtrailrace.com/schedule-of-events/",
+      "displayLink": "www.superiorspringtrailrace.com",
+      "snippet": "50KM Packet Pickup and Runner Check-in – runners must check back in on race ... Shuttle bust to start of 12.5K departs. 8:35 AM First 50K runner ...",
+      "htmlSnippet": "\u003cb\u003e50KM\u003c/b\u003e Packet Pickup and Runner Check-in – runners must check back in on race ... Shuttle \u003cb\u003ebust\u003c/b\u003e to start of 12.5K departs. 8:35 AM First \u003cb\u003e50K\u003c/b\u003e runner&nbsp;...",
+      "formattedUrl": "https://www.superiorspringtrailrace.com/schedule-of-events/",
+      "htmlFormattedUrl": "https://www.superiorspringtrailrace.com/schedule-of-events/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:type": "article",
+            "article:published_time": "2016-05-13T21:50:56+00:00",
+            "twitter:card": "summary",
+            "twitter:title": "Superior Spring Trail Race Schedule of Events",
+            "og:site_name": "Superior Spring Trail Race",
+            "article:author:last_name": "Storkamp",
+            "twitter:url": "https://www.superiorspringtrailrace.com/schedule-of-events/",
+            "profile:username": "Rocksteady",
+            "og:title": "Superior Spring Trail Race Schedule of Events",
+            "og:updated_time": "2021-12-03T19:33:01-06:00",
+            "og:description": "Superior Spring Trail Race Schedule of Events",
+            "profile:last_name": "Storkamp",
+            "article:author:first_name": "John",
+            "article:modified_time": "2021-12-04T01:33:01+00:00",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            "twitter:description": "Superior Spring Trail Race Schedule of Events",
+            "twitter:partner": "ogwp",
+            "og:locale": "en_US",
+            "article:author:username": "Rocksteady",
+            "profile:first_name": "John",
+            "og:url": "https://www.superiorspringtrailrace.com/schedule-of-events/"
+          }
+        ],
+        "webpage": [
+          {
+            "datemodified": "2021-12-04T01:33:01+00:00",
+            "author": "Rocksteady",
+            "name": "Superior Spring Trail Race Schedule of Events",
+            "description": "Superior Spring Trail Race Schedule of Events",
+            "datepublished": "2016-05-13"
+          }
+        ]
+      }
+    }
+  ]
+}

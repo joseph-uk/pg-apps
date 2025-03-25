@@ -1,0 +1,436 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - FlyXC",
+        "totalResults": "10900",
+        "searchTerms": "FlyXC",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - FlyXC",
+        "totalResults": "10900",
+        "searchTerms": "FlyXC",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.291742,
+    "formattedSearchTime": "0.29",
+    "totalResults": "10900",
+    "formattedTotalResults": "10,900"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "flyXC",
+      "htmlTitle": "\u003cb\u003eflyXC\u003c/b\u003e",
+      "link": "https://flyxc.app/",
+      "displayLink": "flyxc.app",
+      "snippet": "flyXC is a one stop shop web app for paraglider pilots. You can plan, visualize, and track your flights with the most popular live tracking platforms ...",
+      "htmlSnippet": "\u003cb\u003eflyXC\u003c/b\u003e is a one stop shop web app for paraglider pilots. You can plan, visualize, and track your flights with the most popular live tracking platforms&nbsp;...",
+      "formattedUrl": "https://flyxc.app/",
+      "htmlFormattedUrl": "https://\u003cb\u003eflyxc\u003c/b\u003e.app/",
+      "pagemap": {
+        "metatags": [
+          {
+            "theme-color": "#0054e9",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - FlyXc.app: plan, track, and visualize ... - Paragliding Forum",
+      "htmlTitle": "View topic - FlyXc.app: plan, track, and visualize ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=98185",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Nov 1, 2019 ... A web app to visualize your flights (igc, gpx, kml), plan your flights by integrating XCPlanner functionalities (Thank to Tom Payne), register your satellite ...",
+      "htmlSnippet": "Nov 1, 2019 \u003cb\u003e...\u003c/b\u003e A web app to visualize your flights (igc, gpx, kml), plan your flights by integrating XCPlanner functionalities (Thank to Tom Payne), register your satellite&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=98185",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=98185",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "flyXC",
+      "htmlTitle": "\u003cb\u003eflyXC\u003c/b\u003e",
+      "link": "https://flyxc.app/devices",
+      "displayLink": "flyxc.app",
+      "snippet": "flyXC records your name, email address, tracker address and the position of your tracker during the last 24 hours only. While you need a google account to login ...",
+      "htmlSnippet": "\u003cb\u003eflyXC\u003c/b\u003e records your name, email address, tracker address and the position of your tracker during the last 24 hours only. While you need a google account to login&nbsp;...",
+      "formattedUrl": "https://flyxc.app/devices",
+      "htmlFormattedUrl": "https://\u003cb\u003eflyxc\u003c/b\u003e.app/devices",
+      "pagemap": {
+        "metatags": [
+          {
+            "theme-color": "#0054e9",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - FlyXc.app: plan, track, and visualize ... - Paragliding Forum",
+      "htmlTitle": "View topic - FlyXc.app: plan, track, and visualize ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=98185&start=50",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Aug 25, 2020 ... 3d in flyxc is now live. You can check an example flight. I am really excited about it. FlyXC (or VisuGPS as it was named before) used to support 3D based on ...",
+      "htmlSnippet": "Aug 25, 2020 \u003cb\u003e...\u003c/b\u003e 3d in \u003cb\u003eflyxc\u003c/b\u003e is now live. You can check an example flight. I am really excited about it. \u003cb\u003eFlyXC\u003c/b\u003e (or VisuGPS as it was named before) used to support 3D based on&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=98185&start=50",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=98185&amp;start=50",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "vicb/flyXC: One stop shop web app for paraglider pilots ... - GitHub",
+      "htmlTitle": "vicb/flyXC: One stop shop web app for paraglider pilots ... - GitHub",
+      "link": "https://github.com/vicb/flyXC",
+      "displayLink": "github.com",
+      "snippet": "vicb/flyXC · flyXC.app. Visualize your flights; Plan your flights · flyXC Soundings. flyXC sounding is a plugin to display soundings customized for paraglider ...",
+      "htmlSnippet": "vicb/\u003cb\u003eflyXC\u003c/b\u003e &middot; \u003cb\u003eflyXC\u003c/b\u003e.app. Visualize your flights; Plan your flights &middot; \u003cb\u003eflyXC\u003c/b\u003e Soundings. \u003cb\u003eflyXC\u003c/b\u003e sounding is a plugin to display soundings customized for paraglider&nbsp;...",
+      "formattedUrl": "https://github.com/vicb/flyXC",
+      "htmlFormattedUrl": "https://github.com/vicb/\u003cb\u003eflyXC\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSil2pS5PB7_Cvi67HSETSPjDxIgjSxfbu5Gmx0rrgYLLdX5sIJsGyLrfo&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "vicb",
+            "name": "flyXC",
+            "text": "flyXC.app Visualize your flights Plan your flights Add your live trackers (inreach, spot, skylines, flyme, flymaster, ogn, zoleo) to the map. See the README for details. flyXC Soundings flyXC..."
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/vicb/flyXC",
+            "og:image": "https://opengraph.githubassets.com/a3a4137a0706821dd5a78201dcb7a93bb6d5e5e55bee9ffd581effd93f5a59e6/vicb/flyXC",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:218548372",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "release": "1d96ab3fee2cc6bae80f4498d72908c1115f4020",
+            "html-safe-nonce": "1130094c17f034ca6926d7fbd45a93e1b83f8c8994b7ed0563536e0a14d2683e",
+            "expected-hostname": "github.com",
+            "og:description": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "twitter:image": "https://opengraph.githubassets.com/a3a4137a0706821dd5a78201dcb7a93bb6d5e5e55bee9ffd581effd93f5a59e6/vicb/flyXC",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "vicb",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJGNjhBOjJBNkRFQTpBNDQ2Mzg6RUFDQTQzOjY3RTE3NEIzIiwidmlzaXRvcl9pZCI6IjgwMjI1NDI5MjI1ODI5NDY5OTUiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==",
+            "github-keyboard-shortcuts": "repository,copilot",
+            "octolytics-dimension-repository_id": "218548372",
+            "octolytics-dimension-repository_network_root_nwo": "vicb/flyXC",
+            "twitter:title": "GitHub - vicb/flyXC: One stop shop web app for paraglider pilots. Plan, visualize, and track your flights.",
+            "og:image:alt": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "og:type": "object",
+            "og:title": "GitHub - vicb/flyXC: One stop shop web app for paraglider pilots. Plan, visualize, and track your flights.",
+            "visitor-hmac": "38522cf4d01ce8884661eef146354c61fab768158bba5d4cf9e743f31c792524",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "disambiguate",
+            "request-id": "F68A:2A6DEA:A44638:EACA43:67E174B3",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/vicb/flyXC git https://github.com/vicb/flyXC.git",
+            "octolytics-dimension-user_id": "248818",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "218548372",
+            "octolytics-dimension-repository_nwo": "vicb/flyXC",
+            "viewport": "width=device-width",
+            "twitter:description": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "route-controller": "files",
+            "current-catalog-service-hash": "f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb",
+            "og:url": "https://github.com/vicb/flyXC"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://opengraph.githubassets.com/a3a4137a0706821dd5a78201dcb7a93bb6d5e5e55bee9ffd581effd93f5a59e6/vicb/flyXC"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for flyxc.app",
+      "htmlTitle": "Profile for \u003cb\u003eflyxc\u003c/b\u003e.app",
+      "link": "https://www.facebook.com/flyxcapp/",
+      "displayLink": "www.facebook.com",
+      "snippet": "A powerful tool used to get a fast overview of the day's thermal conditions. For every 30 minute interval, a potentially flyable distance is calculated.",
+      "htmlSnippet": "A powerful tool used to get a fast overview of the day&#39;s thermal conditions. For every 30 minute interval, a potentially flyable distance is calculated.",
+      "formattedUrl": "https://www.facebook.com/flyxcapp/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eflyxc\u003c/b\u003eapp/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_RFoh047GXARFC4L_1y29iDtpzYRh-MigSl19Onz8DYaVFYDbEIkp48Q&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/61557515355710",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61557515355710",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/61557515355710",
+            "og:description": "flyxc.app. 105 likes · 2 talking about this. One stop shop app for paraglider pilots\nPlan, visualize, track your flights",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61557515355710",
+            "twitter:image:alt": "flyxc.app",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "flyxc.app",
+            "twitter:title": "flyxc.app",
+            "al:ios:app_name": "Facebook",
+            "og:title": "flyxc.app",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/61557515355710",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "flyxc.app. 105 likes · 2 talking about this. One stop shop app for paraglider pilots\nPlan, visualize, track your flights",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/flyxcapp/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61557515355710"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "flyXC/libs/windy-sounding/README.md at master · vicb/flyXC · GitHub",
+      "htmlTitle": "\u003cb\u003eflyXC\u003c/b\u003e/libs/windy-sounding/README.md at master · vicb/\u003cb\u003eflyXC\u003c/b\u003e · GitHub",
+      "link": "https://github.com/vicb/flyxc/blob/master/libs/windy-sounding/README.md",
+      "displayLink": "github.com",
+      "snippet": "The \"flyXC soundings\" plugin displays soundings customized for paraglider pilots on windy.com ... Sounding on a computer.",
+      "htmlSnippet": "The &quot;\u003cb\u003eflyXC\u003c/b\u003e soundings&quot; plugin displays soundings customized for paraglider pilots on windy.com ... Sounding on a computer.",
+      "formattedUrl": "https://github.com/vicb/flyxc/blob/master/libs/windy.../README.md",
+      "htmlFormattedUrl": "https://github.com/vicb/\u003cb\u003eflyxc\u003c/b\u003e/blob/master/libs/windy.../README.md",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKcYZg6o4xwm5Pu8pOHr-_oj6q391uPjpsZADaUQ3D3CzQQnaxDbY9v4M8&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "vicb",
+            "name": "flyXC",
+            "text": "flyXC soundings The \"flyXC soundings\" plugin displays soundings customized for paraglider pilots on windy.com. Sounding on a computer Sounding on a mobile phone History I learned to fly in..."
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/vicb/flyxc/blob/master/libs/windy-sounding/README.md",
+            "og:image": "https://opengraph.githubassets.com/2cd2b30e764883c71243ec5eb500280a96718f3695a96ed16140e40a6c40e661/vicb/flyXC",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:218548372",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "html-safe-nonce": "2fc192e723e4f53dd64edf0cf21a00273460616c299effd27ac197ef705f42fc",
+            "expected-hostname": "github.com",
+            "og:description": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "twitter:image": "https://opengraph.githubassets.com/2cd2b30e764883c71243ec5eb500280a96718f3695a96ed16140e40a6c40e661/vicb/flyXC",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "vicb",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository/blob/*name(/*path)",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI5QzM2OjJGQzBFOjk2NDgyQTpDMUVBNzE6NjdCQUFENEQiLCJ2aXNpdG9yX2lkIjoiNDEzODExMTgxMDczNTM1MzE2NSIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+            "github-keyboard-shortcuts": "repository,source-code,file-tree,copilot",
+            "octolytics-dimension-repository_id": "218548372",
+            "octolytics-dimension-repository_network_root_nwo": "vicb/flyXC",
+            "twitter:title": "flyXC/libs/windy-sounding/README.md at master · vicb/flyXC",
+            "og:image:alt": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "og:type": "object",
+            "og:title": "flyXC/libs/windy-sounding/README.md at master · vicb/flyXC",
+            "visitor-hmac": "9cdc9a28a79b0af933683ab2b5c1d4f42009cfb252a65be8dfb9de3fc72c1c73",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "show",
+            "request-id": "9C36:2FC0E:96482A:C1EA71:67BAAD4D",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e/blob/show",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/vicb/flyXC git https://github.com/vicb/flyXC.git",
+            "octolytics-dimension-user_id": "248818",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "218548372",
+            "octolytics-dimension-repository_nwo": "vicb/flyXC",
+            "viewport": "width=device-width",
+            "twitter:description": "One stop shop web app for paraglider pilots. Plan, visualize, and track your flights. - vicb/flyXC",
+            "route-controller": "blob",
+            "current-catalog-service-hash": "f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb",
+            "og:url": "https://github.com/vicb/flyXC/blob/master/libs/windy-sounding/README.md"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://opengraph.githubassets.com/2cd2b30e764883c71243ec5eb500280a96718f3695a96ed16140e40a6c40e661/vicb/flyXC"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "flyxc.app - The \"flyXC soundings\" v4.0.0 plugin for... | Facebook",
+      "htmlTitle": "\u003cb\u003eflyxc\u003c/b\u003e.app - The &quot;\u003cb\u003eflyXC\u003c/b\u003e soundings&quot; v4.0.0 plugin for... | Facebook",
+      "link": "https://www.facebook.com/flyxcapp/posts/the-flyxc-soundings-v400-plugin-for-windycom-was-released-yesterday-you-will-not/122139907706250511/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Jul 16, 2024 ... While the sounding plugin (as well as flyxc.app) is open source, it's nice to get some money to compensate the hours spent developing it Do not ...",
+      "htmlSnippet": "Jul 16, 2024 \u003cb\u003e...\u003c/b\u003e While the sounding plugin (as well as \u003cb\u003eflyxc\u003c/b\u003e.app) is open source, it&#39;s nice to get some money to compensate the hours spent developing it Do not&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/flyxcapp/...flyxc.../122139907706250511/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eflyxc\u003c/b\u003eapp/...\u003cb\u003eflyxc\u003c/b\u003e.../122139907706250511/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqyd7TftN-_3Yq1ZNKO9cnWpXAjz7kmLZ_tx6wgYqxf23MT9IGg617jEt&s",
+            "width": "151",
+            "height": "334"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122139904724250511",
+            "og:type": "video.other",
+            "og:image:alt": "flyxc.app",
+            "twitter:card": "summary",
+            "twitter:title": "flyxc.app",
+            "theme-color": "#FFFFFF",
+            "og:title": "flyxc.app",
+            "google": "notranslate",
+            "og:description": "The \"flyXC soundings\" v4.0.0 plugin for Windy.com was released yesterday 🥳\n\nYou will notice quite a few UI changes on the desktop version and even more in the mobile version. You will find some...",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122139904724250511",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "flyxc.app",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "The \"flyXC soundings\" v4.0.0 plugin for Windy.com was released yesterday 🥳\n\nYou will notice quite a few UI changes on the desktop version and even more in the mobile version. You will find some...",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.106:2741",
+            "og:url": "https://www.facebook.com/flyxcapp/posts/the-flyxc-soundings-v400-plugin-for-windycom-was-released-yesterday-you-will-not/122139907706250511/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122139904724250511"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "flyxc.app XC Tracking Tool",
+      "htmlTitle": "\u003cb\u003eflyxc\u003c/b\u003e.app XC Tracking Tool",
+      "link": "https://groups.google.com/g/rochesterareaflyers/c/7-wVsFGwbhQ",
+      "displayLink": "groups.google.com",
+      "snippet": "May 3, 2022 ... FREE easy way to track pilots going XC for safety and ease of retrieval. It's also got a bunch of other functionality like XCplanner and can show airspaces.",
+      "htmlSnippet": "May 3, 2022 \u003cb\u003e...\u003c/b\u003e FREE easy way to track pilots going XC for safety and ease of retrieval. It&#39;s also got a bunch of other functionality like XCplanner and can show airspaces.",
+      "formattedUrl": "https://groups.google.com/g/rochesterareaflyers/c/7-wVsFGwbhQ",
+      "htmlFormattedUrl": "https://groups.google.com/g/rochesterareaflyers/c/7-wVsFGwbhQ",
+      "pagemap": {
+        "metatags": [
+          {
+            "application-name": "Google Groups",
+            "referrer": "origin",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "apple-mobile-web-app-title": "Google Groups",
+            "mobile-web-app-capable": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "FlyXC - Logfly",
+      "htmlTitle": "\u003cb\u003eFlyXC\u003c/b\u003e - Logfly",
+      "link": "https://www.logfly.org/logfly6/en/doc/logbook/flyxc/",
+      "displayLink": "www.logfly.org",
+      "snippet": "FlyXC requires loading the selected track on logfly.org followed by a call to the FlyXC server. The addresses of these servers are set and can be changed if ...",
+      "htmlSnippet": "\u003cb\u003eFlyXC\u003c/b\u003e requires loading the selected track on logfly.org followed by a call to the \u003cb\u003eFlyXC\u003c/b\u003e server. The addresses of these servers are set and can be changed if&nbsp;...",
+      "formattedUrl": "https://www.logfly.org/logfly6/en/doc/logbook/flyxc/",
+      "htmlFormattedUrl": "https://www.logfly.org/logfly6/en/doc/logbook/\u003cb\u003eflyxc\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "theme-color": "#2094f3",
+            "viewport": "width=device-width,initial-scale=1"
+          }
+        ]
+      }
+    }
+  ]
+}

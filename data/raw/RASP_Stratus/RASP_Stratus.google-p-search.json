@@ -1,0 +1,1393 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - RASP - Stratus",
+        "totalResults": "41200",
+        "searchTerms": "RASP - Stratus",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - RASP - Stratus",
+        "totalResults": "41200",
+        "searchTerms": "RASP - Stratus",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.322804,
+    "formattedSearchTime": "0.32",
+    "totalResults": "41200",
+    "formattedTotalResults": "41,200"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Untitled",
+      "htmlTitle": "Untitled",
+      "link": "https://rasp.stratus.org.uk/app/vb/viewer-basic.php",
+      "displayLink": "rasp.stratus.org.uk",
+      "formattedUrl": "https://rasp.stratus.org.uk/app/vb/viewer-basic.php",
+      "htmlFormattedUrl": "https://\u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk/app/vb/viewer-basic.php"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "RASP Weather (@RASPWeather) / X",
+      "htmlTitle": "\u003cb\u003eRASP\u003c/b\u003e Weather (@RASPWeather) / X",
+      "link": "https://x.com/raspweather?lang=en",
+      "displayLink": "x.com",
+      "snippet": "RASP Weather. @RASPWeather. Creating RASP soaring data for the UK - Providing UK soaring forecasts. rasp.stratus.org.uk Joined April 2013. 141 Following · 930 ...",
+      "htmlSnippet": "RASP Weather. @RASPWeather. Creating RASP soaring data for the UK - Providing UK soaring forecasts. \u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk Joined April 2013. 141 Following &middot; 930&nbsp;...",
+      "formattedUrl": "https://x.com/raspweather?lang=en",
+      "htmlFormattedUrl": "https://x.com/\u003cb\u003erasp\u003c/b\u003eweather?lang=en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnjGaO7GaBLimnPHbOx5LTiU3hBU3DBhlzocrQ9owRkJHKBMrHpx3I5U&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "imageobject": [
+          {
+            "contenturl": "https://pbs.twimg.com/media/GOsVJNtXwAE6dMC.jpg",
+            "width": "1608",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GOsVJNtXwAE6dMC?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GOmvaHSXkAAMPeI.jpg",
+            "width": "2026",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GOmvaHSXkAAMPeI?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GOmvaHNW0AEa1em.jpg",
+            "width": "2042",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GOmvaHNW0AEa1em?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GK9NCUzXgAA_fq7.jpg",
+            "width": "1472",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GK9NCUzXgAA_fq7?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/F103JBZXwAY6Qrh.jpg",
+            "width": "900",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/F103JBZXwAY6Qrh?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Fya5XFrXsAQS5PH.jpg",
+            "width": "2048",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Fya5XFrXsAQS5PH?format=jpg&name=thumb"
+          }
+        ],
+        "person": [
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          },
+          {
+            "identifier": "1349703528",
+            "givenname": "RASP Weather",
+            "additionalname": "RASPWeather"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1806259729888416017/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1806259729888416017/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1806259729888416017/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1806259729888416017"
+          },
+          {
+            "userinteractioncount": "212",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1795545915119264154/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1795545915119264154/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1795545915119264154/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1795545915119264154"
+          },
+          {
+            "userinteractioncount": "278",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1795552129265844389/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1795552129265844389/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1795552129265844389/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1795552129265844389"
+          },
+          {
+            "userinteractioncount": "177",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1795158799281479866/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1795158799281479866/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1795158799281479866/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1795158799281479866"
+          },
+          {
+            "userinteractioncount": "193",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1778725132178977117/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1778725132178977117/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1778725132178977117/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1778725132178977117"
+          },
+          {
+            "userinteractioncount": "198",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1764587278590939219/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1764587278590939219/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1764587278590939219/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1764587278590939219"
+          },
+          {
+            "userinteractioncount": "200",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1764210070626161128/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1764210070626161128/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1764210070626161128/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1764210070626161128"
+          },
+          {
+            "userinteractioncount": "270",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1739189416747323447/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1739189416747323447/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1739189416747323447/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1739189416747323447"
+          },
+          {
+            "userinteractioncount": "261",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1705137680479047882/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1705137680479047882/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1705137680479047882/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1705137680479047882"
+          },
+          {
+            "userinteractioncount": "271",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1705114785673584851/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1705114785673584851/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1705114785673584851/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1705114785673584851"
+          },
+          {
+            "userinteractioncount": "247",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1683562467962617858/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1683562467962617858/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1683562467962617858/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1683562467962617858"
+          },
+          {
+            "userinteractioncount": "324",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1683163303747411969/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1683163303747411969/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1683163303747411969/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1683163303747411969"
+          },
+          {
+            "userinteractioncount": "339",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1683423060462895105/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1683423060462895105/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1683423060462895105/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1683423060462895105"
+          },
+          {
+            "userinteractioncount": "160",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1668224568236953600/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1668224568236953600/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1668224568236953600/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1668224568236953600"
+          },
+          {
+            "userinteractioncount": "276",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1655148235609067520/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1655148235609067520/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1655148235609067520/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1655148235609067520"
+          },
+          {
+            "userinteractioncount": "446",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1657798692588363777/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1657798692588363777/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1657798692588363777/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1657798692588363777"
+          },
+          {
+            "userinteractioncount": "239",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1642444521647603717/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1642444521647603717/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1642444521647603717/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1642444521647603717"
+          },
+          {
+            "userinteractioncount": "320",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1634136991443869703/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1634136991443869703/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1634136991443869703/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1634136991443869703"
+          },
+          {
+            "userinteractioncount": "377",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1634188214327033856/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1634188214327033856/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1634188214327033856/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1634188214327033856"
+          },
+          {
+            "userinteractioncount": "222",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1633396367765962752/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1633396367765962752/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1633396367765962752/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1633396367765962752"
+          },
+          {
+            "userinteractioncount": "233",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/RASPWeather/status/1633417933866033152/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/RASPWeather/status/1633417933866033152/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/RASPWeather/status/1633417933866033152/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/RASPWeather/status/1633417933866033152"
+          },
+          {
+            "userinteractioncount": "149",
+            "interactiontype": "https://schema.org/ViewAction"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=333903271",
+            "og:image": "https://pbs.twimg.com/profile_images/1572253546162044929/QYAXyI7x_200x200.jpg",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "og:site_name": "X (formerly Twitter)",
+            "al:ios:app_name": "X",
+            "apple-mobile-web-app-title": "Twitter",
+            "og:title": "RASP Weather (@RASPWeather) on X",
+            "al:android:package": "com.twitter.android",
+            "al:ios:url": "twitter://user?screen_name=RASPWeather",
+            "title": "RASP Weather (@RASPWeather) on X",
+            "og:description": "Creating RASP soaring data for the UK - Providing UK soaring forecasts",
+            "al:ios:app_store_id": "333903271",
+            "facebook-domain-verification": "x6sdcc8b5ju3bh8nbm59eswogvg6t1",
+            "al:android:url": "twitter://user?screen_name=RASPWeather",
+            "fb:app_id": "2231777543",
+            "apple-mobile-web-app-status-bar-style": "white",
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://x.com/RASPWeather",
+            "al:android:app_name": "X"
+          }
+        ],
+        "collection": [
+          {
+            "name": "Profile posts"
+          }
+        ],
+        "creativework": [
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/1sL6byFtCV"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/2NND14M7Nk"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/qoxgdnbLwL"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/Ar5uqwirQC"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/9ffVbBVL3c"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/kpJeshPQZS"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pbs.twimg.com/profile_images/1572253546162044929/QYAXyI7x_200x200.jpg"
+          }
+        ],
+        "socialmediaposting": [
+          {
+            "identifier": "1806259729888416017",
+            "commentcount": "0",
+            "articlebody": "System Update: Due to maintenance elsewhere, there will be reduced functionality for a short while up to and including the the 9th of July. Watch for updates a bit closer to this date on resumption...",
+            "position": "1",
+            "datecreated": "2024-06-27T09:34:12.000Z",
+            "datepublished": "2024-06-27T09:34:12.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1806259729888416017"
+          },
+          {
+            "identifier": "1795545915119264154",
+            "commentcount": "3",
+            "articlebody": "Meteogram update … It is now possible to request a meteogram for any BGA turn point. This can be found here: https://rasp.stratus.org.uk/index.php/custom-meteograms… Forecasts are done...",
+            "position": "2",
+            "datecreated": "2024-05-28T20:01:20.000Z",
+            "datepublished": "2024-05-28T20:01:20.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1795545915119264154"
+          },
+          {
+            "identifier": "1795552129265844389",
+            "commentcount": "0",
+            "articlebody": "Yes … it works fine for me (Win10 laptop with Firefox or Edge and iPad/IOS). I’ll be adding a timer countdown shortly.",
+            "ispartof": "https://twitter.com/RASPWeather/status/1795545915119264154",
+            "position": "3",
+            "datecreated": "2024-05-28T20:26:02.000Z",
+            "datepublished": "2024-05-28T20:26:02.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1795552129265844389"
+          },
+          {
+            "identifier": "1795158799281479866",
+            "commentcount": "0",
+            "articlebody": "Meteogram Update … having had requests for custom meteograms (i.e. any turn point), a working application is now being tested. If all goes well, it should be available in the next week.",
+            "position": "4",
+            "datecreated": "2024-05-27T18:23:04.000Z",
+            "datepublished": "2024-05-27T18:23:04.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1795158799281479866"
+          },
+          {
+            "identifier": "1778725132178977117",
+            "commentcount": "0",
+            "articlebody": "Update on Track Average functions … The code for the graphs on the track have been refreshed and both table and track are now are available is an image",
+            "position": "5",
+            "datecreated": "2024-04-12T10:01:33.000Z",
+            "datepublished": "2024-04-12T10:01:33.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1778725132178977117"
+          },
+          {
+            "identifier": "1764587278590939219",
+            "commentcount": "0",
+            "articlebody": "System Update: The soundings function is now back and working as expected. Do check the date is as expected on the top of the plot. All models should be updated by midday.",
+            "position": "6",
+            "datecreated": "2024-03-04T09:42:46.000Z",
+            "datepublished": "2024-03-04T09:42:46.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1764587278590939219"
+          },
+          {
+            "identifier": "1764210070626161128",
+            "commentcount": "0",
+            "articlebody": "System Update: The soundings function is not working as expected, so has temporary been disabled while the issue is investigated. Target is to be reinstated Monday 4th March.",
+            "position": "7",
+            "datecreated": "2024-03-03T08:43:52.000Z",
+            "datepublished": "2024-03-03T08:43:52.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1764210070626161128"
+          },
+          {
+            "identifier": "1739189416747323447",
+            "commentcount": "0",
+            "articlebody": "Wishing all a Happy Christmas despite the weather today being wet, windy with a bit of snow across parts of Scotland.",
+            "position": "8",
+            "datecreated": "2023-12-25T07:40:44.000Z",
+            "datepublished": "2023-12-25T07:40:44.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1739189416747323447"
+          },
+          {
+            "identifier": "1705137680479047882",
+            "commentcount": "0",
+            "articlebody": "Systems update: The UK 4km and 12km models are now up to date. The viewers for the 2km models are disabled for today until refreshed overnight. The remaining models for Wales, Scotland and...",
+            "position": "9",
+            "datecreated": "2023-09-22T08:31:17.000Z",
+            "datepublished": "2023-09-22T08:31:17.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1705137680479047882"
+          },
+          {
+            "identifier": "1705114785673584851",
+            "commentcount": "0",
+            "articlebody": "Systems update: Due to hosting issues, model runs for Friday 22nd have not completed so all forecasts are out of date. Restarts should complete later today for this evening. Watch for updates...",
+            "position": "10",
+            "datecreated": "2023-09-22T07:00:19.000Z",
+            "datepublished": "2023-09-22T07:00:19.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1705114785673584851"
+          },
+          {
+            "identifier": "1683562467962617858",
+            "commentcount": "1",
+            "articlebody": "Second Monday update. There is a new fix in place for Meteograms so that the wind/rain and cloud is now identified for the entire week. Here’s Lasham for Thursday (it’s currently looking...",
+            "position": "11",
+            "datecreated": "2023-07-24T19:39:06.000Z",
+            "datepublished": "2023-07-24T19:39:06.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1683562467962617858"
+          },
+          {
+            "identifier": "1683163303747411969",
+            "commentcount": "2",
+            "articlebody": "While some maintenance takes place, a few options will not be available until tomorrow (Monday). Watch out for further updates when all functions are back.",
+            "position": "12",
+            "datecreated": "2023-07-23T17:12:57.000Z",
+            "datepublished": "2023-07-23T17:12:57.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1683163303747411969"
+          },
+          {
+            "identifier": "1683423060462895105",
+            "commentcount": "0",
+            "articlebody": "Monday Update. The updates have completed and usual functions are now available.",
+            "ispartof": "https://twitter.com/RASPWeather/status/1683163303747411969",
+            "position": "13",
+            "datecreated": "2023-07-24T10:25:08.000Z",
+            "datepublished": "2023-07-24T10:25:08.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1683423060462895105"
+          },
+          {
+            "identifier": "1668224568236953600",
+            "commentcount": "0",
+            "articlebody": "Mon(+0) high CAPE levels above 3000J today with heavy rain from 16:00 in the indicated areas of England and into mid/North Wales",
+            "position": "14",
+            "datecreated": "2023-06-12T11:51:45.000Z",
+            "datepublished": "2023-06-12T11:51:45.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1668224568236953600"
+          },
+          {
+            "identifier": "1655148235609067520",
+            "commentcount": "2",
+            "articlebody": "Notice of platform and hosting moves: The hosting provider has outlined a data centre move for their hosting services on the 16th of May. It is stated as transparent, but there could be some...",
+            "position": "15",
+            "datecreated": "2023-05-07T09:51:05.000Z",
+            "datepublished": "2023-05-07T09:51:05.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1655148235609067520"
+          },
+          {
+            "identifier": "1657798692588363777",
+            "commentcount": "0",
+            "articlebody": "In an unexpected change, the hosting supplier has now stated they are bringing forward the network change to tonight, Sunday the 14th of May. Access to the RASP UI will be limited from 18:00...",
+            "ispartof": "https://twitter.com/RASPWeather/status/1655148235609067520",
+            "position": "16",
+            "datecreated": "2023-05-14T17:23:03.000Z",
+            "datepublished": "2023-05-14T17:23:03.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1657798692588363777"
+          },
+          {
+            "identifier": "1642444521647603717",
+            "commentcount": "1",
+            "articlebody": "The ‘Track Average’ page is unavailable due to a configuration issue. Apologies for this. The target is to have resolved this coming week, so watch here for an update when available again.",
+            "position": "17",
+            "datecreated": "2023-04-02T08:31:03.000Z",
+            "datepublished": "2023-04-02T08:31:03.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1642444521647603717"
+          },
+          {
+            "identifier": "1634136991443869703",
+            "commentcount": "1",
+            "articlebody": "Systems update 10/3/23 - after hosting migration a few days ago, some DNS changes are required today that may affect mapping and viewers. Graphs are working normally. Watch for an update later...",
+            "position": "18",
+            "datecreated": "2023-03-10T10:19:54.000Z",
+            "datepublished": "2023-03-10T10:19:54.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1634136991443869703"
+          },
+          {
+            "identifier": "1634188214327033856",
+            "commentcount": "0",
+            "articlebody": "DNS changes have been completed, so mapping and content delivery should operate as normal. If you want to get in touch, the contact email address has also changed, so use the ‘contact us’...",
+            "ispartof": "https://twitter.com/RASPWeather/status/1634136991443869703",
+            "position": "19",
+            "datecreated": "2023-03-10T13:43:26.000Z",
+            "datepublished": "2023-03-10T13:43:26.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1634188214327033856"
+          },
+          {
+            "identifier": "1633396367765962752",
+            "commentcount": "1",
+            "articlebody": "8/3/23: There was an overnight change (migration) by the hosting provider which has broken a lot of scripts. Bear with us while this is sorted out.",
+            "position": "20",
+            "datecreated": "2023-03-08T09:16:55.000Z",
+            "datepublished": "2023-03-08T09:16:55.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1633396367765962752"
+          },
+          {
+            "identifier": "1633417933866033152",
+            "commentcount": "0",
+            "articlebody": "10:30 8/3/23: Most functions are now working normally, but three need further work. If you spot anything odd, do get in touch. Further update around 20:00 this evening.",
+            "ispartof": "https://twitter.com/RASPWeather/status/1633396367765962752",
+            "position": "21",
+            "datecreated": "2023-03-08T10:42:37.000Z",
+            "datepublished": "2023-03-08T10:42:37.000Z",
+            "url": "https://twitter.com/RASPWeather/status/1633417933866033152"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "RASP UK Forecast (Stratus)",
+      "htmlTitle": "\u003cb\u003eRASP\u003c/b\u003e UK Forecast (\u003cb\u003eStratus\u003c/b\u003e)",
+      "link": "http://wyche.malvern-hang.org.uk/blipcharts.html",
+      "displayLink": "wyche.malvern-hang.org.uk",
+      "snippet": "BLIPSPOT Forecasts From http://rasp.stratus.org.uk. Great Malvern, Long Mynd, Marlborough, Leckhampton, Blorenge, Beer Head, Hay Bluff, Minehead ...",
+      "htmlSnippet": "BLIPSPOT Forecasts From http://\u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk. Great Malvern, Long Mynd, Marlborough, Leckhampton, Blorenge, Beer Head, Hay Bluff, Minehead&nbsp;...",
+      "formattedUrl": "http://wyche.malvern-hang.org.uk/blipcharts.html",
+      "htmlFormattedUrl": "http://wyche.malvern-hang.org.uk/blipcharts.html"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LazyRASP",
+      "htmlTitle": "LazyRASP",
+      "link": "https://lazyrasp.com/",
+      "displayLink": "lazyrasp.com",
+      "snippet": "LazyRASP logo. \"When you're too lazy to spend time clicking too many steps, We're here to help!\" RASP forecast provided by Stratus.",
+      "htmlSnippet": "LazyRASP logo. &quot;When you&#39;re too lazy to spend time clicking too many steps, We&#39;re here to help!&quot; \u003cb\u003eRASP\u003c/b\u003e forecast provided by \u003cb\u003eStratus\u003c/b\u003e.",
+      "formattedUrl": "https://lazyrasp.com/",
+      "htmlFormattedUrl": "https://lazy\u003cb\u003erasp\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCpTRyqS8HQSiEjqHFRHECR62A0IMetS85hG2jSQfDSNunFyIlOlUP7k&s",
+            "width": "161",
+            "height": "78"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "/banner.png",
+            "theme-color": "#000000",
+            "og:type": "website",
+            "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+            "og:title": "LazyRASP forecast provided by Stratus",
+            "og:description": "When you're too lazy to spend time clicking too many steps, we're here to help!"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///f35d10e8f0e696d9d6ce0a9873a34f84e2df0a1c4204efb4b88984a1fa715078"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Whats with RASP? - new - Paragliding Forum",
+      "htmlTitle": "View topic - Whats with RASP? - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jul 2, 2019 ... Looking closer at the alternative RASP link you guys posted: http://rasp.stratus.org.uk/app/viewer.php. The overlays like the Thermal Updraft ...",
+      "htmlSnippet": "Jul 2, 2019 \u003cb\u003e...\u003c/b\u003e Looking closer at the alternative RASP link you guys posted: http://\u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk/app/viewer.php. The overlays like the Thermal Updraft&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Planning For Flying — RAF Shawbury Gliding Club",
+      "htmlTitle": "Planning For Flying — RAF Shawbury Gliding Club",
+      "link": "https://www.rafshawburygc.co.uk/blog/plannng-for-flying",
+      "displayLink": "www.rafshawburygc.co.uk",
+      "snippet": "Apr 18, 2021 ... For a soaring predictions you can use RASP which is free at this link: http://rasp.stratus.org.uk/index.php/rasptable-desktop. Or a forecast ...",
+      "htmlSnippet": "Apr 18, 2021 \u003cb\u003e...\u003c/b\u003e For a soaring predictions you can use RASP which is free at this link: http://\u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk/index.php/rasptable-desktop. Or a forecast&nbsp;...",
+      "formattedUrl": "https://www.rafshawburygc.co.uk/blog/plannng-for-flying",
+      "htmlFormattedUrl": "https://www.rafshawburygc.co.uk/blog/plannng-for-flying",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFzhccnv52Fn60gDd9hQQJctiFYEgqCnDU1JNMYb9zv0eB7z4S3Cp1io&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:street-address": "RAF Shawbury",
+            "og:region": "England",
+            "og:image": "http://static1.squarespace.com/static/5fe2fba0fb4b0f1214226b40/602869e17b99c930e7fca7e2/607c823233521c74d11b9b4d/1707661803531/Launch_Point_03.jpg?format=1500w",
+            "og:type": "article",
+            "og:image:width": "1280",
+            "twitter:title": "Planning For Flying — RAF Shawbury Gliding Club",
+            "twitter:card": "summary",
+            "og:site_name": "RAF Shawbury Gliding Club",
+            "twitter:url": "https://www.rafshawburygc.co.uk/blog/plannng-for-flying",
+            "og:locality": "Shrewsbury",
+            "og:title": "Planning For Flying — RAF Shawbury Gliding Club",
+            "og:image:height": "960",
+            "og:latitude": "52.79217",
+            "og:description": "Here are some resources I use to plan my flying.   The Weather   The cross section from the Met Office is posted on MOMIDS for each day we are flying.  This will normally be uploaded to our Messenger Ops Group on each day.  It gives the weather expected at RAF Shawbury.  For a broader picture you ca",
+            "twitter:image": "http://static1.squarespace.com/static/5fe2fba0fb4b0f1214226b40/602869e17b99c930e7fca7e2/607c823233521c74d11b9b4d/1707661803531/Launch_Point_03.jpg?format=1500w",
+            "og:longitude": "-2.6563757",
+            "og:postal-code": "SY4 4DZ",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Here are some resources I use to plan my flying.   The Weather   The cross section from the Met Office is posted on MOMIDS for each day we are flying.  This will normally be uploaded to our Messenger Ops Group on each day.  It gives the weather expected at RAF Shawbury.  For a broader picture you ca",
+            "og:url": "https://www.rafshawburygc.co.uk/blog/plannng-for-flying",
+            "og:country-name": "United Kingdom"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://static1.squarespace.com/static/5fe2fba0fb4b0f1214226b40/602869e17b99c930e7fca7e2/607c823233521c74d11b9b4d/1707661803531/Launch_Point_03.jpg?format=1500w"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Good apps that show when thermals may be too much for safe flying ...",
+      "htmlTitle": "Good apps that show when thermals may be too much for safe flying ...",
+      "link": "https://www.paramotorclub.org/topic/15298-good-apps-that-show-when-thermals-may-be-too-much-for-safe-flying-with-numeric-indexes/",
+      "displayLink": "www.paramotorclub.org",
+      "snippet": "Nov 29, 2023 ... 488 · Share · Posted November 30, 2023 · rasp.stratus.org.uk/app/vb/viewer-basic.php. RASP UK No app... Takes a bit of time getting a handle on ...",
+      "htmlSnippet": "Nov 29, 2023 \u003cb\u003e...\u003c/b\u003e 488 &middot; Share &middot; Posted November 30, 2023 &middot; \u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk/app/vb/viewer-basic.php. RASP UK No app... Takes a bit of time getting a handle on&nbsp;...",
+      "formattedUrl": "https://www.paramotorclub.org/.../15298-good-apps-that-show-when-ther...",
+      "htmlFormattedUrl": "https://www.paramotorclub.org/.../15298-good-apps-that-show-when-ther...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwVHTF08Ii7IslugC1OjeO3OhHmeRqPXzYP-5l-tuNx0WDhqnF8vQuHehM&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "msapplication-starturl": "/",
+            "application-name": "www.Paramotorclub.org",
+            "og:image": "https://media.invisioncic.com/r269152/monthly_2020_05/404540942_PMTBlackbackground.png.5eb54e0bab8a38963882888cab2418f6.png",
+            "msapplication-config": "https://www.paramotorclub.org/browserconfig.xml/",
+            "twitter:card": "summary_large_image",
+            "og:type": "website",
+            "theme-color": "#ffffff",
+            "msapplication-square70x70logo": "//media.invisioncic.com/r269152/monthly_2020_05/msapplication-square70x70logo.png?v=1711734991",
+            "og:site_name": "www.Paramotorclub.org",
+            "og:title": "Good apps that show when thermals may be too much for safe flying with numeric indexes?",
+            "apple-mobile-web-app-title": "www.Paramotorclub.org",
+            "msapplication-wide310x150logo": "//media.invisioncic.com/r269152/monthly_2020_05/msapplication-wide310x150logo.png?v=1711734991",
+            "og:updated_time": "2023-12-04T20:35:22Z",
+            "msapplication-tileimage": "//media.invisioncic.com/r269152/monthly_2020_05/msapplication-TileImage.png?v=1711734991",
+            "og:description": "I'm looking to be more specific in my thermal forecasting instead of just going with the \"land 3 hours after sunrise, earliest takeoff 3 hours before sunset\" rule. 1) Are there any good apps (Windy, MeteoBlue, Windy.app, etc) that offer good thermal forecasting abilities and 2) what specific numb...",
+            "msapplication-square150x150logo": "//media.invisioncic.com/r269152/monthly_2020_05/msapplication-square150x150logo.png?v=1711734991",
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-square310x310logo": "//media.invisioncic.com/r269152/monthly_2020_05/msapplication-square310x310logo.png?v=1711734991",
+            "og:locale": "en_GB",
+            "og:url": "https://www.paramotorclub.org/topic/15298-good-apps-that-show-when-thermals-may-be-too-much-for-safe-flying-with-numeric-indexes/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://media.invisioncic.com/r269152/monthly_2020_05/404540942_PMTBlackbackground.png.5eb54e0bab8a38963882888cab2418f6.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Kent Gliding Club RASP Weather Forecast",
+      "htmlTitle": "Kent Gliding Club \u003cb\u003eRASP\u003c/b\u003e Weather Forecast",
+      "link": "https://www.kent-gliding-club.co.uk/kent-gliding-club-rasp-weather-forecast/",
+      "displayLink": "www.kent-gliding-club.co.uk",
+      "snippet": "Take care to check the date of the forecast against the day of the week! Monday http://app.stratus.org.uk/blip/graph/",
+      "htmlSnippet": "Take care to check the date of the forecast against the day of the week! Monday http://app.\u003cb\u003estratus\u003c/b\u003e.org.uk/blip/graph/",
+      "formattedUrl": "https://www.kent-gliding-club.co.uk/kent-gliding-club-rasp-weather-forecast/",
+      "htmlFormattedUrl": "https://www.kent-gliding-club.co.uk/kent-gliding-club-\u003cb\u003erasp\u003c/b\u003e-weather-forecast/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "http://app.stratus.org.uk/blip/graph/blip_main.php?day=Mon&tp=CLK",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Kent Gliding Centre",
+            "og:title": "Kent Gliding Club RASP Weather Forecast",
+            "twitter:label1": "Estimated reading time",
+            "msapplication-tileimage": "https://www.kent-gliding-club.co.uk/wp-content/uploads/2022/03/cropped-KGC2022LogoPlusonly-1-270x270.gif",
+            "og:description": "Kent Gliding Club RASP Weather Forecast, including general weather as well as forecast cumulus cloud base and star rating.",
+            "article:publisher": "https://www.facebook.com/profile.php?id=100063912997272",
+            "twitter:data1": "5 minutes",
+            "article:modified_time": "2023-01-13T10:27:04+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_GB",
+            "og:url": "https://www.kent-gliding-club.co.uk/kent-gliding-club-rasp-weather-forecast/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "RASP demystified",
+      "htmlTitle": "\u003cb\u003eRASP\u003c/b\u003e demystified",
+      "link": "http://www.cumbriasoaringclub.co.uk/kb/resourceskb/RASP_Demystified_Feb2016.pdf",
+      "displayLink": "www.cumbriasoaringclub.co.uk",
+      "snippet": "server at http://rasp.stratus.org.uk/, which can be useful if one site has a ... Feb 2016 - This document was on the RASP website - http://rasp.inn ...",
+      "htmlSnippet": "server at http://\u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk/, which can be useful if one site has a ... Feb 2016 - This document was on the RASP website - http://rasp.inn&nbsp;...",
+      "formattedUrl": "http://www.cumbriasoaringclub.co.uk/kb/.../RASP_Demystified_Feb2016.p...",
+      "htmlFormattedUrl": "http://www.cumbriasoaringclub.co.uk/kb/.../\u003cb\u003eRASP\u003c/b\u003e_Demystified_Feb2016.p...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI1ensW2CxuwuHHzsdCwpTKC2SCoV_ts5VlmPr60I0whxdzQpW_yEt3qs&s",
+            "width": "224",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20160217190253Z",
+            "creationdate": "D:20111124180600-08'00'",
+            "creator": "www.freepdfconvert.com",
+            "author": "Rebekah Sherwin",
+            "producer": "http://www.freepdfconvert.com",
+            "title": "RASP"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///b5ffa407a1cf5828a69735fc0df92c5ad5792e1a45cf6170fc7c41471f276485"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "RASPWeather (RASP Weather) · GitHub",
+      "htmlTitle": "RASPWeather (\u003cb\u003eRASP\u003c/b\u003e Weather) · GitHub",
+      "link": "https://github.com/RASPWeather",
+      "displayLink": "github.com",
+      "snippet": "RASP Weather RASPWeather. Follow · @RASPWeather · 1 follower · 0 following · @RASPWeather · rasp.stratus.org.uk · Achievements · Achievement: Arctic Code Vault ...",
+      "htmlSnippet": "RASP Weather RASPWeather. Follow &middot; @RASPWeather &middot; 1 follower · 0 following &middot; @RASPWeather &middot; \u003cb\u003erasp\u003c/b\u003e.\u003cb\u003estratus\u003c/b\u003e.org.uk &middot; Achievements &middot; Achievement: Arctic Code Vault&nbsp;...",
+      "formattedUrl": "https://github.com/RASPWeather",
+      "htmlFormattedUrl": "https://github.com/\u003cb\u003eRASP\u003c/b\u003eWeather",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "RASP Weather",
+            "photo": "https://avatars.githubusercontent.com/u/32542541?v=4",
+            "url": "rasp.stratus.org.uk"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-AJYKZqnLOdOXVkQbX0kCWoq9y45sWRhxyk_UXEixUPMdarSWXy2mkQ&s",
+            "width": "76",
+            "height": "76"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "person": [
+          {
+            "org": "@RASPWeather"
+          },
+          {
+            "image": "https://avatars.githubusercontent.com/u/32542541?v=4",
+            "worksfor": "@RASPWeather",
+            "name": "RASP Weather",
+            "additionalname": "RASPWeather",
+            "url": "rasp.stratus.org.uk"
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/RASPWeather",
+            "og:image": "https://avatars.githubusercontent.com/u/32542541?v=4?s=400",
+            "twitter:card": "summary",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "turbo-body-classes": "logged-out env-production page-responsive page-profile",
+            "release": "c452c9dda983c67755073a578000a324ee049ecd",
+            "html-safe-nonce": "ba04e70d73f55092a9452b964c8acd06056642176d079d35634f304a8b89ea42",
+            "expected-hostname": "github.com",
+            "og:description": "@RASPWeather. RASPWeather has 6 repositories available. Follow their code on GitHub.",
+            "twitter:image": "https://avatars.githubusercontent.com/u/32542541?v=4?s=400",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "RASPWeather",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id(.:format)",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJCQ0JBOjNGQTkwOToyNEM5Rjg5OjJGOTIwQ0E6NjdERkUwQzciLCJ2aXNpdG9yX2lkIjoiNzg0OTczMDgxNjAyOTQ4MzIwNyIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+            "github-keyboard-shortcuts": "copilot",
+            "twitter:title": "RASPWeather - Overview",
+            "og:image:alt": "@RASPWeather. RASPWeather has 6 repositories available. Follow their code on GitHub.",
+            "og:type": "profile",
+            "profile:username": "RASPWeather",
+            "og:title": "RASPWeather - Overview",
+            "visitor-hmac": "b8010e3097796d26502b495a4aa62ade9770f04b243709c2482923bc372c24e1",
+            "turbo-cache-control": "no-preview",
+            "route-action": "show",
+            "request-id": "BCBA:3FA909:24C9F89:2F920CA:67DFE0C7",
+            "analytics-location": "/\u003cuser-name\u003e",
+            "color-scheme": "light dark",
+            "octolytics-dimension-user_id": "32542541",
+            "fb:app_id": "1401488693436528",
+            "viewport": "width=device-width",
+            "twitter:description": "@RASPWeather. RASPWeather has 6 repositories available. Follow their code on GitHub.",
+            "route-controller": "profiles",
+            "current-catalog-service-hash": "4a1c50a83cf6cc4b55b6b9c53e553e3f847c876b87fb333f71f5d05db8f1a7db",
+            "og:url": "https://github.com/RASPWeather"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://avatars.githubusercontent.com/u/32542541?v=4?s=400"
+          }
+        ]
+      }
+    }
+  ]
+}

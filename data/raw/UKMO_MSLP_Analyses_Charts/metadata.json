@@ -1,0 +1,9 @@
+{
+  "name": "UKMO MSLP Analyses Charts",
+  "url": "https://www.weathercharts.org/ukmomslp.htm",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "Surface Pressure Level charts for the North Atlantic. Isobars, Fronts, Pressure Systems, you get the picture. ",
+  "timestamp": "2025-03-25T21:16:52Z",
+  "website_fetched": true
+}

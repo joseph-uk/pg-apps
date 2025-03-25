@@ -1,0 +1,9 @@
+{
+  "name": "Ginger Nomad Weather",
+  "url": "https://www.gingernomad.co.uk/weather/",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "",
+  "timestamp": "2025-03-25T21:57:11Z",
+  "website_fetched": false
+}

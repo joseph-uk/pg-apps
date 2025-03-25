@@ -1,0 +1,47 @@
+<link rel='stylesheet' type='text/css' href='main.css'/><link rel='stylesheet' href='https://unpkg.com/leaflet@1.5.1/dist/leaflet.css'
+   integrity='sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=='
+   crossorigin=''/><script src='https://unpkg.com/leaflet@1.5.1/dist/leaflet.js'
+   integrity='sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=='
+   crossorigin=''></script>
+	
+    <noscript>
+		<h1 align=center> <font color=red>This page requires JavaScript to be enabled</font></h1>
+    </noscript>
+	<script> var sHomePage ='http://rasp.stratus.org.uk';
+	</script>
+	<table id='IDtableMainViewer' class='tableMainViewer' border="0">
+		<tr>
+			<td colspan='3'>
+				<table id='map-area' class='map-area' border="0">
+					<tr>
+						<td>
+							<div id='map'></div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<!-- Include this javascript first -->
+    <script src='config.full.supported.models.js?date=1742939677'></script>
+    <script src='utils.js?date=1742939677'></script>
+    <script src='config.js?date=1742939677'></script>
+
+    <script src='setsize.js?date=1742939677'></script>
+	<script> var bNoSetSize = false; </script> <!-- ... to use reset sizing functions -->
+
+    <script src='turnpoints.js?date=1742939677'></script>
+	
+    <script src='main.js?date=1742939677'></script>
+	
+	<script type='text/javascript'> 
+    	// Make browser set the right size to the window
+    	var resizeEvent = window.document.createEvent('UIEvents'); 
+    	resizeEvent.initUIEvent('resize', true, false, window, 0); 
+    	window.dispatchEvent(resizeEvent);
+    	console.log("Make browser set the right size to the window.");
+	</script>
+
+	
+	

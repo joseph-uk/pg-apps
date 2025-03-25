@@ -1,0 +1,249 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - PSC Parlick Web cam",
+        "totalResults": "8",
+        "searchTerms": "PSC Parlick Web cam",
+        "count": 8,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.112698,
+    "formattedSearchTime": "0.11",
+    "totalResults": "8",
+    "formattedTotalResults": "8"
+  },
+  "spelling": {
+    "correctedQuery": "PSC Parlick Webcam",
+    "htmlCorrectedQuery": "PSC Parlick \u003cb\u003e\u003ci\u003eWebcam\u003c/i\u003e\u003c/b\u003e"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Webcam | Pennine Soaring Club",
+      "htmlTitle": "\u003cb\u003eWebcam\u003c/b\u003e | Pennine Soaring Club",
+      "link": "http://www.penninesoaringclub.org.uk/webcam/",
+      "displayLink": "www.penninesoaringclub.org.uk",
+      "snippet": "Webcam. View the current webcam image of Parlick. Parlick Webcam image. Upcoming Events. View all events. Recent posts. Thursday, January 16, 2025.",
+      "htmlSnippet": "\u003cb\u003eWebcam\u003c/b\u003e. View the current \u003cb\u003ewebcam\u003c/b\u003e image of \u003cb\u003eParlick\u003c/b\u003e. \u003cb\u003eParlick Webcam\u003c/b\u003e image. Upcoming Events. View all events. Recent posts. Thursday, January 16, 2025.",
+      "formattedUrl": "http://www.penninesoaringclub.org.uk/webcam/",
+      "htmlFormattedUrl": "http://www.penninesoaringclub.org.uk/\u003cb\u003ewebcam\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAWkDrWIxv5atjxOn6sJ2LMp56MFgTMQHqDd6lIKfBXdd2IOoc8Qoq2QY&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "msapplication-tileimage": "/ms-icon-144x144.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://www.penninesoaringclub.org.uk/uploads/webcam/webcam.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Para Sites",
+      "htmlTitle": "Para Sites",
+      "link": "https://paraguide.uk/",
+      "displayLink": "paraguide.uk",
+      "snippet": "Weather / Webcams; Show Landing: Show Parking: Show Weather: Show Airspace ... Parlick (PSC); Pendle (PSC); Pule Hill (PSC); Winter Hill (PSC); Bochlwyd/Cwm ...",
+      "htmlSnippet": "\u003cb\u003eWeather\u003c/b\u003e / \u003cb\u003eWebcams\u003c/b\u003e; Show Landing: Show Parking: Show \u003cb\u003eWeather\u003c/b\u003e: Show Airspace ... \u003cb\u003eParlick\u003c/b\u003e (\u003cb\u003ePSC\u003c/b\u003e); Pendle (\u003cb\u003ePSC\u003c/b\u003e); Pule Hill (\u003cb\u003ePSC\u003c/b\u003e); Winter Hill (\u003cb\u003ePSC\u003c/b\u003e); Bochlwyd/Cwm&nbsp;...",
+      "formattedUrl": "https://paraguide.uk/",
+      "htmlFormattedUrl": "https://paraguide.uk/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "initial-scale=1.0, user-scalable=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Parlick | Pennine Soaring Club",
+      "htmlTitle": "\u003cb\u003eParlick\u003c/b\u003e | Pennine Soaring Club",
+      "link": "http://www.penninesoaringclub.org.uk/sites/parlick/",
+      "displayLink": "www.penninesoaringclub.org.uk",
+      "snippet": "Current webcam image: Parlick Webcam image. Parlick is actually three sites rolled into one. It has three distinct faces: East, West and South. The site is ...",
+      "htmlSnippet": "Current \u003cb\u003ewebcam\u003c/b\u003e image: \u003cb\u003eParlick Webcam\u003c/b\u003e image. \u003cb\u003eParlick\u003c/b\u003e is actually three sites rolled into one. It has three distinct faces: East, West and South. The site is&nbsp;...",
+      "formattedUrl": "http://www.penninesoaringclub.org.uk/sites/parlick/",
+      "htmlFormattedUrl": "http://www.penninesoaringclub.org.uk/sites/\u003cb\u003eparlick\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxG_5MivNrIRTDg3WCWaIGDr472i0aqr0pBhlA0MfBu4SPy3YwSi2RYWv2&s",
+            "width": "279",
+            "height": "180"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "theme-color": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "msapplication-tileimage": "/ms-icon-144x144.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://www.penninesoaringclub.org.uk/media/1016/parlick.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Parlec - Home",
+      "htmlTitle": "Parlec - Home",
+      "link": "https://www.parlec.com/",
+      "displayLink": "www.parlec.com",
+      "snippet": "Parlec has invested in the latest CNC machine technology and software at our Fairport, NY facility, increasing our manufacturing capacity.",
+      "htmlSnippet": "Parlec has invested in the latest CNC machine technology and software at our Fairport, NY facility, increasing our manufacturing capacity.",
+      "formattedUrl": "https://www.parlec.com/",
+      "htmlFormattedUrl": "https://www.parlec.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Untitled",
+      "htmlTitle": "Untitled",
+      "link": "https://osf.io/mepkc/?action=download",
+      "displayLink": "osf.io",
+      "snippet": "... web divide coach vary stab psychologist russia breaking syndrome shield mum ... cam tutorial soccer brothers sec taper tan concentration guardian bride ...",
+      "htmlSnippet": "... \u003cb\u003eweb\u003c/b\u003e divide coach vary stab psychologist russia breaking syndrome shield mum ... \u003cb\u003ecam\u003c/b\u003e tutorial soccer brothers sec taper tan concentration guardian bride&nbsp;...",
+      "formattedUrl": "https://osf.io/mepkc/?action=download",
+      "htmlFormattedUrl": "https://osf.io/mepkc/?action=download",
+      "mime": "text/plain",
+      "fileFormat": "text/plain"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Hybride moins de 600€ - Achat Hybride par prix | fnac",
+      "htmlTitle": "Hybride moins de 600€ - Achat Hybride par prix | fnac",
+      "link": "https://www.fnac.com/Hybride-moins-de-600Euro/Hybride-par-prix/nsh248583/w-4",
+      "displayLink": "www.fnac.com",
+      "snippet": "Webcam IA 4K Insta360 Link 2. Autres - Appareil photo hybride. LIVRAISON OFFERTE. 229,99 €. Vendu et livré par LICK ... Webcam IA 4K Insta360 Link 2C. Autres ...",
+      "htmlSnippet": "\u003cb\u003eWebcam\u003c/b\u003e IA 4K Insta360 Link 2. Autres - Appareil photo hybride. LIVRAISON OFFERTE. 229,99 €. Vendu et livré \u003cb\u003epar LICK\u003c/b\u003e ... \u003cb\u003eWebcam\u003c/b\u003e IA 4K Insta360 Link 2C. Autres&nbsp;...",
+      "formattedUrl": "https://www.fnac.com/Hybride-moins-de-600Euro/Hybride-par.../w-4",
+      "htmlFormattedUrl": "https://www.fnac.com/Hybride-moins-de-600Euro/Hybride-par.../w-4",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMwJGAsy11YA3TenIX-Ge-DwDHV-l8Lp2OwGywwLKa0MiJRZD_9DRlVcT&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#ffffff",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1",
+            "msvalidate.01": "DA361407407072F944FEC313FFFB02E4",
+            "apple-mobile-web-app-capable": "yes",
+            "mobile-web-app-capable": "yes",
+            "google": "notranslate"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.fnac-static.com/multimedia/Images/FR/NR/ae/51/58/5788078/1540-1/tsp20140321120037/Hybride-Sony-A6000-nu-noir.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "DEFINED FLYING CHALLENGES",
+      "htmlTitle": "DEFINED FLYING CHALLENGES",
+      "link": "https://www.xcflight.com/app/download/32903365/DFC+pdf+final+master.pdf",
+      "displayLink": "www.xcflight.com",
+      "snippet": "Parlick is a justifiably popular site with all grades of pilot, due to ... Check the PSC site guide before flying. Site: Pendle. Club: Pennine Soaring ...",
+      "htmlSnippet": "\u003cb\u003eParlick\u003c/b\u003e is a justifiably popular site with all grades of pilot, due to ... Check the \u003cb\u003ePSC\u003c/b\u003e site guide before flying. Site: Pendle. Club: Pennine Soaring&nbsp;...",
+      "formattedUrl": "https://www.xcflight.com/app/download/.../DFC+pdf+final+master.pdf",
+      "htmlFormattedUrl": "https://www.xcflight.com/app/download/.../DFC+pdf+final+master.pdf",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBFIy7id_V3mhHOBQp2JAtSmKRqmasGxZFUTYCqdV8AEk69k0BY3uzzbE&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20141202164416Z",
+            "creator": "Nitro Pro 9"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///aa1e4dc8217c5e7dede7c6c3b03688f569ef33246e158c51e415badd907a3346"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Muse",
+      "htmlTitle": "Muse",
+      "link": "https://www.muse-metz.fr/",
+      "displayLink": "www.muse-metz.fr",
+      "snippet": "Site du centre commercial Muse.",
+      "htmlSnippet": "Site du centre commercial Muse.",
+      "formattedUrl": "https://www.muse-metz.fr/",
+      "htmlFormattedUrl": "https://www.muse-metz.fr/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://muse-cms.cloud.coreoz.com/uploads/favicon_3f8974a5fa.ico",
+            "theme-color": "#000000",
+            "viewport": "minimum-scale=1, initial-scale=1, width=device-width",
+            "og:title": "Muse",
+            "og:description": "Site du centre commercial Muse"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://muse-cms.cloud.coreoz.com/uploads/favicon_3f8974a5fa.ico"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XC Analytics",
+        "totalResults": "14400000",
+        "searchTerms": "XC Analytics",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XC Analytics",
+        "totalResults": "14400000",
+        "searchTerms": "XC Analytics",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.179205,
+    "formattedSearchTime": "0.18",
+    "totalResults": "14400000",
+    "formattedTotalResults": "14,400,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "XC Analytics",
+      "htmlTitle": "\u003cb\u003eXC Analytics\u003c/b\u003e",
+      "link": "https://xcanalytics.fr/en/",
+      "displayLink": "xcanalytics.fr",
+      "snippet": "79 statistics and 37 charts describe your strengths and where there is room for improvement. A coaching tool explains how.",
+      "htmlSnippet": "79 statistics and 37 charts describe your strengths and where there is room for improvement. A coaching tool explains how.",
+      "formattedUrl": "https://xcanalytics.fr/en/",
+      "htmlFormattedUrl": "https://\u003cb\u003excanalytics\u003c/b\u003e.fr/en/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSng3g9AONSynr0lNrflEQUuBN70lzgrYCTo7EB4Jrb8C-DpzAuby54qw&s",
+            "width": "413",
+            "height": "122"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:card": "summary",
+            "og:type": "website",
+            "og:site_name": "XC Analytics",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:url": "https://xcanalytics.fr/en/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcanalytics.fr/images/lead/google-btn.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Analytics - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eXC Analytics\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=fr.xcanalytics&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "Feb 23, 2025 ... About this app. arrow_forward. XC Analytics is a tool designed to debrief flights, analyze performances, and easily identify weaknesses and ...",
+      "htmlSnippet": "Feb 23, 2025 \u003cb\u003e...\u003c/b\u003e About this app. arrow_forward. \u003cb\u003eXC Analytics\u003c/b\u003e is a tool designed to debrief flights, analyze performances, and easily identify weaknesses and&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=fr.xcanalytics&hl=en_US",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=fr.\u003cb\u003excanalytics\u003c/b\u003e&amp;hl=en_US",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "$4.49",
+            "url": "https://play.google.com/store/apps/details?id=fr.xcanalytics&rdid=fr.xcanalytics&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIxGUqttOH-TSbOCu2gnXYQTQeerRbqZC7L-g0e1IciUXG8-ESxH3vFMh2&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/mWvPr-Ra1pAi7x3mXXMAS3rnf0JVH0dTQs2wWt9YEIChL58YYiU1E4j2W2bfgwf6fUYk",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "XC Analytics - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=fr.xcanalytics&hl=en_US",
+            "appstore:developer_url": "http://xcanalytics.fr/",
+            "og:title": "XC Analytics - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/mWvPr-Ra1pAi7x3mXXMAS3rnf0JVH0dTQs2wWt9YEIChL58YYiU1E4j2W2bfgwf6fUYk=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "fr.xcanalytics",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "fr.xcanalytics",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Post Flight Analysis for paragliders, hang gliders and sailplanes",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=fr.xcanalytics&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/mWvPr-Ra1pAi7x3mXXMAS3rnf0JVH0dTQs2wWt9YEIChL58YYiU1E4j2W2bfgwf6fUYk"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Analytics",
+      "htmlTitle": "\u003cb\u003eXC Analytics\u003c/b\u003e",
+      "link": "https://xcanalytics.fr/fr/",
+      "displayLink": "xcanalytics.fr",
+      "snippet": "Voler Analyser & Progresser. XC Analytics vous donne les clés pour saisir toutes les informations relatives à votre vol, d'un coup d'oeil ! ... Le monde libériste ...",
+      "htmlSnippet": "Voler Analyser &amp; Progresser. \u003cb\u003eXC Analytics\u003c/b\u003e vous donne les clés pour saisir toutes les informations relatives à votre vol, d&#39;un coup d&#39;oeil ! ... Le monde libériste&nbsp;...",
+      "formattedUrl": "https://xcanalytics.fr/fr/",
+      "htmlFormattedUrl": "https://\u003cb\u003excanalytics\u003c/b\u003e.fr/fr/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSng3g9AONSynr0lNrflEQUuBN70lzgrYCTo7EB4Jrb8C-DpzAuby54qw&s",
+            "width": "413",
+            "height": "122"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:card": "summary",
+            "og:type": "website",
+            "og:site_name": "XC Analytics",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:url": "https://xcanalytics.fr/fr/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcanalytics.fr/images/lead/google-btn.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Data Transformation & Analytics | Consulting & Advisory Services",
+      "htmlTitle": "Data Transformation &amp; \u003cb\u003eAnalytics\u003c/b\u003e | Consulting &amp; Advisory Services",
+      "link": "https://www.crosscountry-consulting.com/solution/technology-enabled-transformation/data-transformation-analytics/",
+      "displayLink": "www.crosscountry-consulting.com",
+      "snippet": "Technology Architecture & Strategy ... Establish, manage, and optimize a robust integrated systems architecture. Learn More. FP&A Transformation. Build a cross- ...",
+      "htmlSnippet": "Technology Architecture &amp; Strategy ... Establish, manage, and optimize a robust integrated systems architecture. Learn More. FP&amp;A Transformation. Build a cross-&nbsp;...",
+      "formattedUrl": "https://www.crosscountry-consulting.com/.../data-transformation-analytics/",
+      "htmlFormattedUrl": "https://www.crosscountry-consulting.com/.../data-transformation-\u003cb\u003eanalytics\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpcaxGVQ-i85wURizYzNNiLsywDi35VnstYP4gwnQYaKxaAR-RuN9Bplk&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.crosscountry-consulting.com/wp-content/uploads/2024/08/cropped-cropped-CCC-Icon.png",
+            "og:type": "article",
+            "og:image:width": "512",
+            "article:published_time": "2023-09-26T14:53:00+00:00",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Data Transformation & Analytics | Consulting & Advisory Services",
+            "og:site_name": "CrossCountry Consulting",
+            "og:title": "Data Transformation & Analytics | Consulting & Advisory Services",
+            "og:image:height": "512",
+            "msapplication-tileimage": "https://www.crosscountry-consulting.com/wp-content/uploads/2024/08/cropped-cropped-CCC-Icon-270x270.png",
+            "og:description": "Our data systems specialists design, build, and deploy leading data, analytics, and automation programs that generate rapid ROI across the enterprise.",
+            "twitter:image": "https://www.crosscountry-consulting.com/wp-content/uploads/2024/08/cropped-cropped-CCC-Icon.png",
+            "article:modified_time": "2025-01-24T16:45:30+00:00",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Our data systems specialists design, build, and deploy leading data, analytics, and automation programs that generate rapid ROI across the enterprise.",
+            "og:locale": "en_US",
+            "og:url": "https://www.crosscountry-consulting.com/solution/technology-enabled-transformation/data-transformation-analytics/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.crosscountry-consulting.com/wp-content/uploads/2024/08/cropped-cropped-CCC-Icon.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC ANALYTICS LIMITED filing history - Find and update company ...",
+      "htmlTitle": "\u003cb\u003eXC ANALYTICS\u003c/b\u003e LIMITED filing history - Find and update company ...",
+      "link": "https://find-and-update.company-information.service.gov.uk/company/14449920/filing-history",
+      "displayLink": "find-and-update.company-information.service.gov.uk",
+      "snippet": "XC ANALYTICS LIMITED - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers, ...",
+      "htmlSnippet": "\u003cb\u003eXC ANALYTICS\u003c/b\u003e LIMITED - Free company information from Companies House including registered office address, filing history, accounts, annual return, officers,&nbsp;...",
+      "formattedUrl": "https://find-and-update.company-information.service.gov.uk/.../filing-histo...",
+      "htmlFormattedUrl": "https://find-and-update.company-information.service.gov.uk/.../filing-histo...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "//d2xn8hgqw32ns5.cloudfront.net/images/opengraph-image.jpg",
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "//d2xn8hgqw32ns5.cloudfront.net/images/opengraph-image.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What Is Video Analytics? | Bosch Security and Safety Systems I Global",
+      "htmlTitle": "What Is Video \u003cb\u003eAnalytics\u003c/b\u003e? | Bosch Security and Safety Systems I Global",
+      "link": "https://www.boschsecurity.com/xc/en/solutions/video-systems/video-analytics/",
+      "displayLink": "www.boschsecurity.com",
+      "snippet": "Video Analytics, also known as Video Content Analysis (VCA), is a technology that utilizes algorithms to automatically analyze video content.",
+      "htmlSnippet": "Video \u003cb\u003eAnalytics\u003c/b\u003e, also known as Video Content \u003cb\u003eAnalysis\u003c/b\u003e (VCA), is a technology that utilizes algorithms to automatically analyze video content.",
+      "formattedUrl": "https://www.boschsecurity.com/xc/en/solutions/video.../video-analytics/",
+      "htmlFormattedUrl": "https://www.boschsecurity.com/\u003cb\u003exc\u003c/b\u003e/en/solutions/video.../video-\u003cb\u003eanalytics\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RGkb1hsQvx355xQ3zuSSvCHGUjqXk2ItMV2nj8JrZ2nOy8tMnecSLpE&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "website": [
+          {
+            "name": "Bosch Security and Safety Systems I Global",
+            "url": "https://www.boschsecurity.com/xc/en/"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/What_Is_Video_Analytics_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/video-analytics-types-applications_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/video-analytics-solutions_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/video-analytics-intelligent-tracking_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/AI_Faster_Than_Humans_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/AI_Faster_Than_Humans_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/AI_Faster_Than_Humans_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Deep_Learning_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Deep_Learning_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Deep_Learning_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Systematic_Review_Automation_res_400x225.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Systematic_Review_Automation_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/Systematic_Review_Automation_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/news/news_1/2021_1/autodome_ip_starlight_5100i_ir/BT-VS_AD_5100i_IR_Stage_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/bosch_logo_res_260x85.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/news/news_1/2024_1/alarm_management/men-on-road_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/bosch_logo_res_260x85.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/news/news_1/2024_1/flexidome_8100i_ptrz/city_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/bosch_logo_res_260x85.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/news/customer_stories/san_marino/Guaita-fortress-san-marino_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/bosch_logo_res_260x85.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/news/news_1/2024_1/dinion_7100i_ir_review/bosch-7100i-ir-bullet-wall_res_640x360.webp",
+            "height": "100%"
+          },
+          {
+            "width": "100%",
+            "url": "https://media.boschsecurity.com/fs/media/pb/images/bosch_logo_res_260x85.webp",
+            "height": "100%"
+          }
+        ],
+        "organization": [
+          {
+            "sameas": "https://linkedin.com/shareArticle?mini=true&url=https://www.boschsecurity.com/xc/en/solutions/video-systems/video-analytics/&title=What+Is+Video+Analytics%3F&summary=Our+video+analytics+embedded+in+surveillance+cameras+keep+people+and+property+safe+and+help+gain+business+insights.+Discover+it+now%21&source=bosch-security-systems"
+          },
+          {
+            "name": "Bosch Global"
+          },
+          {
+            "name": "Bosch Global"
+          },
+          {
+            "name": "Bosch Global"
+          },
+          {
+            "name": "Bosch Global"
+          },
+          {
+            "name": "Bosch Global"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "og:image": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/What_Is_Video_Analytics.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "What Is Video Analytics?",
+            "og:site_name": "Bosch Security and Safety Systems I Global",
+            "dcsext.wtg_lang": "en",
+            "og:title": "What Is Video Analytics?",
+            "og:description": "Our video analytics embedded in surveillance cameras keep people and property safe and help gain business insights. Discover it now!",
+            "twitter:creator": "@BoschSecurity",
+            "article:publisher": "https://www.facebook.com/BoschSecurity",
+            "twitter:image": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/What_Is_Video_Analytics.jpg",
+            "fb:app_id": "BoschSecurity",
+            "twitter:site": "@BoschSecurity",
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Our video analytics embedded in surveillance cameras keep people and property safe and help gain business insights. Discover it now!",
+            "og:url": "https://www.boschsecurity.com/xc/en/solutions/video-systems/video-analytics/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://media.boschsecurity.com/fs/media/pb/images/products/video_systems/what_is_video_analytics/What_Is_Video_Analytics.jpg"
+          }
+        ],
+        "brand": [
+          {
+            "url": "https://www.boschsecurity.com/xc/en/"
+          }
+        ],
+        "newsarticle": [
+          {
+            "author": "Bosch Global",
+            "description": "Product newsVideo Systems",
+            "headline": "AUTODOME IP starlight 5000i | 5000i IR | 5100i IR",
+            "url": "https://www.boschsecurity.com/xc/en/news/product-news/autodome-ip-starlight-5100i-ir/",
+            "datepublished": "2025-01-15T00:00Z",
+            "mainentityofpage": "https://www.boschsecurity.com/xc/en/news/product-news/autodome-ip-starlight-5100i-ir/"
+          },
+          {
+            "author": "Bosch Global",
+            "description": "Product newsCloud Service",
+            "headline": "Alarm Management",
+            "url": "https://www.boschsecurity.com/xc/en/news/product-news/alarm-management/",
+            "datepublished": "2024-11-05T00:00Z",
+            "mainentityofpage": "https://www.boschsecurity.com/xc/en/news/product-news/alarm-management/"
+          },
+          {
+            "author": "Bosch Global",
+            "description": "Product newsVideo Systems",
+            "headline": "FLEXIDOME 8100i. The ultimate fixed dome camera",
+            "url": "https://www.boschsecurity.com/xc/en/news/product-news/flexidome-8100i-ptrz/",
+            "datepublished": "2024-11-05T00:00Z",
+            "mainentityofpage": "https://www.boschsecurity.com/xc/en/news/product-news/flexidome-8100i-ptrz/"
+          },
+          {
+            "author": "Bosch Global",
+            "description": "Customer StoryVideo Systems",
+            "headline": "City surveillance helps control tourist traffic, keeping people safe in San Marino Republic",
+            "url": "https://www.boschsecurity.com/xc/en/news/customer-stories/san-marino/",
+            "datepublished": "2024-09-02T00:00Z",
+            "mainentityofpage": "https://www.boschsecurity.com/xc/en/news/customer-stories/san-marino/"
+          },
+          {
+            "author": "Bosch Global",
+            "description": "Product news",
+            "headline": "SEN Magazine puts DINION 7100i IR bullet to the test",
+            "url": "https://www.boschsecurity.com/xc/en/news/product-news/dinion-7100i-ir-review/",
+            "datepublished": "2024-07-03T00:00Z",
+            "mainentityofpage": "https://www.boschsecurity.com/xc/en/news/product-news/dinion-7100i-ir-review/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Martin Morlet of XC Analytics analysed the performance of all pilots ...",
+      "htmlTitle": "Martin Morlet of \u003cb\u003eXC Analytics\u003c/b\u003e analysed the performance of all pilots ...",
+      "link": "https://www.facebook.com/xcmag/posts/martin-morlet-of-xc-analytics-analysed-the-performance-of-all-pilots-in-the-red-/10158421947534103/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Aug 25, 2021 ... Martin Morlet of XC Analytics analysed the performance of all pilots in the Red Bull X-Alps 2021, over the 12-day competition.",
+      "htmlSnippet": "Aug 25, 2021 \u003cb\u003e...\u003c/b\u003e Martin Morlet of \u003cb\u003eXC Analytics\u003c/b\u003e analysed the performance of all pilots in the Red Bull X-Alps 2021, over the 12-day competition.",
+      "formattedUrl": "https://www.facebook.com/...xc-analytics...-/10158421947534103/",
+      "htmlFormattedUrl": "https://www.facebook.com/...\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eanalytics\u003c/b\u003e...-/10158421947534103/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOlyTYQi12LGcSVnxu_hZwZ_PeiQQ-DkUH_A7xJaAb6BtjsWDLeimkWok&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158421947469103",
+            "og:type": "video.other",
+            "og:image:alt": "Cross Country Magazine",
+            "twitter:card": "summary",
+            "twitter:title": "Cross Country Magazine",
+            "theme-color": "#FFFFFF",
+            "og:title": "Cross Country Magazine",
+            "google": "notranslate",
+            "og:description": "Martin Morlet of XC Analytics analysed the performance of all pilots in the Red Bull X-Alps 2021, over the 12-day competition. He found out some interesting facts about the top five. All of them flew...",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158421947469103",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Cross Country Magazine",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Martin Morlet of XC Analytics analysed the performance of all pilots in the Red Bull X-Alps 2021, over the 12-day competition. He found out some interesting facts about the top five. All of them flew...",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/xcmag/posts/martin-morlet-of-xc-analytics-analysed-the-performance-of-all-pilots-in-the-red-/10158421947534103/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158421947469103"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How I did it - \"Configuring remote logging for F5 Distributed Cloud ...",
+      "htmlTitle": "How I did it - &quot;Configuring remote logging for F5 Distributed Cloud ...",
+      "link": "https://community.f5.com/kb/technicalarticles/how-i-did-it---configuring-remote-logging-for-f5-distributed-cloud-services/301966",
+      "displayLink": "community.f5.com",
+      "snippet": "Oct 6, 2022 ... I'll provide a brief overview of the concepts and steps required to enable log streaming from the F5 XC platform to third party analytics and SEIM vendors.",
+      "htmlSnippet": "Oct 6, 2022 \u003cb\u003e...\u003c/b\u003e I&#39;ll provide a brief overview of the concepts and steps required to enable log streaming from the F5 \u003cb\u003eXC\u003c/b\u003e platform to third party \u003cb\u003eanalytics\u003c/b\u003e and SEIM vendors.",
+      "formattedUrl": "https://community.f5.com/kb/technicalarticles/how-i-did.../301966",
+      "htmlFormattedUrl": "https://community.f5.com/kb/technicalarticles/how-i-did.../301966",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkGMqm86ylfyuaWcWanw8lewFD_IOUNv1rUiGdjY63_kSMYH12jN93Uws&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://community.f5.com/t5/s/zihoc95639/images/bS0zMDE5NjYtMTk3OTlpN0UwRDZGMDc5NEY1NjQ3RA?revision=8",
+            "twitter:card": "summary",
+            "og:type": "article",
+            "og:image:width": "3348",
+            "og:site_name": "DevCentral - an F5 Community",
+            "og:title": "How I did it - \"Configuring remote logging for F5 Distributed Cloud Services\"",
+            "og:image:height": "1398",
+            "og:description": "This article provides an overview, (with accompanying video) of steps required to enable event streaming from the F5 Distributed Cloud (XC) Services platform...",
+            "og:video:width": "600",
+            "article:modified_time": "2022-10-06T08:50:00.048-07:00",
+            "og:video": "https://youtu.be/yyqpIYEZ8lQ",
+            "viewport": "width=device-width",
+            "og:video:height": "338",
+            "og:url": "https://community.f5.com/kb/technicalarticles/how-i-did-it---configuring-remote-logging-for-f5-distributed-cloud-services/301966"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/yyqpIYEZ8lQ/hqdefault.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "SILFH2480Z-XC - Tecumseh",
+      "htmlTitle": "SILFH2480Z-XC - Tecumseh",
+      "link": "https://www.tecumseh.com/Product/SILFH2480Z-XC",
+      "displayLink": "www.tecumseh.com",
+      "snippet": "The performance calculator is only available for Fixed Speed Compressors and Condensing Units. If you do not see performance data here, please contact Customer ...",
+      "htmlSnippet": "The performance calculator is only available for Fixed Speed Compressors and Condensing Units. If you do not see performance data here, please contact Customer&nbsp;...",
+      "formattedUrl": "https://www.tecumseh.com/Product/SILFH2480Z-XC",
+      "htmlFormattedUrl": "https://www.tecumseh.com/Product/SILFH2480Z-\u003cb\u003eXC\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTid7TNA0dSRFQgkxgg0h7tD1KKYpM9wEZalE2Co9k7JFUZKLQX_amyrGyg&s",
+            "width": "160",
+            "height": "149"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://assets-b61117eb4c.cdn.insitecloud.net/76dd1c6ed27a991_sm.jpg",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "og:title": "Tecumseh | SILFH2480Z-XC",
+            "og:url": "https://www.tecumseh.com/Product/SILFH2480Z-XC"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://assets-b61117eb4c.cdn.insitecloud.net/76dd1c6ed27a991_sm.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Top 5 best paragliding apps for your phone - Flyeo",
+      "htmlTitle": "Top 5 best paragliding apps for your phone - Flyeo",
+      "link": "https://flyeo.com/en/top-5-mobile-applications-for-paragliding/",
+      "displayLink": "flyeo.com",
+      "snippet": "Apr 22, 2024 ... ... data. XC Analytics reads your IGC files which are produced by navigation apps (such as XC Track or See You Navigator mentioned above). It ...",
+      "htmlSnippet": "Apr 22, 2024 \u003cb\u003e...\u003c/b\u003e ... data. \u003cb\u003eXC Analytics\u003c/b\u003e reads your IGC files which are produced by navigation apps (such as XC Track or See You Navigator mentioned above). It&nbsp;...",
+      "formattedUrl": "https://flyeo.com/en/top-5-mobile-applications-for-paragliding/",
+      "htmlFormattedUrl": "https://flyeo.com/en/top-5-mobile-applications-for-paragliding/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrq7INjhHpk1GwtS2agljN1W3Dip4r2thRLIamYYmAAbKfG1sQjEsCdB85&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://flyeo.com/wp-content/uploads/2023/03/flyeo-top-cinq-mobile-app-parapente.webp",
+            "og:type": "website",
+            "twitter:title": "Top 5 best paragliding apps for your phone - Flyeo",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Flyeo - Ecole de parapente à Annecy",
+            "og:image:url": "https://flyeo.com/wp-content/uploads/2023/03/flyeo-top-cinq-mobile-app-parapente.webp",
+            "og:title": "Top 5 best paragliding apps for your phone - Flyeo",
+            "msapplication-tileimage": "https://flyeo.com/wp-content/uploads/2023/01/cropped-flyeo-favicon-270x270.jpg",
+            "og:description": "Our pilots have selected their top paragliding mobile apps: weather forecast, planning, in-flight navigation, analyses and flight logging apps. Choose yours now",
+            "twitter:image": "https://flyeo.com/wp-content/uploads/2023/03/flyeo-top-cinq-mobile-app-parapente.webp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Our pilots have selected their top paragliding mobile apps: weather forecast, planning, in-flight navigation, analyses and flight logging apps. Choose yours now",
+            "og:url": "https://flyeo.com/en/top-5-mobile-applications-for-paragliding/",
+            "plausible-analytics-version": "2.1.0"
+          }
+        ],
+        "creativework": [
+          {
+            "text": "PilotageTop 5 best paragliding apps for your phoneOur tandem paragliding pilots select their favourite paragliding appsWe are using an ever increasing number of applications on our mobiles...."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flyeo.com/wp-content/uploads/2023/03/flyeo-top-cinq-mobile-app-parapente.webp"
+          }
+        ]
+      }
+    }
+  ]
+}

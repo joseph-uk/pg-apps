@@ -1,0 +1,534 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - LK8000",
+        "totalResults": "21900",
+        "searchTerms": "LK8000",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - LK8000",
+        "totalResults": "21900",
+        "searchTerms": "LK8000",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.310998,
+    "formattedSearchTime": "0.31",
+    "totalResults": "21900",
+    "formattedTotalResults": "21,900"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "LK8000 Tactical Flight Computer",
+      "htmlTitle": "\u003cb\u003eLK8000\u003c/b\u003e Tactical Flight Computer",
+      "link": "https://lk8000.it/",
+      "displayLink": "lk8000.it",
+      "snippet": "LK8000 Tactical Flight Computer Official Homepage.",
+      "htmlSnippet": "\u003cb\u003eLK8000\u003c/b\u003e Tactical Flight Computer Official Homepage.",
+      "formattedUrl": "https://lk8000.it/",
+      "htmlFormattedUrl": "https://\u003cb\u003elk8000\u003c/b\u003e.it/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Cn9cEeoprONbO5mfOzAW8ywzTn-GNTo2ASsgTksvs23j5uK8MW4SKyA&s",
+            "width": "274",
+            "height": "184"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lk8000.it/randompics/ulli.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LK8000 - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eLK8000\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=org.lk8000.beta&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "May 22, 2023 ... About this app. arrow_forward. LK8000 is a Tactical Flight Navigator for gliders, paragliders, hang-gliders and general aviation. It is a ...",
+      "htmlSnippet": "May 22, 2023 \u003cb\u003e...\u003c/b\u003e About this app. arrow_forward. \u003cb\u003eLK8000\u003c/b\u003e is a Tactical Flight Navigator for gliders, paragliders, hang-gliders and general aviation. It is a&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=org.lk8000.beta&hl=en...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=org.\u003cb\u003elk8000\u003c/b\u003e.beta&amp;hl=en...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=org.lk8000.beta&rdid=org.lk8000.beta&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifcUHR4W2Jbjs6mG7aU_pG9J58lGqMSSkPZY8Mf_IwzNGF9RDorSB05MV&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/7TjMGDRr88fizNoHev-IHWlQbDPEyhNlr1MQT3r8DcIB30b4TnZ5SS-aOgOeuMMBSg",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "LK8000 - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=org.lk8000.beta&hl=en_US",
+            "appstore:developer_url": "http://www.lk8000.org",
+            "og:title": "LK8000 - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/7TjMGDRr88fizNoHev-IHWlQbDPEyhNlr1MQT3r8DcIB30b4TnZ5SS-aOgOeuMMBSg=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "org.lk8000.beta",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "org.lk8000.beta",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Tactical Flight Navigator",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=org.lk8000.beta&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/7TjMGDRr88fizNoHev-IHWlQbDPEyhNlr1MQT3r8DcIB30b4TnZ5SS-aOgOeuMMBSg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Port Authority Women's EZCotton Polo | Product | Port Authority",
+      "htmlTitle": "Port Authority Women&#39;s EZCotton Polo | Product | Port Authority",
+      "link": "https://www.portauthorityclothing.com/p/8401_GreenGlen",
+      "displayLink": "www.portauthorityclothing.com",
+      "snippet": "LK8000. Port Authority® Women's EZCotton® Polo. Brand Logo. Women's Sizes: XS–4XL. Women's Sizes: XS–4XL. Color selected: Green Glen. Apple ...",
+      "htmlSnippet": "\u003cb\u003eLK8000\u003c/b\u003e. Port Authority\u003csup\u003e®\u003c/sup\u003e Women&#39;s EZCotton\u003csup\u003e®\u003c/sup\u003e Polo. Brand Logo. Women&#39;s Sizes: XS–4XL. Women&#39;s Sizes: XS–4XL. Color selected: Green Glen. Apple&nbsp;...",
+      "formattedUrl": "https://www.portauthorityclothing.com/p/8401_GreenGlen",
+      "htmlFormattedUrl": "https://www.portauthorityclothing.com/p/8401_GreenGlen",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47EAsRtiHcGL0C4N00WH7eCS2-5G8vTDh53FhK4RM-NcpOf5PdWTrOTV3&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.portauthorityclothing.com:443//cdnp.sanmar.com/medias/sys_master/images/images/hd1/hc1/13552479174686/8401-GreenGlen-0-LK8000GreenGlenModelFront1-1200W.jpg",
+            "og:type": "product",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1.0",
+            "og:title": "Port Authority Women's EZCotton Polo | Product | Port Authority",
+            "og:url": "https://www.portauthorityclothing.com:443/p/8401_GreenGlen",
+            "og:description": "\u003cp\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003eIt wasn&rsquo;t easy making EZCotton better, but we did. Still made of soft, smooth, durable 100% cotton pique, our EZCotton Polo boasts an updated fit and a collar that resists curling. It also resists shrinking, wrinkling, pilling and fading with ease.\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003e6.2-ounce, 100% cotton\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003eFlat knit collar and cuffs\u003cbr /\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003e3-button placket\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003eDyed-to-match buttons\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003cli\u003e\u003cspan style=\"font-size: small;\"\u003e\u003cspan style=\"font-family: Arial;\"\u003e&nbsp;Side vents\u003cb\u003e\u003cbr /\u003e\u003c/b\u003e\u003cbr type=\"_moz\" /\u003e\u003c/span\u003e\u003c/span\u003e\u003c/li\u003e\u003c/ul\u003e",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdnp.sanmar.com/medias/sys_master/images/images/h3c/h9c/13552479207454/8401-GreenGlen-1-LK8000GreenGlenModelCurve-1200W.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LK8000/LK8000: LK8000 Tactical Flight Computer main repo - GitHub",
+      "htmlTitle": "LK8000/LK8000: LK8000 Tactical Flight Computer main repo - GitHub",
+      "link": "https://github.com/LK8000/LK8000",
+      "displayLink": "github.com",
+      "snippet": "WELCOME TO THE LK8000 DEVELOPMENT HUB ... Website: www.lk8000.it ... Forum: postfrontal.com ... License: GPL-2.0 ... Translation status ... GitHub Stable ... GitHub Beta.",
+      "htmlSnippet": "WELCOME TO THE \u003cb\u003eLK8000\u003c/b\u003e DEVELOPMENT HUB ... Website: www.\u003cb\u003elk8000\u003c/b\u003e.it ... Forum: postfrontal.com ... License: GPL-2.0 ... Translation status ... GitHub Stable ... GitHub Beta.",
+      "formattedUrl": "https://github.com/LK8000/LK8000",
+      "htmlFormattedUrl": "https://github.com/\u003cb\u003eLK8000\u003c/b\u003e/\u003cb\u003eLK8000\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YgyWEf1GGZxBKNlNBuREoPkKHydVwU9-KqWMHbiWpkocmKLe52TauUQ&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "LK8000",
+            "name": "LK8000",
+            "text": "WELCOME TO THE LK8000 DEVELOPMENT HUB Build Targets supported TARGET=[PPC2003|PNA|PC|PCX64|LINUX|KOBO|PI] for a Linux build, if install is added to the command line, LK8000-LINUX and all files..."
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/LK8000/LK8000",
+            "og:image": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:1235485",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "release": "c452c9dda983c67755073a578000a324ee049ecd",
+            "html-safe-nonce": "fd36f5362c29f15a4aff75e1ee15a672995f3f807c8c1e319b0d5ec4ae305a72",
+            "expected-hostname": "github.com",
+            "og:description": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "twitter:image": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "LK8000",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJDQ0EwOjE0OUNCMjpFNzg0RjU6MTJBN0M4RDo2N0RGQzg2RSIsInZpc2l0b3JfaWQiOiI2NTYwMjc5MjY2MDI0MzQ2NzMiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==",
+            "github-keyboard-shortcuts": "repository,copilot",
+            "octolytics-dimension-repository_id": "1235485",
+            "octolytics-dimension-repository_network_root_nwo": "LK8000/LK8000",
+            "twitter:title": "GitHub - LK8000/LK8000: LK8000 Tactical Flight Computer main repo",
+            "og:image:alt": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "og:type": "object",
+            "og:title": "GitHub - LK8000/LK8000: LK8000 Tactical Flight Computer main repo",
+            "visitor-hmac": "fe8f421787f07f87220b3e21566c4bbebe9e6eeda82dca96a44fc78082229e26",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "disambiguate",
+            "request-id": "CCA0:149CB2:E784F5:12A7C8D:67DFC86E",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/LK8000/LK8000 git https://github.com/LK8000/LK8000.git",
+            "octolytics-dimension-user_id": "527985",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "1235485",
+            "octolytics-dimension-repository_nwo": "LK8000/LK8000",
+            "viewport": "width=device-width",
+            "twitter:description": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "route-controller": "files",
+            "current-catalog-service-hash": "f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb",
+            "og:url": "https://github.com/LK8000/LK8000"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Exporting Tasks to LK8000 - Condor",
+      "htmlTitle": "Exporting Tasks to \u003cb\u003eLK8000\u003c/b\u003e - Condor",
+      "link": "https://www.condorsoaring.com/forums/viewtopic.php?t=19754",
+      "displayLink": "www.condorsoaring.com",
+      "snippet": "Apr 29, 2020 ... Exporting Tasks to LK8000 ... Hello all, I hope I am in the right place regarding my question. I'm using LK8000 7.1; which is accepting tasks in ...",
+      "htmlSnippet": "Apr 29, 2020 \u003cb\u003e...\u003c/b\u003e Exporting Tasks to \u003cb\u003eLK8000\u003c/b\u003e ... Hello all, I hope I am in the right place regarding my question. I&#39;m using \u003cb\u003eLK8000\u003c/b\u003e 7.1; which is accepting tasks in&nbsp;...",
+      "formattedUrl": "https://www.condorsoaring.com/forums/viewtopic.php?t=19754",
+      "htmlFormattedUrl": "https://www.condorsoaring.com/forums/viewtopic.php?t=19754",
+      "pagemap": {
+        "breadcrumb": [
+          {
+            "title": "Condor",
+            "url": "Condor"
+          },
+          {
+            "title": "Board index",
+            "url": "Board index"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Releases · LK8000/LK8000",
+      "htmlTitle": "Releases · \u003cb\u003eLK8000\u003c/b\u003e/\u003cb\u003eLK8000\u003c/b\u003e",
+      "link": "https://github.com/LK8000/LK8000/releases",
+      "displayLink": "github.com",
+      "snippet": "Jul 4, 2023 ... 7.4.18 Pre-release Pre-release Assets 6 Loading 2 elgarrapata and doramail reacted with thumbs up emoji All reactions 2 reactions 2 people reacted",
+      "htmlSnippet": "Jul 4, 2023 \u003cb\u003e...\u003c/b\u003e 7.4.18 Pre-release Pre-release Assets 6 Loading 2 elgarrapata and doramail reacted with thumbs up emoji All reactions 2 reactions 2 people reacted",
+      "formattedUrl": "https://github.com/LK8000/LK8000/releases",
+      "htmlFormattedUrl": "https://github.com/\u003cb\u003eLK8000\u003c/b\u003e/\u003cb\u003eLK8000\u003c/b\u003e/releases",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0YgyWEf1GGZxBKNlNBuREoPkKHydVwU9-KqWMHbiWpkocmKLe52TauUQ&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "LK8000",
+            "name": "LK8000"
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/LK8000/LK8000/releases",
+            "og:image": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:1235485",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "release": "84532a7fcc0ba9953d320fc3060aae261666cef4",
+            "html-safe-nonce": "ee59a562cec82bc8c7814c093d900004656327511e250cf49d2d4dfa6e6eeece",
+            "expected-hostname": "github.com",
+            "og:description": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "twitter:image": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "LK8000",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository/releases(.:format)",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJERUQxOjMxMUQ5MDo0NkJDNDA2OjYwNjk4RjE6NjdERDJBREUiLCJ2aXNpdG9yX2lkIjoiMTAwMTM0NTY2MzcyNzY0MzM1OCIsInJlZ2lvbl9lZGdlIjoiaWFkIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9",
+            "github-keyboard-shortcuts": "repository,copilot",
+            "octolytics-dimension-repository_id": "1235485",
+            "octolytics-dimension-repository_network_root_nwo": "LK8000/LK8000",
+            "twitter:title": "Releases · LK8000/LK8000",
+            "og:image:alt": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "og:type": "object",
+            "og:title": "Releases · LK8000/LK8000",
+            "visitor-hmac": "c586e8eda943dff1eed5d3ccbfc170f3977b5036ffc4f3957f71847d39ae8b4b",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "index",
+            "request-id": "DED1:311D90:46BC406:60698F1:67DD2ADE",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e/releases/index",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/LK8000/LK8000 git https://github.com/LK8000/LK8000.git",
+            "octolytics-dimension-user_id": "527985",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "1235485",
+            "octolytics-dimension-repository_nwo": "LK8000/LK8000",
+            "viewport": "width=device-width",
+            "twitter:description": "LK8000 Tactical Flight Computer main repo. Contribute to LK8000/LK8000 development by creating an account on GitHub.",
+            "route-controller": "releases",
+            "current-catalog-service-hash": "6f13f31f798a93a6b08d3be0727120e9af35851fac7b9c620d6cf9a70068c136",
+            "og:url": "/LK8000/LK8000/releases"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://opengraph.githubassets.com/642f4132fffeecf9393f19914b74c159dd66d3f1724e1b356e6a4473ed91b75d/LK8000/LK8000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Port Auth. Womens Cotton Logo Polo. LK8000. Logo Shirts Direct",
+      "htmlTitle": "Port Auth. Womens Cotton Logo Polo. \u003cb\u003eLK8000\u003c/b\u003e. Logo Shirts Direct",
+      "link": "https://logoshirtsdirect.com/product/port-authority-womens-cotton-logo-polo-lk8000/",
+      "displayLink": "logoshirtsdirect.com",
+      "snippet": "100% cotton pique, our new EZCotton Polo boasts an updated fit and a collar that resists curling. It also resists shrinking, wrinkling, pilling and fading with ...",
+      "htmlSnippet": "100% cotton pique, our new EZCotton Polo boasts an updated fit and a collar that resists curling. It also resists shrinking, wrinkling, pilling and fading with&nbsp;...",
+      "formattedUrl": "https://logoshirtsdirect.com/.../port-authority-womens-cotton-logo-polo-lk8...",
+      "htmlFormattedUrl": "https://logoshirtsdirect.com/.../port-authority-womens-cotton-logo-polo-\u003cb\u003elk8\u003c/b\u003e...",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "USD",
+            "price": "$31.98",
+            "availability": "http://schema.org/InStock"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtPN01YDJufBbWpH4T792qa2AyC1ZBzIA1uNM3aN3FobdVG_MKsysu24Q&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://logoshirtsdirect.com/wp-content/uploads/2014/06/LK8000_bluehthr_model_front_072017.jpg",
+            "name": "Port Authority Womens Cotton Logo Polo. LK8000."
+          }
+        ],
+        "postaladdress": [
+          {
+            "addresslocality": "Franklin",
+            "postalcode": "46131",
+            "addressregion": "IN",
+            "addresscountry": "USA",
+            "streetaddress": "2141 Holiday Lane"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://logoshirtsdirect.com/wp-content/uploads/2014/06/LK8000_bluehthr_model_front_072017.jpg",
+            "og:type": "article",
+            "og:image:width": "1200",
+            "og:site_name": "Logo Shirts Direct",
+            "og:title": "Port Auth. Womens Cotton Logo Polo. LK8000. Logo Shirts Direct",
+            "og:image:height": "1800",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "og:description": "This Womens Cotton Logo Polo made of 100% EZCotton is comfortable and durable. Great for Ladies Company Polo Shirts. Add your FREE Custom Embroidered Logo.",
+            "twitter:data1": "1 minute",
+            "article:modified_time": "2025-01-07T18:24:35+00:00",
+            "viewport": "width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=3",
+            "og:locale": "en_US",
+            "og:url": "https://logoshirtsdirect.com/product/port-authority-womens-cotton-logo-polo-lk8000/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://logoshirtsdirect.com/wp-content/uploads/2014/06/LK8000_bluehthr_model_front_072017.jpg"
+          }
+        ],
+        "localbusiness": [
+          {
+            "image": "https://logoshirtsdirect.com/wp-content/uploads/2015/07/LogoShirtsDirect-logo.jpg",
+            "name": "Logo Shirts Direct",
+            "pricerange": "$$$",
+            "telephone": "(888) 341-5646",
+            "email": "Sales@LogoShirtsDirect.com"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Port Authority Womens Cotton Logo Polo. LK8000.",
+            "photo": "https://logoshirtsdirect.com/wp-content/uploads/2014/06/LK8000_bluehthr_model_front_072017.jpg",
+            "currency": "USD",
+            "currency_iso4217": "840"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LK8000 on Android - PostFrontal Forum",
+      "htmlTitle": "LK8000 on Android - PostFrontal Forum",
+      "link": "https://www.postfrontal.com/forum/topic.asp?TOPIC_ID=8752",
+      "displayLink": "www.postfrontal.com",
+      "snippet": "Mar 28, 2018 ... Can someone please explain to me how to get the data files into LK8000, which is installed on the phone SD card. Somehow I have managed to get ...",
+      "htmlSnippet": "Mar 28, 2018 \u003cb\u003e...\u003c/b\u003e Can someone please explain to me how to get the data files into \u003cb\u003eLK8000\u003c/b\u003e, which is installed on the phone SD card. Somehow I have managed to get&nbsp;...",
+      "formattedUrl": "https://www.postfrontal.com/forum/topic.asp?TOPIC_ID=8752",
+      "htmlFormattedUrl": "https://www.postfrontal.com/forum/topic.asp?TOPIC_ID=8752",
+      "pagemap": {
+        "metatags": [
+          {
+            "copyright": "This Forum code is Copyright (C) 2000-05 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) PostFrontal - La community del Volo a Vela"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fun with Rakuten Kobo Nia and LK8000 | Deadbadger",
+      "htmlTitle": "Fun with Rakuten Kobo Nia and \u003cb\u003eLK8000\u003c/b\u003e | Deadbadger",
+      "link": "https://deadbadger.cz/blog/fun-with-rakuten-kobo-nia",
+      "displayLink": "deadbadger.cz",
+      "snippet": "Sep 17, 2024 ... These machines provide a decent e-ink display together with a pretty capable hardware running Linux. The main reason they are so popular among paragliding ...",
+      "htmlSnippet": "Sep 17, 2024 \u003cb\u003e...\u003c/b\u003e These machines provide a decent e-ink display together with a pretty capable hardware running Linux. The main reason they are so popular among paragliding&nbsp;...",
+      "formattedUrl": "https://deadbadger.cz/blog/fun-with-rakuten-kobo-nia",
+      "htmlFormattedUrl": "https://deadbadger.cz/blog/fun-with-rakuten-kobo-nia",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15JP3XBj_tkjnRCiaR6ddUS_-ABANJJMZkPTbvFcD4FVXX7daQRYQPxA&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://deadbadger.cz/images/c/t/e/c/k/ctecka-88c5c7be.jpg?g-b6b02628"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Upgrade for LK8000 flight computer | Cross Country Magazine",
+      "htmlTitle": "Upgrade for \u003cb\u003eLK8000\u003c/b\u003e flight computer | Cross Country Magazine",
+      "link": "https://xcmag.com/news/upgrade-for-lk8000-flight-computer/",
+      "displayLink": "xcmag.com",
+      "snippet": "Feb 17, 2011 ... Upgrade for LK8000 flight computer ... Version 2.0 is now available for the LK8000 flight computer. It has several new features, outlined below:.",
+      "htmlSnippet": "Feb 17, 2011 \u003cb\u003e...\u003c/b\u003e Upgrade for \u003cb\u003eLK8000\u003c/b\u003e flight computer ... Version 2.0 is now available for the \u003cb\u003eLK8000\u003c/b\u003e flight computer. It has several new features, outlined below:.",
+      "formattedUrl": "https://xcmag.com/news/upgrade-for-lk8000-flight-computer/",
+      "htmlFormattedUrl": "https://xcmag.com/news/upgrade-for-\u003cb\u003elk8000\u003c/b\u003e-flight-computer/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz2tFhwFm8ZlmymNmHJNDonJs0L9NUQCh0x8B7aDnMQ3ewHES1kvYaWzKj&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2011/02/LK8000-v2.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "article:published_time": "2011-02-17T10:13:26+00:00",
+            "og:image:width": "500",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "author": "Charlie King",
+            "og:title": "Upgrade for LK8000 flight computer",
+            "og:image:height": "375",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Version 2.0 is now available for the LK8000 flight computer.",
+            "twitter:creator": "@xcmag",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2022-02-25T16:12:59+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/news/upgrade-for-lk8000-flight-computer/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2011/02/LK8000-v2.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

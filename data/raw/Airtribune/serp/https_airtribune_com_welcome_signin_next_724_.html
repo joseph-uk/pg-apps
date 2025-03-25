@@ -1,0 +1,2957 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="Glad to see you again!">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/site/img/favicon.ico">
+
+    <meta property="og:url" content="https://airtribune.com/welcome/signin?next=/724/">
+    <meta property="og:title" content="Sign-in | Airtribune">
+    <meta property="og:description" content="Glad to see you again!">
+    <meta property="og:image" content="/static/site/img/logo-large.png">
+    <meta name="twitter:site" content="@airtribune">
+    <meta name="twitter:creator" content="@airtribune">
+    <meta name="twitter:title" content="Sign-in | Airtribune">
+    <meta name="twitter:description" content="Glad to see you again!">
+    <meta name="twitter:image:src" content="/static/site/img/logo-large.png">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+    <title>Sign-in | Airtribune</title>
+
+    <!-- main CSS -->
+    <link href="/static/site/build/style.min.css?1731670319" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      window.ATDATA = {};
+      window.ATDATA.currentUserId = 0;
+      window.ATDATA.apiUrl = "https://airtribune.com/api";
+      window.ATDATA.path = "/welcome/";
+      window.ATDATA.mediaUrl = "https://airtribune.fra1.digitaloceanspaces.com/media/";
+      window.ATDATA.urls = {
+        "email": "https://airtribune.com/api/validation/user/email"
+      };
+      window.ATDATA.imageLists = {
+        "bannersSlideshow": [
+          {img:"/static/site/img/promo/promo-banner-2.jpg",isBanner:true,templateId:"carousel_banner_2"},
+          {img:"/static/site/img/promo/promo-banner-4-pg.png",isBanner:true,templateId:"carousel_banner_3"}
+        ],
+        
+      }
+      window.ATDATA.csrftoken = "19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb";
+      window.ATDATA.requirejsUseCache = true;
+      
+      window.ATDATA.meta = {"signin": {"description": "Glad to see you again!", "title": "Sign-in | Airtribune"}, "signup": {"description": "New user registration.", "title": "Sign-up | Airtribune"}, "password": {"description": "Forgot your password?", "title": "Password recovery | Airtribune"}};
+      
+      
+      window.ATDATA.breadcrumbs = [
+        {title: "Home", url: "/"}
+      ];
+      
+      window.ATDATA.userTracksPath = "/None";
+    </script>
+    
+<script>
+    window.ATDATA.imageLists["photoBlockSignup"] =
+        [
+          
+            {img:"https://airtribune.fra1.digitaloceanspaces.com/media/slideshow/photo/2014/08/yrNf6p9WiYHs.jpg",alt:"Sign Up",copyright:"Martin Scheel",copyrightLink:"http://www.azoom.ch/"},
+          
+        ];
+    window.ATDATA.imageLists["photoBlockSignin"] =
+        [
+          
+            {img:"https://airtribune.fra1.digitaloceanspaces.com/media/slideshow/photo/2014/08/d1LXZP2Sf2aO.jpg",alt:"Sign In",copyright:"RAF",copyrightLink:"http://www.raf.mod.uk/"},
+          
+        ];
+    window.ATDATA.imageLists["photoBlockPassword"] =
+        [
+          
+            {img:"https://airtribune.fra1.digitaloceanspaces.com/media/slideshow/photo/2014/08/NigzYx4MJoow.jpg",alt:"Password recovery",copyright:"icaro2000",copyrightLink:"http://www.icaro2000.com/"},
+          
+        ];
+</script>
+
+<style>
+/*Cookie Consent Begin*/
+#myCookieConsent {
+    z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: absolute;
+    color: #FFF;
+    top: 200px;
+    display: none;
+    left: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#myCookieConsent div {
+    padding: 5px 0 0;
+}
+#myCookieConsent a {
+    color: #ffba55;
+    display: inline-block;
+    padding: 0 10px;
+}
+#myCookieConsent a:hover {
+	color: #fda016;
+}
+#myCookieConsent a#cookieButton {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.1em;
+	background: #ffba55;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+    background: #fda016;
+	color: #000;
+}
+/*Cookie Consent End*/
+</style>
+  </head>
+
+  <body class="bottom-fix">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+function GetCookie(name) {
+  var arg=name+"=";
+  var alen=arg.length;
+  var clen=document.cookie.length;
+  var i=0;
+  while (i<clen) {
+	var j=i+alen;
+	if (document.cookie.substring(i,j)==arg)
+	  return "here";
+	i=document.cookie.indexOf(" ",i)+1;
+	if (i==0) break;
+  }
+  return null;
+}
+function testFirstCookie(){
+	var offset = new Date().getTimezoneOffset();
+	if ((offset >= -180) && (offset <= 0)) { // European time zones
+		var visit=GetCookie("cookieCompliancyAccepted");
+		if (visit==null){
+		   $("#myCookieConsent").fadeIn(400);	// Show warning
+	   } else {
+			// Already accepted
+	   }		
+	}
+}
+$(document).ready(function(){
+    $("#cookieButton").click(function(){
+		console.log('Understood');
+		var expire=new Date();
+		expire=new Date(expire.getTime()+7776000000);
+		document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
+        $("#myCookieConsent").hide(400);
+    });
+	testFirstCookie();
+});
+</script>
+
+<div id="myCookieConsent">
+	<a id="cookieButton">Understood</a>
+	<div>This website is using cookies. We and our partners use cookies on this site to improve our service, perform analytics, personalize advertising, measure advertising performance, and remember website prefrences. By using the site, you consent to these cookies. <a href="https://airtribune.com/docs/terms">More&nbsp;details</a></div>
+</div>    
+
+  
+    <div id="fb-root"></div>
+    <div class="fade-helper" data-bind="visible:fadeHelperDisplay,style: {'opacity':allReady()?'0':'1'}" style="opacity:1;"> </div>
+
+    <div class="header-panel fixed-top clearfix ">
+      <div class="container">
+        <div class="header-panel-inner">
+
+          <div class="logo">
+            <a title="Main page" href="/">
+              <img alt="Airtribune.com" src="/static/site/img/logo.svg" class="site-logo image-style-none">
+            </a>
+          </div>
+
+          <div class="search-part">
+            <!-- ko widget: "topSearch" --><!-- /ko -->
+          </div>
+
+          <div class="right-panel pull-right">
+
+            <div class="sign-part" id="sign-part">
+              
+              <div class="sign-part-cell"><!-- ko widget: "uploadTrack" --><!-- /ko --></div>
+              
+                <div class="sign-part-cell">
+
+            
+            
+            
+		  <!-- ko widgetInline:{
+                    name: "dropdownMenuLang",
+                    stickTo: "left",
+                    href: "/i18n/setlang/",
+                    csrf_token :"<input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />",
+                    items: [
+                       
+                            
+                            {href:"/i18n/setlang/", lang:"en", text:"English"},
+                       
+                            
+                            {href:"/i18n/setlang/", lang:"wa", text:"(BETA) Français"},
+                       
+                            
+                            {href:"/i18n/setlang/", lang:"it", text:"(BETA) italiano"},
+                       
+                            
+                            {href:"/i18n/setlang/", lang:"pl", text:"(BETA) polski"},
+                       
+                            
+                            {href:"/i18n/setlang/", lang:"ru", text:"(BETA) Русский"},
+                       
+                    ]
+                  } -->
+                  <a href="javascript:;" class="language-menu"></a>
+                  <!-- /ko -->
+                </div>
+              
+                <div class="sign-part-cell"><button data-bind="click: function () { eventEmitter.emit('modalSign.open'); }" class="btn btn-dafault btn-sign-in">SIGN IN</button></div>
+                <script id="modal-sign-content" type="text/template">
+
+                  <div class="modal-sign-view modal-sign-in">
+                    <div class="modal-sign-header modal-sign-in-header"><span>New user?</span><a href="javascript:;" data-bind="click:goSignUp">Sign up</a></div>
+                    <div class="modal-sign-social">
+		      <span style="font-weight:strong;">Social login (Google, Facebook & Twitter login) have all been phased out due to the complexity of keeping up with their rules. Now you must use email sign-in. If you never did then simply press the Password recovery at the bottom of this page, and create a password. If you do not remember your email, mail us.</span>
+<!--                      <a href="/login/facebook/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+<!--                      <a href="/login/google-plus/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+<!--                      <a href="/login/twitter/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+                    </div>
+                    <form action="/welcome/signin?next=/welcome/signin" method="post">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <input name="signin" type="hidden" value="1"/>
+                      <div class="modal-sign-input-group modal-sign-in-username-group" data-bind="validationElement: valSignInEmail, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="email" name="signin-username" maxlength="254" placeholder="Email address" data-bind="value: valSignInEmail" />
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignInEmail"></div>
+                      </div>
+                      <div class="modal-sign-input-group modal-sign-in-password-group" data-bind="validationElement: valSignInPassword, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="password" name="signin-password" placeholder="Password" data-bind="value: valSignInPassword" />
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignInPassword"></div>
+                      </div>
+                      <button type="submit" class="modal-sign-btn modal-sign-in-go" data-bind="click:submitForm">SIGN IN</button>
+                      <div class="form-item form-password-request clearfix">
+                        <a href="javascript:;" data-bind="click:goRecoverPassword">Password recovery</a>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-up-social">
+                    <div class="modal-sign-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    <div class="modal-sign-up-social-avatar">
+                    </div>
+                    <div class="modal-sign-up-social-text">
+                      New user will be registered<br />
+                      using your <span class="modal-sign-up-social-text-backend"></span> account.
+                    </div>
+                    <div class="modal-sign-up-social-rules">
+                      <div><input type="checkbox" id="qqq2" hidden data-bind="checked: enableSubmitSocial" /><label for="qqq2"></label></div>
+                      <div>I accept <a href="/docs/privacy" target="_blank" data-bind="click:goLink">Privacy Policy</a> and <a href="/docs/terms" target="_blank" data-bind="click:goLink">Terms of Service</a></div>
+                    </div>
+                    <button type="submit" class="modal-sign-btn modal-sign-up-social-go" data-bind="enable: enableSubmitSocial, click:goCompleteSocial">CONTINUE</button>
+                  </div>
+
+				  
+                      <div class="modal-sign-up-step1-rules">
+
+						<div><input type="checkbox" id="rrr2" hidden  /><label for="rrr2"></label></div>
+                        <div>I accept receiving Newsletters <a href="/docs/privacy" target="_blank" data-bind="click:goLink">(See Privacy Policy)</a>. (We will only email about items relevant to you. Your details will not be passed to any 3rd party outside of Airtribune)</div>
+						
+                    </div>
+
+				  
+				  
+
+                  <div class="modal-sign-view modal-sign-up-step1">
+                    <div class="modal-sign-header modal-sign-up-step1-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    <div class="modal-sign-social">
+<!--                      <a href="/login/facebook/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+<!--                      <a href="/login/google-plus/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+<!--                      <a href="/login/twitter/?next=/welcome/signin" data-bind="click:goLink"></a> -->
+                    </div>
+                    <form action="/sign-up/step-1" method="post">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <div class="modal-sign-input-group modal-sign-up-step1-username-group" data-bind="validationElement: valSignUpStep1Email, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="email" maxlength="254" placeholder="Email address" data-bind="value: valSignUpStep1Email" required />
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep1Email"></div>
+                      </div>
+                      <div class="modal-sign-up-step1-rules">
+                        <div><input type="checkbox" id="qqq" hidden data-bind="checked: enableSubmit" /><label for="qqq"></label></div>
+                        <div>I accept <a href="/docs/privacy" target="_blank" data-bind="click:goLink">Privacy Policy</a> and <a href="/docs/terms" target="_blank" data-bind="click:goLink">Terms of Service</a></div>
+                    </div>
+ 
+                      <div class="modal-sign-up-step1-rules">
+
+						<div><input type="checkbox" id="rrr" hidden  /><label for="rrr"></label></div>
+                        <div>I accept receiving Newsletters <a href="/docs/privacy" target="_blank" data-bind="click:goLink">(See Privacy Policy)</a>. (We will only email about items relevant to you. Your details will not be passed to any 3rd party outside of Airtribune)</div>
+						
+                    </div>
+						
+  				  
+                      <button type="submit" class="modal-sign-btn modal-sign-up-step1-go" data-bind="enable: enableSubmit, click:postForm">CONTINUE</button>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-up-step2">
+                    <form action="/sign-up/step-2" method="post">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <div class="modal-sign-input-group modal-sign-up-step2-code-group" data-bind="validationElement: valSignUpStep2Code, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="code" maxlength="8" placeholder="Verification code from email" data-bind="value: valSignUpStep2Code">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep2Code"></div>
+                      </div>
+                      <div class="modal-sign-up-step2-text">
+                        We have sent an email with verification code to your email. Enter the code from email into a field above.
+                      </div>
+                      <button type="submit" class="modal-sign-btn modal-sign-up-step2-go" data-bind="click:postForm">CONTINUE</button>
+                      <div class="modal-sign-header modal-sign-up-step2-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-up-user-data modal-sign-up-step3">
+                    <form action="/sign-up/step-3" method="post">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <div class="modal-sign-up-user-data-text">Please, input information about yourself</div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpStep3Name, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="first_name" maxlength="254" placeholder="First Name" data-bind="value: valSignUpStep3Name">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep3Name"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpStep3Surname, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="last_name" maxlength="254" placeholder="Last Name" data-bind="value: valSignUpStep3Surname">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep3Surname"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpStep3Gender, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnSelect",widgetId:"msnSelectGenre", value:valSignUpStep3Gender} -->
+                        <select name="gender" data-first-option-as-caption="true" data-bind="value: value">
+                          
+                            <option value="">Gender</option>
+                          
+                            <option value="M">Male</option>
+                          
+                            <option value="F">Female</option>
+                          
+                        </select>
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep3Gender"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpStep3Date, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnDatepicker",widgetId:"msnDatePicker", value: valSignUpStep3Date} -->
+                        <input type="text" name="birthdate" maxlength="254" placeholder="Date of birth" class="msn-datepicker" data-bind="value: value">
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep3Date"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpStep3Country, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnSelect",widgetId:"msnSelectCountry", value:valSignUpStep3Country} -->
+                        <select name="country" data-first-option-as-caption="true" data-bind="value: value">
+                          
+                            <option value="">Country</option>
+                          
+                            <option value="AF">Afghanistan</option>
+                          
+                            <option value="AX">Åland Islands</option>
+                          
+                            <option value="AL">Albania</option>
+                          
+                            <option value="DZ">Algeria</option>
+                          
+                            <option value="AS">American Samoa</option>
+                          
+                            <option value="AD">Andorra</option>
+                          
+                            <option value="AO">Angola</option>
+                          
+                            <option value="AI">Anguilla</option>
+                          
+                            <option value="AQ">Antarctica</option>
+                          
+                            <option value="AG">Antigua and Barbuda</option>
+                          
+                            <option value="AR">Argentina</option>
+                          
+                            <option value="AM">Armenia</option>
+                          
+                            <option value="AW">Aruba</option>
+                          
+                            <option value="AU">Australia</option>
+                          
+                            <option value="AT">Austria</option>
+                          
+                            <option value="AZ">Azerbaijan</option>
+                          
+                            <option value="BS">Bahamas</option>
+                          
+                            <option value="BH">Bahrain</option>
+                          
+                            <option value="BD">Bangladesh</option>
+                          
+                            <option value="BB">Barbados</option>
+                          
+                            <option value="BY">Belarus</option>
+                          
+                            <option value="BE">Belgium</option>
+                          
+                            <option value="BZ">Belize</option>
+                          
+                            <option value="BJ">Benin</option>
+                          
+                            <option value="BM">Bermuda</option>
+                          
+                            <option value="BT">Bhutan</option>
+                          
+                            <option value="BO">Bolivia</option>
+                          
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                          
+                            <option value="BA">Bosnia and Herzegovina</option>
+                          
+                            <option value="BW">Botswana</option>
+                          
+                            <option value="BV">Bouvet Island</option>
+                          
+                            <option value="BR">Brazil</option>
+                          
+                            <option value="IO">British Indian Ocean Territory</option>
+                          
+                            <option value="BN">Brunei</option>
+                          
+                            <option value="BG">Bulgaria</option>
+                          
+                            <option value="BF">Burkina Faso</option>
+                          
+                            <option value="BI">Burundi</option>
+                          
+                            <option value="CV">Cabo Verde</option>
+                          
+                            <option value="KH">Cambodia</option>
+                          
+                            <option value="CM">Cameroon</option>
+                          
+                            <option value="CA">Canada</option>
+                          
+                            <option value="KY">Cayman Islands</option>
+                          
+                            <option value="CF">Central African Republic</option>
+                          
+                            <option value="TD">Chad</option>
+                          
+                            <option value="CL">Chile</option>
+                          
+                            <option value="CN">China</option>
+                          
+                            <option value="CX">Christmas Island</option>
+                          
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                          
+                            <option value="CO">Colombia</option>
+                          
+                            <option value="KM">Comoros</option>
+                          
+                            <option value="CG">Congo</option>
+                          
+                            <option value="CD">Congo (the Democratic Republic of the)</option>
+                          
+                            <option value="CK">Cook Islands</option>
+                          
+                            <option value="CR">Costa Rica</option>
+                          
+                            <option value="CI">Côte d&#39;Ivoire</option>
+                          
+                            <option value="HR">Croatia</option>
+                          
+                            <option value="CU">Cuba</option>
+                          
+                            <option value="CW">Curaçao</option>
+                          
+                            <option value="CY">Cyprus</option>
+                          
+                            <option value="CZ">Czech Republic</option>
+                          
+                            <option value="DK">Denmark</option>
+                          
+                            <option value="DJ">Djibouti</option>
+                          
+                            <option value="DM">Dominica</option>
+                          
+                            <option value="DO">Dominican Republic</option>
+                          
+                            <option value="EC">Ecuador</option>
+                          
+                            <option value="EG">Egypt</option>
+                          
+                            <option value="SV">El Salvador</option>
+                          
+                            <option value="GQ">Equatorial Guinea</option>
+                          
+                            <option value="ER">Eritrea</option>
+                          
+                            <option value="EE">Estonia</option>
+                          
+                            <option value="ET">Ethiopia</option>
+                          
+                            <option value="FK">Falkland Islands  [Malvinas]</option>
+                          
+                            <option value="FO">Faroe Islands</option>
+                          
+                            <option value="FJ">Fiji</option>
+                          
+                            <option value="FI">Finland</option>
+                          
+                            <option value="FR">France</option>
+                          
+                            <option value="GF">French Guiana</option>
+                          
+                            <option value="PF">French Polynesia</option>
+                          
+                            <option value="TF">French Southern Territories</option>
+                          
+                            <option value="GA">Gabon</option>
+                          
+                            <option value="GM">Gambia (The)</option>
+                          
+                            <option value="GE">Georgia</option>
+                          
+                            <option value="DE">Germany</option>
+                          
+                            <option value="GH">Ghana</option>
+                          
+                            <option value="GI">Gibraltar</option>
+                          
+                            <option value="GR">Greece</option>
+                          
+                            <option value="GL">Greenland</option>
+                          
+                            <option value="GD">Grenada</option>
+                          
+                            <option value="GP">Guadeloupe</option>
+                          
+                            <option value="GU">Guam</option>
+                          
+                            <option value="GT">Guatemala</option>
+                          
+                            <option value="GG">Guernsey</option>
+                          
+                            <option value="GN">Guinea</option>
+                          
+                            <option value="GW">Guinea-Bissau</option>
+                          
+                            <option value="GY">Guyana</option>
+                          
+                            <option value="HT">Haiti</option>
+                          
+                            <option value="HM">Heard Island and McDonald Islands</option>
+                          
+                            <option value="VA">Holy See  [Vatican City State]</option>
+                          
+                            <option value="HN">Honduras</option>
+                          
+                            <option value="HK">Hong Kong</option>
+                          
+                            <option value="HU">Hungary</option>
+                          
+                            <option value="IS">Iceland</option>
+                          
+                            <option value="IN">India</option>
+                          
+                            <option value="ID">Indonesia</option>
+                          
+                            <option value="IR">Iran</option>
+                          
+                            <option value="IQ">Iraq</option>
+                          
+                            <option value="IE">Ireland</option>
+                          
+                            <option value="IM">Isle of Man</option>
+                          
+                            <option value="IL">Israel</option>
+                          
+                            <option value="IT">Italy</option>
+                          
+                            <option value="JM">Jamaica</option>
+                          
+                            <option value="JP">Japan</option>
+                          
+                            <option value="JE">Jersey</option>
+                          
+                            <option value="JO">Jordan</option>
+                          
+                            <option value="KZ">Kazakhstan</option>
+                          
+                            <option value="KE">Kenya</option>
+                          
+                            <option value="KI">Kiribati</option>
+                          
+                            <option value="XK">Kosovo</option>
+                          
+                            <option value="XR">Kosovo</option>
+                          
+                            <option value="KW">Kuwait</option>
+                          
+                            <option value="KG">Kyrgyzstan</option>
+                          
+                            <option value="LA">Laos</option>
+                          
+                            <option value="LV">Latvia</option>
+                          
+                            <option value="LB">Lebanon</option>
+                          
+                            <option value="LS">Lesotho</option>
+                          
+                            <option value="LR">Liberia</option>
+                          
+                            <option value="LY">Libya</option>
+                          
+                            <option value="LI">Liechtenstein</option>
+                          
+                            <option value="LT">Lithuania</option>
+                          
+                            <option value="LU">Luxembourg</option>
+                          
+                            <option value="MO">Macao</option>
+                          
+                            <option value="MG">Madagascar</option>
+                          
+                            <option value="MW">Malawi</option>
+                          
+                            <option value="MY">Malaysia</option>
+                          
+                            <option value="MV">Maldives</option>
+                          
+                            <option value="ML">Mali</option>
+                          
+                            <option value="MT">Malta</option>
+                          
+                            <option value="MH">Marshall Islands</option>
+                          
+                            <option value="MQ">Martinique</option>
+                          
+                            <option value="MR">Mauritania</option>
+                          
+                            <option value="MU">Mauritius</option>
+                          
+                            <option value="YT">Mayotte</option>
+                          
+                            <option value="MX">Mexico</option>
+                          
+                            <option value="FM">Micronesia (the Federated States of)</option>
+                          
+                            <option value="MD">Moldovia</option>
+                          
+                            <option value="MC">Monaco</option>
+                          
+                            <option value="MN">Mongolia</option>
+                          
+                            <option value="ME">Montenegro</option>
+                          
+                            <option value="MS">Montserrat</option>
+                          
+                            <option value="MA">Morocco</option>
+                          
+                            <option value="MZ">Mozambique</option>
+                          
+                            <option value="MM">Myanmar</option>
+                          
+                            <option value="NA">Namibia</option>
+                          
+                            <option value="NR">Nauru</option>
+                          
+                            <option value="NP">Nepal</option>
+                          
+                            <option value="NL">Netherlands</option>
+                          
+                            <option value="NC">New Caledonia</option>
+                          
+                            <option value="NZ">New Zealand</option>
+                          
+                            <option value="NI">Nicaragua</option>
+                          
+                            <option value="NE">Niger</option>
+                          
+                            <option value="NG">Nigeria</option>
+                          
+                            <option value="NU">Niue</option>
+                          
+                            <option value="NF">Norfolk Island</option>
+                          
+                            <option value="KP">North Korea</option>
+                          
+                            <option value="MK">North Macedonia</option>
+                          
+                            <option value="MP">Northern Mariana Islands</option>
+                          
+                            <option value="NO">Norway</option>
+                          
+                            <option value="OM">Oman</option>
+                          
+                            <option value="PK">Pakistan</option>
+                          
+                            <option value="PW">Palau</option>
+                          
+                            <option value="PS">Palestine, State of</option>
+                          
+                            <option value="PA">Panama</option>
+                          
+                            <option value="PG">Papua New Guinea</option>
+                          
+                            <option value="PY">Paraguay</option>
+                          
+                            <option value="PE">Peru</option>
+                          
+                            <option value="PH">Philippines</option>
+                          
+                            <option value="PN">Pitcairn</option>
+                          
+                            <option value="PL">Poland</option>
+                          
+                            <option value="PT">Portugal</option>
+                          
+                            <option value="PR">Puerto Rico</option>
+                          
+                            <option value="QA">Qatar</option>
+                          
+                            <option value="RE">Réunion</option>
+                          
+                            <option value="RO">Romania</option>
+                          
+                            <option value="FA">Russian Airsports Federation</option>
+                          
+                            <option value="RU">Ruzzia</option>
+                          
+                            <option value="RW">Rwanda</option>
+                          
+                            <option value="BL">Saint Barthélemy</option>
+                          
+                            <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                          
+                            <option value="KN">Saint Kitts and Nevis</option>
+                          
+                            <option value="LC">Saint Lucia</option>
+                          
+                            <option value="MF">Saint Martin (French part)</option>
+                          
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                          
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                          
+                            <option value="WS">Samoa</option>
+                          
+                            <option value="SM">San Marino</option>
+                          
+                            <option value="ST">Sao Tome and Principe</option>
+                          
+                            <option value="SA">Saudi Arabia</option>
+                          
+                            <option value="SN">Senegal</option>
+                          
+                            <option value="RS">Serbia</option>
+                          
+                            <option value="SC">Seychelles</option>
+                          
+                            <option value="SL">Sierra Leone</option>
+                          
+                            <option value="SG">Singapore</option>
+                          
+                            <option value="SX">Sint Maarten (Dutch part)</option>
+                          
+                            <option value="SK">Slovakia</option>
+                          
+                            <option value="SI">Slovenia</option>
+                          
+                            <option value="SB">Solomon Islands</option>
+                          
+                            <option value="SO">Somalia</option>
+                          
+                            <option value="ZA">South Africa</option>
+                          
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                          
+                            <option value="KR">South Korea</option>
+                          
+                            <option value="SS">South Sudan</option>
+                          
+                            <option value="ES">Spain</option>
+                          
+                            <option value="LK">Sri Lanka</option>
+                          
+                            <option value="SD">Sudan</option>
+                          
+                            <option value="SR">Suriname</option>
+                          
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                          
+                            <option value="SZ">Swaziland</option>
+                          
+                            <option value="SE">Sweden</option>
+                          
+                            <option value="CH">Switzerland</option>
+                          
+                            <option value="SY">Syria</option>
+                          
+                            <option value="TW">Taiwan</option>
+                          
+                            <option value="TJ">Tajikistan</option>
+                          
+                            <option value="TZ">Tanzania</option>
+                          
+                            <option value="TH">Thailand</option>
+                          
+                            <option value="TL">Timor-Leste</option>
+                          
+                            <option value="TG">Togo</option>
+                          
+                            <option value="TK">Tokelau</option>
+                          
+                            <option value="TO">Tonga</option>
+                          
+                            <option value="TT">Trinidad and Tobago</option>
+                          
+                            <option value="TN">Tunisia</option>
+                          
+                            <option value="TR">Turkey</option>
+                          
+                            <option value="TM">Turkmenistan</option>
+                          
+                            <option value="TC">Turks and Caicos Islands</option>
+                          
+                            <option value="TV">Tuvalu</option>
+                          
+                            <option value="UG">Uganda</option>
+                          
+                            <option value="UA">Ukraine</option>
+                          
+                            <option value="AE">United Arab Emirates</option>
+                          
+                            <option value="GB">United Kingdom</option>
+                          
+                            <option value="US">United States</option>
+                          
+                            <option value="UM">United States Minor Outlying Islands</option>
+                          
+                            <option value="UY">Uruguay</option>
+                          
+                            <option value="UZ">Uzbekistan</option>
+                          
+                            <option value="VU">Vanuatu</option>
+                          
+                            <option value="VE">Venezuela</option>
+                          
+                            <option value="VN">Vietnam</option>
+                          
+                            <option value="VG">Virgin Islands (British)</option>
+                          
+                            <option value="VI">Virgin Islands (U.S.)</option>
+                          
+                            <option value="WF">Wallis and Futuna</option>
+                          
+                            <option value="EH">Western Sahara</option>
+                          
+                            <option value="YE">Yemen</option>
+                          
+                            <option value="ZM">Zambia</option>
+                          
+                            <option value="ZW">Zimbabwe</option>
+                          
+                        </select>
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpStep3Country"></div>
+                      </div>
+                      <button type="submit" class="modal-sign-btn" data-bind="click:postForm">CONTINUE</button>
+                      <div class="modal-sign-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-up-user-data modal-sign-up-social-user-data">
+                    <form method="get">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <div class="modal-sign-up-user-data-text">Please, input information about yourself</div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataEmail, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="email" name="email" maxlength="254" placeholder="Email" data-bind="value: valSignUpSocialUserDataEmail">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataEmail"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataName, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="first_name" maxlength="254" placeholder="Name" data-bind="value: valSignUpSocialUserDataName">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataName"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataSurname, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="last_name" maxlength="254" placeholder="Surname" data-bind="value: valSignUpSocialUserDataSurname">
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataSurname"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataGender, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnSelect",widgetId:"msnSelectGenre", value:valSignUpSocialUserDataGender} -->
+                        <select name="gender" data-first-option-as-caption="true" data-bind="value: value">
+                          
+                            <option value="">Gender</option>
+                          
+                            <option value="M">Male</option>
+                          
+                            <option value="F">Female</option>
+                          
+                        </select>
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataGender"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataDate, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnDatepicker",widgetId:"msnDatePicker", value: valSignUpSocialUserDataDate} -->
+                        <input type="text" name="birthdate" maxlength="254" placeholder="Date of birth" class="msn-datepicker" data-bind="value: value">
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataDate"></div>
+                      </div>
+                      <div class="modal-sign-input-group" data-bind="validationElement: valSignUpSocialUserDataCountry, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <!-- ko widgetInline:{name:"msnSelect",widgetId:"msnSelectCountry", value:valSignUpSocialUserDataCountry} -->
+                        <select name="country" data-first-option-as-caption="true" data-bind="value: value">
+                          
+                            <option value="">Country</option>
+                          
+                            <option value="AF">Afghanistan</option>
+                          
+                            <option value="AX">Åland Islands</option>
+                          
+                            <option value="AL">Albania</option>
+                          
+                            <option value="DZ">Algeria</option>
+                          
+                            <option value="AS">American Samoa</option>
+                          
+                            <option value="AD">Andorra</option>
+                          
+                            <option value="AO">Angola</option>
+                          
+                            <option value="AI">Anguilla</option>
+                          
+                            <option value="AQ">Antarctica</option>
+                          
+                            <option value="AG">Antigua and Barbuda</option>
+                          
+                            <option value="AR">Argentina</option>
+                          
+                            <option value="AM">Armenia</option>
+                          
+                            <option value="AW">Aruba</option>
+                          
+                            <option value="AU">Australia</option>
+                          
+                            <option value="AT">Austria</option>
+                          
+                            <option value="AZ">Azerbaijan</option>
+                          
+                            <option value="BS">Bahamas</option>
+                          
+                            <option value="BH">Bahrain</option>
+                          
+                            <option value="BD">Bangladesh</option>
+                          
+                            <option value="BB">Barbados</option>
+                          
+                            <option value="BY">Belarus</option>
+                          
+                            <option value="BE">Belgium</option>
+                          
+                            <option value="BZ">Belize</option>
+                          
+                            <option value="BJ">Benin</option>
+                          
+                            <option value="BM">Bermuda</option>
+                          
+                            <option value="BT">Bhutan</option>
+                          
+                            <option value="BO">Bolivia</option>
+                          
+                            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                          
+                            <option value="BA">Bosnia and Herzegovina</option>
+                          
+                            <option value="BW">Botswana</option>
+                          
+                            <option value="BV">Bouvet Island</option>
+                          
+                            <option value="BR">Brazil</option>
+                          
+                            <option value="IO">British Indian Ocean Territory</option>
+                          
+                            <option value="BN">Brunei</option>
+                          
+                            <option value="BG">Bulgaria</option>
+                          
+                            <option value="BF">Burkina Faso</option>
+                          
+                            <option value="BI">Burundi</option>
+                          
+                            <option value="CV">Cabo Verde</option>
+                          
+                            <option value="KH">Cambodia</option>
+                          
+                            <option value="CM">Cameroon</option>
+                          
+                            <option value="CA">Canada</option>
+                          
+                            <option value="KY">Cayman Islands</option>
+                          
+                            <option value="CF">Central African Republic</option>
+                          
+                            <option value="TD">Chad</option>
+                          
+                            <option value="CL">Chile</option>
+                          
+                            <option value="CN">China</option>
+                          
+                            <option value="CX">Christmas Island</option>
+                          
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                          
+                            <option value="CO">Colombia</option>
+                          
+                            <option value="KM">Comoros</option>
+                          
+                            <option value="CG">Congo</option>
+                          
+                            <option value="CD">Congo (the Democratic Republic of the)</option>
+                          
+                            <option value="CK">Cook Islands</option>
+                          
+                            <option value="CR">Costa Rica</option>
+                          
+                            <option value="CI">Côte d&#39;Ivoire</option>
+                          
+                            <option value="HR">Croatia</option>
+                          
+                            <option value="CU">Cuba</option>
+                          
+                            <option value="CW">Curaçao</option>
+                          
+                            <option value="CY">Cyprus</option>
+                          
+                            <option value="CZ">Czech Republic</option>
+                          
+                            <option value="DK">Denmark</option>
+                          
+                            <option value="DJ">Djibouti</option>
+                          
+                            <option value="DM">Dominica</option>
+                          
+                            <option value="DO">Dominican Republic</option>
+                          
+                            <option value="EC">Ecuador</option>
+                          
+                            <option value="EG">Egypt</option>
+                          
+                            <option value="SV">El Salvador</option>
+                          
+                            <option value="GQ">Equatorial Guinea</option>
+                          
+                            <option value="ER">Eritrea</option>
+                          
+                            <option value="EE">Estonia</option>
+                          
+                            <option value="ET">Ethiopia</option>
+                          
+                            <option value="FK">Falkland Islands  [Malvinas]</option>
+                          
+                            <option value="FO">Faroe Islands</option>
+                          
+                            <option value="FJ">Fiji</option>
+                          
+                            <option value="FI">Finland</option>
+                          
+                            <option value="FR">France</option>
+                          
+                            <option value="GF">French Guiana</option>
+                          
+                            <option value="PF">French Polynesia</option>
+                          
+                            <option value="TF">French Southern Territories</option>
+                          
+                            <option value="GA">Gabon</option>
+                          
+                            <option value="GM">Gambia (The)</option>
+                          
+                            <option value="GE">Georgia</option>
+                          
+                            <option value="DE">Germany</option>
+                          
+                            <option value="GH">Ghana</option>
+                          
+                            <option value="GI">Gibraltar</option>
+                          
+                            <option value="GR">Greece</option>
+                          
+                            <option value="GL">Greenland</option>
+                          
+                            <option value="GD">Grenada</option>
+                          
+                            <option value="GP">Guadeloupe</option>
+                          
+                            <option value="GU">Guam</option>
+                          
+                            <option value="GT">Guatemala</option>
+                          
+                            <option value="GG">Guernsey</option>
+                          
+                            <option value="GN">Guinea</option>
+                          
+                            <option value="GW">Guinea-Bissau</option>
+                          
+                            <option value="GY">Guyana</option>
+                          
+                            <option value="HT">Haiti</option>
+                          
+                            <option value="HM">Heard Island and McDonald Islands</option>
+                          
+                            <option value="VA">Holy See  [Vatican City State]</option>
+                          
+                            <option value="HN">Honduras</option>
+                          
+                            <option value="HK">Hong Kong</option>
+                          
+                            <option value="HU">Hungary</option>
+                          
+                            <option value="IS">Iceland</option>
+                          
+                            <option value="IN">India</option>
+                          
+                            <option value="ID">Indonesia</option>
+                          
+                            <option value="IR">Iran</option>
+                          
+                            <option value="IQ">Iraq</option>
+                          
+                            <option value="IE">Ireland</option>
+                          
+                            <option value="IM">Isle of Man</option>
+                          
+                            <option value="IL">Israel</option>
+                          
+                            <option value="IT">Italy</option>
+                          
+                            <option value="JM">Jamaica</option>
+                          
+                            <option value="JP">Japan</option>
+                          
+                            <option value="JE">Jersey</option>
+                          
+                            <option value="JO">Jordan</option>
+                          
+                            <option value="KZ">Kazakhstan</option>
+                          
+                            <option value="KE">Kenya</option>
+                          
+                            <option value="KI">Kiribati</option>
+                          
+                            <option value="XK">Kosovo</option>
+                          
+                            <option value="XR">Kosovo</option>
+                          
+                            <option value="KW">Kuwait</option>
+                          
+                            <option value="KG">Kyrgyzstan</option>
+                          
+                            <option value="LA">Laos</option>
+                          
+                            <option value="LV">Latvia</option>
+                          
+                            <option value="LB">Lebanon</option>
+                          
+                            <option value="LS">Lesotho</option>
+                          
+                            <option value="LR">Liberia</option>
+                          
+                            <option value="LY">Libya</option>
+                          
+                            <option value="LI">Liechtenstein</option>
+                          
+                            <option value="LT">Lithuania</option>
+                          
+                            <option value="LU">Luxembourg</option>
+                          
+                            <option value="MO">Macao</option>
+                          
+                            <option value="MG">Madagascar</option>
+                          
+                            <option value="MW">Malawi</option>
+                          
+                            <option value="MY">Malaysia</option>
+                          
+                            <option value="MV">Maldives</option>
+                          
+                            <option value="ML">Mali</option>
+                          
+                            <option value="MT">Malta</option>
+                          
+                            <option value="MH">Marshall Islands</option>
+                          
+                            <option value="MQ">Martinique</option>
+                          
+                            <option value="MR">Mauritania</option>
+                          
+                            <option value="MU">Mauritius</option>
+                          
+                            <option value="YT">Mayotte</option>
+                          
+                            <option value="MX">Mexico</option>
+                          
+                            <option value="FM">Micronesia (the Federated States of)</option>
+                          
+                            <option value="MD">Moldovia</option>
+                          
+                            <option value="MC">Monaco</option>
+                          
+                            <option value="MN">Mongolia</option>
+                          
+                            <option value="ME">Montenegro</option>
+                          
+                            <option value="MS">Montserrat</option>
+                          
+                            <option value="MA">Morocco</option>
+                          
+                            <option value="MZ">Mozambique</option>
+                          
+                            <option value="MM">Myanmar</option>
+                          
+                            <option value="NA">Namibia</option>
+                          
+                            <option value="NR">Nauru</option>
+                          
+                            <option value="NP">Nepal</option>
+                          
+                            <option value="NL">Netherlands</option>
+                          
+                            <option value="NC">New Caledonia</option>
+                          
+                            <option value="NZ">New Zealand</option>
+                          
+                            <option value="NI">Nicaragua</option>
+                          
+                            <option value="NE">Niger</option>
+                          
+                            <option value="NG">Nigeria</option>
+                          
+                            <option value="NU">Niue</option>
+                          
+                            <option value="NF">Norfolk Island</option>
+                          
+                            <option value="KP">North Korea</option>
+                          
+                            <option value="MK">North Macedonia</option>
+                          
+                            <option value="MP">Northern Mariana Islands</option>
+                          
+                            <option value="NO">Norway</option>
+                          
+                            <option value="OM">Oman</option>
+                          
+                            <option value="PK">Pakistan</option>
+                          
+                            <option value="PW">Palau</option>
+                          
+                            <option value="PS">Palestine, State of</option>
+                          
+                            <option value="PA">Panama</option>
+                          
+                            <option value="PG">Papua New Guinea</option>
+                          
+                            <option value="PY">Paraguay</option>
+                          
+                            <option value="PE">Peru</option>
+                          
+                            <option value="PH">Philippines</option>
+                          
+                            <option value="PN">Pitcairn</option>
+                          
+                            <option value="PL">Poland</option>
+                          
+                            <option value="PT">Portugal</option>
+                          
+                            <option value="PR">Puerto Rico</option>
+                          
+                            <option value="QA">Qatar</option>
+                          
+                            <option value="RE">Réunion</option>
+                          
+                            <option value="RO">Romania</option>
+                          
+                            <option value="FA">Russian Airsports Federation</option>
+                          
+                            <option value="RU">Ruzzia</option>
+                          
+                            <option value="RW">Rwanda</option>
+                          
+                            <option value="BL">Saint Barthélemy</option>
+                          
+                            <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                          
+                            <option value="KN">Saint Kitts and Nevis</option>
+                          
+                            <option value="LC">Saint Lucia</option>
+                          
+                            <option value="MF">Saint Martin (French part)</option>
+                          
+                            <option value="PM">Saint Pierre and Miquelon</option>
+                          
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                          
+                            <option value="WS">Samoa</option>
+                          
+                            <option value="SM">San Marino</option>
+                          
+                            <option value="ST">Sao Tome and Principe</option>
+                          
+                            <option value="SA">Saudi Arabia</option>
+                          
+                            <option value="SN">Senegal</option>
+                          
+                            <option value="RS">Serbia</option>
+                          
+                            <option value="SC">Seychelles</option>
+                          
+                            <option value="SL">Sierra Leone</option>
+                          
+                            <option value="SG">Singapore</option>
+                          
+                            <option value="SX">Sint Maarten (Dutch part)</option>
+                          
+                            <option value="SK">Slovakia</option>
+                          
+                            <option value="SI">Slovenia</option>
+                          
+                            <option value="SB">Solomon Islands</option>
+                          
+                            <option value="SO">Somalia</option>
+                          
+                            <option value="ZA">South Africa</option>
+                          
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                          
+                            <option value="KR">South Korea</option>
+                          
+                            <option value="SS">South Sudan</option>
+                          
+                            <option value="ES">Spain</option>
+                          
+                            <option value="LK">Sri Lanka</option>
+                          
+                            <option value="SD">Sudan</option>
+                          
+                            <option value="SR">Suriname</option>
+                          
+                            <option value="SJ">Svalbard and Jan Mayen</option>
+                          
+                            <option value="SZ">Swaziland</option>
+                          
+                            <option value="SE">Sweden</option>
+                          
+                            <option value="CH">Switzerland</option>
+                          
+                            <option value="SY">Syria</option>
+                          
+                            <option value="TW">Taiwan</option>
+                          
+                            <option value="TJ">Tajikistan</option>
+                          
+                            <option value="TZ">Tanzania</option>
+                          
+                            <option value="TH">Thailand</option>
+                          
+                            <option value="TL">Timor-Leste</option>
+                          
+                            <option value="TG">Togo</option>
+                          
+                            <option value="TK">Tokelau</option>
+                          
+                            <option value="TO">Tonga</option>
+                          
+                            <option value="TT">Trinidad and Tobago</option>
+                          
+                            <option value="TN">Tunisia</option>
+                          
+                            <option value="TR">Turkey</option>
+                          
+                            <option value="TM">Turkmenistan</option>
+                          
+                            <option value="TC">Turks and Caicos Islands</option>
+                          
+                            <option value="TV">Tuvalu</option>
+                          
+                            <option value="UG">Uganda</option>
+                          
+                            <option value="UA">Ukraine</option>
+                          
+                            <option value="AE">United Arab Emirates</option>
+                          
+                            <option value="GB">United Kingdom</option>
+                          
+                            <option value="US">United States</option>
+                          
+                            <option value="UM">United States Minor Outlying Islands</option>
+                          
+                            <option value="UY">Uruguay</option>
+                          
+                            <option value="UZ">Uzbekistan</option>
+                          
+                            <option value="VU">Vanuatu</option>
+                          
+                            <option value="VE">Venezuela</option>
+                          
+                            <option value="VN">Vietnam</option>
+                          
+                            <option value="VG">Virgin Islands (British)</option>
+                          
+                            <option value="VI">Virgin Islands (U.S.)</option>
+                          
+                            <option value="WF">Wallis and Futuna</option>
+                          
+                            <option value="EH">Western Sahara</option>
+                          
+                            <option value="YE">Yemen</option>
+                          
+                            <option value="ZM">Zambia</option>
+                          
+                            <option value="ZW">Zimbabwe</option>
+                          
+                        </select>
+                        <!-- /ko -->
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valSignUpSocialUserDataCountry"></div>
+                      </div>
+                      <button type="submit" class="modal-sign-btn" data-bind="click:postForm">CONTINUE</button>
+                      <div class="modal-sign-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-recover-password">
+                    <form action="/sign-up/recover-password" method="post">
+                      <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+                      <div class="modal-sign-input-group modal-sign-recover-password-email-group" data-bind="validationElement: valRecoverPasswordEmail, validationOptions: {errorElementClass: 'has-error', insertMessages: false}">
+                        <input type="text" name="email" maxlength="254" placeholder="Email address" data-bind="value: valRecoverPasswordEmail" required />
+                        <div class="modal-sign-message field-errors" data-bind="validationMessage: valRecoverPasswordEmail"></div>
+                      </div>
+                      <div class="modal-sign-recover-password-text">
+                        Password recovery instructions will be sent to your email.
+                      </div>
+                      <button type="submit" class="modal-sign-btn modal-sign-recover-password-go" data-bind="click:postForm">CONTINUE</button>
+                      <div class="modal-sign-header modal-sign-recover-password-header"><span>A member?</span><a href="javascript:;" data-bind="click:goSignIn">Sign in</a></div>
+                    </form>
+                  </div>
+
+                  <div class="modal-sign-view modal-sign-recover-password-message">
+                    Check your email<br />for further instructions.
+                  </div>
+
+                </script>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      <div class="page-header clearfix">
+        <div class="container">
+
+          
+            <!-- ko widget:{
+              name:"top",
+              type:"carousel",
+              "id":"bannersSlideshow",
+              "collapsed": true 
+            } -->
+            <!-- /ko -->
+          
+
+          <div class="breadcrumbs-part">
+            <div class="breadcrumbs">
+              
+                <!-- ko widget:{name:"breadcrumbs"} -->
+                <!-- /ko -->
+              
+            </div>
+          </div>
+
+          <div class="sharelinks-part">
+            <div class="sharelinks">
+
+            
+
+            </div>
+          </div>
+
+        </div>
+
+</br>
+
+          
+
+
+      </div>
+
+
+      <div class="page-body clearfix">
+        <div class="container">
+          <div class="row">
+
+            
+
+              
+
+<!-- Begin page content -->
+<div class="col-main-content tabs-wrapper register-tabs">
+  <!-- ko widgetInline:{name:"tabs2",defaultRel:"signup"} -->
+  <div>
+    <ul class="tabs">
+      <li rel="signup" data-bind="css:{'active':currentRel()==='signup'},click:selectRelThroughRouter.bind($data,'signup')">Sign Up</li>
+       <li rel="signin" data-bind="css:{'active':currentRel()==='signin'},click:selectRelThroughRouter.bind($data,'signin')">Sign In</li> 
+     <li rel="password" data-bind="css:{'active':currentRel()==='password'},click:selectRelThroughRouter.bind($data,'password')">Password recovery</li> 
+    </ul>
+    <div class="tab-container">
+
+      <!-- ko if: currentRel()=="signup" -->
+        <!-- ko widget: {name:'topTrigger',data:{"type":"carousel","id":"photoBlockSignup"}} --><!-- /ko -->
+      <!-- /ko -->
+
+      <!-- ko if: currentRel()=="signin" -->
+        <!-- ko widget: {name:'topTrigger',data:{"type":"carousel","id":"photoBlockSignin"}} --><!-- /ko -->
+      <!-- /ko -->
+
+      <!-- ko if: currentRel()=="password" -->
+        <!-- ko widget: {name:'topTrigger',data:{"type":"carousel","id":"photoBlockPassword"}} --><!-- /ko -->
+      <!-- /ko -->
+
+      <!-- signup_tab -->
+      <div data-id="signup" class="tab-content-clean" data-bind="css:{'active':currentRel()==='signup'}">
+        
+
+
+        
+
+<!--         <div class="social-signin__container_big">
+  <div class="social-signin__item social-signin__item_fb">
+    <a href="/login/facebook/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-mini-fb"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_googleplus">
+    <a href="/login/google-plus/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-googleplus"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_twitter">
+    <a href="/login/twitter/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-twitter"></span>
+    </a>
+  </div>
+</div>
+ -->
+
+        <!-- ko widgetInline:{name:"validation/signup"} -->
+          <div class="register-tab-container tab-body-container tab-body-container_form">
+
+            <script id="registerErrorTpl" type="text/html">
+              <span data-bind="validationMessage: field" class="register-input-error-red"></span>
+            </script>
+
+            <script id="registerPassErrorTpl" type="text/html">
+              <span data-bind="validationMessage: field" class="register-input-error"></span>
+            </script>
+
+            <script id="registerNullErrorTpl" type="text/html">
+            </script>
+
+This method of registering has been disabled. Please click on the <bold>SIGN IN</bold> label in the top, right of the page and press the <bold>Sign Up</bold> link there.
+
+<!-- THIS HIDDEN DIV IS TO HIDE THE OLD METHOD OF SIGNING IN -->
+<div hidden>
+
+
+            <form action="" method="post" autocomplete="off" data-bind="submit: submit">
+              <!-- Don't remove! Fix for Chrome autocomplete -->
+              <input type="text" style="display: none;" />
+              <input type="password" style="display: none;" />
+              <!-- / -->
+              <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+              <input name="signup" type="hidden" value="1"/>
+              <div class="register-form-left">
+                <label>Email:</label>
+              </div>
+              <div class="register-form-right email-input" data-bind="validationElement: userEmail">
+                <input data-bind="value: userEmail" id="id_signup-email" maxlength="254" name="signup-email" placeholder="Enter your email" type="text" />
+                <p>This will be your login.</p>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+                <label>Name:</label>
+              </div>
+              <div class="register-form-right" data-bind="validationElement: userName">
+                <input data-bind="value: userName" id="id_signup-first_name" maxlength="254" name="signup-first_name" placeholder="Enter your name" type="text" />
+                <p>Your name English transcription.</p>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+                <label>Surname:</label>
+              </div>
+              <div class="register-form-right" data-bind="validationElement: userSurname">
+                <input data-bind="value: userSurname" id="id_signup-last_name" maxlength="254" name="signup-last_name" placeholder="Enter your surname" type="text" />
+                <p>Your surname English transcription.</p>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+                <label>Country:</label>
+              </div>
+              <div class="register-form-right" data-bind="validationOptions: {errorElementClass:'label-error-active',messageTemplate:'registerNullErrorTpl'},validationElement: userCountryComp">
+                <div class="register-date-selector register-select-country">
+                  <!-- ko widgetInline:{
+                    name:"select",
+                    value:userCountry,
+                    options:[
+                      
+                        {value:"",text:"Country"},
+                      
+                        {value:"AF",text:"Afghanistan"},
+                      
+                        {value:"AL",text:"Albania"},
+                      
+                        {value:"DZ",text:"Algeria"},
+                      
+                        {value:"AS",text:"American Samoa"},
+                      
+                        {value:"AD",text:"Andorra"},
+                      
+                        {value:"AO",text:"Angola"},
+                      
+                        {value:"AI",text:"Anguilla"},
+                      
+                        {value:"AQ",text:"Antarctica"},
+                      
+                        {value:"AG",text:"Antigua and Barbuda"},
+                      
+                        {value:"AR",text:"Argentina"},
+                      
+                        {value:"AM",text:"Armenia"},
+                      
+                        {value:"AW",text:"Aruba"},
+                      
+                        {value:"AU",text:"Australia"},
+                      
+                        {value:"AT",text:"Austria"},
+                      
+                        {value:"AZ",text:"Azerbaijan"},
+                      
+                        {value:"BS",text:"Bahamas"},
+                      
+                        {value:"BH",text:"Bahrain"},
+                      
+                        {value:"BD",text:"Bangladesh"},
+                      
+                        {value:"BB",text:"Barbados"},
+                      
+                        {value:"BY",text:"Belarus"},
+                      
+                        {value:"BE",text:"Belgium"},
+                      
+                        {value:"BZ",text:"Belize"},
+                      
+                        {value:"BJ",text:"Benin"},
+                      
+                        {value:"BM",text:"Bermuda"},
+                      
+                        {value:"BT",text:"Bhutan"},
+                      
+                        {value:"BO",text:"Bolivia"},
+                      
+                        {value:"BQ",text:"Bonaire, Sint Eustatius and Saba"},
+                      
+                        {value:"BA",text:"Bosnia and Herzegovina"},
+                      
+                        {value:"BW",text:"Botswana"},
+                      
+                        {value:"BV",text:"Bouvet Island"},
+                      
+                        {value:"BR",text:"Brazil"},
+                      
+                        {value:"IO",text:"British Indian Ocean Territory"},
+                      
+                        {value:"BN",text:"Brunei"},
+                      
+                        {value:"BG",text:"Bulgaria"},
+                      
+                        {value:"BF",text:"Burkina Faso"},
+                      
+                        {value:"BI",text:"Burundi"},
+                      
+                        {value:"CV",text:"Cabo Verde"},
+                      
+                        {value:"KH",text:"Cambodia"},
+                      
+                        {value:"CM",text:"Cameroon"},
+                      
+                        {value:"CA",text:"Canada"},
+                      
+                        {value:"KY",text:"Cayman Islands"},
+                      
+                        {value:"CF",text:"Central African Republic"},
+                      
+                        {value:"TD",text:"Chad"},
+                      
+                        {value:"CL",text:"Chile"},
+                      
+                        {value:"CN",text:"China"},
+                      
+                        {value:"CX",text:"Christmas Island"},
+                      
+                        {value:"CC",text:"Cocos (Keeling) Islands"},
+                      
+                        {value:"CO",text:"Colombia"},
+                      
+                        {value:"KM",text:"Comoros"},
+                      
+                        {value:"CG",text:"Congo"},
+                      
+                        {value:"CD",text:"Congo (the Democratic Republic of the)"},
+                      
+                        {value:"CK",text:"Cook Islands"},
+                      
+                        {value:"CR",text:"Costa Rica"},
+                      
+                        {value:"HR",text:"Croatia"},
+                      
+                        {value:"CU",text:"Cuba"},
+                      
+                        {value:"CW",text:"Curaçao"},
+                      
+                        {value:"CY",text:"Cyprus"},
+                      
+                        {value:"CZ",text:"Czech Republic"},
+                      
+                        {value:"CI",text:"Côte d&#39;Ivoire"},
+                      
+                        {value:"DK",text:"Denmark"},
+                      
+                        {value:"DJ",text:"Djibouti"},
+                      
+                        {value:"DM",text:"Dominica"},
+                      
+                        {value:"DO",text:"Dominican Republic"},
+                      
+                        {value:"EC",text:"Ecuador"},
+                      
+                        {value:"EG",text:"Egypt"},
+                      
+                        {value:"SV",text:"El Salvador"},
+                      
+                        {value:"GQ",text:"Equatorial Guinea"},
+                      
+                        {value:"ER",text:"Eritrea"},
+                      
+                        {value:"EE",text:"Estonia"},
+                      
+                        {value:"ET",text:"Ethiopia"},
+                      
+                        {value:"FK",text:"Falkland Islands  [Malvinas]"},
+                      
+                        {value:"FO",text:"Faroe Islands"},
+                      
+                        {value:"FJ",text:"Fiji"},
+                      
+                        {value:"FI",text:"Finland"},
+                      
+                        {value:"FR",text:"France"},
+                      
+                        {value:"GF",text:"French Guiana"},
+                      
+                        {value:"PF",text:"French Polynesia"},
+                      
+                        {value:"TF",text:"French Southern Territories"},
+                      
+                        {value:"GA",text:"Gabon"},
+                      
+                        {value:"GM",text:"Gambia (The)"},
+                      
+                        {value:"GE",text:"Georgia"},
+                      
+                        {value:"DE",text:"Germany"},
+                      
+                        {value:"GH",text:"Ghana"},
+                      
+                        {value:"GI",text:"Gibraltar"},
+                      
+                        {value:"GR",text:"Greece"},
+                      
+                        {value:"GL",text:"Greenland"},
+                      
+                        {value:"GD",text:"Grenada"},
+                      
+                        {value:"GP",text:"Guadeloupe"},
+                      
+                        {value:"GU",text:"Guam"},
+                      
+                        {value:"GT",text:"Guatemala"},
+                      
+                        {value:"GG",text:"Guernsey"},
+                      
+                        {value:"GN",text:"Guinea"},
+                      
+                        {value:"GW",text:"Guinea-Bissau"},
+                      
+                        {value:"GY",text:"Guyana"},
+                      
+                        {value:"HT",text:"Haiti"},
+                      
+                        {value:"HM",text:"Heard Island and McDonald Islands"},
+                      
+                        {value:"VA",text:"Holy See  [Vatican City State]"},
+                      
+                        {value:"HN",text:"Honduras"},
+                      
+                        {value:"HK",text:"Hong Kong"},
+                      
+                        {value:"HU",text:"Hungary"},
+                      
+                        {value:"IS",text:"Iceland"},
+                      
+                        {value:"IN",text:"India"},
+                      
+                        {value:"ID",text:"Indonesia"},
+                      
+                        {value:"IR",text:"Iran"},
+                      
+                        {value:"IQ",text:"Iraq"},
+                      
+                        {value:"IE",text:"Ireland"},
+                      
+                        {value:"IM",text:"Isle of Man"},
+                      
+                        {value:"IL",text:"Israel"},
+                      
+                        {value:"IT",text:"Italy"},
+                      
+                        {value:"JM",text:"Jamaica"},
+                      
+                        {value:"JP",text:"Japan"},
+                      
+                        {value:"JE",text:"Jersey"},
+                      
+                        {value:"JO",text:"Jordan"},
+                      
+                        {value:"KZ",text:"Kazakhstan"},
+                      
+                        {value:"KE",text:"Kenya"},
+                      
+                        {value:"KI",text:"Kiribati"},
+                      
+                        {value:"XK",text:"Kosovo"},
+                      
+                        {value:"XR",text:"Kosovo"},
+                      
+                        {value:"KW",text:"Kuwait"},
+                      
+                        {value:"KG",text:"Kyrgyzstan"},
+                      
+                        {value:"LA",text:"Laos"},
+                      
+                        {value:"LV",text:"Latvia"},
+                      
+                        {value:"LB",text:"Lebanon"},
+                      
+                        {value:"LS",text:"Lesotho"},
+                      
+                        {value:"LR",text:"Liberia"},
+                      
+                        {value:"LY",text:"Libya"},
+                      
+                        {value:"LI",text:"Liechtenstein"},
+                      
+                        {value:"LT",text:"Lithuania"},
+                      
+                        {value:"LU",text:"Luxembourg"},
+                      
+                        {value:"MO",text:"Macao"},
+                      
+                        {value:"MG",text:"Madagascar"},
+                      
+                        {value:"MW",text:"Malawi"},
+                      
+                        {value:"MY",text:"Malaysia"},
+                      
+                        {value:"MV",text:"Maldives"},
+                      
+                        {value:"ML",text:"Mali"},
+                      
+                        {value:"MT",text:"Malta"},
+                      
+                        {value:"MH",text:"Marshall Islands"},
+                      
+                        {value:"MQ",text:"Martinique"},
+                      
+                        {value:"MR",text:"Mauritania"},
+                      
+                        {value:"MU",text:"Mauritius"},
+                      
+                        {value:"YT",text:"Mayotte"},
+                      
+                        {value:"MX",text:"Mexico"},
+                      
+                        {value:"FM",text:"Micronesia (the Federated States of)"},
+                      
+                        {value:"MD",text:"Moldovia"},
+                      
+                        {value:"MC",text:"Monaco"},
+                      
+                        {value:"MN",text:"Mongolia"},
+                      
+                        {value:"ME",text:"Montenegro"},
+                      
+                        {value:"MS",text:"Montserrat"},
+                      
+                        {value:"MA",text:"Morocco"},
+                      
+                        {value:"MZ",text:"Mozambique"},
+                      
+                        {value:"MM",text:"Myanmar"},
+                      
+                        {value:"NA",text:"Namibia"},
+                      
+                        {value:"NR",text:"Nauru"},
+                      
+                        {value:"NP",text:"Nepal"},
+                      
+                        {value:"NL",text:"Netherlands"},
+                      
+                        {value:"NC",text:"New Caledonia"},
+                      
+                        {value:"NZ",text:"New Zealand"},
+                      
+                        {value:"NI",text:"Nicaragua"},
+                      
+                        {value:"NE",text:"Niger"},
+                      
+                        {value:"NG",text:"Nigeria"},
+                      
+                        {value:"NU",text:"Niue"},
+                      
+                        {value:"NF",text:"Norfolk Island"},
+                      
+                        {value:"KP",text:"North Korea"},
+                      
+                        {value:"MK",text:"North Macedonia"},
+                      
+                        {value:"MP",text:"Northern Mariana Islands"},
+                      
+                        {value:"NO",text:"Norway"},
+                      
+                        {value:"OM",text:"Oman"},
+                      
+                        {value:"PK",text:"Pakistan"},
+                      
+                        {value:"PW",text:"Palau"},
+                      
+                        {value:"PS",text:"Palestine, State of"},
+                      
+                        {value:"PA",text:"Panama"},
+                      
+                        {value:"PG",text:"Papua New Guinea"},
+                      
+                        {value:"PY",text:"Paraguay"},
+                      
+                        {value:"PE",text:"Peru"},
+                      
+                        {value:"PH",text:"Philippines"},
+                      
+                        {value:"PN",text:"Pitcairn"},
+                      
+                        {value:"PL",text:"Poland"},
+                      
+                        {value:"PT",text:"Portugal"},
+                      
+                        {value:"PR",text:"Puerto Rico"},
+                      
+                        {value:"QA",text:"Qatar"},
+                      
+                        {value:"RO",text:"Romania"},
+                      
+                        {value:"FA",text:"Russian Airsports Federation"},
+                      
+                        {value:"RU",text:"Ruzzia"},
+                      
+                        {value:"RW",text:"Rwanda"},
+                      
+                        {value:"RE",text:"Réunion"},
+                      
+                        {value:"BL",text:"Saint Barthélemy"},
+                      
+                        {value:"SH",text:"Saint Helena, Ascension and Tristan da Cunha"},
+                      
+                        {value:"KN",text:"Saint Kitts and Nevis"},
+                      
+                        {value:"LC",text:"Saint Lucia"},
+                      
+                        {value:"MF",text:"Saint Martin (French part)"},
+                      
+                        {value:"PM",text:"Saint Pierre and Miquelon"},
+                      
+                        {value:"VC",text:"Saint Vincent and the Grenadines"},
+                      
+                        {value:"WS",text:"Samoa"},
+                      
+                        {value:"SM",text:"San Marino"},
+                      
+                        {value:"ST",text:"Sao Tome and Principe"},
+                      
+                        {value:"SA",text:"Saudi Arabia"},
+                      
+                        {value:"SN",text:"Senegal"},
+                      
+                        {value:"RS",text:"Serbia"},
+                      
+                        {value:"SC",text:"Seychelles"},
+                      
+                        {value:"SL",text:"Sierra Leone"},
+                      
+                        {value:"SG",text:"Singapore"},
+                      
+                        {value:"SX",text:"Sint Maarten (Dutch part)"},
+                      
+                        {value:"SK",text:"Slovakia"},
+                      
+                        {value:"SI",text:"Slovenia"},
+                      
+                        {value:"SB",text:"Solomon Islands"},
+                      
+                        {value:"SO",text:"Somalia"},
+                      
+                        {value:"ZA",text:"South Africa"},
+                      
+                        {value:"GS",text:"South Georgia and the South Sandwich Islands"},
+                      
+                        {value:"KR",text:"South Korea"},
+                      
+                        {value:"SS",text:"South Sudan"},
+                      
+                        {value:"ES",text:"Spain"},
+                      
+                        {value:"LK",text:"Sri Lanka"},
+                      
+                        {value:"SD",text:"Sudan"},
+                      
+                        {value:"SR",text:"Suriname"},
+                      
+                        {value:"SJ",text:"Svalbard and Jan Mayen"},
+                      
+                        {value:"SZ",text:"Swaziland"},
+                      
+                        {value:"SE",text:"Sweden"},
+                      
+                        {value:"CH",text:"Switzerland"},
+                      
+                        {value:"SY",text:"Syria"},
+                      
+                        {value:"TW",text:"Taiwan"},
+                      
+                        {value:"TJ",text:"Tajikistan"},
+                      
+                        {value:"TZ",text:"Tanzania"},
+                      
+                        {value:"TH",text:"Thailand"},
+                      
+                        {value:"TL",text:"Timor-Leste"},
+                      
+                        {value:"TG",text:"Togo"},
+                      
+                        {value:"TK",text:"Tokelau"},
+                      
+                        {value:"TO",text:"Tonga"},
+                      
+                        {value:"TT",text:"Trinidad and Tobago"},
+                      
+                        {value:"TN",text:"Tunisia"},
+                      
+                        {value:"TR",text:"Turkey"},
+                      
+                        {value:"TM",text:"Turkmenistan"},
+                      
+                        {value:"TC",text:"Turks and Caicos Islands"},
+                      
+                        {value:"TV",text:"Tuvalu"},
+                      
+                        {value:"UG",text:"Uganda"},
+                      
+                        {value:"UA",text:"Ukraine"},
+                      
+                        {value:"AE",text:"United Arab Emirates"},
+                      
+                        {value:"GB",text:"United Kingdom"},
+                      
+                        {value:"US",text:"United States"},
+                      
+                        {value:"UM",text:"United States Minor Outlying Islands"},
+                      
+                        {value:"UY",text:"Uruguay"},
+                      
+                        {value:"UZ",text:"Uzbekistan"},
+                      
+                        {value:"VU",text:"Vanuatu"},
+                      
+                        {value:"VE",text:"Venezuela"},
+                      
+                        {value:"VN",text:"Vietnam"},
+                      
+                        {value:"VG",text:"Virgin Islands (British)"},
+                      
+                        {value:"VI",text:"Virgin Islands (U.S.)"},
+                      
+                        {value:"WF",text:"Wallis and Futuna"},
+                      
+                        {value:"EH",text:"Western Sahara"},
+                      
+                        {value:"YE",text:"Yemen"},
+                      
+                        {value:"ZM",text:"Zambia"},
+                      
+                        {value:"ZW",text:"Zimbabwe"},
+                      
+                        {value:"AX",text:"Åland Islands"},
+                      
+                    ]
+                  } -->
+                    <select id="select-country" name="signup-country" data-bind="value:value,options:options,optionsText:'text',optionsValue:'value',optionsCaption:'Country'"></select>
+                  <!-- /ko -->
+                </div>
+                <span data-bind="validationMessage: userCountryComp" class="register-input-error-red"></span>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left register-gender register-gender-label">
+                <label>Gender:</label>
+              </div>
+              <div class="register-form-right register-gender">
+                <p class="left-radio">
+                  <input type="radio" value="M" name="signup-gender"  checked/>
+                  <label for="male">Male</label>
+                </p>
+              <p class="left-radio">
+                <input type="radio" value="F" name="signup-gender"/>
+                <label for="female">Female</label>
+              </p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="register-form-left register-date-param">
+                <label>Date of birth:</label>
+              </div>
+              <div class="register-form-right register-date-param" data-bind="validationOptions: {errorElementClass:'active-error',messageTemplate:'registerNullErrorTpl'},validationElement: userDateBirth">
+                <p class="date-error">Date of birth is required.</p>
+                <div class="register-date-selector register-select-first">
+                  <!-- ko widgetInline:{
+                    name:"select",
+                    value:userDateDay,
+                    options:[
+                      
+                        {value:"",text:"Day"},
+                      
+                        {value:"1",text:"1"},
+                      
+                        {value:"2",text:"2"},
+                      
+                        {value:"3",text:"3"},
+                      
+                        {value:"4",text:"4"},
+                      
+                        {value:"5",text:"5"},
+                      
+                        {value:"6",text:"6"},
+                      
+                        {value:"7",text:"7"},
+                      
+                        {value:"8",text:"8"},
+                      
+                        {value:"9",text:"9"},
+                      
+                        {value:"10",text:"10"},
+                      
+                        {value:"11",text:"11"},
+                      
+                        {value:"12",text:"12"},
+                      
+                        {value:"13",text:"13"},
+                      
+                        {value:"14",text:"14"},
+                      
+                        {value:"15",text:"15"},
+                      
+                        {value:"16",text:"16"},
+                      
+                        {value:"17",text:"17"},
+                      
+                        {value:"18",text:"18"},
+                      
+                        {value:"19",text:"19"},
+                      
+                        {value:"20",text:"20"},
+                      
+                        {value:"21",text:"21"},
+                      
+                        {value:"22",text:"22"},
+                      
+                        {value:"23",text:"23"},
+                      
+                        {value:"24",text:"24"},
+                      
+                        {value:"25",text:"25"},
+                      
+                        {value:"26",text:"26"},
+                      
+                        {value:"27",text:"27"},
+                      
+                        {value:"28",text:"28"},
+                      
+                        {value:"29",text:"29"},
+                      
+                        {value:"30",text:"30"},
+                      
+                        {value:"31",text:"31"},
+                      
+                    ]
+                  } -->
+                    <select id="id_signup-birthdate_day" name="signup-birthdate_day" data-bind="value:value,options:options,optionsText:'text',optionsValue:'value',optionsCaption:'Day'"></select>
+                  <!-- /ko -->
+                </div>
+                <div class="register-date-selector register-select-second">
+                  <!-- ko widgetInline:{
+                    name:"select",
+                    value:userDateMonth,
+                    options:[
+                      
+                        {value:"",text:"Month"},
+                      
+                        {value:"1",text:"January"},
+                      
+                        {value:"2",text:"February"},
+                      
+                        {value:"3",text:"March"},
+                      
+                        {value:"4",text:"April"},
+                      
+                        {value:"5",text:"May"},
+                      
+                        {value:"6",text:"June"},
+                      
+                        {value:"7",text:"July"},
+                      
+                        {value:"8",text:"August"},
+                      
+                        {value:"9",text:"September"},
+                      
+                        {value:"10",text:"October"},
+                      
+                        {value:"11",text:"November"},
+                      
+                        {value:"12",text:"December"},
+                      
+                    ]
+                  } -->
+                    <select id="id_signup-birthdate_month" name="signup-birthdate_month" data-bind="value:value,options:options,optionsText:'text',optionsValue:'value',optionsCaption:'Month'"></select>
+                  <!-- /ko -->
+                </div>
+                <div class="register-date-selector register-select-third">
+                  <!-- ko widgetInline:{
+                    name:"select",
+                    value:userDateYear,
+                    options:[
+                      
+                        {value:"",text:"Year"},
+                      
+                        {value:"2025",text:"2025"},
+                      
+                        {value:"2024",text:"2024"},
+                      
+                        {value:"2023",text:"2023"},
+                      
+                        {value:"2022",text:"2022"},
+                      
+                        {value:"2021",text:"2021"},
+                      
+                        {value:"2020",text:"2020"},
+                      
+                        {value:"2019",text:"2019"},
+                      
+                        {value:"2018",text:"2018"},
+                      
+                        {value:"2017",text:"2017"},
+                      
+                        {value:"2016",text:"2016"},
+                      
+                        {value:"2015",text:"2015"},
+                      
+                        {value:"2014",text:"2014"},
+                      
+                        {value:"2013",text:"2013"},
+                      
+                        {value:"2012",text:"2012"},
+                      
+                        {value:"2011",text:"2011"},
+                      
+                        {value:"2010",text:"2010"},
+                      
+                        {value:"2009",text:"2009"},
+                      
+                        {value:"2008",text:"2008"},
+                      
+                        {value:"2007",text:"2007"},
+                      
+                        {value:"2006",text:"2006"},
+                      
+                        {value:"2005",text:"2005"},
+                      
+                        {value:"2004",text:"2004"},
+                      
+                        {value:"2003",text:"2003"},
+                      
+                        {value:"2002",text:"2002"},
+                      
+                        {value:"2001",text:"2001"},
+                      
+                        {value:"2000",text:"2000"},
+                      
+                        {value:"1999",text:"1999"},
+                      
+                        {value:"1998",text:"1998"},
+                      
+                        {value:"1997",text:"1997"},
+                      
+                        {value:"1996",text:"1996"},
+                      
+                        {value:"1995",text:"1995"},
+                      
+                        {value:"1994",text:"1994"},
+                      
+                        {value:"1993",text:"1993"},
+                      
+                        {value:"1992",text:"1992"},
+                      
+                        {value:"1991",text:"1991"},
+                      
+                        {value:"1990",text:"1990"},
+                      
+                        {value:"1989",text:"1989"},
+                      
+                        {value:"1988",text:"1988"},
+                      
+                        {value:"1987",text:"1987"},
+                      
+                        {value:"1986",text:"1986"},
+                      
+                        {value:"1985",text:"1985"},
+                      
+                        {value:"1984",text:"1984"},
+                      
+                        {value:"1983",text:"1983"},
+                      
+                        {value:"1982",text:"1982"},
+                      
+                        {value:"1981",text:"1981"},
+                      
+                        {value:"1980",text:"1980"},
+                      
+                        {value:"1979",text:"1979"},
+                      
+                        {value:"1978",text:"1978"},
+                      
+                        {value:"1977",text:"1977"},
+                      
+                        {value:"1976",text:"1976"},
+                      
+                        {value:"1975",text:"1975"},
+                      
+                        {value:"1974",text:"1974"},
+                      
+                        {value:"1973",text:"1973"},
+                      
+                        {value:"1972",text:"1972"},
+                      
+                        {value:"1971",text:"1971"},
+                      
+                        {value:"1970",text:"1970"},
+                      
+                        {value:"1969",text:"1969"},
+                      
+                        {value:"1968",text:"1968"},
+                      
+                        {value:"1967",text:"1967"},
+                      
+                        {value:"1966",text:"1966"},
+                      
+                        {value:"1965",text:"1965"},
+                      
+                        {value:"1964",text:"1964"},
+                      
+                        {value:"1963",text:"1963"},
+                      
+                        {value:"1962",text:"1962"},
+                      
+                        {value:"1961",text:"1961"},
+                      
+                        {value:"1960",text:"1960"},
+                      
+                        {value:"1959",text:"1959"},
+                      
+                        {value:"1958",text:"1958"},
+                      
+                        {value:"1957",text:"1957"},
+                      
+                        {value:"1956",text:"1956"},
+                      
+                        {value:"1955",text:"1955"},
+                      
+                        {value:"1954",text:"1954"},
+                      
+                        {value:"1953",text:"1953"},
+                      
+                        {value:"1952",text:"1952"},
+                      
+                        {value:"1951",text:"1951"},
+                      
+                        {value:"1950",text:"1950"},
+                      
+                        {value:"1949",text:"1949"},
+                      
+                        {value:"1948",text:"1948"},
+                      
+                        {value:"1947",text:"1947"},
+                      
+                        {value:"1946",text:"1946"},
+                      
+                        {value:"1945",text:"1945"},
+                      
+                        {value:"1944",text:"1944"},
+                      
+                        {value:"1943",text:"1943"},
+                      
+                        {value:"1942",text:"1942"},
+                      
+                        {value:"1941",text:"1941"},
+                      
+                        {value:"1940",text:"1940"},
+                      
+                        {value:"1939",text:"1939"},
+                      
+                        {value:"1938",text:"1938"},
+                      
+                        {value:"1937",text:"1937"},
+                      
+                        {value:"1936",text:"1936"},
+                      
+                        {value:"1935",text:"1935"},
+                      
+                        {value:"1934",text:"1934"},
+                      
+                        {value:"1933",text:"1933"},
+                      
+                        {value:"1932",text:"1932"},
+                      
+                        {value:"1931",text:"1931"},
+                      
+                        {value:"1930",text:"1930"},
+                      
+                        {value:"1929",text:"1929"},
+                      
+                        {value:"1928",text:"1928"},
+                      
+                        {value:"1927",text:"1927"},
+                      
+                        {value:"1926",text:"1926"},
+                      
+                        {value:"1925",text:"1925"},
+                      
+                        {value:"1924",text:"1924"},
+                      
+                        {value:"1923",text:"1923"},
+                      
+                        {value:"1922",text:"1922"},
+                      
+                        {value:"1921",text:"1921"},
+                      
+                        {value:"1920",text:"1920"},
+                      
+                        {value:"1919",text:"1919"},
+                      
+                        {value:"1918",text:"1918"},
+                      
+                        {value:"1917",text:"1917"},
+                      
+                        {value:"1916",text:"1916"},
+                      
+                        {value:"1915",text:"1915"},
+                      
+                    ]
+                  } -->
+                    <select id="id_signup-birthdate_year" name="signup-birthdate_year" data-bind="value:value,options:options,optionsText:'text',optionsValue:'value',optionsCaption:'Year'"></select>
+                  <!-- /ko -->
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+                <label>Password:</label>
+              </div>
+              <!--use class: "weak-password", "good-password", "strong-password"-->
+              <div class="register-form-right weak-password-" data-bind="validationOptions: {errorElementClass: 'ko', messageTemplate:'registerNullErrorTpl'},validationElement: userPassword,css:{
+                'required-password':(userPasswordCss()==0 && userPassword.isModified()),
+                'shot-password':userPasswordCss()==1,
+                'weak-password':userPasswordCss()==2,
+                'good-password':userPasswordCss()==3,
+                'strong-password':userPasswordCss()==4,
+                'long-password':userPasswordCss()==5
+              }">
+                <p class="password-required">Password is required.</p>
+                <p class="password-shot">This password is too simple and easy to guess.</p>
+                <p class="password-weak">Weak password.</p>
+                <p class="password-good">Good password.</p>
+                <p class="password-strong">Strong password.</p>
+                <p class="password-long">Password is too long.</p>
+                <input data-bind="value: userPassword, valueUpdate: 'input'" id="id_signup-password1" name="signup-password1" placeholder="Enter password" type="password" />
+                <p>Minimum 6 characters.</p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+                <label>Repeat password:</label>
+              </div>
+              <div class="register-form-right" data-bind="validationOptions: {errorElementClass:'label-error-active',messageTemplate:'registerPassErrorTpl'},validationElement: userPasswordConfirm,css:{
+                'match-password':(userPasswordConfirm.isValid() && userPasswordConfirm.isModified())}">
+                <p class="password-match">Passwords match.</p>
+                <input data-bind="value: userPasswordConfirm, valueUpdate: 'input'" id="id_signup-password2" name="signup-password2" placeholder="Enter password again" type="password" />
+                <p>Type your password in both fields.</p>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-atcheck">
+                <input id="id_signup-phonenumber" name="signup-phonenumber" style="display:none" type="text" />
+              </div>
+
+              <!-- terms -->
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+              </div>
+              <div class="register-form-right terms-and-privacy-check" data-bind="validationOptions: {errorElementClass:'check-error-active',messageTemplate:'registerNullErrorTpl'},validationElement: userPrivacyCheck">
+                <p>
+                  <input data-bind="checked: userPrivacyCheck" id="terms-and-privacy-check-id" name="signup-terms_accepted" type="checkbox" />
+                  <label for="terms-and-privacy-check-id"></label>
+                </p>
+                <p class="terms-and-privacy-check-label">I accept Airtribune service <a href="/docs/terms" target="_blank">Terms</a> and <a href="/docs/privacy" target="_blank">Privacy conditions</a> of use.</p>
+              </div>
+              <!-- end of terms -->
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+              </div>
+              <div class="register-form-right register-button-area">
+                <button type="submit" class="register-button-active" data-bind="css:{'disabled':!validateForm.isValid()}">Register</button>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+
+
+<!-- END OF HIDDEN DIV SECTION -->
+</div>
+
+
+          </div>
+        <!-- /ko -->
+      </div>
+      <!-- /signup_tab -->
+
+
+      <!-- signin_tab -->
+      <div data-id="signin" class="tab-content-clean" autocomplete="off" data-bind="css:{'active':currentRel()==='signin'}">
+        
+
+
+        
+
+<!--          <div class="social-signin__container_big">
+  <div class="social-signin__item social-signin__item_fb">
+    <a href="/login/facebook/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-mini-fb"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_googleplus">
+    <a href="/login/google-plus/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-googleplus"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_twitter">
+    <a href="/login/twitter/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-twitter"></span>
+    </a>
+  </div>
+</div>
+ -->
+
+        <!-- ko widgetInline:{name:"validation/signin"} -->
+          <div class="register-tab-container tab-body-container tab-body-container_form">
+
+
+This method of signing in has been disabled. Please click on the <bold>SIGN IN</bold> label in the top, right of the page.
+
+<!-- THIS HIDDEN DIV IS TO HIDE THE OLD METHOD OF SIGNING IN -->
+<div hidden>
+
+            <form action="" method="post" data-bind="submit: submit">
+              <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+              <input name="signin" type="hidden" value="1"/>
+
+
+              <div class="register-form-left"> 
+                <label>Email:</label>
+              </div>
+              <div class="register-form-right email-input" data-bind="validationElement: userEmail">
+                <input data-bind="value: userEmail, valueUpdate: 'input'" id="id_username" maxlength="254" name="signin-username" placeholder="Enter your email" type="text" />
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="register-form-left">
+                <label>Password:</label>
+              </div>
+              <div class="register-form-right">
+                <input id="id_password" name="signin-password" placeholder="Enter password" type="password" />
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+              </div>
+              <div class="register-form-right register-button-area">
+                <button class="register-button-active" data-bind="css:{'disabled':!validateForm.isValid()}">Log In</button>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+<!-- END OF HIDDEN DIV SECTION -->
+</div>
+
+
+          </div>
+
+        <!-- /ko -->
+      </div>
+      <!-- /signin_tab -->
+
+      <!-- password_tab -->
+      <div data-id="password" class="tab-content-clean" data-bind="css:{'active':currentRel()==='password'}">
+        
+
+
+        
+
+<!--        <div class="social-signin__container_big">
+  <div class="social-signin__item social-signin__item_fb">
+    <a href="/login/facebook/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-mini-fb"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_googleplus">
+    <a href="/login/google-plus/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-googleplus"></span>
+    </a>
+  </div>
+  <div class="social-signin__item social-signin__item_twitter">
+    <a href="/login/twitter/?next=/welcome/signin">
+      <span class="social-signin__text">Sign in with</span>
+      <span class="icon-socials-share-twitter"></span>
+    </a>
+  </div>
+</div>
+ -->
+
+        <!-- ko widgetInline:{name:"validation/password"} -->
+          <div class="register-tab-container tab-body-container tab-body-container_form">
+
+
+
+This method of password recovery has been disabled. Please click on the <bold>SIGN IN</bold> label in the top, right of the page and press the <bold>Password recovery</bold> link there.
+
+<!-- THIS HIDDEN DIV IS TO HIDE THE OLD METHOD OF SIGNING IN -->
+<div hidden>
+
+
+
+            <form action="" method="post" autocomplete="off" data-bind="submit: submit">
+              <!-- Don't remove! Fix for Chrome autocomplete -->
+              <input type="text" style="display: none;" />
+              <input type="password" style="display: none;" />
+              <!-- / -->
+              <input type='hidden' name='csrfmiddlewaretoken' value='19dhAX6Vx5acqMqMxuHfS2DOBKNIUGJb' />
+              <input name="password_reset" type="hidden" value="1"/>
+              <div class="register-form-left">
+                <label>Email:</label>
+              </div>
+              <div class="register-form-right email-input" data-bind="validationElement: userEmail">
+                <input data-bind="value: userEmail" id="id_password_reset-email" maxlength="254" name="password_reset-email" placeholder="Enter your email" type="text" />
+                <p class="register-tip">A password reset link will be sent to your email address.</p>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="register-form-left">
+              </div>
+              <div class="register-form-right register-button-area">
+                <button class="register-button-active" data-bind="css:{'disabled':!validateForm.isValid()}">Restore</button>
+              </div>
+              <div class="clearfix"></div>
+            </form>
+
+<!-- END OF HIDDEN DIV SECTION -->
+</div>
+
+          </div>
+        <!-- /ko -->
+      </div>
+      <!-- /password_tab -->
+
+    </div>
+  </div>
+  <!-- /ko -->
+</div>
+
+
+              <div class="col-sidebar">
+                
+                  
+                  
+
+                  
+                  <section class="box-style upcoming-events-part clearfix">
+
+
+  <h2>Upcoming events</h2>
+  <div class="content">
+    <div class="items">
+
+      
+      <a href="/mtghg2025/" class="item dt-hanggliding">
+        <div class="title clearfix">
+          Montegrappa Trophy HG 2025
+        </div>
+        <div class="countryflag countryflag-it"></div>
+        <div class="time-info">22 days left</div>
+      </a>
+      
+      <a href="/mtg2025/" class="item dt-paragliding">
+        <div class="title clearfix">
+          Montegrappa Trophy PG 2025
+        </div>
+        <div class="countryflag countryflag-it"></div>
+        <div class="time-info">22 days left</div>
+      </a>
+      
+      <a href="/hg-sportland-cup-2025/" class="item dt-hanggliding">
+        <div class="title clearfix">
+          HG Sportland Cup 2025
+        </div>
+        <div class="countryflag countryflag-it"></div>
+        <div class="time-info">28 days left</div>
+      </a>
+      
+      <a href="/bpcup-2025-dales-round/" class="item dt-paragliding">
+        <div class="title clearfix">
+          BPCup 2025 Dales Round
+        </div>
+        <div class="countryflag countryflag-gb"></div>
+        <div class="time-info">30 days left</div>
+      </a>
+      
+      <a href="/mosel-trophy-2025/" class="item dt-paragliding">
+        <div class="title clearfix">
+          Mosel Trophy 2025
+        </div>
+        <div class="countryflag countryflag-de"></div>
+        <div class="time-info">31 days left</div>
+      </a>
+      
+      <a href="/nrw-cup-2-1-sauerland-2025/" class="item dt-paragliding">
+        <div class="title clearfix">
+          NRW CUP 2.1 Sauerland 2025
+        </div>
+        <div class="countryflag countryflag-de"></div>
+        <div class="time-info">37 days left</div>
+      </a>
+      
+
+    </div>
+    <div class="buttons clearfix">
+      <a href="/events/next" class="btn btn-default btn-font-lager">All events</a>
+      <a href="/events/create_event" class="btn btn-primary btn-font-lager">Create new event</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+                  
+                
+              </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="footer-panel">
+        <div class="container">
+          <div class="row">
+            <div class="col-content contact-part">
+              <div class="logo"><img alt="" src="/static/site/img/logo.svg"></div>
+              <p>Competition hosting and live tracking platform.<br />Sports GPS tracker mobile app for trainings and competition live tracking.</p>
+              <p>E-mail: <a href="mailto:info@airtribune.com">info@airtribune.com</a></p>
+              <p>
+
+
+<!-- PAYPAL DONATIONS BUTTON -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="VM9KJLK3Q9JR8" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<!--img alt="" border="0" src="https://www.paypal.com/en_SI/i/scr/pixel.gif" width="1" height="1" /-->
+</form>
+
+
+
+              </p>
+            </div>
+            <div class="col-content info-part">
+              <div class="row">
+                <div class="col-content info-one-part">
+                  <div class="title">
+                    <a href="https://play.google.com/store/apps/details?id=com.airtribune.tracknblog" target="_blank">Mobile App</a>
+                  </div>
+                  <p>Airtribune mobile app allows you to keep all your activities in one place. Track your trainings and competitions, share results with other people and follow your friends!</p>
+                  <div class="buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.airtribune.tracknblog" target="_blank" class="gp-button"></a>
+                  </div>
+                </div>
+                <div class="col-content info-two-part">
+                  <div class="title">
+                    <a href="/competition-hosting-and-live-tracking" class="title">Competition hosting &amp; live tracking</a>
+                  </div>
+                  <p>
+                    Publish your event page in a special format designed to cover all organizer's needs. Enjoy administrative tools and promotional features! Live track your event using pilots'smartphones, GSM and satellite trackers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-content social-part">
+              <span class="title">Follow us</span>
+              <div class="list">
+                <ul>
+                  <li><a target="_blank" rel="nofollow" class="facebook" href="http://www.facebook.com/Airtribune"><span class="icon-socials-mini-fb"></span></a></li>
+                  <li><a target="_blank" rel="nofollow" class="twitter" href="https://twitter.com/airtribune"><span class="icon-socials-share-twitter"></span></a></li>
+                  <li><a target="_blank" rel="nofollow" class="instagram" href="http://instagram.com/airtribune"><span class="icon-socials-mini-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <p class="copyright-part">
+            &copy; 2012-<script type="text/javascript">document.write( new Date().getFullYear() );</script> Airtribune. All rights reserved &middot; <a href="/docs/privacy">Privacy Policy</a> &middot; <a href="/docs/terms">Terms of Service</a>
+          </p>
+        </div>    
+      </div>
+
+
+
+
+      
+        <script type="text/html" id="carousel_banner_1">
+          <div class="carousel-banner-layout banner-google-play">
+            <div class="title">
+              Live tracking mobile app<br> for your trainings and competitions
+            </div>
+            <a href="/" class="gp-button">
+              <div></div>
+            </a>
+          </div>
+        </script>
+
+        <script type="text/html" id="carousel_banner_2">
+          <div class="carousel-banner-layout banner-create-event">
+            <div class="title">
+              Competition Hosting<br> &amp; Live tracking
+            </div>
+            <div class="subtitle">
+              Live track your event using pilots<br>
+              smartphones, GSM and satellite trackers.<br>
+              <a href="/articles/paragliding-hang-gliding">PG & HG services and prices</a>
+            </div>
+          </div>
+        </script>
+
+        <script type="text/html" id="carousel_banner_3">
+          <div class="carousel-banner-layout banner-create-event">
+            <div class="title">
+              Competition Hosting<br> &amp; Live tracking
+            </div>
+            <div class="subtitle">
+              Live track your event using pilots<br>
+              smartphones, GSM and satellite trackers.<br>
+              <a href="/articles/paragliding-hang-gliding">PG & HG services and prices</a>
+            </div>
+          </div>
+        </script>
+      
+    
+
+    
+    
+
+    <!-- ko widget:{name:"modalSign"} --><!-- /ko -->
+    <!-- ko widget:{name:"modal"} --><!-- /ko -->
+
+    
+    
+
+    
+      <script type="text/javascript" src="/static/site/build/app.min.js?1736630572"></script>
+    
+
+  </body>
+</html>

@@ -1,0 +1,490 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Paragliding Map",
+        "totalResults": "27600000",
+        "searchTerms": "Paragliding Map",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Paragliding Map",
+        "totalResults": "27600000",
+        "searchTerms": "Paragliding Map",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.409493,
+    "formattedSearchTime": "0.41",
+    "totalResults": "27600000",
+    "formattedTotalResults": "27,600,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "PARAGLIDING MAP - #1 App With Worldwide Info!",
+      "htmlTitle": "\u003cb\u003ePARAGLIDING MAP\u003c/b\u003e - #1 App With Worldwide Info!",
+      "link": "https://www.paraglidingmap.com/",
+      "displayLink": "www.paraglidingmap.com",
+      "snippet": "Paragliding Map is designed only to help YOU make YOUR decision. A PROPERLY TRAINED PILOT MUST MAKE THE FINAL DECISION TO FLY OR NOT TO FLY! No responsibility ...",
+      "htmlSnippet": "\u003cb\u003eParagliding Map\u003c/b\u003e is designed only to help YOU make YOUR decision. A PROPERLY TRAINED PILOT MUST MAKE THE FINAL DECISION TO FLY OR NOT TO FLY! No responsibility&nbsp;...",
+      "formattedUrl": "https://www.paraglidingmap.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingmap\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlllC2itVMVSVVmku42JWLKwgFEsOT8MbXMnVsCmjEsc6CcXSgCkceZ3w&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#ffdba4",
+            "viewport": "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///681965bf67489518c361a7a15ee41605741508262d1464a0f842888a25df29bf"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What do you guys think about the Paragliding Map App? I find it ...",
+      "htmlTitle": "What do you guys think about the \u003cb\u003eParagliding Map\u003c/b\u003e App? I find it ...",
+      "link": "https://www.reddit.com/r/freeflight/comments/12pxass/what_do_you_guys_think_about_the_paragliding_map/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Apr 17, 2023 ... It's a ripoff. The data scraped from paraglidingearth.com and weather predictions from somewhere else. There's plenty of information that is not precise and ...",
+      "htmlSnippet": "Apr 17, 2023 \u003cb\u003e...\u003c/b\u003e It&#39;s a ripoff. The data scraped from paraglidingearth.com and weather predictions from somewhere else. There&#39;s plenty of information that is not precise and&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../what_do_you_guys_think_about_the_paraglidin...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../what_do_you_guys_think_about_the_\u003cb\u003eparaglidin\u003c/b\u003e...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNE_rgoV4Z50WG_H_SKbevT44uv_qwQfocoTDvm8c1118Udb_Se-7sEYQ&s",
+            "width": "164",
+            "height": "308"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: What do you guys think about the Paragliding Map App? I find it amazing.",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: What do you guys think about the Paragliding Map App? I find it amazing.",
+            "og:image:height": "2025",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/c3sco799999 - 11 votes and 30 comments",
+            "twitter:image": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/12pxass/what_do_you_guys_think_about_the_paragliding_map/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Map on the App Store",
+      "htmlTitle": "\u003cb\u003eParagliding Map\u003c/b\u003e on the App Store",
+      "link": "https://apps.apple.com/us/app/paragliding-map/id449161459",
+      "displayLink": "apps.apple.com",
+      "snippet": "What's New ... Official NOTAMs: View Notices to Airmen (NOTAMs) on the map from international aviation authorities. A vital safety feature for every flight! ▫ ...",
+      "htmlSnippet": "What&#39;s New ... Official NOTAMs: View Notices to Airmen (NOTAMs) on the \u003cb\u003emap\u003c/b\u003e from international aviation authorities. A vital safety feature for every flight! ▫&nbsp;...",
+      "formattedUrl": "https://apps.apple.com/us/app/paragliding-map/id449161459",
+      "htmlFormattedUrl": "https://apps.apple.com/us/app/\u003cb\u003eparagliding\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e/id449161459",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_nEjxAEQSAy8zn8ASKlcaP3hw4FsUO4QTXJWyOkKf9vGeJ5uaabK-3nWP&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/62/5d/da625dfa-c166-171c-06c0-5b3a9e6adc51/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200eThe world's most popular free-flight app!\n\nThe most comprehensive source for site info, forecasts, webcams, photos & more!\nSee where you can fly right now. Worldwide!\n\n▪ Explore over 15,000 launch sites, 7,500 landings, 30,000 weather stations and 39,000 webcams.\n\n▪ Official data from the DHV, Flyla…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/62/5d/da625dfa-c166-171c-06c0-5b3a9e6adc51/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/62/5d/da625dfa-c166-171c-06c0-5b3a9e6adc51/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "Paragliding Map on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "Paragliding Map on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200eParagliding Map",
+            "og:title": "\u200eParagliding Map",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200eThe world's most popular free-flight app!\n\nThe most comprehensive source for site info, forecasts, webcams, photos & more!\nSee where you can fly right now. Worldwide!\n\n▪ Explore over 15,000 launch sites, 7,500 landings, 30,000 weather stations and 39,000 webcams.\n\n▪ Official data from the DHV, Flyla…",
+            "og:locale": "en_US",
+            "apple:content_id": "449161459",
+            "og:url": "https://apps.apple.com/us/app/paragliding-map/id449161459"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/62/5d/da625dfa-c166-171c-06c0-5b3a9e6adc51/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/1200x630wa.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Earth",
+      "htmlTitle": "\u003cb\u003eParagliding\u003c/b\u003e Earth",
+      "link": "https://paraglidingearth.com/",
+      "displayLink": "paraglidingearth.com",
+      "snippet": "Fullscreen mobile-friendly map showing all pgEarth paragliding sites, pros and clubs as you pan and zoom; Search on flying sites or cities names; Sites ...",
+      "htmlSnippet": "Fullscreen mobile-friendly \u003cb\u003emap\u003c/b\u003e showing all pgEarth \u003cb\u003eparagliding\u003c/b\u003e sites, pros and clubs as you pan and zoom; Search on flying sites or cities names; Sites&nbsp;...",
+      "formattedUrl": "https://paraglidingearth.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eparagliding\u003c/b\u003eearth.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5j_h5s6JzCddKQPxnL0oajZ95_2pWBrxU8OSEve2OjOkmMXDyKJtO-1s&s",
+            "width": "399",
+            "height": "126"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#000000",
+            "viewport": "initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width",
+            "apple-mobile-web-app-capable": "yes",
+            "author": "pgEarth",
+            "mobile-web-app-capable": "yes",
+            "title": "paragliding earth, free flights sites database, worldwide, collaborative."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://paraglidingearth.com/assets/img/header-guc.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Map - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eParagliding Map\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "Feb 10, 2025 ... Many feature of Paragliding Map are free but supported by advertising. If you choose to make any in-app purchase, advertising will automatically ...",
+      "htmlSnippet": "Feb 10, 2025 \u003cb\u003e...\u003c/b\u003e Many feature of \u003cb\u003eParagliding Map\u003c/b\u003e are free but supported by advertising. If you choose to make any in-app purchase, advertising will automatically&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.\u003cb\u003eparaglidingmap\u003c/b\u003e&amp;hl...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&rdid=com.paraglidingmap&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiIgCp1qKEKoqpag1Przj0TR94LIgXW1FB62EPyc4Flaft2mtSjumdCA&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Paragliding Map - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US",
+            "appstore:developer_url": "https://www.ParaglidingMap.com",
+            "og:title": "Paragliding Map - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "com.paraglidingmap",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "com.paraglidingmap",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "See where you can fly right now. Worldwide!",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Thermal Maps",
+      "htmlTitle": "\u003cb\u003eParagliding\u003c/b\u003e Thermal \u003cb\u003eMaps\u003c/b\u003e",
+      "link": "https://thermal.kk7.ch/",
+      "displayLink": "thermal.kk7.ch",
+      "snippet": "Paragliding thermal maps show you the probability of finding usable thermal updraft anywhere in the world.",
+      "htmlSnippet": "\u003cb\u003eParagliding\u003c/b\u003e thermal \u003cb\u003emaps\u003c/b\u003e show you the probability of finding usable thermal updraft anywhere in the world.",
+      "formattedUrl": "https://thermal.kk7.ch/",
+      "htmlFormattedUrl": "https://thermal.kk7.ch/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaPVR89t6P6_mOtQQ1zdizrajI4uNvSzixqniiA7np6Mu8_v1wpNPV5WZ&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "thermal.kk7",
+            "msapplication-config": "/browserconfig.55a03507.xml",
+            "theme-color": "#ffffff",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "viewport": "width=device-width, initial-scale=1.0, minimal-ui, user-scalable=no",
+            "apple-mobile-web-app-capable": "yes",
+            "author": "M. von Känel",
+            "apple-mobile-web-app-title": "thermal.kk7",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://thermal.kk7.ch/tiles/thermals_all_all/11/1070/1322.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Map introduces Notams",
+      "htmlTitle": "\u003cb\u003eParagliding Map\u003c/b\u003e introduces Notams",
+      "link": "https://xcmag.com/news/paragliding-map-introduces-notams/",
+      "displayLink": "xcmag.com",
+      "snippet": "Feb 20, 2025 ... Paragliding Map introduces Notams. \"Check your Notams!\" ... Notams – we all know we're supposed to check them before flying, but how many do? Now ...",
+      "htmlSnippet": "Feb 20, 2025 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eParagliding Map\u003c/b\u003e introduces Notams. &quot;Check your Notams!&quot; ... Notams – we all know we&#39;re supposed to check them before flying, but how many do? Now&nbsp;...",
+      "formattedUrl": "https://xcmag.com/news/paragliding-map-introduces-notams/",
+      "htmlFormattedUrl": "https://xcmag.com/news/\u003cb\u003eparagliding\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e-introduces-notams/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACdxNCw416httySPv7PHAjGV-YkgV7PSgL8HylKPtWfkEZYZLwG-ObnCi&s",
+            "width": "316",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2025/02/PGMap_hero.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "article:published_time": "2025-02-20T13:31:00+00:00",
+            "og:image:width": "2560",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "author": "Tarquin Cooper",
+            "og:title": "Paragliding Map introduces Notams",
+            "og:image:height": "1290",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Paragliding Map has made it much easier to check the latest airspace restrictions by introducing automatic Notam warnings.",
+            "twitter:creator": "@xcmag",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/news/paragliding-map-introduces-notams/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2025/02/PGMap_hero.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Destination Map by Month - When to go where | bstoked",
+      "htmlTitle": "\u003cb\u003eParagliding\u003c/b\u003e Destination \u003cb\u003eMap\u003c/b\u003e by Month - When to go where | bstoked",
+      "link": "https://paragliding.bstoked.net/locations/map/",
+      "displayLink": "paragliding.bstoked.net",
+      "snippet": "Our Paragliding map shows you the best conditions by month. Paragliding Destinations by Month. Learn where and when to go Paragliding.",
+      "htmlSnippet": "Our \u003cb\u003eParagliding map\u003c/b\u003e shows you the best conditions by month. Paragliding Destinations by Month. Learn where and when to go Paragliding.",
+      "formattedUrl": "https://paragliding.bstoked.net/locations/map/",
+      "htmlFormattedUrl": "https://\u003cb\u003eparagliding\u003c/b\u003e.bstoked.net/locations/\u003cb\u003emap\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "application-name": "bstoked",
+            "og:image": "https://bstoked.azureedge.net/a/meta/paragliding/wtgw.jpg?width=1280",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "og:image:width": "1280",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Paragliding Destination Map by Month - When to go where",
+            "og:site_name": "bstoked",
+            "twitter:domain": "https://paragliding.bstoked.net/locations/map/",
+            "og:title": "Paragliding Destination Map by Month - When to go where",
+            "og:image:type": "image/jpeg",
+            "og:description": "Our Paragliding map shows you the best conditions by month. Paragliding Destinations by Month. Learn where and when to go Paragliding.",
+            "twitter:image": "https://bstoked.azureedge.net/a/meta/paragliding/wtgw.jpg?width=1280",
+            "fb:app_id": "1583909448537058",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Our Paragliding map shows you the best conditions by month. Paragliding Destinations by Month. Learn where and when to go Paragliding.",
+            "mobile-web-app-capable": "yes",
+            "og:locale": "en_GB",
+            "og:url": "https://paragliding.bstoked.net/locations/map/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://bstoked.azureedge.net/a/meta/paragliding/wtgw.jpg?width=1280"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Explore the Skies with Gaggle: Your Ultimate Paragliding Map ...",
+      "htmlTitle": "Explore the Skies with Gaggle: Your Ultimate \u003cb\u003eParagliding Map\u003c/b\u003e ...",
+      "link": "https://flygaggle.com/solutions/paragliding-map/",
+      "displayLink": "flygaggle.com",
+      "snippet": "Gaggle is the ultimate paragliding map companion for pilots of all levels. Whether you're a seasoned pro or just starting out, Gaggle has everything you ...",
+      "htmlSnippet": "Gaggle is the ultimate \u003cb\u003eparagliding map\u003c/b\u003e companion for pilots of all levels. Whether you&#39;re a seasoned pro or just starting out, Gaggle has everything you&nbsp;...",
+      "formattedUrl": "https://flygaggle.com/solutions/paragliding-map/",
+      "htmlFormattedUrl": "https://flygaggle.com/solutions/\u003cb\u003eparagliding\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdpFIUEQM7142evZzIc2apu1-zeRiyRSfg2DjMShcKLYj54KTd8kZahWp&s",
+            "width": "248",
+            "height": "203"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "/assets/open-graph-image.jpg",
+            "apple-itunes-app": "app-id=1556694314",
+            "og:type": "website",
+            "og:image:alt": "Gaggle - Flight Recorder",
+            "og:image:width": "3200",
+            "theme-color": "#ffffff",
+            "og:site_name": "Gaggle - Flight Recorder",
+            "author": "Gaggle - Flight Recorder",
+            "og:title": "Explore the Skies with Gaggle: Your Ultimate Paragliding Map Companion",
+            "og:image:height": "1920",
+            "og:description": "Gaggle is the ultimate paragliding map companion for pilots of all levels. Whether you're a seasoned pro or just starting out, Gaggle has everything you need to plan, record, and analyze your flights with real-time airspace information, detailed site guides, and live weather updates.",
+            "facebook-domain-verification": "j3ylvm7anm6efrtzsfl3tj9xa4iwjw",
+            "fb:app_id": "375160461113819",
+            "viewport": "width=device-width,initial-scale=1",
+            "og:url": "/solutions/paragliding-map/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flygaggle.com/_astro/header-image.B66Jb_5-_Z1n4wVA.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Map of Africa - Cloudbase Paragliding School",
+      "htmlTitle": "\u003cb\u003eParagliding Map\u003c/b\u003e of Africa - Cloudbase Paragliding School",
+      "link": "https://cloudbase.co.za/site-guide/paragliding-map-of-africa/",
+      "displayLink": "cloudbase.co.za",
+      "snippet": "Paragliding Map of Africa is a mellow site with a fantastic view, overlooking the tranquil Indian Ocean and the holiday town of Wilderness.",
+      "htmlSnippet": "\u003cb\u003eParagliding Map\u003c/b\u003e of Africa is a mellow site with a fantastic view, overlooking the tranquil Indian Ocean and the holiday town of Wilderness.",
+      "formattedUrl": "https://cloudbase.co.za/site-guide/paragliding-map-of-africa/",
+      "htmlFormattedUrl": "https://cloudbase.co.za/site-guide/\u003cb\u003eparagliding\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e-of-africa/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKcuRep7zJHSDZLZS5IBvLH4bZO2NTt6N_PCFd1PFAYNcg1hB88bHODo&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "country": "South Africa, south, africa, SA, ZA, SOUTH, AFRICA, zuid afrika, südafrika",
+            "og:image": "https://cloudbase.co.za/wp-content/uploads/Map-of-Africa-01.jpg",
+            "og:type": "article",
+            "og:image:width": "1000",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cloudbase Paragliding School",
+            "town": "wilderness,cape,town,mossel,bay,george,oudshoorn,sedgefield,knysna,plettenberg bay,jeffreys bay,port elizabeth,jbay,st francis bay,paarl,stellenbosch",
+            "msvalidate.01": "0B8AE1EBB1ADEDF21D884FA36CB404FF",
+            "og:title": "Paragliding Map of Africa - Cloudbase Paragliding School",
+            "og:image:height": "667",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://cloudbase.co.za/wp-content/uploads/cropped-Cloudbase-Favicon-4-270x270.png",
+            "og:description": "Paragliding Map of Africa is a mellow site with a fantastic view, overlooking the tranquil Indian Ocean and the holiday town of Wilderness.",
+            "twitter:data1": "2 minutes",
+            "article:modified_time": "2025-03-16T07:20:30+00:00",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:locale": "en_US",
+            "state": "garden, route, Garden, Route, western, province, cape, western, cape",
+            "og:url": "https://cloudbase.co.za/site-guide/paragliding-map-of-africa/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cloudbase.co.za/wp-content/uploads/Map-of-Africa-01.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1803 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Meteoblue",
+        "totalResults": "9200000",
+        "searchTerms": "Meteoblue",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Meteoblue",
+        "totalResults": "9200000",
+        "searchTerms": "Meteoblue",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.235645,
+    "formattedSearchTime": "0.24",
+    "totalResults": "9200000",
+    "formattedTotalResults": "9,200,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue: Weather Cheney Reservoir",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e: Weather Cheney Reservoir",
+      "link": "https://www.meteoblue.com/en/weather/week/cheney-reservoir_united-states_4269450",
+      "displayLink": "www.meteoblue.com",
+      "snippet": "Hourly weather forecast for Cheney Reservoir. Our 5-day meteogram for Cheney Reservoir offers all weather information in 3 simple graphs.",
+      "htmlSnippet": "Hourly weather forecast for Cheney Reservoir. Our 5-day meteogram for Cheney Reservoir offers all weather information in 3 simple graphs.",
+      "formattedUrl": "https://www.meteoblue.com/en/.../cheney-reservoir_united-states_4269450",
+      "htmlFormattedUrl": "https://www.\u003cb\u003emeteoblue\u003c/b\u003e.com/en/.../cheney-reservoir_united-states_4269450",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCudC4QYES214cGyGmUnOErs0bgoVNkYTV0hbq2Q7LHGNLJ0v9bLZ6gFh2&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "country": [
+          {
+            "name": "United States"
+          }
+        ],
+        "city": [
+          {
+            "name": "Cheney Reservoir"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "192",
+            "url": "https://static.meteoblue.com/assets/images/logo/launcher-icon-4x.png",
+            "height": "60"
+          },
+          {
+            "width": "192",
+            "url": "https://static.meteoblue.com/assets/images/logo/launcher-icon-4x.png",
+            "height": "60"
+          }
+        ],
+        "organization": [
+          {
+            "datemodified": "2025-03-21T10:48:57+01:00",
+            "name": "meteoblue AG",
+            "datepublished": "2025-03-21T06:58:52+01:00"
+          },
+          {
+            "datemodified": "2025-03-21T10:48:57+01:00",
+            "name": "meteoblue AG",
+            "datepublished": "2025-03-21T06:58:52+01:00"
+          }
+        ],
+        "metatags": [
+          {
+            "image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "og:image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "place:location:longitude": "-97.835",
+            "apple-itunes-app": "app-id=994459137",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Weather Cheney Reservoir - meteoblue",
+            "og:site_name": "meteoblue",
+            "place:location:latitude": "37.7597",
+            "og:title": "Weather Cheney Reservoir - meteoblue",
+            "place:location:altitude": "433",
+            "twitter:app:id:iphone": "994459137",
+            "og:description": "Today's and tonight's professional weather forecast for Cheney Reservoir. Precipitation radar, HD satellite images, and current weather warnings, hourly temperature, chance of rain, and sunshine hours.",
+            "twitter:creator": "@meteoblue",
+            "twitter:image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "twitter:site": "@meteoblue",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Today's and tonight's professional weather forecast for Cheney Reservoir. Precipitation radar, HD satellite images, and current weather warnings, hourly temperature, chance of rain, and sunshine hours.",
+            "og:locale": "en_GB",
+            "og:url": "https://www.meteoblue.com/en/weather/week/cheney-reservoir_united-states_4269450",
+            "twitter:app:name:iphone": "meteoblue"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png"
+          }
+        ],
+        "blogposting": [
+          {
+            "image": "https://mb-richtexteditor.s3-eu-west-1.amazonaws.com/20250321055549_newsimg-worldmeteorologicalday2025-DH-200325_440x220.jpg",
+            "author": "dorian.hoffmann@*\u003e@~\u003c#;$.com",
+            "description": "World Meteorological Day 2025, themed \"Closing the Early Warning Gap Together,\" highlights the need for global collaboration to enhance early warning systems and improve climate resilience.",
+            "headline": "World Meteorological Day 2025: Closing the Early Warning Gap Together",
+            "url": "Read on",
+            "mainentityofpage": "https://www.meteoblue.com/en/blog/article/show/40470_World+Meteorological+Day+2025%3A+Closing+the+Early+Warning+Gap+Together"
+          },
+          {
+            "image": "https://mb-richtexteditor.s3-eu-west-1.amazonaws.com/20250321055549_newsimg-worldmeteorologicalday2025-DH-200325_440x220.jpg",
+            "author": "dorian.hoffmann@*\u003e@~\u003c#;$.com",
+            "description": "World Meteorological Day 2025, themed \"Closing the Early Warning Gap Together,\" highlights the need for global collaboration to enhance early warning systems and improve climate resilience.",
+            "headline": "World Meteorological Day 2025: Closing the Early Warning Gap Together",
+            "url": "Read on",
+            "mainentityofpage": "https://www.meteoblue.com/en/blog/article/show/40470_World+Meteorological+Day+2025%3A+Closing+the+Early+Warning+Gap+Together"
+          }
+        ],
+        "administrativearea": [
+          {
+            "name": "Kansas"
+          }
+        ],
+        "geocoordinates": [
+          {
+            "elevation": "433",
+            "latitude": "37.76",
+            "longitude": "-97.84"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "7-Day Weather",
+            "url": "7-Day Weather"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue: Home",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e: Home",
+      "link": "https://content.meteoblue.com/en/",
+      "displayLink": "content.meteoblue.com",
+      "snippet": "meteoblue offers several climate services, such as climate change analysis, climate prediction and climate risk assessment, for any location on Earth, using ...",
+      "htmlSnippet": "\u003cb\u003emeteoblue\u003c/b\u003e offers several climate services, such as climate change analysis, climate prediction and climate risk assessment, for any location on Earth, using&nbsp;...",
+      "formattedUrl": "https://content.meteoblue.com/en/",
+      "htmlFormattedUrl": "https://content.\u003cb\u003emeteoblue\u003c/b\u003e.com/en/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCagiRYtK87i5LqiS8DkOH7XXSqLNSyHTlwFKZb4vSm-HvDtFC5QSNkg&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://content.meteoblue.com/assets/images/og_img-content-070225_r2.png",
+            "twitter:title": "Home - meteoblue",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "meteoblue",
+            "twitter:domain": "https://www.meteoblue.com/",
+            "og:title": "Home - meteoblue",
+            "twitter:app:id:iphone": "362298699",
+            "og:description": "weather close to you",
+            "twitter:creator": "@meteoblue",
+            "twitter:image": "https://www.meteoblue.com/public/images/beta/iphone_bookmark_144.png",
+            "twitter:site": "@meteoblue",
+            "viewport": "width=device-width,initial-scale=1",
+            "fb:admins": "211902745488426"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://content.meteoblue.com/assets/images/og_img-content-070225_r2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue: Weather Cheney Reservoir",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e: Weather Cheney Reservoir",
+      "link": "https://www.meteoblue.com/",
+      "displayLink": "www.meteoblue.com",
+      "snippet": "At night, the image is not dark as infrared radiation can detect temperature differences. Unfortunately, low clouds and fog are difficult to distinguish from ...",
+      "htmlSnippet": "At night, the image is not dark as infrared radiation can detect temperature differences. Unfortunately, low clouds and fog are difficult to distinguish from&nbsp;...",
+      "formattedUrl": "https://www.meteoblue.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003emeteoblue\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCudC4QYES214cGyGmUnOErs0bgoVNkYTV0hbq2Q7LHGNLJ0v9bLZ6gFh2&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "country": [
+          {
+            "name": "United States"
+          }
+        ],
+        "city": [
+          {
+            "name": "Cheney Reservoir"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "192",
+            "url": "https://static.meteoblue.com/assets/images/logo/launcher-icon-4x.png",
+            "height": "60"
+          },
+          {
+            "width": "192",
+            "url": "https://static.meteoblue.com/assets/images/logo/launcher-icon-4x.png",
+            "height": "60"
+          }
+        ],
+        "organization": [
+          {
+            "datemodified": "2025-03-21T10:48:57+01:00",
+            "name": "meteoblue AG",
+            "datepublished": "2025-03-21T06:58:52+01:00"
+          },
+          {
+            "datemodified": "2025-03-21T10:48:57+01:00",
+            "name": "meteoblue AG",
+            "datepublished": "2025-03-21T06:58:52+01:00"
+          }
+        ],
+        "metatags": [
+          {
+            "image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "og:image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "place:location:longitude": "-97.835",
+            "apple-itunes-app": "app-id=994459137",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Weather Cheney Reservoir - meteoblue",
+            "og:site_name": "meteoblue",
+            "place:location:latitude": "37.7597",
+            "og:title": "Weather Cheney Reservoir - meteoblue",
+            "place:location:altitude": "433",
+            "twitter:app:id:iphone": "994459137",
+            "og:description": "Today's and tonight's professional weather forecast for Cheney Reservoir. Precipitation radar, HD satellite images, and current weather warnings, hourly temperature, chance of rain, and sunshine hours.",
+            "twitter:creator": "@meteoblue",
+            "twitter:image": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png",
+            "twitter:site": "@meteoblue",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Today's and tonight's professional weather forecast for Cheney Reservoir. Precipitation radar, HD satellite images, and current weather warnings, hourly temperature, chance of rain, and sunshine hours.",
+            "og:locale": "en_GB",
+            "og:url": "https://www.meteoblue.com/en/weather/week/cheney-reservoir_united-states_4269450",
+            "twitter:app:name:iphone": "meteoblue"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.meteoblue.com/assets/images/logo/meteoblue_tile_large.png"
+          }
+        ],
+        "blogposting": [
+          {
+            "image": "https://mb-richtexteditor.s3-eu-west-1.amazonaws.com/20250321055549_newsimg-worldmeteorologicalday2025-DH-200325_440x220.jpg",
+            "author": "dorian.hoffmann@*\u003e@~\u003c#;$.com",
+            "description": "World Meteorological Day 2025, themed \"Closing the Early Warning Gap Together,\" highlights the need for global collaboration to enhance early warning systems and improve climate resilience.",
+            "headline": "World Meteorological Day 2025: Closing the Early Warning Gap Together",
+            "url": "Read on",
+            "mainentityofpage": "https://www.meteoblue.com/en/blog/article/show/40470_World+Meteorological+Day+2025%3A+Closing+the+Early+Warning+Gap+Together"
+          },
+          {
+            "image": "https://mb-richtexteditor.s3-eu-west-1.amazonaws.com/20250321055549_newsimg-worldmeteorologicalday2025-DH-200325_440x220.jpg",
+            "author": "dorian.hoffmann@*\u003e@~\u003c#;$.com",
+            "description": "World Meteorological Day 2025, themed \"Closing the Early Warning Gap Together,\" highlights the need for global collaboration to enhance early warning systems and improve climate resilience.",
+            "headline": "World Meteorological Day 2025: Closing the Early Warning Gap Together",
+            "url": "Read on",
+            "mainentityofpage": "https://www.meteoblue.com/en/blog/article/show/40470_World+Meteorological+Day+2025%3A+Closing+the+Early+Warning+Gap+Together"
+          }
+        ],
+        "administrativearea": [
+          {
+            "name": "Kansas"
+          }
+        ],
+        "geocoordinates": [
+          {
+            "elevation": "433",
+            "latitude": "37.76",
+            "longitude": "-97.84"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "7-Day Weather",
+            "url": "7-Day Weather"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue weather & maps - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e weather &amp; maps - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.meteoblue.droid&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "About this app. arrow_forward. meteoblue shows high precision weather forecasts combined with a beautiful, simple and easy to use design. Weather forecasts can ...",
+      "htmlSnippet": "About this app. arrow_forward. \u003cb\u003emeteoblue\u003c/b\u003e shows high precision weather forecasts combined with a beautiful, simple and easy to use design. Weather forecasts can&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=com.meteoblue.droid...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.\u003cb\u003emeteoblue\u003c/b\u003e.droid...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=com.meteoblue.droid&rdid=com.meteoblue.droid&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvKBJwy6RwjWciuyf8hCJuhXACFPDemTWEjtatRvZ_HoSPZZrfB8m_d7Zx&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/Y_FTmp6rL7QmbBY5k2znj03OV6cTPJEKT3RMkZBZTpaLnZZI2FPxF9nhxrtjZwLWehA",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "meteoblue weather & maps - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=com.meteoblue.droid&hl=en_US",
+            "appstore:developer_url": "https://www.meteoblue.com",
+            "og:title": "meteoblue weather & maps - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/Y_FTmp6rL7QmbBY5k2znj03OV6cTPJEKT3RMkZBZTpaLnZZI2FPxF9nhxrtjZwLWehA=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "com.meteoblue.droid",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "com.meteoblue.droid",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "meteoblue – weather worldwide on the go",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=com.meteoblue.droid&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/Y_FTmp6rL7QmbBY5k2znj03OV6cTPJEKT3RMkZBZTpaLnZZI2FPxF9nhxrtjZwLWehA"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Weather Maps | Live Satellite & Weather Radar - meteoblue",
+      "htmlTitle": "Weather Maps | Live Satellite &amp; Weather Radar - \u003cb\u003emeteoblue\u003c/b\u003e",
+      "link": "https://www.meteoblue.com/en/weather/maps",
+      "displayLink": "www.meteoblue.com",
+      "snippet": "Discover our professional weather maps. ✓ HD Satellite ✓ Weather Radar ✓ Rain & Snow ✓ Air Quality ✓ Wind ✓ METAR.",
+      "htmlSnippet": "Discover our professional weather maps. ✓ HD Satellite ✓ Weather Radar ✓ Rain &amp; Snow ✓ Air Quality ✓ Wind ✓ METAR.",
+      "formattedUrl": "https://www.meteoblue.com/en/weather/maps",
+      "htmlFormattedUrl": "https://www.\u003cb\u003emeteoblue\u003c/b\u003e.com/en/weather/maps",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvhkViOgUuSGXXNvRzaw298kCySXs9s6anTfydZcNWpsTtYNcPyUqZX48&s",
+            "width": "310",
+            "height": "162"
+          }
+        ],
+        "metatags": [
+          {
+            "image": "https://static.meteoblue.com/assets/images/socialmedia/maps-preview.jpg",
+            "og:image": "https://static.meteoblue.com/assets/images/socialmedia/maps-preview.jpg",
+            "place:location:longitude": "-93.6091",
+            "apple-itunes-app": "app-id=994459137",
+            "og:type": "website",
+            "og:image:width": "1910",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Weather Maps | Live Satellite & Weather Radar - meteoblue",
+            "og:site_name": "meteoblue",
+            "place:location:latitude": "41.6005",
+            "og:title": "Weather Maps | Live Satellite & Weather Radar - meteoblue",
+            "place:location:altitude": "266",
+            "og:image:height": "1000",
+            "twitter:app:id:iphone": "994459137",
+            "og:description": "Discover our professional weather maps. ✓ HD Satellite ✓ Weather Radar ✓ Rain & Snow ✓ Air Quality ✓ Wind ✓ METAR",
+            "twitter:creator": "@meteoblue",
+            "twitter:image": "https://static.meteoblue.com/assets/images/socialmedia/maps-preview.jpg",
+            "twitter:site": "@meteoblue",
+            "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+            "twitter:description": "Discover our professional weather maps. ✓ HD Satellite ✓ Weather Radar ✓ Rain & Snow ✓ Air Quality ✓ Wind ✓ METAR",
+            "og:locale": "en_GB",
+            "og:url": "https://www.meteoblue.com/en/weather/maps",
+            "twitter:app:name:iphone": "meteoblue"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.meteoblue.com/assets/images/socialmedia/maps-preview.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue weather & maps on the App Store",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e weather &amp; maps on the App Store",
+      "link": "https://apps.apple.com/us/app/meteoblue-weather-maps/id994459137",
+      "displayLink": "apps.apple.com",
+      "snippet": "Feb 24, 2025 ... Description. meteoblue – weather worldwide on the go: Get precise weather forecasts for any location on land or sea with meteoblue. With access ...",
+      "htmlSnippet": "Feb 24, 2025 \u003cb\u003e...\u003c/b\u003e Description. \u003cb\u003emeteoblue\u003c/b\u003e – weather worldwide on the go: Get precise weather forecasts for any location on land or sea with \u003cb\u003emeteoblue\u003c/b\u003e. With access&nbsp;...",
+      "formattedUrl": "https://apps.apple.com/us/app/meteoblue-weather-maps/id994459137",
+      "htmlFormattedUrl": "https://apps.apple.com/us/app/\u003cb\u003emeteoblue\u003c/b\u003e-weather-maps/id994459137",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAGoSgZbUEVEuYMHMtn2fSa8PdW8gP8mIQeoPpVrI2jLglf1F_Nq1apAo&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/ae/55/20ae5511-f168-d11d-8e12-004f8afa72fc/AppIcon-0-1x_U007emarketing-0-0-0-7-0-0-85-220-0.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200emeteoblue – weather worldwide on the go: \n\nGet precise weather forecasts for any location on land or sea with meteoblue. With access to over 6 million locations, you can search by name, postal code, or coordinates— or let GPS find your current position instantly.   \n\nAccurate Weather Forecasts \n\n- 7…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/ae/55/20ae5511-f168-d11d-8e12-004f8afa72fc/AppIcon-0-1x_U007emarketing-0-0-0-7-0-0-85-220-0.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/ae/55/20ae5511-f168-d11d-8e12-004f8afa72fc/AppIcon-0-1x_U007emarketing-0-0-0-7-0-0-85-220-0.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "meteoblue weather & maps on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "meteoblue weather & maps on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200emeteoblue weather & maps",
+            "og:title": "\u200emeteoblue weather & maps",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200emeteoblue – weather worldwide on the go: \n\nGet precise weather forecasts for any location on land or sea with meteoblue. With access to over 6 million locations, you can search by name, postal code, or coordinates— or let GPS find your current position instantly.   \n\nAccurate Weather Forecasts \n\n- 7…",
+            "og:locale": "en_US",
+            "apple:content_id": "994459137",
+            "og:url": "https://apps.apple.com/us/app/meteoblue-weather-maps/id994459137"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/20/ae/55/20ae5511-f168-d11d-8e12-004f8afa72fc/AppIcon-0-1x_U007emarketing-0-0-0-7-0-0-85-220-0.png/1200x630wa.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Meteoblue - Wikipedia",
+      "htmlTitle": "\u003cb\u003eMeteoblue\u003c/b\u003e - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Meteoblue",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "Meteoblue is a meteorological service created at the University of Basel, Switzerland. In 2006, Meteoblue was then founded as a spin-off company.",
+      "htmlSnippet": "\u003cb\u003eMeteoblue\u003c/b\u003e is a meteorological service created at the University of Basel, Switzerland. In 2006, \u003cb\u003eMeteoblue\u003c/b\u003e was then founded as a spin-off company.",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Meteoblue",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eMeteoblue\u003c/b\u003e",
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin",
+            "theme-color": "#eaecf0",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": "Meteoblue - Wikipedia",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Technical Documentation",
+      "htmlTitle": "Technical Documentation",
+      "link": "https://docs.meteoblue.com/en",
+      "displayLink": "docs.meteoblue.com",
+      "snippet": "Technical Documentation: meteoblue APIs, weather models, datasets, services and variables. Weather APIs: Learn more about our Forecast, History and Image APIs.",
+      "htmlSnippet": "Technical Documentation: \u003cb\u003emeteoblue\u003c/b\u003e APIs, weather models, datasets, services and variables. Weather APIs: Learn more about our Forecast, History and Image APIs.",
+      "formattedUrl": "https://docs.meteoblue.com/en",
+      "htmlFormattedUrl": "https://docs.\u003cb\u003emeteoblue\u003c/b\u003e.com/en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWJE3ge0UOKhZQ0ecorZM3-kI5RGpsMtIBZi7Lnc1rIbHwLA38Io4jDRw&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://docs.meteoblue.com/img/og_img-docs-070225.png",
+            "twitter:card": "summary_large_image",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Technical Documentation",
+            "og:locale": "en_GB",
+            "docusaurus_locale": "en",
+            "docsearch:docusaurus_tag": "default",
+            "docsearch:language": "en",
+            "og:url": "https://docs.meteoblue.com/en",
+            "twitter:image": "https://docs.meteoblue.com/img/og_img-docs-070225.png",
+            "docusaurus_tag": "default"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://docs.meteoblue.com/img/og_img-docs-070225.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue AG : European Meteorological Society",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e AG : European Meteorological Society",
+      "link": "https://www.emetsoc.org/members/member/meteoblue/",
+      "displayLink": "www.emetsoc.org",
+      "snippet": "meteoblue AG is a Swiss specialist company producing, managing and supplying high precision weather and environmental data for the entire world, using ...",
+      "htmlSnippet": "\u003cb\u003emeteoblue\u003c/b\u003e AG is a Swiss specialist company producing, managing and supplying high precision weather and environmental data for the entire world, using&nbsp;...",
+      "formattedUrl": "https://www.emetsoc.org/members/member/meteoblue/",
+      "htmlFormattedUrl": "https://www.emetsoc.org/members/member/\u003cb\u003emeteoblue\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXvHcKCWTajCO8qJaCNQ25fBQtW9FOOlL2CBsIJPGK8uc4oKFdoHNqgE&s",
+            "width": "299",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "position": "1",
+            "msapplication-tileimage": "https://www.emetsoc.org/wp-content/uploads/2025/02/icon-300x300.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.emetsoc.org/wp-content/uploads/2025/02/graphic_EMS-Webinar_2025_bentley_NetZero_2025-04-09-300x169.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "meteoblue (@meteoblue) / X",
+      "htmlTitle": "\u003cb\u003emeteoblue\u003c/b\u003e (@\u003cb\u003emeteoblue\u003c/b\u003e) / X",
+      "link": "https://x.com/meteoblue?lang=en",
+      "displayLink": "x.com",
+      "snippet": "Top-precision Swiss weather and climate data for you and your business. Trusted since 2006. Basel meteoblue.com Joined February 2010 444 Following 24K Followers",
+      "htmlSnippet": "Top-precision Swiss weather and climate data for you and your business. Trusted since 2006. Basel \u003cb\u003emeteoblue\u003c/b\u003e.com Joined February 2010 444 Following 24K Followers",
+      "formattedUrl": "https://x.com/meteoblue?lang=en",
+      "htmlFormattedUrl": "https://x.com/\u003cb\u003emeteoblue\u003c/b\u003e?lang=en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4NiOk0NrFNsQxQhdbMkISwhKFnvQEvXWDidukxaqf0LjhG7sX1cvIKkC&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "imageobject": [
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gmknu6kWwAAzLTQ.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gmknu6kWwAAzLTQ?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GlL8u26WoAABHOl.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GlL8u26WoAABHOl?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gi84FhhWkAAo2ZJ.jpg",
+            "width": "880",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gi84FhhWkAAo2ZJ?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GieCEDBa0AEGl8n.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GieCEDBa0AEGl8n?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gh_MPKsXMAA14Mg.jpg",
+            "width": "1650",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gh_MPKsXMAA14Mg?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GhLX6oyWMAAw_6u.jpg",
+            "width": "2048",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GhLX6oyWMAAw_6u?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gg71lUVWsAAZHfj.jpg",
+            "width": "2048",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gg71lUVWsAAZHfj?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gg2E4oCWgAAxqqx.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gg2E4oCWgAAxqqx?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gfj4kUDWgAABzt4.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gfj4kUDWgAABzt4?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/Gde7W38WwAAR8BU.jpg",
+            "width": "2048",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/Gde7W38WwAAR8BU?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GXrZMT0XoAEnq0M.jpg",
+            "width": "630",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GXrZMT0XoAEnq0M?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GXa_pTlWQAAf5ee.jpg",
+            "width": "1200",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GXa_pTlWQAAf5ee?format=jpg&name=thumb"
+          }
+        ],
+        "person": [
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "95708774",
+            "givenname": "USAS: Wildfires, Weather, Aviation, History 🇺🇲🌊",
+            "additionalname": "USAS_WW1"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          },
+          {
+            "identifier": "113983685",
+            "givenname": "meteoblue",
+            "additionalname": "meteoblue"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "25",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1802704462558982386/likes"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1802704462558982386/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1802704462558982386/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1802704462558982386"
+          },
+          {
+            "userinteractioncount": "7365",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "6",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1903096036224028805/likes"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1903096036224028805/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1903096036224028805/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1903096036224028805"
+          },
+          {
+            "userinteractioncount": "615",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1903096157280092330/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1903096157280092330/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1903096157280092330/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1903096157280092330"
+          },
+          {
+            "userinteractioncount": "343",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "7",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/USAS_WW1/status/1899604341918454031/likes"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/USAS_WW1/status/1899604341918454031/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/USAS_WW1/status/1899604341918454031/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/USAS_WW1/status/1899604341918454031"
+          },
+          {
+            "userinteractioncount": "984",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1896856343165927657/likes"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1896856343165927657/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1896856343165927657/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1896856343165927657"
+          },
+          {
+            "userinteractioncount": "502",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1886788439636398482/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1886788439636398482/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1886788439636398482/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1886788439636398482"
+          },
+          {
+            "userinteractioncount": "823",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1884617979649732985/likes"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1884617979649732985/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1884617979649732985/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1884617979649732985"
+          },
+          {
+            "userinteractioncount": "776",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1883915481968775369/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1883915481968775369/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1883915481968775369/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1883915481968775369"
+          },
+          {
+            "userinteractioncount": "713",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1882447735028396063/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1882447735028396063/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1882447735028396063/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1882447735028396063"
+          },
+          {
+            "userinteractioncount": "956",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "7",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1878801402329432160/likes"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1878801402329432160/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1878801402329432160/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1878801402329432160"
+          },
+          {
+            "userinteractioncount": "1020",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1877708120123740285/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1877708120123740285/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1877708120123740285/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1877708120123740285"
+          },
+          {
+            "userinteractioncount": "795",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "16",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1877302731267866949/likes"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1877302731267866949/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1877302731267866949/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1877302731267866949"
+          },
+          {
+            "userinteractioncount": "2692",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1877302789094666365/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1877302789094666365/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1877302789094666365/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1877302789094666365"
+          },
+          {
+            "userinteractioncount": "518",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1876929681267511697/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1876929681267511697/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1876929681267511697/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1876929681267511697"
+          },
+          {
+            "userinteractioncount": "764",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1871518952544977198/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1871518952544977198/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1871518952544977198/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1871518952544977198"
+          },
+          {
+            "userinteractioncount": "644",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1866160788454392207/likes"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1866160788454392207/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1866160788454392207/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1866160788454392207"
+          },
+          {
+            "userinteractioncount": "894",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1862162977668927907/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1862162977668927907/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1862162977668927907/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1862162977668927907"
+          },
+          {
+            "userinteractioncount": "886",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1861452169901199618/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1861452169901199618/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1861452169901199618/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1861452169901199618"
+          },
+          {
+            "userinteractioncount": "790",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "9",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1836018655986962827/likes"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1836018655986962827/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1836018655986962827/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1836018655986962827"
+          },
+          {
+            "userinteractioncount": "2025",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1836018691189653815/likes"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1836018691189653815/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1836018691189653815/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1836018691189653815"
+          },
+          {
+            "userinteractioncount": "1356",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "6",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1834864627001307634/likes"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1834864627001307634/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1834864627001307634/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1834864627001307634"
+          },
+          {
+            "userinteractioncount": "2222",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/meteoblue/status/1834864682806481317/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/meteoblue/status/1834864682806481317/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/meteoblue/status/1834864682806481317/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/meteoblue/status/1834864682806481317"
+          },
+          {
+            "userinteractioncount": "1123",
+            "interactiontype": "https://schema.org/ViewAction"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=333903271",
+            "og:image": "https://pbs.twimg.com/profile_images/889786127049252864/WRAIib2F_200x200.jpg",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "og:site_name": "X (formerly Twitter)",
+            "al:ios:app_name": "X",
+            "apple-mobile-web-app-title": "Twitter",
+            "og:title": "meteoblue (@meteoblue) on X",
+            "al:android:package": "com.twitter.android",
+            "al:ios:url": "twitter://user?screen_name=meteoblue",
+            "title": "meteoblue (@meteoblue) on X",
+            "og:description": "Top-precision Swiss weather and climate data for you and your business. Trusted since 2006.",
+            "al:ios:app_store_id": "333903271",
+            "facebook-domain-verification": "x6sdcc8b5ju3bh8nbm59eswogvg6t1",
+            "al:android:url": "twitter://user?screen_name=meteoblue",
+            "fb:app_id": "2231777543",
+            "apple-mobile-web-app-status-bar-style": "white",
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://x.com/meteoblue",
+            "al:android:app_name": "X"
+          }
+        ],
+        "videoobject": [
+          {
+            "duration": "PT0H0M37S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1802704462558982386",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1802703489182670848/pu/vid/avc1/2160x1080/ZoQqsCXAy0vYrR6D.mp4?tag=14",
+            "uploaddate": "2024-06-17T14:06:51.000Z",
+            "name": "@meteoblue's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1802703489182670848/pu/img/dRiEQNtXM08lkxPZ.jpg"
+          },
+          {
+            "duration": "PT0H0M9S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1899604341918454031",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1899604222426894336/pu/vid/avc1/1332x720/lOGv83DY07UW7prB.mp4?tag=12",
+            "uploaddate": "2025-03-11T23:32:22.000Z",
+            "name": "@USAS_WW1's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1899604222426894336/pu/img/NlvnSSLfYKVMeb5Q.jpg"
+          },
+          {
+            "duration": "PT0H0M0S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1896875673639370944",
+            "contenturl": "https://video.twimg.com/tweet_video/GlMNzY1WwAA5jsq.mp4",
+            "uploaddate": "2025-03-04T10:49:37.000Z",
+            "name": "@USAS_WW1's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/tweet_video_thumb/GlMNzY1WwAA5jsq.jpg"
+          },
+          {
+            "duration": "PT0H0M14S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1876929681267511697",
+            "contenturl": "https://video.twimg.com/amplify_video/1876929608458649600/vid/avc1/1858x1080/jDPCv5nqDIAxab4s.mp4?tag=16",
+            "uploaddate": "2025-01-08T09:51:22.000Z",
+            "name": "@meteoblue's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1876929608458649600/img/ZjpZQShiG9Qma0pM.jpg"
+          },
+          {
+            "duration": "PT0H0M34S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1866160788454392207",
+            "contenturl": "https://video.twimg.com/amplify_video/1866160595013095424/vid/avc1/1080x1920/luGNHIxw8QmoLRtR.mp4?tag=16",
+            "uploaddate": "2024-12-09T16:39:38.000Z",
+            "name": "@meteoblue's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1866160595013095424/img/5HSPlZ06tQl4aP3l.jpg"
+          },
+          {
+            "duration": "PT0H0M18S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1861452169901199618",
+            "contenturl": "https://video.twimg.com/amplify_video/1861452109389971456/vid/avc1/1080x1920/s2DrP5620QP5q89z.mp4?tag=16",
+            "uploaddate": "2024-11-26T16:49:16.000Z",
+            "name": "@meteoblue's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1861452109389971456/img/JIyx9mYluIgMJ4Az.jpg"
+          }
+        ],
+        "collection": [
+          {
+            "name": "Profile posts"
+          }
+        ],
+        "creativework": [
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/1Zgwi8BdfG"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/6pxsOlrsPp"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/5TiW30deB0"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/qryQvUpVM9"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/SMhTBD89Ak"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/lgKlNHeq8m"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/0VS1MsnCZS"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/RG7AulpmEC"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/WFmJ47Canr"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/CyBIlEvKTY"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/EFq3UADdy6"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/6LwdRSYJz3"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/8Lu4F9gPBG"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/e0R7RdydGm"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/MdYX63ILj1"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/lSDbdsuIyk"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/R6HfC6W2pz"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/qjpiaOrSLE"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/vnJtwdhR2K"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/vPBEc41gnR"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/wriO0R4KmS"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pbs.twimg.com/profile_images/889786127049252864/WRAIib2F_200x200.jpg"
+          }
+        ],
+        "socialmediaposting": [
+          {
+            "identifier": "1802704462558982386",
+            "commentcount": "4",
+            "articlebody": "1/ 🌬️ Exciting news! We at meteoblue are thrilled to introduce our new 2x2 meter Urban Wind Map for Zurich. 🌆 Discover wind patterns with unmatched precision and real-time visualisations.",
+            "position": "1",
+            "datecreated": "2024-06-17T14:06:51.000Z",
+            "datepublished": "2024-06-17T14:06:51.000Z",
+            "url": "https://twitter.com/meteoblue/status/1802704462558982386"
+          },
+          {
+            "identifier": "1903096036224028805",
+            "commentcount": "1",
+            "articlebody": "This #WorldMeteorologicalDay, we're committed to Closing the Early Warning Gap Together. Extreme weather impacts us all—early warnings save lives. See how innovation in weather tech is making...",
+            "position": "2",
+            "datecreated": "2025-03-21T14:47:07.000Z",
+            "datepublished": "2025-03-21T14:47:07.000Z",
+            "url": "https://twitter.com/meteoblue/status/1903096036224028805"
+          },
+          {
+            "identifier": "1903096157280092330",
+            "commentcount": "0",
+            "articlebody": "Find out what we do in this respect",
+            "ispartof": "https://twitter.com/meteoblue/status/1903096036224028805",
+            "position": "3",
+            "datecreated": "2025-03-21T14:47:36.000Z",
+            "datepublished": "2025-03-21T14:47:36.000Z",
+            "url": "https://twitter.com/meteoblue/status/1903096157280092330"
+          },
+          {
+            "identifier": "1899792146745450881",
+            "position": "4",
+            "datecreated": "2025-03-12T11:58:38.000Z",
+            "datepublished": "2025-03-12T11:58:38.000Z"
+          },
+          {
+            "identifier": "1899604341918454031",
+            "commentcount": "0",
+            "articlebody": "#weather #CAWX #SCWX #NCWX: Amazing weather patterns off the Atlantic coast and Pacific Coast... @NOAA says on https://spc.noaa.gov/products/outlook/day1otlk.html…, \"Isolated thunderstorms...",
+            "datecreated": "2025-03-11T23:32:22.000Z",
+            "isbasedon": "https://twitter.com/USAS_WW1/status/1896875673639370944",
+            "datepublished": "2025-03-11T23:32:22.000Z",
+            "url": "https://twitter.com/USAS_WW1/status/1899604341918454031"
+          },
+          {
+            "identifier": "1896856343165927657",
+            "commentcount": "0",
+            "articlebody": "🌍 Better data for better farming! meteoblue joins KijaniSpace to support smallholder farmers in Africa with Copernicus data & IoT. 🌱 Our goal? Boost climate resilience & productivity...",
+            "position": "5",
+            "datecreated": "2025-03-04T09:32:48.000Z",
+            "datepublished": "2025-03-04T09:32:48.000Z",
+            "url": "https://twitter.com/meteoblue/status/1896856343165927657"
+          },
+          {
+            "identifier": "1886788439636398482",
+            "commentcount": "1",
+            "articlebody": "New: Enhanced Wave Forecasts! 🌊 The IBIWAM wave model now offers 2.5 km resolution, delivering more precise data from the Canaries to Ireland! Now available in our weather maps.",
+            "position": "6",
+            "datecreated": "2025-02-04T14:46:33.000Z",
+            "datepublished": "2025-02-04T14:46:33.000Z",
+            "url": "https://twitter.com/meteoblue/status/1886788439636398482"
+          },
+          {
+            "identifier": "1884617979649732985",
+            "commentcount": "0",
+            "articlebody": "Did you know? 2024 was officially the warmest year on record, bringing extreme weather worldwide! Here are the standout events: - Feb: Spain hit 30°C in winter - Apr: Dubai saw 144mm of rain...",
+            "position": "7",
+            "datecreated": "2025-01-29T15:01:55.000Z",
+            "datepublished": "2025-01-29T15:01:55.000Z",
+            "url": "https://twitter.com/meteoblue/status/1884617979649732985"
+          },
+          {
+            "identifier": "1883915481968775369",
+            "commentcount": "0",
+            "articlebody": "Storm Eowyn and storm Herminia hit Europe back-to-back last week, bringing winds up to 180 km/h, floods and power outages. Stay informed and safe!",
+            "position": "8",
+            "datecreated": "2025-01-27T16:30:27.000Z",
+            "datepublished": "2025-01-27T16:30:27.000Z",
+            "url": "https://twitter.com/meteoblue/status/1883915481968775369"
+          },
+          {
+            "identifier": "1882447735028396063",
+            "commentcount": "0",
+            "articlebody": "Hughes Fire near LA spreads fast. Over 10.000 acres scorched and 30.000+ evacuated as SoCal faces yet another disaster. This crisis comes on the heels of the Palisades and Eaton wildfires....",
+            "position": "9",
+            "datecreated": "2025-01-23T15:18:08.000Z",
+            "datepublished": "2025-01-23T15:18:08.000Z",
+            "url": "https://twitter.com/meteoblue/status/1882447735028396063"
+          },
+          {
+            "identifier": "1878801402329432160",
+            "commentcount": "0",
+            "articlebody": "As of today, the LA wildfires have caused major devastation: - 24 confirmed casualties - 16 ppl missing - 150 Km2 burned - 6000+ buildings burned - Tap water not drinkable due to contamination...",
+            "position": "10",
+            "datecreated": "2025-01-13T13:48:55.000Z",
+            "datepublished": "2025-01-13T13:48:55.000Z",
+            "url": "https://twitter.com/meteoblue/status/1878801402329432160"
+          },
+          {
+            "identifier": "1877708120123740285",
+            "commentcount": "1",
+            "articlebody": "🔥 Devastating fires NW of Los Angeles: - over 35,000 acres burned (cca 150 Km2) - 180,000 residents evacuated - 10 lives lost Stay informed and support relief efforts. 🙏",
+            "position": "11",
+            "datecreated": "2025-01-10T13:24:36.000Z",
+            "datepublished": "2025-01-10T13:24:36.000Z",
+            "url": "https://twitter.com/meteoblue/status/1877708120123740285"
+          },
+          {
+            "identifier": "1877302731267866949",
+            "commentcount": "1",
+            "articlebody": "🌟 2024 Highlights from meteoblue! ✅ Urban Heat Maps & Urban Wind Maps ✅ Joined forces with @Windycom ✅ New weather models & upgraded meteograms for even better forecasts Explore all...",
+            "position": "12",
+            "datecreated": "2025-01-09T10:33:44.000Z",
+            "datepublished": "2025-01-09T10:33:44.000Z",
+            "url": "https://twitter.com/meteoblue/status/1877302731267866949"
+          },
+          {
+            "identifier": "1877302789094666365",
+            "commentcount": "0",
+            "articlebody": "Link",
+            "ispartof": "https://twitter.com/meteoblue/status/1877302731267866949",
+            "position": "13",
+            "datecreated": "2025-01-09T10:33:58.000Z",
+            "datepublished": "2025-01-09T10:33:58.000Z",
+            "url": "https://twitter.com/meteoblue/status/1877302789094666365"
+          },
+          {
+            "identifier": "1876929681267511697",
+            "commentcount": "0",
+            "articlebody": "A massive winter storm gripped parts of the USA, bringing snow, icy roads, power outages, and travel disruptions across multiple states. Arctic air is expected to persist until mid-January....",
+            "position": "14",
+            "datecreated": "2025-01-08T09:51:22.000Z",
+            "datepublished": "2025-01-08T09:51:22.000Z",
+            "url": "https://twitter.com/meteoblue/status/1876929681267511697"
+          },
+          {
+            "identifier": "1871518952544977198",
+            "commentcount": "0",
+            "articlebody": "Happy holidays to you! Time to unwrap your first present: the meteoblue premium weather service point+ is unlocked for all from now until the end of the year!",
+            "position": "15",
+            "datecreated": "2024-12-24T11:31:04.000Z",
+            "datepublished": "2024-12-24T11:31:04.000Z",
+            "url": "https://twitter.com/meteoblue/status/1871518952544977198"
+          },
+          {
+            "identifier": "1866160788454392207",
+            "commentcount": "0",
+            "articlebody": "Storm Darragh hit the UK last weekend, wreaking havoc and causing significant meteorological disruption across the UK, with wind speeds reaching up to 150 km/h. The Met Office issued a rare...",
+            "position": "16",
+            "datecreated": "2024-12-09T16:39:38.000Z",
+            "datepublished": "2024-12-09T16:39:38.000Z",
+            "url": "https://twitter.com/meteoblue/status/1866160788454392207"
+          },
+          {
+            "identifier": "1862162977668927907",
+            "commentcount": "0",
+            "articlebody": "🌍 Real-Time Weather Insights Supporting Smarter Cities 🌆 The Urban Data Platform Frankfurt (UDP) demonstrates how data can power smarter, more connected urban living. With real-time informati...",
+            "position": "17",
+            "datecreated": "2024-11-28T15:53:45.000Z",
+            "datepublished": "2024-11-28T15:53:45.000Z",
+            "url": "https://twitter.com/meteoblue/status/1862162977668927907"
+          },
+          {
+            "identifier": "1861452169901199618",
+            "commentcount": "0",
+            "articlebody": "Storm Bert has hit the UK and Ireland:",
+            "position": "18",
+            "datecreated": "2024-11-26T16:49:16.000Z",
+            "datepublished": "2024-11-26T16:49:16.000Z",
+            "url": "https://twitter.com/meteoblue/status/1861452169901199618"
+          },
+          {
+            "identifier": "1836018655986962827",
+            "commentcount": "2",
+            "articlebody": "What caused the severe flooding in Czech Republic, Austria, Poland, and Slovakia? 📷📷 Thousands evacuated, homes without power, and snow in the Alps. Discover why this extreme weather...",
+            "position": "19",
+            "datecreated": "2024-09-17T12:25:33.000Z",
+            "datepublished": "2024-09-17T12:25:33.000Z",
+            "url": "https://twitter.com/meteoblue/status/1836018655986962827"
+          },
+          {
+            "identifier": "1836018691189653815",
+            "commentcount": "0",
+            "ispartof": "https://twitter.com/meteoblue/status/1836018655986962827",
+            "position": "20",
+            "datecreated": "2024-09-17T12:25:42.000Z",
+            "datepublished": "2024-09-17T12:25:42.000Z",
+            "url": "https://twitter.com/meteoblue/status/1836018691189653815"
+          },
+          {
+            "identifier": "1834864627001307634",
+            "commentcount": "1",
+            "articlebody": "First cold snap of the season hits Europe, bringing relentless rain and snow! 🌧️❄️ Central Europe is facing heavy downpours for the next 48 hours, with flooding risks increasing. Stay...",
+            "position": "21",
+            "datecreated": "2024-09-14T07:59:51.000Z",
+            "datepublished": "2024-09-14T07:59:51.000Z",
+            "url": "https://twitter.com/meteoblue/status/1834864627001307634"
+          },
+          {
+            "identifier": "1834864682806481317",
+            "commentcount": "1",
+            "articlebody": "More:",
+            "ispartof": "https://twitter.com/meteoblue/status/1834864627001307634",
+            "position": "22",
+            "datecreated": "2024-09-14T08:00:05.000Z",
+            "datepublished": "2024-09-14T08:00:05.000Z",
+            "url": "https://twitter.com/meteoblue/status/1834864682806481317"
+          }
+        ]
+      }
+    }
+  ]
+}

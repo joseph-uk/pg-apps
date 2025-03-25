@@ -1,0 +1,9 @@
+{
+  "name": "Windy",
+  "url": "https://www.windy.com/",
+  "platform": "website, phone",
+  "type": "weather",
+  "short_description": "Very good weather foreecasts",
+  "timestamp": "2025-03-25T21:55:43Z",
+  "website_fetched": true
+}

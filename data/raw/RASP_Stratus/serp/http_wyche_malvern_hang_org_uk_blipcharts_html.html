@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang="en">
+
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8' />
+	<meta http-equiv='content-style-type' content='text/css' />
+	<meta http-equiv='content-language' content='en' />
+	<title>RASP UK Forecast (Stratus)</title>
+
+	<!-- *JS* -->
+	<script>
+		function get_blip_plots_table(turnpoint, turnpoint_text, day) {
+			var blip_table = document.createElement("TABLE");
+			blip_table.id = 'plot_table';
+			table_head = blip_table.createTHead();
+			table_head.innerHTML = `<h3>Forecast for ${turnpoint_text} on ${day}</h3>`;
+
+			var rasp_prefix = 'http://app.stratus.org.uk/blip/graph/blip_';
+			// Build a URL like..
+			// http://app.stratus.org.uk/blip/graph/blip_main.php?day=Thursday&tp=GRM
+			const plots = [
+				'main',
+				'temp',
+				'wind',
+				'wind_dir',
+				'cu',
+				'sun',
+				'rain',
+				'stars'
+			];
+			for (var index = 0; index < plots.length; index++) {
+				var url = `${rasp_prefix}${plots[index]}.php?day=${day}&tp=${turnpoint}`;
+				var row = blip_table.insertRow();
+				var cell = row.insertCell();
+				cell.innerHTML = `<img src=${url}>`;
+			}
+			return blip_table;
+		}
+		function replace_plot_content(settings) {
+			content_div = document.getElementById('forecast_content')
+			old_plots = document.getElementById('plot_table');
+			new_plots = get_blip_plots_table(settings.location_code,
+				settings.location_name,
+				settings.day);
+			content_div.replaceChild(new_plots, old_plots);
+		}
+
+	</script>
+</head>
+<h2>BLIPSPOT Forecasts<br>From <a href="http://rasp.stratus.org.uk">http://rasp.stratus.org.uk</a></h2>
+
+<body>
+	<div id=forecast_content></div>
+</body>
+<script>
+	const ms_per_day = 1000 * 60 * 60 * 24;
+	var options = { weekday: 'long' };
+	var load_time = new Date();
+
+	days = [
+		load_time.toLocaleDateString("en-US", options), // Today
+		new Date(load_time.valueOf() + ms_per_day).toLocaleDateString("en-US", options) //Tomorrow
+	]
+
+	var selected_day_index = load_time.getHours() > 13 ? 1 : 0;
+
+	const locations = [
+		["Great Malvern", "GRM"],
+		["Long Mynd", "MYN"],
+		["Marlborough", "MAE"],
+		["Leckhampton", "CLV"],
+		["Blorenge", "ABS"],
+		["Beer Head", "BEE"],
+		["Hay Bluff", "HAB"],
+		["Minehead", "WIM"],
+		["Builth Wells", "BUI"],
+		["Liddington", "OGB"],
+		["Rhossili", "PTE"],
+		["Westbury", "WEB"]
+	]
+
+
+	var location_dropdown = document.createElement("SELECT", name = "location");
+	var when_dropdown = document.createElement("SELECT", name = "when");
+
+	var settings = {
+		location_code: locations[0][1],
+		location_name: locations[0][0],
+		day: days[selected_day_index]
+	}
+
+	for (var index = 0; index < locations.length; index++) {
+		var [location_name, location_code] = locations[index];
+		var option = document.createElement("option");
+		option.value = location_code;
+		option.text = location_name;
+		location_dropdown.add(option);
+	}
+
+	for (var index = 0; index < days.length; index++) {
+
+		var option = document.createElement("option");
+		option.value = days[index];
+		option.text = option.value
+		when_dropdown.add(option);
+	}
+	when_dropdown.selectedIndex = selected_day_index;
+
+	location_dropdown.onchange = function () {
+		settings.location_code = this.value;
+		settings.location_name = this.options[this.selectedIndex].innerHTML;
+		replace_plot_content(settings);
+
+	};
+
+	when_dropdown.onchange = function () {
+		settings.day = this.value;
+		replace_plot_content(settings);
+	};
+
+
+	blip_table = get_blip_plots_table(settings.location_code,
+		settings.location_name,
+		settings.day);
+	content_div = document.getElementById('forecast_content')
+
+	content_div.appendChild(location_dropdown);
+	content_div.appendChild(when_dropdown);
+	content_div.appendChild(blip_table);
+</script>
+
+</html>

@@ -1,0 +1,446 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - RASP - Synoptic",
+        "totalResults": "11300",
+        "searchTerms": "RASP - Synoptic",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - RASP - Synoptic",
+        "totalResults": "11300",
+        "searchTerms": "RASP - Synoptic",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.322959,
+    "formattedSearchTime": "0.32",
+    "totalResults": "11300",
+    "formattedTotalResults": "11,300"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "RASP+Synoptic",
+      "htmlTitle": "\u003cb\u003eRASP\u003c/b\u003e+\u003cb\u003eSynoptic\u003c/b\u003e",
+      "link": "https://xcpara.co.uk/index.php/weather/rasp-synoptic",
+      "displayLink": "xcpara.co.uk",
+      "snippet": "RASP+Synoptic · RASP · XCplanner · Key Parameter definition · Examples · About. To ... All the RASP data is provided by @RASPWeather rasp.stratus.org.uk. click ...",
+      "htmlSnippet": "\u003cb\u003eRASP\u003c/b\u003e+\u003cb\u003eSynoptic\u003c/b\u003e &middot; \u003cb\u003eRASP\u003c/b\u003e &middot; XCplanner &middot; Key Parameter definition &middot; Examples &middot; About. To ... All the \u003cb\u003eRASP\u003c/b\u003e data is provided by @RASPWeather \u003cb\u003erasp\u003c/b\u003e.stratus.org.uk. click&nbsp;...",
+      "formattedUrl": "https://xcpara.co.uk/index.php/weather/rasp-synoptic",
+      "htmlFormattedUrl": "https://xcpara.co.uk/index.php/weather/\u003cb\u003erasp\u003c/b\u003e-\u003cb\u003esynoptic\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlsbbnzLrF0LQqrTfNVbG-Xq7gwwsivd5jKVNX_XxL3o_wn51KzAH3yps&s",
+            "width": "199",
+            "height": "253"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "og:site_name": "XCpara",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=2.0",
+            "author": "Administrator",
+            "og:title": "RASP Synoptic",
+            "og:url": "https://xcpara.co.uk/index.php/weather/rasp-synoptic"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn10.mrsap.org/UK2/FCST/wstar.curr.1200lst.d2.body.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Difference between met office maps ... - Paragliding Forum",
+      "htmlTitle": "View topic - Difference between met office maps ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=38926",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "May 2, 2011 ... Xc weather shows due easterly and rasp south easterly. Which is more likely to be correct for wind direction and speed . The synoptic maps or xc ...",
+      "htmlSnippet": "May 2, 2011 \u003cb\u003e...\u003c/b\u003e Xc weather shows due easterly and \u003cb\u003erasp\u003c/b\u003e south easterly. Which is more likely to be correct for wind direction and speed . The \u003cb\u003esynoptic\u003c/b\u003e maps or xc&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=38926",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=38926",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ECMWF with two new papers right before christmas. AIFS-CRPS ...",
+      "htmlTitle": "ECMWF with two new papers right before christmas. AIFS-CRPS ...",
+      "link": "https://www.linkedin.com/posts/stephan-rasp-4154481aa_ecmwf-with-two-new-papers-right-before-christmas-activity-7277002062322712576-1pWe",
+      "displayLink": "www.linkedin.com",
+      "snippet": "Dec 23, 2024 ... Stephan Rasp's Post. View profile for Stephan Rasp. Stephan Rasp ... Great job team Synoptic…. Check it out at viewer.synopticdata.com ...",
+      "htmlSnippet": "Dec 23, 2024 \u003cb\u003e...\u003c/b\u003e Stephan \u003cb\u003eRasp&#39;s\u003c/b\u003e Post. View profile for Stephan \u003cb\u003eRasp\u003c/b\u003e. Stephan \u003cb\u003eRasp\u003c/b\u003e ... Great job team \u003cb\u003eSynoptic\u003c/b\u003e…. Check it out at viewer.synopticdata.com&nbsp;...",
+      "formattedUrl": "https://www.linkedin.com/.../stephan-rasp-4154481aa_ecmwf-with-two-ne...",
+      "htmlFormattedUrl": "https://www.linkedin.com/.../stephan-\u003cb\u003erasp\u003c/b\u003e-4154481aa_ecmwf-with-two-ne...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fbxpa157CLISkxxg8y5T91uz_Ce8JOwwURrtdk2fPzMnkfFquJK3&s",
+            "width": "96",
+            "height": "96"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://static.licdn.com/scds/common/u/images/email/artdeco/logos/96/linkedin-bug-color.png",
+            "twitter:title": "ECMWF with two new papers right before christmas.\n\nAIFS-CRPS:… | Stephan Rasp | 19 comments",
+            "twitter:card": "summary_large_image",
+            "og:type": "article",
+            "al:ios:app_name": "LinkedIn",
+            "twitter:url": "https://www.linkedin.com/posts/stephan-rasp-4154481aa_ecmwf-with-two-new-papers-right-before-christmas-activity-7277002062322712576-1pWe",
+            "og:title": "ECMWF with two new papers right before christmas.\n\nAIFS-CRPS:… | Stephan Rasp | 19 comments",
+            "al:android:package": "com.linkedin.android",
+            "pagekey": "p_public_post",
+            "locale": "en_US",
+            "al:ios:url": "https://www.linkedin.com/posts/stephan-rasp-4154481aa_ecmwf-with-two-new-papers-right-before-christmas-activity-7277002062322712576-1pWe",
+            "og:description": "ECMWF with two new papers right before christmas.\n\nAIFS-CRPS: https://lnkd.in/dyG56nc9\nGraphDOP (the first truly end2end global weather model): https://lnkd.in/dieTZXxp\n\nHere they are added to the SotA tracker: https://lnkd.in/dhxFmsqs\n\nWhat is the conclusion from GraphDOP being so far away from SotA? Is the setup still suboptimal in some way or is pure obs-based forecasting harder than some might have thought? | 19 comments on LinkedIn",
+            "al:ios:app_store_id": "288429040",
+            "twitter:image": "https://media.licdn.com/dms/image/v2/D4D22AQFMDYYalAyB2Q/feedshare-shrink_800/B4DZP0a0MoG0Ag-/0/1734972490933?e=2147483647&v=beta&t=m6kAK7gx1TL6YwGOfn0l-dh9DxbNFlOBweu-BY7MYDQ",
+            "al:android:url": "https://www.linkedin.com/posts/stephan-rasp-4154481aa_ecmwf-with-two-new-papers-right-before-christmas-activity-7277002062322712576-1pWe",
+            "lnkd:url": "https://www.linkedin.com/feed/update/urn:li:activity:7277002062322712576",
+            "twitter:site": "@linkedin",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "ECMWF with two new papers right before christmas.\n\nAIFS-CRPS: https://lnkd.in/dyG56nc9\nGraphDOP (the first truly end2end global weather model): https://lnkd.in/dieTZXxp\n\nHere they are added to the SotA tracker: https://lnkd.in/dhxFmsqs\n\nWhat is the conclusion from GraphDOP being so far away from SotA? Is the setup still suboptimal in some way or is pure obs-based forecasting harder than some might have thought? | 19 comments on LinkedIn",
+            "og:url": "https://www.linkedin.com/posts/stephan-rasp-4154481aa_ecmwf-with-two-new-papers-right-before-christmas-activity-7277002062322712576-1pWe",
+            "al:android:app_name": "LinkedIn"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.licdn.com/scds/common/u/images/email/artdeco/logos/96/linkedin-bug-color.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Links - North Devon Hang Gliding and Paragliding Club",
+      "htmlTitle": "Links - North Devon Hang Gliding and Paragliding Club",
+      "link": "https://ndhpc.co.uk/links",
+      "displayLink": "ndhpc.co.uk",
+      "snippet": "http://rasp.stratus.org.uk/app/rasptablegm/rasptable.php · http://xcpara.co.uk/index.php/weather/rasp-synoptic · https://www.metoffice.gov.uk/mobile/surface ...",
+      "htmlSnippet": "http://rasp.stratus.org.uk/app/rasptablegm/rasptable.php &middot; http://xcpara.co.uk/index.php/weather/\u003cb\u003erasp\u003c/b\u003e-\u003cb\u003esynoptic\u003c/b\u003e &middot; https://www.metoffice.gov.uk/mobile/surface&nbsp;...",
+      "formattedUrl": "https://ndhpc.co.uk/links",
+      "htmlFormattedUrl": "https://ndhpc.co.uk/links",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg39EzTNzdsLjkzEDqCbaSSCPfO6_ySpkPbVef0BiFzIgfxn8j0_4vCw&s",
+            "width": "248",
+            "height": "124"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "North Devon Hang Gliding and Paragliding Club",
+            "og:title": "Links - North Devon Hang Gliding and Paragliding Club",
+            "twitter:label1": "Est. reading time",
+            "msapplication-tileimage": "https://i0.wp.com/ndhpc.co.uk/wp-content/uploads/2018/09/favicon-16x16.png?fit=16%2C16&ssl=1",
+            "og:description": "Other South West Clubs ——————————— We have reciprocal flying rights with the other clubs in the southwest – full members of the NDHPC can fly the sites of the clubs listed below, and we welcome members of these clubs to fly with us on the north coast. Devon & Somerset Condors: www.dscondors.co.uk South Devon HG … Continue reading Links",
+            "article:publisher": "https://www.facebook.com/NDHPC/",
+            "twitter:data1": "1 minute",
+            "article:modified_time": "2020-07-03T20:19:27+00:00",
+            "viewport": "width=device-width",
+            "og:locale": "en_US",
+            "og:url": "https://ndhpc.co.uk/links"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i0.wp.com/ndhpc.co.uk/wp-content/uploads/2019/07/cropped-NDHPC_logo_72dpi.png?fit=248%2C124&ssl=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Atmospheric Predictability at Synoptic Versus Cloud-Resolving ...",
+      "htmlTitle": "Atmospheric Predictability at \u003cb\u003eSynoptic\u003c/b\u003e Versus Cloud-Resolving ...",
+      "link": "https://journals.ametsoc.org/view/journals/bams/88/11/bams-88-11-1783.xml",
+      "displayLink": "journals.ametsoc.org",
+      "snippet": "synoptic-scale numerical weather prediction (NWP). With the increase of ... Rasp, Stephan, Selz, Tobias, and Craig, George C., 2016, \"Convective and ...",
+      "htmlSnippet": "\u003cb\u003esynoptic\u003c/b\u003e-scale numerical weather prediction (NWP). With the increase of ... \u003cb\u003eRasp\u003c/b\u003e, Stephan, Selz, Tobias, and Craig, George C., 2016, &quot;Convective and&nbsp;...",
+      "formattedUrl": "https://journals.ametsoc.org/view/journals/bams/88/.../bams-88-11-1783.xm...",
+      "htmlFormattedUrl": "https://journals.ametsoc.org/view/journals/bams/88/.../bams-88-11-1783.xm...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://journals.ametsoc.org/cover/journals/bams/88/11/cover.jpg",
+            "citation_publication_date": "2007/11/01",
+            "article:published_time": "2007-11-01",
+            "twitter:card": "summary_large_image",
+            "citation_title": "Atmospheric Predictability at Synoptic Versus Cloud-Resolving Scales",
+            "og:site_name": "AMETSOC",
+            "citation_publisher": "American Meteorological Society",
+            "citation_journal_title": "Bulletin of the American Meteorological Society",
+            "og:description": "The limited atmospheric predictability has been addressed by the development of ensemble prediction systems (EPS) that are now routinely applied for medium-range synoptic-scale numerical weather prediction (NWP). With the increase of computational power, interest is growing in the design of high-resolution (cloud resolving) NWP models and their associated short-range EPS. This development raises a series of fundamental questions, especially concerning the type of error growth and the validity of the tangent-linear approximation. To address these issues, a comparison between perturbed medium-range (10 day) synoptic-scale integrations (taken from the operational ECMWF EPS with a horizontal resolution of about 80 km) and short-range (1 day) high-resolution simulations (based on the Lokal Modell of the Consortium for Small-Scale Modeling with a grid spacing of 2.2 km) is conducted. The differences between the two systems are interpreted in a nondimensional sense and illustrated with the help of the Lorenz attract",
+            "citation_issn": "0003-0007",
+            "citation_language": "en",
+            "citation_pdf_url": "https://journals.ametsoc.org/downloadpdf/view/journals/bams/88/11/bams-88-11-1783.pdf",
+            "citation_xml_url": "https://journals.ametsoc.org/doc/journals/bams/88/11/bams-88-11-1783.xml",
+            "citation_lastpage": "1794",
+            "og:type": "article",
+            "article:section": "Bulletin of the American Meteorological Society",
+            "twitter:title": "Atmospheric Predictability at Synoptic Versus Cloud-Resolving Scales",
+            "og:title": "Atmospheric Predictability at Synoptic Versus Cloud-Resolving Scales",
+            "citation_author": "Cathy Hohenegger",
+            "citation_issue": "11",
+            "article:author": "Cathy Hohenegger",
+            "referrer": "unsafe-url",
+            "citation_firstpage": "1783",
+            "viewport": "width=device-width, minimum-scale=1.0, initial-scale=1.0",
+            "twitter:description": "The limited atmospheric predictability has been addressed by the development of ensemble prediction systems (EPS) that are now routinely applied for medium-range synoptic-scale numerical weather prediction (NWP). With the increase of computational power, interest is growing in the design of high-resolution (cloud resolving) NWP models and their associated short-range EPS. This development raises a series of fundamental questions, especially concerning the type of error growth and the validity of the tangent-linear approximation. To address these issues, a comparison between perturbed medium-range (10 day) synoptic-scale integrations (taken from the operational ECMWF EPS with a horizontal resolution of about 80 km) and short-range (1 day) high-resolution simulations (based on the Lokal Modell of the Consortium for Small-Scale Modeling with a grid spacing of 2.2 km) is conducted. The differences between the two systems are interpreted in a nondimensional sense and illustrated with the help of the Lorenz attract",
+            "citation_doi": "10.1175/BAMS-88-11-1783",
+            "og:locale": "en_US",
+            "dc.identifier": "10.1175/BAMS-88-11-1783",
+            "citation_volume": "88",
+            "og:url": "https://journals.ametsoc.org/view/journals/bams/88/11/bams-88-11-1783.xml"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://journals.ametsoc.org/cover/journals/bams/88/11/cover.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Weather links – Advance paragliders in the West Country",
+      "htmlTitle": "Weather links – Advance paragliders in the West Country",
+      "link": "https://flyaszent.com/weather-links/",
+      "displayLink": "flyaszent.com",
+      "snippet": "XCweather RASP main page / Desktop / Mobile / Status check / Archive viewer lazyrasp.com - quick six day RASP Stars look-ahead XCPara RASP and Synoptic ...",
+      "htmlSnippet": "XCweather \u003cb\u003eRASP\u003c/b\u003e main page / Desktop / Mobile / Status check / Archive viewer lazyrasp.com - quick six day \u003cb\u003eRASP\u003c/b\u003e Stars look-ahead XCPara \u003cb\u003eRASP\u003c/b\u003e and \u003cb\u003eSynoptic\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://flyaszent.com/weather-links/",
+      "htmlFormattedUrl": "https://flyaszent.com/weather-links/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzgRGIJFEHezrylUIbgTg2s_v-gMnRXdZb58Kf7-NpkDI0ax-w9BNIeck&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://secure.gravatar.com/blavatar/ac62dbefff8d34fad121a87c291854d582cc161e69be01e9a5b37254b910b9c8?s=200&ts=1739744384",
+            "og:type": "article",
+            "article:published_time": "2012-04-14T14:10:16+00:00",
+            "og:image:width": "200",
+            "twitter:card": "summary",
+            "og:site_name": "Advance paragliders in the West Country",
+            "og:title": "Weather links",
+            "og:image:height": "200",
+            "og:description": "XCweather RASP main page / Desktop / Mobile / Status check / Archive viewer lazyrasp.com – quick six day RASP Stars look-ahead XCPara RASP and Synoptic…",
+            "article:publisher": "https://www.facebook.com/WordPresscom",
+            "twitter:image": "https://secure.gravatar.com/blavatar/ac62dbefff8d34fad121a87c291854d582cc161e69be01e9a5b37254b910b9c8?s=240",
+            "twitter:text:title": "Weather links",
+            "article:modified_time": "2024-08-23T08:11:27+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://flyaszent.com/weather-links/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://secure.gravatar.com/blavatar/ac62dbefff8d34fad121a87c291854d582cc161e69be01e9a5b37254b910b9c8?s=200&ts=1739744384"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "WeatherBench: A Benchmark Data Set for Data‐Driven Weather ...",
+      "htmlTitle": "WeatherBench: A Benchmark Data Set for Data‐Driven Weather ...",
+      "link": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020ms002203",
+      "displayLink": "agupubs.onlinelibrary.wiley.com",
+      "snippet": "Aug 19, 2020 ... Potential vorticity (Holton, 2004; Hoskins et al., 1985) is a commonly used quantity in synoptic ... Stephan Rasp acknowledges funding from the ...",
+      "htmlSnippet": "Aug 19, 2020 \u003cb\u003e...\u003c/b\u003e Potential vorticity (Holton, 2004; Hoskins et al., 1985) is a commonly used quantity in \u003cb\u003esynoptic\u003c/b\u003e ... Stephan \u003cb\u003eRasp\u003c/b\u003e acknowledges funding from the&nbsp;...",
+      "formattedUrl": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020ms002203",
+      "htmlFormattedUrl": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020ms002203",
+      "pagemap": {
+        "metatags": [
+          {
+            "citation_keywords": "machine learning",
+            "og:image": "https://agupubs.onlinelibrary.wiley.com/cms/asset/b4f7e8cb-a7f8-4d31-9e0f-a80e3e4ef07a/jame.v12.11.cover.jpg?trick=1742148480821",
+            "citation_publication_date": "2020/11/01",
+            "citation_title": "WeatherBench: A Benchmark Data Set for Data-Driven Weather Forecasting",
+            "citation_author_institution": "Department of Informatics Technical University of Munich Munich Germany",
+            "og:site_name": "AGU Journals",
+            "citation_publisher": "John Wiley & Sons, Ltd",
+            "citation_journal_title": "Journal of Advances in Modeling Earth Systems",
+            "mathjax-version": "3",
+            "og:description": "Benchmarks with strong baselines are a key ingredient for rapid progress on a problem\nHere, we define a benchmark for data-driven global, medium-range weather prediction\nThe data are processed for ...",
+            "twitter:image": "https://agupubs.onlinelibrary.wiley.com/cms/asset/b4f7e8cb-a7f8-4d31-9e0f-a80e3e4ef07a/jame.v12.11.cover.jpg?trick=1742148480821",
+            "submission-systems-domains": "/pb-assets/utm_params_config/submission-systems-domains-1667213560157.txt",
+            "citation_online_date": "2020/11/20",
+            "citation_issn": "1942-2466",
+            "citation_language": "en",
+            "citation_fulltext_html_url": "https://onlinelibrary.wiley.com/doi/full/10.1029/2020MS002203",
+            "publication_doi": "10.1029/2020MS002203",
+            "citation_pdf_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1029/2020MS002203",
+            "og:type": "Article",
+            "og:title": "WeatherBench: A Benchmark Data Set for Data‐Driven Weather Forecasting",
+            "pbcontext": ";issue:issue:doi\\:10.1002/jame.v12.11;journal:journal:19422466;page:string:Article/Chapter View;ctype:string:Journal Content;website:website:agupubs;wgroup:string:Publication Websites;pageGroup:string:Publication Pages;article:article:doi\\:10.1029/2020MS002203;subPage:string:Full Text;requestedJournal:journal:19422466",
+            "citation_author": "Stephan Rasp",
+            "citation_abstract_html_url": "https://onlinelibrary.wiley.com/doi/abs/10.1029/2020MS002203",
+            "citation_issue": "11",
+            "citation_firstpage": "e2020MS002203",
+            "referrer": "origin-when-cross-origin",
+            "mathjax-enabled": "true",
+            "viewport": "width=device-width,initial-scale=1",
+            "citation_doi": "10.1029/2020MS002203",
+            "mathjax-lazy-load": "true",
+            "dc.identifier": "10.1029/2020MS002203",
+            "citation_volume": "12",
+            "og:url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020MS002203",
+            "article_references": "Rasp, S.,  Dueben, P. D.,  Scher, S.,  Weyn, J. A.,  Mouatadid, S., &  Thuerey, N. (2020). WeatherBench: A benchmark data set for data-driven weather forecasting. Journal of Advances in Modeling Earth Systems,  12, e2020MS002203. https://doi.org/10.1029/2020MS002203"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://agupubs.onlinelibrary.wiley.com/cms/asset/b4f7e8cb-a7f8-4d31-9e0f-a80e3e4ef07a/jame.v12.11.cover.jpg?trick=1742148480821"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "getting back",
+      "htmlTitle": "getting back",
+      "link": "https://flyaszent.com/wp-content/uploads/2020/12/xc-planning-2020-12.pdf",
+      "displayLink": "flyaszent.com",
+      "snippet": "XCweather, RASP, BBC video, Synoptic, windy.com, my weather links. – Why RASP is best: Thermal, Wind, Cloudbase, Soundings. – XCweather doesn't take into ...",
+      "htmlSnippet": "XCweather, \u003cb\u003eRASP\u003c/b\u003e, BBC video, \u003cb\u003eSynoptic\u003c/b\u003e, windy.com, my weather links. – Why \u003cb\u003eRASP\u003c/b\u003e is best: Thermal, Wind, Cloudbase, Soundings. – XCweather doesn&#39;t take into&nbsp;...",
+      "formattedUrl": "https://flyaszent.com/wp-content/uploads/2020/.../xc-planning-2020-12.pdf",
+      "htmlFormattedUrl": "https://flyaszent.com/wp-content/uploads/2020/.../xc-planning-2020-12.pdf",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIA5vjlHBxT3t3fpr_XbG2ngYXCRfLwyz1SI6ggXd1l5oIbFMeo3bSSw&s",
+            "width": "253",
+            "height": "199"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20201126215809Z00'00'",
+            "creationdate": "D:20201126215809Z00'00'",
+            "producer": "macOS Version 10.15.7 (Build 19H15) Quartz PDFContext"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///52c185c888fd6a11c566bff50b8a222fe5bbee71713e495248a27d96969f0959"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Untitled",
+      "htmlTitle": "Untitled",
+      "link": "https://rasp.stratus.org.uk/app/vb/viewer-basic.php",
+      "displayLink": "rasp.stratus.org.uk",
+      "formattedUrl": "https://rasp.stratus.org.uk/app/vb/viewer-basic.php",
+      "htmlFormattedUrl": "https://\u003cb\u003erasp\u003c/b\u003e.stratus.org.uk/app/vb/viewer-basic.php"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Dependence of predictability of precipitation in the ... - ACP",
+      "htmlTitle": "Dependence of predictability of precipitation in the ... - ACP",
+      "link": "https://acp.copernicus.org/articles/20/15851/2020/",
+      "displayLink": "acp.copernicus.org",
+      "snippet": "Dec 21, 2020 ... ... synoptic regimes. The study also considers a prominent heavy ... Rasp, S., Schneider, L., and Barthlott, C.: Relative contribution of ...",
+      "htmlSnippet": "Dec 21, 2020 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003esynoptic\u003c/b\u003e regimes. The study also considers a prominent heavy ... \u003cb\u003eRasp\u003c/b\u003e, S., Schneider, L., and Barthlott, C.: Relative contribution of&nbsp;...",
+      "formattedUrl": "https://acp.copernicus.org/articles/20/15851/2020/",
+      "htmlFormattedUrl": "https://acp.copernicus.org/articles/20/15851/2020/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbT0V5VH70ATons2giQ866wrp_0XQPZ6TNPyh2UxnCmCzWp_puB7723d0&s",
+            "width": "150",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "citation_author_orcid": "0000-0002-2455-5356",
+            "citation_publication_date": "2020/12/21",
+            "theme-color": "#000000",
+            "citation_title": "Dependence of predictability of precipitation in the northwestern Mediterranean coastal region on the strength of synoptic control",
+            "citation_author_institution": "Meteorologisches Institut, Ludwig-Maximilians-Universität, Munich, Germany",
+            "global_projectdomain": "https://www.atmospheric-chemistry-and-physics.net/",
+            "citation_reference": "Anthes, R. A.: The General Question of Predictability, in: Mesoscale\nMeteorology and Forecasting, edited by: Ray, P. S., vol. II, pp. 636–656,\nAm. Meteorol. Soc., Boston, MA,\nhttps://doi.org/10.1007/978-1-935704-20-1_27, 1986. a",
+            "citation_publisher": "Copernicus GmbH",
+            "citation_journal_title": "Atmospheric Chemistry and Physics",
+            "citation_online_date": "2020/12/21",
+            "citation_author_email": "christian.keil@lmu.de",
+            "global_projectid": "10",
+            "global_mobaseurl": "https://meetingorganizer.copernicus.org/",
+            "citation_issn": "1680-7316",
+            "global_pageidentifier": "home",
+            "citation_lastpage": "15865",
+            "application-name": "1",
+            "msapplication-tilecolor": "#FFFFFF",
+            "global_projectshortcut": "ACP",
+            "citation_abstract": "\u003cp\u003e\u003cstrong class=\"journal-contentHeaderColor\"\u003eAbstract.\u003c/strong\u003e The weather-regime-dependent predictability of precipitation in the convection-permitting kilometric-scale AROME-EPS is examined for the entire HyMeX-SOP1 employing the convective adjustment timescale. This diagnostic quantifies variations in synoptic forcing on precipitation and is associated with different precipitation characteristics, forecast skill and predictability.\nDuring strong synoptic control, which dominates the weather on 80 % of the days in the 2-month period, the domain-integrated precipitation predictability assessed with the normalized ensemble standard deviation is above average, the wet bias is smaller and the forecast quality is generally better. In contrast, the pure spatial forecast quality of the most intense precipitation in the afternoon, as quantified with its 95th percentile, is superior during weakly forced synoptic regimes.\nThe study also considers a prominent heavy-precipitation event that occurred during the NAWD",
+            "citation_author": "Keil, Christian",
+            "citation_issue": "24",
+            "citation_firstpage": "15851",
+            "viewport": "width=device-width, initial-scale=1",
+            "global_pageid": "297",
+            "citation_doi": "https://doi.org/10.5194/acp-20-15851-2020",
+            "citation_volume": "20"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://acp.copernicus.org/articles/20/15851/2020/acp-20-15851-2020-avatar-thumb150.png"
+          }
+        ]
+      }
+    }
+  ]
+}

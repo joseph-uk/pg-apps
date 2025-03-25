@@ -1,0 +1,1507 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Train Split",
+        "totalResults": "486000000",
+        "searchTerms": "Train Split",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Train Split",
+        "totalResults": "486000000",
+        "searchTerms": "Train Split",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.378265,
+    "formattedSearchTime": "0.38",
+    "totalResults": "486000000",
+    "formattedTotalResults": "486,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Split Train Tickets with TrainSplit | Mobile App | Save up to 90%",
+      "htmlTitle": "Split Train Tickets with \u003cb\u003eTrainSplit\u003c/b\u003e | Mobile App | Save up to 90%",
+      "link": "https://trainsplit.com/",
+      "displayLink": "trainsplit.com",
+      "snippet": "Split ticketing helps you find cheap train tickets by simply splitting your journey across two or more tickets. Thousands of people now enjoy rail travel that's ...",
+      "htmlSnippet": "\u003cb\u003eSplit\u003c/b\u003e ticketing helps you find cheap \u003cb\u003etrain\u003c/b\u003e tickets by simply \u003cb\u003esplitting\u003c/b\u003e your journey across two or more tickets. Thousands of people now enjoy \u003cb\u003erail\u003c/b\u003e travel that&#39;s&nbsp;...",
+      "formattedUrl": "https://trainsplit.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003etrainsplit\u003c/b\u003e.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#2b5797",
+            "brand-seo-meta-title-short": "TrainSplit",
+            "apple-itunes-app": "app-id=1400242018",
+            "og:image": "https://directus.trainsplit.com/assets/1c8e2849-4f73-407f-89a3-934071abf09e",
+            "msapplication-config": "/icon/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "brand-app-banner-enabled": "1",
+            "og:title": "Split Train Tickets with TrainSplit | Mobile App | Save up to 90%",
+            "rcshostname": "railcards.trainsplit.com",
+            "brand-ua-tracking-id": "G-N59RT0C6QK",
+            "og:description": "TrainSplit compares routes & fares to get the best value train tickets for your next journey through split ticketing with no booking fee & saving up to 90%",
+            "sha": "dc952bb",
+            "brand-split-commission-max": "150",
+            "argon-banner-search-results": "true",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "brand-any-card-permitted": "1",
+            "brand-cross-london-fares-enabled": "1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://directus.trainsplit.com/assets/1c8e2849-4f73-407f-89a3-934071abf09e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Would it kill DB to communicate that a train will split? : r/germany",
+      "htmlTitle": "Would it kill DB to communicate that a \u003cb\u003etrain\u003c/b\u003e will \u003cb\u003esplit\u003c/b\u003e? : r/germany",
+      "link": "https://www.reddit.com/r/germany/comments/xyqynw/would_it_kill_db_to_communicate_that_a_train_will/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 8, 2022 ... I have traveled often on split trains and there was always announcements that the train will be split, like every time they welcomed people aboard and ...",
+      "htmlSnippet": "Oct 8, 2022 \u003cb\u003e...\u003c/b\u003e I have traveled often on \u003cb\u003esplit trains\u003c/b\u003e and there was always announcements that the \u003cb\u003etrain\u003c/b\u003e will be \u003cb\u003esplit\u003c/b\u003e, like every time they welcomed people aboard and&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../would_it_kill_db_to_communicate_that_a_train...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../would_it_kill_db_to_communicate_that_a_\u003cb\u003etrain\u003c/b\u003e...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/xyqynw",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/germany on Reddit: Would it kill DB to communicate that a train will split?",
+            "og:site_name": "Reddit",
+            "og:title": "r/germany on Reddit: Would it kill DB to communicate that a train will split?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Chemoralora - 0 votes and 19 comments",
+            "twitter:image": "https://share.redd.it/preview/post/xyqynw",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/germany/comments/xyqynw/would_it_kill_db_to_communicate_that_a_train_will/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How to split main dataset into train, dev, test as DatasetDict ...",
+      "htmlTitle": "How to \u003cb\u003esplit\u003c/b\u003e main dataset into \u003cb\u003etrain\u003c/b\u003e, dev, test as DatasetDict ...",
+      "link": "https://discuss.huggingface.co/t/how-to-split-main-dataset-into-train-dev-test-as-datasetdict/1090",
+      "displayLink": "discuss.huggingface.co",
+      "snippet": "Sep 11, 2020 ... It is not clear how to split an existing Dataset into a DatasetDict containing train, dev (validation), and test keys, even though I think this is a common ...",
+      "htmlSnippet": "Sep 11, 2020 \u003cb\u003e...\u003c/b\u003e It is not clear how to \u003cb\u003esplit\u003c/b\u003e an existing Dataset into a DatasetDict containing \u003cb\u003etrain\u003c/b\u003e, dev (validation), and test keys, even though I think this is a common&nbsp;...",
+      "formattedUrl": "https://discuss.huggingface.co/t/how-to-split-main-dataset...train.../1090",
+      "htmlFormattedUrl": "https://discuss.huggingface.co/t/how-to-\u003cb\u003esplit\u003c/b\u003e-main-dataset...\u003cb\u003etrain\u003c/b\u003e.../1090",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4NjSI_YxUXe4nt4BTomU_nNWJlTf-WRTeGVjsX6zhsk0av36CbCo4YE&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://us1.discourse-cdn.com/hellohellohello/original/2X/a/a0a628441848519a48682665ed6d7dad032927d3.svg"
+          }
+        ],
+        "person": [
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "thomwolf",
+            "url": "thomwolf"
+          },
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "thomwolf",
+            "url": "thomwolf"
+          },
+          {
+            "name": "Roberto",
+            "url": "Roberto"
+          },
+          {
+            "name": "cla",
+            "url": "cla"
+          },
+          {
+            "name": "nehanawalkar",
+            "url": "nehanawalkar"
+          },
+          {
+            "name": "lhoestq",
+            "url": "lhoestq"
+          },
+          {
+            "name": "baumstan",
+            "url": "baumstan"
+          },
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "baumstan",
+            "url": "baumstan"
+          },
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "aclifton314",
+            "url": "aclifton314"
+          },
+          {
+            "name": "jorgenhw",
+            "url": "jorgenhw"
+          },
+          {
+            "name": "jorgenhw",
+            "url": "jorgenhw"
+          },
+          {
+            "name": "BbKWlf",
+            "url": "BbKWlf"
+          },
+          {
+            "name": "BramVanroy",
+            "url": "BramVanroy"
+          },
+          {
+            "name": "BbKWlf",
+            "url": "BbKWlf"
+          },
+          {
+            "name": "Resi",
+            "url": "Resi"
+          }
+        ],
+        "organization": [
+          {
+            "name": "Hugging Face"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "11",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "15",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://us1.discourse-cdn.com/hellohellohello/original/2X/d/de4155eb4aa4108ecb32a1389d7cc37ae69f88b7.png",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "How to split main dataset into train, dev, test as DatasetDict",
+            "article:published_time": "2020-09-11T19:30:30+00:00",
+            "og:site_name": "Hugging Face Forums",
+            "twitter:url": "https://discuss.huggingface.co/t/how-to-split-main-dataset-into-train-dev-test-as-datasetdict/1090",
+            "og:title": "How to split main dataset into train, dev, test as DatasetDict",
+            "color-scheme": "light dark",
+            "og:description": "It seems that a single dataset can be split up into different partitions but in such a way that the connection between them is still clear (by using a DatasetDict), which is neat. I am having difficulties trying to figure out how I can create them, and use them, though. I’ve been going through the documentation [1],[2] and the source code [1],[2] but it hasn’t become any clearer.  In some parts you speak of only a train, test split other times you include validation. It is not clear how to split...",
+            "twitter:image": "https://us1.discourse-cdn.com/hellohellohello/original/2X/d/de4155eb4aa4108ecb32a1389d7cc37ae69f88b7.png",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover, interactive-widget=resizes-content",
+            "twitter:description": "It seems that a single dataset can be split up into different partitions but in such a way that the connection between them is still clear (by using a DatasetDict), which is neat. I am having difficulties trying to figure out how I can create them, and use them, though. I’ve been going through the documentation [1],[2] and the source code [1],[2] but it hasn’t become any clearer.  In some parts you speak of only a train, test split other times you include validation. It is not clear how to split...",
+            "og:article:section": "🤗Datasets",
+            "og:url": "https://discuss.huggingface.co/t/how-to-split-main-dataset-into-train-dev-test-as-datasetdict/1090",
+            "og:article:section:color": "F7941D"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "datemodified": "2020-09-11T20:40:52Z",
+            "articlesection": "🤗Datasets",
+            "position": "1",
+            "text": "It seems that a single dataset can be split up into different partitions but in such a way that the connection between them is still clear (by using a DatasetDict), which is neat. I am having...",
+            "headline": "How to split main dataset into train, dev, test as DatasetDict",
+            "url": "https://discuss.huggingface.co/t/how-to-split-main-dataset-into-train-dev-test-as-datasetdict/1090",
+            "datepublished": "2020-09-11T19:30:30Z",
+            "mainentityofpage": "https://discuss.huggingface.co/t/how-to-split-main-dataset-into-train-dev-test-as-datasetdict/1090"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2020-09-11T20:50:24Z",
+            "position": "2",
+            "text": "Hi Bram, Yes the documentation of train_test_split that you link to is the right one. The train_test_split method currently provided is just a copy of the famous sklearn train_test_split (that...",
+            "datepublished": "2020-09-11T20:50:24Z"
+          },
+          {
+            "datemodified": "2020-09-12T11:39:39Z",
+            "position": "3",
+            "text": "I tried your approach, but I end up with empty batches here. Creating a dataloader for the whole dataset works: dataloaders = {\"train\": DataLoader(dataset, batch_size=8)} for batch in dataloaders[\"...",
+            "datepublished": "2020-09-12T09:59:36Z"
+          },
+          {
+            "datemodified": "2020-09-12T12:12:14Z",
+            "position": "4",
+            "text": "The solution seems to be to first doing the partitioning and then doing the map and set_format on the DatasetDict. That being said, I still feel like the behaviour that I mentioned before is...",
+            "datepublished": "2020-09-12T11:38:43Z"
+          },
+          {
+            "datemodified": "2020-09-15T06:56:32Z",
+            "position": "5",
+            "text": "Thanks for the feedback @BramVanroy There are a few things here indeed and I think the first is that we should rationalize more the logging of the library. For instance these Set __getitem__(key)...",
+            "datepublished": "2020-09-15T06:56:32Z"
+          },
+          {
+            "datemodified": "2021-03-25T12:35:11Z",
+            "position": "6",
+            "text": "train_testvalid = dataset.train_test_split(test=0.1) Split the 10% test + valid in half test, half valid test_valid = train_testvalid[‘test’].train_test_split(test=0.5) I guess there is...",
+            "datepublished": "2021-03-25T12:35:11Z"
+          },
+          {
+            "datemodified": "2021-04-01T12:37:27Z",
+            "position": "7",
+            "text": "Did you manage to create a DatasetDict with these partitions? *Solved. It was an import error. Thanks!",
+            "datepublished": "2021-04-01T12:25:10Z"
+          },
+          {
+            "datemodified": "2021-05-19T17:18:02Z",
+            "position": "8",
+            "text": "thomwolf: train_testvalid = dataset.train_test_split(test=0.1) # Split the 10% test + valid in half test, half valid test_valid = train_test_dataset['test'].train_test_split(test=0.5) # gather...",
+            "datepublished": "2021-05-19T17:18:02Z"
+          },
+          {
+            "datemodified": "2021-05-25T09:17:06Z",
+            "position": "9",
+            "text": "Hi ! This is because your dataset is probably a DatasetDict and not a Dataset object. You might have to change the first line: train_testvalid = dataset[\"train\"].train_test_split(test=0.1)",
+            "datepublished": "2021-05-25T09:17:06Z"
+          },
+          {
+            "datemodified": "2021-09-22T03:54:11Z",
+            "position": "10",
+            "text": "Thanks for this, but I’m getting an error for the last piece of the code: posts = load_dataset('peixian/rtGender', 'posts', split = 'train') print(posts) posts[0] # save out a list of unique...",
+            "datepublished": "2021-09-22T03:54:11Z"
+          },
+          {
+            "datemodified": "2021-09-22T10:49:22Z",
+            "position": "11",
+            "text": "Well, then you forgot to import it from datasets.",
+            "datepublished": "2021-09-22T10:49:22Z"
+          },
+          {
+            "datemodified": "2021-09-22T16:56:32Z",
+            "position": "12",
+            "text": "Hm. Could you specify which module to load? Currently this is what I have: from datasets import load_dataset, dataset_dict But the error persists.",
+            "datepublished": "2021-09-22T16:56:32Z"
+          },
+          {
+            "datemodified": "2021-09-22T18:32:12Z",
+            "position": "13",
+            "text": "You are missing baumstan: DatasetDict",
+            "datepublished": "2021-09-22T18:32:12Z"
+          },
+          {
+            "datemodified": "2022-07-05T21:08:03Z",
+            "position": "14",
+            "text": "Just curious if this is still the recommended way to create a train, validation, and test set?",
+            "datepublished": "2022-07-05T21:08:03Z"
+          },
+          {
+            "datemodified": "2022-10-18T10:58:47Z",
+            "position": "15",
+            "text": "The original train_test_split from sklearn also has the random=state=True which is really useful for when comparing different models. It doesn’t seem as this is included with huggingface?",
+            "datepublished": "2022-10-18T10:58:47Z"
+          },
+          {
+            "datemodified": "2022-10-18T11:33:12Z",
+            "position": "16",
+            "text": "I’m sorry, I just realized that this function is just calls seed = [int]",
+            "datepublished": "2022-10-18T11:33:12Z"
+          },
+          {
+            "image": "https://us1.discourse-cdn.com/hellohellohello/original/2X/6/66678c793fe8e9a27a9ad7a62d217ec8ec6aa23d.png",
+            "datemodified": "2022-12-25T03:04:19Z",
+            "position": "17",
+            "text": "I tried this, but now it shows a new problem. image1209×693 67.5 KB Can you please help me?",
+            "datepublished": "2022-12-25T03:04:19Z"
+          },
+          {
+            "datemodified": "2022-12-27T17:37:04Z",
+            "position": "18",
+            "text": "When encountering errors like these, just have a look at the documentation. There you’ll find that the correct argument is test_size.",
+            "datepublished": "2022-12-27T17:37:04Z"
+          },
+          {
+            "datemodified": "2022-12-31T01:10:30Z",
+            "position": "19",
+            "text": "Thanks! I already solved it with your method but forgot to delete the question.",
+            "datepublished": "2022-12-31T01:10:30Z"
+          },
+          {
+            "datemodified": "2024-03-27T09:43:50Z",
+            "position": "21",
+            "text": "From now on it is written like this: from datasets import DatasetDict #split into test, train, val 90% train, 10% test + validation train_testvalid = dataset.train_test_split(test_size=0.1)...",
+            "datepublished": "2024-03-27T09:43:50Z"
+          }
+        ],
+        "itemlist": [
+          {
+            "itemlistorder": "http://schema.org/ItemListOrderDescending"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://us1.discourse-cdn.com/hellohellohello/original/2X/d/de4155eb4aa4108ecb32a1389d7cc37ae69f88b7.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "next page →",
+            "url": "next page →"
+          },
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "🤗Datasets",
+            "name": "🤗Datasets",
+            "position": "1"
+          },
+          {
+            "position": "7",
+            "url": "How to split a dataset into train, test, and validation?"
+          },
+          {
+            "position": "1",
+            "url": "How to split a Hugging Face dataset in streaming mode without loading it into memory?"
+          },
+          {
+            "position": "1",
+            "url": "Split DataFrame into validation and train split"
+          },
+          {
+            "position": "2",
+            "url": "How do I split a Dataset with only train to train/test?"
+          },
+          {
+            "position": "3",
+            "url": "How to split Hugging Face dataset to train and test?"
+          },
+          {
+            "position": "4",
+            "url": "Saving train/val/test datasets"
+          },
+          {
+            "position": "5",
+            "url": "Confusion in splitting dataset (from imagefolder) into train, test and validation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What does the split ticket in the train ticket mean? : r/uktrains",
+      "htmlTitle": "What does the \u003cb\u003esplit\u003c/b\u003e ticket in the \u003cb\u003etrain\u003c/b\u003e ticket mean? : r/uktrains",
+      "link": "https://www.reddit.com/r/uktrains/comments/11tksln/what_does_the_split_ticket_in_the_train_ticket/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Mar 17, 2023 ... “Split ticket” isn't a thing but a term describing having a separate ticket for separate parts of your journey.",
+      "htmlSnippet": "Mar 17, 2023 \u003cb\u003e...\u003c/b\u003e “Split ticket” isn&#39;t a thing but a term describing having a separate ticket for separate parts of your journey.",
+      "formattedUrl": "https://www.reddit.com/.../uktrains/.../what_does_the_split_ticket_in_the_tr...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../uk\u003cb\u003etrain\u003c/b\u003es/.../what_does_the_\u003cb\u003esplit\u003c/b\u003e_ticket_in_the_\u003cb\u003etr\u003c/b\u003e...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/11tksln",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/uktrains on Reddit: What does the split ticket in the train ticket mean?",
+            "og:site_name": "Reddit",
+            "og:title": "r/uktrains on Reddit: What does the split ticket in the train ticket mean?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/adolphindog - 4 votes and 6 comments",
+            "twitter:image": "https://share.redd.it/preview/post/11tksln",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/uktrains/comments/11tksln/what_does_the_split_ticket_in_the_train_ticket/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Split My Fare | Split My Fare | Split Ticket Search | Save 90% on Rail ...",
+      "htmlTitle": "\u003cb\u003eSplit\u003c/b\u003e My Fare | \u003cb\u003eSplit\u003c/b\u003e My Fare | \u003cb\u003eSplit\u003c/b\u003e Ticket Search | Save 90% on \u003cb\u003eRail\u003c/b\u003e ...",
+      "link": "https://www.splitmyfare.co.uk/",
+      "displayLink": "www.splitmyfare.co.uk",
+      "snippet": "Split My Fare is a website that sells cheap train tickets through split ticketing. By splitting your journey into separate tickets but allowing you to stay on ...",
+      "htmlSnippet": "\u003cb\u003eSplit\u003c/b\u003e My Fare is a website that sells cheap \u003cb\u003etrain\u003c/b\u003e tickets through \u003cb\u003esplit\u003c/b\u003e ticketing. By \u003cb\u003esplitting\u003c/b\u003e your journey into separate tickets but allowing you to stay on&nbsp;...",
+      "formattedUrl": "https://www.splitmyfare.co.uk/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003esplit\u003c/b\u003emyfare.co.uk/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIW-JS8J-lF8rEdMPGkFsRqfLpdMY5n77RYDTFTT3bWHfuVXfqYpt-if2I&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.splitmyfare.co.uk/wp-content/uploads/2019/12/train-ticket.png",
+            "og:image:width": "936",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Split My Fare",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Time to read",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://www.splitmyfare.co.uk/wp-content/uploads/2019/12/favicon.png",
+            "og:description": "Find the cheapest train tickets in the UK with our split ticket search. Save 90% with split ticketing. No Booking Fees. Instant E-Tickets on your phone. Search now!",
+            "twitter:creator": "@splitmyfare",
+            "og:image:secure_url": "https://www.splitmyfare.co.uk/wp-content/uploads/2019/12/train-ticket.png",
+            "twitter:image": "https://www.splitmyfare.co.uk/wp-content/uploads/2019/12/train-ticket.png",
+            "twitter:data1": "Pete Walls",
+            "twitter:data2": "Less than a minute",
+            "twitter:site": "@splitmyfare",
+            "og:type": "website",
+            "og:image:alt": "split train ticket london",
+            "twitter:title": "Split My Fare | Split My Fare | Split Ticket Search | Save 90% on Rail Fares",
+            "og:title": "Split My Fare | Split My Fare | Split Ticket Search | Save 90% on Rail Fares",
+            "og:image:height": "702",
+            "og:updated_time": "2025-02-25T09:35:12+00:00",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "twitter:description": "Find the cheapest train tickets in the UK with our split ticket search. Save 90% with split ticketing. No Booking Fees. Instant E-Tickets on your phone. Search now!",
+            "og:locale": "en_GB",
+            "og:url": "https://www.splitmyfare.co.uk/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.splitmyfare.co.uk/wp-content/uploads/2019/12/train-ticket.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "train_test_split — scikit-learn 1.6.1 documentation",
+      "htmlTitle": "train_test_split — scikit-learn 1.6.1 documentation",
+      "link": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html",
+      "displayLink": "scikit-learn.org",
+      "snippet": "Split arrays or matrices into random train and test subsets. Quick utility that wraps input validation, next(ShuffleSplit().split(X, y)) , and application to ...",
+      "htmlSnippet": "\u003cb\u003eSplit\u003c/b\u003e arrays or matrices into random \u003cb\u003etrain\u003c/b\u003e and test subsets. Quick utility that wraps input validation, next(ShuffleSplit().\u003cb\u003esplit\u003c/b\u003e(X, y)) , and application to&nbsp;...",
+      "formattedUrl": "https://scikit-learn.org/stable/.../sklearn.model_selection.train_test_split.html",
+      "htmlFormattedUrl": "https://scikit-learn.org/stable/.../sklearn.model_selection.\u003cb\u003etrain\u003c/b\u003e_test_\u003cb\u003esplit\u003c/b\u003e.html",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scikit-learn/stable/_images/sphx_glr_plot_release_highlights_1_5_0_thumb.png",
+            "og:type": "website",
+            "og:site_name": "scikit-learn",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "docsearch:version": "1.6",
+            "og:title": "train_test_split",
+            "docsearch:language": "en",
+            "og:url": "https://scikit-learn/stable/modules/generated/sklearn.model_selection.train_test_split.html",
+            "og:description": "Gallery examples: Release Highlights for scikit-learn 1.5 Release Highlights for scikit-learn 1.4 Release Highlights for scikit-learn 0.24 Release Highlights for scikit-learn 0.23 Release Highlight..."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scikit-learn/stable/_images/sphx_glr_plot_release_highlights_1_5_0_thumb.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How to split data into training/validation/testing - KNIME Analytics ...",
+      "htmlTitle": "How to \u003cb\u003esplit\u003c/b\u003e data into training/validation/testing - KNIME Analytics ...",
+      "link": "https://forum.knime.com/t/how-to-split-data-into-training-validation-testing/20246",
+      "displayLink": "forum.knime.com",
+      "snippet": "Dec 30, 2019 ... Now, you may want to use one dataset only for train+test, then attach new, fresh data as validation set. You would have two sources which would ...",
+      "htmlSnippet": "Dec 30, 2019 \u003cb\u003e...\u003c/b\u003e Now, you may want to use one dataset only for \u003cb\u003etrain\u003c/b\u003e+test, then attach new, fresh data as validation set. You would have two sources which would&nbsp;...",
+      "formattedUrl": "https://forum.knime.com/t/how-to-split-data-into-training.../20246",
+      "htmlFormattedUrl": "https://forum.knime.com/t/how-to-\u003cb\u003esplit\u003c/b\u003e-data-into-\u003cb\u003etrain\u003c/b\u003eing.../20246",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_9155g5ztfYM1LWnXAbtM3fKTgRN5RnFGrIZb6GUBtlGJZg0QoXeq0M&s",
+            "width": "241",
+            "height": "209"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://forum-cdn.knime.com/uploads/default/original/3X/6/8/68ac3f3c3142b63b68b8ba7c58f97a2614bdf1d2.svg"
+          }
+        ],
+        "person": [
+          {
+            "name": "Nafeeza86",
+            "url": "Nafeeza86"
+          },
+          {
+            "name": "mlauber71",
+            "url": "mlauber71"
+          },
+          {
+            "name": "Nafeeza86",
+            "url": "Nafeeza86"
+          },
+          {
+            "name": "AlexanderFillbrunn",
+            "url": "AlexanderFillbrunn"
+          },
+          {
+            "name": "deicide_bg",
+            "url": "deicide_bg"
+          },
+          {
+            "name": "Nafeeza86",
+            "url": "Nafeeza86"
+          },
+          {
+            "name": "mlauber71",
+            "url": "mlauber71"
+          },
+          {
+            "name": "system",
+            "url": "system"
+          }
+        ],
+        "organization": [
+          {
+            "name": "KNIME AG"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://forum-cdn.knime.com/uploads/default/original/1X/ab3ccf34482a0329361734a18199390177204f15.png",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "How to split data into training/validation/testing",
+            "article:published_time": "2019-12-30T03:37:33+00:00",
+            "og:site_name": "KNIME Community Forum",
+            "twitter:url": "https://forum.knime.com/t/how-to-split-data-into-training-validation-testing/20246",
+            "og:title": "How to split data into training/validation/testing",
+            "og:description": "Hi,  Does anyone know how to partition the dataset into 3 sets: training, validation and testing in Knime?.  In many of the Knime tutorials, I see that they partition the dataset into training and testing, but I still cannot figure how to split it into 3.  I tried dividing the data into 3 sets by using two partitioning nodes in succession but it didn’t work.  Any help would be appreciated. Thanks.",
+            "twitter:image": "https://forum-cdn.knime.com/uploads/default/original/1X/ab3ccf34482a0329361734a18199390177204f15.png",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover",
+            "twitter:description": "Hi,  Does anyone know how to partition the dataset into 3 sets: training, validation and testing in Knime?.  In many of the Knime tutorials, I see that they partition the dataset into training and testing, but I still cannot figure how to split it into 3.  I tried dividing the data into 3 sets by using two partitioning nodes in succession but it didn’t work.  Any help would be appreciated. Thanks.",
+            "og:article:section": "KNIME Analytics Platform",
+            "og:url": "https://forum.knime.com/t/how-to-split-data-into-training-validation-testing/20246",
+            "og:article:section:color": "F79636"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "datemodified": "2019-12-30T03:37:33Z",
+            "articlesection": "KNIME Analytics Platform",
+            "position": "1",
+            "text": "Hi, Does anyone know how to partition the dataset into 3 sets: training, validation and testing in Knime?. In many of the Knime tutorials, I see that they partition the dataset into training...",
+            "headline": "How to split data into training/validation/testing",
+            "url": "https://forum.knime.com/t/how-to-split-data-into-training-validation-testing/20246",
+            "datepublished": "2019-12-30T03:37:33Z",
+            "mainentityofpage": "https://forum.knime.com/t/how-to-split-data-into-training-validation-testing/20246"
+          }
+        ],
+        "comment": [
+          {
+            "image": "https://forum-cdn.knime.com/uploads/default/original/2X/d/dc1d0cacc901299d944dbf98e9a00c12f1a28f6a.png",
+            "datemodified": "2019-12-30T11:10:24Z",
+            "position": "2",
+            "text": "This should be quite easy. Please check out this example KNIME Hub Split data into three groups train, test, validate – mlauber71 Split data into three groups train, test, validate image755×499...",
+            "datepublished": "2019-12-30T11:10:24Z"
+          },
+          {
+            "datemodified": "2019-12-30T16:55:43Z",
+            "position": "3",
+            "text": "Thanks for your response. My question is how do you split the data into training, testing and validation before you feed it into the neural network. Can you provide me an example.",
+            "datepublished": "2019-12-30T16:55:43Z"
+          },
+          {
+            "datemodified": "2019-12-30T17:01:59Z",
+            "position": "4",
+            "text": "Hi @Nafeeza86, that is what the Partitioning node in @mlauber71’s example does. Kind regards Alexander",
+            "datepublished": "2019-12-30T17:01:59Z"
+          },
+          {
+            "datemodified": "2020-01-02T12:22:03Z",
+            "position": "5",
+            "text": "As described in the picture, you divide your dataset into three sets and label them accordingly in several steps. Now, you may want to use one dataset only for train+test, then attach new,...",
+            "datepublished": "2020-01-02T12:22:03Z"
+          },
+          {
+            "image": "https://forum-cdn.knime.com/uploads/default/original/2X/0/0bb36e97043761993c0f85e6bbfc1c5edf7308e0.png",
+            "datemodified": "2020-01-02T16:47:06Z",
+            "position": "6",
+            "text": "Hi, Thanks for your explanation. I am clear now on how the data is partitioned and labeled. My question is how would you connect each of the partitioning nodes to the neural network learner...",
+            "datepublished": "2020-01-02T16:47:06Z"
+          },
+          {
+            "image": "https://forum-cdn.knime.com/uploads/default/original/2X/d/d4b92abd1b47509b75719a262816162aee58a625.png",
+            "datemodified": "2020-01-04T15:56:48Z",
+            "position": "7",
+            "text": "That would look something like this: image1284×844 110 KB My suggestion would be to take a deep look at some learning resources for KNINME like knime.com Learning Hub | KNIME knime.com KNIME...",
+            "datepublished": "2020-01-04T15:56:48Z"
+          },
+          {
+            "datemodified": "2020-07-05T03:56:49Z",
+            "position": "8",
+            "text": "This topic was automatically closed 182 days after the last reply. New replies are no longer allowed.",
+            "datepublished": "2020-07-05T03:56:49Z"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://forum-cdn.knime.com/uploads/default/original/1X/ab3ccf34482a0329361734a18199390177204f15.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "KNIME Analytics Platform",
+            "name": "KNIME Analytics Platform",
+            "position": "1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Simple tool for train test split - Machine Learning - Julia ...",
+      "htmlTitle": "Simple tool for \u003cb\u003etrain\u003c/b\u003e test \u003cb\u003esplit\u003c/b\u003e - Machine Learning - Julia ...",
+      "link": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473",
+      "displayLink": "discourse.julialang.org",
+      "snippet": "Nov 21, 2016 ... Plug and play snippet for train / test data sample split if your data is in the format of a multi-dimensional array. @Evizero has a snippet ...",
+      "htmlSnippet": "Nov 21, 2016 \u003cb\u003e...\u003c/b\u003e Plug and play snippet for \u003cb\u003etrain\u003c/b\u003e / test data sample \u003cb\u003esplit\u003c/b\u003e if your data is in the format of a multi-dimensional array. @Evizero has a snippet&nbsp;...",
+      "formattedUrl": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473",
+      "htmlFormattedUrl": "https://discourse.julialang.org/t/simple-tool-for-\u003cb\u003etrain\u003c/b\u003e-test-\u003cb\u003esplit\u003c/b\u003e/473",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTdj3j1AdzKAJSD4_yRMPrOPq0oKf3GPs6fSgfy3HyB2_1KWuRxOdiON67&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://global.discourse-cdn.com/julialang/original/3X/1/2/12829a7ba92b924d4ce81099cbf99785bee9b405.png"
+          }
+        ],
+        "person": [
+          {
+            "name": "klezmen",
+            "url": "klezmen"
+          },
+          {
+            "name": "tbreloff",
+            "url": "tbreloff"
+          },
+          {
+            "name": "Evizero",
+            "url": "Evizero"
+          },
+          {
+            "name": "stevengj",
+            "url": "stevengj"
+          },
+          {
+            "name": "klezmen",
+            "url": "klezmen"
+          },
+          {
+            "name": "microgold",
+            "url": "microgold"
+          },
+          {
+            "name": "Ajaychat3",
+            "url": "Ajaychat3"
+          },
+          {
+            "name": "Mikkel-Holm",
+            "url": "Mikkel-Holm"
+          },
+          {
+            "name": "Geoffrey_Anderson",
+            "url": "Geoffrey_Anderson"
+          },
+          {
+            "name": "Geoffrey_Anderson",
+            "url": "Geoffrey_Anderson"
+          },
+          {
+            "name": "platawiec",
+            "url": "platawiec"
+          },
+          {
+            "name": "Evizero",
+            "url": "Evizero"
+          },
+          {
+            "name": "microgold",
+            "url": "microgold"
+          }
+        ],
+        "organization": [
+          {
+            "name": "The Julia Programming Language Project"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://global.discourse-cdn.com/julialang/original/3X/4/d/4d76a1d8062ed9397f2f00f22abdd69926b51785.png",
+            "theme-color": "#fff",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Simple tool for train test split",
+            "article:published_time": "2016-11-21T15:16:15+00:00",
+            "og:site_name": "Julia Programming Language",
+            "twitter:url": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473",
+            "og:title": "Simple tool for train test split",
+            "color-scheme": "light dark",
+            "og:description": "Does anyone know a tool that enables me to split a dataframe in to a training set and a test set?",
+            "twitter:image": "https://global.discourse-cdn.com/julialang/original/3X/4/d/4d76a1d8062ed9397f2f00f22abdd69926b51785.png",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
+            "twitter:description": "Does anyone know a tool that enables me to split a dataframe in to a training set and a test set?",
+            "og:article:section": "Specific Domains",
+            "og:url": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473",
+            "og:article:section:color": "F1592A"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "datemodified": "2016-11-21T15:16:15Z",
+            "articlesection": "Machine Learning",
+            "position": "1",
+            "text": "Does anyone know a tool that enables me to split a dataframe in to a training set and a test set?",
+            "headline": "Simple tool for train test split",
+            "url": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473",
+            "datepublished": "2016-11-21T15:16:15Z",
+            "mainentityofpage": "https://discourse.julialang.org/t/simple-tool-for-train-test-split/473"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2016-11-21T16:18:56Z",
+            "position": "2",
+            "text": "The future of iteration and dataset partitioning is soon to be merged into MLDataUtils: Data Access Pattern in 0.5 by Evizero · Pull Request #16 · JuliaML/MLDataUtils.jl · GitHub. There...",
+            "datepublished": "2016-11-21T16:18:56Z"
+          },
+          {
+            "datemodified": "2016-11-21T16:53:43Z",
+            "position": "3",
+            "text": "I secretly wish this question would not come up for at least a week until I found the time to write the docs and tutorials There will be DataFrame support, or at least a tutorial that shows...",
+            "datepublished": "2016-11-21T16:29:43Z"
+          },
+          {
+            "datemodified": "2016-11-21T16:32:59Z",
+            "position": "4",
+            "text": "Given a dataframe df, to pull out e.g. 5% as a training set you could presumably just do: sample = randsubseq(1:size(df,1), 0.05) trainingset = df[sample, :] notsample = [i for i in 1:size(df,1)...",
+            "datepublished": "2016-11-21T16:32:59Z"
+          },
+          {
+            "datemodified": "2016-11-21T22:45:53Z",
+            "position": "5",
+            "text": "Thank’s so far, at least i have a solution now.",
+            "datepublished": "2016-11-21T22:45:53Z"
+          },
+          {
+            "datemodified": "2018-09-16T17:16:48Z",
+            "position": "6",
+            "text": "I used the MLDataUtils package and finally figured out how to do this with dataframes into a Random Forest: Here is my sample from my notebook: using MLDataUtils #convert the dataframes into...",
+            "datepublished": "2018-09-16T17:03:05Z"
+          },
+          {
+            "datemodified": "2018-09-18T13:20:57Z",
+            "position": "7",
+            "text": "This is really helpful for novice to Julia like me.",
+            "datepublished": "2018-09-18T13:20:57Z"
+          },
+          {
+            "datemodified": "2018-09-25T10:04:30Z",
+            "position": "8",
+            "text": "Plug and play snippet for train / test data sample split if your data is in the format of a multi-dimensional array. @Evizero has a snippet above if your data is in DataFrame format. \"\"\" partitionT...",
+            "datepublished": "2018-09-25T10:04:30Z"
+          },
+          {
+            "datemodified": "2018-10-01T18:59:32Z",
+            "position": "9",
+            "text": "A 3-partition split is more useful than 2-partition if you ever want to evaluate your model which is convincing to anyone else. It’s not convincing on a 2-partition set that your predictions...",
+            "datepublished": "2018-10-01T18:59:32Z"
+          },
+          {
+            "datemodified": "2018-10-01T19:02:04Z",
+            "position": "10",
+            "text": "Evizero: partitionTrainTest I am frankly worried due to your choice of function name baked in here, that only 2 partitions are going to be possible when that documentation is complete, i.e.,...",
+            "datepublished": "2018-10-01T19:02:04Z"
+          },
+          {
+            "datemodified": "2018-10-01T21:14:17Z",
+            "position": "11",
+            "text": "Check out MLDataUtils.jl, particularly splitobs. See this page for a 3-partition example. The post you are replying to is almost 2 years old, and there’s been some progress since then",
+            "datepublished": "2018-10-01T21:14:17Z"
+          },
+          {
+            "datemodified": "2018-10-01T21:51:11Z",
+            "position": "12",
+            "text": "platawiec: Check out MLDataUtils.jl, particularly splitobs . See this page for a 3-partition example. The post you are replying to is almost 2 years old, and there’s been some progress since...",
+            "datepublished": "2018-10-01T21:51:11Z"
+          },
+          {
+            "datemodified": "2020-03-20T01:09:54Z",
+            "position": "13",
+            "text": "The third set was in a separate file, but i do see your point!",
+            "datepublished": "2020-03-20T01:09:54Z"
+          }
+        ],
+        "itemlist": [
+          {
+            "itemlistorder": "http://schema.org/ItemListOrderDescending"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://global.discourse-cdn.com/julialang/original/3X/4/d/4d76a1d8062ed9397f2f00f22abdd69926b51785.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Specific Domains",
+            "name": "Specific Domains",
+            "position": "1"
+          },
+          {
+            "item": "Machine Learning",
+            "name": "Machine Learning",
+            "position": "2"
+          },
+          {
+            "position": "1",
+            "url": "Python train_test_split vs Julia splitobs"
+          },
+          {
+            "position": "2",
+            "url": "Proposal: Using a \"mask\" for DataFrames and ModelMatrices"
+          },
+          {
+            "position": "3",
+            "url": "Problems with Lathe TrainTestSplit"
+          },
+          {
+            "position": "4",
+            "url": "How to sample a Data frame"
+          },
+          {
+            "position": "5",
+            "url": "Split dataframe row into multiple rows"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What's the best train/validate split for fine-tuning? - API - OpenAI ...",
+      "htmlTitle": "What&#39;s the best \u003cb\u003etrain\u003c/b\u003e/validate \u003cb\u003esplit\u003c/b\u003e for fine-tuning? - API - OpenAI ...",
+      "link": "https://community.openai.com/t/whats-the-best-train-validate-split-for-fine-tuning/526369",
+      "displayLink": "community.openai.com",
+      "snippet": "Nov 25, 2023 ... I am creating a fine-tuned model for a specific scenario, the “system” message for all the training examples is the same, for every “assistant” message, I have ...",
+      "htmlSnippet": "Nov 25, 2023 \u003cb\u003e...\u003c/b\u003e I am creating a fine-tuned model for a specific scenario, the “system” message for all the training examples is the same, for every “assistant” message, I have&nbsp;...",
+      "formattedUrl": "https://community.openai.com/t/whats-the-best-train...split-for.../526369",
+      "htmlFormattedUrl": "https://community.openai.com/t/whats-the-best-\u003cb\u003etrain\u003c/b\u003e...\u003cb\u003esplit\u003c/b\u003e-for.../526369",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEh1jJ6abXKamG-J0KpAKH4NIuQHmXLRMRs2KhLH-KxZrn-gFyCduHBi-D&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://us1.discourse-cdn.com/openai1/original/4X/8/7/c/87c2e81543bbb01aa9641aeef8fe14cab5e9590a.png"
+          }
+        ],
+        "person": [
+          {
+            "name": "arun279",
+            "url": "arun279"
+          },
+          {
+            "name": "Foxalabs",
+            "url": "Foxalabs"
+          },
+          {
+            "name": "arun279",
+            "url": "arun279"
+          },
+          {
+            "name": "Foxalabs",
+            "url": "Foxalabs"
+          },
+          {
+            "name": "FlogramMatt",
+            "url": "FlogramMatt"
+          },
+          {
+            "name": "_j",
+            "url": "_j"
+          }
+        ],
+        "organization": [
+          {
+            "name": "OpenAI"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://us1.discourse-cdn.com/openai1/original/4X/0/4/c/04c8546833f0824a49d21f50e2b08dd44bfd3d05.png",
+            "theme-color": "#F5F5F5",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "What's the best train/validate split for fine-tuning?",
+            "article:published_time": "2023-11-25T20:02:00+00:00",
+            "og:site_name": "OpenAI Developer Community",
+            "twitter:url": "https://community.openai.com/t/whats-the-best-train-validate-split-for-fine-tuning/526369",
+            "og:title": "What's the best train/validate split for fine-tuning?",
+            "color-scheme": "light dark",
+            "og:description": "I know there can’t be a one-size-fits-all answer to this, but I am looking for the general principle.  Here’s some information about my project:  I am creating a fine-tuned model for a specific scenario, the “system” message for all the training examples is the same, for every “assistant” message, I have 3 different ways the “user” can ask it, so this 3x’d my fine-tuning dataset.  As it stands, I have ~2500 examples in my fine-tuning dataset. I am going to use the gpt-3.5-turbo-1106 model initia...",
+            "twitter:image": "https://us1.discourse-cdn.com/openai1/original/4X/0/4/c/04c8546833f0824a49d21f50e2b08dd44bfd3d05.png",
+            "og:article:tag": "gpt-35-turbo",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
+            "twitter:description": "I know there can’t be a one-size-fits-all answer to this, but I am looking for the general principle.  Here’s some information about my project:  I am creating a fine-tuned model for a specific scenario, the “system” message for all the training examples is the same, for every “assistant” message, I have 3 different ways the “user” can ask it, so this 3x’d my fine-tuning dataset.  As it stands, I have ~2500 examples in my fine-tuning dataset. I am going to use the gpt-3.5-turbo-1106 model initia...",
+            "og:article:section": "API",
+            "og:url": "https://community.openai.com/t/whats-the-best-train-validate-split-for-fine-tuning/526369",
+            "og:article:section:color": "f4ac36"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "keywords": "gpt-35-turbo, fine-tuning, api",
+            "datemodified": "2023-11-25T20:02:00Z",
+            "articlesection": "API",
+            "position": "1",
+            "text": "I know there can’t be a one-size-fits-all answer to this, but I am looking for the general principle. Here’s some information about my project: I am creating a fine-tuned model for a specific...",
+            "headline": "What's the best train/validate split for fine-tuning?",
+            "url": "https://community.openai.com/t/whats-the-best-train-validate-split-for-fine-tuning/526369",
+            "datepublished": "2023-11-25T20:02:00Z",
+            "mainentityofpage": "https://community.openai.com/t/whats-the-best-train-validate-split-for-fine-tuning/526369"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2023-11-25T20:03:45Z",
+            "position": "2",
+            "text": "Typically 5%-20% of your dataset is retained for evaluation, although there is an argument to be had that just a few can be used externally for validation by a human and you will get a better...",
+            "datepublished": "2023-11-25T20:03:45Z"
+          },
+          {
+            "datemodified": "2023-11-25T22:23:10Z",
+            "position": "3",
+            "text": "Thanks for the response. Is there any documentation on how the validation set is used with the fine-tuning API? My experience of it is with simple classification tasks where there is only one...",
+            "datepublished": "2023-11-25T22:23:10Z"
+          },
+          {
+            "datemodified": "2023-11-25T23:05:40Z",
+            "position": "4",
+            "text": "I would start with the OpenAI guide here and then perhaps look at youtube for guides on fine-tuning and evaluation https://platform.openai.com/docs/guides/fine-tuning/use-a-fine-tuned-model",
+            "datepublished": "2023-11-25T23:05:40Z"
+          },
+          {
+            "datemodified": "2024-12-11T18:46:54Z",
+            "position": "5",
+            "text": "You could always fine tune twice, first using validation data to find ideal number of epochs and what not, then once done, train a second time but this time include the validation data.",
+            "datepublished": "2024-12-11T18:46:54Z"
+          },
+          {
+            "datemodified": "2024-12-11T21:00:09Z",
+            "position": "6",
+            "text": "FlogramMatt: train a second time but this time include the validation data If doing so, be aware that OpenAI automatically sets the training weight based on the input file size, even if you...",
+            "datepublished": "2024-12-11T21:00:09Z"
+          }
+        ],
+        "itemlist": [
+          {
+            "itemlistorder": "http://schema.org/ItemListOrderDescending"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://us1.discourse-cdn.com/openai1/original/4X/0/4/c/04c8546833f0824a49d21f50e2b08dd44bfd3d05.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "API",
+            "name": "API",
+            "position": "1"
+          },
+          {
+            "position": "1",
+            "url": "Train/Validation split - fine tuning"
+          },
+          {
+            "position": "2",
+            "url": "How are validation files used during fine tune jobs?"
+          },
+          {
+            "position": "3",
+            "url": "Where can I find information about validation_file used in fine tuning?"
+          },
+          {
+            "position": "4",
+            "url": "Questions about fine-tuning GPT-3.5-turbo"
+          },
+          {
+            "position": "5",
+            "url": "Avoid overfitting during the fine-tuning of gpt-3.5 turbo"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "machine learning - Which train test split performs better: 50:50 or 60 ...",
+      "htmlTitle": "machine learning - Which \u003cb\u003etrain\u003c/b\u003e test \u003cb\u003esplit\u003c/b\u003e performs better: 50:50 or 60 ...",
+      "link": "https://datascience.stackexchange.com/questions/15804/which-train-test-split-performs-better-5050-or-6040",
+      "displayLink": "datascience.stackexchange.com",
+      "snippet": "Dec 19, 2016 ... Any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. So the ...",
+      "htmlSnippet": "Dec 19, 2016 \u003cb\u003e...\u003c/b\u003e Any \u003cb\u003etrain\u003c/b\u003e-test \u003cb\u003esplit\u003c/b\u003e which has more data in the training set will most likely give you better accuracy as calculated on that test set. So the&nbsp;...",
+      "formattedUrl": "https://datascience.stackexchange.com/.../which-train-test-split-performs-bet...",
+      "htmlFormattedUrl": "https://datascience.stackexchange.com/.../which-\u003cb\u003etrain\u003c/b\u003e-test-\u003cb\u003esplit\u003c/b\u003e-performs-bet...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1PWFk6wiaTenV1wPhMoNsCHMNzAX99G2luXFt1YYWkHLR9ihXwPrdQk&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "qapage": [
+          {
+            "image": "https://cdn.sstatic.net/Sites/datascience/Img/apple-touch-icon@2.png?v=04de5a808425",
+            "primaryimageofpage": "https://cdn.sstatic.net/Sites/datascience/Img/apple-touch-icon@2.png?v=04de5a808425",
+            "name": "Which train test split performs better: 50:50 or 60:40?",
+            "description": "I have 10,000 customer data of a supermarket. And I want to split the data into training set and testing set. So, which train test split gives me a better accuracy: 50:50 or 60:40?"
+          }
+        ],
+        "question": [
+          {
+            "image": "https://cdn.sstatic.net/Sites/datascience/Img/apple-touch-icon.png?v=5e1a482deef9",
+            "upvotecount": "1",
+            "answercount": "6",
+            "name": "Which train test split performs better: 50:50 or 60:40? [closed]",
+            "datecreated": "2016-12-19T08:18:22",
+            "text": "Closed. This question needs details or clarity. It is not currently accepting answers. Want to improve this question? Add details and clarify the problem by editing this post. Closed 4 years...",
+            "url": "Share"
+          }
+        ],
+        "answer": [
+          {
+            "upvotecount": "2",
+            "text": "It sounds like you have a lot of data, so probably a simple train-test split is enough. No need for cross validation. I would just use something like 75-25. That is in fact the default value...",
+            "datecreated": "2016-12-19T09:47:56",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "2",
+            "text": "In a draft copy currently being written by Andrew Ng, he discusses about the amount of data in train-test dataset. My understanding from the book, The traditional and most common value is 70-30...",
+            "datecreated": "2016-12-19T10:54:13",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "1",
+            "text": "I will assume that the dataset here is being split into training and validation sets. When you split up your dataset into training and validation sets, you need to take care of that you don't...",
+            "datecreated": "2016-12-19T08:45:23",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "0",
+            "text": "Any train-test split which has more data in the training set will most likely give you better accuracy as calculated on that test set. So the direct answer to your question is 60:40. And 99:1...",
+            "datecreated": "2016-12-19T17:26:28",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "0",
+            "text": "If you have enough data, then you can actually go for a 50-50 split but there is no such thing as what would be better, depends completely on the amount of data you have and the complexity...",
+            "datecreated": "2016-12-19T18:21:44",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "0",
+            "text": "I read all answers, I think the simplest answer to this question is based on the understanding of the train - test strategy. There is NO exact or correct answer to this question. Any split...",
+            "datecreated": "2016-12-19T18:14:32",
+            "url": "Share"
+          }
+        ],
+        "person": [
+          {
+            "name": "sgiri"
+          },
+          {
+            "name": "Ricardo Cruz"
+          },
+          {
+            "name": "chmodsss"
+          },
+          {
+            "name": "enterML"
+          },
+          {
+            "name": "Martin Thoma"
+          },
+          {
+            "name": "Himanshu Rai"
+          },
+          {
+            "name": "Bashar Haddad"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.sstatic.net/Sites/datascience/Img/apple-touch-icon@2.png?v=04de5a808425",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "Which train test split performs better: 50:50 or 60:40?",
+            "og:site_name": "Data Science Stack Exchange",
+            "twitter:domain": "datascience.stackexchange.com",
+            "viewport": "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0",
+            "twitter:description": "I have 10,000 customer data of a supermarket. And I want to split the data into training set and testing set. So, which train test split gives me a better accuracy: 50:50 or 60:40?",
+            "og:url": "https://datascience.stackexchange.com/questions/15804/which-train-test-split-performs-better-5050-or-6040"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.sstatic.net/Sites/datascience/Img/apple-touch-icon@2.png?v=04de5a808425"
+          }
+        ]
+      }
+    }
+  ]
+}

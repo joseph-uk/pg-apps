@@ -1,0 +1,403 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Flybubble Weather",
+        "totalResults": "8440",
+        "searchTerms": "Flybubble Weather",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Flybubble Weather",
+        "totalResults": "8440",
+        "searchTerms": "Flybubble Weather",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.372758,
+    "formattedSearchTime": "0.37",
+    "totalResults": "8440",
+    "formattedTotalResults": "8,440"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding and Hang Gliding weather forecast",
+      "htmlTitle": "Paragliding and Hang Gliding \u003cb\u003eweather\u003c/b\u003e forecast",
+      "link": "https://flybubble.com/weather/",
+      "displayLink": "flybubble.com",
+      "snippet": "Flybubble Weather is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone ...",
+      "htmlSnippet": "\u003cb\u003eFlybubble Weather\u003c/b\u003e is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone&nbsp;...",
+      "formattedUrl": "https://flybubble.com/weather/",
+      "htmlFormattedUrl": "https://\u003cb\u003eflybubble\u003c/b\u003e.com/\u003cb\u003eweather\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y3R_GIVSPlYFy37thEj1RGWp2hNOUrwyFT_o2zlIjhRJ0S8hVZXqP_U&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+            "og:title": "Paragliding and Hang Gliding weather forecast",
+            "mapopencount": "14856"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flybubble.com/weather/assets/imgs/w3w.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Weather in flight analysis tools? - new - Paragliding Forum",
+      "htmlTitle": "View topic - Weather in flight analysis tools? - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=105752",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jan 3, 2022 ... It's here: https://flybubble.com/weather/ (although it really only covers the UK). I might be dumb, but it seems like it's just a forecast ...",
+      "htmlSnippet": "Jan 3, 2022 \u003cb\u003e...\u003c/b\u003e It&#39;s here: https://\u003cb\u003eflybubble\u003c/b\u003e.com/\u003cb\u003eweather\u003c/b\u003e/ (although it really only covers the UK). I might be dumb, but it seems like it&#39;s just a forecast&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=105752",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=105752",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flybubble Weather: Fly more, with less! - Flybubble",
+      "htmlTitle": "\u003cb\u003eFlybubble Weather\u003c/b\u003e: Fly more, with less! - Flybubble",
+      "link": "https://flybubble.com/blog/flybubble-weather",
+      "displayLink": "flybubble.com",
+      "snippet": "Flybubble Weather is a free soaring forecasting tool that simplifies your planning for a great day up in the sky.",
+      "htmlSnippet": "\u003cb\u003eFlybubble Weather\u003c/b\u003e is a free soaring forecasting tool that simplifies your planning for a great day up in the sky.",
+      "formattedUrl": "https://flybubble.com/blog/flybubble-weather",
+      "htmlFormattedUrl": "https://\u003cb\u003eflybubble\u003c/b\u003e.com/blog/\u003cb\u003eflybubble\u003c/b\u003e-\u003cb\u003eweather\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-LOHmV783E2B9BVsqFfpbpr_X8H54axPj7A3vZtEwsqeaPMn3K-82S00H&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "thumbnail": [
+          {
+            "src": "https://flybubble.com/media/magefan_blog/2018/06/flybubble-weather2.jpg",
+            "name": "Flybubble Weather: Fly more, with less!"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://flybubble.com/media/magefan_blog/2018/06/flybubble-weather2.jpg",
+            "og:type": "article",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Flybubble Weather: Fly more, with less!",
+            "title": "Flybubble Weather: Fly more, with less! - Flybubble",
+            "og:url": "https://flybubble.com/blog/flybubble-weather",
+            "og:description": "We are delighted to offer you Flybubble Weather, the innovative online free-flight forecasting tool developed by Caedmon Mullin and the Flybubble Crew. It's"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flybubble.com/media/magefan_blog/2018/06/flybubble-weather2.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Weather Links",
+      "htmlTitle": "\u003cb\u003eWeather\u003c/b\u003e Links",
+      "link": "https://www.bhpa.co.uk/sport/weather/",
+      "displayLink": "www.bhpa.co.uk",
+      "snippet": "Jul 14, 2024 ... BHPA Weather links for UK hang gliding and paragliding pilots ... Flybubble Weather - UK map displaying forecasted conditions at UK ...",
+      "htmlSnippet": "Jul 14, 2024 \u003cb\u003e...\u003c/b\u003e BHPA Weather links for UK hang gliding and paragliding pilots ... \u003cb\u003eFlybubble Weather\u003c/b\u003e - UK map displaying forecasted conditions at UK&nbsp;...",
+      "formattedUrl": "https://www.bhpa.co.uk/sport/weather/",
+      "htmlFormattedUrl": "https://www.bhpa.co.uk/sport/\u003cb\u003eweather\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "rating": "Safe for kids",
+            "dcterms.datecopyrighted": "2004-2025",
+            "dcterms.rightsholder": "BHPA Ltd"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding 5 day Weather Forecast",
+      "htmlTitle": "Paragliding 5 day \u003cb\u003eWeather\u003c/b\u003e Forecast",
+      "link": "https://flybubble.com/weather/-/weather/6187",
+      "displayLink": "flybubble.com",
+      "snippet": "THIS SITE IS CURRENTLY CLOSED. Updated: Flybubble Paragliding · Support Flybubble. \u003c Overview \u003c All. kph. knts. mph. Notifications Post a CANP.",
+      "htmlSnippet": "THIS SITE IS CURRENTLY CLOSED. Updated: \u003cb\u003eFlybubble\u003c/b\u003e Paragliding &middot; Support \u003cb\u003eFlybubble\u003c/b\u003e. &lt; Overview &lt; All. kph. knts. mph. Notifications Post a CANP.",
+      "formattedUrl": "https://flybubble.com/weather/-/weather/6187",
+      "htmlFormattedUrl": "https://\u003cb\u003eflybubble\u003c/b\u003e.com/\u003cb\u003eweather\u003c/b\u003e/-/\u003cb\u003eweather\u003c/b\u003e/6187",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y3R_GIVSPlYFy37thEj1RGWp2hNOUrwyFT_o2zlIjhRJ0S8hVZXqP_U&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+            "og:title": "Paragliding 5 day Weather Forecast",
+            "mapopencount": "12408"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flybubble.com/weather/assets/imgs/w3w.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "WINDCAST WEATHER CUBE GIVEAWAY! @Flybubble and ...",
+      "htmlTitle": "WINDCAST \u003cb\u003eWEATHER\u003c/b\u003e CUBE GIVEAWAY! @\u003cb\u003eFlybubble\u003c/b\u003e and ...",
+      "link": "https://www.instagram.com/windcast.weather/reel/C8MmRNaoTOF/",
+      "displayLink": "www.instagram.com",
+      "snippet": "Jun 14, 2024 ... 6 likes, 2 comments - windcast.weather on June 14, 2024: \" WINDCAST WEATHER CUBE GIVEAWAY! @Flybubble and @windcast.weather have teamed ...",
+      "htmlSnippet": "Jun 14, 2024 \u003cb\u003e...\u003c/b\u003e 6 likes, 2 comments - windcast.\u003cb\u003eweather\u003c/b\u003e on June 14, 2024: &quot;   WINDCAST \u003cb\u003eWEATHER\u003c/b\u003e CUBE GIVEAWAY! @\u003cb\u003eFlybubble\u003c/b\u003e and @windcast.\u003cb\u003eweather\u003c/b\u003e have teamed&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/windcast.weather/reel/C8MmRNaoTOF/",
+      "htmlFormattedUrl": "https://www.instagram.com/windcast.\u003cb\u003eweather\u003c/b\u003e/reel/C8MmRNaoTOF/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/448406153_1199446964747175_1766143971210080157_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_ohc=tKOTVwGRRWoQ7kNvgGnmO4l&_nc_oc=Adho7ZyRcYZe9E-Vx2lgbRjek1TSyOIwji7fqtXgSJ-YT3wBhS7Ep8q1h2AdWUFWCqE&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AEr4_9oMBI4ValSUZs4RVS2&oh=00_AYFslFotyKox45-LlVszYBR6WQ6Xb4b-c_4kpDzqSvypaQ&oe=67D56F51",
+            "theme-color": "#ffffff",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Instagram",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "medium": "image",
+            "al:ios:url": "instagram://media?id=3390252927907083141",
+            "og:description": "6 likes, 2 comments - windcast.weather on June 14, 2024: \"🎉 WINDCAST WEATHER CUBE\nGIVEAWAY! 🎉\n\n@Flybubble and @windcast.weather have teamed up\nfor a great giveaway!\n\nWin a Windcast weather cube - the glanceable weather\nforecast device for your home. Handmade from\nreclaimed oak and beech and worth £59. The Windcast\ncube provides accurate weather forecasts for your\nfavourite paragliding sites with accurate data from\nFlybubble Weather. Shows 2 day summary and detailed\nsite forecasts along with a clear green light when your\nchosen locations are flyable.\n\nBut wait, there's more! You can also win:\n£20 Flybubble Gift Card\nAdvance LIGHTBAG 2\nSupair Camera Sleeve\nTriple Seven Cap\nPlusmax Microfibre Helmet Bag\nPair of Flybubble Brummel Covers\nTotal value nearly £200, including the Windcast\nweather cube!\n\nTo be in with a chance of winning, all you need to do\nis:\nTag 3 fellow paraglider pilots\nEnsure you both follow @Flybubble and\n@windcast.weather\nLike this post\nShare it to your story\n\nThe giveaway closes on Ju",
+            "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/448406153_1199446964747175_1766143971210080157_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_ohc=tKOTVwGRRWoQ7kNvgGnmO4l&_nc_oc=Adho7ZyRcYZe9E-Vx2lgbRjek1TSyOIwji7fqtXgSJ-YT3wBhS7Ep8q1h2AdWUFWCqE&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AEr4_9oMBI4ValSUZs4RVS2&oh=00_AYFslFotyKox45-LlVszYBR6WQ6Xb4b-c_4kpDzqSvypaQ&oe=67D56F51",
+            "al:ios:app_store_id": "389801252",
+            "twitter:site": "@instagram",
+            "instapp:owner_user_id": "64913962644",
+            "og:type": "article",
+            "twitter:title": "@windcast.weather • Instagram reel",
+            "al:ios:app_name": "Instagram",
+            "og:title": "@windcast.weather on Instagram: \"🎉 WINDCAST WEATHER CUBE\nGIVEAWAY! 🎉\n\n@Flybubble and @windcast.weather have teamed up\nfor a great giveaway!\n\nWin a Windcast weather cube - the glanceable weather\nforecast device for your home. Handmade from\nreclaimed oak and beech and worth £59. The Windcast\ncube provides accurate weather forecasts for your\nfavourite paragliding sites with accurate data from\nFlybubble Weather. Shows 2 day summary and detailed\nsite forecasts along with a clear green light when your\nchosen locations are flyable.\n\nBut wait, there's more! You can also win:\n£20 Flybubble Gift Card\nAdvance LIGHTBAG 2\nSupair Camera Sleeve\nTriple Seven Cap\nPlusmax Microfibre Helmet Bag\nPair of Flybubble Brummel Covers\nTotal value nearly £200, including the Windcast\nweather cube!\n\nTo be in with a chance of winning, all you need to do\nis:\nTag 3 fellow paraglider pilots\nEnsure you both follow @Flybubble and\n@windcast.weather\nLike this post\nShare it to your story\n\nThe giveaway closes on June 22nd at 6pm and the\nwi",
+            "twitter:maxage": "86400",
+            "color-scheme": "light",
+            "al:android:url": "https://www.instagram.com/windcast.weather/reel/C8MmRNaoTOF/",
+            "fb:app_id": "124024574287414",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/windcast.weather/reel/C8MmRNaoTOF/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/448406153_1199446964747175_1766143971210080157_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_ohc=tKOTVwGRRWoQ7kNvgGnmO4l&_nc_oc=Adho7ZyRcYZe9E-Vx2lgbRjek1TSyOIwji7fqtXgSJ-YT3wBhS7Ep8q1h2AdWUFWCqE&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AEr4_9oMBI4ValSUZs4RVS2&oh=00_AYFslFotyKox45-LlVszYBR6WQ6Xb4b-c_4kpDzqSvypaQ&oe=67D56F51"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding 5 day Weather Forecast",
+      "htmlTitle": "Paragliding 5 day \u003cb\u003eWeather\u003c/b\u003e Forecast",
+      "link": "https://flybubble.com/weather/-/weather/15415",
+      "displayLink": "flybubble.com",
+      "snippet": "... Flybubble Weather is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone ...",
+      "htmlSnippet": "... \u003cb\u003eFlybubble Weather\u003c/b\u003e is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone&nbsp;...",
+      "formattedUrl": "https://flybubble.com/weather/-/weather/15415",
+      "htmlFormattedUrl": "https://\u003cb\u003eflybubble\u003c/b\u003e.com/\u003cb\u003eweather\u003c/b\u003e/-/\u003cb\u003eweather\u003c/b\u003e/15415",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y3R_GIVSPlYFy37thEj1RGWp2hNOUrwyFT_o2zlIjhRJ0S8hVZXqP_U&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+            "og:title": "Paragliding 5 day Weather Forecast"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flybubble.com/weather/assets/imgs/w3w.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Congratulations to the lucky winner of the Windcast and Flybubble ...",
+      "htmlTitle": "Congratulations to the lucky winner of the Windcast and \u003cb\u003eFlybubble\u003c/b\u003e ...",
+      "link": "https://www.instagram.com/windcast.weather/reel/C8nAGjJJs8k/",
+      "displayLink": "www.instagram.com",
+      "snippet": "Jun 24, 2024 ... A Windcast cube - paragliding weather at a glance £20 Flybubble Gift Card Advance LIGHTBAG 2. Supair Camera Sleeve Triple Seven Cap Plusmax ...",
+      "htmlSnippet": "Jun 24, 2024 \u003cb\u003e...\u003c/b\u003e A Windcast cube - paragliding \u003cb\u003eweather\u003c/b\u003e at a glance £20 \u003cb\u003eFlybubble\u003c/b\u003e Gift Card Advance LIGHTBAG 2. Supair Camera Sleeve Triple Seven Cap Plusmax&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/windcast.weather/reel/C8nAGjJJs8k/",
+      "htmlFormattedUrl": "https://www.instagram.com/windcast.\u003cb\u003eweather\u003c/b\u003e/reel/C8nAGjJJs8k/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/448893664_1823453414832860_1964343161618346734_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=1NrHQhsYxYoQ7kNvgEfSUe6&_nc_oc=Adk2BTNBFvj-C-ZxYnYW_PnOBemAmE5Td1NrHcfz5phQm5r47UaEEQleQjQkZEQSpO4&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=0iHikEJFc-FrjAjPLZYpuA&oh=00_AYHOVxK9wJUjw7nHocJVGPCOCifXw1tn1n--r79NMPNSjA&oe=67E741D0",
+            "theme-color": "#FFFFFF",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Instagram",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "medium": "image",
+            "al:ios:url": "instagram://media?id=3397684893925691172",
+            "og:description": "2 likes, 2 comments - windcast.weather on June 24, 2024: \"Congratulations to the lucky winner of the Windcast and Flybubble giveaway - @airmaxfly. \n\nTheir bumper prize consists of: \nA Windcast cube - paragliding weather at a glance\n£20 Flybubble Gift Card\nAdvance LIGHTBAG 2\nSupair Camera Sleeve\nTriple Seven Cap\nPlusmax Microfibre Helmet Bag\nPair of Flybubble Brummel Covers\n\nBig thanks to the team @flybubble for partnering with Windcast for this competition!\n\n#flybubble #flybubbleweather\n#paragliding #miniwing #speedflying #hanggliding\n#paraglidingweather #speedflyingweather #hangglidingweather\n#windcastweather #windcastcube #madeindevon\n#paraglidinguk #ukparagliding #britishparagliding \n#ukparaglidingshop #paraglidingshopuk #paraglidingstore\n#paraglidingequipment #paraglidingaccessories #paraglidingproducts\n#paraglidingbrands \n#paraglidinglifestyle\".",
+            "twitter:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/448893664_1823453414832860_1964343161618346734_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=1NrHQhsYxYoQ7kNvgEfSUe6&_nc_oc=Adk2BTNBFvj-C-ZxYnYW_PnOBemAmE5Td1NrHcfz5phQm5r47UaEEQleQjQkZEQSpO4&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=0iHikEJFc-FrjAjPLZYpuA&oh=00_AYHOVxK9wJUjw7nHocJVGPCOCifXw1tn1n--r79NMPNSjA&oe=67E741D0",
+            "al:ios:app_store_id": "389801252",
+            "twitter:site": "@instagram",
+            "instapp:owner_user_id": "64913962644",
+            "og:type": "article",
+            "twitter:title": "@windcast.weather • Instagram reel",
+            "al:ios:app_name": "Instagram",
+            "og:title": "@windcast.weather on Instagram: \"Congratulations to the lucky winner of the Windcast and Flybubble giveaway - @airmaxfly. \n\nTheir bumper prize consists of: \nA Windcast cube - paragliding weather at a glance\n£20 Flybubble Gift Card\nAdvance LIGHTBAG 2\nSupair Camera Sleeve\nTriple Seven Cap\nPlusmax Microfibre Helmet Bag\nPair of Flybubble Brummel Covers\n\nBig thanks to the team @flybubble for partnering with Windcast for this competition!\n\n#flybubble #flybubbleweather\n#paragliding #miniwing #speedflying #hanggliding\n#paraglidingweather #speedflyingweather #hangglidingweather\n#windcastweather #windcastcube #madeindevon\n#paraglidinguk #ukparagliding #britishparagliding \n#ukparaglidingshop #paraglidingshopuk #paraglidingstore\n#paraglidingequipment #paraglidingaccessories #paraglidingproducts\n#paraglidingbrands \n#paraglidinglifestyle\"",
+            "twitter:maxage": "86400",
+            "color-scheme": "light",
+            "al:android:url": "https://www.instagram.com/windcast.weather/reel/C8nAGjJJs8k/",
+            "fb:app_id": "124024574287414",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/windcast.weather/reel/C8nAGjJJs8k/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/448893664_1823453414832860_1964343161618346734_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=1NrHQhsYxYoQ7kNvgEfSUe6&_nc_oc=Adk2BTNBFvj-C-ZxYnYW_PnOBemAmE5Td1NrHcfz5phQm5r47UaEEQleQjQkZEQSpO4&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=0iHikEJFc-FrjAjPLZYpuA&oh=00_AYHOVxK9wJUjw7nHocJVGPCOCifXw1tn1n--r79NMPNSjA&oe=67E741D0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding 5 day Weather Forecast",
+      "htmlTitle": "Paragliding 5 day \u003cb\u003eWeather\u003c/b\u003e Forecast",
+      "link": "https://flybubble.com/weather/15415",
+      "displayLink": "flybubble.com",
+      "snippet": "... Flybubble Weather is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone ...",
+      "htmlSnippet": "... \u003cb\u003eFlybubble Weather\u003c/b\u003e is built using RASP - thanks go to Dr Jack and the whole RASP community. Mark this site as currently being flown? Only confirm if someone&nbsp;...",
+      "formattedUrl": "https://flybubble.com/weather/15415",
+      "htmlFormattedUrl": "https://\u003cb\u003eflybubble\u003c/b\u003e.com/\u003cb\u003eweather\u003c/b\u003e/15415",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Y3R_GIVSPlYFy37thEj1RGWp2hNOUrwyFT_o2zlIjhRJ0S8hVZXqP_U&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1",
+            "og:title": "Paragliding 5 day Weather Forecast"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flybubble.com/weather/assets/imgs/w3w.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "windcast.weather on Instagram: \"View 2 on the Windcast cube lets ...",
+      "htmlTitle": "windcast.\u003cb\u003eweather\u003c/b\u003e on Instagram: &quot;View 2 on the Windcast cube lets ...",
+      "link": "https://www.instagram.com/windcast.weather/reel/C8-YXpwp_Kz/",
+      "displayLink": "www.instagram.com",
+      "snippet": "Jul 3, 2024 ... The Windcast Cube provides a glanceable paragliding forecast using data from Flybubble Weather. The Flybubble weather page was co-designed by ...",
+      "htmlSnippet": "Jul 3, 2024 \u003cb\u003e...\u003c/b\u003e The Windcast Cube provides a glanceable paragliding forecast using data from \u003cb\u003eFlybubble Weather\u003c/b\u003e. The \u003cb\u003eFlybubble weather\u003c/b\u003e page was co-designed by&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/windcast.weather/reel/C8-YXpwp_Kz/",
+      "htmlFormattedUrl": "https://www.instagram.com/windcast.\u003cb\u003eweather\u003c/b\u003e/reel/C8-YXpwp_Kz/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/449721411_781501967467080_5682943936913785031_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=BHp7fBHVTAAQ7kNvgHSyxko&_nc_oc=AdgtoQ1VJ6Gw5mgcWqg0Sq_pghLpjxd6Vjq5fGv9C3KiBlyY4C5cNShbA33mXVxkOak&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AKWjppLl_lxqRcFCqUt2XL8&oh=00_AYGmNx5g20LAI6iXLtbT5xgokffxdjY6kAV8yTjUuph0Pw&oe=67D567E7",
+            "theme-color": "#ffffff",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Instagram",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "medium": "image",
+            "al:ios:url": "instagram://media?id=3404265546842632883",
+            "og:description": "5 likes, 0 comments - windcast.weather on July 3, 2024: \"View 2 on the Windcast cube lets you toggle between your best flyable sites today and check flying conditions at 9am, 1pm and 5pm. Ideal to nip out and get a great fly if you only have a few hours to spare... ⏱🌥🪂\n\n #flybubbleweather #ukparagliding #speedflyingweather #britishparagliding #hangglidingweather #paraglidingshopuk #hanggliding #paraglidinguk #paraglidingequipment #speedflying #paraglidinglifestyle #buttermere\".",
+            "twitter:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/449721411_781501967467080_5682943936913785031_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=BHp7fBHVTAAQ7kNvgHSyxko&_nc_oc=AdgtoQ1VJ6Gw5mgcWqg0Sq_pghLpjxd6Vjq5fGv9C3KiBlyY4C5cNShbA33mXVxkOak&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AKWjppLl_lxqRcFCqUt2XL8&oh=00_AYGmNx5g20LAI6iXLtbT5xgokffxdjY6kAV8yTjUuph0Pw&oe=67D567E7",
+            "al:ios:app_store_id": "389801252",
+            "twitter:site": "@instagram",
+            "instapp:owner_user_id": "64913962644",
+            "og:type": "article",
+            "twitter:title": "@windcast.weather • Instagram reel",
+            "al:ios:app_name": "Instagram",
+            "og:title": "@windcast.weather on Instagram: \"View 2 on the Windcast cube lets you toggle between your best flyable sites today and check flying conditions at 9am, 1pm and 5pm. Ideal to nip out and get a great fly if you only have a few hours to spare... ⏱🌥🪂\n\n #flybubbleweather #ukparagliding #speedflyingweather #britishparagliding #hangglidingweather #paraglidingshopuk #hanggliding #paraglidinguk #paraglidingequipment #speedflying #paraglidinglifestyle #buttermere\"",
+            "twitter:maxage": "86400",
+            "color-scheme": "light",
+            "al:android:url": "https://www.instagram.com/windcast.weather/reel/C8-YXpwp_Kz/",
+            "fb:app_id": "124024574287414",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/windcast.weather/reel/C8-YXpwp_Kz/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-1.cdninstagram.com/v/t51.29350-15/449721411_781501967467080_5682943936913785031_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=108&ccb=1-7&_nc_sid=18de74&_nc_ohc=BHp7fBHVTAAQ7kNvgHSyxko&_nc_oc=AdgtoQ1VJ6Gw5mgcWqg0Sq_pghLpjxd6Vjq5fGv9C3KiBlyY4C5cNShbA33mXVxkOak&_nc_zt=23&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_gid=AKWjppLl_lxqRcFCqUt2XL8&oh=00_AYGmNx5g20LAI6iXLtbT5xgokffxdjY6kAV8yTjUuph0Pw&oe=67D567E7"
+          }
+        ]
+      }
+    }
+  ]
+}

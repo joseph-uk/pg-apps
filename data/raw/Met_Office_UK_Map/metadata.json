@@ -1,0 +1,9 @@
+{
+  "name": "Met Office UK Map",
+  "url": "https://weather.metoffice.gov.uk/maps-and-charts/uk-weather-map",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "",
+  "timestamp": "2025-03-25T21:59:00Z",
+  "website_fetched": true
+}

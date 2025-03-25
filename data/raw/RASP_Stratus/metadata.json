@@ -1,0 +1,9 @@
+{
+  "name": "RASP - Stratus",
+  "url": "https://rasp.stratus.org.uk/",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "Home of the official RASP UK",
+  "timestamp": "2025-03-25T21:54:35Z",
+  "website_fetched": true
+}

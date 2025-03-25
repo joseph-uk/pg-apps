@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>Met Office WOW - Home Page</title>
+    <meta name="description" content="The UK Met Office Weather Observation Website (WOW). WOW allows anyone to submit their own weather data, anywhere in the world." />
+    <meta name="keywords" content="WOW,UK,Met,Office,Weather,Observations" />
+
+    <!-- Social Tags -->
+    <!-- comment-->
+
+    <meta property="og:url" content="https://wow.metoffice.gov.uk/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Met Office WOW - Home Page" />
+    <meta property="og:description" content="The UK Met Office Weather Observation Website (WOW). WOW allows anyone to submit their own weather data, anywhere in the world." />
+    <meta property="og:image" content="/Assets/Images/logo-global.png" />
+
+    <meta name="twitter:card" content="Met Office WOW. The UK Met Office Weather Observation Website (WOW)" />
+    <meta name="twitter:site" content="http://wow.metoffice.gov.uk/" />
+    <meta name="twitter:title" content="Met Office WOW - Home Page" />
+    <meta name="twitter:description" content="The UK Met Office Weather Observation Website (WOW). WOW allows anyone to submit their own weather data, anywhere in the world." />
+    <meta name="twitter:image" content="/Assets/Images/logo-global.png" />
+
+    <link rel="shortcut icon" href="/Assets/Images/icons/favicon.ico" />
+
+    <!-- Apple Icons -->
+    <link rel="apple-touch-icon" href="/Assets/Images/icons/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/Assets/icons/Images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/Assets/Images/icons/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/Assets/Images/icons/touch-icon-ipad-retina.png">
+
+    <!-- Miscrosoft Icons -->
+    <meta name="application-name" content="Met Office WOW" />
+    <meta name="msapplication-square70x70logo" content="msapplication-square70x70logo.jpg" />
+    <meta name="msapplication-square150x150logo" content="msapplication-square150x150logo.jpg" />
+    <meta name="msapplication-wide310x150logo" content="msapplication-wide310x150logo.jpg" />
+    <meta name="msapplication-square310x310logo" content="msapplication-square310x310logo.jpg" />
+    <meta name="msapplication-TileColor" content="#202A2C" />
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/ol.css" rel="stylesheet" />
+
+    <link type="text/css" href="/assets/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <script src="/assets/js/civic.js"></script>
+<link href="/assets/css/wow-styles.min.css" rel="stylesheet"/>
+    <link href="/assets/css/bootstrap-social.css" rel="stylesheet" />
+    
+    <link href="/assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="/assets/css/dygraph.css" rel="stylesheet" />
+    <style>
+
+        .dygraph-axis-label-y {
+            font-size: xx-small;
+        }
+    </style>
+
+        <script type="text/javascript">
+            var CONSTANTS = CONSTANTS || {};
+            CONSTANTS.API_URI = "/api/"; 
+            CONSTANTS.ALLOWED_VIDEO_TYPES = "mp4,mov,mpe,mpeg,mpg,mpga,movie";
+            CONSTANTS.CURRENT_USER_HAS_SCHOOL_SITES = "";
+            CONSTANTS.CURRENT_USER_SITES_GROUPS = [];
+            CONSTANTS.PUBLIC_GROUPS = [];
+            CONSTANTS.BRAND = "global";
+            CONSTANTS.CURRENT_USER_UNIT_TYPE = "Standard";
+            CONSTANTS.CURRENT_USER_ID = "0";
+            CONSTANTS.IS_ABOM = false;
+            CONSTANTS.ISAUTHENTICATED = false;
+        </script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="~/assets/js/vendors/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;)r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            samplingPercentage: 0.01,
+            instrumentationKey: "5219a49e-a5f0-443a-9d82-e66c3bed5121"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+<body class="global">
+    <nav class="navbar navbar-inverse header">
+
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="navbar-title">MENU</span>
+            </button>
+
+
+            <div class="header-brand navbar-brand wow-style">
+                    <a href="http://www.metoffice.gov.uk/" class="met-logo">
+                        <img src="/Assets/Images/logo-global.png" alt="global - Wow" />
+                    </a>
+
+                <a href="/" class="wow-logo">
+                    <div class="wow-title">W<span>o</span>w</div>
+                    <div class="wow-description">Weather<span>Observations</span>Website</div>
+                </a>
+            </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav main-nav">
+                <li class="active"><a href="/">Home</a></li>
+                
+                    <li class=""><a href="/sites">Enter a Site</a></li>
+                <li class=""><a href="/observations/create">Enter Observation</a></li>
+                <li class=""><a href="/weatherimpacts/create">Enter Weather Impact</a></li>
+                <li class=""><a href="/gallery">Photos</a></li>
+                <li class=""><a href="/support">Support</a></li>
+            </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://register.metoffice.gov.uk/WaveRegistrationClient/public/register.do?service=weatherobservations" target="_self">Sign Up</a></li>
+                    <li>
+                        <a href="#" class="login-modal" data-type="login" data-media-id="" data-toggle="modal" data-target="#login-modal">
+                            Login
+                        </a>
+                        
+                    </li>
+                </ul>
+            <div class="units-switcher" role="group" aria-label="Switch Units">
+                <form id="unit-changer">
+                        <div class="btn-group btn-group-xs" role="group" aria-label="Standard Units">
+
+                            <a href="javascript:wow.user.setUnit('Alternative')" class="btn btn-primary">View Alternative Units</a>
+                        </div>
+                </form>
+
+
+
+            </div>
+
+        </div><!--/.nav-collapse -->
+
+    </nav>
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
+                     <div class="container">
+
+            </nav>
+
+    <!-- <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="/">Application name</a>
+             </div>
+             <div class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/sites">Sites</a></li>
+                     
+                 </ul>
+                 
+             </div>
+         </div>
+     </div>-->
+    <div class="container-fluid">
+
+        
+
+<input type="hidden" value="pk.eyJ1IjoibWV0b2ZmaWNlIiwiYSI6ImNpbXZ1eHV1ejAwOTV2cW0yZ3cxZ3YyczQifQ.mjZrdcn4Ufs3Nq-X4iA85A" name="hiddenMapboxApiKey" id="hiddenMapboxApiKey" />
+
+<style type="text/css">
+    .obs-data-grid {
+        padding: 0px 30px !important;
+    }
+
+    #metofficeForecastContent {
+        overflow-y: hidden !important;
+    }
+</style>
+
+<!-- System Message -->
+    <div class="alert alert-warning alert-dismissible page-message-alert row" role="alert" alert-id="1494517748">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <strong>System Upgrade </strong> We are currently working to fix an error with the log in system update and will advise when complete. This could take additional days. Updates can be found <a href="https://weatherobservationswebsite.blogspot.com/2025/03/wow-account-migration-updates.html">here</a>. Thank you for your ongoing patience.
+
+    </div>
+
+
+
+
+<nav class="navbar navbar-default  navbar-filter">
+    <div class="row">
+        <div class="filter-container clearfix">
+            <!--Search-->
+            <div class="col-xs-10 col-sm-3 col-md-4">
+                <div class="search-box">
+
+                    <div class="form-group">
+                        <label class="hidden-xs">Search &nbsp;</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="searchLocation" id="searchLocation" placeholder="Search a Location, Site ID or Point (lat, lon)">
+                            <input type="hidden" id="mapLatitude" value="0" hidden />
+                            <input type="hidden" id="mapLongitude" value="0" hidden />
+                            <div id="locationPicker" style="display:none;"></div>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" id="searchButton" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                <button class="btn btn-locate" id="locate"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Nav Header Button-->
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Map Options</span>
+                    <i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="col-sm-9 col-md-8">
+                <div class="row">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="options-header m-b-md visible-xs">
+                            <h4 class="options-title">Map Options</h4>
+                        </div>
+                        <!-- Time Period -->
+                        <div class="col-sm-4" id="filter-map">
+                            <div class="nav navbar">
+                                <div id="filter-map-date">
+                                    <form>
+                                        <div class="map-default-time-picker">
+                                            <label>Time Period (by hour)</label>
+                                            <div class="input-group date">
+                                                <input type='text' id="mapTimeTextBox" class="form-control" />
+                                                <span class="input-group-addon" id="map-time-picker">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="map-custom-time-picker" style="display: none;">
+                                            <label>Filter by time period:</label>
+                                            <div class="select-field select-field-primary">
+                                                <select class="select-field-input select-field-single" id="simple-datetime">
+                                                    <option value="-1">Today</option>
+                                                    <option value="-2">Last 2 days</option>
+                                                    <option value="-3">Last 3 days</option>
+                                                    <option value="-7">Last week</option>
+                                                    <option value="-31">Last month</option>
+                                                    <option value="-91">Last Quarter</option>
+                                                    <option value="-365">Last Year</option>
+                                                    <option value="-10000">Whole Archive</option>
+
+                                                </select>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="map-custom-day-picker" style="display: none;">
+                                            <label>Time Period (by day)</label>
+                                            <div class="input-group date">
+                                                <input type='text' id="mapCustomDayTextBox" class="form-control" />
+                                                <span class="input-group-addon" id="map-day-picker">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Layer Filter -->
+                        <div class="col-sm-3" id="filter-map">
+                            <div class="nav navbar">
+                                <form>
+                                    <label>Layers &nbsp;</label>
+                                    <div class="select-field select-field-primary">
+
+                                        <select class="select-field-input" id="type">
+                                            <option value="dt">Temperature</option>
+                                            <option value="dpt">Dew Point Temperature</option>
+                                            <option value="drr">Rainfall Rate</option>
+                                            <option value="hrn">Hourly Rainfall</option>
+                                            <option value="dwc">Present Weather</option>
+                                            <option value="dws">Wind Speed / Direction</option>
+                                            <option value="dh">Humidity</option>
+                                            <option value="dm">Pressure (MSLP)</option>
+                                            <option value="ds">Snowfall</option>
+                                            <option value="dsm">Soil Moisture</option>
+                                            <option value="magnetometer" class="magnetometer">Magnetometer (in beta)</option>
+                                            <option value="impacts">Weather Impacts</option>
+                                            <option value="dp">Photos</option>
+                                            <option value="wc">Webcam</option>
+                                        </select>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- Site Filter -->
+                        <div class="col-sm-3" id="filter-sites-map">
+                            <div class="nav navbar">
+                                <form>
+                                    <label>Filters &nbsp;</label>
+                                    <div class="select-field select-field-primary">
+                                        <select class="select-field-input" id="type-of-site" multiple="multiple">
+
+                                                <option class="main-option-value" value="wow">WOW Observations</option>
+                                                <option class="main-option-value" value="official">Official Observations</option>
+                                            <option class="main-option-value" value="ea">EA Rainfall Sites</option>
+                                            <option class="main-option-value" value="dcnn">Climate Sites</option>
+                                            <option class="main-option-value" value="registered">Registered Sites</option>
+                                        </select>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- Impacts Specific Filter -->
+                        <div class="col-sm-3" id="impacts-layer-filters" style="display: none;">
+                            <div class="nav navbar">
+                                <form>
+                                    <label>
+
+                                        
+                                        Filters
+
+                                    </label>
+                                    <div class="select-field select-field-primary">
+                                        <select class="select-field-input select-field-single" id="impacts-options" name="impacts-options"><option value="">All</option>
+<option value="weather_impact_travel_disruption">Travel Disruption</option>
+<option value="weather_impact_property_infrastructure_damage">Property or Infrastructure Damage</option>
+<option value="weather_impact_personal_health_safety">Personal Health and Safety</option>
+<option value="weather_impact_utility_disruption">Utility Disruption</option>
+<option value="weather_impact_service_business_disruption">Service or Business Disruption</option>
+<option value="weather_impact_agriculture_habitat_damage">Agriculture Habitat Damage</option>
+<option value="weather_impact_leisure_event_disruption">Disruption to Camping Events Leisure Activities</option>
+</select>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Photos Specific Filter -->
+                        <div id="photo-layer-filters" class="col-sm-3" style="display: none;">
+                            <div class="nav navbar">
+                                <form>
+                                    <label>
+
+                                        
+                                        Filters
+                                    </label>
+                                    <div class="select-field select-field-primary select-multiple">
+                                        <select class="select-field-input select-field-single" multiple id="photo-tag">
+                                            
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Map Options -->
+                        <div class="col-sm-2">
+                            <div class="form-inline m-t-md map-settings">
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                        Actions
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" id="resetMapPosition">Reset Map</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="map-container">
+        <a class="skiplink sr-only" href="#map">Go to map</a>
+        <div id="map" tabindex="0">
+            <div id="overlay" tabindex="-1">
+                <div class="overlay-header">
+                    <div class="overlay-close-btn">
+                        <button type="button" class="close overlay-close" aria-label="Close">
+                            <i class="glyphicon glyphicon-remove" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <h3 class="site-title">
+                        <span class="site-title-text"></span>
+                        <span class="star-rating" data-content="0"></span>
+                        <span class="sr-only">Rating: <span id="sr-only-rating"></span> stars out of 5</span>
+                    </h3>
+                    <div class="row">
+                        <p class="site-date col-xs-7"><span></span></p>
+                        <i id="official-site" class="col-xs-4 col-xs-offset-1" style="display: none;">
+                            <span class="dcnn-image">
+                                <img src="/Assets/Images/metoffice-logo-dark-small.gif" alt="Met Office DCNN site" />
+                            </span>
+
+                        </i>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs tabs m-b-s" role="tablist" id="summary-tabs">
+                    <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">Quick Summary</a></li>
+                    <li role="presentation" id="forcast-tab"><a href="#forecast" aria-controls="forecast" role="tab" data-toggle="tab">Forecast</a></li>
+                    <li role="presentation" id="graph-tab" style="display:none;"><a href="#graph" aria-controls="graph" role="tab" data-toggle="tab">Graphs</a></li>
+                </ul>
+                <div class="overlay-content" style="padding: 0px; overflow: hidden;">
+                    <div class="tab-content overlay-tab-content" style="overflow-y: scroll; overflow-x: hidden;">
+                        <div role="tabpanel" class="tab-pane fade in active" id="summary">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <div class="row summary-grid">
+                                        <div class="col-md-12 summary-grid-inner">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="bottom: 0; position: absolute; padding-right: 2px;">
+                                    <div class="action-block m-t-md" style="position: relative;">
+                                        <a href="#" id="view-obs" class="btn btn-primary">View Full Observation</a>
+                                        <a href="#" id="view-site" class="btn btn-primary">View Site Details</a>
+                                        <a href="#" id="view-impact" style="display: none" class="btn btn-primary">View Weather Impact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="forecast">
+                            <div id="metofficeForecastContent" style="padding: 0px 20px;"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade in" id="graph">
+                            <div id="graphContent" class="sortable"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="progress" tabindex="-1" style="display: none;">
+                <div class="progress-content">
+                    <img src="/Assets/Images/data-loader.gif" width="40" height="40" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map-legend">
+        <div class="map-legend-container row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="map-legend-col">
+                    <h4 class="legend-title">Temperature C</h4>
+                </div>
+                <div class="map-legend-col">
+                    <ul class="legend-data"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="map-image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></div>
+                <div class="modal-body-content">
+                    <div class="row">
+                        <div class="col-xs-12 m-b-md">
+                            <img id="map-image-src" class="img-responsive" src="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p id="spnTakenDate"><strong>Taken:</strong> <br /><span></span></p>
+                            <p id="spnUploadedDate"><strong>Uploaded:</strong> <br /><span></span></p>
+                            <div id="spnTags">
+                                <p><strong>Tags:</strong> <div class="btn-tags btn-group-xs"></div></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                                <div id="lnkLikeThisPhoto" class="pull-right">
+                                    <span id="likeSpan" class="glyphicon glyphicon-thumbs-up lnkLikeThisPhoto" aria-hidden="true"></span>
+                                    <span id="spnLikes"></span> Likes
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="share-extent-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></div>
+                <h3>Share Map Extent</h3>
+                <div class="modal-body-content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>To share your current map view with someone else, you can copy the link below or share it on the social media with their buttons.</p>
+                            <input type="text" id="share-extent-url" readonly="readonly" class="form-control" value="http://www.wow.local/#layer=drr">
+                            <div class="row">
+                                <div class="col-xs-12 m-b-md">
+
+                                    <ul class="social-items pull-right">
+                                        <li>
+                                            <a onclick="copyToClipboard('#share-extent-url');" class="fa fa-copy" title="Copy to Clipboard" aria-hidden="true"></a>
+                                        </li>
+                                        <li>
+                                            <a onclick="window.location.href = 'mailto:?subject=MetOffice WOW&amp;body=Check out this site! ' + encodeURIComponent($('#share-extent-url').val());" class="fa fa-envelope-o" aria-hidden="true"></a>
+                                        </li>
+                                        <li>
+                                            <a onclick="window.open('http://www.facebook.com/sharer.php?u=' + encodeURIComponent($('#share-extent-url').val()) + '&title=MetOffice WOW', '_blank', 'location=yes,height=500,width=500,scrollbars=yes,status=yes');" class="fa fa-facebook-official" aria-hidden="true"></a>
+                                        </li>
+                                        <li>
+                                            <a onclick="window.open('https://twitter.com/intent/tweet/?text=MetOffice WOW&url=' + encodeURIComponent($('#share-extent-url').val()), '_blank', 'location=yes,height=500,width=500,scrollbars=yes,status=yes');" class="fa fa-twitter" aria-hidden="true"></a>
+                                        </li>
+                                    </ul>
+                                    <div class="pull-left" style="margin-top: 10px">
+                                        <div class="share-extent-options-focus" style="display: none">
+                                            <span>Focus on:</span>
+                                            <label for="share-extent-options-include-current-view">
+                                                <input type="radio" name="share-extent-options-focus" class="extent-share-options" id="share-extent-options-include-current-view" checked="checked" value="current" />
+                                                Current view
+                                            </label>
+                                            <label for="share-extent-options-include-search">
+                                                <input type="radio" name="share-extent-options-focus" class="extent-share-options" id="share-extent-options-include-search" value="search" />
+                                                Search result
+                                            </label>
+                                        </div>
+                                        <span>Include:</span>
+                                        <label for="share-extent-options-include-date">
+                                            <input type="checkbox" class="extent-share-options" id="share-extent-options-include-date" />
+                                            Selected date
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></div>
+                    <h3>Login with...</h3>
+                    <div class="modal-body-content">
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-2 social-buttons">
+                                <a class="btn btn-block btn-social btn-reddit" href="/account/externallogin/wave">
+                                    <span class=""><img src="/Assets/Images/metoffice-logo-dark.jpg" style="width: 16px"></span> Sign in with Met Office Account
+                                </a>
+                                <div style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+                                    <span style="text-align: center; font-size: 16px; font-weight: bold">or</span>
+                                </div>
+                                <a class="btn btn-block btn-social btn-facebook" href="/account/externallogin/Facebook">
+                                    <span class="fa fa-facebook"></span> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-block btn-social btn-google" href="/account/externallogin/Google">
+                                    <span class="fa fa-google"></span> Sign in with Google
+                                </a>
+                                <a class="btn btn-block btn-social btn-twitter" href="/account/externallogin/Twitter">
+                                    <span class="fa fa-twitter"></span> Sign in with Twitter
+                                </a>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-1">We are pleased to offer WOW registration through your social media accounts to help get you started on WOW more quickly, however if you don’t have a social media account then you can still register with the Met Office directly <a href="https://register.metoffice.gov.uk/WaveRegistrationClient/public/register.do?service=weatherobservations">here</a>. Users with an existing Met Office account can also log in with a social media account but this will not link with any existing site/s. <div style="margin-top: 10px; text-align: center"><a href="/support/socialmediadisclaimer">Disclaimer</a></div></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-4" style="text-align: center; margin-top: 10px">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-primary">
+                    <ul class="footer-nav footer-main-nav">
+                        <li class=""><a href="/education">Education</a></li>
+                        <li class=""><a href="/blog">Blog</a></li>
+                        <li class=""><a href="/feedback">WOW Feedback</a></li>
+                    </ul>
+                                <ul class="footer-nav back-top">
+                    <li><a href="#">Back to Top</a></li>
+                </ul>
+            </div>
+                <div class="footer-secondary">
+                    <ul class="footer-nav">
+                        
+                        <li><a href="http://www.metoffice.gov.uk/about-us/legal" target="_blank">Legal</a></li>
+                        <li><a href="/cookiespage" target="_blank">Cookies Policy</a></li>
+                        <li><a href="http://www.metoffice.gov.uk/about-us/jobs" target="_blank">Jobs</a></li>
+                        <li><a href="http://www.metoffice.gov.uk/about-us/contact" target="_blank">Contact Us</a></li>
+                        <li class=""><a href="/support/accessibility">Accessibility</a></li>
+                        
+                    </ul>
+                    <ul class="footer-nav social-nav">
+                        <li><a href="https://twitter.com/metoffice" class="fa fa-twitter" aria-hidden="true" target="_blank"></a></li>
+                        <li><a href="https://www.facebook.com/metoffice" class="fa fa-facebook-official" aria-hidden="true" target="_blank"></a></li>
+                        <li><a href="http://www.youtube.com/user/TheMetOffice" class="fa fa-youtube-play" aria-hidden="true" target="_blank"></a></li>
+                        <li><a href="https://www.flickr.com/photos/metoffice" class="fa fa-flickr" aria-hidden="true" target="_blank"></a></li>
+                    </ul>
+                </div>
+
+        <div class="footer-terciary">
+                <p>&copy; Crown Copyright, Met Office 2025</p>
+                                        <div class="footer-attribution">
+                    <div>Supported By</div>
+                    <div class="attr-logo">
+                        <a href="http://www.rmets.org/index.php" target="_blank">
+                            <img src="/Assets/Images/pages/RMetS-Logo-2018.jpg" height="35" alt="Royal Meteorological Society" />
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="/assets/js/vendors/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/moment.min.js"></script>
+    <script type="text/javascript" src="/assets/js/cookie/js.cookie.js"></script>
+    <script type="text/javascript" src="/assets/js/wow-constants.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/wow-mapbox.js"></script>
+    <script type="text/javascript" src="/assets/js/wow-app.js"></script>
+    <script type="text/javascript" src="/assets/js/components/wow-dismiss-notifications.js"></script>
+    <script type="text/javascript" src="/assets/js/components/wow-back-top.js"></script>
+
+    <script type="text/javascript">
+
+        //$(function(){
+        //$.ajaxSetup({
+        //    "beforeSend": function(xhr) {
+        //        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        //    }
+        //});
+
+        $.ajaxSetup({ headers: { "X-Test-Header": "test-value" } })
+
+                                            //$.ajaxSetup({
+                                            //    headers: {"X-Requested-With":"XMLHttpRequest"}
+                                            //});
+
+                                            //});
+
+    </script>
+
+    
+    <script type="text/javascript" src="/assets/js/vendors/ol.js"></script>
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js"></script>
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
+    <script type="text/javascript" src="/assets/js/vendors/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/bootstrap-multiselect.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/typeahead.jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/dygraph.js"></script>
+    <script type="text/javascript" src="/assets/js/vendors/synchronizer.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-arrays.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-global.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-layers.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-init.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-summary-overlay.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-legends.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-layer-filter.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-search.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-geolocate.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-timepicker.js"></script>
+    <script type="text/javascript" src="/assets/js/forms/form-common.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-impacts.js"></script>
+    <script type="text/javascript" src="/assets/js/maps/map-homepage/map-weathercodes.js"></script>
+
+    <script type="text/javascript">
+        function copyToClipboard(element) {
+            $(element).select();
+            document.execCommand("copy");
+        }
+    </script>
+
+
+
+    
+    <script data-src="/assets/js/delete-cookies.js" type="text/plain" data-run-after-consent="" data-consent-purposes="!1"></script>
+    <script src="/assets/js/run-scripts-requiring-consent.js"></script>
+</body>
+</html>

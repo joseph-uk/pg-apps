@@ -1,0 +1,477 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Reddit freeflight",
+        "totalResults": "156000",
+        "searchTerms": "Reddit freeflight",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Reddit freeflight",
+        "totalResults": "156000",
+        "searchTerms": "Reddit freeflight",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.209817,
+    "formattedSearchTime": "0.21",
+    "totalResults": "156000",
+    "formattedTotalResults": "156,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "r/freeflight",
+      "htmlTitle": "r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/",
+      "displayLink": "www.reddit.com",
+      "snippet": "7 days ago ... Very entertaining and informative. I'm getting a windsurfing vibe from it. You can go up when the air is calm and just go for a little putt-putt ...",
+      "htmlSnippet": "7 days ago \u003cb\u003e...\u003c/b\u003e Very entertaining and informative. I&#39;m getting a windsurfing vibe from it. You can go up when the air is calm and just go for a little putt-putt&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtOjhfkgUKQbL3DZxe5F6OVsgeDNffleObjJ7n9RllKQTSsimax7VIaY&s",
+            "width": "192",
+            "height": "192"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+            "theme-color": "#000000",
+            "og:image:width": "256",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "r/freeflight",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight",
+            "og:image:height": "256",
+            "bingbot": "noarchive",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Where pilots of all free flight persuasions mingle: paragliding, hang gliding, speedriding/speedflying, and others!",
+            "twitter:image": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What is the experience of paragliding like? : r/freeflight",
+      "htmlTitle": "What is the experience of paragliding like? : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/p55tga/what_is_the_experience_of_paragliding_like/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Aug 16, 2021 ... I hate heights. Sweaty palms and all that. Paragliding is very smooth and you don't feel as if you're about to fall. No stomach drop feeling.",
+      "htmlSnippet": "Aug 16, 2021 \u003cb\u003e...\u003c/b\u003e I hate heights. Sweaty palms and all that. Paragliding is very smooth and you don&#39;t feel as if you&#39;re about to fall. No stomach drop feeling.",
+      "formattedUrl": "https://www.reddit.com/.../freeflight/.../what_is_the_experience_of_paragli...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/.../\u003cb\u003efreeflight\u003c/b\u003e/.../what_is_the_experience_of_paragli...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/p55tga",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: What is the experience of paragliding like?",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: What is the experience of paragliding like?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/PeachWorms - 16 votes and 17 comments",
+            "twitter:image": "https://share.redd.it/preview/post/p55tga",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/p55tga/what_is_the_experience_of_paragliding_like/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Hang Glider is now live on Glider Sim! : r/freeflight",
+      "htmlTitle": "The Hang Glider is now live on Glider Sim! : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/1cc67eb/the_hang_glider_is_now_live_on_glider_sim/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Apr 24, 2024 ... I have been using Glidersim for over 100 hours now and can say that it is the very best paragliding/hang gliding sim available. I'm an ex- ...",
+      "htmlSnippet": "Apr 24, 2024 \u003cb\u003e...\u003c/b\u003e I have been using Glidersim for over 100 hours now and can say that it is the very best paragliding/hang gliding sim available. I&#39;m an ex-&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../freeflight/.../the_hang_glider_is_now_live_on_g...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/.../\u003cb\u003efreeflight\u003c/b\u003e/.../the_hang_glider_is_now_live_on_g...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe7E4iC5cs7yxFnAu55taK0EmorPjw-2HH4D980RmKpaAiCvbfnXjVmMU&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://external-preview.redd.it/the-hang-glider-is-now-live-on-glider-sim-v0-d3h4eDEzY214Z3djMVgpEORYZXACOjsG1Ho867XV6f7r9KNiRnqFDgWBzeK7.png?width=1080&crop=smart&format=pjpg&auto=webp&s=bfdb84f3cfa3c1c38d6dd95e78c84798dd139fd5",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: The Hang Glider is now live on Glider Sim!",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: The Hang Glider is now live on Glider Sim!",
+            "og:image:height": "607",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/5DRealities - 41 votes and 12 comments",
+            "twitter:image": "https://external-preview.redd.it/the-hang-glider-is-now-live-on-glider-sim-v0-d3h4eDEzY214Z3djMVgpEORYZXACOjsG1Ho867XV6f7r9KNiRnqFDgWBzeK7.png?width=1080&crop=smart&format=pjpg&auto=webp&s=bfdb84f3cfa3c1c38d6dd95e78c84798dd139fd5",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1cc67eb/the_hang_glider_is_now_live_on_glider_sim/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-preview.redd.it/the-hang-glider-is-now-live-on-glider-sim-v0-d3h4eDEzY214Z3djMVgpEORYZXACOjsG1Ho867XV6f7r9KNiRnqFDgWBzeK7.png?width=1080&crop=smart&format=pjpg&auto=webp&s=bfdb84f3cfa3c1c38d6dd95e78c84798dd139fd5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flapping launch : r/freeflight",
+      "htmlTitle": "Flapping launch : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/11dgx17/flapping_launch/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Feb 27, 2023 ... In case of a sudden, strong change of the angle of attack, wing profiles form a so-called starting vortex. This causes the lift to be ...",
+      "htmlSnippet": "Feb 27, 2023 \u003cb\u003e...\u003c/b\u003e In case of a sudden, strong change of the angle of attack, wing profiles form a so-called starting vortex. This causes the lift to be&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/comments/11dgx17/flapping_launch/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/comments/11dgx17/flapping_launch/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjAr8dtLPTge_7cdSUNqk3YjvSDnJre-FYoggHS7oHiteiS5_8Va3a7l8&s",
+            "width": "169",
+            "height": "298"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://external-preview.redd.it/flapping-launch-v0-bYdHFgzxCRd0-05JGfg-sSrvJuLlBxm1_MpnZqQsqlw.png?format=pjpg&auto=webp&s=ec5a017673910334764f1a94afabc596c7a64f4e",
+            "theme-color": "#000000",
+            "og:image:width": "408",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: Flapping launch",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: Flapping launch",
+            "og:image:height": "720",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/_v9_ - 844 votes and 48 comments",
+            "twitter:image": "https://external-preview.redd.it/flapping-launch-v0-bYdHFgzxCRd0-05JGfg-sSrvJuLlBxm1_MpnZqQsqlw.png?format=pjpg&auto=webp&s=ec5a017673910334764f1a94afabc596c7a64f4e",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/11dgx17/flapping_launch/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-preview.redd.it/flapping-launch-v0-bYdHFgzxCRd0-05JGfg-sSrvJuLlBxm1_MpnZqQsqlw.png?format=pjpg&auto=webp&s=ec5a017673910334764f1a94afabc596c7a64f4e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "r/paragliding",
+      "htmlTitle": "r/paragliding",
+      "link": "https://www.reddit.com/r/paragliding/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Paramotorists are also welcome to be a part. In 1 week,. r/paragliding. will redirect to. r/freeflight . The paramotor pilots are free to decide what they would ...",
+      "htmlSnippet": "Paramotorists are also welcome to be a part. In 1 week,. r/paragliding. will redirect to. r/\u003cb\u003efreeflight\u003c/b\u003e . The paramotor pilots are free to decide what they would&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/paragliding/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/paragliding/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtOjhfkgUKQbL3DZxe5F6OVsgeDNffleObjJ7n9RllKQTSsimax7VIaY&s",
+            "width": "192",
+            "height": "192"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+            "theme-color": "#000000",
+            "og:image:width": "256",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "r/paragliding",
+            "og:site_name": "Reddit",
+            "og:title": "r/paragliding",
+            "og:image:height": "256",
+            "bingbot": "noarchive",
+            "msapplication-navbutton-color": "#000000",
+            "twitter:image": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/paragliding/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.redditstatic.com/shreddit/assets/favicon/192x192.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "UK paragliding school refund advice : r/freeflight",
+      "htmlTitle": "UK paragliding school refund advice : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/1g7w7so/uk_paragliding_school_refund_advice/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 20, 2024 ... I can empathise with the frustration though - I remember taking my EP and booking 2 weeks off work in the summer to do it. Out of those 2 weeks ...",
+      "htmlSnippet": "Oct 20, 2024 \u003cb\u003e...\u003c/b\u003e I can empathise with the frustration though - I remember taking my EP and booking 2 weeks off work in the summer to do it. Out of those 2 weeks&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/.../uk_paragliding_school_refund_advic...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/.../uk_paragliding_school_refund_advic...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1g7w7so",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: UK paragliding school refund advice",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: UK paragliding school refund advice",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/kletten - 3 votes and 17 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1g7w7so",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1g7w7so/uk_paragliding_school_refund_advice/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/1g7w7so"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "First day with the new Flare Line 11 : r/freeflight",
+      "htmlTitle": "First day with the new Flare Line 11 : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/18lhbdi/first_day_with_the_new_flare_line_11/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Dec 18, 2023 ... How the fuck did you manage to get yours already?! Upvote 2. Downvote Reply reply. Award Share. u/blowfisch avatar · blowfisch. OP. • 1y ago. I ...",
+      "htmlSnippet": "Dec 18, 2023 \u003cb\u003e...\u003c/b\u003e How the fuck did you manage to get yours already?! Upvote 2. Downvote Reply reply. Award Share. u/blowfisch avatar &middot; blowfisch. OP. • 1y ago. I&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/.../first_day_with_the_new_flare_line_1...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/.../first_day_with_the_new_flare_line_1...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX7fnhgf3X_c6lgHfUD5h0gDnWEkQP3wxTB8rOrM5rSlejSU2nEJ2mCXs&s",
+            "width": "168",
+            "height": "300"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://external-preview.redd.it/first-day-with-the-new-flare-line-11-v0-dWJmNW1tcDl2MzdjMdbbp_MdGi0d41Sg3On-vMLlf7ezDWaCLXnJke24tQdD.png?width=1080&crop=smart&format=pjpg&auto=webp&s=10aa06500bfccdc79f8374e14fc609d1781c8f54",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: First day with the new Flare Line 11",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: First day with the new Flare Line 11",
+            "og:image:height": "1920",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/blowfisch - 114 votes and 22 comments",
+            "twitter:image": "https://external-preview.redd.it/first-day-with-the-new-flare-line-11-v0-dWJmNW1tcDl2MzdjMdbbp_MdGi0d41Sg3On-vMLlf7ezDWaCLXnJke24tQdD.png?width=1080&crop=smart&format=pjpg&auto=webp&s=10aa06500bfccdc79f8374e14fc609d1781c8f54",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/18lhbdi/first_day_with_the_new_flare_line_11/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-preview.redd.it/first-day-with-the-new-flare-line-11-v0-dWJmNW1tcDl2MzdjMdbbp_MdGi0d41Sg3On-vMLlf7ezDWaCLXnJke24tQdD.png?width=1080&crop=smart&format=pjpg&auto=webp&s=10aa06500bfccdc79f8374e14fc609d1781c8f54"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "String harness comfort? : r/freeflight",
+      "htmlTitle": "String harness comfort? : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/1gvxae9/string_harness_comfort/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Nov 20, 2024 ... On some stringers like the Advance Strapless it's basically just a small cord at the shoulders and the material supporting your back stops at ...",
+      "htmlSnippet": "Nov 20, 2024 \u003cb\u003e...\u003c/b\u003e On some stringers like the Advance Strapless it&#39;s basically just a small cord at the shoulders and the material supporting your back stops at&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/comments/.../string_harness_comfort/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/comments/.../string_harness_comfort/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1gvxae9",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: String harness comfort?",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: String harness comfort?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/DeadFetusConsumer - 3 votes and 13 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1gvxae9",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1gvxae9/string_harness_comfort/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/1gvxae9"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Suitable hike and fly harness for novice pilot? : r/freeflight",
+      "htmlTitle": "Suitable hike and fly harness for novice pilot? : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/1e3xrlp/suitable_hike_and_fly_harness_for_novice_pilot/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Jul 15, 2024 ... Most people seem to recommend the Advance Easiness 3, but I just absolutely hate reversible harnesses. Is there a harness that is comfortable enough for ...",
+      "htmlSnippet": "Jul 15, 2024 \u003cb\u003e...\u003c/b\u003e Most people seem to recommend the Advance Easiness 3, but I just absolutely hate reversible harnesses. Is there a harness that is comfortable enough for&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../freeflight/.../suitable_hike_and_fly_harness_for_...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/.../\u003cb\u003efreeflight\u003c/b\u003e/.../suitable_hike_and_fly_harness_for_...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1e3xrlp",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: Suitable hike and fly harness for novice pilot?",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: Suitable hike and fly harness for novice pilot?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/SherryJug - 3 votes and 41 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1e3xrlp",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1e3xrlp/suitable_hike_and_fly_harness_for_novice_pilot/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/1e3xrlp"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "PG on a PPG Ozone spyder wing? : r/freeflight",
+      "htmlTitle": "PG on a PPG Ozone spyder wing? : r/\u003cb\u003efreeflight\u003c/b\u003e",
+      "link": "https://www.reddit.com/r/freeflight/comments/dm426u/pg_on_a_ppg_ozone_spyder_wing/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 23, 2019 ... Has anyone flown a spyder by Ozone without a motor? I imagine this can be done but do not know how efficiently. I will leave a link to the wing specs below.",
+      "htmlSnippet": "Oct 23, 2019 \u003cb\u003e...\u003c/b\u003e Has anyone flown a spyder by Ozone without a motor? I imagine this can be done but do not know how efficiently. I will leave a link to the wing specs below.",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/.../pg_on_a_ppg_ozone_spyder_wing/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ereddit\u003c/b\u003e.com/r/\u003cb\u003efreeflight\u003c/b\u003e/.../pg_on_a_ppg_ozone_spyder_wing/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/dm426u",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: PG on a PPG Ozone spyder wing?",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: PG on a PPG Ozone spyder wing?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/[Deleted Account] - 7 votes and 4 comments",
+            "twitter:image": "https://share.redd.it/preview/post/dm426u",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/dm426u/pg_on_a_ppg_ozone_spyder_wing/"
+          }
+        ]
+      }
+    }
+  ]
+}

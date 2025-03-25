@@ -1,0 +1,642 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - sky nomads aricles",
+        "totalResults": "155",
+        "searchTerms": "sky nomads aricles",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - sky nomads aricles",
+        "totalResults": "155",
+        "searchTerms": "sky nomads aricles",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.367036,
+    "formattedSearchTime": "0.37",
+    "totalResults": "155",
+    "formattedTotalResults": "155"
+  },
+  "spelling": {
+    "correctedQuery": "sky nomads articles",
+    "htmlCorrectedQuery": "sky nomads \u003cb\u003e\u003ci\u003earticles\u003c/i\u003e\u003c/b\u003e"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Ash Wastes Box Only Nomad/Orloc Build Recommendation? : r ...",
+      "htmlTitle": "Ash Wastes Box Only \u003cb\u003eNomad\u003c/b\u003e/Orloc Build Recommendation? : r ...",
+      "link": "https://www.reddit.com/r/necromunda/comments/13rzsx5/ash_wastes_box_only_nomadorloc_build/",
+      "displayLink": "www.reddit.com",
+      "snippet": "May 26, 2023 ... Don't forget all your guys can hide out in the open too with the sky mantle! ... Perhaps they don't have a Nomads article… I feel like I read one ...",
+      "htmlSnippet": "May 26, 2023 \u003cb\u003e...\u003c/b\u003e Don&#39;t forget all your guys can hide out in the open too with the \u003cb\u003esky\u003c/b\u003e mantle! ... Perhaps they don&#39;t have a \u003cb\u003eNomads article\u003c/b\u003e… I feel like I read one&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/.../ash_wastes_box_only_nomadorloc_build/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/.../ash_wastes_box_only_nomadorloc_build/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/13rzsx5",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/necromunda on Reddit: Ash Wastes Box Only Nomad/Orloc Build Recommendation?",
+            "og:site_name": "Reddit",
+            "og:title": "r/necromunda on Reddit: Ash Wastes Box Only Nomad/Orloc Build Recommendation?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Ryderbro23 - 12 votes and 8 comments",
+            "twitter:image": "https://share.redd.it/preview/post/13rzsx5",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/necromunda/comments/13rzsx5/ash_wastes_box_only_nomadorloc_build/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/13rzsx5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "An incredible Journey with the Bajau, the Sea Nomads",
+      "htmlTitle": "An incredible Journey with the Bajau, the Sea \u003cb\u003eNomads\u003c/b\u003e",
+      "link": "https://www.rehahnphotographer.com/borneo-bajau-gypsies/",
+      "displayLink": "www.rehahnphotographer.com",
+      "snippet": "Where the Bajau people live in Malaysia ? This map highlights the regions where the Bajau people reside, as detailed in the article below.",
+      "htmlSnippet": "Where the Bajau people live in Malaysia ? This map highlights the regions where the Bajau people reside, as detailed in the \u003cb\u003earticle\u003c/b\u003e below.",
+      "formattedUrl": "https://www.rehahnphotographer.com/borneo-bajau-gypsies/",
+      "htmlFormattedUrl": "https://www.rehahnphotographer.com/borneo-bajau-gypsies/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobImYUBbaYqvMZLnmAnt2N7Lj6GjbwNBgOshLoFYOAcdZV5wUXXsYftfT&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.rehahnphotographer.com/wp-content/uploads/2015/03/Borneo-bajau-photo-rehahn.webp",
+            "og:image:width": "1200",
+            "article:published_time": "March 19, 2015",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Réhahn Photography",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Time to read",
+            "og:image:type": "image/webp",
+            "msapplication-tileimage": "https://www.rehahnphotographer.com/wp-content/uploads/2024/03/favicon-Rehahn-e1621172863894.png",
+            "og:description": "Discover Réhahn’s thrilling adventure to meet the Bajau sea nomads who sail the seas near Borneo in complete harmony with their environment.",
+            "article:publisher": "https://www.facebook.com/Rehahn.Photography",
+            "og:image:secure_url": "https://www.rehahnphotographer.com/wp-content/uploads/2015/03/Borneo-bajau-photo-rehahn.webp",
+            "twitter:image": "https://www.rehahnphotographer.com/wp-content/uploads/2015/03/Borneo-bajau-photo-rehahn.webp",
+            "twitter:data1": "developer",
+            "twitter:data2": "8 minutes",
+            "article:modified_time": "October 7, 2024",
+            "og:type": "article",
+            "article:section": "Editorial",
+            "og:image:alt": "The Bajau People in Borneo",
+            "twitter:title": "An incredible Journey with the Bajau, the Sea Nomads",
+            "og:title": "An incredible Journey with the Bajau, the Sea Nomads",
+            "og:image:height": "800",
+            "og:updated_time": "2024-10-07T08:36:46+07:00",
+            "article:author": "https://www.facebook.com/Rehahn.Photography",
+            "article:tag": "bajau",
+            "og:locale:alternate": "fr_FR",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Discover Réhahn’s thrilling adventure to meet the Bajau sea nomads who sail the seas near Borneo in complete harmony with their environment.",
+            "og:locale": "en_US",
+            "og:url": "https://www.rehahnphotographer.com/borneo-bajau-gypsies/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.rehahnphotographer.com/wp-content/uploads/2015/03/Borneo-bajau-photo-rehahn.webp"
+          }
+        ],
+        "article": [
+          {
+            "image": "https://www.rehahnphotographer.com/wp-content/uploads/2015/03/Borneo-bajau-photo-rehahn.webp",
+            "text": "Home | Editorial | An incredible Journey in Borneo with Sea Nomads As a photographer, I’ve gone to the ends of the earth. In 2015, I decided to go to the depths of the sea to meet the Bajau...",
+            "headline": "An incredible Journey in Borneo with Sea Nomads"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The ancient origins of the new nomads",
+      "htmlTitle": "The ancient origins of the new \u003cb\u003enomads\u003c/b\u003e",
+      "link": "https://www.bbc.com/culture/article/20210730-the-ancient-origins-of-the-new-nomads",
+      "displayLink": "www.bbc.com",
+      "snippet": "Aug 1, 2021 ... Itinerant lifestyles may feel new but the ideas behind globe-trotting ways of living go back millennia. Cassidy George explores wanderings ...",
+      "htmlSnippet": "Aug 1, 2021 \u003cb\u003e...\u003c/b\u003e Itinerant lifestyles may feel new but the ideas behind globe-trotting ways of living go back millennia. Cassidy George explores wanderings&nbsp;...",
+      "formattedUrl": "https://www.bbc.com/.../20210730-the-ancient-origins-of-the-new-nomads",
+      "htmlFormattedUrl": "https://www.bbc.com/.../20210730-the-ancient-origins-of-the-new-\u003cb\u003enomads\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCW6EvwpEHCIwFn40rUkFvflKT1NBfjMpqSanFNaxBWvtGoHCk_OQkWPw&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://ychef.files.bbci.co.uk/624x351/p09qklmz.jpg",
+            "apple-itunes-app": "app-id=364147881, app-argument=https://www.bbc.com/culture/article/20210730-the-ancient-origins-of-the-new-nomads",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#ffffff",
+            "cxenseparse:publishtime": "2021-08-02T00:00:00.000Z",
+            "al:android:package": "bbc.mobile.news.ww",
+            "al:ios:url": "bbcx://culture/article/20210730-the-ancient-origins-of-the-new-nomads",
+            "og:description": "Itinerant lifestyles may feel new but the ideas behind globe-trotting ways of living go back millennia. Cassidy George explores wanderings past and present.",
+            "al:ios:app_store_id": "364147881",
+            "next-head-count": "37",
+            "twitter:image:alt": "Illustration",
+            "cxenseparse:author": "Cassidy George",
+            "article:modified_time": "2021-08-02T00:00:00.000Z",
+            "msapplication-tilecolor": "#da532c",
+            "twitter:title": "The ancient origins of the new nomads",
+            "og:image:alt": "Illustration",
+            "al:ios:app_name": "BBC: World News & Stories",
+            "cxenseparse:pageclass": "article",
+            "og:title": "The ancient origins of the new nomads",
+            "al:web:url": "https://bbc.com/culture/article/20210730-the-ancient-origins-of-the-new-nomads",
+            "version": "2.16.1+2",
+            "twitter:image:src": "https://ychef.files.bbci.co.uk/624x351/p09qklmz.jpg",
+            "al:android:url": "bbcx://culture/article/20210730-the-ancient-origins-of-the-new-nomads",
+            "viewport": "width=device-width",
+            "twitter:description": "Itinerant lifestyles may feel new but the ideas behind globe-trotting ways of living go back millennia. Cassidy George explores wanderings past and present.",
+            "al:android:app_name": "BBC: World News & Stories"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ychef.files.bbci.co.uk/624x351/p09qklmz.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Beyond Borders: A Deep Dive Into the Nomadic Way of Life - The ...",
+      "htmlTitle": "Beyond Borders: A Deep Dive Into the \u003cb\u003eNomadic\u003c/b\u003e Way of Life - The ...",
+      "link": "https://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+      "displayLink": "www.nytimes.com",
+      "snippet": "Oct 20, 2022 ... ... nomads can learn a few things from traditional cultures. Share full article. 62. 62. A man wearing a T-shirt and jacket, his hair blowing in the ...",
+      "htmlSnippet": "Oct 20, 2022 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003enomads\u003c/b\u003e can learn a few things from traditional cultures. Share full \u003cb\u003earticle\u003c/b\u003e. 62. 62. A man wearing a T-shirt and jacket, his hair blowing in the&nbsp;...",
+      "formattedUrl": "https://www.nytimes.com/2022/10/.../anthony-sattin-nomads-interview.html",
+      "htmlFormattedUrl": "https://www.nytimes.com/2022/10/.../anthony-sattin-\u003cb\u003enomads\u003c/b\u003e-interview.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4TbQ-ZyTzlJ1H2OfJWwNZyXm_j-2RKs8b6QAhiFrqKTsWj7aBetpNHYm&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://static01.nyt.com/images/2022/10/04/travel/00QNA-nomads/oakImage-1664912219602-facebookJumbo.jpg?year=2022&h=549&w=1050&s=d7c65fbc769bc52ac0a9bde5ebd56685e639cfb23627a204f6986df6c0075726&k=ZQJBKqZ0VN",
+            "nyt_uri": "nyt://article/7ad8655a-5e2b-5e7f-8dab-28e3277013f1",
+            "twitter:app:id:googleplay": "com.nytimes.android",
+            "twitter:card": "summary_large_image",
+            "article:published_time": "2022-10-14T09:00:29.000Z",
+            "pt": "article",
+            "twitter:url": "https://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+            "pdate": "20221014",
+            "articleid": "100000008545697",
+            "al:android:package": "com.nytimes.android",
+            "al:ipad:app_store_id": "357066198",
+            "twitter:app:name:googleplay": "NYTimes",
+            "og:description": "Anthony Sattin, the author of a new book on nomadic groups, discusses how contemporary travelers and digital nomads can learn a few things from traditional cultures.",
+            "twitter:image": "https://static01.nyt.com/images/2022/10/04/travel/00QNA-nomads/oakImage-1664912219602-videoSixteenByNine3000.jpg?year=2022&h=1686&w=3000&s=bf6d2411c68cde41e53c3d9934f922cb302683f953af5a15b76d863a39b1d83a&k=ZQJBKqZ0VN&tw=1",
+            "pst": "News",
+            "twitter:image:alt": "Anthony Sattin’s research for his new book, “Nomads: The Wanderers Who Shaped Our World,” included years of travels with modern-day nomadic peoples in the Middle East, Africa and beyond. Above, the author, in northern Iran.",
+            "al:iphone:app_name": "NYTimes",
+            "twitter:site": "@nytimes",
+            "article:modified_time": "2022-10-20T18:30:04.096Z",
+            "news_keywords": "Books,Nomad,Anthony Sattin,Nomads,Writer,Personal Profile;People Story",
+            "article:content_tier": "metered",
+            "msapplication-starturl": "https://www.nytimes.com",
+            "image": "https://static01.nyt.com/images/2022/10/04/travel/00QNA-nomads/oakImage-1664912219602-facebookJumbo.jpg?year=2022&h=549&w=1050&s=d7c65fbc769bc52ac0a9bde5ebd56685e639cfb23627a204f6986df6c0075726&k=ZQJBKqZ0VN",
+            "twitter:title": "Beyond Borders: A Deep Dive Into the Nomadic Way of Life (Published 2022)",
+            "og:type": "article",
+            "og:image:alt": "Anthony Sattin’s research for his new book, “Nomads: The Wanderers Who Shaped Our World,” included years of travels with modern-day nomadic peoples in the Middle East, Africa and beyond. Above, the author, in northern Iran.",
+            "article:section": "Travel",
+            "cg": "travel",
+            "pubp_event_id": "pubp://event/7a7e6d4af97c4572bdf64ef56913b0f3",
+            "og:title": "Beyond Borders: A Deep Dive Into the Nomadic Way of Life (Published 2022)",
+            "url": "https://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+            "article:tag": "Books and Literature",
+            "al:iphone:url": "nytimes://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+            "al:android:url": "nyt://article/7ad8655a-5e2b-5e7f-8dab-28e3277013f1",
+            "twitter:app:url:googleplay": "nyt://article/7ad8655a-5e2b-5e7f-8dab-28e3277013f1",
+            "fb:app_id": "9869919170",
+            "al:ipad:url": "nytimes://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+            "byl": "By David Farley",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Anthony Sattin, the author of a new book on nomadic groups, discusses how contemporary travelers and digital nomads can learn a few things from traditional cultures.",
+            "al:iphone:app_store_id": "284862083",
+            "al:ipad:app_name": "NYTimes",
+            "og:url": "https://www.nytimes.com/2022/10/14/travel/anthony-sattin-nomads-interview.html",
+            "al:android:app_name": "NYTimes",
+            "article:opinion": "false"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static01.nyt.com/images/2022/10/04/travel/00QNA-nomads/oakImage-1664912219602-facebookJumbo.jpg?year=2022&h=549&w=1050&s=d7c65fbc769bc52ac0a9bde5ebd56685e639cfb23627a204f6986df6c0075726&k=ZQJBKqZ0VN"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How has the digital nomad trend evolved over the years?",
+      "htmlTitle": "How has the digital \u003cb\u003enomad\u003c/b\u003e trend evolved over the years?",
+      "link": "https://www.bbc.com/travel/article/20240925-the-evolution-of-the-digital-nomad",
+      "displayLink": "www.bbc.com",
+      "snippet": "Sep 30, 2024 ... Whether seen as a positive or a negative, the digital nomad trend continues with new visas and organisations aimed at this population ...",
+      "htmlSnippet": "Sep 30, 2024 \u003cb\u003e...\u003c/b\u003e Whether seen as a positive or a negative, the digital \u003cb\u003enomad\u003c/b\u003e trend continues with new visas and organisations aimed at this population&nbsp;...",
+      "formattedUrl": "https://www.bbc.com/travel/.../20240925-the-evolution-of-the-digital-noma...",
+      "htmlFormattedUrl": "https://www.bbc.com/travel/.../20240925-the-evolution-of-the-digital-noma...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBRLsOhMewGBL3Oos5X8qN3bKE2WuhbbhrXqnhzqR1xFsTbANm01fMfAae&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://ychef.files.bbci.co.uk/624x351/p0jsssj4.jpg",
+            "apple-itunes-app": "app-id=364147881, app-argument=https://www.bbc.com/travel/article/20240925-the-evolution-of-the-digital-nomad",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#ffffff",
+            "cxenseparse:publishtime": "2024-09-30T13:00:00.000Z",
+            "al:android:package": "bbc.mobile.news.ww",
+            "al:ios:url": "bbcx://travel/article/20240925-the-evolution-of-the-digital-nomad",
+            "og:description": "Whether seen as a positive or a negative, the digital nomad trend continues with new visas and organisations aimed at this population popping up around the world.",
+            "al:ios:app_store_id": "364147881",
+            "next-head-count": "37",
+            "twitter:image:alt": "Woman in a hat working on her laptop by the ocean (Credit: Getty Images)",
+            "cxenseparse:author": "Lynn Brown",
+            "article:modified_time": "2024-09-30T13:00:00.000Z",
+            "msapplication-tilecolor": "#da532c",
+            "twitter:title": "How has the digital nomad trend evolved over the years?",
+            "og:image:alt": "Woman in a hat working on her laptop by the ocean (Credit: Getty Images)",
+            "al:ios:app_name": "BBC: World News & Stories",
+            "cxenseparse:pageclass": "article",
+            "og:title": "How has the digital nomad trend evolved over the years?",
+            "al:web:url": "https://bbc.com/travel/article/20240925-the-evolution-of-the-digital-nomad",
+            "version": "2.16.1+2",
+            "twitter:image:src": "https://ychef.files.bbci.co.uk/624x351/p0jsssj4.jpg",
+            "al:android:url": "bbcx://travel/article/20240925-the-evolution-of-the-digital-nomad",
+            "viewport": "width=device-width",
+            "twitter:description": "Whether seen as a positive or a negative, the digital nomad trend continues with new visas and organisations aimed at this population popping up around the world.",
+            "al:android:app_name": "BBC: World News & Stories"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ychef.files.bbci.co.uk/624x351/p0jsssj4.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Digital nomads: rising number of people choose to work remotely ...",
+      "htmlTitle": "Digital \u003cb\u003enomads\u003c/b\u003e: rising number of people choose to work remotely ...",
+      "link": "https://www.theguardian.com/money/2023/nov/04/digital-nomads-work-remotely-tech-visas",
+      "displayLink": "www.theguardian.com",
+      "snippet": "Nov 4, 2023 ... Digital nomads: rising number of people choose to work remotely. This article ... sky thinking: new rules allow digital nomads to work in ...",
+      "htmlSnippet": "Nov 4, 2023 \u003cb\u003e...\u003c/b\u003e Digital \u003cb\u003enomads\u003c/b\u003e: rising number of people choose to work remotely. This \u003cb\u003earticle\u003c/b\u003e ... \u003cb\u003esky\u003c/b\u003e thinking: new rules allow digital \u003cb\u003enomads\u003c/b\u003e to work in&nbsp;...",
+      "formattedUrl": "https://www.theguardian.com/.../digital-nomads-work-remotely-tech-visas",
+      "htmlFormattedUrl": "https://www.theguardian.com/.../digital-\u003cb\u003enomads\u003c/b\u003e-work-remotely-tech-visas",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOreb9px4kZo_MQ2PmCiPdO42gLUGbC7380_n0lzlC8RfGvtpoUfzdkWOw&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://i.guim.co.uk/img/media/5a1bd6df8bf02499f2dbea294887df53b4db4e66/0_317_6587_3955/master/6587.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&enable=upscale&s=c7c9ce37c6b4186814d86935eb64cb1b",
+            "twitter:app:id:googleplay": "com.guardian",
+            "twitter:app:url:iphone": "gnmguardian://money/2023/nov/04/digital-nomads-work-remotely-tech-visas?contenttype=Article&source=twitter",
+            "theme-color": "#052962",
+            "og:image:width": "1200",
+            "article:published_time": "2023-11-04T09:00:34.000Z",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "the Guardian",
+            "twitter:app:url:ipad": "gnmguardian://money/2023/nov/04/digital-nomads-work-remotely-tech-visas?contenttype=Article&source=twitter",
+            "twitter:app:name:googleplay": "The Guardian",
+            "al:ios:url": "gnmguardian://money/2023/nov/04/digital-nomads-work-remotely-tech-visas?contenttype=Article&source=applinks",
+            "twitter:app:id:iphone": "409128287",
+            "og:description": "Mainstream workers join tech pioneers as the number of countries offering visas increases",
+            "article:publisher": "https://www.facebook.com/theguardian",
+            "al:ios:app_store_id": "409128287",
+            "twitter:dnt": "on",
+            "twitter:image": "https://i.guim.co.uk/img/media/5a1bd6df8bf02499f2dbea294887df53b4db4e66/0_317_6587_3955/master/6587.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&s=47f4a2cf2d9e662cc4f7fa6a586697d4",
+            "twitter:site": "@guardian",
+            "article:modified_time": "2023-11-04T09:00:35.000Z",
+            "og:type": "article",
+            "article:section": "Money",
+            "al:ios:app_name": "The Guardian",
+            "og:title": "Digital nomads: rising number of people choose to work remotely",
+            "og:image:height": "721",
+            "twitter:app:id:ipad": "409128287",
+            "article:author": "https://www.theguardian.com/profile/suzanne-bearne",
+            "article:tag": "Work & careers,Work-life balance,Money,Travel,Europe,World news,Working from home,UK cost of living crisis,Consumer affairs,UK news",
+            "fb:app_id": "180444840287",
+            "twitter:app:url:googleplay": "guardian://www.theguardian.com/money/2023/nov/04/digital-nomads-work-remotely-tech-visas",
+            "twitter:app:name:ipad": "The Guardian",
+            "viewport": "width=device-width,minimum-scale=1,initial-scale=1",
+            "og:url": "https://www.theguardian.com/money/2023/nov/04/digital-nomads-work-remotely-tech-visas",
+            "twitter:app:name:iphone": "The Guardian"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.guim.co.uk/img/media/5a1bd6df8bf02499f2dbea294887df53b4db4e66/0_317_6587_3955/master/6587.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctYWdlLTIwMjMucG5n&enable=upscale&s=c7c9ce37c6b4186814d86935eb64cb1b"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Nomadism | History, Culture & Benefits | Britannica",
+      "htmlTitle": "Nomadism | History, Culture &amp; Benefits | Britannica",
+      "link": "https://www.britannica.com/topic/nomadism",
+      "displayLink": "www.britannica.com",
+      "snippet": "Feb 28, 2025 ... The term nomad encompasses three general types: nomadic hunters and gatherers, pastoral nomads, and tinker or trader nomads. Although ...",
+      "htmlSnippet": "Feb 28, 2025 \u003cb\u003e...\u003c/b\u003e The term \u003cb\u003enomad\u003c/b\u003e encompasses three general types: \u003cb\u003enomadic\u003c/b\u003e hunters and gatherers, pastoral \u003cb\u003enomads\u003c/b\u003e, and tinker or trader \u003cb\u003enomads\u003c/b\u003e. Although&nbsp;...",
+      "formattedUrl": "https://www.britannica.com/topic/nomadism",
+      "htmlFormattedUrl": "https://www.britannica.com/topic/nomadism",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROP1esAYBjERf8UaxqUQdwx84rpbHE4mqIMylhqCfjl6Asd01Bs9IpNHlY&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.britannica.com/24/116524-050-F089867C/ger-Mongolian-dwelling-lattice-frame.jpg",
+            "twitter:card": "summary_large_image",
+            "og:type": "ARTICLE",
+            "og:site_name": "Encyclopedia Britannica",
+            "og:title": "Nomadism | History, Culture & Benefits | Britannica",
+            "og:image:type": "image/jpeg",
+            "og:description": "Nomadism, way of life of peoples who do not live continually in the same place but move cyclically or periodically. It is distinguished from migration, which is noncyclic and involves a total change of habitat. Nomadism does not imply unrestricted and undirected wandering; rather, it is based on",
+            "twitter:image": "https://cdn.britannica.com/24/116524-050-F089867C/ger-Mongolian-dwelling-lattice-frame.jpg",
+            "last-modified": "2025-02-28",
+            "fb:app_id": "1887621861548296",
+            "twitter:site": "@britannica",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Nomadism, way of life of peoples who do not live continually in the same place but move cyclically or periodically. It is distinguished from migration, which is noncyclic and involves a total change of habitat. Nomadism does not imply unrestricted and undirected wandering; rather, it is based on",
+            "og:url": "https://www.britannica.com/topic/nomadism"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.britannica.com/24/116524-050-F089867C/ger-Mongolian-dwelling-lattice-frame.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Overview Effect: How Seeing the Earth from Space Changes You",
+      "htmlTitle": "The Overview Effect: How Seeing the Earth from Space Changes You",
+      "link": "https://www.legalnomads.com/overview-effect/",
+      "displayLink": "www.legalnomads.com",
+      "snippet": "Dec 13, 2023 ... All Articles. Topics Menu Toggle. Travel · Health · Food · Law ... – Resources for Digital Nomads – Yes, There Is Life After Law – Beat ...",
+      "htmlSnippet": "Dec 13, 2023 \u003cb\u003e...\u003c/b\u003e All \u003cb\u003eArticles\u003c/b\u003e. Topics Menu Toggle. Travel &middot; Health &middot; Food &middot; Law ... – Resources for Digital \u003cb\u003eNomads\u003c/b\u003e – Yes, There Is Life After Law – Beat&nbsp;...",
+      "formattedUrl": "https://www.legalnomads.com/overview-effect/",
+      "htmlFormattedUrl": "https://www.legal\u003cb\u003enomads\u003c/b\u003e.com/overview-effect/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBZwsS58M-6_VftEqD2rHcQR0ui7kQyYc9OrZmApCB7qbQjXdxhIwjwk&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "person": [
+          {
+            "name": "Jodi Ettenberg",
+            "url": "Jodi Ettenberg"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.legalnomads.com/wp-content/uploads/2012/12/sunrise-1756274_1920.jpg",
+            "og:type": "article",
+            "og:image:width": "1920",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Legal Nomads",
+            "author": "Jodi Ettenberg",
+            "og:title": "The Overview Effect: How Seeing the Earth from Space Changes You",
+            "og:image:height": "960",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.legalnomads.com/wp-content/uploads/2021/06/LNavicon_32x32.png",
+            "og:description": "Viewing Earth from space induces The Overview Effect, a deep interconnectedness. Can travel & mindfulness can achieve part of this on Earth?",
+            "twitter:creator": "@legalnomads",
+            "article:publisher": "https://facebook.com/legalnomads",
+            "article:author": "https://facebook.com/legalnomads",
+            "twitter:data1": "Jodi Ettenberg",
+            "twitter:data2": "9 minutes",
+            "twitter:site": "@legalnomads",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.legalnomads.com/overview-effect/"
+          }
+        ],
+        "creativework": [
+          {
+            "image": "https://www.legalnomads.com/wp-content/uploads/2012/12/sunrise-1756274_1920-1024x512.jpg",
+            "text": "I met my friend Victoria at a conference in the Spring of 2012. We spent hours sitting and chatting about life and choices made, and why we did what we did. We bonded over a similar aim in...",
+            "headline": "The Overview Effect: How Seeing the Earth from Space Changes You"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.legalnomads.com/wp-content/uploads/2012/12/sunrise-1756274_1920.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Nomads travel to America's Walmarts to stock Amazon's shelves ...",
+      "htmlTitle": "\u003cb\u003eNomads\u003c/b\u003e travel to America&#39;s Walmarts to stock Amazon&#39;s shelves ...",
+      "link": "https://www.theverge.com/2019/7/10/20687434/amazon-sellers-nomad-merchants-products-malls-walmart",
+      "displayLink": "www.theverge.com",
+      "snippet": "Jul 10, 2019 ... ... sky. Iles reminisces about waking up in his van to see the sun ... article is presented to you). View Illustrations. Object to ...",
+      "htmlSnippet": "Jul 10, 2019 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003esky\u003c/b\u003e. Iles reminisces about waking up in his van to see the sun ... \u003cb\u003earticle\u003c/b\u003e is presented to you). View Illustrations. Object to&nbsp;...",
+      "formattedUrl": "https://www.theverge.com/.../amazon-sellers-nomad-merchants-products-m...",
+      "htmlFormattedUrl": "https://www.theverge.com/.../amazon-sellers-nomad-merchants-products-m...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlSkVuxygtwYOZ8x7tuY2AQVyBZzrubLNOdBlqigbf4E63NwSvIM-Xs3I&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/18299405/rmantle_190625_3518_5302.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "twitter:card": "summary_large_image",
+            "article:published_time": "2019-07-10T14:03:01+00:00",
+            "og:image:width": "1200",
+            "og:site_name": "The Verge",
+            "twitter:url": "https://www.theverge.com/2019/7/10/20687434/amazon-sellers-nomad-merchants-products-malls-walmart",
+            "apple-mobile-web-app-title": "Verge",
+            "parsely-author": "Josh Dzieza",
+            "bingbot": "nocache",
+            "og:image:type": "image/jpeg",
+            "cse-authors": "Josh Dzieza",
+            "og:description": "To stock Amazon’s shelves, merchants travel the backroads of America in search of rare soap and coveted toys.",
+            "twitter:image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/18299405/rmantle_190625_3518_5302.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "next-head-count": "42",
+            "parsely-type": "post",
+            "twitter:site": "@verge",
+            "article:modified_time": "2019-07-10T14:03:01+00:00",
+            "parsely-link": "https://www.theverge.com/2019/7/10/20687434/amazon-sellers-nomad-merchants-products-malls-walmart",
+            "parsely-image-url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/18299405/rmantle_190625_3518_5302.jpg?quality=90&strip=all&crop=0,10.732984293194,100,78.534031413613",
+            "parsely-section": "tech",
+            "og:type": "article",
+            "twitter:title": "Nomads travel to America’s Walmarts to stock Amazon’s shelves",
+            "cse-category": "Tech",
+            "author": "Josh Dzieza",
+            "cse-coral-id": "28ef409f-14b2-4414-b5e7-14c2570be603",
+            "og:title": "Nomads travel to America’s Walmarts to stock Amazon’s shelves",
+            "og:image:height": "628",
+            "parsely-title": "Road-tripping with the Amazon nomads",
+            "parsely-pub-date": "2019-07-10T14:03:01+00:00",
+            "fb:app_id": "549923288395304",
+            "parsely-tags": "theverge,pagetype:feature,featured-story,amazon,features,tech",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "twitter:description": "To stock Amazon’s shelves, merchants travel the backroads of America in search of rare soap and coveted toys.",
+            "og:url": "https://www.theverge.com/2019/7/10/20687434/amazon-sellers-nomad-merchants-products-malls-walmart"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/18299405/rmantle_190625_3518_5302.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Journal Of Nomads - Adventure Travel Blog",
+      "htmlTitle": "Journal Of \u003cb\u003eNomads\u003c/b\u003e - Adventure Travel Blog",
+      "link": "https://www.journalofnomads.com/",
+      "displayLink": "www.journalofnomads.com",
+      "snippet": "Journal of Nomads is an Adventure Travel Blog, focused on long-term travel and stunning off-the-beaten-path destinations and regions like Central Asia, ...",
+      "htmlSnippet": "Journal of \u003cb\u003eNomads\u003c/b\u003e is an Adventure Travel Blog, focused on long-term travel and stunning off-the-beaten-path destinations and regions like Central Asia,&nbsp;...",
+      "formattedUrl": "https://www.journalofnomads.com/",
+      "htmlFormattedUrl": "https://www.journalof\u003cb\u003enomads\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqjm_psUgYs0oX7VH-XpoodM_kwemgcByszZlwqJalXjwIUcUVuD9BtTcs&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "organization": [
+          {
+            "url": "https://www.journalofnomads.com/"
+          },
+          {
+            "url": "https://www.journalofnomads.com/"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.journalofnomads.com/wp-content/uploads/2019/12/Cynthia-Tajikistan.jpg",
+            "og:image:width": "1024",
+            "article:published_time": "2016-08-15T21:09:55+02:00",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Journal of Nomads",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Time to read",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.journalofnomads.com/wp-content/uploads/2023/07/JOURNal-of-nomads-400x400.png",
+            "og:description": "Journal of Nomads is an Adventure Travel Blog, focused on long-term travel and stunning off-the-beaten-path destinations and regions like Central Asia, Georgia, Azerbaijan,...",
+            "twitter:creator": "@journalnomads",
+            "og:image:secure_url": "https://www.journalofnomads.com/wp-content/uploads/2019/12/Cynthia-Tajikistan.jpg",
+            "twitter:image": "https://www.journalofnomads.com/wp-content/uploads/2019/12/Cynthia-Tajikistan.jpg",
+            "twitter:data1": "Cynthia",
+            "twitter:data2": "1 minute",
+            "twitter:site": "@JournalofNomads",
+            "article:modified_time": "2025-01-28T13:01:31+01:00",
+            "og:type": "website",
+            "og:image:alt": "Traveling in Central Asia - Hiking in Tajikistan - Central Asia Packing List",
+            "twitter:title": "Journal Of Nomads - Adventure Travel Blog",
+            "og:title": "Journal Of Nomads - Adventure Travel Blog",
+            "og:image:height": "682",
+            "og:updated_time": "2025-01-28T13:01:31+01:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Journal of Nomads is an Adventure Travel Blog, focused on long-term travel and stunning off-the-beaten-path destinations and regions like Central Asia, Georgia, Azerbaijan,...",
+            "og:locale": "en_US",
+            "og:url": "https://www.journalofnomads.com/"
+          }
+        ],
+        "creativework": [
+          {
+            "text": "travel blog for backpackers, Adventurers and outdoor lovers Hi, I’m Cynthia Bil, a Belgian adventurer and travel photographer who has lived nomadically since 2011. Instead of bouncing from..."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.journalofnomads.com/wp-content/uploads/2019/12/Cynthia-Tajikistan.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

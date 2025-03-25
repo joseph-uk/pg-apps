@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" href="/favicons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#ff8020">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="SpotAiR">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ff8020">
+<meta name="application-name" content="SpotAiR">
+<meta name="msapplication-TileColor" content="#ff8020">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ff8020">
+<meta property="og:title" content="SpotAiR" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.spotair.mobi" />
+<meta property="og:image" content="https://www.spotair.mobi/favicons/android-chrome-256x256.png" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:description" content="SpotAiR is dedicated to outdoor practices that depend heavily on weather conditions: paragliding, hanggliding, speed riding, kite. SpotAiR Aggregates many 'real time' data sources, allowing you to appreciate and share with your friends the conditions: weather stations, webcams, snow heights, shakas." />
+<script type="text/javascript" src="/jquery/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/jquery/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/moment/moment-with-locales-2.30.1.min.js"></script>
+<script type="text/javascript" src="/moment/moment-timezone-with-data-0.5.47.min.js"></script>
+<script type="text/javascript" src="/js/pedro.min.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="integrations.js"></script>
+<link rel="stylesheet" type="text/css" href="/jquery/jquery-ui-1.14.1/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="help.css" />
+<link rel="stylesheet" type="text/css" href="integrations.css" />
+<title>SpotAiR - Integrations</title>
+<script type="text/javascript">
+var contextPrefix = "";
+var baseLink = "www.spotair.mobi";
+$(document).ready(init);
+</script>
+</head>
+
+<body id="body">
+
+<div class="titreContainer"><div class="titre">SpotAiR - Integrations</div></div>
+
+<div style="margin: 10px;">
+
+<br/>
+<div class="paragraphe"><center><big>Welcome to the page dedicated to the integration of SpotAiR on your website</big></center></div>
+
+<h2>Preamble</h2>
+<div class="paragraphe">
+SpotAiR has several possibilities to be integrated into your website, as links or widgets.
+</div>
+
+<br/>
+<div id="accordion">
+	<h3><a href="#position"><strong>By link: the position of the map</strong></a></h3>
+	<div>
+		<strong>It is possible to position the SpotAiR map by parameters added to the URL, in 2 different ways:</strong>
+		<br/><i><small>You can combine this integration with the <a href="#" onclick="openAccordionItem('layers');">displayed layers link integration</a></small></i>
+		<ul>
+			<li>To center the map on a specific location, use the following parameters:
+				<ul>
+					<li><strong>lat</strong>: the latitude (decimal, between -90 and 90)</li>
+					<li><strong>lng</strong>: the longitude (decimal, between -180 and 180)</li>
+					<li><strong>zoom</strong> (optionnal): the zoom level (between 0 allowing to see the whole world and 19 at the most precise)</li>
+				</ul>
+			</li>
+			<p class="integrationslink">Example :
+				<a class="integrationslink">https://www.spotair.mobi<big><strong>?lat=45.307535&lng=5.887082&zoom=15</strong></big></a>
+			</p>
+		</ul>
+
+		<ul>
+			<li>To make the visible map completely encompass a rectangular geographic area, use the following parameters:
+				<ul>
+					<li><strong>north</strong>: the North side latitude (decimal, between -90 and 90)</li>
+					<li><strong>south</strong>: the South side latitude (decimal, between -90 and 90)</li>
+					<li><strong>west</strong>: the West side longitude (decimal, between -180 and 180)</li>
+					<li><strong>east</strong>: the East side longitude (decimal, between -180 and 180)</li>
+				</ul>
+			</li>
+			<p class="integrationslink">Example encompassing the entire Auvergne-Rhône-Alpes region (France):
+				<a class="integrationslink">https://www.spotair.mobi<big><strong>?north=46.9&south=44.2&west=2.1&east=7.1</strong></big></a>
+			</p>
+		</ul>
+	</div>
+
+
+	<h3><a href="#layers"><strong>By link: the layers displayed</strong></a></h3>
+	<div>
+		<strong>It is possible to specify the layers displayed on SpotAiR by parameters added to the URL</strong>
+		<br/><i><small>You can combine this integration with the <a href="#" onclick="openAccordionItem('position');">map position link integration</a></small></i>
+		<br/><br/>
+		The parameter is called <strong>"layers"</strong>, it accepts as value a <strong>list of keywords</strong> (comma separator) designating each layer.
+
+		<br/>
+		<p class="integrationslink">Example of display of webcams on an OSM Mapnik background:
+			<a class="integrationslink">https://www.spotair.mobi<big><strong>?layers=webcam,mapnik</strong></big></a>
+		</p>
+
+		<p class="integrationslink">Example of display of paragliding spots and wind stations on an IGN Plan map, centered on Annecy-Montmin (France):
+			<a class="integrationslink">https://www.spotair.mobi<big><strong>?lat=45.81413&lng=6.247&zoom=13&layers=spotpg,wind,ignPlan</strong></big></a>
+		</p>
+
+		<br/>
+		The following "layers" keywords are available, <strong>use the checkboxes and radio buttons in the configurator below to generate your custom link</strong>:
+		<p class="integrationslink">
+			<a id="layerslink" class="integrationslink"></a>
+		</p>
+		<ul>
+			<li>General:</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" data-layer="webcam"><strong>webcam</strong>: the webcams</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="asnaturalzone"><strong>asnaturalzone</strong>: the natural zones</li>
+			</ul>
+			<li>Free flight:</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" data-layer="wind"><strong>wind</strong>: the wind stations</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="asairspace"><strong>asairspace</strong>: the airspaces</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="ltffvl"><strong>ltffvl</strong>: the FFVL findability</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="paraglidable"><strong>paraglidable</strong>: the paraglidable.com forecast</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="skyways"><strong>skyways</strong>: the skyways map</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="thermals"><strong>thermals</strong>: the thermals map</li>
+			</ul>
+			<li>The spots <small>(only one possible)</small>:</li>
+			<ul>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer=""><i>None</i></li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotpg"><strong>spotpg</strong>: the Paragliding spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spothg"><strong>spothg</strong>: the Hang-gliding spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotspeed"><strong>spotspeed</strong>: the Speed-Riding spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotkite"><strong>spotkite</strong>: the Kite spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotstuntkite"><strong>spotstuntkite</strong>: the Stunt kite spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotboom"><strong>spotboom</strong>: the Boomerang spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotice"><strong>spotice</strong>: the Ice climbing spots</li>
+				<li class="integrationslayer"><input type="radio" name="spot" data-layer="spotclimb"><strong>spotclimb</strong>: the Climbing spots</li>
+			</ul>
+			<li>The nebulosity:</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" data-layer="radarrv"><strong>radarrv</strong>: the rain radar (worldwide)</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="radarmf"><strong>radarmf</strong>: the rain radar + forecast 3h (France)</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="satellite"><strong>satellite</strong>: the satellite images</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="lightning"><strong>lightning</strong>: the lightning strikes</li>
+			</ul>
+			<li>The snow:</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" data-layer="bra"><strong>bra</strong>: the avalanche risks</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="snow"><strong>snow</strong>: the snow heights</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="avalanche"><strong>avalanche</strong>: the observed avalanches</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="ignSlopes"><strong>ignSlopes</strong>: the slopes map of IGN (France)</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="geochSlopes"><strong>geochSlopes</strong>: the slopes map of the Federal Topography Office (Swiss)</li>
+			</ul>
+			<li>The POIs (Points Of Interest):</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" data-layer="poiclub"><strong>poiclub</strong>: the clubs</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="poischool"><strong>poischool</strong>: the schools</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="poitandem"><strong>poitandem</strong>: the tandem flights</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="poiorg"><strong>poiorg</strong>: the organizations</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="poiworkshop"><strong>poiworkshop</strong>: the workshops</li>
+			</ul>
+			<li>The maps <small>(only one possible background map, several possible overlays)</small> :</li>
+			<ul>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="mot"><strong>mot</strong>: OSM Mapnik / Open Topo</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="mapnik"><strong>mapnik</strong>: OSM Mapnik</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="osmFr"><strong>osmFr</strong>: OSM France</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="openTopo"><strong>openTopo</strong>: Open Topo</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ocm"><strong>ocm</strong>: Open Cycle Map</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="tracestrack"><strong>tracestrack</strong>: Tracestrack</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ign"><strong>ign</strong>: IGN (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ignScan25Tour"><strong>ignScan25Tour</strong>: IGN Touristic Scan (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ignSat"><strong>ignSat</strong>: IGN Satellite (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ignScanSat"><strong>ignScanSat</strong>: IGN Scan / Satellite (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ignPlan"><strong>ignPlan</strong>: IGN Plan (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="ignOaci"><strong>ignOaci</strong>: IGN OACI VFR (France)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="geochLK"><strong>geochLK</strong>: Geo CH Topo (Swiss)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="geochOaci"><strong>geochOaci</strong>: Geo CH OACI VFR (Swiss)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="geochVV"><strong>geochVV</strong>: Geo CH Glider Map (Swiss)</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="mri"><strong>mri</strong>: refuges.info</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="arcgisTopo"><strong>arcgisTopo</strong>: ArcGIS Topo</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="arcgisWorld"><strong>arcgisWorld</strong>: ArcGIS Satellite</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="tfOutdoors"><strong>tfOutdoors</strong>: TF Outdoors</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="tfLandscape"><strong>tfLandscape</strong>: TF Landscape</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="tfTransport"><strong>tfTransport</strong>: TF Transport</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="stamenTerrain"><strong>stamenTerrain</strong>: Stamen Terrain</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="stamenTerrainBackground"><strong>stamenTerrainBackground</strong>: Stamen Terrain Background</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="stamenTerrainLabels"><strong>stamenTerrainLabels</strong>: Stamen Terrain Labels</li>
+				<li class="integrationslayer"><input type="checkbox" data-layer="stamenTerrainLines"><strong>stamenTerrainLines</strong>: Stamen Terrain Lines</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="chkLight"><strong>chkLight</strong>: Bright tiles</li>
+				<li class="integrationslayer"><input type="radio" name="map" data-layer="chkBlack"><strong>chkBlack</strong>: Dark tiles</li>
+			</ul>
+			<li>Integration modes</li>
+			<ul>
+				<li class="integrationslayer"><input type="checkbox" id="modewidget" data-integrationmode="widgetmap"><strong>Simple map widget</strong> <small>(to integrate the SpotAiR map into your website)</small></li>
+			</ul>
+		</ul>
+	</div>
+
+
+	<h3><a href="#item"><strong>By link: focus on a specific item</strong></a></h3>
+	<div>
+		<strong>For items that can be shared by URL, SpotAiR features a
+		<img src="../icones/ic_share_grey600.svg" class="integrationsicon"> "Share" entry in the details panel menu.
+		<br/>When you click on it, a dialog will show you a link that you can copy and share as you wish.</strong>
+		<br/><i><small>This integration is not compatible with
+			either the map position link integration,
+			or the displayed layers link integration.
+		</small></i>
+		<br/><br/>
+		The shareable items are the following, and you can also build the URL yourself (<u><strong>it's easier via SpotAiR though</strong></u>):
+		<ul>
+			<li><img src="../icones/spots/spot.svg.php" class="integrationsicon">The <strong>spots</strong>, you have to know the <strong>spot ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spot/&lt;id&gt;</strong></a>
+				</p>
+				Or if you know the <strong>provider code</strong> and its <strong>ID</strong>, you must also specify the <strong>practice</strong>:
+				<p>For a Paragliding spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotpg/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For a Hanggliding spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spothg/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For a Kite spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotkite/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For a Stunt kite spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotstuntkite/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For a Boomerang spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotboom/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For an Ice climbing spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotice/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p>For a Climbing spot: <span class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/spotclimb/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</span></p>
+				<p class="integrationslink">FFVL spot example:
+					<a class="integrationslink">https://www.spotair.mobi<strong>/spotpg/ffvl/1249</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/balises/balise-white-green-right.svg" class="integrationsicon">The <strong>wind stations</strong>, you have to know the <strong>provider code (&lt;provider&gt;)</strong> and the <strong>station ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/wind/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</p>
+				<p class="integrationslink">Example:
+					<a class="integrationslink">https://www.spotair.mobi<strong>/wind/ffvl/61</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/webcams/webcam-blue-90.svg" class="integrationsicon">The <strong>webcams</strong>, you have to know the <strong>provider code (&lt;provider&gt;)</strong> and the <strong>webcam ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/webcam/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</p>
+				<p class="integrationslink">Example:
+					<a class="integrationslink">https://www.spotair.mobi<strong>/webcam/mobicams/38</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/social/shaka-0-obs-1.svg" class="integrationsicon">The <strong>shakas</strong>, you have to know the <strong>shaka ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/shaka/&lt;id&gt;</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/shaka-pro/shakapro-0-1.svg" class="integrationsicon">The <strong>shakas pro</strong>, you have to know the <strong>shaka pro ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/shakapro/&lt;id&gt;</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/snow/snow.svg" class="integrationsicon">The <strong>snow heights</strong>, you have to know the <strong>provider code (&lt;provider&gt;)</strong> and the <strong>station ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/snow/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</p>
+				<p class="integrationslink">Example:
+					<a class="integrationslink">https://www.spotair.mobi<strong>/snow/mf-nivoses/AIGLE</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/avalanches/avalanche.png" class="integrationsicon">The <strong>observed avalanches</strong>, you have to know the <strong>provider code (&lt;provider&gt;)</strong> and the <strong>avalanche ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/avalanche/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</p>
+			</li>
+
+			<br/>
+			<li><img src="../icones/pois/poi.svg.php" class="integrationsicon">The <strong>POIs</strong>, you have to know the <strong>provider code (&lt;provider&gt;)</strong> and the <strong>POI ID (&lt;id&gt;)</strong>:
+				<p class="integrationslink">
+					<a class="integrationspseudolink">https://www.spotair.mobi<strong>/poi/&lt;provider&gt;/&lt;id&gt;</strong></a>
+				</p>
+				<p class="integrationslink">Example:
+					<a class="integrationslink">https://www.spotair.mobi<strong>/poi/ffvl/239</strong></a>
+				</p>
+			</li>
+		</ul>
+	</div>
+
+
+	<h3 id="mapWidgetAccordionHeader"><a href="#map_widget"><strong>Widget: simple map</strong></a></h3>
+	<div>
+		<strong>SpotAiR features a widget displaying a simplified map.</strong>
+		<br/>This simplified map does not display: the main menu, user menu, map layer controls, etc.
+
+		<br/><br/>A widget is a web page that can be integrated into another web page, see example below:
+		<p>
+			<iframe id="modeWidgetIFrame" width="100%" height="350" style="display: none; max-width: 600px;" frameBorder="0" src="https://www.spotair.mobi/widget/map?lat=45.307535&lng=5.887082&zoom=11&layers=wind"></iframe>
+		</p>
+		<p class="integrationslink">The widget can be accessed at the following URL:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/map</strong></a>
+		</p>
+		<p class="integrationslink">Example of HTML code to insert in your web page:
+			<pre class="code">
+&lt;iframe width="600" height="350" frameBorder="0"
+	src="https://www.spotair.mobi/widget/map?lat=45.307535&lng=5.887082&zoom=11&layers=wind"&gt;
+&lt;/iframe&gt;</pre>
+        </p>
+		<p class="integrationslink">The same widget with the <strong>static</strong> (non-movable) map can be accessed at the following URL:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/staticmap</strong></a>
+		</p>
+		<p class="integrationslink">The <a href="javascript:openAccordionItem('position');">positioning parameters</a> and the <a href="javascript:openAccordionItem('layers');">layers parameters</a> can be used with this widget. For example, to display paragliding spots on a map centered on Talloires (France):
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/map?lat=45.840148&lng=6.214331&zoom=13&layers=spotpg</strong></a>
+		</p>
+	</div>
+
+
+	<h3><a href="#wind_widget"><strong>Widget: wind station</strong></a></h3>
+	<div>
+		<strong>SpotAiR features a widget for wind stations.</strong>
+		<br/>A widget is a web page that can be integrated into another web page, see example below with the Saint-Hilaire du Touvet station:</strong>
+		<p>
+			<iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/61?mode=free_flight&unit=kmh&name=true&quadrant=false&windValues=true&dark=false"></iframe>
+		</p>
+
+		<big><strong>SpotAiR features in the menu of the station's details panel an entry
+		<img src="../icones/ic_widgets_grey600.svg" class="integrationsicon"> "Configure your widget".</strong></big>
+		<br/>By clicking on it, a dialog will show you all the possible options and the resulting html code that you will just have to integrate to your web page.
+
+		<br/><br/>However, if you want to do this by hand, the widget url is composed as follows:
+		<p class="integrationslink">
+			<a class="integrationspseudolink">https://www.spotair.mobi<strong>/widget/wind/&lt;provider&gt;/&lt;id&gt;?&lt;parameters&gt;</strong></a>
+		</p>
+		<p class="integrationslink">Simple example:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/ffvl/61</strong></a>
+		</p>
+		<p class="integrationslink">Example with optional parameters:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/ffvl/61?mode=free_flight&unit=kmh&name=true&quadrant=false&windValues=true&dark=false</strong></a>
+		</p>
+		<p class="integrationslink">Example of HTML code to insert in your web page:
+			<pre class="code">
+&lt;iframe width="600" height="350" frameBorder="0"
+	src="https://www.spotair.mobi/widget/wind/ffvl/61?mode=free_flight"&gt;
+&lt;/iframe&gt;</pre>
+        </p>
+
+		<br/>The optional parameters are as follows:
+		<ul>
+			<li><strong>mode</strong>: the mode
+				<ul>
+					<li><strong>free_flight</strong> <small>(default value)</small>: "Free flight" mode</li>
+					<li><strong>kite</strong>: "Kite" mode</li>
+				</ul>
+			</li>
+			<li><strong>unit</strong>: wind speed unit
+				<ul>
+					<li><strong>kmh</strong> <small>(default value)</small>: kilometers per hour (kph)</li>
+					<li><strong>mph</strong> : miles per hour</li>
+					<li><strong>kts</strong> : knots</li>
+				</ul>
+			</li>
+			<li><strong>name</strong>: displays or not the name above the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>quadrant</strong>: displays or not a dial around the station (<strong>true/false</strong>, <small>false as default</small>)</li>
+			<li><strong>windValues</strong>: displays or not the min/avg/max values under the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>dark</strong>: display on dark background or not (<strong>true/false</strong>, <small>false as default</small>)</li>
+		</ul>
+		<br/>
+On Android or iPhone mobiles, you can use a third-party application to display this widget on your home screen.
+<br/>
+Here is a non-exhaustive list:
+<ul>
+	<li>On Android:</li>
+	<ul>
+		<li>
+			<a class="google_play_store_link" style="padding-left: 6.5em; background-image: url(en_google_play_store.png);" href="https://play.google.com/store/apps/details?id=com.binarysmith.webclipwidget.ad" target="_blank">
+				Widgetify
+			</a>
+		</li>
+	</ul>
+	<li>On iPhone:</li>
+	<ul>
+		<li>
+			<a class="apple_app_store_link" style="background-image: url(en_apple_app_store.png);" href="https://apps.apple.com/fr/app/glimpse-2/id1524217845" target="_blank">
+				Glimpse 2
+			</a>
+		</li>
+	</ul>
+</ul>
+	</div>
+
+
+
+	<h3><a href="#wind_widget_around"><strong>Widget: wind stations around me</strong></a></h3>
+	<div>
+		<strong>SpotAiR features a widget displaying wind stations in 8 directions around your geographical position.</strong>
+		<br/>Your position is detected automatically and updated regularly if you have authorized geolocation.
+		<br/>Top left shows the station to your north-west, top right shows the station to your north-east, right shows the station to your east, ..., ..., and middle shows the station closest to you.
+
+		<br/><br/>A widget is a web page that can be integrated into another web page, see example below:
+		<p>
+			<iframe style="border-radius: 8px;" width="200" height="200" frameBorder="0" src="https://www.spotair.mobi/widget/wind/around"></iframe>
+		</p>
+
+		<br/>The widget url is composed as follows:
+		<p class="integrationslink">
+			<a class="integrationspseudolink">https://www.spotair.mobi<strong>/widget/wind/around?&lt;parameters&gt;</strong></a>
+		</p>
+		<p class="integrationslink">Simple example:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/around</strong></a>
+		</p>
+		<p class="integrationslink">Example with optional parameters:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/around?mode=free_flight&unit=kmh&name=true&quadrant=false&windValues=true&dark=false</strong></a>
+		</p>
+		<p class="integrationslink">Example of HTML code to insert in your web page:
+			<pre class="code">
+&lt;iframe width="200" height="200" frameBorder="0"
+	src="https://www.spotair.mobi/widget/wind/around?mode=free_flight"&gt;
+&lt;/iframe&gt;</pre>
+		</p>
+		<br/>The optional parameters are as follows:
+		<ul>
+			<li><strong>mode</strong>: the mode
+				<ul>
+					<li><strong>free_flight</strong> <small>(default value)</small>: "Free flight" mode</li>
+					<li><strong>kite</strong>: "Kite" mode</li>
+				</ul>
+			</li>
+			<li><strong>unit</strong>: wind speed unit
+				<ul>
+					<li><strong>kmh</strong> <small>(default value)</small>: kilometers per hour (kph)</li>
+					<li><strong>mph</strong> : miles per hour</li>
+					<li><strong>kts</strong> : knots</li>
+				</ul>
+			</li>
+			<li><strong>name</strong>: displays or not the name above the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>quadrant</strong>: displays or not a dial around the station (<strong>true/false</strong>, <small>false as default</small>)</li>
+			<li><strong>windValues</strong>: displays or not the min/avg/max values under the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>dark</strong>: display on dark background or not (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>rad1</strong>: the radius in kms, which is the maximum distance for the station closest to you and the minimum distance for the 8 stations in the 8 directions. <small>Default is 2 kms.</small></li>
+			<li><strong>rad2</strong>: the radius in kms, which is the maximum distance for the 8 stations around you. <small>Default is 20 kms.</small></li>
+			<li><strong>square</strong>: square display (width = height) (<strong>true/false</strong>, <small>true as default</small>), otherwise full size</li>
+		</ul>
+		<br/>
+On Android or iPhone mobiles, you can use a third-party application to display this widget on your home screen.
+<br/>
+Here is a non-exhaustive list:
+<ul>
+	<li>On Android:</li>
+	<ul>
+		<li>
+			<a class="google_play_store_link" style="padding-left: 6.5em; background-image: url(en_google_play_store.png);" href="https://play.google.com/store/apps/details?id=com.binarysmith.webclipwidget.ad" target="_blank">
+				Widgetify
+			</a>
+		</li>
+	</ul>
+	<li>On iPhone:</li>
+	<ul>
+		<li>
+			<a class="apple_app_store_link" style="background-image: url(en_apple_app_store.png);" href="https://apps.apple.com/fr/app/glimpse-2/id1524217845" target="_blank">
+				Glimpse 2
+			</a>
+		</li>
+	</ul>
+</ul>
+	</div>
+
+
+
+
+	<h3><a href="#wind_widget_list"><strong>Widget: custom wind stations list</strong></a></h3>
+	<div>
+		<strong>SpotAiR features a widget displaying a custom list of wind stations.</strong>
+
+		<br/><br/>A widget is a web page that can be integrated into another web page, see example below:
+		<p>
+			<iframe width="300" height="200" frameBorder="0" src="https://www.spotair.mobi/widget/wind/list?stations=ffvl/61,romma/72,pioupiou/487"></iframe>
+		</p>
+
+		<br/>The widget url is composed as follows:
+		<p class="integrationslink">
+			<a class="integrationspseudolink">https://www.spotair.mobi<strong>/widget/wind/list?&lt;paramètres&gt;</strong></a>
+		</p>
+		<p class="integrationslink">Simple example:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/list?stations=ffvl/61,romma/72,pioupiou/487</strong></a>
+		</p>
+		<p class="integrationslink">Example with optional parameters:
+			<a class="integrationslink">https://www.spotair.mobi<strong>/widget/wind/list?stations=ffvl/61,romma/72,pioupiou/487&mode=free_flight&unit=kmh&name=true&quadrant=false&windValues=true&dark=false</strong></a>
+		</p>
+		<p class="integrationslink">Example of HTML code to insert in your web page:
+			<pre class="code">
+&lt;iframe width="300" height="200" frameBorder="0"
+	src="https://www.spotair.mobi/widget/wind/list?stations=ffvl/61,romma/72,pioupiou/487&mode=free_flight"&gt;
+&lt;/iframe&gt;</pre>
+		</p>
+		<br/>The parameters are as follows:
+		<ul>
+			<li><strong>stations</strong> (mandatory) : wind stations list to display (pairs <i>&lt;provider&gt;/&lt;id&gt;</i> separated by comma)</li>
+		</ul>
+		<br/>The optional parameters are as follows:
+		<ul>
+			<li><strong>mode</strong>: the mode
+				<ul>
+					<li><strong>free_flight</strong> <small>(default value)</small>: "Free flight" mode</li>
+					<li><strong>kite</strong>: "Kite" mode</li>
+				</ul>
+			</li>
+			<li><strong>unit</strong>: wind speed unit
+				<ul>
+					<li><strong>kmh</strong> <small>(default value)</small>: kilometers per hour (kph)</li>
+					<li><strong>mph</strong> : miles per hour</li>
+					<li><strong>kts</strong> : knots</li>
+				</ul>
+			</li>
+			<li><strong>name</strong>: displays or not the name above the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>quadrant</strong>: displays or not a dial around the station (<strong>true/false</strong>, <small>false as default</small>)</li>
+			<li><strong>windValues</strong>: displays or not the min/avg/max values under the station (<strong>true/false</strong>, <small>true as default</small>)</li>
+			<li><strong>dark</strong>: display on dark background or not (<strong>true/false</strong>, <small>false as default</small>)</li>
+		</ul>
+		<br/>
+On Android or iPhone mobiles, you can use a third-party application to display this widget on your home screen.
+<br/>
+Here is a non-exhaustive list:
+<ul>
+	<li>On Android:</li>
+	<ul>
+		<li>
+			<a class="google_play_store_link" style="padding-left: 6.5em; background-image: url(en_google_play_store.png);" href="https://play.google.com/store/apps/details?id=com.binarysmith.webclipwidget.ad" target="_blank">
+				Widgetify
+			</a>
+		</li>
+	</ul>
+	<li>On iPhone:</li>
+	<ul>
+		<li>
+			<a class="apple_app_store_link" style="background-image: url(en_apple_app_store.png);" href="https://apps.apple.com/fr/app/glimpse-2/id1524217845" target="_blank">
+				Glimpse 2
+			</a>
+		</li>
+	</ul>
+</ul>
+	</div>
+
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>

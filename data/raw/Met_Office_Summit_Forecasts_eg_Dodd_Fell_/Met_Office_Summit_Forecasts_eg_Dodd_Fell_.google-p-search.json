@@ -1,0 +1,470 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Met Office Summit Forecasts (eg Dodd Fell)",
+        "totalResults": "171000",
+        "searchTerms": "Met Office Summit Forecasts (eg Dodd Fell)",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Met Office Summit Forecasts (eg Dodd Fell)",
+        "totalResults": "171000",
+        "searchTerms": "Met Office Summit Forecasts (eg Dodd Fell)",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.496212,
+    "formattedSearchTime": "0.50",
+    "totalResults": "171000",
+    "formattedTotalResults": "171,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Dryline Position Errors in Experimental Convection-Allowing NSSL ...",
+      "htmlTitle": "Dryline Position Errors in Experimental Convection-Allowing NSSL ...",
+      "link": "https://journals.ametsoc.org/view/journals/wefo/28/3/waf-d-12-00092_1.xml",
+      "displayLink": "journals.ametsoc.org",
+      "snippet": "Jun 1, 2013 ... ... (e.g., Dodd 1965; Hoch and Markowski 2005). The main goals ... Met Office Unified Model for forecasting convection over the United Kingdom.",
+      "htmlSnippet": "Jun 1, 2013 \u003cb\u003e...\u003c/b\u003e ... (\u003cb\u003ee.g.\u003c/b\u003e, \u003cb\u003eDodd\u003c/b\u003e 1965; Hoch and Markowski 2005). The main goals ... \u003cb\u003eMet Office\u003c/b\u003e Unified Model for \u003cb\u003eforecasting\u003c/b\u003e convection over the United Kingdom.",
+      "formattedUrl": "https://journals.ametsoc.org/view/journals/wefo/.../waf-d-12-00092_1.xml",
+      "htmlFormattedUrl": "https://journals.a\u003cb\u003emet\u003c/b\u003esoc.org/view/journals/wefo/.../waf-d-12-00092_1.xml",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoL_SnHOI7nIGHg1U5dt1FlcybZ5wvC1bouyXx9Si0gs34hACcIu3Dxbc&s",
+            "width": "159",
+            "height": "212"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://journals.ametsoc.org/cover/journals/wefo/28/3/cover.jpg",
+            "citation_publication_date": "2013/06/01",
+            "article:published_time": "2013-06-01",
+            "twitter:card": "summary_large_image",
+            "citation_title": "Dryline Position Errors in Experimental Convection-Allowing NSSL-WRF Model Forecasts and the Operational NAM",
+            "og:site_name": "AMETSOC",
+            "citation_publisher": "American Meteorological Society",
+            "citation_journal_title": "Weather and Forecasting",
+            "og:description": "Abstract This study evaluates 24-h forecasts of dryline position from an experimental 4-km grid-spacing version of the Weather Research and Forecasting Model (WRF) run daily at the National Severe Storms Laboratory (NSSL), as well as the 12-km grid-spacing North America Mesoscale Model (NAM) run operationally by the Environmental Modeling Center of NCEP. For both models, 0000 UTC initializations are examined, and for verification 0000 UTC Rapid Update Cycle (RUC) analyses are used. For the period 1 April–30 June 2007–11, 116 cases containing drylines in all three datasets were identified using a manual procedure that considered specific humidity gradient magnitude, temperature, and 10-m wind. For the 24-h NAM forecasts, no systematic east–west dryline placement errors were found, and the majority of the east–west errors fell within the range ±0.5° longitude. The lack of a systematic bias was generally present across all subgroups of cases categorized according to month, weather pattern, and year. In",
+            "citation_issn": "1520-0434",
+            "citation_language": "EN",
+            "citation_pdf_url": "https://journals.ametsoc.org/downloadpdf/view/journals/wefo/28/3/waf-d-12-00092_1.pdf",
+            "citation_xml_url": "https://journals.ametsoc.org/doc/journals/wefo/28/3/waf-d-12-00092_1.xml",
+            "citation_lastpage": "761",
+            "og:type": "article",
+            "article:section": "Weather and Forecasting",
+            "twitter:title": "Dryline Position Errors in Experimental Convection-Allowing NSSL-WRF Model Forecasts and the Operational NAM",
+            "og:title": "Dryline Position Errors in Experimental Convection-Allowing NSSL-WRF Model Forecasts and the Operational NAM",
+            "citation_author": "Brice E. Coffer",
+            "citation_issue": "3",
+            "article:author": "Brice E. Coffer",
+            "article:tag": "Drylines",
+            "referrer": "unsafe-url",
+            "citation_firstpage": "746",
+            "viewport": "width=device-width, minimum-scale=1.0, initial-scale=1.0",
+            "twitter:description": "Abstract This study evaluates 24-h forecasts of dryline position from an experimental 4-km grid-spacing version of the Weather Research and Forecasting Model (WRF) run daily at the National Severe Storms Laboratory (NSSL), as well as the 12-km grid-spacing North America Mesoscale Model (NAM) run operationally by the Environmental Modeling Center of NCEP. For both models, 0000 UTC initializations are examined, and for verification 0000 UTC Rapid Update Cycle (RUC) analyses are used. For the period 1 April–30 June 2007–11, 116 cases containing drylines in all three datasets were identified using a manual procedure that considered specific humidity gradient magnitude, temperature, and 10-m wind. For the 24-h NAM forecasts, no systematic east–west dryline placement errors were found, and the majority of the east–west errors fell within the range ±0.5° longitude. The lack of a systematic bias was generally present across all subgroups of cases categorized according to month, weather pattern, and year. In",
+            "citation_doi": "10.1175/WAF-D-12-00092.1",
+            "og:locale": "en_US",
+            "dc.identifier": "10.1175/WAF-D-12-00092.1",
+            "citation_volume": "28",
+            "og:url": "https://journals.ametsoc.org/view/journals/wefo/28/3/waf-d-12-00092_1.xml"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://journals.ametsoc.org/cover/journals/wefo/28/3/cover.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Weather.gov \u003e Nashville, TN \u003e May 2010 Flood",
+      "htmlTitle": "\u003cb\u003eWeather\u003c/b\u003e.gov &gt; Nashville, TN &gt; May 2010 Flood",
+      "link": "https://www.weather.gov/ohx/may2010flood",
+      "displayLink": "www.weather.gov",
+      "snippet": "May 1, 2010 ... Back-to-back record breaking rains fell on Saturday, May 1, and again on Sunday, May 2, causing widespread flash flooding and river flooding across much of the ...",
+      "htmlSnippet": "May 1, 2010 \u003cb\u003e...\u003c/b\u003e Back-to-back record breaking rains \u003cb\u003efell\u003c/b\u003e on Saturday, May 1, and again on Sunday, May 2, causing widespread flash flooding and river flooding across much of the&nbsp;...",
+      "formattedUrl": "https://www.weather.gov/ohx/may2010flood",
+      "htmlFormattedUrl": "https://www.weather.gov/ohx/may2010flood",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXl_iZuQc5Utcy2EcKSGeeM7YUC1VAO74wK8JwPkCdvA37yL9hvF4kw&s",
+            "width": "420",
+            "height": "120"
+          }
+        ],
+        "metatags": [
+          {
+            "dc.publisher": "NOAA's National Weather Service",
+            "dc.description": "May 2010 Flood",
+            "dc.creator": "US Department of Commerce, NOAA, National Weather Service",
+            "dc.title": "May 2010 Flood",
+            "dc.rights": "/disclaimer.php",
+            "rating": "General",
+            "dc.date.created": "May 1st 2023 10:53 PM",
+            "dc.language": "EN-US",
+            "dc.keywords": "May 2010 Flood",
+            "dc.contributor": "National Weather Service"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.weather.gov/images/ohx/may2010flood/mayfloodtitle.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Arctic and Antarctic end-of-season report - October 2024 - Met Office",
+      "htmlTitle": "Arctic and Antarctic end-of-season report - October 2024 - \u003cb\u003eMet Office\u003c/b\u003e",
+      "link": "https://www.metoffice.gov.uk/research/approach/monitoring/sea-ice/2024/arctic-and-antarctic-end-of-season-report---october-2024",
+      "displayLink": "www.metoffice.gov.uk",
+      "snippet": "Oct 8, 2024 ... September Arctic sea ice extent fell towards the median of predictions ... (e.g., Purich and Doddridge, 2023). Changes in atmospheric ...",
+      "htmlSnippet": "Oct 8, 2024 \u003cb\u003e...\u003c/b\u003e September Arctic sea ice extent \u003cb\u003efell\u003c/b\u003e towards the median of predictions ... (\u003cb\u003ee.g.\u003c/b\u003e, Purich and \u003cb\u003eDoddridge\u003c/b\u003e, 2023). Changes in atmospheric&nbsp;...",
+      "formattedUrl": "https://www.metoffice.gov.uk/.../arctic-and-antarctic-end-of-season-report--...",
+      "htmlFormattedUrl": "https://www.\u003cb\u003emetoffice\u003c/b\u003e.gov.uk/.../arctic-and-antarctic-end-of-season-report--...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3DkSO35-lWIX4iVSGe93o0GEQ3vgbuugIWTAg0RyZwhlsStVPZxxZruU&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/climate-change/icecaps-in-antarctica-.jpg",
+            "twitter:card": "summary",
+            "og:type": "website",
+            "theme-color": "#2a2a2a",
+            "og:image:width": "1920",
+            "og:site_name": "Met Office",
+            "egms.subject.category": "Climate and weather",
+            "og:title": "Arctic and Antarctic end-of-season report - October 2024",
+            "og:image:height": "960",
+            "title": "Arctic and Antarctic end-of-season report - October 2024",
+            "og:description": "Alex West and Ed Blockley",
+            "egms.accessibility": "A",
+            "fb:app_id": "208580322593329",
+            "twitter:site": "@metoffice",
+            "viewport": "initial-scale=1.0, width=device-width, viewport-fit=cover",
+            "google-translate-customization": "f8c19e614cd5ee7e-37428b41ac444aca-gd1bc91f73b6940ae-14",
+            "og:url": "https://www.metoffice.gov.uk/research/approach/monitoring/sea-ice/2024/arctic-and-antarctic-end-of-season-report---october-2024"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/climate-change/icecaps-in-antarctica-.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Which peaks have you done that you found scary? : r/UKhiking",
+      "htmlTitle": "Which peaks have you done that you found scary? : r/UKhiking",
+      "link": "https://www.reddit.com/r/UKhiking/comments/14fabo5/which_peaks_have_you_done_that_you_found_scary/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Jun 21, 2023 ... Weather and poor planning (particularly being summit focused instead ... For me the weather makes by far the biggest difference, for example ...",
+      "htmlSnippet": "Jun 21, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eWeather\u003c/b\u003e and poor planning (particularly being \u003cb\u003esummit\u003c/b\u003e focused instead ... For me the \u003cb\u003eweather\u003c/b\u003e makes by far the biggest difference, for \u003cb\u003eexample\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../which_peaks_have_you_done_that_you_found_...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../which_peaks_have_you_done_that_you_found_...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/14fabo5",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/UKhiking on Reddit: Which peaks have you done that you found scary?",
+            "og:site_name": "Reddit",
+            "og:title": "r/UKhiking on Reddit: Which peaks have you done that you found scary?",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/[Deleted Account] - 9 votes and 27 comments",
+            "twitter:image": "https://share.redd.it/preview/post/14fabo5",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/UKhiking/comments/14fabo5/which_peaks_have_you_done_that_you_found_scary/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/14fabo5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Energy Primer",
+      "htmlTitle": "Energy Primer",
+      "link": "https://www.ferc.gov/sites/default/files/2024-01/24_Energy-Markets-Primer_0117_DIGITAL_0.pdf",
+      "displayLink": "www.ferc.gov",
+      "snippet": "For the next-year peak forecast, it is possible to provide an estimated ... rely heavily on weather forecasts to ensure they have the right generation ...",
+      "htmlSnippet": "For the next-year \u003cb\u003epeak forecast\u003c/b\u003e, it is possible to provide an estimated ... rely heavily on \u003cb\u003eweather forecasts\u003c/b\u003e to ensure they have the right generation&nbsp;...",
+      "formattedUrl": "https://www.ferc.gov/.../24_Energy-Markets-Primer_0117_DIGITAL_0.pd...",
+      "htmlFormattedUrl": "https://www.ferc.gov/.../24_Energy-Markets-Primer_0117_DIGITAL_0.pd...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiWHn37iDdQtjOB_uiHQaN1VSt-kYiLV0mUm68lKO9g7aOCdQHu9yMFg&s",
+            "width": "274",
+            "height": "184"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20240117113142-05'00'",
+            "creationdate": "D:20240117112536-05'00'",
+            "creator": "Adobe InDesign 19.1 (Windows)",
+            "producer": "Adobe PDF Library 17.0"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///d69728f3d66d69f1071fad175d31972fe7699b78716370cdea1d323b167cd3bf"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Souther Fell – wainwrightwalking.co.uk",
+      "htmlTitle": "Souther \u003cb\u003eFell\u003c/b\u003e – wainwrightwalking.co.uk",
+      "link": "https://www.wainwrightwalking.co.uk/souther-fell/",
+      "displayLink": "www.wainwrightwalking.co.uk",
+      "snippet": "Walk Date – 17th April 2016. Distance – 6 miles. Weather – dry and sunny, strong north westerly on summit. Given a weather forecast of a cold, ...",
+      "htmlSnippet": "Walk Date – 17th April 2016. Distance – 6 miles. \u003cb\u003eWeather\u003c/b\u003e – dry and sunny, strong north westerly on \u003cb\u003esummit\u003c/b\u003e. Given a \u003cb\u003eweather forecast\u003c/b\u003e of a cold,&nbsp;...",
+      "formattedUrl": "https://www.wainwrightwalking.co.uk/souther-fell/",
+      "htmlFormattedUrl": "https://www.wainwrightwalking.co.uk/souther-\u003cb\u003efell\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOks4BjePX7jmzjqFStDOaqFQSx_xA3kSmgd_7wdX_qP5A5qX4tTCjejHT&s",
+            "width": "367",
+            "height": "137"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.wainwrightwalking.co.uk/wp-content/uploads/2016/04/Souther-Fell-A-2016-1200x450.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Global and regional climate in 2023 - Sandford - 2024 - Weather ...",
+      "htmlTitle": "Global and regional climate in 2023 - Sandford - 2024 - \u003cb\u003eWeather\u003c/b\u003e ...",
+      "link": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.7636?af=R",
+      "displayLink": "rmets.onlinelibrary.wiley.com",
+      "snippet": "Oct 21, 2024 ... However, even controlling for these temporary impacts, the Met Office forecasts ... e.g. Kirchmeier-Young and Zhang, 2020; Requena et al ...",
+      "htmlSnippet": "Oct 21, 2024 \u003cb\u003e...\u003c/b\u003e However, even controlling for these temporary impacts, the \u003cb\u003eMet Office forecasts\u003c/b\u003e ... \u003cb\u003ee.g.\u003c/b\u003e Kirchmeier-Young and Zhang, 2020; Requena et al&nbsp;...",
+      "formattedUrl": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.7636?af=R",
+      "htmlFormattedUrl": "https://r\u003cb\u003emet\u003c/b\u003es.onlinelibrary.wiley.com/doi/10.1002/wea.7636?af=R",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgXqEDSAN4_CK9OSVpvEDu94EK70J0x3_csZSUQn2_ypm4NBmMgiA1RdZK&s",
+            "width": "234",
+            "height": "215"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://rmets.onlinelibrary.wiley.com/cms/asset/ef7670d4-0ae1-4126-9bbe-dff17b80048c/wea7636-toc-0001-m.jpg?trick=1740037980724",
+            "citation_publication_date": "2024/12/01",
+            "twitter:card": "summary_large_image",
+            "citation_title": "Global and regional climate in 2023",
+            "citation_author_institution": "Met Office Hadley Centre Exeter UK",
+            "og:site_name": "Royal Meteorological Society (RMetS)",
+            "citation_publisher": "John Wiley & Sons, Ltd",
+            "citation_journal_title": "Weather",
+            "mathjax-version": "3",
+            "og:description": "2023 was the warmest year on record with a global mean temperature of 1.45 ± 0.12 degC above pre-industrial levels, surpassing the previous record (from 2016) by 0.17 degC. The onset of El Niño in ea...",
+            "twitter:image": "https://rmets.onlinelibrary.wiley.com/cms/asset/ef7670d4-0ae1-4126-9bbe-dff17b80048c/wea7636-toc-0001-m.jpg?trick=1740037980724",
+            "submission-systems-domains": "/pb-assets/utm_params_config/submission-systems-domains-1667213560157.txt",
+            "citation_online_date": "2024/10/21",
+            "citation_issn": "1477-8696",
+            "citation_language": "en",
+            "citation_fulltext_html_url": "https://onlinelibrary.wiley.com/doi/full/10.1002/wea.7636",
+            "publication_doi": "10.1002/wea.7636",
+            "citation_pdf_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/wea.7636",
+            "citation_lastpage": "412",
+            "og:type": "Article",
+            "og:title": "Global and regional climate in 2023",
+            "citation_author": "Caroline Sandford",
+            "citation_abstract_html_url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/wea.7636",
+            "citation_issue": "12",
+            "citation_firstpage": "400",
+            "referrer": "origin-when-cross-origin",
+            "mathjax-enabled": "true",
+            "viewport": "width=device-width,initial-scale=1",
+            "citation_doi": "10.1002/wea.7636",
+            "mathjax-lazy-load": "true",
+            "dc.identifier": "10.1002/wea.7636",
+            "citation_volume": "79",
+            "og:url": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.7636",
+            "article_references": "Sandford, C., Dunn, R., Titchner, H., Kendon, M., Rayner, N., Morice, C., Palmer, M., McCarthy, M. and Kaye, N. (2024), Global and regional climate in 2023. Weather, 79: 400-412. https://doi.org/10.1002/wea.7636"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://rmets.onlinelibrary.wiley.com/cms/asset/ef7670d4-0ae1-4126-9bbe-dff17b80048c/wea7636-toc-0001-m.jpg?trick=1740037980724"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Are more data always better? – Machine learning forecasting of ...",
+      "htmlTitle": "Are more data always better? – Machine learning \u003cb\u003eforecasting\u003c/b\u003e of ...",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0301479724034649",
+      "displayLink": "www.sciencedirect.com",
+      "snippet": "Climate change, variations in weather, and factors such as changes to land-use or management practices present a further challenge when forecasting water ...",
+      "htmlSnippet": "Climate change, variations in \u003cb\u003eweather\u003c/b\u003e, and factors such as changes to land-use or management practices present a further challenge when \u003cb\u003eforecasting\u003c/b\u003e water&nbsp;...",
+      "formattedUrl": "https://www.sciencedirect.com/science/article/pii/S0301479724034649",
+      "htmlFormattedUrl": "https://www.sciencedirect.com/science/article/pii/S0301479724034649",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DZor9_nxdff1g9IKh50iB1tENT3v-D36FGm9r1aMgGn0MDAFSQjTEA&s",
+            "width": "113",
+            "height": "150"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479724X00213-cov150h.gif",
+            "citation_publication_date": "2025/01/01",
+            "citation_title": "Are more data always better? – Machine learning forecasting of algae based on long-term observations",
+            "citation_author_institution": "Biological and Environmental Sciences, School of Natural Sciences, University of Stirling, Stirling, United Kingdom",
+            "citation_reference": "citation_journal_title=J. Phycol.;citation_author=C.-Y. Ahn;citation_author=H.-M. Oh;citation_author=Y.-S. Park;citation_title=Evaluation of environmental factors on cyanobacterial bloom in eutrophic reservoir using artificial neural Networks1;citation_firstpage=495;citation_lastpage=504;citation_volume=47;citation_publication_date=2011;citation_doi=10.1111/j.1529-8817.2011.00990.x;",
+            "citation_publisher": "Academic Press",
+            "citation_article_type": "Full-length article",
+            "citation_type": "JOUR",
+            "citation_id": "123478",
+            "citation_journal_title": "Journal of Environmental Management",
+            "citation_abstract": "\u003cdiv class=\"Abstracts u-font-serif\" id=\"abstracts\"\u003e\u003cdiv class=\"abstract author\" id=\"abs0010\" lang=\"en\"\u003e\u003ch2 class=\"section-title u-h4 u-margin-l-top u-margin-xs-bottom\"\u003eAbstract\u003c/h2\u003e\u003cdiv id=\"abssec0010\"\u003e\u003cdiv class=\"u-margin-s-bottom\" id=\"abspara0010\"\u003eBloom-forming algae present a unique challenge to water managers as they can significantly impair provision of important ecosystem services and cause health risks to humans and animals. Consequently, effective short-term algae forecasts are important as they provide early warnings and enable implementation of mitigation strategies. In this context, machine learning (ML) emerges as a promising forecasting tool. However, the performance of ML models is heavily dependent on the availability of appropriate training data. Consequently, it is essential to determine the volume of data necessary to develop reliable ML forecasts. Understanding this will guide future monitoring strategies, optimize resource allocation, and set realistic expectations for management outcomes.",
+            "og:title": "Are more data always better? – Machine learning forecasting of algae based on long-term observations",
+            "citation_author": "D. Atton Beckmann",
+            "citation_pii": "S0301479724034649",
+            "og:description": "Bloom-forming algae present a unique challenge to water managers as they can significantly impair provision of important ecosystem services and cause …",
+            "citation_online_date": "2024/12/02",
+            "citation_author_email": "daniel.atton.beckmann@stir.ac.uk",
+            "citation_firstpage": "123478",
+            "citation_issn": "0301-4797",
+            "citation_doi": "10.1016/j.jenvman.2024.123478",
+            "dc.identifier": "10.1016/j.jenvman.2024.123478",
+            "citation_volume": "373"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ars.els-cdn.com/content/image/1-s2.0-S0301479724X00213-cov150h.gif"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2023 CSBS Annual Survey of Community Banks",
+      "htmlTitle": "2023 CSBS Annual Survey of Community Banks",
+      "link": "https://www.csbs.org/sites/default/files/2023-09/CSBS%202023%20Community%20Bank%20Survey%2010.04.2023.pdf",
+      "displayLink": "www.csbs.org",
+      "snippet": "Oct 4, 2023 ... In the face of these stresses, the U.S. Treasury Department secretary authorized the creation of the Bank Term Funding. Program (BTFP) to ...",
+      "htmlSnippet": "Oct 4, 2023 \u003cb\u003e...\u003c/b\u003e In the face of these stresses, the U.S. Treasury \u003cb\u003eDepartment\u003c/b\u003e secretary authorized the creation of the Bank Term Funding. Program (BTFP) to&nbsp;...",
+      "formattedUrl": "https://www.csbs.org/.../CSBS%202023%20Community%20Bank%20Surve...",
+      "htmlFormattedUrl": "https://www.csbs.org/.../CSBS%202023%20Community%20Bank%20Surve...",
+      "pagemap": {
+        "metatags": [
+          {
+            "moddate": "D:20230929161838-04'00'",
+            "creationdate": "D:20230929161448+05'00'",
+            "creator": "Adobe InDesign 18.5 (Macintosh)",
+            "producer": "Adobe PDF Library 17.0"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "FSOC Annual Report 2023",
+      "htmlTitle": "FSOC Annual Report 2023",
+      "link": "https://home.treasury.gov/system/files/261/FSOC2023AnnualReport.pdf",
+      "displayLink": "home.treasury.gov",
+      "snippet": "Dec 14, 2023 ... The Financial Stability Oversight Council (Council) was established by the Dodd-Frank Wall Street. Reform and Consumer Protection Act ...",
+      "htmlSnippet": "Dec 14, 2023 \u003cb\u003e...\u003c/b\u003e The Financial Stability Oversight Council (Council) was established by the \u003cb\u003eDodd\u003c/b\u003e-Frank Wall Street. Reform and Consumer Protection Act&nbsp;...",
+      "formattedUrl": "https://home.treasury.gov/system/files/261/FSOC2023AnnualReport.pdf",
+      "htmlFormattedUrl": "https://home.treasury.gov/system/files/261/FSOC2023AnnualReport.pdf",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCuUsc1MYS2lEL4PuC5rPKmaHymDxDsL7toCbBvrGbbDCgbJPVLAt2N-s&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20231220120731-05'00'",
+            "creationdate": "D:20231213175716-05'00'",
+            "creator": "Adobe InDesign 19.0 (Windows)",
+            "producer": "Adobe PDF Library 17.0",
+            "title": "FSOC Annual Report 2023"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///bcb4399cf7bf77f0c13fa3509279405bf746dbc489d6fe1ba7770f2066192427"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    }
+  ]
+}

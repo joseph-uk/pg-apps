@@ -1,0 +1,415 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Lazy Rasp",
+        "totalResults": "206000",
+        "searchTerms": "Lazy Rasp",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Lazy Rasp",
+        "totalResults": "206000",
+        "searchTerms": "Lazy Rasp",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.33374,
+    "formattedSearchTime": "0.33",
+    "totalResults": "206000",
+    "formattedTotalResults": "206,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "LazyRASP",
+      "htmlTitle": "LazyRASP",
+      "link": "https://lazyrasp.com/",
+      "displayLink": "lazyrasp.com",
+      "snippet": "LazyRASP logo. \"When you're too lazy to spend time clicking too many steps, We're here to help!\" RASP forecast provided by Stratus.",
+      "htmlSnippet": "LazyRASP logo. &quot;When you&#39;re too \u003cb\u003elazy\u003c/b\u003e to spend time clicking too many steps, We&#39;re here to help!&quot; \u003cb\u003eRASP\u003c/b\u003e forecast provided by Stratus.",
+      "formattedUrl": "https://lazyrasp.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003elazyrasp\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCpTRyqS8HQSiEjqHFRHECR62A0IMetS85hG2jSQfDSNunFyIlOlUP7k&s",
+            "width": "161",
+            "height": "78"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "/banner.png",
+            "theme-color": "#000000",
+            "og:type": "website",
+            "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+            "og:title": "LazyRASP forecast provided by Stratus",
+            "og:description": "When you're too lazy to spend time clicking too many steps, we're here to help!"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///f35d10e8f0e696d9d6ce0a9873a34f84e2df0a1c4204efb4b88984a1fa715078"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Lazy RASP",
+      "htmlTitle": "\u003cb\u003eLazy RASP\u003c/b\u003e",
+      "link": "https://shpf.co.uk/lazyrasp/",
+      "displayLink": "shpf.co.uk",
+      "snippet": "Lazy RASP. Quick forecasts for when you have limited internet connectivity. RASP forecast provided by Stratus. Check the latest run status here. ... Note that ...",
+      "htmlSnippet": "\u003cb\u003eLazy RASP\u003c/b\u003e. Quick forecasts for when you have limited internet connectivity. RASP forecast provided by Stratus. Check the latest run status here. ... Note that&nbsp;...",
+      "formattedUrl": "https://shpf.co.uk/lazyrasp/",
+      "htmlFormattedUrl": "https://shpf.co.uk/\u003cb\u003elazyrasp\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Rasp Products - 9 Lazy 3 Knives & Leather",
+      "htmlTitle": "\u003cb\u003eRasp\u003c/b\u003e Products - 9 \u003cb\u003eLazy\u003c/b\u003e 3 Knives &amp; Leather",
+      "link": "https://www.9lazy3.com/rasp-products.html",
+      "displayLink": "www.9lazy3.com",
+      "snippet": "Rasp Products - Wild Rag Rasp Cross Necklace $65.00 View Details Rasp Cactus Necklace $75.00 View Details Rasp Cross Necklace #2 $65.00 View Details",
+      "htmlSnippet": "\u003cb\u003eRasp\u003c/b\u003e Products - Wild Rag \u003cb\u003eRasp\u003c/b\u003e Cross Necklace $65.00 View Details \u003cb\u003eRasp\u003c/b\u003e Cactus Necklace $75.00 View Details \u003cb\u003eRasp\u003c/b\u003e Cross Necklace #2 $65.00 View Details",
+      "formattedUrl": "https://www.9lazy3.com/rasp-products.html",
+      "htmlFormattedUrl": "https://www.9\u003cb\u003elazy\u003c/b\u003e3.com/\u003cb\u003erasp\u003c/b\u003e-products.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyvGHeWN2i8ic3thhjLFktOk9LClCDvfHETaeUNmq6pbcRidxgAVN4o4Md&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.9lazy3.com/uploads/5/5/4/1/55419579/s314886652534809059_p651_i2_w1536.jpeg?width=320",
+            "og:site_name": "9 Lazy 3 Knives & Leather",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Rasp Products",
+            "og:url": "https://www.9lazy3.com/rasp-products.html",
+            "og:description": "9 Lazy 3 Knives & Leather"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.9lazy3.com/uploads/5/5/4/1/55419579/s314886652534809059_p651_i2_w1536.jpeg?width=320"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Whats with RASP? - new - Paragliding Forum",
+      "htmlTitle": "View topic - Whats with RASP? - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jul 2, 2019 ... I've tried to search for different ways to get to the RASP maps pages but always just end up back at the same place. I did like Lazy RASP ...",
+      "htmlSnippet": "Jul 2, 2019 \u003cb\u003e...\u003c/b\u003e I&#39;ve tried to search for different ways to get to the RASP maps pages but always just end up back at the same place. I did like \u003cb\u003eLazy RASP\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=96493",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Rasp Steel Knives – Lazy J Custom Knives",
+      "htmlTitle": "\u003cb\u003eRasp\u003c/b\u003e Steel Knives – \u003cb\u003eLazy\u003c/b\u003e J Custom Knives",
+      "link": "https://lazyjcustomknives.com/product-category/rasp-steel-knives/",
+      "displayLink": "lazyjcustomknives.com",
+      "snippet": "Rasp Steel Knives · Handmade bull cutter with beautiful blue resin and pinecone handle · Handmade high carbon rasp steel knife · Handmade rasp steel bull cutter ...",
+      "htmlSnippet": "\u003cb\u003eRasp\u003c/b\u003e Steel Knives &middot; Handmade bull cutter with beautiful blue resin and pinecone handle &middot; Handmade high carbon \u003cb\u003erasp\u003c/b\u003e steel knife &middot; Handmade \u003cb\u003erasp\u003c/b\u003e steel bull cutter&nbsp;...",
+      "formattedUrl": "https://lazyjcustomknives.com/product-category/rasp-steel-knives/",
+      "htmlFormattedUrl": "https://\u003cb\u003elazy\u003c/b\u003ejcustomknives.com/product-category/\u003cb\u003erasp\u003c/b\u003e-steel-knives/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9QtMOWmlLXhBKx99ckmXQc_PtuEWprV2HLzzJdlkmsN9iAQXGvkCkrdg&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lazyjcustomknives.com/wp-content/uploads/2023/11/Photo_1700593897566-1-300x300.jpg"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Home",
+            "name": "Home",
+            "position": "1"
+          },
+          {
+            "item": "Shop",
+            "name": "Shop",
+            "position": "2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Kutzall hand rasps - Canadian Woodworking",
+      "htmlTitle": "Kutzall hand \u003cb\u003erasps\u003c/b\u003e - Canadian Woodworking",
+      "link": "https://canadianwoodworking.com/tools/kutzall-hand-rasps/",
+      "displayLink": "canadianwoodworking.com",
+      "snippet": "Feb 2, 2024 ... ... rasp, Kutzall fine rasp, Gramercy smooth rasp. You'll notice in the ... lazy-src= \u003e\u003c/noscript\u003eLaguna JX 6 jointer\" style=\"height:220px ...",
+      "htmlSnippet": "Feb 2, 2024 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003erasp\u003c/b\u003e, Kutzall fine \u003cb\u003erasp\u003c/b\u003e, Gramercy smooth \u003cb\u003erasp\u003c/b\u003e. You&#39;ll notice in the ... \u003cb\u003elazy\u003c/b\u003e-src= &gt;&lt;/noscript&gt;Laguna JX 6 jointer&quot; style=&quot;height:220px&nbsp;...",
+      "formattedUrl": "https://canadianwoodworking.com/tools/kutzall-hand-rasps/",
+      "htmlFormattedUrl": "https://canadianwoodworking.com/tools/kutzall-hand-\u003cb\u003erasp\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2UvbLJITz2eplo4Abv6416J4aV9UvBxoupuMZgYctMTExOwXKyjrIcw&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.canadianwoodworking.com/wp-content/uploads/2021/09/16085446/cropped-CanadianWoodworkingIcon_400x400.jpg",
+            "og:type": "article",
+            "article:published_time": "2024-02-02T18:28:03+00:00",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Kutzall hand rasps - Canadian Woodworking",
+            "og:site_name": "Canadian Woodworking - Resource for Canadian woodworkers",
+            "author": "Carl Duguay",
+            "og:title": "Kutzall hand rasps - Canadian Woodworking",
+            "msapplication-tileimage": "https://cdn.canadianwoodworking.com/wp-content/uploads/2021/09/16085446/cropped-CanadianWoodworkingIcon_400x400-270x270.jpg",
+            "og:description": "Quick cutting, long-lasting, economically priced rasps.",
+            "og:image:secure_url": "https://cdn.canadianwoodworking.com/wp-content/uploads/2021/09/16085446/cropped-CanadianWoodworkingIcon_400x400.jpg",
+            "article:publisher": "https://www.facebook.com/canwoodworking/",
+            "twitter:image": "https://cdn.canadianwoodworking.com/wp-content/uploads/2021/09/16085446/cropped-CanadianWoodworkingIcon_400x400.jpg",
+            "facebook-domain-verification": "klbih0xzx24gdy5e35j0lf462js7z9",
+            "article:tag": "Premium",
+            "article:modified_time": "2024-02-02T18:28:04+00:00",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Quick cutting, long-lasting, economically priced rasps.",
+            "og:locale": "en_US",
+            "og:url": "https://canadianwoodworking.com/tools/kutzall-hand-rasps/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.canadianwoodworking.com/wp-content/uploads/2021/09/16085446/cropped-CanadianWoodworkingIcon_400x400.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Lazy RASP",
+      "htmlTitle": "Profile for \u003cb\u003eLazy RASP\u003c/b\u003e",
+      "link": "https://www.facebook.com/lazyrasp/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Lazy RASP ... \"When you're too lazy to spend time clicking too many steps, We're here to help!\" 󱙶. Follow. 󰟝. Posts. About.",
+      "htmlSnippet": "\u003cb\u003eLazy RASP\u003c/b\u003e ... &quot;When you&#39;re too lazy to spend time clicking too many steps, We&#39;re here to help!&quot; 󱙶. Follow. 󰟝. Posts. About.",
+      "formattedUrl": "https://www.facebook.com/lazyrasp/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003elazyrasp\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD1-RRkWERzio4qaYeBsCuLcDSTtlK20jeB06sZqSPsxtmR2RzvKuxAbM&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100066562635581",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100066562635581",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100066562635581",
+            "og:description": "Lazy RASP, London, United Kingdom. 505 likes. \"When you're too lazy to spend time clicking too many steps,\nWe're here to help!\"",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100066562635581",
+            "twitter:image:alt": "Lazy RASP | London",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Lazy RASP | London",
+            "twitter:title": "Lazy RASP | London",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Lazy RASP | London",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100066562635581",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Lazy RASP, London, United Kingdom. 505 likes. \"When you're too lazy to spend time clicking too many steps,\nWe're here to help!\"",
+            "og:locale": "en_US",
+            "fb-version": "451.0.0.0.93:2763",
+            "og:url": "https://www.facebook.com/lazyrasp/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100066562635581"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Page 10 – Custom Hand Made Knives - Lazy J Custom Knives",
+      "htmlTitle": "Page 10 – Custom Hand Made Knives - Lazy J Custom Knives",
+      "link": "https://lazyjcustomknives.com/page/10/",
+      "displayLink": "lazyjcustomknives.com",
+      "snippet": "Cowboy Knives, Skinner Knife, Solid Blade Knives · Custom handmade Rasp Steel Cowboy knife. 0 out of 5. $190.00 $145.00. Hot. -28%. Add to cart. Quick View.",
+      "htmlSnippet": "Cowboy Knives, Skinner Knife, Solid Blade Knives &middot; Custom handmade \u003cb\u003eRasp\u003c/b\u003e Steel Cowboy knife. 0 out of 5. $190.00 $145.00. Hot. -28%. Add to cart. Quick View.",
+      "formattedUrl": "https://lazyjcustomknives.com/page/10/",
+      "htmlFormattedUrl": "https://\u003cb\u003elazy\u003c/b\u003ejcustomknives.com/page/10/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzcXNXn3XH6OXxSegeFWYrMSpWI5h7bwwVFcvD067M-iYFKD-O7WvuAK_&s",
+            "width": "238",
+            "height": "212"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lazyjcustomknives.com/wp-content/uploads/2022/07/images-28.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Rasp Thorne & the Briars",
+      "htmlTitle": "Profile for \u003cb\u003eRasp\u003c/b\u003e Thorne &amp; the Briars",
+      "link": "https://www.facebook.com/RaspThorneAndTheBriars/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Rasp Thorne & the Briars. 732 likes. Carnival dirge! Circus-punk! Filthy ... https://raspthorne.bandcamp.com/album/lazy-sharks · LaZY SHaRKs, by LaZY ...",
+      "htmlSnippet": "\u003cb\u003eRasp\u003c/b\u003e Thorne &amp; the Briars. 732 likes. Carnival dirge! Circus-punk! Filthy ... https://raspthorne.bandcamp.com/album/\u003cb\u003elazy\u003c/b\u003e-sharks &middot; \u003cb\u003eLaZY\u003c/b\u003e SHaRKs, by \u003cb\u003eLaZY\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/RaspThorneAndTheBriars/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eRasp\u003c/b\u003eThorneAndTheBriars/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRShtY_-KlMDT7wQcQllbdJ180Fpe_BdAx64NpakH41yVQs-ZUFx7VU1jQ&s",
+            "width": "180",
+            "height": "180"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100063143293225",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063143293225",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100063143293225",
+            "og:description": "Rasp Thorne & the Briars. 732 likes. Carnival dirge! Circus-punk! Filthy glam-trash'n'roll!",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063143293225",
+            "twitter:image:alt": "Rasp Thorne & the Briars",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Rasp Thorne & the Briars",
+            "twitter:title": "Rasp Thorne & the Briars",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Rasp Thorne & the Briars",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100063143293225",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Rasp Thorne & the Briars. 732 likes. Carnival dirge! Circus-punk! Filthy glam-trash'n'roll!",
+            "og:locale": "en_US",
+            "fb-version": "451.0.0.0.93:2763",
+            "og:url": "https://www.facebook.com/RaspThorneAndTheBriars/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063143293225"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Forecast Weather - DSGC",
+      "htmlTitle": "Forecast Weather - DSGC",
+      "link": "https://www.dsgc.co.uk/what-is-happening-now/forecast-weather",
+      "displayLink": "www.dsgc.co.uk",
+      "snippet": "Weather. Links to Lazy RASP , RASP (Stratus), RASP Home page. TODAY'S RASP FORECAST NORTH HILL. North Hill Today. TOMORROW'S RASP FORECAST NORTH HILL.",
+      "htmlSnippet": "Weather. Links to \u003cb\u003eLazy RASP\u003c/b\u003e , RASP (Stratus), RASP Home page. TODAY&#39;S RASP FORECAST NORTH HILL. North Hill Today. TOMORROW&#39;S RASP FORECAST NORTH HILL.",
+      "formattedUrl": "https://www.dsgc.co.uk/what-is-happening-now/forecast-weather",
+      "htmlFormattedUrl": "https://www.dsgc.co.uk/what-is-happening-now/forecast-weather",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ax01r9j23w_--hICY8tROuuF7UOwY6su9VvVkYyAMo6ZOvmqRVTpjSk&s",
+            "width": "135",
+            "height": "373"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "author": "Jill Harmer"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.dsgc.co.uk/images/tower_adverts/like_eagle.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

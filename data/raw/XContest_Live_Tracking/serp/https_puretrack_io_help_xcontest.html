@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			// IMPORTANT: set this in <HEAD> top before any other tag.
+			const setTheme = (theme) => {
+				let settings = {darkMode:false};
+				settingsRaw = window.localStorage.getItem('settings-v2');
+				if (settingsRaw) settings = JSON.parse(settingsRaw);
+				console.log(settings.darkMode);
+				if (settings.darkMode=='dark') document.querySelector('html').classList.add('dark');
+			};
+			setTheme();
+		</script>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		<title>Configure XContest</title>
+		<meta name="user" content="null">
+		
+		
+		<meta name="csrf-token" content="jTYiyPEAyuIu3oTXI6FlfZUbHxQDjHN3mLyQlQPL">
+
+		<link rel="preload" as="style" href="https://puretrack.io/build/assets/pages-app-c5fb4c25.css" /><link rel="modulepreload" href="https://puretrack.io/build/assets/pages-app-1f330677.js" /><link rel="stylesheet" href="https://puretrack.io/build/assets/pages-app-c5fb4c25.css" data-navigate-track="reload" /><script type="module" src="https://puretrack.io/build/assets/pages-app-1f330677.js" data-navigate-track="reload"></script>
+		<script type="module">
+			import { createApp } from 'https://unpkg.com/petite-vue?module';
+
+			let settings = {};
+						
+
+			const get_url_param = function(val) {
+				var result = "",
+				tmp = [];
+				location.search.substr(1).split("&").forEach(function (item) {
+					tmp = item.split("=");
+					if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+				});
+				return result;
+			}
+
+			createApp({
+				// exposed to all expressions
+				showMenu: false,
+				fromAppStore: false,
+				startUp() {
+
+					if (window.innerWidth>800) this.showMenu=true;
+					if (get_url_param('fromappstore')) {
+						if (Number(get_url_param('fromappstore'))==1) {
+							window.localStorage.setItem('fromappstore', "true");
+							console.log('setting from app store=true');
+							this.fromAppStore = true;
+						} else {
+							window.localStorage.removeItem('fromappstore');
+							console.log('removing from app store');
+						}
+					} else {
+						if (window.localStorage.getItem('fromappstore')=='true') {
+							console.log('Found from app store in localstorage');
+							this.fromAppStore = true;
+						}
+					}
+				}
+			}).mount()
+
+		</script>
+
+	</head>
+	<body class="font-sans antialiased bg-gray-100 dark:bg-gray-800 dark:text-white " id="app" v-scope>
+		<div @vue:mounted="startUp()" class="header p-2 bg-white dark:bg-black w-full flex flex-wrap items-center shadow-lg">
+
+			<a href="/" title="Map" class="logo ml-4 mr-2">
+				<img src="/images/puretrack-logo.png" width="30" alt="PureTrack Logo">
+			</a>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/">Map</a>
+			</div>
+
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/help">Help</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/news">News</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/about">About</a>
+			</div>
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white" id="upgrade">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/upgrade">Upgrade</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/contact">Contact</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/dashboard">Dashboard</a>
+			</div>
+
+
+			<div class="flex-grow"></div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/register">Register</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/login">Login</a>
+			</div>
+
+		</div>
+
+					<button class="absolute ml-10 mt-10" @click="showMenu=true" v-show="!showMenu">Show Menu &raquo;</button>
+		
+		<div class="flex">
+			
+			<!-- side menu -->
+							<div style="width: 280px; min-width: 280px;" class="p-8 flex flex-col " v-show="showMenu">
+					<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded cursor-pointer" @click.prevent="showMenu=false">&laquo; Hide Menu</a>
+
+						<div class="text-sm text-gray-600 mt-6">Configure</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/flarm">FLARM devices</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/navigator">Oudie &amp; SeeYou Navigator</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/igc-droid">IGC Droid</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/inreach">InReach</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/adsb">ADSB</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/xcontest">XContest &amp; XCTrack</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/syride">Syride Devices</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/satellite-trackers">Satellite Trackers</a>
+
+
+<div class="text-sm text-gray-600 mt-6">How To</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/alerts">Setup Alerts</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/ffvl">Setup FFVL Tracking</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="https://www.youtube.com/channel/UCI8sTbKIMgatgUpT8PWr8sQ">Training Videos on YouTube</a>
+
+<div class="text-sm text-gray-600 mt-6">For Developers</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/api-insert">Insert API</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/api">Traffic API</a>
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/label-export">PureTrack Label Export</a>
+
+
+
+<div class="text-sm text-gray-600 mt-6">About PureTrack</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/help/comparison">PureTrack Compared</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/trackers">Supported Trackers</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/puretrack-tracker">Buy a Tracker</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="https://www.facebook.com/puretrack.io">PureTrack on Facebook</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="https://www.youtube.com/channel/UCI8sTbKIMgatgUpT8PWr8sQ">Training Videos on YouTube</a>
+
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/faq">FAQ</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/release-notes">Release Notes</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/terms">Terms &amp; Conditions</a>
+
+
+				</div>
+
+				<div class="my-4 p-4 flex-grow" 
+					:class="[showMenu ? 'hidden sm:block' : 'block']">
+
+					<div class="md:mx-auto bg-white dark:bg-gray-900 p-6 rounded shadow-xl">
+
+						
+
+<div class="pt-8 prose dark:prose-invert">
+
+
+	<a href="https://www.xcontest.org"><img src="/images/source-icons/xcontest.png" width="128" height="128" alt="XContest Logo" class="float-right"></a>
+
+	<h1>Configure XContest and XCTrack</h1>
+
+	<p>For XContest Live Tracking in PureTrack, you'll need to:</p>
+
+	<ol>
+		<li>Create an xcontest.org account, <a href="https://www.xcontest.org">login at the website</a>.</li>
+		<li>Register with the current contest season in XContest:
+			<img src="/images/help/xcontest-register-contest.png" alt="Register with the current year's contest">
+		</li>
+		<li>Enable XContest livetracking either in XCTrack app, or in FlySkyHy app.</li>
+		<li>
+			<p>Click this link to Join the PureTrack XContest Group:</p>
+
+			<a href="https://www.xcontest.org/world/en/my-groups:puretrack" class="btn btn-primary">Join Now </a>
+
+		</li> 
+	</ol>
+
+	<p>By joining the PureTrack group, your tracking data from XCTrack will automatically appear on the PureTrack website. By default you'll show up as your name, and either paraglider, hang glider, or paramotor as specified in the XContest software.</p>
+
+	<h2>Merge XContest tracking with a SPOT, InReach, or other tracking service</h2>
+
+	<p>For more advanced control, add your XContest tracker to PureTrack to customise your aircraft type, and your map label. You can also feed in multiple tracking sources into the same map label, e.g. your SPOT or InReach device.</p>
+
+	<p>To do this you'll need your XContest UUID (User ID) found on the <a href="https://www.xcontest.org/world/en/my-groups">XContest Group Page</a></p>
+
+	<p>Copy/paste the UUID then <a href="/dashboard">add a tracker</a> in PureTrack:</p>
+
+	<a href="/add/xcontest" class="btn btn-primary">Add XContest Tracker</a>
+
+	<img src="/images/help/join-xcontest.png" alt="XContest Group Page" class="border border-gray shadow-2xl">
+
+
+	<h2>How fast XContest Updates</h2>
+
+	<p>PureTrack will find new pilots in the PureTrack.io XContest group every minute. Your track will update every minute.</p>
+
+	<h2>Thanks </h2>
+
+	<p>Thanks to the team at <a href="https://www.xcontest.org/world/en/">XContest</a> for their support of PureTrack.</p>
+
+
+</div>
+
+
+
+						<hr class="my-6 border-b dark:border-t-black dark:border-b-gray-800">
+						
+
+						<div class="flex gap-4 w-fit items-center mx-auto my-6">
+							<img src="/images/puretrack-logo.png" width="30">
+							<h1 class="text-2xl text-gray-700 dark:text-gray-400"><span class="font-bold">Pure</span>Track<span class="font-bold">.io</span></h1>
+						</div>
+					</div>
+
+				</div>
+
+			
+		</div>
+		
+
+	</body>
+
+	<script>
+	// hide the upgrade if fromappstore is present
+	if (window.localStorage.getItem('fromappstore')=='true') {
+		const upgradeDiv = document.getElementById('upgrade');
+		upgradeDiv.style.display = 'none';
+	}
+	</script>
+</html>

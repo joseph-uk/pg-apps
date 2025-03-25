@@ -1,0 +1,529 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Pure Track",
+        "totalResults": "470000000",
+        "searchTerms": "Pure Track",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Pure Track",
+        "totalResults": "470000000",
+        "searchTerms": "Pure Track",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.177459,
+    "formattedSearchTime": "0.18",
+    "totalResults": "470000000",
+    "formattedTotalResults": "470,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "PureTrack",
+      "htmlTitle": "\u003cb\u003ePureTrack\u003c/b\u003e",
+      "link": "https://puretrack.io/",
+      "displayLink": "puretrack.io",
+      "snippet": "PureTrack.io ; General Aviation. All light aircraft ; Gliding. Gliders & Tugs ; Freeflight. Paragliders & Hang Gliders ; Marine. Anything on the water.",
+      "htmlSnippet": "\u003cb\u003ePureTrack\u003c/b\u003e.io ; General Aviation. All light aircraft ; Gliding. Gliders &amp; Tugs ; Freeflight. Paragliders &amp; Hang Gliders ; Marine. Anything on the water.",
+      "formattedUrl": "https://puretrack.io/",
+      "htmlFormattedUrl": "https://\u003cb\u003epuretrack\u003c/b\u003e.io/",
+      "pagemap": {
+        "metatags": [
+          {
+            "apple-mobile-web-app-status-bar-style": "black",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "csrf-token": "hrDeGvGeBmsqee497mGlPTes8WLuAiaaxQjGLhAH",
+            "apple-mobile-web-app-title": "PureTrack Web",
+            "user": "null"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Maltby Pure-Track Tour Milled PTM-1 Blade Putters - The GolfWorks",
+      "htmlTitle": "Maltby \u003cb\u003ePure\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e Tour Milled PTM-1 Blade Putters - The GolfWorks",
+      "link": "https://www.golfworks.com/maltby-pure-track-tour-milled-putters/p/ma0281/",
+      "displayLink": "www.golfworks.com",
+      "snippet": "Description. The Maltby PTM Pure-Track Tour Milled putter features a re-designed modern blade putter profile specifically designed to increase accuracy and ...",
+      "htmlSnippet": "Description. The Maltby PTM \u003cb\u003ePure\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e Tour Milled putter features a re-designed modern blade putter profile specifically designed to increase accuracy and&nbsp;...",
+      "formattedUrl": "https://www.golfworks.com/maltby-pure-track-tour-milled.../p/ma0281/",
+      "htmlFormattedUrl": "https://www.golfworks.com/maltby-\u003cb\u003epure\u003c/b\u003e-\u003cb\u003etrack\u003c/b\u003e-tour-milled.../p/ma0281/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHzPFivjbTzdY_rqVCJc1DvG3EPcRBqB-YgNpAt5J0bUIOvvo7lZHYDBs&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "aggregaterating": [
+          {
+            "ratingvalue": "4.8",
+            "reviewcount": "88"
+          },
+          {
+            "ratingvalue": "4.8",
+            "reviewcount": "17"
+          },
+          {
+            "ratingvalue": "4.8",
+            "reviewcount": "42"
+          },
+          {
+            "ratingvalue": "4.8",
+            "reviewcount": "42"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn11.bigcommerce.com/s-k9nvqai7wz/products/745/images/3449/ma0281__69876.1674183072.386.513.jpg?c=1",
+            "og:type": "product",
+            "og:site_name": "The GolfWorks",
+            "pinterest:richpins": "enabled",
+            "bvdatemodified": "2025-03-22",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "product:price:currency": "USD",
+            "og:title": "Maltby Pure-Track Tour Milled PTM-1 Blade Putters",
+            "product:price:amount": "89.99",
+            "og:url": "https://www.golfworks.com/maltby-pure-track-tour-milled-putters/p/ma0281/",
+            "og:description": "The Maltby Pure-Track Tour Milled Blade putter is 100% CNC milled for ultimate quality and performance.",
+            "platform": "bigcommerce.stencil"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn11.bigcommerce.com/s-k9nvqai7wz/products/745/images/3449/ma0281__69876.1674183072.386.513.jpg?c=1"
+          }
+        ],
+        "individualproduct": [
+          {
+            "name": "Maltby Pure-Track Tour Milled PTM-1 Blade Putters"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Log in - PureTrack",
+      "htmlTitle": "Log in - PureTrack",
+      "link": "https://puretrack.io/login",
+      "displayLink": "puretrack.io",
+      "snippet": "PureTrack.io. Not yet signed up? Register. Email. Password. Remember me. Forgot your password? Log in.",
+      "htmlSnippet": "\u003cb\u003ePureTrack\u003c/b\u003e.io. Not yet signed up? Register. Email. Password. Remember me. Forgot your password? Log in.",
+      "formattedUrl": "https://puretrack.io/login",
+      "htmlFormattedUrl": "https://\u003cb\u003epuretrack\u003c/b\u003e.io/login",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "csrf-token": "jR0GDlOpAbRNsBfg8TAJIkbcBWJTLaQlYtgtutuj",
+            "user": "null"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Maltby Pure-Track SS Putter Shaft Blanks - The GolfWorks",
+      "htmlTitle": "Maltby \u003cb\u003ePure\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e SS Putter Shaft Blanks - The GolfWorks",
+      "link": "https://www.golfworks.com/maltby-pure-track-ss-putter-shaft-blanks/p/ma0338/",
+      "displayLink": "www.golfworks.com",
+      "snippet": "The Maltby Pure-Track SS putter shaft is designed to smooth out your putter stroke for more consistent distance and accuracy from any distance on the putting ...",
+      "htmlSnippet": "The Maltby \u003cb\u003ePure\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e SS putter shaft is designed to smooth out your putter stroke for more consistent distance and accuracy from any distance on the putting&nbsp;...",
+      "formattedUrl": "https://www.golfworks.com/maltby-pure-track-ss-putter-shaft.../ma0338/",
+      "htmlFormattedUrl": "https://www.golfworks.com/maltby-\u003cb\u003epure\u003c/b\u003e-\u003cb\u003etrack\u003c/b\u003e-ss-putter-shaft.../ma0338/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsViGvb_2Vsp7fsz17sDHMhXgEuQtNi-9IRSoxx043QjyNkhYxo6UevORA&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "aggregaterating": [
+          {
+            "ratingvalue": "4.3",
+            "reviewcount": "22"
+          },
+          {
+            "ratingvalue": "3.8",
+            "reviewcount": "4"
+          },
+          {
+            "ratingvalue": "4.8",
+            "reviewcount": "4"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn11.bigcommerce.com/s-k9nvqai7wz/products/6195/images/6678/ma0338__46076.1677013099.386.513.jpg?c=1",
+            "og:type": "product",
+            "og:site_name": "The GolfWorks",
+            "pinterest:richpins": "enabled",
+            "bvdatemodified": "2025-03-24",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "product:price:currency": "USD",
+            "og:title": "Maltby Pure-Track SS Putter Shaft Blanks",
+            "product:price:amount": "27.99",
+            "og:url": "https://www.golfworks.com/maltby-pure-track-ss-putter-shaft-blanks/p/ma0338/",
+            "og:description": "Maltby Pure-Track SS Putter Shaft Blanks MA0338",
+            "platform": "bigcommerce.stencil"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn11.bigcommerce.com/s-k9nvqai7wz/products/6195/images/6678/ma0338__46076.1677013099.386.513.jpg?c=1"
+          }
+        ],
+        "individualproduct": [
+          {
+            "name": "Maltby Pure-Track SS Putter Shaft Blanks"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "PureTrack Supported Trackers & Devices",
+      "htmlTitle": "PureTrack Supported Trackers &amp; Devices",
+      "link": "https://puretrack.io/trackers",
+      "displayLink": "puretrack.io",
+      "snippet": "PureTrack supports a huge range of devices, software and platforms, making it easy to get tracking no matter what system you're already using.",
+      "htmlSnippet": "PureTrack supports a huge range of devices, software and platforms, making it easy to get \u003cb\u003etracking\u003c/b\u003e no matter what system you&#39;re already using.",
+      "formattedUrl": "https://puretrack.io/trackers",
+      "htmlFormattedUrl": "https://\u003cb\u003epuretrack\u003c/b\u003e.io/\u003cb\u003etrack\u003c/b\u003eers",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "csrf-token": "Gz6I2Wp11NrxVvYcX0l6CIDIBURI20XY6GNfNKJe",
+            "user": "null"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "PURE Track Light - Verozza",
+      "htmlTitle": "\u003cb\u003ePURE Track\u003c/b\u003e Light - Verozza",
+      "link": "https://verozza.com/collection/track-light/pure-track-light",
+      "displayLink": "verozza.com",
+      "snippet": "PURE Track Light. PURE is a projector inspired by a minimalist and classic design. The integrated driver gives elegance to the body of the projector and gives a ...",
+      "htmlSnippet": "\u003cb\u003ePURE Track\u003c/b\u003e Light. PURE is a projector inspired by a minimalist and classic design. The integrated driver gives elegance to the body of the projector and gives a&nbsp;...",
+      "formattedUrl": "https://verozza.com/collection/track-light/pure-track-light",
+      "htmlFormattedUrl": "https://verozza.com/collection/\u003cb\u003etrack\u003c/b\u003e-light/\u003cb\u003epure\u003c/b\u003e-\u003cb\u003etrack\u003c/b\u003e-light",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLG1ObUe4SpZzMaPeYVKPHnEnaz3st6yVbfcP1HiZKhOOQ3-3qrXp6GAk&s",
+            "width": "243",
+            "height": "207"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://verozza.com/app/uploads/photos/5e58cf875aa60a439a3e8bc0d6b563e3.jpg",
+            "og:type": "website",
+            "og:image:width": "1366",
+            "twitter:card": "summary",
+            "twitter:title": "PURE Track Light - Verozza",
+            "theme-color": "#fdcf6c",
+            "og:site_name": "PURE Track Light - Verozza",
+            "author": "Verozza",
+            "og:title": "PURE Track Light",
+            "og:image:height": "768",
+            "og:description": "Light that reveals your World",
+            "twitter:creator": "Verozza",
+            "msapplication-navbutton-color": "#fdcf6c",
+            "twitter:image": "https://verozza.com/app/uploads/photos/5e58cf875aa60a439a3e8bc0d6b563e3.jpg",
+            "fb:app_id": "0",
+            "twitter:site": "https://verozza.com/collection/track-light/pure-track-light",
+            "apple-mobile-web-app-status-bar-style": "#fdcf6c",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no",
+            "twitter:description": "Light that reveals your World",
+            "csrf-token": "z7L7a7orjCMYnmpAqRwikoUimrEWLfhhDF4I3ULN",
+            "og:url": "https://verozza.com/collection/track-light/pure-track-light"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://verozza.com/app/uploads/photos/5e58cf875aa60a439a3e8bc0d6b563e3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "New Putter: Maltby Pure-Track PTM-5 : r/golf",
+      "htmlTitle": "New Putter: Maltby \u003cb\u003ePure\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e PTM-5 : r/golf",
+      "link": "https://www.reddit.com/r/golf/comments/15tyz9u/new_putter_maltby_puretrack_ptm5/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Aug 17, 2023 ... I've tried out a number of similar putters and decided this is the build/style I wanted to go with. FWIW: I'm a beginner trying to get better.",
+      "htmlSnippet": "Aug 17, 2023 \u003cb\u003e...\u003c/b\u003e I&#39;ve tried out a number of similar putters and decided this is the build/style I wanted to go with. FWIW: I&#39;m a beginner trying to get better.",
+      "formattedUrl": "https://www.reddit.com/r/golf/.../new_putter_maltby_puretrack_ptm5/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/golf/.../new_putter_maltby_\u003cb\u003epuretrack\u003c/b\u003e_ptm5/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjA4JUf_j6Zl5QQ2WrIg_PFnIiEIrqx2bFhx7Xa8zIt9ldPVXa0QAAFwSe&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/new-putter-maltby-pure-track-ptm-5-v0-jniab6cleqib1.jpg?width=1080&crop=smart&auto=webp&s=971bf4915184637279c01fddcd665cb212828d8b",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/golf on Reddit: New Putter: Maltby Pure-Track PTM-5",
+            "og:site_name": "Reddit",
+            "og:title": "r/golf on Reddit: New Putter: Maltby Pure-Track PTM-5",
+            "og:image:height": "1440",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/yuckturkeybacon - 13 votes and 11 comments",
+            "twitter:image": "https://preview.redd.it/new-putter-maltby-pure-track-ptm-5-v0-jniab6cleqib1.jpg?width=1080&crop=smart&auto=webp&s=971bf4915184637279c01fddcd665cb212828d8b",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/golf/comments/15tyz9u/new_putter_maltby_puretrack_ptm5/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/new-putter-maltby-pure-track-ptm-5-v0-jniab6cleqib1.jpg?width=1080&crop=smart&auto=webp&s=971bf4915184637279c01fddcd665cb212828d8b"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Maltby Pure Track reviews? - Putters - GolfWRX",
+      "htmlTitle": "Maltby \u003cb\u003ePure Track\u003c/b\u003e reviews? - Putters - GolfWRX",
+      "link": "https://forums.golfwrx.com/topic/1935400-maltby-pure-track-reviews/",
+      "displayLink": "forums.golfwrx.com",
+      "snippet": "Apr 29, 2023 ... Overall it's an amazing putter. My eye just likes the PTM-1 better. But performance wise they are interchangeable.",
+      "htmlSnippet": "Apr 29, 2023 \u003cb\u003e...\u003c/b\u003e Overall it&#39;s an amazing putter. My eye just likes the PTM-1 better. But performance wise they are interchangeable.",
+      "formattedUrl": "https://forums.golfwrx.com/topic/1935400-maltby-pure-track-reviews/",
+      "htmlFormattedUrl": "https://forums.golfwrx.com/topic/1935400-maltby-\u003cb\u003epure\u003c/b\u003e-\u003cb\u003etrack\u003c/b\u003e-reviews/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD59EdztRsscFCXsD8yOl0XVom6pOgWcrB_Z-F-MDap1BUzLGID3R1LOE&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "msapplication-starturl": "/",
+            "application-name": "GolfWRX",
+            "og:image": "https://wrxcdn.golfwrx.com/uploads/monthly_2023_04/IMG_20230324_183737.jpg.b3c750835a45de2e6d2db063b64df259.jpg",
+            "msapplication-config": "https://forums.golfwrx.com/browserconfig.xml/",
+            "twitter:card": "summary_large_image",
+            "og:type": "website",
+            "theme-color": "#000000",
+            "og:site_name": "GolfWRX",
+            "og:title": "Maltby Pure Track reviews?",
+            "apple-mobile-web-app-title": "GolfWRX",
+            "og:updated_time": "2025-03-06T11:29:20Z",
+            "og:description": "Look at this this putter. Anyone have any first hand experiences with this line?",
+            "twitter:site": "@golfwrx",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://forums.golfwrx.com/topic/1935400-maltby-pure-track-reviews/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://wrxcdn.golfwrx.com/uploads/monthly_2023_04/IMG_20230324_183737.jpg.b3c750835a45de2e6d2db063b64df259.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "BeTwo Pure track general lighting",
+      "htmlTitle": "BeTwo \u003cb\u003ePure track\u003c/b\u003e general lighting",
+      "link": "https://www.iguzzini.com/betwo-pure-track-general-lighting/",
+      "displayLink": "www.iguzzini.com",
+      "snippet": "Colours available for BeTwo Pure track general lighting. Do you want to know more? Click to access our Contact Us page where you can send us an enquiry.",
+      "htmlSnippet": "Colours available for BeTwo \u003cb\u003ePure track\u003c/b\u003e general lighting. Do you want to know more? Click to access our Contact Us page where you can send us an enquiry.",
+      "formattedUrl": "https://www.iguzzini.com/betwo-pure-track-general-lighting/",
+      "htmlFormattedUrl": "https://www.iguzzini.com/betwo-\u003cb\u003epure\u003c/b\u003e-\u003cb\u003etrack\u003c/b\u003e-general-lighting/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBrB14kk2LYG9vUzcHYjPvS3dhR7oHIqs6aO_bMCinx_hSNG85x3GYYDN&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://cdn2.iguzzini.com/getmedia/ac3760ce-ea72-4363-a88a-0b45469baca0/Betwo_plafone_pure_640x640?width=640&height=640&ext=.jpg",
+            "name": "BeTwo Pure",
+            "description": "Ceiling general lighting",
+            "brand": "iGuzzini",
+            "url": "iGuzzini BeTwo Pure Ceiling general lighting"
+          },
+          {
+            "image": "https://cdn2.iguzzini.com/getmedia/ac3760ce-ea72-4363-a88a-0b45469baca0/Betwo_plafone_pure_640x640?width=640&height=640&ext=.jpg",
+            "name": "BeTwo Pure",
+            "description": "Ceiling UGR\u003c19",
+            "brand": "iGuzzini",
+            "url": "iGuzzini BeTwo Pure Ceiling UGR"
+          },
+          {
+            "image": "https://cdn6.iguzzini.com/getmedia/7efe2f64-17ce-4eec-8b9f-b28f0b18b128/Betwo_sospensione_pure_640x640?width=640&height=640&ext=.jpg",
+            "name": "BeTwo Pure",
+            "description": "Pendant general lighting",
+            "brand": "iGuzzini",
+            "url": "iGuzzini BeTwo Pure Pendant general lighting"
+          },
+          {
+            "image": "https://cdn1.iguzzini.com/getmedia/1d65a0e8-5dc8-45cf-98ec-0b6d6db9d6e5/Betwo_sospensione_pure_640x640?width=640&height=640&ext=.jpg",
+            "name": "BeTwo Pure",
+            "description": "Pendant UGR\u003c19",
+            "brand": "iGuzzini",
+            "url": "iGuzzini BeTwo Pure Pendant UGR"
+          },
+          {
+            "image": "https://cdn5.iguzzini.com/getmedia/1c03490f-0bf3-4139-816b-0c08c8e2324e/Betwo_binario_Pure_640x640?width=640&height=640&ext=.jpg",
+            "name": "BeTwo Pure",
+            "description": "Track UGR\u003c19",
+            "brand": "iGuzzini",
+            "url": "iGuzzini BeTwo Pure Track UGR"
+          }
+        ],
+        "organization": [
+          {
+            "name": "iGuzzini illuminazione S.p.A"
+          }
+        ],
+        "postaladdress": [
+          {
+            "addresslocality": "Recanati, Italy",
+            "postalcode": "62019",
+            "streetaddress": "via Mariano Guzzini, 37"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ff292d",
+            "msapplication-config": "https://cdn3.iguzzini.com/App_Themes/iGuzzini/images/favicons/browserconfig.xml?v=2",
+            "theme-color": "#ffffff",
+            "twitter:card": "summary",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=no",
+            "og:title": "BeTwo Pure track general lighting",
+            "msapplication-tileimage": "https://cdn6.iguzzini.com/App_Themes/iGuzzini/images/favicons/mstile-144x144.png?v=2",
+            "og:url": "https://www.iguzzini.com/betwo-pure-track-general-lighting/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn3.iguzzini.com/getmedia/340f8929-ad1c-46af-ab00-2cd0c78f8e6c/01-Betwo_binario_Taglie-pure"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "BeTwo Pure",
+            "description": "Ceiling general lighting",
+            "photo": "https://cdn2.iguzzini.com/getmedia/ac3760ce-ea72-4363-a88a-0b45469baca0/Betwo_plafone_pure_640x640?width=640&height=640&ext=.jpg",
+            "url": "https://www.iguzzini.com/betwo-pure-ceiling-general-lighting/"
+          },
+          {
+            "fn": "BeTwo Pure",
+            "description": "Ceiling UGR\u003c19",
+            "photo": "https://cdn2.iguzzini.com/getmedia/ac3760ce-ea72-4363-a88a-0b45469baca0/Betwo_plafone_pure_640x640?width=640&height=640&ext=.jpg",
+            "url": "https://www.iguzzini.com/betwo-pure-ceiling-ugr-19/"
+          },
+          {
+            "fn": "BeTwo Pure",
+            "description": "Pendant general lighting",
+            "photo": "https://cdn6.iguzzini.com/getmedia/7efe2f64-17ce-4eec-8b9f-b28f0b18b128/Betwo_sospensione_pure_640x640?width=640&height=640&ext=.jpg",
+            "url": "https://www.iguzzini.com/betwo-pure-pendant-general-lighting/"
+          },
+          {
+            "fn": "BeTwo Pure",
+            "description": "Pendant UGR\u003c19",
+            "photo": "https://cdn1.iguzzini.com/getmedia/1d65a0e8-5dc8-45cf-98ec-0b6d6db9d6e5/Betwo_sospensione_pure_640x640?width=640&height=640&ext=.jpg",
+            "url": "https://www.iguzzini.com/betwo-pure-pendant-ugr-19/"
+          },
+          {
+            "fn": "BeTwo Pure",
+            "description": "Track UGR\u003c19",
+            "photo": "https://cdn5.iguzzini.com/getmedia/1c03490f-0bf3-4139-816b-0c08c8e2324e/Betwo_binario_Pure_640x640?width=640&height=640&ext=.jpg",
+            "url": "https://www.iguzzini.com/betwo-pure-track-ugr-19/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Surface Track | PureEdge Lighting",
+      "htmlTitle": "Surface \u003cb\u003eTrack\u003c/b\u003e | PureEdge Lighting",
+      "link": "https://www.pureedgelighting.com/product/ceiling/surface_track",
+      "displayLink": "www.pureedgelighting.com",
+      "snippet": "Surface Track. FILTER YOUR SEARCH. Clear Filter. TruColor RGBTW Static White ... About Pure Smart · Products · TruColor RGBTW · Inspiration · Wellness · WiZ Pro",
+      "htmlSnippet": "Surface \u003cb\u003eTrack\u003c/b\u003e. FILTER YOUR SEARCH. Clear Filter. TruColor RGBTW Static White ... About \u003cb\u003ePure\u003c/b\u003e Smart &middot; Products &middot; TruColor RGBTW &middot; Inspiration &middot; Wellness &middot; WiZ Pro",
+      "formattedUrl": "https://www.pureedgelighting.com/product/ceiling/surface_track",
+      "htmlFormattedUrl": "https://www.\u003cb\u003epure\u003c/b\u003eedgelighting.com/product/ceiling/surface_\u003cb\u003etrack\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9qnG_Pdk0S-_k5g0B1eINTDbxvhE5-BN7PreQXWJ2zdVw6LbOmWZ_9Iw&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "rating": "General",
+            "resource-type": "document",
+            "classification": "Contemporary Lighting",
+            "distribution": "Global"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.pureedgelighting.com/images/products_page_4col/outdoor/ceiling_surface/outdoor_track_head_black_01.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

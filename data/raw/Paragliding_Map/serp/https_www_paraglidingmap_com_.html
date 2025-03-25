@@ -1,0 +1,217 @@
+<html>
+<head>
+	<meta title="Paragliding Map" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<style>
+		body { margin: 0; padding: 0; font-size: 12pt; font-family: Roboto, Arial, Helvetica, sans-serif; overflow-x: hidden; overflow-y: scroll; }
+		img.hero { position: relative; z-index: 1; max-width: 100vw; max-height: calc(100vh - 85px); top: 0; left: 50%; transform: translateX(-50%); cursor: pointer; }
+		.page { position: relative; left: 50%; transform: translateX(-50%); width: 100%; max-width: 1024px; background-color: #fff; }
+		.page-fade { z-index: 5; position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 44px; }
+		.orange-button { visibility: hidden; background-color: darkorange; color: white; min-height: 44px; padding: 10px 30px; border: none; border-radius: 5px; font-size: 14pt; cursor: pointer; font-family: Roboto, Arial, Helvetica, sans-serif; white-space: nowrap; }
+		.orange-button:hover { background-color: orange; }
+		#exploreNowContainer { z-index: 20; position: sticky; padding: 20px 0 40px; top: 0; width: 100%; pointer-events: none; overflow: hidden; }
+		#exploreNowContainer.portrait { height: 44px; }
+		#exploreNowContainer.landscape { background-image: none; padding-bottom: 0; }
+		#exploreNow { transform-origin: top left; padding: 30px 120px; border: none; border-radius: 20px; font-size: 42pt; pointer-events: all; }
+		ul { display: block; list-style-type: square; }
+		body.portrait ul { margin: -10px 0 0 0; }
+		ul li { padding-bottom: 20px; padding-right: 20px; }
+		.language-en, .language-de, .language-fr { display: none; }
+	</style>
+</head>
+<body>
+
+	<img class="hero" sizes="(max-width: 512px) 512px, (max-width: 1024px) 1024px, 1658px" alt="Fly More Worldwide. All the Paragliding Info You Need." onclick="exploreNow()">
+
+	<div id="exploreNowContainer">
+		<button id="exploreNow" class="orange-button fixed-button" onclick="exploreNow()"></button>
+	</div>
+	
+	<div class="page">
+		<ul class="selling-points">
+	<li>Explore over 15,000 launch sites, 7,500 landings, 30,000 weather stations and 39,000 webcams.</li>
+	<li><b>Official data</b> from the DHV, Flyland, FFVL, Paragliding Earth and more.</li>
+	<li><b>Forecasts</b> from Meteoblue, Windy and WindFinder.</li>
+	<li>Live <b>webcams</b>.</li>
+	<li><b>Photos</b> give you a great impression of each spot.</li>
+	<li><b>Wind animation</b> - View clouds, thunderstorms, rain and wind at different altitudes.</li>
+	<li><b>Airspace</b> - View airspace and NOTAMs (short notice, daily airspace restrictions) on the map.</li>
+	<li><b>Official NOTAMs</b> - View Notices to Airmen (NOTAMs) on the map from international aviation authorities. A vital safety feature for every flight!</li>
+	<li><b>Automatic NOTAM warnings</b> - A prominent warning is displayed when an active NOTAM impacts your launch or landing.</li>
+	<li><b>Filter the map</b> to show only launches for paragliding, hang gliding, speed flying, thermalling, soaring, hike & fly, public transport, wind speed and much more!</li>
+	<li>See <b>soaring index, cloud cover, weather warnings</b> and much more!</li>
+	<li><b>Many forecast providers</b>: UK MetOffice, German Weather Service, Meteo France, meteoblue, ECMWF, NOAA and others!</li>
+	<li><b>Real-time weather</b> station data from Pioupiou, Holfuy, MADIS and FFVL show you actual weather conditions.</li>
+	<li><b>3D</b> view.</li>
+	<li>"<b>Hike & fly</b>" trails.</li>
+	<li><b>Ski lifts</b>, cable cars and gondolas.</li>
+	<li><b>Automatic translation</b> of site descriptions into English.</li>
+	<li>See <b>future flying conditions</b> on the map by using the Time Travel Slider.</li>
+	<li><b>Directions</b> to each spot using navigation.</li>
+	<li><b>Favourites</b> can be saved for easy access later.</li>
+	<li><b>Advanced search.</b></li>
+	<li>Send <b>“SOS!”</b> and “I need a ride” messages to friends, including your GPS coordinates.</li>
+	<li>Links to <b>original info</b> from the DHV, Flyland, FFVL und Paragliding Earth.</li>
+	<li><b>No advertising.</b></li>
+	<li><b>Full support</b> included.</li>
+</ul>
+	</div>
+
+	<script type="text/javascript">
+
+		var _EXPLORE_NOW_TRANSITION = 'margin-left 0.25s ease-in-out';
+
+		var _body = document.body;
+		var _page = document.getElementsByClassName('page')[0];
+		var _hero = document.getElementsByClassName('hero')[0];
+		var _exploreNowContainer = document.getElementById('exploreNowContainer');
+		var _exploreNow = document.getElementById('exploreNow');
+
+
+		configureLanguageElements();
+
+
+		function configureLanguageElements() {
+
+			// Display the correct background image.
+			_hero.src = "/images/landing-page-" + getLanguage() + "-512px.jpg";
+			_hero.srcset = "/images/landing-page-" + getLanguage() + "-512px.jpg 512w, /images/landing-page-" + getLanguage() + "-1024px.jpg 1024w, /images/landing-page-" + getLanguage() + "-1658px.jpg 1658w";
+
+			// Set the label of the "Explore Now" button.
+			var exploreNowLabel;
+			switch (getLanguage()) {
+				case 'de':
+					exploreNowLabel = 'Jetzt entdecken';
+					break;
+
+				case 'fr':
+					exploreNowLabel = 'Découvrez Maintenant';
+					break;
+
+				default:
+					exploreNowLabel = 'Explore Now';
+			}
+			_exploreNow.innerText = exploreNowLabel;
+
+			// Display all language elements.
+			var languageElements = document.getElementsByClassName('language-' + getLanguage());
+			for (var i = 0; i < languageElements.length; i++)
+				languageElements[i].style.display = 'inherit';
+		}
+
+
+		function getLanguage() {
+			try {
+				var result = navigator.language.substring(0, 2);
+				switch (result) {
+					case 'de':
+					case 'fr':
+						return result;
+						break;
+
+					default:
+						return 'en';
+				}
+			}
+			catch {
+				return 'en';
+			}
+		}
+
+
+		function exploreNow() {
+			setCookie();
+			if (location.href.toLowerCase().includes('landingpage'))
+				location.href = '/';
+			else
+				location.reload();
+		}
+
+
+		function setCookie() {
+			var date = new Date();
+			date.setFullYear(date.getFullYear() + 20);
+			document.cookie = "isExploreNowClicked=true; expires=" + date.toUTCString() + "; path=/";
+		}
+
+
+		function loadAppInBackground() {
+			var iframe = document.createElement('iframe');
+			iframe.src = '/app?isBackgroundMode=true';
+			iframe.style.display = 'none';
+			iframe.style.width = 0;
+			iframe.style.height = 0;
+			document.body.appendChild(iframe);
+		}
+
+
+		function repaint() {
+
+			var scaleFactor = _hero.width / 2000;
+			var offsetFactor = _hero.width / 3000;
+
+			_exploreNow.style.transform = 'scale(' + scaleFactor + ')';
+
+			if (isPortraitMode()) {
+				_exploreNow.style.transform = 'scale(0.35)';
+				_page.style.marginTop = 0;
+				_body.classList.add('portrait');
+				_exploreNowContainer.classList.add('portrait');
+				_exploreNowContainer.classList.remove('landscape');
+				_exploreNowContainer.style.marginTop = '0';
+				_exploreNowContainer.style.height = _exploreNow.getBoundingClientRect().height;
+				_exploreNow.style.marginLeft = (_hero.getBoundingClientRect().width - _exploreNow.getBoundingClientRect().width) / 2;
+			}
+			else {
+				_page.style.marginTop = 0;
+				_body.classList.remove('portrait');
+				_exploreNowContainer.classList.remove('portrait');
+				_exploreNowContainer.classList.add('landscape');
+				_exploreNowContainer.style.marginTop = (_exploreNow.getBoundingClientRect().height * -1 - offsetFactor * 200) + 'px';
+				_exploreNowContainer.style.height = Math.max(_exploreNow.getBoundingClientRect().height + 40, _hero.getBoundingClientRect().height - _exploreNowContainer.getBoundingClientRect().top - window.scrollY);
+				_exploreNow.style.marginLeft = _hero.offsetLeft - (_hero.width / 2) + offsetFactor * 173;
+			}
+
+			_exploreNowContainer.style.backgroundImage = isStuck()
+				? 'linear-gradient(#fff, #fff, #fff, #fff, transparent)'
+				: 'none';
+
+			_page.style.marginTop = isPortraitMode()
+				? 0
+				: _hero.height + _exploreNowContainer.getBoundingClientRect().offsetTop + _exploreNowContainer.getBoundingClientRect().height;
+
+			_exploreNow.style.transition = _EXPLORE_NOW_TRANSITION;
+			_exploreNow.style.visibility = 'visible';
+		}
+
+
+		function isStuck() {
+			return window.pageYOffset - _exploreNowContainer.offsetTop > -1;
+		}
+
+
+		function isPortraitMode() {
+			return (
+				_exploreNow.getBoundingClientRect().height <= 44 &&  // button is too small to click on mobile devices
+				window.innerHeight >= _hero.height + exploreNowContainer.getBoundingClientRect().height + 44  // Button will be visible below hero image without scrolling;
+			);
+		}
+
+
+		window.addEventListener('load', function () {
+			repaint();
+			loadAppInBackground();
+		});
+
+
+		window.addEventListener('resize', function () {
+			_exploreNow.style.transition = '';  // Don't transition during resize.
+			repaint();
+			_exploreNow.style.transition = _EXPLORE_NOW_TRANSITION;
+		});
+		window.addEventListener("scroll", repaint);
+
+	</script>
+
+</body>
+</html>

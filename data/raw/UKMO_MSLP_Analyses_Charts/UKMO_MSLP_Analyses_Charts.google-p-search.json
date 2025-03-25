@@ -1,0 +1,435 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - UKMO MSLP Analyses Charts",
+        "totalResults": "18900",
+        "searchTerms": "UKMO MSLP Analyses Charts",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - UKMO MSLP Analyses Charts",
+        "totalResults": "18900",
+        "searchTerms": "UKMO MSLP Analyses Charts",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.148785,
+    "formattedSearchTime": "0.15",
+    "totalResults": "18900",
+    "formattedTotalResults": "18,900"
+  },
+  "spelling": {
+    "correctedQuery": "UKMO MSLP Analysis Charts",
+    "htmlCorrectedQuery": "UKMO MSLP \u003cb\u003e\u003ci\u003eAnalysis\u003c/i\u003e\u003c/b\u003e Charts"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "UK Met Office Fax Charts - UKMOMSLP Analysis and Prognosis",
+      "htmlTitle": "UK \u003cb\u003eMet Office\u003c/b\u003e Fax \u003cb\u003eCharts\u003c/b\u003e - \u003cb\u003eUKMOMSLP Analysis\u003c/b\u003e and Prognosis",
+      "link": "https://www.weathercharts.org/ukmomslp.htm",
+      "displayLink": "www.weathercharts.org",
+      "snippet": "Charts from UK Meteorological Office, Exeter. MSLP Analysis and Prognosis. This website is not affiliated with or endorsed by the UK Meteorological Office.",
+      "htmlSnippet": "\u003cb\u003eCharts\u003c/b\u003e from UK Meteorological Office, Exeter. \u003cb\u003eMSLP Analysis\u003c/b\u003e and Prognosis. This website is not affiliated with or endorsed by the UK Meteorological Office.",
+      "formattedUrl": "https://www.weathercharts.org/ukmomslp.htm",
+      "htmlFormattedUrl": "https://www.weather\u003cb\u003echarts\u003c/b\u003e.org/\u003cb\u003eukmomslp\u003c/b\u003e.htm",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNvOtiy_ERrELdQ1ZfHJozsCKitKLu8mMyTrJLYpAvQZjSdK7NCJ7OPCQ2&s",
+            "width": "262",
+            "height": "192"
+          }
+        ],
+        "metatags": [
+          {
+            "copyright": "Copyright 2007-2025  weathercharts.org",
+            "rating": "general"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.weathercharts.net/ukmo_mslp_analysis/previous/ppva_06z_last_thumb.gif"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Surface Pressure Charts - Met Office",
+      "htmlTitle": "Surface Pressure \u003cb\u003eCharts\u003c/b\u003e - \u003cb\u003eMet Office\u003c/b\u003e",
+      "link": "https://www.metoffice.gov.uk/weather/maps-and-charts/surface-pressure",
+      "displayLink": "www.metoffice.gov.uk",
+      "snippet": "An analysis chart, which shows the observed state of the weather, is issued along with forecast charts up to five days ahead. These are updated every 12 ...",
+      "htmlSnippet": "An \u003cb\u003eanalysis chart\u003c/b\u003e, which shows the observed state of the weather, is issued along with forecast \u003cb\u003echarts\u003c/b\u003e up to five days ahead. These are updated every 12&nbsp;...",
+      "formattedUrl": "https://www.metoffice.gov.uk/weather/maps-and-charts/surface-pressure",
+      "htmlFormattedUrl": "https://www.metoffice.gov.uk/weather/maps-and-\u003cb\u003echarts\u003c/b\u003e/surface-pressure",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuJB35WY0LDqBVAzOcppmL0vuh-cCjFeaY77nk-PBnoInAUvgkQ9eQXRY&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.metoffice.gov.uk/webfiles/1742299720298/images/icons/social-icons/default_card_315.jpg",
+            "twitter:card": "summary",
+            "og:type": "website",
+            "theme-color": "#2a2a2a",
+            "og:image:width": "315",
+            "og:site_name": "Met Office",
+            "egms.subject.category": "Climate and weather",
+            "og:title": "Surface Pressure Charts",
+            "og:image:height": "315",
+            "title": "Surface Pressure Charts",
+            "og:description": "Surface pressure charts indicating areas of high and low pressure and a guide to interpreting weather data",
+            "egms.accessibility": "A",
+            "fb:app_id": "208580322593329",
+            "twitter:site": "@metoffice",
+            "viewport": "initial-scale=1.0, width=device-width, viewport-fit=cover",
+            "google-translate-customization": "f8c19e614cd5ee7e-37428b41ac444aca-gd1bc91f73b6940ae-14",
+            "og:url": "https://www.metoffice.gov.uk/weather/maps-and-charts/surface-pressure"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.metoffice.gov.uk/webfiles/1742299720298/images/icons/social-icons/default_card_315.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fax Synoptic Charts From The UK Met Office - Neweather.tv",
+      "htmlTitle": "Fax Synoptic \u003cb\u003eCharts\u003c/b\u003e From The UK \u003cb\u003eMet Office\u003c/b\u003e - Neweather.tv",
+      "link": "https://www.netweather.tv/charts-and-data/fax",
+      "displayLink": "www.netweather.tv",
+      "snippet": "Synoptic Fax Charts · Analysis · 24hrs · 36hrs · 48hrs · 60hrs · 72hrs · 84hrs · 96hrs ...",
+      "htmlSnippet": "Synoptic Fax \u003cb\u003eCharts\u003c/b\u003e &middot; \u003cb\u003eAnalysis\u003c/b\u003e &middot; 24hrs &middot; 36hrs &middot; 48hrs &middot; 60hrs &middot; 72hrs &middot; 84hrs &middot; 96hrs&nbsp;...",
+      "formattedUrl": "https://www.netweather.tv/charts-and-data/fax",
+      "htmlFormattedUrl": "https://www.netweather.tv/\u003cb\u003echarts\u003c/b\u003e-and-data/fax",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5-5FUusU7gs7F_1g0pq0IpjvECck639PuvT9aptrYmA7Ip3shRMAPMw&s",
+            "width": "200",
+            "height": "118"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://max.nwstatic.co.uk/images/netweathersun.png",
+            "twitter:card": "summary",
+            "og:type": "article",
+            "fb:app_id": "239832379406817",
+            "twitter:site": "@Netweather",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Fax Synoptic Charts From The UK Met Office - Neweather.tv",
+            "og:url": "https://www.netweather.tv/charts-and-data/fax",
+            "fb:pages": "8623474325"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://max.nwstatic.co.uk/images/netweathersun.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "ANA RAD SAT",
+      "htmlTitle": "ANA RAD SAT",
+      "link": "https://www.vorticity.de/vorticity_ana_eur.php",
+      "displayLink": "www.vorticity.de",
+      "snippet": "Mar 8, 2025 ... MSLP Forecast H+36...108 DWD vs UKMO MSLP Analysis Comparison MSLP / H500 MSLP Analysis Charts Worldwide Thumb MSLP Analysis Charts ...",
+      "htmlSnippet": "Mar 8, 2025 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eMSLP\u003c/b\u003e Forecast H+36...108 DWD vs \u003cb\u003eUKMO MSLP Analysis\u003c/b\u003e Comparison \u003cb\u003eMSLP\u003c/b\u003e / H500 \u003cb\u003eMSLP Analysis Charts\u003c/b\u003e Worldwide Thumb \u003cb\u003eMSLP Analysis Charts\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.vorticity.de/vorticity_ana_eur.php",
+      "htmlFormattedUrl": "https://www.vorticity.de/vorticity_ana_eur.php",
+      "pagemap": {
+        "metatags": [
+          {
+            "dc.publisher": "Bernd Richter",
+            "copyright": "Bernd Richter",
+            "audience": "Pros, Synoptic afficionados",
+            "dc.description": "vorticity is a Portal for Synoptic Meteorology with current Weather / Forecast Charts and Verification by Hindcast",
+            "author": "Bernd Richter",
+            "page-type": "Private Homepage",
+            "dc.creator": "Bernd Richter",
+            "dc.rights": "Bernd Richter",
+            "publisher": "Bernd Richter",
+            "dc.language": "en",
+            "page-topic": "Environment"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Met Office Analysis and Synoptic Weather Forecast Charts - Metbrief",
+      "htmlTitle": "Met Office Analysis and Synoptic Weather Forecast Charts - Metbrief",
+      "link": "http://www.metbrief.com/EGRR.html",
+      "displayLink": "www.metbrief.com",
+      "snippet": "If the charts are not up to date please try here (Click on a chart to cycle through the sequence) - 24 hour archive of Analysis and Forecast charts and ...",
+      "htmlSnippet": "If the \u003cb\u003echarts\u003c/b\u003e are not up to date please try here (Click on a \u003cb\u003echart\u003c/b\u003e to cycle through the sequence) - 24 hour archive of \u003cb\u003eAnalysis\u003c/b\u003e and Forecast \u003cb\u003echarts\u003c/b\u003e and&nbsp;...",
+      "formattedUrl": "http://www.metbrief.com/EGRR.html",
+      "htmlFormattedUrl": "http://www.metbrief.com/EGRR.html"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Creating the daily analysis charts for the \u003ci\u003eWeather log\u003c/i\u003e",
+      "htmlTitle": "Creating the daily \u003cb\u003eanalysis charts\u003c/b\u003e for the &lt;i&gt;Weather log&lt;/i&gt;",
+      "link": "https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1256/wea.208.05",
+      "displayLink": "rmets.onlinelibrary.wiley.com",
+      "snippet": "Box 1 Objective analysis techniques used by the Met Office. OSA system ... 4 OSA MSLP analysis after quality control and bogussing. (Ocean observations ...",
+      "htmlSnippet": "Box 1 Objective \u003cb\u003eanalysis\u003c/b\u003e techniques used by the \u003cb\u003eMet Office\u003c/b\u003e. OSA system ... 4 OSA \u003cb\u003eMSLP analysis\u003c/b\u003e after quality control and bogussing. (Ocean observations&nbsp;...",
+      "formattedUrl": "https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1256/wea.208.05",
+      "htmlFormattedUrl": "https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1256/wea.208.05",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFo7PcG2y5ESAOWJbNKjoWC7gs3pGwQd3K-AFzGA6fRZ9Fs0QSIK7Hk7U&s",
+            "width": "267",
+            "height": "188"
+          }
+        ],
+        "metatags": [
+          {
+            "wps_proclevel": "2",
+            "wps_articledoi": "10.1256/wea.208.05",
+            "moddate": "D:201707061706-07'00'",
+            "creationdate": "D:20060908193518Z",
+            "wps_journaldoi": "10.1002/(ISSN)1477-8696",
+            "producer": "PDFlib PLOP 2.0.0p6 (SunOS)/iText by lowagie.com (r1.01;p126)",
+            "title": "Creating the daily analysis charts for the \u003ci\u003eWeather log\u003c/i\u003e"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///e1d34d70ffda2f3aa5aeeffd5c5cdaba922a3953671614a164a2aecf2df5a5d8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "On the Reanalysis of Southern Hemisphere Charts for the FROST ...",
+      "htmlTitle": "On the Reanalysis of Southern Hemisphere \u003cb\u003eCharts\u003c/b\u003e for the FROST ...",
+      "link": "https://journals.ametsoc.org/view/journals/wefo/14/6/1520-0434_1999_014_0909_otrosh_2_0_co_2.pdf",
+      "displayLink": "journals.ametsoc.org",
+      "snippet": "MSLP analyses for 0000 and 12 UTC digitized to a. 1.258 3 1.258 latitude ... These analyses were based on the UKMO analyses, with an attempt made to ...",
+      "htmlSnippet": "\u003cb\u003eMSLP analyses\u003c/b\u003e for 0000 and 12 UTC digitized to a. 1.258 3 1.258 latitude ... These \u003cb\u003eanalyses\u003c/b\u003e were based on the \u003cb\u003eUKMO analyses\u003c/b\u003e, with an attempt made to&nbsp;...",
+      "formattedUrl": "https://journals.ametsoc.org/.../1520-0434_1999_014_0909_otrosh_2_0_c...",
+      "htmlFormattedUrl": "https://journals.ametsoc.org/.../1520-0434_1999_014_0909_otrosh_2_0_c...",
+      "pagemap": {
+        "metatags": [
+          {
+            "creationdate": "D:19991129173042",
+            "creator": "Penta Systems International Inc.",
+            "author": "penta@sun10",
+            "producer": "Acrobat Distiller Daemon 3.01 for Solaris 2.3 and later (SPARC)",
+            "title": "wefo_14_605.909_919"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Met Office Fax Pressure Charts - Southampton Weather",
+      "htmlTitle": "Met Office Fax Pressure Charts - Southampton Weather",
+      "link": "https://www.southamptonweather.co.uk/faxsat.php",
+      "displayLink": "www.southamptonweather.co.uk",
+      "snippet": "Currently the output now consists of MSLP analyses and 24-hour MSLP forecasts four times a day, the analyses being for 0000/0600/1200/1800 UTC. MSLP products, T ...",
+      "htmlSnippet": "Currently the output now consists of \u003cb\u003eMSLP analyses\u003c/b\u003e and 24-hour \u003cb\u003eMSLP\u003c/b\u003e forecasts four times a day, the \u003cb\u003eanalyses\u003c/b\u003e being for 0000/0600/1200/1800 UTC. \u003cb\u003eMSLP\u003c/b\u003e products, T&nbsp;...",
+      "formattedUrl": "https://www.southamptonweather.co.uk/faxsat.php",
+      "htmlFormattedUrl": "https://www.southamptonweather.co.uk/faxsat.php",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9I6Mc-tp2JV5_pDA-MMtuj9xGEJOXpRhIC58tj-smNfly5fKpX8oKclo&s",
+            "width": "262",
+            "height": "192"
+          }
+        ],
+        "metatags": [
+          {
+            "author": "Southampton Weather"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.weathercharts.net/ukmo_mslp_analysis/ppva.gif"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Processing ECMWF ENS and MOGREPS-G ensemble forecasts to ...",
+      "htmlTitle": "Processing ECMWF ENS and MOGREPS-G ensemble forecasts to ...",
+      "link": "https://www.ecmwf.int/sites/default/files/elibrary/2017/17276-processing-ecmwf-ens-and-mogreps-g-ensemble-forecasts-highlight-probability-severe-extra.pdf",
+      "displayLink": "www.ecmwf.int",
+      "snippet": "Jun 16, 2017 ... Analysis chart for 12Z on 23rd February 2017. Page 5. www.metoffice.gov ... 154 years of daily MSLP data. • Defined in terms of their MSLP.",
+      "htmlSnippet": "Jun 16, 2017 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eAnalysis chart\u003c/b\u003e for 12Z on 23rd February 2017. Page 5. www.\u003cb\u003emetoffice\u003c/b\u003e.gov ... 154 years of daily \u003cb\u003eMSLP\u003c/b\u003e data. • Defined in terms of their \u003cb\u003eMSLP\u003c/b\u003e.",
+      "formattedUrl": "https://www.ecmwf.int/.../17276-processing-ecmwf-ens-and-mogreps-g-ens...",
+      "htmlFormattedUrl": "https://www.ecmwf.int/.../17276-processing-ecmwf-ens-and-mogreps-g-ens...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToOxyNViODmjx9QXtK8H6tZBnfTaI0ZLVB5rQaYXvwgsTW67q2r9tbRbU&s",
+            "width": "250",
+            "height": "201"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20170613084130+01'00'",
+            "creationdate": "D:20170613084130+01'00'",
+            "creator": "Microsoft® PowerPoint® 2013",
+            "author": "helen.chater",
+            "producer": "Microsoft® PowerPoint® 2013",
+            "title": "Title of Presentation"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///7c3f7a584b881b1d3486d75a91da83cdaa9f020b6ca5dbe4437ce7eaffffc35a"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "(a) Met Office surface analysis ('ASXX') showing the centre of Storm ...",
+      "htmlTitle": "(a) \u003cb\u003eMet Office\u003c/b\u003e surface \u003cb\u003eanalysis\u003c/b\u003e (&#39;ASXX&#39;) showing the centre of Storm ...",
+      "link": "https://www.researchgate.net/figure/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east_fig1_357313415",
+      "displayLink": "www.researchgate.net",
+      "snippet": "The labels of the red crosses indicate the analysis time hour (utc)/date/minimum MSLP (hPa). (Original UKMO surface analysis chart Crown copyright 2021.) (b) ...",
+      "htmlSnippet": "The labels of the red crosses indicate the \u003cb\u003eanalysis\u003c/b\u003e time hour (utc)/date/minimum \u003cb\u003eMSLP\u003c/b\u003e (hPa). (Original \u003cb\u003eUKMO\u003c/b\u003e surface \u003cb\u003eanalysis chart\u003c/b\u003e Crown copyright 2021.) (b)&nbsp;...",
+      "formattedUrl": "https://www.researchgate.net/.../a-Met-Office-surface-analysis-ASXX-showi...",
+      "htmlFormattedUrl": "https://www.researchgate.net/.../a-Met-Office-surface-analysis-ASXX-showi...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-MEhBVxSAGrDD4zSifqaUTcxAPwbMFTUI9DZ733h-8aJZmT60YAIyH8&s",
+            "width": "305",
+            "height": "165"
+          }
+        ],
+        "imageobject": [
+          {
+            "contenturl": "https://www.researchgate.net/publication/357313415/figure/fig1/AS:11431281246212242@1716303083497/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east.png",
+            "representativeofpage": "1",
+            "caption": "(a) Met Office surface analysis (‘ASXX’) showing the centre of Storm Arwen over the east coast of England at 0000 utc 27 November. The approximate track of the MSLP centre from 0000 utc...",
+            "thumbnailurl": "https://www.researchgate.net/publication/357313415/figure/fig1/AS:11431281246212242@1716303083497/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east_Q320.jpg"
+          }
+        ],
+        "person": [
+          {
+            "name": "D. J. Smart"
+          },
+          {
+            "name": "Simon H. Lee"
+          },
+          {
+            "name": "Edward Graham"
+          },
+          {
+            "name": "Weiming Li"
+          },
+          {
+            "name": "Xianyang Jiang"
+          },
+          {
+            "name": "İsmail Kayadibi"
+          },
+          {
+            "name": "Utku Köse"
+          },
+          {
+            "name": "Gür Emre Güraksın"
+          }
+        ],
+        "organization": [
+          {
+            "name": "Weather",
+            "url": "journal/Weather-1477-8696"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "ResearchGate",
+            "og:image": "https://www.researchgate.net/publication/357313415/figure/fig1/AS:11431281246212242@1716303083497/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east.png",
+            "twitter:card": "photo",
+            "twitter:title": "(a) Met Office surface analysis (‘ASXX’) showing the centre of Storm...",
+            "og:type": "website",
+            "og:site_name": "ResearchGate",
+            "rg-request-token": "aad-9q+/L7qMVTUwED8rHxG3i0mC91X6YWTlfJff/hknXSl5n1sXIHpb2XRulnba6BKkY/zC7DdJ+DVMouIQ1VsYqnH8idSqki0ODIyBH+pOdCU5N8ZsXiQxniB/OmBRc+cCstYr86u2UovafKDLAkT1G9ZvTn2xm6A/hh3J5KDvxBccKtwFMGMxdD0qlFNIRapj7XcLfh6coqSn0uxSGKPkvDcfvWvMzNsXw3P+VeQ7AvDzILG4e1Kp4//ewN7Nvau9YoyOkszPFbT42tS8o30=",
+            "twitter:url": "https://www.researchgate.net/figure/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east_fig1_357313415",
+            "og:title": "(a) Met Office surface analysis (‘ASXX’) showing the centre of Storm...",
+            "twitter:creator": "@ResearchGate",
+            "og:description": "Download scientific diagram | (a) Met Office surface analysis (‘ASXX’) showing the centre of Storm Arwen over the east coast of England at 0000 utc 27 November. The approximate track of the MSLP centre from 0000 utc 26 to 0000 utc 28 November is indicated in red. As analyses indicate the system exhibited multiple centres at certain times, the track has been simplified for clarity. The labels of the red crosses indicate the analysis time hour (utc)/date/minimum MSLP (hPa). (Original UKMO surface analysis chart Crown copyright 2021.) (b) The anomaly of the time‐integrated maximum wind speed at the 925hPa pressure level for the period 0000 utc 26 to 0000 utc 27 November, relative to the standard deviation across all grid boxes within this domain. (obtained from NWP output nudged to Global Forecast System (GFS) model analyses). from publication: Some aspects of the unusual climatology of Storm Arwen (2021) | Histogram of the difference in MSLP between 57.25°N, 7.25°W and 56.75°N, 2.25°W using hourly 0",
+            "twitter:image": "https://www.researchgate.net/publication/357313415/figure/fig1/AS:11431281246212242@1716303083497/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east.png",
+            "referrer": "origin",
+            "twitter:site": "@ResearchGate",
+            "viewport": "width=device-width,initial-scale=1",
+            "og:site": "ResearchGate",
+            "og:url": "https://www.researchgate.net/figure/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east_fig1_357313415"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.researchgate.net/publication/357313415/figure/fig1/AS:11431281246212242@1716303083497/a-Met-Office-surface-analysis-ASXX-showing-the-centre-of-Storm-Arwen-over-the-east.png"
+          }
+        ],
+        "scholarlyarticle": [
+          {
+            "headline": "Some aspects of the unusual climatology of Storm Arwen (2021)"
+          },
+          {
+            "headline": "A novel evaluation standard combining gini-index and variation coefficient for double plateaus histogram equalization"
+          },
+          {
+            "headline": "Computer-aided tooth segmentation using image processing techniques and convolutional neural network"
+          },
+          {
+            "headline": "Assessing the impact of heavy rainfall on the Newcastle upon Tyne transport network using a geospatial data infrastructure"
+          },
+          {
+            "headline": "Temporal variation in the structure, abundance, and composition of Laminaria hyperborea forests and their associated understorey assemblages over an intense storm season"
+          },
+          {
+            "headline": "The history of UK weather forecasting: the changing role of the central guidance forecaster. Part 8. Operational forecasting in the twenty‐first century: enhanced capabilities from nowcasting..."
+          }
+        ]
+      }
+    }
+  ]
+}

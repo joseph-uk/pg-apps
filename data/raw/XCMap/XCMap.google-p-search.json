@@ -1,0 +1,321 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XCMap",
+        "totalResults": "726",
+        "searchTerms": "XCMap",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XCMap",
+        "totalResults": "726",
+        "searchTerms": "XCMap",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.356745,
+    "formattedSearchTime": "0.36",
+    "totalResults": "726",
+    "formattedTotalResults": "726"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "xcmap.net",
+      "htmlTitle": "\u003cb\u003excmap\u003c/b\u003e.net",
+      "link": "https://www.xcmap.net/",
+      "displayLink": "www.xcmap.net",
+      "snippet": "xcmap.net · Northern Challenge Series 2025 - previous results · tasks · Challenges. Northern Challenge Series · NCT Hike and Fly · Ed Cleasby DFC · Team BC.",
+      "htmlSnippet": "\u003cb\u003excmap\u003c/b\u003e.net &middot; Northern Challenge Series 2025 - previous results &middot; tasks &middot; Challenges. Northern Challenge Series &middot; NCT Hike and Fly &middot; Ed Cleasby DFC &middot; Team BC.",
+      "formattedUrl": "https://www.xcmap.net/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excmap\u003c/b\u003e.net/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "author": "Chris Foster"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Northern Challenge Trophy - xcmap.net",
+      "htmlTitle": "Northern Challenge Trophy - xcmap.net",
+      "link": "http://www.xcmap.net/list.php",
+      "displayLink": "www.xcmap.net",
+      "snippet": "Challenges ... if you would like to use xcmap to set tasks for your club please email chris@xcmap.net and I'll tell you how to do it, it's easy and free.",
+      "htmlSnippet": "Challenges ... if you would like to use \u003cb\u003excmap\u003c/b\u003e to set tasks for your club please email chris@\u003cb\u003excmap\u003c/b\u003e.net and I&#39;ll tell you how to do it, it&#39;s easy and free.",
+      "formattedUrl": "http://www.xcmap.net/list.php",
+      "htmlFormattedUrl": "http://www.\u003cb\u003excmap\u003c/b\u003e.net/list.php",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "author": "Chris Foster"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCTrack Pro Widgets - Xcontest - Manual AIR³ - Full details ...",
+      "htmlTitle": "XCTrack Pro Widgets - Xcontest - Manual AIR³ - Full details ...",
+      "link": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xctrack-manual/xctrack-widgets-manual/xctrack-pro-widgets-xcontest/",
+      "displayLink": "www.fly-air3.com",
+      "snippet": "Oct 23, 2019 ... The XCMap widget is divided into 3 main sections: Map configuration, Postpone airspace showing and XC map settings. Click on the \"+\" sign to ...",
+      "htmlSnippet": "Oct 23, 2019 \u003cb\u003e...\u003c/b\u003e The \u003cb\u003eXCMap\u003c/b\u003e widget is divided into 3 main sections: Map configuration, Postpone airspace showing and \u003cb\u003eXC map\u003c/b\u003e settings. Click on the &quot;+&quot; sign to&nbsp;...",
+      "formattedUrl": "https://www.fly-air3.com/en/support/.../xctrack-pro-widgets-xcontest/",
+      "htmlFormattedUrl": "https://www.fly-air3.com/en/support/.../xctrack-pro-widgets-xcontest/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0W5_1kTyMZtKIZYSx6FZa4z_V5dvdhGQ3sUVLqOKzDp4OIu6RsgvilYur&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "webpageelement": [
+          {
+            "headline": "XCTrack Pro Widgets – Xcontest"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.fly-air3.com/wp-content/uploads/sites/15/2020/04/XCTrack-Pro-Manual-logo3.png",
+            "og:type": "article",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "AIR³",
+            "og:title": "XCTrack Pro Widgets - Xcontest - Manual AIR³ - Full details & description",
+            "og:image:height": "628",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://www.fly-air3.com/wp-content/uploads/sites/15/2019/04/cropped-AIR³-CARRE_Logo-1-270x270.png",
+            "og:description": "Descriptions and explanations of the widgets included in the “Xcontest” subsection of the XCTrack Pro widgets section of the XCTrack Pro Manual",
+            "article:publisher": "https://www.facebook.com/FLYAIRCUBE/",
+            "twitter:data1": "168 minutes",
+            "article:modified_time": "2025-03-16T14:11:50+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xctrack-manual/xctrack-widgets-manual/xctrack-pro-widgets-xcontest/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.fly-air3.com/wp-content/uploads/sites/15/2020/04/XCTrack-Pro-Manual-logo3.png"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ed Cleasby DFC - xcmap.net",
+      "htmlTitle": "Ed Cleasby DFC - xcmap.net",
+      "link": "http://www.xcmap.net/index.php?c=Ed%20Cleasby%20DFC",
+      "displayLink": "www.xcmap.net",
+      "snippet": "Challenges ... if you would like to use xcmap to set tasks for your club please email chris@xcmap.net and I'll tell you how to do it, it's easy and free.",
+      "htmlSnippet": "Challenges ... if you would like to use \u003cb\u003excmap\u003c/b\u003e to set tasks for your club please email chris@\u003cb\u003excmap\u003c/b\u003e.net and I&#39;ll tell you how to do it, it&#39;s easy and free.",
+      "formattedUrl": "http://www.xcmap.net/index.php?c=Ed%20Cleasby%20DFC",
+      "htmlFormattedUrl": "http://www.\u003cb\u003excmap\u003c/b\u003e.net/index.php?c=Ed%20Cleasby%20DFC",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "author": "Chris Foster"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "xcmap.org",
+      "htmlTitle": "\u003cb\u003excmap\u003c/b\u003e.org",
+      "link": "http://www.xcmap.org/",
+      "displayLink": "www.xcmap.org",
+      "snippet": "This domain name has been registered with Gandi.net. It is currently parked by the owner.",
+      "htmlSnippet": "This domain name has been registered with Gandi.net. It is currently parked by the owner.",
+      "formattedUrl": "http://www.xcmap.org/",
+      "htmlFormattedUrl": "http://www.\u003cb\u003excmap\u003c/b\u003e.org/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Results NCT Hike and Fly",
+      "htmlTitle": "Results NCT Hike and Fly",
+      "link": "http://www.xcmap.net/index.php?c=NCT%20Hike%20and%20Fly",
+      "displayLink": "www.xcmap.net",
+      "snippet": "if you would like to use xcmap to set tasks for your club please email chris@xcmap.net and I'll tell you how to do it, it's easy and free. Copyright © xcmap.net ...",
+      "htmlSnippet": "if you would like to use \u003cb\u003excmap\u003c/b\u003e to set tasks for your club please email chris@\u003cb\u003excmap\u003c/b\u003e.net and I&#39;ll tell you how to do it, it&#39;s easy and free. Copyright © \u003cb\u003excmap\u003c/b\u003e.net&nbsp;...",
+      "formattedUrl": "http://www.xcmap.net/index.php?c=NCT%20Hike%20and%20Fly",
+      "htmlFormattedUrl": "http://www.\u003cb\u003excmap\u003c/b\u003e.net/index.php?c=NCT%20Hike%20and%20Fly",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "author": "Chris Foster"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC-MAP/XCMAP aviation photos on JetPhotos",
+      "htmlTitle": "\u003cb\u003eXC-MAP\u003c/b\u003e/\u003cb\u003eXCMAP\u003c/b\u003e aviation photos on JetPhotos",
+      "link": "https://www.jetphotos.com/registration/XC-MAP",
+      "displayLink": "www.jetphotos.com",
+      "snippet": "JetPhotos.com is the biggest database of aviation photographs with over 6 million screened photos online!",
+      "htmlSnippet": "JetPhotos.com is the biggest database of aviation photographs with over 6 million screened photos online!",
+      "formattedUrl": "https://www.jetphotos.com/registration/XC-MAP",
+      "htmlFormattedUrl": "https://www.jetphotos.com/registration/XC-MAP",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rPV9EjCrvG7siZ3iPHllLot3KrlOdpwJ7TABdaxMSEM3kwSdzVF63Dg&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.jetphotos.com/assets/img/logo-social.png",
+            "twitter:card": "summary",
+            "twitter:title": "XC-MAP/XCMAP aviation photos on JetPhotos",
+            "og:type": "website",
+            "twitter:site": "@JetPhotos",
+            "og:site_name": "JetPhotos",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui",
+            "twitter:description": "JetPhotos.com is the biggest database of aviation photographs with over 6 million screened photos online!",
+            "og:title": "XC-MAP/XCMAP aviation photos on JetPhotos",
+            "og:url": "https://www.jetphotos.com/",
+            "og:description": "JetPhotos.com is the biggest database of aviation photographs with over 6 million screened photos online!"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.jetphotos.com/assets/img/logo-social.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "flyXC",
+      "htmlTitle": "flyXC",
+      "link": "https://flyxc.app/",
+      "displayLink": "flyxc.app",
+      "snippet": "flyXC is a one stop shop web app for paraglider pilots. You can plan, visualize, and track your flights with the most popular live tracking platforms ...",
+      "htmlSnippet": "flyXC is a one stop shop web app for paraglider pilots. You can plan, visualize, and track your flights with the most popular live tracking platforms&nbsp;...",
+      "formattedUrl": "https://flyxc.app/",
+      "htmlFormattedUrl": "https://flyxc.app/",
+      "pagemap": {
+        "metatags": [
+          {
+            "theme-color": "#0054e9",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Skies",
+      "htmlTitle": "XC Skies",
+      "link": "https://www.xcskies.com/map",
+      "displayLink": "www.xcskies.com",
+      "snippet": "Top of Lift 600 m 1200 m 1800 m 2400 m 3000 m 3600 m 4200 m 4800 m 5400 m 6000",
+      "htmlSnippet": "Top of Lift 600 m 1200 m 1800 m 2400 m 3000 m 3600 m 4200 m 4800 m 5400 m 6000",
+      "formattedUrl": "https://www.xcskies.com/map",
+      "htmlFormattedUrl": "https://www.xcskies.com/map",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZmtPhG8-tU4JGKZhKa3FPZZg4XmFUUlUKIEGbh7MUSaaS2oswRokasbO&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "apple-mobile-web-app-capable": "yes",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.xcskies.com/static/images/water_v4.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Downloads - xcflight.com",
+      "htmlTitle": "Downloads - xcflight.com",
+      "link": "https://www.xcflight.com/defined-flying-challenges/downloads/",
+      "displayLink": "www.xcflight.com",
+      "snippet": "Here you can find all the routes laid out, and by registering enter your flights against the routes as an online record. XCMAP.NET · Download. DFC - Routes (gpx)",
+      "htmlSnippet": "Here you can find all the routes laid out, and by registering enter your flights against the routes as an online record. \u003cb\u003eXCMAP\u003c/b\u003e.NET &middot; Download. DFC - Routes (gpx)",
+      "formattedUrl": "https://www.xcflight.com/defined-flying-challenges/downloads/",
+      "htmlFormattedUrl": "https://www.xcflight.com/defined-flying-challenges/downloads/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ20rc7tND-05wVT8cx8v4jiFxWVNhMPFU1T82cHjZ_xwxbxtIiSfexTQ&s",
+            "width": "600",
+            "height": "1"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.xcflight.com/s/img/emotionheader6348788.jpg",
+            "og:type": "business.business",
+            "og:title": "xcflight.com - Downloads",
+            "business:contact_data:country_name": "United Kingdom",
+            "og:url": "https://www.xcflight.com/defined-flying-challenges/downloads/",
+            "og:description": "This is the personal home page of Ed Cleasby from Ingleton, YKS.",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.xcflight.com/s/img/emotionheader6348788.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

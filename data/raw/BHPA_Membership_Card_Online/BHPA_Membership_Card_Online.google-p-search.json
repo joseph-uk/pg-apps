@@ -1,0 +1,265 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - BHPA Membership Card Online",
+        "totalResults": "6930",
+        "searchTerms": "BHPA Membership Card Online",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - BHPA Membership Card Online",
+        "totalResults": "6930",
+        "searchTerms": "BHPA Membership Card Online",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.301223,
+    "formattedSearchTime": "0.30",
+    "totalResults": "6930",
+    "formattedTotalResults": "6,930"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "BHPA Membership Cards",
+      "htmlTitle": "\u003cb\u003eBHPA Membership\u003c/b\u003e Cards",
+      "link": "https://www.bhpa.co.uk/bhpa/membership_card/",
+      "displayLink": "www.bhpa.co.uk",
+      "snippet": "Jul 13, 2024 ... Your BHPA membership card contains details of the ratings, endorsements and licences that you have attained in your flying career and are currently still valid.",
+      "htmlSnippet": "Jul 13, 2024 \u003cb\u003e...\u003c/b\u003e Your \u003cb\u003eBHPA membership card\u003c/b\u003e contains details of the ratings, endorsements and licences that you have attained in your flying career and are currently still valid.",
+      "formattedUrl": "https://www.bhpa.co.uk/bhpa/membership_card/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ebhpa\u003c/b\u003e.co.uk/\u003cb\u003ebhpa\u003c/b\u003e/\u003cb\u003emembership\u003c/b\u003e_\u003cb\u003ecard\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "rating": "Safe for kids",
+            "dcterms.datecopyrighted": "2004-2025",
+            "dcterms.rightsholder": "BHPA Ltd"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Forum - View topic - I've cancelled my BHPA membership",
+      "htmlTitle": "Paragliding Forum - View topic - I&#39;ve cancelled my \u003cb\u003eBHPA membership\u003c/b\u003e",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=63034",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Mar 4, 2014 ... Still, the fact remains that the premier event for British pilots is now not the Championships but instead the North vs South Cup. Tom. Login ...",
+      "htmlSnippet": "Mar 4, 2014 \u003cb\u003e...\u003c/b\u003e Still, the fact remains that the premier event for British pilots is now not the Championships but instead the North vs South Cup. Tom. \u003cb\u003eLogin\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=63034",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=63034",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "BHPA Membership",
+      "htmlTitle": "\u003cb\u003eBHPA Membership\u003c/b\u003e",
+      "link": "https://membership.bhpa.co.uk/",
+      "displayLink": "membership.bhpa.co.uk",
+      "snippet": "Please use the following form to submit your application to become a member of the British Hang Gliding and Paragliding Association (BHPA), or renew your ...",
+      "htmlSnippet": "Please use the following form to submit your application to become a \u003cb\u003emember\u003c/b\u003e of the British Hang Gliding and Paragliding Association (\u003cb\u003eBHPA\u003c/b\u003e), or renew your&nbsp;...",
+      "formattedUrl": "https://membership.bhpa.co.uk/",
+      "htmlFormattedUrl": "https://\u003cb\u003emembership\u003c/b\u003e.\u003cb\u003ebhpa\u003c/b\u003e.co.uk/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "rating": "Safe for kids",
+            "dcterms.datecopyrighted": "2004-2025",
+            "dcterms.rightsholder": "BHPA Ltd"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Do you need an IPPI card to fly in ... - Paragliding Forum",
+      "htmlTitle": "View topic - Do you need an IPPI card to fly in ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=79129",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jun 7, 2016 ... From the horse's mouth: yes, you should carry IPPI *and* BHPA cards. https://www.bhpa.co.uk/documents/safety/overseas/ · Login · Reply with ...",
+      "htmlSnippet": "Jun 7, 2016 \u003cb\u003e...\u003c/b\u003e From the horse&#39;s mouth: yes, you should carry IPPI *and* \u003cb\u003eBHPA\u003c/b\u003e cards. https://www.\u003cb\u003ebhpa\u003c/b\u003e.co.uk/documents/safety/overseas/ &middot; \u003cb\u003eLogin\u003c/b\u003e &middot; Reply with&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=79129",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=79129",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "BHPA One Day Membership",
+      "htmlTitle": "\u003cb\u003eBHPA\u003c/b\u003e One Day \u003cb\u003eMembership\u003c/b\u003e",
+      "link": "https://membership.bhpa.co.uk/overseas.php",
+      "displayLink": "membership.bhpa.co.uk",
+      "snippet": "... application for one day membership of the British Hang Gliding and Paragliding Association (BHPA) ... membership fee with your credit or debit card. This ...",
+      "htmlSnippet": "... application for one day \u003cb\u003emembership\u003c/b\u003e of the British Hang Gliding and Paragliding Association (\u003cb\u003eBHPA\u003c/b\u003e) ... \u003cb\u003emembership\u003c/b\u003e fee with your credit or debit \u003cb\u003ecard\u003c/b\u003e. This&nbsp;...",
+      "formattedUrl": "https://membership.bhpa.co.uk/overseas.php",
+      "htmlFormattedUrl": "https://\u003cb\u003emembership\u003c/b\u003e.\u003cb\u003ebhpa\u003c/b\u003e.co.uk/overseas.php",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "rating": "Safe for kids",
+            "dcterms.datecopyrighted": "2004-2025",
+            "dcterms.rightsholder": "BHPA Ltd"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Registration | BHPA - Symposium",
+      "htmlTitle": "Registration | \u003cb\u003eBHPA\u003c/b\u003e - Symposium",
+      "link": "https://symposium.bhpa.eu/registration",
+      "displayLink": "symposium.bhpa.eu",
+      "snippet": "No cash or card reader will be available. Online payment with Itsme authentication is also possible.",
+      "htmlSnippet": "No cash or \u003cb\u003ecard\u003c/b\u003e reader will be available. \u003cb\u003eOnline\u003c/b\u003e payment with Itsme authentication is also possible.",
+      "formattedUrl": "https://symposium.bhpa.eu/registration",
+      "htmlFormattedUrl": "https://symposium.\u003cb\u003ebhpa\u003c/b\u003e.eu/registration",
+      "pagemap": {
+        "WebPage": [
+          {
+            "name": "Registration"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#73c2fc",
+            "msapplication-config": "/themes/custom/coretheme/bookmark-icons/browserconfig.xml",
+            "theme-color": "#ffffff",
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Membership Renewal Application",
+      "htmlTitle": "\u003cb\u003eMembership\u003c/b\u003e Renewal Application",
+      "link": "https://membership.bhpa.co.uk/?mt=renew",
+      "displayLink": "membership.bhpa.co.uk",
+      "snippet": "Credit or Debit Card. BHPA Membership Conditions I hereby apply for BHPA ... Download the BHPA Elementary Training Guide · Skywings Magazine Online · BHPA ...",
+      "htmlSnippet": "Credit or Debit \u003cb\u003eCard\u003c/b\u003e. \u003cb\u003eBHPA Membership\u003c/b\u003e Conditions I hereby apply for \u003cb\u003eBHPA\u003c/b\u003e ... Download the \u003cb\u003eBHPA\u003c/b\u003e Elementary Training Guide &middot; Skywings Magazine \u003cb\u003eOnline\u003c/b\u003e &middot; \u003cb\u003eBHPA\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://membership.bhpa.co.uk/?mt=renew",
+      "htmlFormattedUrl": "https://\u003cb\u003emembership\u003c/b\u003e.\u003cb\u003ebhpa\u003c/b\u003e.co.uk/?mt=renew",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "rating": "Safe for kids",
+            "dcterms.datecopyrighted": "2004-2025",
+            "dcterms.rightsholder": "BHPA Ltd"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Baytown's Living History Museum — Collecting Yesterday for ...",
+      "htmlTitle": "Baytown&#39;s Living History Museum — Collecting Yesterday for ...",
+      "link": "https://www.baytownhistory.org/membershipsdonations.html",
+      "displayLink": "www.baytownhistory.org",
+      "snippet": "BHPA is enrolled in the Kroger Community Rewards program, and all you ... In addition to membership, you can also donate online. All donations go 100 ...",
+      "htmlSnippet": "\u003cb\u003eBHPA\u003c/b\u003e is enrolled in the Kroger Community Rewards program, and all you ... In addition to \u003cb\u003emembership\u003c/b\u003e, you can also donate \u003cb\u003eonline\u003c/b\u003e. All donations go 100&nbsp;...",
+      "formattedUrl": "https://www.baytownhistory.org/membershipsdonations.html",
+      "htmlFormattedUrl": "https://www.baytownhistory.org/\u003cb\u003emembership\u003c/b\u003esdonations.html"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "BHPA & IPPI Paragliding School based in southern Spain | FlySpain",
+      "htmlTitle": "\u003cb\u003eBHPA\u003c/b\u003e &amp; IPPI Paragliding School based in southern Spain | FlySpain",
+      "link": "https://www.flyspain.co.uk/about-fly-spain-paragliding-school/bhpa-paragliding-school-spain/",
+      "displayLink": "www.flyspain.co.uk",
+      "snippet": "... card. BHPA online registration. Why Not APPI? Appi is a very new organisation, started in the backroom of a tea hut in Asia by pilots trying to get overseas ...",
+      "htmlSnippet": "... \u003cb\u003ecard\u003c/b\u003e. \u003cb\u003eBHPA online\u003c/b\u003e registration. Why Not APPI? Appi is a very new organisation, started in the backroom of a tea hut in Asia by pilots trying to get overseas&nbsp;...",
+      "formattedUrl": "https://www.flyspain.co.uk/about-fly.../bhpa-paragliding-school-spain/",
+      "htmlFormattedUrl": "https://www.flyspain.co.uk/about-fly.../\u003cb\u003ebhpa\u003c/b\u003e-paragliding-school-spain/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcVJ_nQP0W57H_Q1u1auavQjVkKtP0hVnlo35mKfvJPjz5gmBdXQ4qFDA&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://agptxipylp.cloudimg.io/v7/storage.googleapis.com/creativecms-london--flyspain11/themes_images_file/fly-spain-facebook-logo-133139.png?width=200",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "BHPA & IPPI Paragliding School based in southern Spain | FlySpain",
+            "og:url": "https://www.flyspain.co.uk/about-fly-spain-paragliding-school/bhpa-paragliding-school-spain/",
+            "og:description": "Join Fly Spain,the oldest BHPA(also IPPI and FAI accredited)school teaching paramotoring and paragliding abroad, offering lessons every week for all"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://agptxipylp.cloudimg.io/v7/storage.googleapis.com/creativecms-london--flyspain11/themes_images_file/fly-spain-facebook-logo-133139.png?width=200"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Join the Club – The Dunstable Hang-Gliding & Paragliding Club",
+      "htmlTitle": "Join the Club – The Dunstable Hang-Gliding &amp; Paragliding Club",
+      "link": "https://dunstablehpc.com/club-info/join-the-club/",
+      "displayLink": "dunstablehpc.com",
+      "snippet": "Please make sure you bring your BHPA Membership Card with you to the briefing. ... Credit Card / Debit Card: you can pay online with your Debit or Credit ...",
+      "htmlSnippet": "Please make sure you bring your \u003cb\u003eBHPA Membership Card\u003c/b\u003e with you to the briefing. ... Credit \u003cb\u003eCard\u003c/b\u003e / Debit \u003cb\u003eCard\u003c/b\u003e: you can pay \u003cb\u003eonline\u003c/b\u003e with your Debit or Credit&nbsp;...",
+      "formattedUrl": "https://dunstablehpc.com/club-info/join-the-club/",
+      "htmlFormattedUrl": "https://dunstablehpc.com/club-info/join-the-club/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://dunstablehpc.com/wp-content/uploads/2017/06/cropped-dhpcicon-270x270.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

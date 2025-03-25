@@ -1,0 +1,678 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XC Retrieve",
+        "totalResults": "2930000",
+        "searchTerms": "XC Retrieve",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XC Retrieve",
+        "totalResults": "2930000",
+        "searchTerms": "XC Retrieve",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.325217,
+    "formattedSearchTime": "0.33",
+    "totalResults": "2930000",
+    "formattedTotalResults": "2,930,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e",
+      "link": "http://xcrt.aero/",
+      "displayLink": "xcrt.aero",
+      "snippet": "Last update: 5:00:00 PM. Map Type: Road, Satellite, Hybrid, Terrain. Group: All, UK XC Retrieve Group, XCRT Scotland. Auto-hide menu. Directions Link Type:.",
+      "htmlSnippet": "Last update: 5:00:00 PM. Map Type: Road, Satellite, Hybrid, Terrain. Group: All, UK \u003cb\u003eXC Retrieve\u003c/b\u003e Group, XCRT Scotland. Auto-hide menu. Directions Link Type:.",
+      "formattedUrl": "http://xcrt.aero/",
+      "htmlFormattedUrl": "http://xcrt.aero/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcg9dUXZpEUH0iz574jwcwpas-Rw4klUs9UPmqJwedrr3wkAcFYYQWqvB&s",
+            "width": "128",
+            "height": "128"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://xcrt.aero/favicon_128.png",
+            "og:site_name": "XC Retrieve",
+            "viewport": "initial-scale=1.0, user-scalable=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://xcrt.aero/favicon_128.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve – Advance paragliders in the West Country",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e – Advance paragliders in the West Country",
+      "link": "https://flyaszent.com/xc-retrieve/",
+      "displayLink": "flyaszent.com",
+      "snippet": "To do this send a special message to @xcr_bot – go into Telegram \u003e Contacts \u003e Search and enter @xcr_bot, then click on the user that comes up, then tap the ...",
+      "htmlSnippet": "To do this send a special message to @xcr_bot – go into Telegram &gt; Contacts &gt; Search and enter @xcr_bot, then click on the user that comes up, then tap the&nbsp;...",
+      "formattedUrl": "https://flyaszent.com/xc-retrieve/",
+      "htmlFormattedUrl": "https://flyaszent.com/\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eretrieve\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8T3FPwQt400DgOSlfszftJpmCFCY9iZOajicLmDtenlOQEMQf0cf4_IF&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://flyaszent.com/wp-content/uploads/2015/06/xcr.png?w=660",
+            "og:type": "article",
+            "article:published_time": "2015-06-05T17:42:58+00:00",
+            "og:image:width": "660",
+            "og:image:alt": "www.xcr.org.uk",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Advance paragliders in the West Country",
+            "og:title": "XC Retrieve",
+            "og:image:height": "371",
+            "og:description": "30 second “Quick Start” guide for the criminally impatient… After you’ve landed open Telegram and share your location in your retrieve group (paperclip \u003e Location) Send a…",
+            "article:publisher": "https://www.facebook.com/WordPresscom",
+            "twitter:image": "https://flyaszent.com/wp-content/uploads/2015/06/xcr.png?w=640",
+            "twitter:text:title": "XC Retrieve",
+            "twitter:image:alt": "www.xcr.org.uk",
+            "article:modified_time": "2021-06-09T15:07:04+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://flyaszent.com/xc-retrieve/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://flyaszent.com/wp-content/uploads/2015/06/xcr.png?w=660"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve Sign | Cross Country Magazine",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign | Cross Country Magazine",
+      "link": "https://xcmag.com/product/xc-retrieve-sign-for-hitch-hiking/",
+      "displayLink": "xcmag.com",
+      "snippet": "XC Retrieve Sign ... Get home quickly! ... This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The XC Retrieve Sign ...",
+      "htmlSnippet": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign ... Get home quickly! ... This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The \u003cb\u003eXC Retrieve\u003c/b\u003e Sign&nbsp;...",
+      "formattedUrl": "https://xcmag.com/product/xc-retrieve-sign-for-hitch-hiking/",
+      "htmlFormattedUrl": "https://xcmag.com/product/\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eretrieve\u003c/b\u003e-sign-for-hitch-hiking/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_KHHRsseTZm668IPAGacSAArHcKo5W5uhkGTLw8aH8Fe-kGnjV0o2NQ&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "product": [
+          {
+            "url": "https://xcmag.com/product/xc-retrieve-sign-for-hitch-hiking/"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/cross-country-trucker-cap-1.jpg",
+            "name": "Trucker Cap"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Speed-Top-Pro-10.jpg",
+            "name": "Speed Top Pro"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Wallet-2019.jpg",
+            "name": "Cross Country Wallet"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/xcpee-30-2023-1.jpg",
+            "name": "XCPee 30 Pack"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-MAIN-BLUE-v3.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1000",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "XC Retrieve Sign",
+            "og:image:height": "1000",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Get home quickly!",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2025-03-19T20:14:39+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/product/xc-retrieve-sign-for-hitch-hiking/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-MAIN-BLUE-v3.jpg"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Trucker Cap",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/cross-country-trucker-cap-1.jpg"
+          },
+          {
+            "fn": "Speed Top Pro",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Speed-Top-Pro-10.jpg"
+          },
+          {
+            "fn": "Cross Country Wallet",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Wallet-2019.jpg"
+          },
+          {
+            "fn": "XCPee 30 Pack",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/xcpee-30-2023-1.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve (xcrt.aero)",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e (xcrt.aero)",
+      "link": "https://www.facebook.com/groups/XCRetrieve/",
+      "displayLink": "www.facebook.com",
+      "snippet": "XC Retrieve (xcrt.aero) ... XC Retrieve is a system which integrates the group messaging app Telegram and Google Maps, in order to provide an easy to use system ...",
+      "htmlSnippet": "\u003cb\u003eXC Retrieve\u003c/b\u003e (xcrt.aero) ... \u003cb\u003eXC Retrieve\u003c/b\u003e is a system which integrates the group messaging app Telegram and Google Maps, in order to provide an easy to use system&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/groups/XCRetrieve/",
+      "htmlFormattedUrl": "https://www.facebook.com/groups/\u003cb\u003eXCRetrieve\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ5A7hYOtbbznU78xohhaBT1n9RDIR9UPeNQQYXNoEaHRlHBGlEQZhGh8&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://group/?id=835892373125558",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10152850001251237",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://group/?id=835892373125558",
+            "og:description": "XC Retrieve is a system which integrates the group messaging app Telegram and Google Maps, in order to provide an easy to use system for pilots to log...",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10152850001251237",
+            "twitter:image:alt": "XC Retrieve (xcrt.aero) | Facebook",
+            "twitter:site": "@facebookapp",
+            "application-name": "Facebook Groups",
+            "og:type": "video.other",
+            "og:image:alt": "XC Retrieve (xcrt.aero) | Facebook",
+            "twitter:title": "XC Retrieve (xcrt.aero) | Facebook",
+            "al:ios:app_name": "Facebook",
+            "application-url": "https://www.facebook.com/groups/",
+            "og:title": "XC Retrieve (xcrt.aero) | Facebook",
+            "google": "notranslate",
+            "al:android:url": "fb://group/835892373125558",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "XC Retrieve is a system which integrates the group messaging app Telegram and Google Maps, in order to provide an easy to use system for pilots to log...",
+            "og:locale": "en_US",
+            "fb-version": "450.0.0.0.92:2757",
+            "og:url": "https://www.facebook.com/groups/XCRetrieve/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10152850001251237"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve Sign in French | Cross Country Magazine",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign in French | Cross Country Magazine",
+      "link": "https://xcmag.com/product/xc-retrieve-sign-french-panneau-auto-stop-francais/",
+      "displayLink": "xcmag.com",
+      "snippet": "XC Retrieve Sign in French ... This paragliding retrieve sign will increase your chances of getting home quickly after a flight in French-speaking countries. The ...",
+      "htmlSnippet": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign in French ... This paragliding retrieve sign will increase your chances of getting home quickly after a flight in French-speaking countries. The&nbsp;...",
+      "formattedUrl": "https://xcmag.com/.../xc-retrieve-sign-french-panneau-auto-stop-francais/",
+      "htmlFormattedUrl": "https://xcmag.com/.../\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eretrieve\u003c/b\u003e-sign-french-panneau-auto-stop-francais/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7UMVBQ8oPdbKXmYtNZAm1y5mMzkRcCi7UY5OptoKC3rx6a3STeSaepN0Q&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "product": [
+          {
+            "url": "https://xcmag.com/product/xc-retrieve-sign-french-panneau-auto-stop-francais/"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg",
+            "name": "XC K2 Brake Mittens"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2022/09/RADIO-HEADSETS-MAIN.jpg",
+            "name": "XC Radio Headset"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/SRS-Glider-Trimmer-01-1.jpg",
+            "name": "SRS Glider Trimmer"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Windsock.jpg",
+            "name": "Cross Country Windsock"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-French-Main-blue-v2.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1000",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "XC Retrieve Sign in French",
+            "og:image:height": "1000",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Gone there and want to get back? The Cross Country hitching sign will help you get home quickly / Vous avez posé et vous voulez rentrer? Ce panneau pour faire auto-stop vous aidera à rentrer vite",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2025-03-03T15:51:53+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/product/xc-retrieve-sign-french-panneau-auto-stop-francais/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-French-Main-blue-v2.jpg"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "XC K2 Brake Mittens",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg"
+          },
+          {
+            "fn": "XC Radio Headset",
+            "photo": "https://xcmag.com/wp-content/uploads/2022/09/RADIO-HEADSETS-MAIN.jpg"
+          },
+          {
+            "fn": "SRS Glider Trimmer",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/SRS-Glider-Trimmer-01-1.jpg"
+          },
+          {
+            "fn": "Cross Country Windsock",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Windsock.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - XC Retrieve - retrieves just got a ... - Paragliding Forum",
+      "htmlTitle": "View topic - XC Retrieve - retrieves just got a ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=74540",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Sep 23, 2015 ... So how does this magic work…? Pilots must install Telegram on their smartphone and join one of the half dozen retrieve groups around the country ...",
+      "htmlSnippet": "Sep 23, 2015 \u003cb\u003e...\u003c/b\u003e So how does this magic work…? Pilots must install Telegram on their smartphone and join one of the half dozen \u003cb\u003eretrieve\u003c/b\u003e groups around the country&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=74540",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=74540",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve Sign en Espanol | Cross Country Magazine",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign en Espanol | Cross Country Magazine",
+      "link": "https://xcmag.com/product/xc-retrieve-sign-in-spanish-cartel-para-recogidas-espanol/",
+      "displayLink": "xcmag.com",
+      "snippet": "XC Retrieve Sign en Espanol · Spanish · In use size: 50 x 40 cm · Packaway size: 14.5 x 12 cm · 34g. //. Con este cartel para recogidas de ...",
+      "htmlSnippet": "\u003cb\u003eXC Retrieve\u003c/b\u003e Sign en Espanol &middot; Spanish &middot; In use size: 50 x 40 cm &middot; Packaway size: 14.5 x 12 cm &middot; 34g. //. Con este cartel para recogidas de&nbsp;...",
+      "formattedUrl": "https://xcmag.com/.../xc-retrieve-sign-in-spanish-cartel-para-recogidas-espa...",
+      "htmlFormattedUrl": "https://xcmag.com/.../\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eretrieve\u003c/b\u003e-sign-in-spanish-cartel-para-recogidas-espa...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlonMwFLred0FAem80xjZOCF1bjdp2WMg4uLcJhMdxNfDkdPp4VwOx78X4&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "product": [
+          {
+            "url": "https://xcmag.com/product/xc-retrieve-sign-in-spanish-cartel-para-recogidas-espanol/"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Buff-01.jpg",
+            "name": "Cross Country Buff"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Windsock.jpg",
+            "name": "Cross Country Windsock"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/XC-Day-Sac-01.jpg",
+            "name": "Cross Country Daypack"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg",
+            "name": "XC K2 Brake Mittens"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-Spanish-Main.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1000",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "XC Retrieve Sign en Espanol",
+            "og:image:height": "1000",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Gone there and want to get back? The Cross Country hitching sign will help you get home quickly / ¿Aterrizaste y quieres regresar? Este cartel de recogida te ayudará a regresar rápidamente",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2025-03-03T15:51:53+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/product/xc-retrieve-sign-in-spanish-cartel-para-recogidas-espanol/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2024/05/XC-Retrieve-Sign-Spanish-Main.jpg"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Cross Country Buff",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Buff-01.jpg"
+          },
+          {
+            "fn": "Cross Country Windsock",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Cross-Country-Windsock.jpg"
+          },
+          {
+            "fn": "Cross Country Daypack",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/XC-Day-Sac-01.jpg"
+          },
+          {
+            "fn": "XC K2 Brake Mittens",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Retrieve Sign Cross Country - Security Accessories",
+      "htmlTitle": "Paragliding \u003cb\u003eRetrieve\u003c/b\u003e Sign \u003cb\u003eCross Country\u003c/b\u003e - Security Accessories",
+      "link": "https://www.airetaventure.com/en/518595-paragliding-retrieve-sign-cross-country.html",
+      "displayLink": "www.airetaventure.com",
+      "snippet": "This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The Cross Country Retrieve Sign straps to your rucksack, and ...",
+      "htmlSnippet": "This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The \u003cb\u003eCross Country Retrieve\u003c/b\u003e Sign straps to your rucksack, and&nbsp;...",
+      "formattedUrl": "https://www.airetaventure.com/.../518595-paragliding-retrieve-sign-cross-c...",
+      "htmlFormattedUrl": "https://www.airetaventure.com/.../518595-paragliding-\u003cb\u003eretrieve\u003c/b\u003e-sign-cross-c...",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "EUR",
+            "price": "22",
+            "availability": "InStock",
+            "url": "https://www.airetaventure.com/en/518595-paragliding-retrieve-sign-cross-country.html"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "28"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "38"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "0.9"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "1.4"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "3"
+          },
+          {
+            "pricecurrency": "EUR",
+            "price": "22"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKlyGRNDW0eTKUiAG1B4PSxkyTpRt9dewkuT5w8VPoaCEI9Mt1c08YhZc&s",
+            "width": "210",
+            "height": "240"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://www.airetaventure.com/4997-large_default/paragliding-retrieve-sign-cross-country.jpg",
+            "name": "Paragliding Retrieve Sign Cross Country",
+            "description": "XC Retrieve Sign: Swift Landings, Easy Pickups! This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The Cross Country Retrieve Sign straps to your...",
+            "sku": "3667",
+            "url": "https://www.airetaventure.com/en/518595-paragliding-retrieve-sign-cross-country.html"
+          },
+          {
+            "image": "https://www.airetaventure.com/4931-home_default/aa-cap-air-et-aventure.jpg",
+            "name": "A&A cap Air et Aventure",
+            "description": "Trucker cap from Air et Aventure Optimize your summer style with Trucker caps in a unique design by Air et Aventure.",
+            "url": "A&A cap Air et Aventure"
+          },
+          {
+            "image": "https://www.airetaventure.com/5690-home_default/helicopter-safety-kit-neo.jpg",
+            "name": "Helicopter Safety Kit NEO",
+            "description": "Helicopter Safety Kit 1 circular sewn Dyneema strap Length: 3 meters Strength: 3 tons 1 screwgate karabiner with hanging strap Length: 10 cm Resistance: 2.5 tons Made in France on the shores...",
+            "url": "Helicopter Safety Kit NEO"
+          },
+          {
+            "image": "https://www.airetaventure.com/345-home_default/yellow-dyneema-paraglider-hanger-o-1-mm-edelrid.jpg",
+            "name": "Yellow Dyneema Paraglider Hanger Ø 1 mm Edelrid",
+            "description": "Sheathed Dyneema Ultimate fiber Diameter: 1 mmColor: YellowStrength: 80 daN",
+            "url": "Yellow Dyneema Paraglider Hanger Ø 1 mm Edelrid"
+          },
+          {
+            "image": "https://www.airetaventure.com/344-home_default/yellow-and-red-dyneema-paraglider-hanger-o-15-mm-edelrid.jpg",
+            "name": "Yellow and Red Dyneema Paraglider Hanger Ø 1.5 mm Edelrid",
+            "description": "Sheathed Dyneema Ultimate fiber Spare line in case your wing's line breaks. Diameter (mm): 1.5 Strength (daN) : 160",
+            "url": "Yellow and Red Dyneema Paraglider Hanger Ø 1.5 mm Edelrid"
+          },
+          {
+            "image": "https://www.airetaventure.com/141-home_default/single-brake-swivel-niviuk.jpg",
+            "name": "Single brake swivel NIVIUK",
+            "description": "A simple and effective swivel! 2 identical 4mm diameter holes Diameter: 8 mm Length : 29 mm Holes: 4 mm Maximum working load: approx. 20 kg Breakage: approx. 100 kg Weight : 8 g Sold individually",
+            "url": "Single brake swivel NIVIUK"
+          },
+          {
+            "image": "https://www.airetaventure.com/55-home_default/hitchhiking-sign-in-french.jpg",
+            "name": "Hitchhiking sign in French",
+            "description": "The ideal accessory for getting home faster When you're on a cross-country flight or on a runway with a walkway, you don't always land close to your vehicle. The paraglider hitchhiking sign...",
+            "url": "Hitchhiking sign in French"
+          }
+        ],
+        "organization": [
+          {
+            "image": "https://www.airetaventure.com/img/m/27-brand_default.jpg",
+            "name": "CROSS COUNTRY"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.airetaventure.com/4998-home_default/paragliding-retrieve-sign-cross-country.jpg",
+            "twitter:card": "product",
+            "og:type": "product",
+            "og:site_name": "Air et Aventure",
+            "product:pretax_price:amount": "18.33",
+            "viewport": "width=device-width, initial-scale=1",
+            "product:price:currency": "EUR",
+            "product:pretax_price:currency": "EUR",
+            "product:price:amount": "22",
+            "og:url": "https://www.airetaventure.com/en/518595-paragliding-retrieve-sign-cross-country.html",
+            "twitter:image": "https://www.airetaventure.com/4998-home_default/paragliding-retrieve-sign-cross-country.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.airetaventure.com/4998-home_default/paragliding-retrieve-sign-cross-country.jpg"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Paragliding Retrieve Sign Cross Country",
+            "description": "XC Retrieve Sign: Swift Landings, Easy Pickups! This paragliding retrieve sign will increase your chances of getting home quickly after a flight. The Cross Country Retrieve Sign straps to your...",
+            "photo": "https://www.airetaventure.com/4999-large_default/paragliding-retrieve-sign-cross-country.jpg",
+            "currency": "EUR",
+            "currency_iso4217": "978",
+            "url": "https://www.airetaventure.com/en/518595-paragliding-retrieve-sign-cross-country.html"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Home",
+            "name": "Home",
+            "position": "1"
+          },
+          {
+            "item": "Paragliding and Paramotor Harnesses",
+            "name": "Paragliding and Paramotor Harnesses",
+            "position": "2"
+          },
+          {
+            "item": "Harness Accessories",
+            "name": "Harness Accessories",
+            "position": "3"
+          },
+          {
+            "item": "Security Accessories",
+            "name": "Security Accessories",
+            "position": "4"
+          },
+          {
+            "name": "Paragliding Retrieve Sign Cross Country",
+            "position": "5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Retrieve Team for XC Open World ... - Paragliding Forum",
+      "htmlTitle": "View topic - Retrieve Team for XC Open World ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p215827",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jul 29, 2010 ... van. He is multilingual. (Romanian, Spanish and English at least). ... He can offer during the Piedrahita XC-Open his service of lift to take off ...",
+      "htmlSnippet": "Jul 29, 2010 \u003cb\u003e...\u003c/b\u003e van. He is multilingual. (Romanian, Spanish and English at least). ... He can offer during the Piedrahita \u003cb\u003eXC\u003c/b\u003e-Open his service of lift to take off&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p215827",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p215827",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Retrieve Drivers",
+      "htmlTitle": "\u003cb\u003eXC Retrieve\u003c/b\u003e Drivers",
+      "link": "https://www.mss.org.au/Information/XCRetrieveDrivers/tabid/208/Default.aspx",
+      "displayLink": "www.mss.org.au",
+      "snippet": "XC Retrieve Drivers. Manilla has a large number of drivers available for XC retreive at reasonable rates (A$60-90/day depending on hours).",
+      "htmlSnippet": "\u003cb\u003eXC Retrieve\u003c/b\u003e Drivers. Manilla has a large number of drivers available for XC retreive at reasonable rates (A$60-90/day depending on hours).",
+      "formattedUrl": "https://www.mss.org.au/Information/XCRetrieveDrivers/tabid/.../Default.asp...",
+      "htmlFormattedUrl": "https://www.mss.org.au/Information/\u003cb\u003eXCRetrieve\u003c/b\u003eDrivers/tabid/.../Default.asp...",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width,initial-scale=1",
+            "rating": "GENERAL",
+            "resource-type": "DOCUMENT"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Information",
+            "name": "Information",
+            "position": "1"
+          },
+          {
+            "item": "XC Retrieve Drivers",
+            "name": "XC Retrieve Drivers",
+            "position": "2"
+          }
+        ]
+      }
+    }
+  ]
+}

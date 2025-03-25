@@ -1,0 +1,531 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Open Railway Map",
+        "totalResults": "1360000000",
+        "searchTerms": "Open Railway Map",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Open Railway Map",
+        "totalResults": "1360000000",
+        "searchTerms": "Open Railway Map",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.38827,
+    "formattedSearchTime": "0.39",
+    "totalResults": "1360000000",
+    "formattedTotalResults": "1,360,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "OpenRailwayMap",
+      "htmlTitle": "\u003cb\u003eOpenRailwayMap\u003c/b\u003e",
+      "link": "https://www.openrailwaymap.org/",
+      "displayLink": "www.openrailwaymap.org",
+      "snippet": "OpenRailwayMap - An OpenStreetMap-based project for creating a map of the world's railway infrastructure.",
+      "htmlSnippet": "\u003cb\u003eOpenRailwayMap\u003c/b\u003e - An OpenStreetMap-based project for creating a map of the world&#39;s railway infrastructure.",
+      "formattedUrl": "https://www.openrailwaymap.org/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eopenrailwaymap\u003c/b\u003e.org/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTOENK1bS07uNTDGTepxH9S-ZKdh8QPX6UAKUEW_QblcS_dVBYt-E5aRFU&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "OpenRailwayMap",
+            "theme-color": "#4e9a06",
+            "twitter:card": "summary",
+            "twitter:title": "OpenRailwayMap",
+            "twitter:url": "https://www.openrailwaymap.org/",
+            "apple-mobile-web-app-title": "OpenRailwayMap",
+            "title": "OpenRailwayMap",
+            "twitter:image": "https://www.openrailwaymap.org/img/openrailwaymap-310.png",
+            "page-topic": "OpenRailwayMap",
+            "twitter:site": "@openrailwaymap",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "OpenRailwayMap - An OpenStreetMap-based project for creating a map of the world&#39;s railway infrastructure.",
+            "mobile-web-app-capable": "yes"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://b.tiles.openrailwaymap.org/standard/15/17292/11599.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Open Railway Map of the US : r/Amtrak",
+      "htmlTitle": "\u003cb\u003eOpen Railway Map\u003c/b\u003e of the US : r/Amtrak",
+      "link": "https://www.reddit.com/r/Amtrak/comments/172hben/open_railway_map_of_the_us/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 7, 2023 ... The map shows all railroads in the database, not just passenger rail; in this view color coded by speed. If you want to get jealous you can ...",
+      "htmlSnippet": "Oct 7, 2023 \u003cb\u003e...\u003c/b\u003e The \u003cb\u003emap\u003c/b\u003e shows all \u003cb\u003erailroads\u003c/b\u003e in the database, not just passenger \u003cb\u003erail\u003c/b\u003e; in this view color coded by speed. If you want to get jealous you can&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/Amtrak/.../open_railway_map_of_the_us/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/Amtrak/.../\u003cb\u003eopen\u003c/b\u003e_\u003cb\u003erailway\u003c/b\u003e_\u003cb\u003emap\u003c/b\u003e_of_the_us/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH16jSOPQ7qXXqj-fSpbmu_GsF66wmceHqv439vcE7u9fVMWcvtCgcezUc&s",
+            "width": "293",
+            "height": "172"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/open-railway-map-of-the-us-v0-ibnuc2l0lusb1.png?width=1080&crop=smart&auto=webp&s=ae7698a614e9ddfa5d263daa0b97740a5a6d0c44",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "og:image:alt": "a map of the united states",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/Amtrak on Reddit: Open Railway Map of the US",
+            "og:site_name": "Reddit",
+            "og:title": "r/Amtrak on Reddit: Open Railway Map of the US",
+            "og:image:height": "636",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/tuctrohs - 555 votes and 36 comments",
+            "twitter:image": "https://preview.redd.it/open-railway-map-of-the-us-v0-ibnuc2l0lusb1.png?width=1080&crop=smart&auto=webp&s=ae7698a614e9ddfa5d263daa0b97740a5a6d0c44",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/Amtrak/comments/172hben/open_railway_map_of_the_us/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/open-railway-map-of-the-us-v0-ibnuc2l0lusb1.png?width=1080&crop=smart&auto=webp&s=ae7698a614e9ddfa5d263daa0b97740a5a6d0c44"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "open railway map - the MRH Forum",
+      "htmlTitle": "\u003cb\u003eopen railway map\u003c/b\u003e - the MRH Forum",
+      "link": "https://forum.mrhmag.com/post/open-railway-map-12204882",
+      "displayLink": "forum.mrhmag.com",
+      "snippet": "A very detailed map of every railroad in North America, in current service, abandoned, disused. etc Detailed right down to the Yard tracks, spurs, sidings.",
+      "htmlSnippet": "A very detailed \u003cb\u003emap\u003c/b\u003e of every \u003cb\u003erailroad\u003c/b\u003e in North America, in current service, abandoned, disused. etc Detailed right down to the Yard tracks, spurs, sidings.",
+      "formattedUrl": "https://forum.mrhmag.com/post/open-railway-map-12204882",
+      "htmlFormattedUrl": "https://forum.mrhmag.com/post/\u003cb\u003eopen\u003c/b\u003e-\u003cb\u003erailway\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e-12204882",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mL9He23VRZBpiKqsV9infoL23OEPJ2NSOzAtv2-ZvoSM04anSdkLmw&s",
+            "width": "45",
+            "height": "45"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://d28lcup14p4e72.cloudfront.net/259338/8714771/MRH-shield-icon.png",
+            "fo-verify": "b4b45d7b-e3c2-4396-92af-0312ebc6e2b1",
+            "og:type": "article",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "open railway map",
+            "og:url": "https://forum.mrhmag.com/post/open-railway-map-12204882",
+            "og:description": "Hello...\r\n\r\nA friend of mine showed me this site:\r\n\r\n http://www.openrailwaymap.org/ \r\n\r\nA very detailed map of every railroad in North America, in current service, abandoned, disused....etc\r\n\r\nDetailed right down to the Yard tracks, spurs, sidings... (zoom in..)\r\n\r\nSo I thought i'd share with you.\r\n\r\nenjoy, cheers,\nBrad\r\n\r\n "
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d28lcup14p4e72.cloudfront.net/259338/8714771/MRH-shield-icon.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "East Link Extension | Project map and summary | Sound Transit",
+      "htmlTitle": "East Link Extension | Project \u003cb\u003emap\u003c/b\u003e and summary | Sound Transit",
+      "link": "https://www.soundtransit.org/system-expansion/east-link-extension",
+      "displayLink": "www.soundtransit.org",
+      "snippet": "Jan 1, 2024 ... Project map and summary. Map of open and ongoing construction portions of the 2 Line alignment ... Project type: Link light rail. Phase ...",
+      "htmlSnippet": "Jan 1, 2024 \u003cb\u003e...\u003c/b\u003e Project \u003cb\u003emap\u003c/b\u003e and summary. \u003cb\u003eMap\u003c/b\u003e of \u003cb\u003eopen\u003c/b\u003e and ongoing construction portions of the 2 Line alignment ... Project type: Link light \u003cb\u003erail\u003c/b\u003e. Phase&nbsp;...",
+      "formattedUrl": "https://www.soundtransit.org/system-expansion/east-link-extension",
+      "htmlFormattedUrl": "https://www.soundtransit.org/system-expansion/east-link-extension",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbr4Ro3gDuFeUyZ5PYZFxYzVOWztPZ0irCl-JWJhRBSpMGw0NlQGxbAIFJ&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.soundtransit.org/sites/default/files/styles/project_map_launcher_image/public/2025-01/web-map-east-link-extension%20%281%29.png?h=cb7bdd95&itok=jL2ceLUW"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Metro System Maps - LA Metro",
+      "htmlTitle": "Metro System \u003cb\u003eMaps\u003c/b\u003e - LA Metro",
+      "link": "https://www.metro.net/riding/guide/system-maps/",
+      "displayLink": "www.metro.net",
+      "snippet": "May 4, 2021 ... Open Menu. Metro Logo. Translate ... Metro and Regional Rail Map · Metro Stations with Restroom Access Map ...",
+      "htmlSnippet": "May 4, 2021 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eOpen\u003c/b\u003e Menu. Metro Logo. Translate ... Metro and Regional \u003cb\u003eRail Map\u003c/b\u003e &middot; Metro Stations with Restroom Access \u003cb\u003eMap\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.metro.net/riding/guide/system-maps/",
+      "htmlFormattedUrl": "https://www.metro.net/riding/guide/system-\u003cb\u003emap\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCe8Dq4CLIvN8IHbd5GyAdoEmXo3jJIlUSk1VoFyeW9YA92m-_3OOlUxk&s",
+            "width": "600",
+            "height": "83"
+          }
+        ],
+        "person": [
+          {
+            "name": "achaparro",
+            "url": "achaparro"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.beta.metro.net/wp-content/uploads/2021/05/04232939/system-maps.jpg",
+            "og:type": "article",
+            "og:image:width": "2200",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#FFFFFF",
+            "og:site_name": "LA Metro",
+            "tec-api-origin": "https://www.metro.net",
+            "og:title": "Metro System Maps - LA Metro",
+            "og:image:height": "307",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://cdn.beta.metro.net/wp-content/uploads/2021/04/04233038/cropped-metro-logo-512x512-1-270x270.png",
+            "og:description": "Map of the Greater Los Angeles area with all Metro modes and lines. The system map includes all subway lines and bus routes.",
+            "article:publisher": "https://www.facebook.com/losangelesmetro/",
+            "twitter:data1": "1 minute",
+            "twitter:site": "@metrolosangeles",
+            "article:modified_time": "2025-02-21T20:11:37+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.metro.net/riding/guide/system-maps/",
+            "tec-api-version": "v1"
+          }
+        ],
+        "creativework": [
+          {
+            "text": "Home \u003e Ride Metro \u003e Metro Rider’s Guide \u003e Metro System Maps Metro System Maps Overview Maps The maps below include service changes that went into effect Sunday, December 15, 2024:Bus and...",
+            "headline": "Metro System Maps",
+            "datepublished": "May 4, 2021"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.beta.metro.net/wp-content/uploads/2021/05/04232939/system-maps.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Lynnwood Link Extension | Project map and summary | Sound Transit",
+      "htmlTitle": "Lynnwood Link Extension | Project \u003cb\u003emap\u003c/b\u003e and summary | Sound Transit",
+      "link": "https://www.soundtransit.org/system-expansion/lynnwood-link-extension",
+      "displayLink": "www.soundtransit.org",
+      "snippet": "Overview After the Northgate extension opens in 2021, the Lynnwood Link Extension extends light rail into Snohomish County, serving four stations, ...",
+      "htmlSnippet": "Overview After the Northgate extension \u003cb\u003eopens\u003c/b\u003e in 2021, the Lynnwood Link Extension extends light \u003cb\u003erail\u003c/b\u003e into Snohomish County, serving four stations,&nbsp;...",
+      "formattedUrl": "https://www.soundtransit.org/system-expansion/lynnwood-link-extension",
+      "htmlFormattedUrl": "https://www.soundtransit.org/system-expansion/lynnwood-link-extension",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCASSih0OlRvaGWwfJOvst5R18f3XmzsI3OwF28BlfwLT22nIW8csHhDI&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.soundtransit.org/sites/default/files/styles/project_map_launcher_image/public/2024-04/web-map-lynnwood-link-extension.png?h=c2a811ed&itok=eFd5V5i_"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "coordinate system - OpenRailway Map basemap in QGIS ...",
+      "htmlTitle": "coordinate system - \u003cb\u003eOpenRailway Map\u003c/b\u003e basemap in QGIS ...",
+      "link": "https://gis.stackexchange.com/questions/321064/openrailway-map-basemap-in-qgis",
+      "displayLink": "gis.stackexchange.com",
+      "snippet": "Apr 28, 2019 ... I am trying to use Open Railway Maps ( https://www.openrailwaymap.org/ ) as a basemap for a project and have had no success following multiple guides.",
+      "htmlSnippet": "Apr 28, 2019 \u003cb\u003e...\u003c/b\u003e I am trying to use \u003cb\u003eOpen Railway Maps\u003c/b\u003e ( https://www.openrailwaymap.org/ ) as a basemap for a project and have had no success following multiple guides.",
+      "formattedUrl": "https://gis.stackexchange.com/questions/.../openrailway-map-basemap-in-q...",
+      "htmlFormattedUrl": "https://gis.stackexchange.com/questions/.../\u003cb\u003eopenrailway\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e-base\u003cb\u003emap\u003c/b\u003e-in-q...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZ78SuW2_0_W8r5yypgtNS4yG_-4Z1bSWkoIMu5jEWgNlHsjE_v7k_LA&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "qapage": [
+          {
+            "image": "https://cdn.sstatic.net/Sites/gis/Img/apple-touch-icon@2.png?v=54e3ab1edcf3",
+            "primaryimageofpage": "https://cdn.sstatic.net/Sites/gis/Img/apple-touch-icon@2.png?v=54e3ab1edcf3",
+            "name": "OpenRailway Map basemap in QGIS",
+            "description": "I'm a bit of a QGIS noob when it comes to anything other than the basics so hoping someone has an easy solution to this. I am trying to use Open Railway Maps ( https://www.openrailwaymap.org/ ) as a"
+          }
+        ],
+        "question": [
+          {
+            "image": "https://cdn.sstatic.net/Sites/gis/Img/apple-touch-icon.png?v=5bbd8af2ce1b",
+            "upvotecount": "1",
+            "commentcount": "2",
+            "answercount": "2",
+            "name": "OpenRailway Map basemap in QGIS",
+            "datecreated": "2019-04-28 13:20:12Z",
+            "text": "I'm a bit of a QGIS noob when it comes to anything other than the basics so hoping someone has an easy solution to this. I am trying to use Open Railway Maps ( https://www.openrailwaymap.org/...",
+            "url": "Share"
+          }
+        ],
+        "answer": [
+          {
+            "upvotecount": "2",
+            "commentcount": "1",
+            "text": "You will need OpenStreetMap tiles underneath the OpenRailWay tiles you can use xyz tiles in QGIS OpenRailway tile sets https://a.tiles.openrailwaymap.org/standard/{z}/{x}/{y}.png OpenStreetMap...",
+            "datecreated": "2019-04-28 16:58:02Z",
+            "url": "Share"
+          },
+          {
+            "upvotecount": "0",
+            "text": "Install featured QuickMapServices plugin. Open search pane and print openrailwaymap Push Add button In search pane print Mapnik Push Add button. Expected result without printing magic urls...",
+            "datecreated": "2019-04-28 19:12:20Z",
+            "url": "Share"
+          }
+        ],
+        "person": [
+          {
+            "name": "Nikos",
+            "url": "Nikos"
+          },
+          {
+            "name": "Mapperz",
+            "url": "Mapperz"
+          },
+          {
+            "name": "Dmitry Baryshnikov",
+            "url": "Dmitry Baryshnikov"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.sstatic.net/Sites/gis/Img/apple-touch-icon@2.png?v=54e3ab1edcf3",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "OpenRailway Map basemap in QGIS",
+            "og:site_name": "Geographic Information Systems Stack Exchange",
+            "twitter:domain": "gis.stackexchange.com",
+            "viewport": "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0",
+            "twitter:description": "I'm a bit of a QGIS noob when it comes to anything other than the basics so hoping someone has an easy solution to this. I am trying to use Open Railway Maps ( https://www.openrailwaymap.org/ ) as a",
+            "og:url": "https://gis.stackexchange.com/questions/321064/openrailway-map-basemap-in-qgis"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.sstatic.net/Sites/gis/Img/apple-touch-icon@2.png?v=54e3ab1edcf3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Mount Washington Cog Railway",
+      "htmlTitle": "The Mount Washington Cog \u003cb\u003eRailway\u003c/b\u003e",
+      "link": "https://www.thecog.com/",
+      "displayLink": "www.thecog.com",
+      "snippet": "The World's First Mountain Climbing Cog Railway. In the White Mountains of NH, climbing to the peak of Mount Washington. The Premier New England Attraction.",
+      "htmlSnippet": "The World&#39;s First Mountain Climbing Cog \u003cb\u003eRailway\u003c/b\u003e. In the White Mountains of NH, climbing to the peak of Mount Washington. The Premier New England Attraction.",
+      "formattedUrl": "https://www.thecog.com/",
+      "htmlFormattedUrl": "https://www.thecog.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsi6agBwyUFxQJ9jH283-98dwlyP4Wwsy49I-uBE7bNGLOZo1hb9oVwls&s",
+            "width": "600",
+            "height": "83"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://static1.squarespace.com/static/5e5e7a5581ab233e1ea07d38/t/6717bbaa7400934530ef35c7/1729608618773/logo_h%E2%80%93v2+copy.png?format=1500w",
+            "og:type": "website",
+            "og:image:width": "1500",
+            "twitter:title": "The Mount Washington Cog Railway",
+            "twitter:card": "summary",
+            "og:site_name": "The Mount Washington Cog Railway",
+            "twitter:url": "https://www.thecog.com",
+            "og:title": "The Mount Washington Cog Railway",
+            "og:image:height": "208",
+            "og:description": "The World’s First Mountain Climbing Cog Railway.  In the White Mountains of NH, climbing to the peak of Mount Washington.  The Premier New England Attraction.",
+            "twitter:image": "http://static1.squarespace.com/static/5e5e7a5581ab233e1ea07d38/t/6717bbaa7400934530ef35c7/1729608618773/logo_h%E2%80%93v2+copy.png?format=1500w",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "The World’s First Mountain Climbing Cog Railway.  In the White Mountains of NH, climbing to the peak of Mount Washington.  The Premier New England Attraction.",
+            "og:url": "https://www.thecog.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://static1.squarespace.com/static/5e5e7a5581ab233e1ea07d38/t/6717bbaa7400934530ef35c7/1729608618773/logo_h%E2%80%93v2+copy.png?format=1500w"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Railmap for Open Railway Map on the App Store",
+      "htmlTitle": "Railmap for \u003cb\u003eOpen Railway Map\u003c/b\u003e on the App Store",
+      "link": "https://apps.apple.com/us/app/railmap-for-open-railway-map/id1374554550",
+      "displayLink": "apps.apple.com",
+      "snippet": "Railmap allows you to explore the world with a whole new sight: the world of train tracks. Explore three different rail map layers.",
+      "htmlSnippet": "Railmap allows you to explore the world with a whole new sight: the world of \u003cb\u003etrain\u003c/b\u003e tracks. Explore three different \u003cb\u003erail map\u003c/b\u003e layers.",
+      "formattedUrl": "https://apps.apple.com/us/app/railmap...open-railway-map/id1374554550",
+      "htmlFormattedUrl": "https://apps.apple.com/us/app/rail\u003cb\u003emap\u003c/b\u003e...\u003cb\u003eopen\u003c/b\u003e-\u003cb\u003erailway\u003c/b\u003e-\u003cb\u003emap\u003c/b\u003e/id1374554550",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwKPLjsm-6swyU5pKB5T9zxGVP8j-X8-lufxy4twpe2RVLWVNyL1kbV2RU&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ff/34/d3/ff34d3b7-427a-e662-1b4e-41d0ef46aa58/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200eRailmap allows you to explore the world with a whole new sight: the world of train tracks.\n\nExplore three different rail map layers:\nSTANDARD\nExplore the global network of train tracks.\n\nSPEED\nGet a feeling about how fast you can go on which train tracks.\n\nSIGNALS\nSee detailed information about sign…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ff/34/d3/ff34d3b7-427a-e662-1b4e-41d0ef46aa58/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ff/34/d3/ff34d3b7-427a-e662-1b4e-41d0ef46aa58/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "Railmap for Open Railway Map on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "Railmap for Open Railway Map on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200eRailmap for Open Railway Map",
+            "og:title": "\u200eRailmap for Open Railway Map",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200eRailmap allows you to explore the world with a whole new sight: the world of train tracks.\n\nExplore three different rail map layers:\nSTANDARD\nExplore the global network of train tracks.\n\nSPEED\nGet a feeling about how fast you can go on which train tracks.\n\nSIGNALS\nSee detailed information about sign…",
+            "og:locale": "en_US",
+            "apple:content_id": "1374554550",
+            "og:url": "https://apps.apple.com/us/app/railmap-for-open-railway-map/id1374554550"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/ff/34/d3/ff34d3b7-427a-e662-1b4e-41d0ef46aa58/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x630wa.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "WMATA | Maps",
+      "htmlTitle": "WMATA | \u003cb\u003eMaps\u003c/b\u003e",
+      "link": "https://www.wmata.com/schedules/maps/",
+      "displayLink": "www.wmata.com",
+      "snippet": "... OPEN MAP. BackFares. Cost to Ride · About SmarTrip · Mobile Pay · Buy SmarTrip ... * a required field. ZOOM TO LOCATION Map Pin. RAIL LINE. All Rail Lines, Red ...",
+      "htmlSnippet": "... \u003cb\u003eOPEN MAP\u003c/b\u003e. BackFares. Cost to Ride &middot; About SmarTrip &middot; Mobile Pay &middot; Buy SmarTrip ... * a required field. ZOOM TO LOCATION \u003cb\u003eMap\u003c/b\u003e Pin. \u003cb\u003eRAIL\u003c/b\u003e LINE. All \u003cb\u003eRail\u003c/b\u003e Lines, Red&nbsp;...",
+      "formattedUrl": "https://www.wmata.com/schedules/maps/",
+      "htmlFormattedUrl": "https://www.wmata.com/schedules/\u003cb\u003emap\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg1yYcHgoCQs2Vzqrr4lXeVHTFwaW40uxcHCjr7HDkBpfoFlcTcECx-SEO&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://wmata.com/images/Metrorail-station-with-buses-and-trains.png",
+            "og:type": "website",
+            "og:image:width": "500",
+            "og:image:alt": "Metrorail station with buses and trains.",
+            "twitter:card": "photo",
+            "twitter:title": "WMATA | Maps",
+            "og:site_name": "WMATA",
+            "twitter:url": "https://wmata.com/schedules/maps/index.cfm",
+            "og:title": "WMATA | Maps",
+            "og:image:height": "500",
+            "og:image:type": "image/jpeg",
+            "google": "notranslate",
+            "og:description": "Metro news and service information for the Washington, DC, Maryland, and Virginia region.",
+            "twitter:image": "https://wmata.com/images/Metrorail-station-with-buses-and-trains.png",
+            "twitter:image:alt": "Metrorail station with buses and trains.",
+            "twitter:site": "@wmata",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:url": "https://wmata.com/schedules/maps/index.cfm"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://wmata.com/images/Metrorail-station-with-buses-and-trains.png"
+          }
+        ]
+      }
+    }
+  ]
+}

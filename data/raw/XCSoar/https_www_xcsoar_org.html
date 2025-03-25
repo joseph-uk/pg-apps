@@ -1,0 +1,401 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>XCSoar - ... the open-source glide computer</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords" content="XCSoar, gliding, soaring, paragliding, gps, navigation, moving map" />
+  <meta name="description" content="open-source tactical glide computer for soaring and paragliding pilots" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="XCSoar.org ATOM feed" />
+
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap-normalize.css" >
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap-button.css" >
+<link rel="stylesheet" href="/lib/bootstrap/bootstrap-grid.css" >
+<link rel="stylesheet" href="/css/xcsoar.css" >
+<link rel="stylesheet" href="/css/xcsoar-blue.css">
+<link rel="stylesheet" href="/lib/jquery-lightbox/jquery.lightbox-0.5.css" >
+  
+<link rel="stylesheet" href="/css/xcsoar-not-trac.css">
+
+
+
+
+<script src="/lib/jquery-1.8.2.min.js"></script>
+<script src="/lib/jquery-lightbox/jquery.lightbox-0.5.min.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+
+
+<div class="shadowed">
+  <div id="primary">
+    <div class="container">
+      <div class="row">
+        <div id="logo" class="span4">
+          <a href="/">
+            
+            <img src="/img/logo-blue.svg" alt="xcsoar-logo-blue" />
+            
+          </a>
+        </div>
+        <div class="span8">
+          <ul id="nav">
+            <li class="discover"><a href="/discover/" title="Discover what XCSoar has to offer">Discover</a></li>
+            <li class="download"><a href="/download/" title="Download XCSoar and the map files">Download</a></li>
+            <li class="hardware"><a href="/hardware/" title="Information about hardware for XCSoar">Hardware</a></li>
+            <li class="contact"><a href="/contact/" title="Get in touch with XCSoar people">Contact</a></li>
+            <li class="develop"><a href="/develop/" title="Help us to develop XCSoar even further">Contribute</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="title" class="span12">
+          <h1 class="tagline">... the open-source glide computer</h1>
+        </div>
+      </div>
+
+<script>
+$(function() {
+  $('#screenshots .span4 a').lightBox({
+    imageLoading: '/lib/jquery-lightbox/lightbox-ico-loading.gif',
+    imageBtnClose: '/lib/jquery-lightbox/lightbox-btn-close.gif',
+    imageBtnPrev: '/lib/jquery-lightbox/lightbox-btn-prev.gif',
+    imageBtnNext: '/lib/jquery-lightbox/lightbox-btn-next.gif',
+    imageBlank: '/lib/jquery-lightbox/lightbox-blank.gif'
+  });
+});
+</script>
+
+<div class="row" id="summary">
+  <div class="span8">
+    <p>
+      XCSoar is an open-source flight navigation software designed for gliders and
+      other sailplanes. It provides features like a moving map, task planning,
+      airspace information, and thermal detection. The software helps pilots with
+      route optimization and offers real-time data on altitude, speed, and location.
+      It can be used on various devices, including tablets and smartphones, making it
+      versatile for both recreational and competitive flying.
+    </p>
+    <p>
+      <a href="./discover/" title="Learn more about XCSoar">Learn more...</a>
+    </p>
+    <hr/>
+  </div>
+
+  <div id="aside" class="span4 pull-right">
+    <a href="./download/" class="btn btn-success btn-large btn-block">
+      Download XCSoar
+    </a>
+
+    <ul id="downloads" class="quicklinks">
+      <li class="list-item-data">
+        <a href="./download/data.html">Maps, Waypoints, ...</a>
+      </li>
+
+      <li class="divider"></li>
+
+      <li class="list-item-android">
+        <a href="https://download.xcsoar.org/releases/7.43/ANDROID/">Android</a>
+        <small class="nowrap">(<a href="https://f-droid.org/packages/org.xcsoar/">F-Droid</a>)</small>
+      </li>
+      <li class="list-item-cubie">
+        <a href="https://openvario.org/doku.php?id=downloads">CUBIE/OpenVario</a>
+      </li>
+      <li class="list-item-kobo">
+        <a href="https://download.xcsoar.org/releases/7.43/KOBO/">KOBO E-reader</a>
+      </li>
+      <li class="list-item-linux">
+        <a href="https://download.xcsoar.org/releases/7.43/DEBIAN/">Debian Linux</a>
+      </li>
+      <li class="list-item-pi">
+        <a href="https://download.xcsoar.org/releases/7.43/PI/">Raspberry PI 1-3</a>
+      </li>
+      <li class="list-item-pi">
+        <a href="https://download.xcsoar.org/releases/7.43/PI4/">Raspberry PI 4</a>
+      </li>
+      <li class="list-item-windows">
+        <a href="https://download.xcsoar.org/releases/7.43/WIN64/">Windows</a>
+        <small class="nowrap">(<a href="https://download.xcsoar.org/releases/7.43/PC/">32 bit</a> /
+        <a href="https://download.xcsoar.org/releases/7.43/WIN64/">64 bit</a>)</small>
+      </li>
+  </ul>
+
+    <hr/>
+
+    <a href="./discover/manual.html" class="btn btn-large btn-block btn-primary">
+      Download Manual
+    </a>
+
+    <ul id="manuals" class="quicklinks">
+      <li class="list-item-xcsoar">
+        <a href="https://download.xcsoar.org/releases/7.43/XCSoar-manual.pdf">Manual for XCSoar 7.43</a>
+      </li>
+      <li class="list-item-xcsoar">
+        <a href="https://download.xcsoar.org/releases/7.43/XCSoar-manual-de.pdf">German translation 7.43</a>
+      </li>
+      <li class="list-item-xcsoar">
+        <a href="https://download.xcsoar.org/releases/7.43/XCSoar-manual-fr.pdf">French translation 7.43</a>
+      </li>
+      <li class="list-item-xcsoar">
+        <a href="https://download.xcsoar.org/releases/7.43/XCSoar-manual-pt_BR.pdf">Portuguese translation 7.43</a>
+      </li>
+    </ul>
+
+    <hr/>
+
+    <div id="social-links" class="clearfix">
+      <div><a href="atom.xml" title="Follow us via RSS feed" target="_blank"><img src="img/icon-rss-48x48.png" alt="rss"></a></div>
+      <div><a href="https://github.com/XCSoar/XCSoar.git" title="Follow our development via git" target="_blank"><img src="img/icon-git-48x48.png" alt="git"></a></div>
+      <div><a href="https://twitter.com/XCSoar" title="Follow us on Twitter" target="_blank"><img src="img/icon-twitter-48x48.png" alt="twitter"></a></div>
+    </div>
+
+    <hr/>
+  </div>
+
+  <div class="span8">
+    <p>
+      Try
+      <a href="https://skylines.aero/" style="text-decoration:none;font-weight:bold">
+        <img class="logo"
+             src="https://www.skylines.aero/android-chrome-192x192.png" alt="skylines.aero"
+             width="24" height="24"/>
+        <span style="color:#008EDA">Sky</span><span style="color:black">Lines</span></a>, our live tracking and flight sharing platform!
+    </p>
+    <hr/>
+  </div>
+
+  
+  <div class="span8 news-item">
+    <h2>
+      <a href="/discover/2024/09/02/xcsoar-7-dot-43-released.html">XCSoar 7.43 released</a><br>
+      <small>( 2. Sep 2024 by folken)</small>
+    </h2>
+
+    <div class="news-content">
+      <p>Please note that there are several CRICITAL issues addressed in this release. Please up-/sidegrade.</p>
+
+<p>Android users: Due to new cryptographic signatures, you will need to uninstall and
+remove all data. Install either from F-Droid or via APK File download.
+Please also note that the Storage Directory has moved to /android/media/org.xcsoar. This directory
+is accessible with normal file manager tools on android.</p>
+
+<p>Version 7.43 - 2024-08-12</p>
+<ul>
+  <li>calculations
+    <ul>
+      <li>CRITICAL: reachable map labels show correct altitude with head wind #1424</li>
+      <li>CRITICAL: fix reachability calculation with older compilers (OpenVario,..)</li>
+    </ul>
+  </li>
+  <li>airspace
+    <ul>
+      <li>add classes according the OpenAir extended format AY tag</li>
+      <li>coloring is done according to the AC tag, or if present and allowed, according to the AY tag</li>
+    </ul>
+  </li>
+  <li>data files
+    <ul>
+      <li>new topology available from mapgen (including airport runways and rivers)</li>
+      <li>fix loss of “home” waypoint designation in certain situations for a
+non-airport home waypoint</li>
+      <li>reworked sgs-233 polar</li>
+    </ul>
+  </li>
+  <li>documentation
+    <ul>
+      <li>clarify task speed calculation section</li>
+      <li>lua reference updated</li>
+    </ul>
+  </li>
+  <li>ui
+    <ul>
+      <li>Airspace filter list can filter by type</li>
+      <li>TC 30s Infobox shows now climb rate since start of thermal</li>
+      <li>TL Gain Infobox shows now the overall climb rate of last thermal</li>
+      <li>add new Infobox V Task Est (Speed task estimated)</li>
+      <li>Status-Task panel: “Estimated task time”, “Remaining time”, and “Speed
+estimated” now blank if MC&gt;0 &amp; can’t finish task</li>
+      <li>Status-Task panel: “Remaining time”, “Remaining distance”, “Speed
+estimated”, and “Speed remaining” now blank after task is finished</li>
+      <li>add missing airspace to Select Airspace filter</li>
+      <li>NumberEntry dialog value can now be accepted by enter</li>
+      <li>Vario center gross label</li>
+      <li>Vario use AutoFonts for lables and values</li>
+      <li>Replace eventOrientation by two new events: eventOrientationCruise and eventOrientationCircling</li>
+      <li>New artificial horizon</li>
+      <li>Flarm gauge fix radar size</li>
+      <li>infobox management page rename buttons for copying sets</li>
+      <li>consistent naming of ok/close buttons and placement</li>
+      <li>add PanTo button to waypoints dialog if opened from task related infoboxen</li>
+      <li>always show black plane icon in thermal assistant</li>
+    </ul>
+  </li>
+  <li>Lua scripting
+    <ul>
+      <li>allow HTTPs client connections by setting project-wide Curl options</li>
+      <li>fix next_eta and final_eta variables</li>
+    </ul>
+  </li>
+  <li>Devices
+    <ul>
+      <li>add Larus driver</li>
+    </ul>
+  </li>
+  <li>Android
+    <ul>
+      <li>CRITICAL: use user accessible android/media/org.xcsoar as data directory</li>
+      <li>EGL graphics driver initialzation improvment for old android versions</li>
+      <li>add SoftRF Eco, Ink and Card into ‘white list’ of USB devices</li>
+      <li>fix rotation on wake from background</li>
+    </ul>
+  </li>
+  <li>Kobo
+    <ul>
+      <li>fix Wifi configuration</li>
+      <li>fix oversized icons</li>
+    </ul>
+  </li>
+  <li>Windows
+    <ul>
+      <li>use cleartype font rendering</li>
+      <li>highres application icon</li>
+      <li>black text color in airspace list like all other systems</li>
+    </ul>
+  </li>
+</ul>
+
+    </div>
+    <hr/>
+  </div>
+  
+
+  
+  <div class="span8 news-item">
+    <h2>
+      <small> 2. Dec 2023:</small>
+      <a href="/discover/2023/12/02/xcsoar-7-dot-40-released.html">XCSoar 7.40 released</a>
+    </h2>
+  </div>
+  
+  <div class="span8 news-item">
+    <h2>
+      <small> 3. Jul 2023:</small>
+      <a href="/discover/2023/07/03/xcsoar-7-dot-36-released.html">XCSoar 7.36 released</a>
+    </h2>
+  </div>
+  
+  <div class="span8 news-item">
+    <h2>
+      <small>20. Jun 2023:</small>
+      <a href="/discover/2023/06/20/xcsoar-7-dot-35-released.html">XCSoar 7.35 released</a>
+    </h2>
+  </div>
+  
+  <div class="span8 news-item">
+    <h2>
+      <small> 6. Jun 2023:</small>
+      <a href="/discover/2023/06/06/xcsoar-7-dot-34-released.html">XCSoar 7.34 released</a>
+    </h2>
+  </div>
+  
+  <div class="span8 news-item">
+    <h2>
+      <small>26. May 2023:</small>
+      <a href="/discover/2023/05/26/xcsoar-7-dot-33-released.html">XCSoar 7.33 released</a>
+    </h2>
+  </div>
+  
+
+  <div class="span8">
+    <h3>
+      <a href="./discover/news.html" title="See previous news posts">Previous news...</a>
+    </h3>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="secondary">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+
+
+    <div id="screenshots">
+      <h2>Screenshots</h2>
+      <h3>Highlights of XCSoar's interface</h3>
+      <div class="row">
+        <div class="span4">
+          <a href="./discover/screenshots/map.png" title="Moving Map">
+          <img src="./discover/screenshots/map.png" alt="Moving Map" class="screenshot"/>
+          </a>
+          <p><strong>Moving Map</strong><br/>
+            The primary display, easily configurable to provide the desired level of detail.</p>
+        </div>
+        <div class="span4">
+          <a href="./discover/screenshots/map_terrain1.png" title="Terrain Display">
+          <img src="./discover/screenshots/map_terrain1.png" alt="Terrain Display" class="screenshot"/>
+          </a>
+          <p><strong>Terrain Display</strong><br/>
+            Terrain and Topology data from all over the world can be displayed on the moving map.</p>
+        </div>
+        <div class="span4">
+          <a href="./discover/screenshots/map_flarm_traffic.png" title="FLARM Integration">
+          <img src="./discover/screenshots/map_flarm_traffic.png" alt="FLARM Integration" class="screenshot"/>
+          </a>
+          <p><strong>FLARM Integration</strong><br/>
+            All received FLARM traffic is displayed on the map and on the inset radar screen. (including climb speed)</p>
+        </div>
+      </div>
+      <p>
+        <a href="./discover/screenshots/">More...</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+    <div class="row">
+      <div class="span12 copyright">
+        <p>
+          <strong>XCSoar</strong> is Free Software released under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt">GNU/GPL License</a>
+          ..
+          <span class="nowrap">Copyright &copy; 2000-2024</span>
+          |
+          <a href="//xcsoar.org/imprint.html">Imprint</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

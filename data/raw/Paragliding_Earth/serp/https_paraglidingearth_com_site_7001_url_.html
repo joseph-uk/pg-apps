@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    <meta name="title" content="paragliding earth, free flights sites database, worldwide, collaborative.">
+    <meta name="description" content="paragliding earth is an open, collaborative, worldwide database of free flight sites.">
+    <meta name="author" content="pgEarth">
+    <title>Paragliding Earth</title>
+    <meta name="google-site-verification" content="ZQ9i3-VeKP3SjNNHtVUkRFKg94g5uLVnDFhL-7h9bP8" />
+    <meta name="google-site-verification" content="EUGbno1LjP68UhZmBjmc09v4VccaTHMapTkoFbwYBEU" />
+
+ <!--       <link rel='stylesheet' href='member/ASLibrary/css/style3.css' type='text/css' media='all' />  -->
+
+    <link rel="stylesheet" href="assets/external-scripts/lightbox/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/localhost/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="assets/css/localhost/font-awesome.min.css">  -->
+    <link href="assets/css/fa/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fa/css/v4-shims.min.css" rel="stylesheet">
+<!--     <link rel="stylesheet" href="assets/css/localhost/leaflet.css">
+   <link rel="stylesheet" href="assets/css/leaflet.1.2.css">
+    <link rel="stylesheet" href="assets/css/localhost/MarkerCluster.css">
+    <link rel="stylesheet" href="assets/css/localhost/MarkerCluster.Default.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+    <link rel="stylesheet" href="assets/css/localhost/L.Control.Locate.css">
+<!--    <link rel="stylesheet" href="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css"> -->
+	<link rel="stylesheet" href="assets/css/localhost/bootstrap-editable.css"/>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/hoverbox.css">
+ <!--   <link rel="stylesheet" href="assets/css/leaflet.label.css"> -->
+    <link rel="stylesheet" href="assets/css/prune.css">
+<!--	<link rel="stylesheet" href="assets/css/leaflet.awesome-markers.css"> -->
+    <link rel="stylesheet" href="assets/css/toggle.css">
+
+
+
+    <link rel="stylesheet" href="assets/css/pge.css">
+    <!--
+    <link rel="stylesheet" href="assets/css/pge_windy.css">
+    -->
+    <link rel="stylesheet" href="assets/css/pge_siteFlyableTab.css">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon-152.png">
+    <link rel="icon" sizes="196x196" href="assets/img/favicon-196.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/img/icon16.png" />
+    
+
+  </head>
+
+  <body>
+	  
+  <!--******* navbar *****************-->  
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+
+          <div class="navbar-icon-container">
+            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
+	      </div>
+          <a class="navbar-brand" href="/"><i class="fa fa-cloud"></i>Paragliding.</i>Earth</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group has-feedback">
+                <input id="searchbox" type="text" placeholder="Search" class="form-control">
+                <span id="searchicon" class="fa fa-search form-control-feedback"></span>
+            </div>
+          </form>
+          
+          <ul class="nav navbar-nav">
+
+			<li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;About</a></li>
+
+                        <li><a href="#" id="login-btn"><i class="fa fa-user"></i> Login</a></li>
+ 	
+
+            <li class="dropdown">
+              <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench white"></i>&nbsp;&nbsp;Tools <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+ <!--               <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="filters-btn"> <i class="fa fa-filter"></i>&nbsp;&nbsp;Filter sites</a></li>
+-->                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="news-btn">	 <i class="fa fa-newspaper"></i>&nbsp;&nbsp;This week news</a></li>
+<!--                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="link-btn" onclick="sharePage();"><i class="fa fa-link"></i> Share page link</a></li>
+   -->             <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="teleport-btn"><i class="fa fa-rocket"></i>&nbsp;&nbsp;Fly to GPS coords</a></li>
+  <!--              <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="export-btn"><i class="fa fa-share-square-o"></i>&nbsp;&nbsp;Export</a></li>
+   -->             <!--<li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="api-btn">	 <i class="fa fa-exchange"></i>&nbsp;&nbsp;API</a></li>-->
+              </ul>
+            </li>
+            
+            <!--  sidebar   --
+            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;Sidebar</a></li>
+
+
+			<!-- ***********    Add new menu item ************  --> 
+            <li class="dropdown">
+              <a id="addDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add new.. <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+			               <li><a href="#" id="login-btn2" ><i class="fa fa-user"></i> Please login to edit information</a></li>
+			              </ul>
+            </li>  
+
+			<!-- ***********    Contact menu item ************  --> 
+            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="contact-btn"><i class="fa fa-envelope white"></i>&nbsp;&nbsp;Contact / Help us</a></li>  
+            <li><a href="/api/" data-toggle="collapse" data-target=".navbar-collapse.in" id="api2-btn"><i class="fa fa-exchange white"></i>&nbsp;&nbsp;API</a></li> 
+
+
+
+           
+         
+         
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+  <!--******* windy overlay *****************
+  <div class="windyContainer">
+	<div class="windyClose"><a herf="#" onclick="myToggleWindy.toggle(false, false, false);"><img src="assets/img/windyClose.png"></a></div>
+    <div id="windy" >
+    </div>
+  </div>
+  -->  
+
+
+	<!--******* sidebar *****************--
+	<div id="sidebar">
+		<div class="sidebar-wrapper">
+		  <div class="panel panel-default" id="features">
+			<div class="panel-heading">
+			  <h3 class="panel-title">Sites list
+			</div>
+			<div class="panel-body">
+			  <div class="row">
+				<div class="col-xs-8 col-md-8">
+				  <input type="text" class="form-control search" placeholder="Filter" />
+				</div>
+				<div class="col-xs-4 col-md-4">
+				  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+				</div>
+			  </div>
+			  <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
+			</div>
+			<div class="sidebar-table">
+			  <table class="table table-hover" id="feature-list">
+				<thead class="hidden">
+				  <tr>
+					<th>Icon</th>
+				  </tr>
+				  <tr>
+					<th>Name</th>
+				  </tr>
+				  <tr>
+					<th>Chevron</th>
+				  </tr>
+				</thead>
+				<tbody class="list">
+					<tr class="feature-row">
+						<td></td>
+						<td style="vertical-align: middle;">zoom in to get items list</td>
+						<td style="vertical-align: middle;"></td>
+					</tr>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+	<!--******* map container *****************-->  
+    <div id="container">
+      <div id="map"></div>
+    </div>
+    
+    
+    
+    <div id="loading">
+      <div class="loading-indicator">
+<!--		  <img id="pg-bg-green"  src="assets/img/pg-bg-green.png"/>
+ 		  <img id="pg-bg-blue"  src="assets/img/pg-bg-blue.png"/>
+-->		  <img id="pg-bg" src="assets/img/pg-bg.png"/>
+  <!--       <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-info progress-bar-full"></div>
+        </div>
+-->      </div>
+    </div>
+    
+    <div id="loadingWeather">
+    </div>
+
+<!--
+	<nav class="navbar navbar-fixed-bottom navbar-light bg-light">
+		<div class="container">
+			<div class="navbar-header navbar-brand">New cool features on PgEArth !</div>
+			<div class="" style="clear: both;">
+				<ul class="navbar-nav nav navbar-bottom">
+					<li><a> Is a site flyable ? now ? later? </a></li>
+					<li><a> Filter sites </a></li>
+		<!--			<li><a> Show wind overlay </a></li>  --
+					<li><a><button id="closeBottomNavbar" type="button" class="btn btn-default">Close</button></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+-->
+<!--******* modals  *****************-->  
+
+	<!--******* "splash screen" modal  *****************-->  
+	<!--
+<div id="splashModal" class="modal fade in">
+    <div class="inner-modal">
+        <div class="modal-container">
+            <p>PAraglidingEArth is back on tracks (but still not fully featured)</p>
+            <button id="splashModalClose" class="close" data-dismiss="modal" data-target="#splashModal">Ok, got it !</button>
+        </div>
+    </div>  
+</div>
+-->
+
+    <div class="modal fade" id="splashModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+				Welcome on PgEarth !
+            </h4>
+          </div>  <!-- /.modal-header -->
+		  <div class="modal-body">
+			  
+			  <!--
+			  <div class="alert alert-warning" style="    background-color: white;    border-color: #b36b0f;     box-shadow: 0px 0px 7px 0px #b36b0f;" >
+				<p>- April, 13th 2021 -</p>
+				<h3 style="text-align: center">
+					ParaglidingEarth has burned !! ... and is back... 
+				</h3>
+				<p>
+					<strong>PgEarth website code and data has burned in <a href="https://www.reuters.com/article/us-france-ovh-fire-idUSKBN2B20NU" target="_blank">its servers fire in march 2021</a>.					
+				</p>
+				<p>
+					Some data has been recovered, but some are lost and gone... :
+					<ul>
+						<li>
+							the "closed site" informations : if a site is closed and must not be flown, please let us know from the site page !
+						</li>
+						<li>
+							the sites rankings
+						</li>
+						<li>
+							the sites calendars
+						</li>
+						<li>
+							the pictures comments
+						</li>
+						<li>
+							the whole data about clubs and pros
+						</li>
+						<li>
+							the users tables : <u>you will have to set up a new account</u>
+						</li>
+						<li>
+							the data about users participations : we can't know who created or edited what and when...
+						</li>
+						<li>
+							the latest code was lost too :  a newer, potentially better, code has been rewritten : it may be buggy...<br />
+							if you spot bugs or want to suggest enhancements : <a href="https://framagit.org/raph-tr/pgearth-dev/-/issues" target="_blank">please do it here</a>
+						</li>
+					</ul>
+				</p>
+				<p>
+					<h4 style="text-align: center">We would be really thankfull if you could take some time to check and update your local sites, clubs and pros ! ;)</h4>
+				</p>
+				<p  style="text-align: center">
+					Enjoy your visit anyway !   ... and welcome back !</strong>
+				</p>
+			</div>
+			-->
+			<div class="alert alert-danger">
+				<h3>Important disclaimer !</h3>
+				<p>The data provided on this site is for informational and planning purposes only.</p>
+				<p>Absolutely no accuracy or completeness guarantee is implied or intended. All information on this website is for informational purpose only and must not be used and trusted 'as is'. Please understand that it may be outdated, unclear, or simply wrong !</p>
+				<p>We hope you are aware that you can not trust anything you read on the internet: the website owner can not be held responsible for any decision taken on the basis of the information presented here : please always consider getting fresh and official legal information from the flying sites local people, clubs and/or authorities and consider the weather carefully before you go fly !</p>
+				<p>Plus, we use as little cookies as possible, we assume you're ok with it if you continue using the website. Absolutely nothing is done with the data you provide. </p>
+				<p>This beeing said, fly happy and safe ! ;)</p>
+			</div>
+          </div><!-- /.modal-body -->
+          <div class="modal-footer">
+			<button id="splashModalClose" class="btn btn-default" data-dismiss="modal" data-target="#splashModal">Ok, I got it ! <!-- , got it, don't show me this again !--></button>
+          </div><!-- /.modal-footer -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+	<!--******* "about" modal  *****************-->  
+	    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title">Welcome to Paragliding.Earth !</h3>
+          </div>
+          
+          <div class="modal-body">
+			  
+            <ul class="nav nav-tabs" id="aboutTabs">
+              <li class="active"><a href="#disclaimer" data-toggle="tab" style="color:darkred;"><i class="fa fa-exclamation-triangle"></i>&nbsp;Disclaimer</a></li>
+              <li><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About this website</a></li>
+<!--              <li><a href="#contact" data-toggle="tab"><i class="fa fa-pencil"></i>&nbsp;Contact</a></li> -->
+              <li><a href="#credits" data-toggle="tab"><i class="fa fa-copyright"></i>&nbsp;Credits</a></li>
+<!--              <li><a href="#help" data-toggle="tab"><i class="fa fa-ambulance"></i>&nbsp;Help us!!!</a></li> -->
+              <li><a href="#privacy" data-toggle="tab"><i class="fa fa-lock"></i>&nbsp;Privacy</a></li>
+<!--              <li><a href="#original" data-toggle="tab"><i class="fa fa-question"></i>&nbsp;What happened to the good old PGE website ?</a></li>  -->
+            </ul>
+            
+            <div class="tab-content" id="aboutTabsContent">			
+							
+              <div class="tab-pane fade" id="about">
+				  
+                <p>A work in progress to make a simple <strong>map based collaborative database of paragliding sites, clubs and pros worldwide</strong>.
+                </p>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">What you can find here for the moment (as of jun. 2018)</div>
+                  <ul class="list-group">
+                    <li class="list-group-item">Fullscreen mobile-friendly map showing all pgEarth paragliding sites, pros and clubs as you pan and zoom</li>
+                    <li class="list-group-item">Search on flying sites or cities names</li>
+                    <li class="list-group-item">Sites details and pictures, clubs and pros</li>
+                    <li class="list-group-item">Sites maps: showing site details : main landings and parkings, but also alternate ones for sites with multiple takeoffs and/or landings...</li>
+                    <li class="list-group-item">Register/Log in + add + edit information about sites, clibs, pros.<br />
+                    PgEarth is editable again !! Login and help us get the most up to date data !<br />
+                    Former pgEarth members who had a valid email along with their account can use the "forgot your password?" feature in order to login to the new site.</li>
+                    <li class="list-group-item">Export to gpx: export sites in the viewport into a "gpx" file.</li>
+                  </ul>
+                 <div class="panel-heading">What you will not find here for the moment</div>
+                  <ul class="list-group">
+                    <li class="list-group-item">'Advanced' search sites filters</li>
+                    <li class="list-group-item">For sure plenty of many things i can't think of... :(</li>
+                    <li class="list-group-item">If you want help develop some features, welcome ! : <a href="https://framagit.org/raph-tr/paraglidingearth" target="_blank">the project source code is hosted on framagit.</a> Feel free to join !</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div id="disclaimer" class="tab-pane fade text-danger alert-danger active in">
+				  
+				
+<!--			  <div class="alert alert-warning" style="    background-color: white;    border-color: #bf3232;     box-shadow: 0px 0px 13px 0px #bf3232;" >
+				<p>- April, 13th 2021 -</p>
+				<h3 style="text-align: center">
+					ParaglidingEarth has burned !! ... and is back... 
+				</h3>
+				<p>
+					<strong>PgEarth website code and data has burned in <a href="https://www.reuters.com/article/us-france-ovh-fire-idUSKBN2B20NU" target="_blank">its servers fire in march 2021</a>.					
+				</p>
+				<p>
+					Some data has been lost :
+					<ul>
+						<li>
+							the "closed site" informations : if a site is closed and must not be flown, please let us know from the site page !
+						</li>
+						<li>
+							the sites rankings
+						</li>
+						<li>
+							the sites calendars
+						</li>
+						<li>
+							the pictures comments
+						</li>
+						<li>
+							the whole data about clubs and pros
+						</li>
+						<li>
+							the users tables : <u>you will have to set up a new account</u>
+						</li>
+						<li>
+							the data about users participations : we can't know who created or edited what and when...
+						</li>
+						<li>
+							the latest code was lost too :  a newer, potentially better, code has been rewritten : it may be buggy...<br />
+							if you spot bugs or want to suggest enhancements : <a href="https://framagit.org/raph-tr/pgearth-dev/-/issues" target="_blank">please do it here</a>
+						</li>
+					</ul>
+				</p>
+				<p>
+					<h4 style="text-align: center">We would be really thankfull if you could take some time to check and update your local sites, clubs and pros ! ;)</h4>
+				</p>
+				<p  style="text-align: center">
+					Enjoy your visit anyway !   ... and welcome back !</strong>
+				</p>
+			</div>	-->			  
+				  
+				<p>The data provided on this site is for informational and planning purposes only.</p>
+				<p>Absolutely no accuracy or completeness guarantee is implied or intended. All information on this website is for informational purpose only and must not be used and trusted 'as is'. Please understand that it may be outdated, unclear, or simply wrong !</p>
+				<p>We hope you are aware that you can not trust anything you read on the internet: the website owner can not be held responsible for any decision taken on the basis of the information presented here : please always consider getting fresh and official legal information from the flying sites local people, clubs and/or authorities and consider the weather carefully before you go fly !</p>
+				<p>This beeing said, fly happy and safe ! ;)</p>
+              </div>
+              
+<!--
+              <div id="original" class="tab-pane fade">
+                <p>The original pgearth website suffered severe stability problems the last months and could not be hosted on the former server anymore.</p>
+                <p>Since we had to migrate the whole stuff, we took the chance for a rebuilt, it will bring its inconveniences, but hoppefully it will be for the best..</p>
+              </div>
+-->
+
+              
+ <!--           <div class="tab-pane fade" id="contactBCKUP">
+				  
+				
+			
+			  !!!!!!!!!!!!!
+			  
+			    the form content is loaded
+				from a function in assets/js/pge_utils_functions.js 
+				
+				
+			  !!!!!!!!!!!!!
+			  
+                
+                
+                
+                <p><i class="fa fa-envelope"></i>&nbsp;<em>raphael /at/ disroot /dot/ org</em></p>
+            </div>
+-->			
+              <div class="tab-pane fade" id="credits">
+                <p><img alt="Creative Commons License" style="margin: 6px" src="assets/img/cc-by-sa-80x15.png" /><br />This work and your contributions are licensed under  <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.</p>
+                <p><strong>Starting December 10th of 2024, new contributions will also be added in a separate database licenced under <a href="https://opendatacommons.org/licenses/odbl/summary/">ODbL 1.0</a>.</strong></p>
+                <p>Website built with <a href="https://leafletjs.com/" target="_blank">Leaflet</a>, from a <a href="https://github.com/bmcbride/bootleaf" target="_blank">bootleaf</a> basis.</p>
+                <p>A big thank you to the <a href="#" class="openAnotherModal" modalToOpen="featureModal" feature="club" id="1">"Ducks Parapente" pg club in Grenoble</a> - fr, for offering hosting to the project.</p>
+                <p><a href="https://gucparapente.fr" target="_blank"><img src="assets/img/header-guc.jpg"><i class="fa fa-external-link"></i></a></p>
+                <p>A big thank you also to paraglidingforum.com for having kindly offered pgearth a free hosting for over a decade ! Bless you, guys !</p>
+                <p>And of course a big thank you to all contributors !! :)</p>
+              </div>
+              
+              <div class="tab-pane fade" id="privacy">
+				<p>We care about your privacy : our code is google tools and facebook buttons free so no-one at gafam will ever track you here !<br />Don't thank us, it's our pleasure !</p>
+				<p>This beeing said, we tried our best, but they must know you're here anyway... ;)</p>
+				<p>We also try to use as few cookies as possible, which is why you have to login at every connection, sorry for the inconveniance.</p>
+			  </div>
+				
+
+<!--
+             <div class="tab-pane fade" id="helpBCKUP">
+				 <div class="panel panel-primary">
+					<div class="panel-heading">You like PgEarth ? YOU CAN HELP US !</div>
+						<ul class="list-group">
+							<li class="list-group-item"><i class="fa fa-pencil-square-o"></i> <strong>by editing the information</strong>: log in and help keeping the information up to date. The website is efficient only if people like you keep the information correct.</li>
+							<li class="list-group-item"><i class="fa fa-bullhorn"></i> <strong>by reporting errors</strong>: no need to be logged in : report to the moderators the information that you think should be deleted (trash icons).</li>
+							<li class="list-group-item"><i class="fa fa-share-alt"></i> <strong>by bringing your friends</strong>: the more the merrier. Advertise around you ! (We are not big fans of social networks, but if you are, go ahead and give us some buzz! :)</li>
+							<li class="list-group-item"><i class="fa fa-commenting-o"></i> <strong>by translating/improving the english</strong>: information on pgearth is meant to be readen by as many people as possible, that is why we chose to publish in english : translate the data fields if you can or contact us to improve the english of the website itself.</li>
+							<li class="list-group-item"><i class="fa fa-balance-scale"></i> <strong>by beeing a moderator</strong>: help us keep the data clean by deleting incorrect information.</li>
+							<li class="list-group-item"><i class="fa fa-laptop"></i> <strong>by joining the code git</strong>: the code git <a href="https://framagit.org/raph-tr/paraglidingearth" target="_blank">is here</a>.</li>
+							<li class="list-group-item"><i class="fa fa-coffee"></i> <strong>by offering a coffee</strong>: to be frank we already have our own coffee, but that would help with hosting, domain names, bought scripts, etc. <a href="#" onClick="toggleFinances()">Have a look at our finances</a>
+							<div id="finances" class="alert-info" style="display:none">
+								<h4>2017 pgearth finances</h4>
+								<div class="meter orange">
+									<span style="width: 42%"></span>
+								</div>
+								 
+								<table class="table table-striped table-bordered table-hover table-condensed" >
+									<thead>
+										<tr>
+											<th>Expenses</th>
+											<th>&euro;</th>
+											<th>Income</th>
+											<th>&euro;</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>hosting</td>
+											<td>43</td>								
+											<td>hosting offered by <a href="/?club=1">guc parapente</a></td>
+											<td>43</td>
+										</tr>
+										<tr>
+											<td>domain name pgearth.com</td>
+											<td>10</td>								
+											<td>ads on the site</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>domain name pg.earth</td>
+											<td>31</td>								
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>membership script bought on code canyon</td>
+											<td>13</td>								
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>total</th>
+											<th>97</th>								
+											<th></th>
+											<th>43</th>
+										</tr>
+									</tbody>
+								</table>
+								<p>Funded : 42%, missing 51 &euro;, updated : sept. 2017<br /><a href="https://paypal.me/pgearth"><i class="fa fa-paypal"></i> pgearth on paypal</a>.</p>
+							</div>
+							</li>
+					</ul>
+				</div>
+				
+			  </div>
+-->				
+
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<style>
+.meter { 
+	height: 13px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 4px;
+	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43,194,83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+.orange > span {
+  background-color: #f1a165;
+  background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
+}
+
+</style>
+	
+	<!--******* "contact" modal  *****************-->  
+	<div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+
+	<div class="modal-dialog modal-lg">
+		
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+				
+				<h3 class="modal-title">Get in touch !</h3>
+			</div>  <!-- /.modal header -->
+          
+			<div class="modal-body">
+
+				<ul class="nav nav-tabs" id="contactTabs">
+					
+					<li class="active">	<a href="#contact" data-toggle="tab"><i class="fa fa-pencil"></i>&nbsp;Contact</a></li>
+					<li>				<a href="#help"    data-toggle="tab"><i class="fa fa-ambulance"></i>&nbsp;You can help us!!!</a></li>
+					<li>				<a href="#report"  data-toggle="tab"><i class="fa fa-bullhorn "></i>&nbsp;Suggestions / bug report</a></li>
+
+				</ul>
+            
+				<div class="tab-content" id="contactTabsContent">
+					
+					<div class="tab-pane fade  active in" id="contact">
+					<!--	
+					  !!!!!!!!!!!!!
+						the form content is loaded
+						from a function in assets/js/pge_utils_functions.js 
+					  !!!!!!!!!!!!!
+						
+						<p><i class="fa fa-envelope"></i>&nbsp;<em>raphael /at/ disroot /dot/ org</em></p>
+					-->
+					
+					<i class="fa fa-circle-notch fa-spin"></i>&nbsp;Loading contact form
+					</div><!-- /#contact -->
+
+
+
+					<div class="tab-pane fade" id="help">
+						<div class="panel panel-primary">
+							<div class="panel-heading">You like PgEarth ? YOU CAN HELP US !</div>
+								<ul class="list-group">
+									<li class="list-group-item"><i class="fa fa-pencil-square-o"></i> <strong>by editing the information</strong>: log in and help keeping the information up to date. The website is efficient only if people like you keep the information correct.</li>
+									<li class="list-group-item"><i class="fa fa-bullhorn"></i> <strong>by reporting errors</strong>: no need to be logged in : report to the moderators the information that you think should be deleted (trash icons).</li>
+									<li class="list-group-item"><i class="fa fa-share-alt"></i> <strong>by bringing your friends</strong>: the more the merrier. Advertise around you ! (We are not big fans of social networks, but if you are, go ahead and give us some buzz! :)</li>
+									<li class="list-group-item"><i class="fa fa-commenting-o"></i> <strong>by translating/improving the english</strong>: information on pgearth is meant to be readen by as many people as possible, that is why we chose to publish in english : translate the data fields if you can or contact us to improve the english of the website itself.</li>
+									<li class="list-group-item"><i class="fa fa-balance-scale"></i> <strong>by beeing a moderator</strong>: help us keep the data clean by deleting incorrect information.</li>
+									<li class="list-group-item"><i class="fa fa-laptop"></i> <strong>by joining the code git</strong>: the code git <a href="https://framagit.org/raph-tr/paraglidingearth" target="_blank">is here</a>.</li>
+									<li class="list-group-item"><i class="fa fa-coffee"></i> <strong>by offering a coffee</strong>: to be frank we already have our own coffee, but that would help with hosting, domain names, bought scripts, etc. <br />
+									Big thanks to our tipers: J.S.Grigsby, M.Zijderveld, A.Keyes :)<br />
+									<a href="https://paypal.me/pgearth"><em><i class="fa fa-paypal"></i> pgearth on paypal</em></a><br />
+									<a href="#" onClick="toggleFinances()">Have a look at our 2017 finances for example...</a>
+										<div id="finances" class="alert-info" style="display:none">
+											<h4>2017 pgearth finances</h4>
+											<div class="meter orange">
+												<span style="width: 42%"></span>
+											</div>
+											 
+											<table class="table table-striped table-bordered table-hover table-condensed" >
+												<thead>
+													<tr>
+														<th>Expenses</th>
+														<th>&euro;</th>
+														<th>Income</th>
+														<th>&euro;</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>hosting</td>
+														<td>43</td>
+														<td>hosting offered by <a href="/?club=1">guc parapente</a></td>
+														<td>43</td>
+													</tr>
+													<tr>
+														<td>domain name pgearth.com</td>
+														<td>10</td>								
+														<td>ads on the site</td>
+														<td>0</td>
+													</tr>
+													<tr>
+														<td>domain name pg.earth</td>
+														<td>31</td>								
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<td>membership script bought on code canyon</td>
+														<td>13</td>								
+														<td></td>
+														<td></td>
+													</tr>
+													<tr>
+														<th>total</th>
+														<th>97</th>								
+														<th></th>
+														<th>43</th>
+													</tr>
+												</tbody>
+											</table>
+											<p>Funded : 42%, missing 51 &euro;, updated : sept. 2017<br /><a href="https://paypal.me/pgearth"><i class="fa fa-paypal"></i> pgearth on paypal</a>.</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div><!-- /#help -->
+					
+					
+					
+						<div class="tab-pane fade" id="report">
+						
+							<p>You want to see a new feature ? <br />
+							You found a bug ?
+							</p>
+							
+							<p>Please <a href="https://framagit.org/raph-tr/paraglidingearth/issues" target="_blank">let us know on our git </a>. (registration required)
+							</p>
+						</div><!-- /#report -->
+
+
+					</div>
+					
+				</div><!-- /#contact -TabsContent  -->
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+				
+			</div> <!-- /.modal body -->
+
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	
+	<!--******* "site" modal  *****************-->  
+	<!------ SITE MODAL  -------->
+
+    <div class="modal fade" id="siteDetailsModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+	   <div id="wrap">  
+        <div class="modal-content" id="site-modal-content">
+          <div class="modal-header">
+			            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="modal-title row" id="modal-site-title"></div>
+          </div><!-- /.modal-header -->
+          <div class="modal-body" id="modal-site-body">
+            <ul class="nav nav-tabs" id="siteBody">
+				<li id="modal-site-description-tab" class="active"><a href="#modal-site-body-description" data-toggle="tab"><i class="fa fa-file-text-o"></i><span class=" hidden-xs">&nbsp;Description</span></a></li>
+				<li id="modal-site-map-tab"><a href="#modal-site-body-map" data-toggle="tab"><i class="fa fa-map-marker"></i><span class=" hidden-xs">&nbsp;Map</span></a></li>
+				<li id="modal-site-pictures-tab"><a href="#modal-site-body-pictures" data-toggle="tab"><i class="fa fa-camera-retro"></i><span class=" hidden-xs">&nbsp;Pictures</span></a></li>
+<!--				<li id="modal-site-flyable-tab"><a href="#modal-site-body-flyable" data-toggle="tab"><i class="fas fa-cloud-sun-rain"></i><span class=" hidden-xs">&nbsp;Does it fly?</span></a></li>
+-->				<!--<li id="modal-site-weather-tab"><a href="#modal-site-body-weather" data-toggle="tab"><i class="fa fa-cloud"></i><span class=" hidden-xs">&nbsp;Weather</span></a></li>-->
+				<li id="modal-site-users-tab"><a href="#modal-site-body-users" data-toggle="tab"><i class="fa fa-user"></i><span class=" hidden-xs">&nbsp;Who's here ?</span></a></li>
+				<li id="modal-site-history-tab"><a href="#modal-site-body-history" data-toggle="tab"><i class="fa fa-calendar-o"></i><span class=" hidden-xs">&nbsp;History</span></a></li>
+				<li id="modal-site-flights-tab"><a href="#modal-site-body-flights" data-toggle="tab"><i class="fa fa-plane"></i><span class=" hidden-xs">&nbsp;Flights</span></a></li>
+			</ul>
+			<div class="tab-content" id="siteBodyContent">
+				<div class="tab-content" id="siteDescription">
+				
+				<div class="tab-pane fade active in" id="modal-site-body-description">  
+					<i class="fa fa-circle-o-notch fa-spin"></i> Site text description   
+	            </div>
+	              
+	            <div class="tab-pane fade" id="modal-site-body-pictures">
+					<ul class="first">
+					   <li><i class="fa fa-circle-o-notch fa-spin"></i> Site pictures here</li>
+					</ul>
+ 	            </div><!-- /#modal-site-body-pictures -->
+	            
+	            <div class="tab-pane fade" id="modal-site-body-weather">
+	            	<!--<div id="siteWeatherIframe"></div>-->
+	            	<iframe width="90%" height="480" id="windyIFrame" frameborder="0"></iframe>
+	            	<!-- <div id="windy" style="width:90%; height:460px"></div> -->
+					<p>Courtesy of <a href="http://windy.com" target="_blank">windy.com</a></p>
+ 	            </div><!-- /#modal-site-body-weather -->
+ 	            
+  	            <div class="tab-pane fade" id="modal-site-body-map">
+					<div class="row">
+						<div id="siteMapText" class="col-sm-6" ></div>
+						<div id="siteMapDirection" class="col-sm-6" ></div>
+					</div>	
+					<div id="siteMapIframe"></div>
+ 	            </div><!-- /#modal-site-body-map -->
+  				
+  				<div class="tab-pane fade" id="modal-site-body-users">
+					Site users here
+				</div><!-- /#modal-site-body-users -->
+  				
+  				<div class="tab-pane fade" id="modal-site-body-history">
+					As far as we know, this site file was contributed to by :
+					<li id="history"></li>
+					Thank you to them :)
+				</div><!-- /#modal-site-body-users -->
+ 	    
+ 	    		
+				<div class="tab-pane fade" id="modal-site-body-flights">
+					<div  id="modal-site-body-flights-leonardo"><i class="fa fa-circle-o-notch fa-spin"></i> Leonardo</div>
+					<hr />
+					<div  id="modal-site-body-flights-xcontest"><i class="fa fa-circle-o-notch fa-spin"></i> XContest</div>
+					<hr />
+					<div  id="modal-site-body-flights-sim"><i class="fa fa-circle-o-notch fa-spin"></i> Fly the Pg Sim</div>
+				</div><!-- /#modal-site-body-users -->
+				
+				
+<!--				<div class="tab-pane fade" id="modal-site-body-flyable">
+					<div id="loadingFly">
+						<i class="fas fa-circle-notch fa-spin"></i> loading...
+					</div>
+					
+					<div id="siteNameFly"></div>
+					<div id="contentFly">
+						<h4>Option 1 : timeline</h4>
+						<div id="timeLine">
+							<input id="timeRange" type="range">
+							<div id="colorLine"></div>
+							<div id="timeLabels"></div>
+						</div>
+						<div id="reasonIcon"></div>
+						<div id="rangeDate"></div>
+
+						<div id="flyability"></div>
+						<div id="reason"></div>
+
+						<div id="rangeForecast">
+							<div id="windSpeed"></div>
+							<div id="windDir"></div>
+							<div id="rain"></div>
+							<div id="cloudbase"></div>
+						</div>
+						<hr />
+						<h4>Option 2 : table</h4>
+						<table id="tableForecast">
+							<tr id="daysRow" style="height:47px"></tr>
+							<tr id="windSpeedRow"></tr>
+							<tr id="windDirRow"></tr>
+							<tr id="rainRow"></tr>
+							<tr id="cloudbaseRow"></tr>
+						</table>
+					</div>
+				</div><!-- /#modal-site-body-flyable -->
+				
+	          </div><!-- /#siteDescription -->
+            </div><!-- /.tab-content -->
+          </div><!-- /.modal-body -->
+          <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div><!-- /.modal-footer -->
+        </div><!-- /.modal-content -->
+       </div><!-- / #wrap -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<!------ END SITE MODAL  -------->
+
+	<!--******* "week news" modal  *****************-->  
+    <div class="modal fade" id="newsModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">This week news : what has been new on pgEarth this last week ?</h4>
+          </div>
+          <div class="modal-body" id="newsModalBody">
+
+            <ul class="nav nav-tabs" id="newsTabs">
+              <li class="active"><a href="#newsModalModifications" data-toggle="tab"><i class="fa fa-edit"></i>&nbsp;Site modifications</a></li>
+              <li>				 <a href="#picturesModalModifications" data-toggle="tab"><i class="fa fa-camera"></i>&nbsp;Pictures</a></li>           
+              <li>				 <a href="#membersModalModifications" data-toggle="tab"><i class="fa fa-user"></i>&nbsp;Members</a></li>
+              <li>				 <a href="#clubsModalModifications" data-toggle="tab"><i class="fa fa-users"></i>&nbsp;Clubs</a></li>
+              <li>				 <a href="#prosModalModifications" data-toggle="tab"><i class="fa fa-thumbs-o-up"></i>&nbsp;Pros</a></li>
+            </ul>
+
+            <div class="tab-content" id="newsTabsContent">
+              <div class="tab-pane fade active in" id="newsModalModifications">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> sites modifications.</p>
+              </div>
+              <div class="tab-pane fade" id="picturesModalModifications">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> new pictures.</p>
+              </div>
+              <div class="tab-pane fade" id="membersModalModifications">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> new members.</p>
+              </div>
+              <div class="tab-pane fade" id="clubsModalModifications">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> clubs modifications.</p>
+              </div>
+              <div class="tab-pane fade" id="prosModalModifications">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> pros modifications.</p>
+              </div>            
+            </div>    <!-- /.tab-content -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+	<!--******* "member" modal  *****************-->  
+    <div class="modal fade" id="memberModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Member details</h4>
+          </div>
+          <div class="modal-body" id="memberModalBody">
+			  
+            <ul class="nav nav-tabs" id="newsTabs">
+              <li class="active"><a href="#memberModalDetails" data-toggle="tab"><i class="fa fa-user"></i>&nbsp;Profile</a></li>
+              <li>				 <a href="#memberModalActivity" data-toggle="tab"><i class="fa fa-calendar"></i>&nbsp;Activity</a></li>           
+              <li>				 <a href="#memberModalPictures" data-toggle="tab"><i class="fa fa-camera"></i>&nbsp;Pictures</a></li>
+              <li>				 <a href="#memberModalContact" data-toggle="tab"><i class="fa fa-envelope-o"></i>&nbsp;Contact</a></li>
+            </ul>
+
+            <div class="tab-content" id="memberModalContent">
+              <div class="tab-pane fade active in" id="memberModalDetails">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> details</p>
+              </div>
+              <div class="tab-pane fade" id="memberModalActivity">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> activity</p>
+              </div>
+              <div class="tab-pane fade" id="memberModalPictures">
+                <p style="text-align=center"><i class="fa fa-spinner fa-spin"></i> pictures</p>
+              </div>
+              <div class="tab-pane fade" id="memberModalContact">
+                <p style="text-align=center"><p>&nbsp;</p><p><i class="fa fa-spinner fa-spin"></i> contact form &rarr; to be done... work in progress</p><p>&nbsp;</p>
+              </div>
+            </div>    <!-- /.tab-content -->
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+	<!--******* "teleportation" modal  *****************-->  
+    <div class="modal fade" id="teleportModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Teleport to GPS coordinates</h4>
+          </div>
+          <div class="modal-body">
+            <p>If you know a gps point and want to magically jump to it, just use the form below.</p>
+
+			<script>
+				function setLatLng() {
+					document.getElementById("teleportLatlng").value = document.getElementById("teleportLat").value + "," + document.getElementById("teleportLng").value ;
+				}
+			</script>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="well well-sm">
+						<div  id="returnmessage"></div>
+						<form class="form-horizontal" name="formTeleport">
+							<fieldset>
+								
+								<legend>
+									Enter GPS coordinates below :
+								</legend>
+			
+								<div class="form-group">
+									<span class="col-md-12"><i class="fa fa-ellipsis-h"></i> Latitude</span>
+									<div class="col-md-12">
+										<input id="teleportLat" type="text" placeholder="* lat in decimal fomat" class="form-control" onChange="setLatLng()">
+									</div>
+								</div>
+		 
+								<div class="form-group">
+									<span class="col-md-12"><i class="fa fa-ellipsis-v"></i> Longitude</span>
+									<div class="col-md-12">
+										<input id="teleportLng" type="text" placeholder="* lng in decimal fomat" class="form-control" onChange="setLatLng()">
+									</div>
+								</div>
+
+							   <div class="form-group">
+									<span class="col-md-12"><i class="fa fa-ellipsis-h"></i>,<i class="fa fa-ellipsis-v"></i>  or if you have it in "lat,lng" format, put it here:</span>
+									<div class="col-md-12">
+										<input id="teleportLatlng" name="latlng" type="text" placeholder="lat,lng in decimal fomat, eg. '45.678,4.5678'" class="form-control">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="col-md-12 text-center">
+										<input type="button" id="submitTeleport" onClick="teleportTo(document.getElementById('teleportLatlng').value)" class="btn btn-primary btn-lg" value="Fly !" />
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+	<!--******* "report item" modal  *****************-->  
+    <div class="modal fade" id="reportItemModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Report content to moderators</h4>
+          </div>
+          <div class="modal-body">
+            <p>Use the form below to report inapropriate content to moderators.</p>
+            <div id="reportItemForm"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->	
+    </div><!-- /.modal -->
+
+
+
+	<!--******* "login" modal  ***************** -->
+           <div class="modal fade" id="loginModal"  tabindex="-1" >
+                <div class="modal-dialog" >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>pgEarth user: Sign in / Register</h3>
+                        </div>
+                        <div class="modal-body">
+							<div class="alert alert-warning" style="margin-bottom: 15px;">pgEarth users data have all been lost (no leak!) in the <a href="https://www.reuters.com/article/us-france-ovh-fire-idUSKBN2B20NU" target="_blank">march 2021 server fire</a>.<br />
+							you will <strong>have to register a new account</strong> in order to edit or add information on pgearth.
+							</div>
+							
+							
+                            <div class="well">
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                                    <li><a href="#create" data-toggle="tab">Create Account</a></li>
+                                    <li><a href="#forgot" data-toggle="tab">Forgot Password?</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <!-- start: Login Tab -->
+                                    <div class="tab-pane active in" id="login">
+                                        <form class="form-horizontal">
+                                            <fieldset>
+                                                <div id="legend">
+                                                    <legend class="">Login</legend>
+                                                </div>
+
+                                                <!-- start: Username -->
+                                                <div class="control-group form-group">
+                                                    <label class="control-label col-lg-4"  for="login-username">
+                                                        Username                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                      <input type="text" id="login-username" name="username"
+                                                             class="input-xlarge form-control"> <br />
+                                                    </div>
+                                                </div>
+                                                <!-- end: Username -->
+
+                                                <!-- start: Password -->
+                                                <div class="control-group form-group">
+                                                    <label class="control-label col-lg-4" for="login-password">
+                                                        Password                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="password" id="login-password"
+                                                               name="password" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+                                                <!-- end: Password -->
+                                                
+                                                <input type="hidden" name="bounds" id="loginFormBoundsField" />
+
+                                                <div class="control-group form-group">
+                                                    <div class="controls col-lg-offset-4 col-lg-8">
+                                                    <button id="btn-login" class="btn btn-success">
+                                                        Login                                                    </button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                    <!-- end: Login Tab -->
+
+                                    <!-- start: Registration Tab -->
+                                    <div class="tab-pane fade" id="create">
+                                        <form class="form-horizontal register-form" id="tab">
+                                            <fieldset>
+                                                <div id="legend">
+                                                    <legend class="">Create Account</legend>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <label class="control-label col-lg-4" for='reg-email' >
+                                                        Email <span class="required">*</span>
+                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="text" id="reg-email" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <label class="control-label col-lg-4" for="reg-username">
+                                                        Username <span class="required">*</span>
+                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="text" id="reg-username" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <label class="control-label col-lg-4" for="reg-password">
+                                                        Password <span class="required">*</span>
+                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="password" id="reg-password" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <label class="control-label col-lg-4" for="reg-repeat-password">
+                                                        Repeat Password <span class="required">*</span>
+                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="password" id="reg-repeat-password"
+                                                               class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <label class="control-label col-lg-4" for="reg-bot-sum">
+                                                        8 +
+                                                        7                                                        <span class="required">*</span>
+                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="text" id="reg-bot-sum" class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group  form-group">
+                                                    <div class="controls col-lg-offset-4 col-lg-8">
+                                                        <button id="btn-register" class="btn btn-success">
+                                                            Create Account                                                        </button>
+                                                    </div>
+                                                </div>
+                                           </fieldset>
+                                        </form>
+                                    </div>
+                                    <!-- end: Registration Tab -->
+
+                                    <!-- start: Forgot Password Tab -->
+                                    <div class="tab-pane in" id="forgot">
+                                        <form class="form-horizontal" id="forgot-pass-form">
+                                            <fieldset>
+                                                <div id="legend">
+                                                    <legend class="">Forgot Password?</legend>
+                                                </div>
+                                                <div class="control-group form-group">
+                                                    <label class="control-label col-lg-4" for="forgot-password-email">
+                                                        Your Email                                                    </label>
+                                                    <div class="controls col-lg-8">
+                                                        <input type="email" id="forgot-password-email"
+                                                               class="input-xlarge form-control">
+                                                    </div>
+                                                </div>
+
+                                                <div class="control-group form-group">
+                                                    <div class="controls col-lg-offset-4 col-lg-8">
+                                                        <button id="btn-forgot-password" class="btn btn-success">
+                                                            Reset Password                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <!-- end: Forgot Password Tab -->
+
+
+                                </div>
+                            </div>
+                           
+                        </div>
+           <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+                   </div> 
+                </div>
+            </div>
+	
+
+	<!--******* "pros and clubs" modal  *****************-->  
+    <div class="modal fade" id="featureModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title text-primary" id="feature-title"></h4>
+          </div>
+          <div class="modal-body" id="feature-info"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+	<!--******* "attribution" modal  *****************-->  
+    <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              Map attributions :
+            </h4>
+          </div>
+          <div class="modal-body">
+             <p id="attribution"> </p>
+             <p>Website built with <a href="https://leafletjs.com/" target="_blank">Leaflet</a> mapping software, using a <a href="https://github.com/bmcbride/bootleaf" target="_blank">bootleaf</a> framework basis.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+	<!--******* "404" modal  *****************-->  
+    <div class="modal fade" id="404Modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              Oooops, there is nothing here....
+            </h4>
+          </div>
+          <div class="modal-body">
+             <p id="404">You are apparently trying to watch a page that doesn't exist on pgearth... Sorry for that :(</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    
+ 	<!--******* "api" modal  *****************-->  
+   <div class="modal fade" id="apiModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              PGEarth API
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div>The PgEArth API gladly offers you the chance to use the website data.<br />Let us know if you want to access it.</div>
+            <div>Some websites/apps that use the API:
+				<ul>
+					<li> <a href="https://spotair.mobi" target="_blank"> spotair.mobi <i class="fa fa-external-link"></i></a></li>
+					<li> <a href="https://www.meteo-parapente.com" target="_blank"> meteo parapente <i class="fa fa-external-link"></i></a></li>
+					<li> <a href="https://windy.com" target="_blank"> windyty.com <i class="fa fa-external-link"></i></a></li>
+					<li> <a href="https://paraglidingmap.com" target="_blank"> paraglidingmap <i class="fa fa-external-link"></i></a></li>
+					<li> <a href="https://www.mobibalises.net/i" target="_blank"> mobibalises <i class="fa fa-external-link"></i></a></li>
+					<li> <a href="https://flyskyhy.com" target="_blank"> Flyskyhy <i class="fa fa-external-link"></i></a></li>
+					<li>...</li>
+					<li> whoever else ? <a href="#" class="openAnotherModal" modalToOpen="contactModal" tab="contact">your app here ?</a></li>
+				</ul>
+			</div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+	<!--******* "export" modal  *****************-->  
+   <div class="modal fade" id="exportModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              Export feature
+            </h4>
+          </div>
+          <div class="modal-body">
+			  <h4>GPX format</h4>
+			  Export the sites that are in the current viewport (limited to 99 sites max..) :
+			  <ul>
+				  <li><a href="#" onClick="exportGPX('short');">Simple</a>: only 1 or 2 waypoint(s) per flying site, corresponding to the main takeoff and landing if known</li>
+				  <li><a href="#" onClick="exportGPX('detailled');">Detailled</a>: extra waypoints for parkings, alternate takeoffs and landings if any</li>
+			  </ul>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+	<!--******* "filter modal  *****************--
+   <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              Flying sites filter
+            </h4>
+          </div><!-- /.modal-header --
+          <div class="modal-body">
+			  <div id="filtersModalContent"></div>
+          </div>
+        </div><!-- /.modal-content --
+      </div><!-- /.modal-dialog --
+    </div><!-- /.modal -->
+
+
+    <script src="assets/js/localhost/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/localhost/bootstrap.min.js"></script>
+    <script src="assets/js/localhost/typeahead.bundle.min.js"></script>
+    <script src="assets/js/localhost/handlebars.min.js"></script>
+    <script src="assets/js/localhost/list.min.js"></script>
+
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	  crossorigin=""></script>
+<!--	      <script src="assets/js/localhost/leaflet.js"></script>   
+	<script src="assets/js/leaflet.1.2.js"></script>	--
+	<script src="assets/js/localhost/leaflet.markercluster.js"></script> -->
+	<script src="assets/js/pruneCluster.js"></script>
+    <script src="assets/js/localhost/L.Control.Locate.min.js"></script>
+    <script src="assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js"></script>
+ <!--   <script src="assets/js/localhost/esri-leaflet.js" type="text/javascript"></script>  -->
+    <script src="assets/external-scripts/lightbox/lightbox.min.js"></script>
+    <script src="assets/js/xeditable/xeditable.js"></script>
+ <!--   <script src="https://api4.windy.com/assets/libBoot.js"></script>   -->
+
+    <script src="assets/js/pge_utils_functions.js"></script>
+    <script src="assets/js/pge_rewriteUrl.js"></script>
+
+		<script type="text/javascript">
+
+		//=================== Show windy overlay ==========
+		var showWindyOverlay = false;
+		$('.windyContainer').css('visiblity','hidden');		var isWindyMapClickable = false;
+
+		//=================== Get user timezone ==========
+
+		var userTimezone = new Date().getTimezoneOffset() / 60.0;
+
+		//==================== Refresh sites on updateSites() call is false by default
+
+		var refreshSites = false;
+
+		//=================== Show flyable Icons==========
+		var showFlyable= false;
+		var timeOffset=0;
+		
+		//=================== Zoom on items ==============
+		var zoomOnItem = "none";
+		var zoomOnItemId = 0;
+zoomOnItem = 'site';
+			zoomOnItemId = 7001[/url];		
+		//=================== Filters ==============
+		var hasFilters       = false;
+		var hasCountryFilter = false;
+		var hasKindFilter    = false;
+		var hasWindFilter    = false;
+		var zoomOnFilteredItems = false;
+		var filterCountry    = "all";
+		var filterKinds      = [];
+		var filterWinds      = [];
+		var filterHTMLString = "<ul style='padding-left: 14px;margin-bottom: 0px;'>";
+		
+		filterHTMLString += "</ul>";
+//console.log(filterKinds);
+
+
+		//=================== Member modal ===============
+		var showMember = false;
+	
+		
+		//=================== center map to latlng  ===============
+		var centerMap = false;
+	
+		
+
+		//=================== FLYABLE mode ?  ===============
+		var flyableMode = false;
+	
+		
+
+
+
+		//=================== Any static modal, with the 'view' param 
+	
+			
+		//======== Logged in member
+		var currentUser = 0;
+
+				
+	</script>
+
+    <script src="assets/js/sitesArray.js"></script>
+    <script src="assets/js/pge_news.js"></script>
+    <!--
+    <script src="assets/js/plugin-heatLayer.js"></script>
+    --
+    <script src="assets/js/plugin-leaflet_label.js"></script>
+    <script src="assets/js/leaflet.awesome-markers.min.js"></script>
+   
+ -->
+	<script src="assets/js/pge_menu.js"></script>
+<!--    <script src="assets/js/pge_windyOverlay.js"></script>   -->
+    <script src="assets/js/pge_sidebar.js"></script>
+    <script src="assets/js/pge_map.js"></script>
+<!--    <script src="assets/js/pge_mapEvents.js"></script> -->
+    <script src="assets/js/pge_clubs.js"></script>    
+    <script src="assets/js/pge_pros.js"></script>
+    <script src="assets/js/pge_sites.js"></script>
+<!--    <script src="assets/js/pge_siteFlyableTab.js"></script>
+
+-->     <script src="assets/js/pge_search.js"></script>
+    <script src="assets/js/pge_editable.js"></script>
+
+    <script src="assets/js/pge_reported.js"></script>
+    <script src="assets/js/pge_image_overlay.js"></script>
+    <script src="assets/js/pge_member.js"></script>
+    <script src="assets/js/pge_addNew.js"></script>
+  
+    
+		<script src="member/assets/js/sha512.js" type="text/javascript" charset="utf-8"></script>
+		<script src="member/ASLibrary/js/asengine.js" type="text/javascript" charset="utf-8"></script>
+		<script src="member/ASLibrary/js/js-bootstrap.php" type="text/javascript" charset="utf-8"></script>
+        <script src="member/ASLibrary/js/register.js" type="text/javascript" charset="utf-8"></script>
+        <script src="member/ASLibrary/js/login.js" type="text/javascript" charset="utf-8"></script>
+        <script src="member/ASLibrary/js/passwordreset.js" type="text/javascript" charset="utf-8"></script>
+    
+
+  </body>
+</html>

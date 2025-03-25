@@ -1,0 +1,9 @@
+{
+  "name": "RASP - Synoptic",
+  "url": "https://xcpara.co.uk/index.php/weather/rasp-synoptic",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "Friendly interface for RASP",
+  "timestamp": "2025-03-25T21:54:41Z",
+  "website_fetched": false
+}

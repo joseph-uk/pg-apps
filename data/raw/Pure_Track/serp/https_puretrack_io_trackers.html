@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			// IMPORTANT: set this in <HEAD> top before any other tag.
+			const setTheme = (theme) => {
+				let settings = {darkMode:false};
+				settingsRaw = window.localStorage.getItem('settings-v2');
+				if (settingsRaw) settings = JSON.parse(settingsRaw);
+				console.log(settings.darkMode);
+				if (settings.darkMode=='dark') document.querySelector('html').classList.add('dark');
+			};
+			setTheme();
+		</script>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		<title>PureTrack Supported Trackers &amp; Devices</title>
+		<meta name="user" content="null">
+		
+		
+		<meta name="csrf-token" content="v2wUfK2RdhCZm4QYeodTzNYhV4kYGVtKHfApJORM">
+
+		<link rel="preload" as="style" href="https://puretrack.io/build/assets/pages-app-c5fb4c25.css" /><link rel="modulepreload" href="https://puretrack.io/build/assets/pages-app-1f330677.js" /><link rel="stylesheet" href="https://puretrack.io/build/assets/pages-app-c5fb4c25.css" data-navigate-track="reload" /><script type="module" src="https://puretrack.io/build/assets/pages-app-1f330677.js" data-navigate-track="reload"></script>
+		<script type="module">
+			import { createApp } from 'https://unpkg.com/petite-vue?module';
+
+			let settings = {};
+						
+
+			const get_url_param = function(val) {
+				var result = "",
+				tmp = [];
+				location.search.substr(1).split("&").forEach(function (item) {
+					tmp = item.split("=");
+					if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+				});
+				return result;
+			}
+
+			createApp({
+				// exposed to all expressions
+				showMenu: false,
+				fromAppStore: false,
+				startUp() {
+
+					if (window.innerWidth>800) this.showMenu=true;
+					if (get_url_param('fromappstore')) {
+						if (Number(get_url_param('fromappstore'))==1) {
+							window.localStorage.setItem('fromappstore', "true");
+							console.log('setting from app store=true');
+							this.fromAppStore = true;
+						} else {
+							window.localStorage.removeItem('fromappstore');
+							console.log('removing from app store');
+						}
+					} else {
+						if (window.localStorage.getItem('fromappstore')=='true') {
+							console.log('Found from app store in localstorage');
+							this.fromAppStore = true;
+						}
+					}
+				}
+			}).mount()
+
+		</script>
+
+	</head>
+	<body class="font-sans antialiased bg-gray-100 dark:bg-gray-800 dark:text-white " id="app" v-scope>
+		<div @vue:mounted="startUp()" class="header p-2 bg-white dark:bg-black w-full flex flex-wrap items-center shadow-lg">
+
+			<a href="/" title="Map" class="logo ml-4 mr-2">
+				<img src="/images/puretrack-logo.png" width="30" alt="PureTrack Logo">
+			</a>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/">Map</a>
+			</div>
+
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/help">Help</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/news">News</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/about">About</a>
+			</div>
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white" id="upgrade">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/upgrade">Upgrade</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/contact">Contact</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/dashboard">Dashboard</a>
+			</div>
+
+
+			<div class="flex-grow"></div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/register">Register</a>
+			</div>
+
+			<div class="mr-2 md:mr-4 my-1 text-gray-800 dark:text-white">
+				<a class="no-underline p-1 md:p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded" href="/login">Login</a>
+			</div>
+
+		</div>
+
+					<button class="absolute ml-10 mt-10" @click="showMenu=true" v-show="!showMenu">Show Menu &raquo;</button>
+		
+		<div class="flex">
+			
+			<!-- side menu -->
+							<div style="width: 280px; min-width: 280px;" class="p-8 flex flex-col " v-show="showMenu">
+					<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded cursor-pointer" @click.prevent="showMenu=false">&laquo; Hide Menu</a>
+
+						<div class="text-sm text-gray-600 mt-6">How PureTrack Can Help...</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/about/clubs">Gliding &amp; Flying Clubs</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/about/contests-events">Contests &amp; Events</a>
+	
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/about/freeflight">Paragliding &amp; Hang Gliding</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/about/ga-power-pilots">General Aviation Pilots</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/about/boating">Recreational Boating</a>
+
+	<!-- <a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/use-cases/power-pilots">Glider Pilots</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/use-cases/marine">Commercial Marine</a> -->
+
+
+
+<div class="text-sm text-gray-600 mt-6">About PureTrack</div>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded " href="/help/comparison">PureTrack Compared</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/trackers">Supported Trackers</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/puretrack-tracker">Buy a Tracker</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="https://www.facebook.com/puretrack.io">PureTrack on Facebook</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="https://www.youtube.com/channel/UCI8sTbKIMgatgUpT8PWr8sQ">Training Videos on YouTube</a>
+
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/help/faq">FAQ</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/release-notes">Release Notes</a>
+
+	<a class="no-underline p-1 md:p-2 hover:bg-white dark:hover:bg-black rounded" href="/terms">Terms &amp; Conditions</a>
+
+
+				</div>
+
+				<div class="my-4 p-4 flex-grow" 
+					:class="[showMenu ? 'hidden sm:block' : 'block']">
+
+					<div class="md:mx-auto bg-white dark:bg-gray-900 p-6 rounded shadow-xl">
+
+						
+<div>
+	
+
+	<div class="">
+		<h1 class=" mb-4 text-3xl font-bold">Supported Trackers and Apps.</h1>
+		<p class="w-full md:w-1/2">
+			PureTrack supports a huge range of devices, software and platforms, making it easy to get tracking no matter what system you're already using.
+		</p>
+
+		<a href="/login">Register</a> or <a href="/login">Login</a> to get started and add your own trackers to PureTrack.
+	</div>
+
+
+	<h2 class="text-2xl  my-6 font-bold">Phone &amp; Tablet Apps</h2>
+
+
+	<div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/puretrack-web-icon.png" width="64" height="64" class="rounded-xl min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">PureTrack for iOS</h3>
+
+				<p>The easiest way to track on iOS, and a wrapper for the website. iOS Only. Switch between aircraft/trackers easily.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://apps.apple.com/us/app/puretrack-gps-tracker/id6443511612" class="btn">App Store</a>
+
+					<a href="/add/puretrack" class="btn">Instructions</a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/traccar.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Traccar Client</h3>
+
+				<p>General purpose tracking app. Android &amp; iOS.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://www.traccar.org/client/" class="btn">Website</a>
+					<a href="/add/traccar-client" class="btn">Add Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/navigator-icon.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">SeeYou Navigator</h3>
+
+				<p>Used by Glider and Paraglider pilots worldwide. Android &amp; iOS.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://naviter.com/seeyou-navigator/" class="btn">Website</a>
+					<a href="/help/navigator" class="btn">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/overland-icon.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Overland</h3>
+
+				<p>General purpose tracking app. <span class="line-through">Android</span> &amp; iOS.</p>
+
+				<p>Note: Android version not available at present for unknown reasons</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://overland.p3k.app" class="btn">Website</a>
+					<a href="/add/overland" class="btn">Add Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/sports-track-live-v2.png" width="64" height="64" class="min-w-[64px] rounded-xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">SportsTrackLive</h3>
+
+				<p>3D Tracking App, can send all air sports to PureTrack. Android &amp; iOS.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://www.sportstracklive.com" class="btn">Website</a>
+					<a href="/add/sportstracklive" class="btn">Add Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/igcdroid-icon.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">IGC Droid</h3>
+
+				<p>Sends data through the OGN network. Android only.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://play.google.com/store/apps/details?id=com.ajw.igcdroid&hl=en&gl=US" class="btn">Play Store</a>
+					<a href="/help/igcdroid" class="btn">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/xctrack.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">XCTrack</h3>
+
+				<p>Popular Android Freeflight Paragliding &amp; Hang gliding App</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/help/xcontest" class="btn">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/xcsoar.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">XCSoar</h3>
+
+				<p>The ultimate free glide computer now supported via SkyLines.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/skylines" class="btn mx-1 mb-2">Add via Skylines</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/flyskyhy.jpeg" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">FlySkyHy</h3>
+
+				<p>Live Tracking available through XContest</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://flyskyhy.com" class="btn">Website</a>
+					<a href="/help/xcontest" class="btn">Add in XContest</a>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/totalvario.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">TotalVario</h3>
+
+				<p>Android based Paragliding &amp; Hangliding App</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://totalvario.blogspot.com" class="btn">Website</a>
+					<a href="/add/totalvario" class="btn">Add Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/ffvl.png" width="64" height="64" class="min-w-[64px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">VLSafe from FFVL</h3>
+
+				<p>French paragliding safety tracking tool. PureTrack supports sending and receiving data from FFVL and VLSafe.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/help/ffvl" class="btn">Instructions</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/tracker.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Tracker App</h3>
+
+				<p>Optimised cellular tracking app. Android only.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/tracker" class="btn">Add Now</a>
+					<a href="https://mycloudbase.com/tracker/" class="btn">Website</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/xc-guide.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">XC Guide</h3>
+
+				<p>Android Paragliding App. Can both send to PureTrack AND show PureTrack data in XC Guide.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/xc-guide" class="btn">Add Now</a>
+					<a href="https://pg-race.aero/xcguide/" class="btn">Website</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/xcmania.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">XC Mania</h3>
+
+				<p>Paragliding App for iOS.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/xcmania" class="btn">Add Now</a>
+					<a href="https://www.xcmania.com/en/" class="btn">Website</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/gaggle.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Gaggle</h3>
+
+				<p>Flying app for tracking your flights for iOS.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/gaggle" class="btn">Add Now</a>
+					<a href="https://flygaggle.com/" class="btn">Website</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/wingman.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Wingman</h3>
+
+				<p>Paragliding, ppg, hang gliding, gliding for iOS and Apple Watch.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/wingman" class="btn">Add Now</a>
+					<a href="https://wingmanfly.app/" class="btn">Website</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/btraced-icon.png" width="64" height="64" class="min-w-[64px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">BTraced</h3>
+
+				<p>No longer available for download but still works fine!</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/btraced" class="btn">Add Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+	<h2 class="text-2xl my-6 font-bold">Hardware</h2>
+
+
+
+	<div class="grid lg:grid-cols-2 gap-4 lg:gap-6">
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/teltonika.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">PureTrack Cellular Tracker</h3>
+
+				<p>PureTrack can supply a ready to go cellular tracker by Teltonika. Wire it to your 12v or 24v power and never think about it again!</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/teltonika" class="btn mx-1 mb-2">Add</a>
+					<a href="/puretrack-tracker" class="btn mx-1 mb-2">Learn More</a>
+					<a href="https://pureglide.nz/products/puretrack-cellular-gps-tracker-fmc125" class="btn mx-1 mb-2">Buy Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/spot.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">SPOT Satellite Tracking</h3>
+
+				<p>SPOT Satellite tracker work worldwide with the Globalstar network.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/spot" class="btn mx-1 mb-2">Add SPOT</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/inreach.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Garmin InReach</h3>
+
+				<p>InReach Satellite trackers work with the Iridium global satellite network.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/inreach" class="btn mx-1 mb-2">Add InReach</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/zoleo.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Zoleo Satellite Communicators</h3>
+
+				<p>Always be found with the Iridium global satellite network.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/zoleo" class="btn mx-1 mb-2">Add Zoleo</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/oudie.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Naviter Oudie N</h3>
+
+				<p>Oudie N Devices work great with PureTrack through the OGN network.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/navigator" class="btn mx-1 mb-2">Add Navigator or Oudie</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/flarm.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">FLARM</h3>
+
+				<p>FLARM receivers through the OGN network.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/help/flarm" class="btn mx-1 mb-2">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/adsb.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">ADSB</h3>
+
+				<p>Worldwide ADSB Coverage from ADSB Hub and adsb.lol</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/help/adsb" class="btn mx-1 mb-2">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/flymaster-livec.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Flymaster Varios</h3>
+
+				<p>Freeflight GPS and Variometers</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/flymaster" class="btn mx-1 mb-2">Add Flymaster</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/sysnav.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Syride Varios</h3>
+
+				<p>Freeflight GPS and Variometers</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/help/syride" class="btn mx-1 mb-2">Instructions</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/skytraxx.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Skytraxx Varios</h3>
+
+				<p>Freeflight GPS and Variometers</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/add/skytraxx" class="btn mx-1 mb-2">Add Skytraxx</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/garmin-watch.jpeg" width="128" height="128" class="min-w-[128px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Garmin Watch</h3>
+
+				<p>Use your watch GPS and internet through your mobile phone</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://apps.garmin.com/apps/01869a59-b297-4873-8f78-e502357c4374?tid=0" class="btn mx-1 mb-2">Info &amp; Install</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+	<h2 class="text-2xl my-6 font-bold">Providers</h2>
+
+
+
+
+	<div class="grid lg:grid-cols-2 gap-4 lg:gap-6">
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/trackme.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">TrackMe NZ</h3>
+
+				<p>We support both SPOT and InReach from TrackMe NZ</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://trackme.nz" class="btn mx-1 mb-2">Visit TrackMe</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/ogn.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Open Glider Network</h3>
+
+				<p>The OGN provides FLARM tracking worldwide, and many apps feed into it.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="http://wiki.glidernet.org" class="btn mx-1 mb-2">Visit the OGN</a>
+					<a href="http://wiki.glidernet.org/ddb" class="btn mx-1 mb-2">Devices Database</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/xcontest.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">XContest</h3>
+
+				<p>One of the world's largest paragliding &amp; hangliding websites.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://xcontest.org" class="btn mx-1 mb-2">Visit xcontest.org</a>
+					<a href="/help/xcontest" class="btn mx-1 mb-2">Learn More</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/skylines.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">SkyLines</h3>
+
+				<p>Tracking System used by many worldwide.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://skylines.aero" class="btn mx-1 mb-2">Visit skylines.aero</a>
+					<a href="/add/skylines" class="btn mx-1 mb-2">Add now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/bircom.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Bircom India</h3>
+
+				<p>Meshtastic network with LoRa base stations in India</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="https://paratracker.in" class="btn mx-1 mb-2">Website for more info</a>
+					<a href="/add/bircom" class="btn mx-1 mb-2">Add now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+	<h2 class="text-2xl my-6 font-bold">Available on Request</h2>
+
+
+
+	<div class="grid lg:grid-cols-2 gap-4 lg:gap-6">
+
+
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/spidertracks.png" width="128" height="128" class="min-w-[128px]"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">SpiderTracks</h3>
+
+				<p>SpiderTrack Support can be added on demand.</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/contact" class="btn mx-1 mb-2">Contact Us</a>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="rounded-xl shadow-xl flex gap-4 p-4 dark:bg-gray-800">
+			
+			<div><img src="/images/source-icons/celltracker.png" width="128" height="128" class="min-w-[128px] rounded-2xl"></div>
+
+			<div class="flex flex-col gap-2">
+				
+				<h3 class="text-xl font-bold">Other Cellular Trackers</h3>
+
+				<p>We can probably support your cellular tracker, contact us for details..</p>
+
+				<div class="flex flex-wrap gap-2">
+					<a href="/contact" class="btn mx-1 mb-2">Contact Us</a>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+</div>
+
+
+
+						<hr class="my-6 border-b dark:border-t-black dark:border-b-gray-800">
+						
+
+						<div class="flex gap-4 w-fit items-center mx-auto my-6">
+							<img src="/images/puretrack-logo.png" width="30">
+							<h1 class="text-2xl text-gray-700 dark:text-gray-400"><span class="font-bold">Pure</span>Track<span class="font-bold">.io</span></h1>
+						</div>
+					</div>
+
+				</div>
+
+			
+		</div>
+		
+
+	</body>
+
+	<script>
+	// hide the upgrade if fromappstore is present
+	if (window.localStorage.getItem('fromappstore')=='true') {
+		const upgradeDiv = document.getElementById('upgrade');
+		upgradeDiv.style.display = 'none';
+	}
+	</script>
+</html>

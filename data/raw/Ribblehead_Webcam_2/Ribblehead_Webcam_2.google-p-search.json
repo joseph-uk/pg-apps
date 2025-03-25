@@ -1,0 +1,498 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Ribblehead Webcam 2",
+        "totalResults": "1330",
+        "searchTerms": "Ribblehead Webcam 2",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Ribblehead Webcam 2",
+        "totalResults": "1330",
+        "searchTerms": "Ribblehead Webcam 2",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.41418,
+    "formattedSearchTime": "0.41",
+    "totalResults": "1330",
+    "formattedTotalResults": "1,330"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Webcams – Settle and Carlisle Railway Trust – Visit and Stay at our ...",
+      "htmlTitle": "\u003cb\u003eWebcams\u003c/b\u003e – Settle and Carlisle Railway Trust – Visit and Stay at our ...",
+      "link": "https://settlecarlisletrust.org.uk/webcams/",
+      "displayLink": "settlecarlisletrust.org.uk",
+      "snippet": "Two of our Settle – Carlisle line stations feature webcams which means ... The webcams on Ribblehead and Kirkby Stephen stations have been switched off ...",
+      "htmlSnippet": "\u003cb\u003eTwo\u003c/b\u003e of our Settle – Carlisle line stations feature \u003cb\u003ewebcams\u003c/b\u003e which means ... The \u003cb\u003ewebcams\u003c/b\u003e on \u003cb\u003eRibblehead\u003c/b\u003e and Kirkby Stephen stations have been switched off&nbsp;...",
+      "formattedUrl": "https://settlecarlisletrust.org.uk/webcams/",
+      "htmlFormattedUrl": "https://settlecarlisletrust.org.uk/\u003cb\u003ewebcam\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLVzJfuhaXS0l6t_XnQuTbumyDaCNegAnY7LiIy4CYZdgymnmNUHDvcc&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "user-scalable=no, width=device-width, maximum-scale=1, minimum-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://settlecarlisletrust.org.uk/images/logo.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "S&C webcams being turned off?? - Page 2 - UK Prototype ...",
+      "htmlTitle": "S&amp;C \u003cb\u003ewebcams\u003c/b\u003e being turned off?? - Page \u003cb\u003e2\u003c/b\u003e - UK Prototype ...",
+      "link": "https://www.rmweb.co.uk/forums/topic/165074-sc-webcams-being-turned-off/page/2/",
+      "displayLink": "www.rmweb.co.uk",
+      "snippet": "Jun 4, 2021 ... This relates specifically to the webcams on Ribblehead and Kirkby Stephen stations which are non-compliant and will be removed shortly.",
+      "htmlSnippet": "Jun 4, 2021 \u003cb\u003e...\u003c/b\u003e This relates specifically to the \u003cb\u003ewebcams\u003c/b\u003e on \u003cb\u003eRibblehead\u003c/b\u003e and Kirkby Stephen stations which are non-compliant and will be removed shortly.",
+      "formattedUrl": "https://www.rmweb.co.uk/forums/topic/165074-sc-webcams-being.../2/",
+      "htmlFormattedUrl": "https://www.rmweb.co.uk/forums/topic/165074-sc-\u003cb\u003ewebcam\u003c/b\u003es-being.../\u003cb\u003e2\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDW9oaOcww3akMQRsc5TgjwMygCpo7KuA19vZoBRm7TIRxLZdPSF_OdrmG&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "msapplication-starturl": "/",
+            "application-name": "RMweb",
+            "og:image": "https://media-eu.invisioncic.com/y320084/monthly_2021_06/2099404530_youaintseenme.jpg.a44c33e5a3dd5ebff6c84803daaf7e62.jpg",
+            "msapplication-config": "https://www.rmweb.co.uk/browserconfig.xml/",
+            "twitter:card": "summary_large_image",
+            "og:type": "website",
+            "theme-color": "#27495f",
+            "og:site_name": "RMweb",
+            "og:title": "S&C webcams being turned off??",
+            "apple-mobile-web-app-title": "RMweb",
+            "og:updated_time": "2021-06-18T15:53:04Z",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_GB",
+            "atdlayout": "section",
+            "og:url": "https://www.rmweb.co.uk/forums/topic/165074-sc-webcams-being-turned-off/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://media-eu.invisioncic.com/y320084/monthly_2025_02/AllyPallypopupcopy3.jpg.ddb1bb6e834c25bcec9b9671e40a6612.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ribblehead Relaunched – Railcam UK",
+      "htmlTitle": "\u003cb\u003eRibblehead\u003c/b\u003e Relaunched – Railcam UK",
+      "link": "https://news.railcam.uk/index.php/2024/07/10/ribblehead-relaunched/",
+      "displayLink": "news.railcam.uk",
+      "snippet": "Jul 10, 2024 ... Welcome to our new cameras at Ribblehead ... Ad-supported for non-subscribers on Railcam and YouTube viewers. Camera 2 – Low Sleights Road Bridge.",
+      "htmlSnippet": "Jul 10, 2024 \u003cb\u003e...\u003c/b\u003e Welcome to our new cameras at \u003cb\u003eRibblehead\u003c/b\u003e ... Ad-supported for non-subscribers on Railcam and YouTube viewers. Camera \u003cb\u003e2\u003c/b\u003e – Low Sleights Road Bridge.",
+      "formattedUrl": "https://news.railcam.uk/index.php/2024/07/10/ribblehead-relaunched/",
+      "htmlFormattedUrl": "https://news.railcam.uk/index.php/2024/07/10/\u003cb\u003eribblehead\u003c/b\u003e-relaunched/",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Mike",
+            "nickname": "Mike",
+            "photo": "https://secure.gravatar.com/avatar/f4ccd66fa54154a69677c25fe3aa458d?s=42&d=mm&r=g"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKKj2j7-5eAKDxZ5KI0HPyjNgJynxOPaYGQ_lPCap0K5MEgbGSveyUBok&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://i0.wp.com/news.railcam.uk/wp-content/uploads/2019/10/railcam-logo-black.jpg?fit=270%2C270&ssl=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i0.wp.com/news.railcam.uk/wp-content/uploads/2024/07/Garden-1024x768.jpg?resize=840%2C630&ssl=1"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Railcam - YouTube",
+      "htmlTitle": "Railcam - YouTube",
+      "link": "https://www.youtube.com/@RailcamUKLive/streams",
+      "displayLink": "www.youtube.com",
+      "snippet": "Ribblehead Station Inn C1 - FREE STREAM. 10 watching · LIVE · Seaton ... WSR - Williton Camera 2, West Somerset Railway, Somerset UK | Railcam LIVE. 1 ...",
+      "htmlSnippet": "\u003cb\u003eRibblehead\u003c/b\u003e Station Inn C1 - FREE STREAM. 10 watching &middot; LIVE &middot; Seaton ... WSR - Williton Camera \u003cb\u003e2\u003c/b\u003e, West Somerset Railway, Somerset UK | Railcam LIVE. 1&nbsp;...",
+      "formattedUrl": "https://www.youtube.com/@RailcamUKLive/streams",
+      "htmlFormattedUrl": "https://www.youtube.com/@RailcamUKLive/streams",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Railcam",
+            "nickname": "Railcam",
+            "url": "https://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WaGDCtfYJ_RTurRe279jdAOon87RpVogKaV8eE3l7MuxlsAsq0yGMQA&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/ytc/AIdro_kZNIHb74iHpmVUE-BRClcz8SHm2k5cJJvBZ1eyjE29ZQ=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "Railcam",
+            "url": "https://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/@RailcamUKLive/streams?referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://yt3.googleusercontent.com/ytc/AIdro_kZNIHb74iHpmVUE-BRClcz8SHm2k5cJJvBZ1eyjE29ZQ=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug",
+            "twitter:app:id:googleplay": "com.google.android.youtube",
+            "theme-color": "rgba(255, 255, 255, 0.9)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/@RailcamUKLive/streams",
+            "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug",
+            "al:android:package": "com.google.android.youtube",
+            "twitter:app:name:googleplay": "YouTube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "Welcome to the Railcam. www.railcam.uk\n\nRailcam is a website, based in the UK, which installs and operates railway-related webcams. \n\nBasic access to Railcam.uk is free and requires a simple registration. A £36 annual subscription gets you access to many extra cams, live signalling diagrams, Railcam DATA and more....\n\nBroadcasting live from Altrincham, Barking, Beattock, Bedford, Bolton le Sands, Camden Jn, Clitheroe, Cramlington, Crewe, Derby, Doncaster, Farington Jn, Flitwick, Grateley, Ribblehead, Newbury, Peterborough, Portsmouth, Preston, Newcastle, Maryport, Thankerton, Todmorden, Uphall, Watford Junction , Isle of Wight, Severn Tunnel Junction,  York and many more\n\nHeritage Cams from Llangollen Railway, Nene Valley Railway, Romney, Hythe & Dymchurch Railway, South Devon Railway, Swanage Railway and the West Somerset Railway, East Lancashire Railway, Severn Valley Railway.",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/ytc/AIdro_kZNIHb74iHpmVUE-BRClcz8SHm2k5cJJvBZ1eyjE29ZQ=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "fb:profile_id": "railcamlive",
+            "twitter:title": "Railcam",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Railcam",
+            "og:image:height": "900",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "https://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug?feature=applinks",
+            "al:android:url": "https://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug?feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:url:googleplay": "https://www.youtube.com/channel/UC6YuojLzzdEMjbFiMHyecug",
+            "twitter:app:name:ipad": "YouTube",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "Welcome to the Railcam. www.railcam.uk\n\nRailcam is a website, based in the UK, which installs and operates railway-related webcams. \n\nBasic access to Railcam.uk is free and requires a simple registration. A £36 annual subscription gets you access to many extra cams, live signalling diagrams, Railcam DATA and more....\n\nBroadcasting live from Altrincham, Barking, Beattock, Bedford, Bolton le Sands, Camden Jn, Clitheroe, Cramlington, Crewe, Derby, Doncaster, Farington Jn, Flitwick, Grateley, Ribblehead, Newbury, Peterborough, Portsmouth, Preston, Newcastle, Maryport, Thankerton, Todmorden, Uphall, Watford Junction , Isle of Wight, Severn Tunnel Junction,  York and many more\n\nHeritage Cams from Llangollen Railway, Nene Valley Railway, Romney, Hythe & Dymchurch Railway, South Devon Railway, Swanage Railway and the West Somerset Railway, East Lancashire Railway, Severn Valley Railway.",
+            "og:url": "https://www.youtube.com/@RailcamUKLive/streams",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://yt3.googleusercontent.com/ytc/AIdro_kZNIHb74iHpmVUE-BRClcz8SHm2k5cJJvBZ1eyjE29ZQ=s900-c-k-c0x00ffffff-no-rj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Railway Webcams",
+      "htmlTitle": "Railway \u003cb\u003eWebcams\u003c/b\u003e",
+      "link": "https://www.railway-dvds.com/acatalog/Webcams.html",
+      "displayLink": "www.railway-dvds.com",
+      "snippet": "Settle & Carlisle - Ribblehead North Webcam - Ribblehead North Webcam. Settle ... Dawlish GWR Mainline Webcam 2 - Dawlish GW Main Line Webcam 2. Ryde ...",
+      "htmlSnippet": "Settle &amp; Carlisle - \u003cb\u003eRibblehead\u003c/b\u003e North \u003cb\u003eWebcam\u003c/b\u003e - \u003cb\u003eRibblehead\u003c/b\u003e North \u003cb\u003eWebcam\u003c/b\u003e. Settle ... Dawlish GWR Mainline \u003cb\u003eWebcam 2\u003c/b\u003e - Dawlish GW Main Line \u003cb\u003eWebcam 2\u003c/b\u003e. Ryde&nbsp;...",
+      "formattedUrl": "https://www.railway-dvds.com/acatalog/Webcams.html",
+      "htmlFormattedUrl": "https://www.railway-dvds.com/acatalog/\u003cb\u003eWebcam\u003c/b\u003es.html"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Road cameras and weather conditions | North Yorkshire Council",
+      "htmlTitle": "Road cameras and weather conditions | North Yorkshire Council",
+      "link": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+      "displayLink": "www.northyorks.gov.uk",
+      "snippet": "Yorkshire Dales and Harrogate · A6068 Cowling Moss · A6108 Low Burton (near Masham) · A65 Settle · A658 Harrogate bypass · A684 Leyburn · B6255 Ribblehead · B6265 ...",
+      "htmlSnippet": "Yorkshire Dales and Harrogate &middot; A6068 Cowling Moss &middot; A6108 Low Burton (near Masham) &middot; A65 Settle &middot; A658 Harrogate bypass &middot; A684 Leyburn &middot; B6255 \u003cb\u003eRibblehead\u003c/b\u003e &middot; B6265&nbsp;...",
+      "formattedUrl": "https://www.northyorks.gov.uk/.../road-cameras-and-weather-conditions",
+      "htmlFormattedUrl": "https://www.northyorks.gov.uk/.../road-cameras-and-weather-conditions",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1wgLOfcpfrWV9vGo6L67NfgoWLngG3chd6pkGbM-zm_9UJ9Cax1OjQU&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "article:published_time": "Tue, 25/10/2022 - 15:43",
+            "theme-color": "#ffffff",
+            "og:site_name": "North Yorkshire Council",
+            "dcterms.language": "en-GB",
+            "dcterms.title": "Road cameras and weather conditions",
+            "geo.position": "GB",
+            "og:description": "View pictures of road conditions across North Yorkshire from our weather station cameras.",
+            "favicon-generator": "Drupal responsive_favicons + realfavicongenerator.net",
+            "icbm": "54.095461 N, 001.389730 W",
+            "article:modified_time": "Fri, 07/03/2025 - 08:18",
+            "dcterms.publisher": "North Yorkshire Council",
+            "rights": "North Yorkshire Council",
+            "msapplication-tilecolor": "#005489",
+            "og:type": "Information",
+            "dcterms.contributor": "North Yorkshire Council",
+            "handheldfriendly": "true",
+            "dcterms.type": "Service",
+            "og:title": "Road cameras and weather conditions",
+            "dcterms.creator": "North Yorkshire Council",
+            "dcterms.description": "View pictures of road conditions across North Yorkshire from our weather station cameras.",
+            "dcterms.date": "Fri, 07/03/2025 - 08:18",
+            "og:updated_time": "Fri, 07/03/2025 - 08:18",
+            "og:country_name": "United Kingdom",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width",
+            "og:locale": "en_GB",
+            "dcterms.format": "html/text",
+            "dcterms.rights": "North Yorkshire Council",
+            "og:url": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+            "geo.placename": "North Yorkshire",
+            "dcterms.identifier": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+            "dcterms.coverage": "North Yorkshire, England, United Kingdom"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.northyorks.gov.uk/nycc_weather_cameras/cameras/115"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Webcam — The Station Inn at Ribblehead",
+      "htmlTitle": "\u003cb\u003eWebcam\u003c/b\u003e — The Station Inn at \u003cb\u003eRibblehead\u003c/b\u003e",
+      "link": "https://www.thestationinnribblehead.com/webcam/",
+      "displayLink": "www.thestationinnribblehead.com",
+      "snippet": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities.",
+      "htmlSnippet": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities.",
+      "formattedUrl": "https://www.thestationinnribblehead.com/webcam/",
+      "htmlFormattedUrl": "https://www.thestationinn\u003cb\u003eribblehead\u003c/b\u003e.com/\u003cb\u003ewebcam\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWZIS9EgD2AVUPfC8R6BMuw9pm1ex5aF9mtUGprdh64YaT0iCJCCT8IR0&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg",
+            "og:image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Webcam — The Station Inn at Ribblehead",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "twitter:description": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities",
+            "og:title": "Webcam — The Station Inn at Ribblehead",
+            "og:url": "https://www.thestationinnribblehead.com/webcam/",
+            "og:description": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities",
+            "twitter:image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Webcams - Craven › North: Whernside - Windy",
+      "htmlTitle": "Webcams - Craven › North: Whernside - Windy",
+      "link": "https://www.windy.com/webcams/1578237864",
+      "displayLink": "www.windy.com",
+      "snippet": "Wednesday 2. 04; 07; 10; 01; 04; 07; 10. Thursday 3. 04; 07; 10; 01; 04; 07; 10. Friday 4. 04 ... Craven › North: Whernside. all webcams provider's website ... l ...",
+      "htmlSnippet": "Wednesday \u003cb\u003e2\u003c/b\u003e. 04; 07; 10; 01; 04; 07; 10. Thursday 3. 04; 07; 10; 01; 04; 07; 10. Friday 4. 04 ... Craven › North: Whernside. all \u003cb\u003ewebcams\u003c/b\u003e provider&#39;s website ... l&nbsp;...",
+      "formattedUrl": "https://www.windy.com/webcams/1578237864",
+      "htmlFormattedUrl": "https://www.windy.com/\u003cb\u003ewebcam\u003c/b\u003es/1578237864",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd2JCn5lKmaPqo0aX0MU7fsWtjrM2ENKn18QGr4w1F2ccxe5ZqFSJDa2A3&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://images-webcams.windy.com/64/1578237864/daylight/full/1578237864.jpg",
+            "apple-itunes-app": "app-id=1161387262",
+            "og:image:width": "1920",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#9d0300",
+            "og:site_name": "Windy.com/",
+            "minifest-ecmwf-hres-premium": "{\"dst\":[[1,1,90],[3,93,144],[6,150,354]],\"info\":\"2024112500\",\"ref\":\"2025-03-23T18:00:00Z\",\"update\":\"2025-03-24T00:47:01Z\",\"v\":\"2.4\"}",
+            "twitter:url": "https://www.windy.com/webcams/1578237864",
+            "msapplication-tileimage": "https://img.windy.com/albums/icons/mstile-144x144.png",
+            "twitter:creator": "@windycom",
+            "twitter:image": "https://images-webcams.windy.com/64/1578237864/daylight/full/1578237864.jpg",
+            "twitter:site": "@windycom",
+            "model": "ecmwf",
+            "minifest-ecmwf-hres": "{\"dst\":[[3,3,90],[3,93,144],[6,150,360]],\"info\":\"2024112500\",\"ref\":\"2025-03-23T12:00:00Z\",\"update\":\"2025-03-23T19:55:07Z\",\"v\":\"2.4\"}",
+            "application-name": "Windy.com",
+            "msapplication-tilecolor": "#9d0300",
+            "og:type": "website",
+            "twitter:title": "Webcams - Craven › North: Whernside",
+            "geoip": "66.249.73.235,39.6663,-104.8343,US,Aurora",
+            "author": "Windyty, SE",
+            "og:title": "Webcams - Craven › North: Whernside",
+            "og:image:height": "1080",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3NDI3OTI3MzIsImluZiI6eyJpcCI6IjY2LjI0OS43My4yMzUiLCJ1YSI6Ik1vemlsbGFcLzUuMCAoTGludXg7IEFuZHJvaWQgNi4wLjE7IE5leHVzIDVYIEJ1aWxkXC9NTUIyOVApIEFwcGxlV2ViS2l0XC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWVcLzEzNC4wLjY5OTguODggTW9iaWxlIFNhZmFyaVwvNTM3LjM2IChjb21wYXRpYmxlOyBHb29nbGVib3RcLzIuMTsgK2h0dHA6XC9cL3d3dy5nb29nbGUuY29tXC9ib3QuaHRtbCkifSwiZXhwIjoxNzQyOTY1NTMyfQ.6t1yRRboz8FkC60VzwKbtHC1V-pSf1OjSsQydxys5fk",
+            "fb:app_id": "426030704216458",
+            "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.windy.com/webcams/1578237864"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images-webcams.windy.com/64/1578237864/daylight/full/1578237864.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "A684 Garsdale Head - Webcams | Ventusky",
+      "htmlTitle": "A684 Garsdale Head - \u003cb\u003eWebcams\u003c/b\u003e | Ventusky",
+      "link": "https://www.ventusky.com/webcam-920062868",
+      "displayLink": "www.ventusky.com",
+      "snippet": "Add webcam Report a problem. Nearest webcams. ○ Ribblehead 13 km gov.uk. Temperature. Altitude: Sea surface5 cm above ground2 m above groundAnomaly, 2 m950 hPa ...",
+      "htmlSnippet": "Add \u003cb\u003ewebcam\u003c/b\u003e Report a problem. Nearest \u003cb\u003ewebcams\u003c/b\u003e. ○ \u003cb\u003eRibblehead\u003c/b\u003e 13 km gov.uk. Temperature. Altitude: Sea surface5 cm above ground2 m above groundAnomaly, \u003cb\u003e2\u003c/b\u003e m950 hPa&nbsp;...",
+      "formattedUrl": "https://www.ventusky.com/webcam-920062868",
+      "htmlFormattedUrl": "https://www.ventusky.com/\u003cb\u003ewebcam\u003c/b\u003e-920062868",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpaElLhzrL2lOp36EUxQEpig4Gyeru6S6DCJ0EqStwn847ClIyqSFugU&s",
+            "width": "294",
+            "height": "171"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Ventusky",
+            "og:image": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "A684 Garsdale Head - Webcams | Ventusky",
+            "twitter:site": "@Ventuskycom",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "A684 Garsdale Head - Weather forecast for 10 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this place",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:image": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "RailCam - The East Lancashire Railway",
+      "htmlTitle": "RailCam - The East Lancashire Railway",
+      "link": "https://www.eastlancsrailway.org.uk/railcam/",
+      "displayLink": "www.eastlancsrailway.org.uk",
+      "snippet": "... Privacy Statement here: railcam.uk/elr/. Bury Cam 3. Bury Cam 4. Ramsbottom Cam 2. Ramsbottom Cam 3. Rawtenstall Cam 2. Bury North Cam 6. Townsend Fold Cam ...",
+      "htmlSnippet": "... Privacy Statement here: railcam.uk/elr/. Bury Cam 3. Bury Cam 4. Ramsbottom Cam \u003cb\u003e2\u003c/b\u003e. Ramsbottom Cam 3. Rawtenstall Cam \u003cb\u003e2\u003c/b\u003e. Bury North Cam 6. Townsend Fold Cam&nbsp;...",
+      "formattedUrl": "https://www.eastlancsrailway.org.uk/railcam/",
+      "htmlFormattedUrl": "https://www.eastlancsrailway.org.uk/railcam/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HcTMwvcGK1nJQ1UTGIKR_fgO-CVgJTL96JjXFwUicYv3FcXCj1F1_BSL&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "og:image": "https://www.eastlancsrailway.org.uk/wp-content/uploads/2022/10/eastlancsrailway-Rail-Cam-Header-1707.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "2560",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "The East Lancashire Railway",
+            "og:title": "RailCam - The East Lancashire Railway",
+            "og:image:height": "1707",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.eastlancsrailway.org.uk/wp-content/themes/elr/img/favicons/ms-icon-144x144.png",
+            "article:modified_time": "2024-08-13T12:34:49+00:00",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+            "og:locale": "en_GB",
+            "og:url": "https://www.eastlancsrailway.org.uk/railcam/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.eastlancsrailway.org.uk/wp-content/uploads/2022/10/eastlancsrailway-Rail-Cam-Header-1707.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

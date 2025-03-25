@@ -1,0 +1,580 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Haggis Wildlife Foundation",
+        "totalResults": "42500",
+        "searchTerms": "Haggis Wildlife Foundation",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Haggis Wildlife Foundation",
+        "totalResults": "42500",
+        "searchTerms": "Haggis Wildlife Foundation",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.186558,
+    "formattedSearchTime": "0.19",
+    "totalResults": "42500",
+    "formattedTotalResults": "42,500"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Haggis Wildlife Foundation",
+      "htmlTitle": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e",
+      "link": "https://haggiswildlifefoundation.com/",
+      "displayLink": "haggiswildlifefoundation.com",
+      "snippet": "Our foundation endeavors to elucidate the intricate ecological dynamics of Scotland's biodiversity. By elevating public awareness and fostering a culture of ...",
+      "htmlSnippet": "Our \u003cb\u003efoundation\u003c/b\u003e endeavors to elucidate the intricate ecological dynamics of Scotland&#39;s biodiversity. By elevating public awareness and fostering a culture of&nbsp;...",
+      "formattedUrl": "https://haggiswildlifefoundation.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSunkLfj9NfqXOqm9ATry8hLogTT2WcDXAJnoORTHWnRdrYBe0eK6h7WIsu&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/11/Wild-Haggis-Haggis-wildlife-foundation-6.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "og:image:width": "1536",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Haggis Wildlife Foundation",
+            "og:title": "Haggis Wildlife Foundation",
+            "og:image:height": "1152",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/10/cropped-all-about-haggis-offical-icon-270x270.png",
+            "og:description": "Haggis Wildlife Foundation. Official archive for documenting Haggis animals. Connecting Wild Haggis Animal Enthusiasts World Wide",
+            "article:publisher": "https://www.facebook.com/HaggisWildlifeFoundation/",
+            "twitter:site": "@HaggisWildlife",
+            "article:modified_time": "2025-03-16T17:00:15+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://haggiswildlifefoundation.com/",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "webpage": [
+          {
+            "image": "https://haggiswildlifefoundation.com/wp-content/uploads/2025/03/wild-haggis-animal.jpg",
+            "maincontentofpage": "THE OFFICIAL SITE OF SCOTLAND'S WILD HAGGIS ANIMALSFounded in 1892 we are the Official archive and leading publisher committed to documenting and preserving the legend of Scotland's elusive...",
+            "headline": "The Legendary Scottish Haggi"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/11/Wild-Haggis-Haggis-wildlife-foundation-6.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Haggis Wildlife Foundation - YouTube",
+      "htmlTitle": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e - YouTube",
+      "link": "https://www.youtube.com/@HaggisWildlifeFoundation",
+      "displayLink": "www.youtube.com",
+      "snippet": "Journey into the misty forests and rugged highlands of Scotland to discover the secret world of wild haggis animals in this captivating documentary series.",
+      "htmlSnippet": "Journey into the misty forests and rugged highlands of Scotland to discover the secret world of \u003cb\u003ewild haggis\u003c/b\u003e animals in this captivating documentary series.",
+      "formattedUrl": "https://www.youtube.com/@HaggisWildlifeFoundation",
+      "htmlFormattedUrl": "https://www.youtube.com/@\u003cb\u003eHaggisWildlifeFoundation\u003c/b\u003e",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Haggis Wildlife Foundation",
+            "url": "https://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgFSN5foC3dZYZJdHqXqZ0x8QvV9f4JmQUaqvjfTKsGXBi8LSEIOPZ0udf&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/IqJEhlxygxTAGI9Dc9Ak1nI9rySI-XbQqPF0XpiXBV0CtXvAcDAlHkVqI9YX1Y-NzQsyANDGeQ=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "Haggis Wildlife Foundation",
+            "url": "https://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/@HaggisWildlifeFoundation?referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://yt3.googleusercontent.com/IqJEhlxygxTAGI9Dc9Ak1nI9rySI-XbQqPF0XpiXBV0CtXvAcDAlHkVqI9YX1Y-NzQsyANDGeQ=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA",
+            "twitter:app:id:googleplay": "com.google.android.youtube",
+            "theme-color": "rgba(255, 255, 255, 0.9)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/@HaggisWildlifeFoundation",
+            "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA",
+            "al:android:package": "com.google.android.youtube",
+            "twitter:app:name:googleplay": "YouTube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "Welcome To The Fascinating World Of Wild Scottish Haggis Animals.\n\nUnravel the mysteries of Scotland's most elusive mythical creature, the wild haggis. With a mix of animated tales, folklore explorations, and comical adventures, our channel promises a unique blend of education and entertainment. \n\nSubscribe today and join our growing community of haggis enthusiasts!",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/IqJEhlxygxTAGI9Dc9Ak1nI9rySI-XbQqPF0XpiXBV0CtXvAcDAlHkVqI9YX1Y-NzQsyANDGeQ=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "twitter:title": "Haggis Wildlife Foundation",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Haggis Wildlife Foundation",
+            "og:image:height": "900",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "https://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA?feature=applinks",
+            "og:video:tag": "Scottish",
+            "al:android:url": "https://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA?feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:url:googleplay": "https://www.youtube.com/channel/UCLZu0Rd9O2uQbOgz2uWEhpA",
+            "twitter:app:name:ipad": "YouTube",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "Welcome To The Fascinating World Of Wild Scottish Haggis Animals.\n\nUnravel the mysteries of Scotland's most elusive mythical creature, the wild haggis. With a mix of animated tales, folklore explorations, and comical adventures, our channel promises a unique blend of education and entertainment. \n\nSubscribe today and join our growing community of haggis enthusiasts!",
+            "og:url": "https://www.youtube.com/@HaggisWildlifeFoundation",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://yt3.googleusercontent.com/IqJEhlxygxTAGI9Dc9Ak1nI9rySI-XbQqPF0XpiXBV0CtXvAcDAlHkVqI9YX1Y-NzQsyANDGeQ=s900-c-k-c0x00ffffff-no-rj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Shop - Haggis Wildlife Foundation",
+      "htmlTitle": "Shop - \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e",
+      "link": "https://haggiswildlifefoundation.com/shop/",
+      "displayLink": "haggiswildlifefoundation.com",
+      "snippet": "Classic Haggis Wildlife Foundation Unisex t-shirt ... 20.00 ...",
+      "htmlSnippet": "Classic \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e Unisex t-shirt ... 20.00&nbsp;...",
+      "formattedUrl": "https://haggiswildlifefoundation.com/shop/",
+      "htmlFormattedUrl": "https://\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e.com/shop/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3b9TwLryWm7NS-ehLZkAngGrtKdFbXKA12sWyh0tcE5ZE_QuU4xVp_s&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/12/wild-haggis-animal.webp",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1536",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Haggis Wildlife Foundation",
+            "og:title": "Shop - Haggis Wildlife Foundation",
+            "og:image:height": "1152",
+            "og:image:type": "image/webp",
+            "msapplication-tileimage": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/10/cropped-all-about-haggis-offical-icon-270x270.png",
+            "og:description": "haggis wildlife foundation website shop page",
+            "article:publisher": "https://www.facebook.com/HaggisWildlifeFoundation/",
+            "twitter:site": "@HaggisWildlife",
+            "article:modified_time": "2025-02-16T17:25:09+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://haggiswildlifefoundation.com/shop/",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "webpage": [
+          {
+            "maincontentofpage": "Show: 6122436Classic Haggis Wildlife Foundation Unisex t-shirt £20.00Embroidered Scotland’s Wild Haggis Unisex Hoodie £35.00Embroidered Scotland’s Wild Haggis Unisex Sweatshirt £35.00Endange..."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/12/wild-haggis-animal.webp"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Haggis Wildlife Foundation",
+      "htmlTitle": "Profile for \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e",
+      "link": "https://www.facebook.com/HaggisWildlifeFoundation/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Haggis Wildlife Foundation ... Founded in 1892 we are the official archive and publisher for documenting and preserving Scotland's Wild Haggis Animal. 󱙶. Follow.",
+      "htmlSnippet": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e ... Founded in 1892 we are the official archive and publisher for documenting and preserving Scotland&#39;s Wild Haggis Animal. 󱙶. Follow.",
+      "formattedUrl": "https://www.facebook.com/HaggisWildlifeFoundation/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eHaggisWildlifeFoundation\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJa6OPZej2RWMqYaXJ0Sg1ze9XIr70-Xj_TtX-zUgzyz-0A8DUkHvMHL0&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "SocialMediaPosting": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/61551670842515",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61551670842515",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/61551670842515",
+            "og:description": "Haggis Wildlife Foundation, Selkirk. 8,493 likes · 23,394 talking about this · 2 were here. Founded in 1892 we are the official archive and publisher for documenting and preserving Scotland's Wild...",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61551670842515",
+            "twitter:image:alt": "Haggis Wildlife Foundation | Selkirk",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Haggis Wildlife Foundation | Selkirk",
+            "twitter:title": "Haggis Wildlife Foundation | Selkirk",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Haggis Wildlife Foundation | Selkirk",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/61551670842515",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Haggis Wildlife Foundation, Selkirk. 8,493 likes · 23,394 talking about this · 2 were here. Founded in 1892 we are the official archive and publisher for documenting and preserving Scotland's Wild...",
+            "og:locale": "en_US",
+            "fb-version": "453.0.0.0.62:2768",
+            "og:url": "https://www.facebook.com/HaggisWildlifeFoundation/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61551670842515"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Wild Haggis Animal Species",
+      "htmlTitle": "\u003cb\u003eWild Haggis\u003c/b\u003e Animal Species",
+      "link": "https://haggiswildlifefoundation.com/wild-haggis-species/",
+      "displayLink": "haggiswildlifefoundation.com",
+      "snippet": "All known haggis species descend from nine main ancestral types, forming the foundation of haggis biodiversity.",
+      "htmlSnippet": "All known \u003cb\u003ehaggis\u003c/b\u003e species descend from nine main ancestral types, forming the \u003cb\u003efoundation\u003c/b\u003e of \u003cb\u003ehaggis\u003c/b\u003e biodiversity.",
+      "formattedUrl": "https://haggiswildlifefoundation.com/wild-haggis-species/",
+      "htmlFormattedUrl": "https://\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e.com/wild-\u003cb\u003ehaggis\u003c/b\u003e-species/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVu1sn6WetzezvMWVBOCa-FdoP3CTH1jumd1xeoYPpLaNJZHtR13hXxT4&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/11/Wild-Haggis-Animals-Haggis-wildlife-Foundation-49.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1536",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Haggis Wildlife Foundation",
+            "og:title": "Wild Haggis Animal Species",
+            "og:image:height": "1152",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/10/cropped-all-about-haggis-offical-icon-270x270.png",
+            "og:description": "Wild Haggis Species. Haggis variants across distinct Scottish region. There are nine main species of Scotland's wild haggis animal.",
+            "article:publisher": "https://www.facebook.com/HaggisWildlifeFoundation/",
+            "twitter:data1": "1 minute",
+            "twitter:site": "@HaggisWildlife",
+            "article:modified_time": "2024-11-04T09:26:54+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://haggiswildlifefoundation.com/wild-haggis-species/",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "webpage": [
+          {
+            "maincontentofpage": "REGIONAL VARIABILITY OF HAGGI SPP(Scoticus terram Scotibeastius)ACROSS THE SCOTTISH LANDSCAPE: The complex biogeographical tapestry of Scotland has long fascinated biologists and ecologists,...",
+            "headline": "Argyll And Bute"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://haggiswildlifefoundation.com/wp-content/uploads/2023/11/Wild-Haggis-Animals-Haggis-wildlife-Foundation-49.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Fascinating World of Wild Scottish Haggis Animals : r/Scotland",
+      "htmlTitle": "The Fascinating World of \u003cb\u003eWild\u003c/b\u003e Scottish \u003cb\u003eHaggis\u003c/b\u003e Animals : r/Scotland",
+      "link": "https://www.reddit.com/r/Scotland/comments/1dnnnzf/the_fascinating_world_of_wild_scottish_haggis/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Jun 24, 2024 ... 716 votes, 53 comments. 559K subscribers in the Scotland community. A community for Scotland related news, events, recommendations, ...",
+      "htmlSnippet": "Jun 24, 2024 \u003cb\u003e...\u003c/b\u003e 716 votes, 53 comments. 559K subscribers in the Scotland community. A community for Scotland related news, events, recommendations,&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/.../the_fascinating_world_of_wild_scottish_haggis...",
+      "htmlFormattedUrl": "https://www.reddit.com/r/.../the_fascinating_world_of_wild_scottish_\u003cb\u003ehaggis\u003c/b\u003e...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUB20ZGBO-XElPBRmHeKV9K1-8gH9VvP-nnpX9dmDdUaFaQNEiFs0Sbco_&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://external-preview.redd.it/the-fascinating-world-of-wild-scottish-haggis-animals-v0-ZWdqd2M0eDJ5azhkMTqF66Oru8rVaIBOwLQZ9wPkgzypYv3QjBI4XLg4i7-W.png?width=1080&crop=smart&format=pjpg&auto=webp&s=2d94f09c8521b59fff2e7fbf71b8ca758ef4e0f4",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/Scotland on Reddit: The Fascinating World of Wild Scottish Haggis Animals",
+            "og:site_name": "Reddit",
+            "og:title": "r/Scotland on Reddit: The Fascinating World of Wild Scottish Haggis Animals",
+            "og:image:height": "607",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Life-Rush722 - 716 votes and 53 comments",
+            "twitter:image": "https://external-preview.redd.it/the-fascinating-world-of-wild-scottish-haggis-animals-v0-ZWdqd2M0eDJ5azhkMTqF66Oru8rVaIBOwLQZ9wPkgzypYv3QjBI4XLg4i7-W.png?width=1080&crop=smart&format=pjpg&auto=webp&s=2d94f09c8521b59fff2e7fbf71b8ca758ef4e0f4",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/Scotland/comments/1dnnnzf/the_fascinating_world_of_wild_scottish_haggis/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-preview.redd.it/the-fascinating-world-of-wild-scottish-haggis-animals-v0-ZWdqd2M0eDJ5azhkMTqF66Oru8rVaIBOwLQZ9wPkgzypYv3QjBI4XLg4i7-W.png?width=1080&crop=smart&format=pjpg&auto=webp&s=2d94f09c8521b59fff2e7fbf71b8ca758ef4e0f4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Hats – Haggis Wildlife Foundation",
+      "htmlTitle": "Hats – \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e",
+      "link": "https://haggiswildlifefoundationshop.com/collections/wild-haggis-hunting-hats",
+      "displayLink": "haggiswildlifefoundationshop.com",
+      "snippet": "At Haggis Wildlife Foundation, we invite you to step into a world of mythical charm with our exclusive Wild Haggis Animal hat collection. The Wild Haggis, a ...",
+      "htmlSnippet": "At \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e, we invite you to step into a world of mythical charm with our exclusive Wild Haggis Animal hat collection. The Wild Haggis, a&nbsp;...",
+      "formattedUrl": "https://haggiswildlifefoundationshop.com/.../wild-haggis-hunting-hats",
+      "htmlFormattedUrl": "https://\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003eshop.com/.../wild-\u003cb\u003ehaggis\u003c/b\u003e-hunting-hats",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJXGnCWDwrG-ahMfuAzKaSMkcmiirXGLmlnT5MEfmH2huLa__Hg4MwdY&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "organization": [
+          {
+            "logo": "https://haggiswildlifefoundationshop.com/cdn/shop/files/last.png?v=1731320017&width=300",
+            "url": "https://haggiswildlifefoundationshop.com/"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://haggiswildlifefoundationshop.com/cdn/shop/files/wqq.jpg?v=1731313927",
+            "theme-color": "#455643",
+            "og:type": "website",
+            "og:image:width": "2392",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Hats",
+            "og:site_name": "Haggis Wildlife Foundation",
+            "og:title": "Hats",
+            "og:image:height": "1344",
+            "shopify-checkout-api-token": "3334952baf186a76a220b71c07760f18",
+            "og:description": "Discover the Wild Haggis Animal At Haggis Wildlife Foundation, we invite you to step into a world of mythical charm with our exclusive Wild Haggis Animal hat collection. The Wild Haggis, a creature of legend and folklore, takes center stage in our unique designs, offering you a chance to embrace the wild and make a bol",
+            "og:image:secure_url": "https://haggiswildlifefoundationshop.com/cdn/shop/files/wqq.jpg?v=1731313927",
+            "twitter:site": "@",
+            "viewport": "width=device-width,initial-scale=1",
+            "twitter:description": "Discover the Wild Haggis Animal At Haggis Wildlife Foundation, we invite you to step into a world of mythical charm with our exclusive Wild Haggis Animal hat collection. The Wild Haggis, a creature of legend and folklore, takes center stage in our unique designs, offering you a chance to embrace the wild and make a bol",
+            "shopify-digital-wallet": "/79215034699/digital_wallets/dialog",
+            "og:url": "https://haggiswildlifefoundationshop.com/collections/wild-haggis-hunting-hats"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://haggiswildlifefoundationshop.com/cdn/shop/files/wqq.jpg?v=1731313927"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Haggis Wildlife Foundation (@haggisanimal) • Instagram photos ...",
+      "htmlTitle": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e (@haggisanimal) • Instagram photos ...",
+      "link": "https://www.instagram.com/haggisanimal/?hl=en",
+      "displayLink": "www.instagram.com",
+      "snippet": "Welcome To The Fascinating World Of Wild Scottish Haggis Animals #haggisanimal #wildhaggis ... Photo by Haggis Wildlife Foundation on March 24, 2025. May be an ...",
+      "htmlSnippet": "Welcome To The Fascinating World Of Wild Scottish Haggis Animals #haggisanimal #wildhaggis ... Photo by \u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e on March 24, 2025. May be an&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/haggisanimal/?hl=en",
+      "htmlFormattedUrl": "https://www.instagram.com/\u003cb\u003ehaggis\u003c/b\u003eanimal/?hl=en",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-3.cdninstagram.com/v/t51.2885-19/475536548_9105490229498161_4289515526736309045_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=M4gZVDlIj8sQ7kNvgH1LxWP&_nc_oc=AdkdIL2Io0Pl1M8xYrLAmB6dcCU7kQp4hVrNY_2WIOxssPSUMebnxP9OQ7uJhCz3jpg&_nc_zt=24&_nc_ht=scontent-atl3-3.cdninstagram.com&oh=00_AYFu2m1sms4_Wsum_RIBNYcE3ZVKKy940gxVBtgAoiSaXw&oe=67E88452",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Haggis Wildlife Foundation (@haggisanimal) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=haggisanimal",
+            "color-scheme": "light",
+            "og:description": "44K Followers, 204 Following, 142 Posts - See Instagram photos and videos from Haggis Wildlife Foundation (@haggisanimal)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/haggisanimal/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/haggisanimal/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-3.cdninstagram.com/v/t51.2885-19/475536548_9105490229498161_4289515526736309045_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=109&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=M4gZVDlIj8sQ7kNvgH1LxWP&_nc_oc=AdkdIL2Io0Pl1M8xYrLAmB6dcCU7kQp4hVrNY_2WIOxssPSUMebnxP9OQ7uJhCz3jpg&_nc_zt=24&_nc_ht=scontent-atl3-3.cdninstagram.com&oh=00_AYFu2m1sms4_Wsum_RIBNYcE3ZVKKy940gxVBtgAoiSaXw&oe=67E88452"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Haggis Wildlife Foundation (@haggiswildlifefoundation) | TikTok",
+      "htmlTitle": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e (@\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e) | TikTok",
+      "link": "https://www.tiktok.com/@haggiswildlifefoundation",
+      "displayLink": "www.tiktok.com",
+      "snippet": "Haggis Wildlife Foundation (@haggiswildlifefoundation) on TikTok | 1.1M Likes. 35.9K Followers. Welcome To The Fascinating World Of Wild Scottish Haggis ...",
+      "htmlSnippet": "\u003cb\u003eHaggis Wildlife Foundation\u003c/b\u003e (@\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e) on TikTok | 1.1M Likes. 35.9K Followers. Welcome To The Fascinating World Of Wild Scottish Haggis&nbsp;...",
+      "formattedUrl": "https://www.tiktok.com/@haggiswildlifefoundation",
+      "htmlFormattedUrl": "https://www.tiktok.com/@\u003cb\u003ehaggiswildlifefoundation\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Ra83H9ePV_cU8jKei_VksaiShXp0vLlD51_oTZ2y54JWVLTZC01bsow&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:app:id:googleplay": "com.zhiliaoapp.musically",
+            "og:image": "https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/2e84178dbbc9821b2c1064dafff10fbd~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=00f73495&x-expires=1742875200&x-signature=aN23Y2ToAy2Z00Yt1%2B3jPwtAnf0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+            "twitter:card": "summary",
+            "og:image:width": "360",
+            "og:site_name": "TikTok",
+            "applicable-device": "pc, mobile",
+            "al:android:package": "com.zhiliaoapp.musically",
+            "pumbaa-ctx": "login=0,ftc=0",
+            "al:ios:url": "snssdk1233://user/profile/",
+            "twitter:app:id:iphone": "835599320",
+            "og:description": "Haggis Wildlife Foundation (@haggiswildlifefoundation) on TikTok | 1.1M Likes. 35.9K Followers. Welcome To The Fascinating World Of Wild Scottish Haggis Animals.Watch the latest video from Haggis Wildlife Foundation (@haggiswildlifefoundation).",
+            "al:ios:app_store_id": "835599320",
+            "twitter:image": "https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/2e84178dbbc9821b2c1064dafff10fbd~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=00f73495&x-expires=1742875200&x-signature=aN23Y2ToAy2Z00Yt1%2B3jPwtAnf0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+            "twitter:site": "TikTok",
+            "og:type": "website",
+            "twitter:title": "Haggis Wildlife Foundation (@haggiswildlifefoundation) | TikTok",
+            "og:image:alt": "Haggis Wildlife Foundation (@haggiswildlifefoundation) | TikTok",
+            "al:ios:app_name": "musical.ly",
+            "og:title": "Haggis Wildlife Foundation (@haggiswildlifefoundation) | TikTok",
+            "og:image:height": "360",
+            "google": "notranslate",
+            "al:android:url": "snssdk1233://user/profile/",
+            "fb:app_id": "597615686992125",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no",
+            "twitter:description": "Haggis Wildlife Foundation (@haggiswildlifefoundation) on TikTok | 1.1M Likes. 35.9K Followers. Welcome To The Fascinating World Of Wild Scottish Haggis Animals.Watch the latest video from Haggis Wildlife Foundation (@haggiswildlifefoundation).",
+            "og:url": "https://www.tiktok.com/@haggiswildlifefoundation",
+            "al:android:app_name": "musical.ly",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.tiktok.com/api/img/?itemId=7483185341176876290&location=0&aid=1988"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Wild haggis - Wikipedia",
+      "htmlTitle": "\u003cb\u003eWild haggis\u003c/b\u003e - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Wild_haggis",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "Wild haggis is a fictional creature of Scottish folklore, said to be native to the Scottish Highlands. It is comically claimed to be the source of haggis, ...",
+      "htmlSnippet": "\u003cb\u003eWild haggis\u003c/b\u003e is a fictional creature of Scottish folklore, said to be native to the Scottish Highlands. It is comically claimed to be the source of \u003cb\u003ehaggis\u003c/b\u003e,&nbsp;...",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Wild_haggis",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/Wild_\u003cb\u003ehaggis\u003c/b\u003e",
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin",
+            "og:image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Haggis_scoticus.jpg",
+            "theme-color": "#eaecf0",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": "Wild haggis - Wikipedia",
+            "og:image:height": "900",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - xc magazine ",
+        "totalResults": "11500000",
+        "searchTerms": "xc magazine ",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - xc magazine ",
+        "totalResults": "11500000",
+        "searchTerms": "xc magazine ",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.198072,
+    "formattedSearchTime": "0.20",
+    "totalResults": "11500000",
+    "formattedTotalResults": "11,500,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Cross Country Magazine",
+      "htmlTitle": "\u003cb\u003eCross Country Magazine\u003c/b\u003e",
+      "link": "https://xcmag.com/",
+      "displayLink": "xcmag.com",
+      "snippet": "Helping you fly better with expert advice and know-how. Learn fast with our Skill and technique articles. Gain new flying knowledge and skills today in bite- ...",
+      "htmlSnippet": "Helping you fly better with expert advice and know-how. Learn fast with our Skill and technique articles. Gain new flying knowledge and skills today in bite-&nbsp;...",
+      "formattedUrl": "https://xcmag.com/",
+      "htmlFormattedUrl": "https://xcmag.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOQ56bOunVJGJdjRYqYIiX6jAxTak6YAj6l9DRWtIfh71ZQMha0-8HSc&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2024/12/cross-country-magazine-home.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Cross Country Magazine",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "Cross Country Magazine",
+            "og:image:height": "675",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Cross Country is an international free flight magazine. We cover paragliding, paramotoring and hang gliding – news, reviews, travel and adventure",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2024-12-10T12:44:33+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Cross Country is an international free flight magazine. We cover paragliding, paramotoring and hang gliding – news, reviews, travel and adventure",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2024/12/cross-country-magazine-home.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - XC-magazine thrustworthy? - new - Paragliding Forum",
+      "htmlTitle": "View topic - XC-magazine thrustworthy? - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p685945",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Mar 10, 2024 ... Just recently I made the decision to cancel my subscription to XC-mag. The reason behind this is that there have been several reviews in the ...",
+      "htmlSnippet": "Mar 10, 2024 \u003cb\u003e...\u003c/b\u003e Just recently I made the decision to cancel my subscription to \u003cb\u003eXC\u003c/b\u003e-\u003cb\u003emag\u003c/b\u003e. The reason behind this is that there have been several reviews in the&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p685945",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p685945",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding shop | Free flight gear, books and clothing",
+      "htmlTitle": "Paragliding shop | Free flight gear, books and clothing",
+      "link": "https://xcmag.com/shop/",
+      "displayLink": "xcmag.com",
+      "snippet": "XC Mag Logo. Join Us. Facebook · Twitter · Telegram · Instagram · YouTube. Copyright Cross Country Magazine Cross Country International Ltd, Tollgate, ...",
+      "htmlSnippet": "\u003cb\u003eXC Mag\u003c/b\u003e Logo. Join Us. Facebook &middot; Twitter &middot; Telegram &middot; Instagram &middot; YouTube. Copyright \u003cb\u003eCross Country Magazine\u003c/b\u003e Cross Country International Ltd, Tollgate,&nbsp;...",
+      "formattedUrl": "https://xcmag.com/shop/",
+      "htmlFormattedUrl": "https://xcmag.com/shop/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkOQ56bOunVJGJdjRYqYIiX6jAxTak6YAj6l9DRWtIfh71ZQMha0-8HSc&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Understanding-the-Sky-2022-Cover.jpg",
+            "name": "Understanding the Sky – New Edition"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/XCPee-Base-Kit-v2.jpg",
+            "name": "XCPee Base Kit"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Paragliding-The-beginners-guide-cover.jpg",
+            "name": "Paragliding: The Beginner’s Guide"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Thermal-Flying-Third-Edition-Cover.jpg",
+            "name": "Thermal Flying"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/Head-in-the-Clouds-Main.jpg",
+            "name": "Head in the Clouds"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/SRS-Glider-Trimmer-01-1.jpg",
+            "name": "SRS Glider Trimmer"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg",
+            "name": "XC K2 Brake Mittens"
+          },
+          {
+            "image": "https://xcmag.com/wp-content/uploads/2022/09/RADIO-HEADSETS-MAIN.jpg",
+            "name": "XC Radio Headset"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2024/12/cross-country-magazine-home.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "XCMag shop",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "XCmag Shop",
+            "og:image:height": "675",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "The Cross Country shop sells paragliding books, paramotoring books and free-flight clothing and accessories",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2024-12-10T12:46:05+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "The Cross Country shop sells paragliding books, paramotoring books and free-flight clothing and accessories",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/shop/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2024/12/cross-country-magazine-home.jpg"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Understanding the Sky – New Edition",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Understanding-the-Sky-2022-Cover.jpg"
+          },
+          {
+            "fn": "XCPee Base Kit",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/XCPee-Base-Kit-v2.jpg"
+          },
+          {
+            "fn": "Paragliding: The Beginner’s Guide",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Paragliding-The-beginners-guide-cover.jpg"
+          },
+          {
+            "fn": "Thermal Flying",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Thermal-Flying-Third-Edition-Cover.jpg"
+          },
+          {
+            "fn": "Head in the Clouds",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/Head-in-the-Clouds-Main.jpg"
+          },
+          {
+            "fn": "SRS Glider Trimmer",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/SRS-Glider-Trimmer-01-1.jpg"
+          },
+          {
+            "fn": "XC K2 Brake Mittens",
+            "photo": "https://xcmag.com/wp-content/uploads/2024/05/XC-K2-Brake-Mittens-01.jpg"
+          },
+          {
+            "fn": "XC Radio Headset",
+            "photo": "https://xcmag.com/wp-content/uploads/2022/09/RADIO-HEADSETS-MAIN.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Cross Country Magazine",
+      "htmlTitle": "Profile for \u003cb\u003eCross Country Magazine\u003c/b\u003e",
+      "link": "https://www.facebook.com/xcmag/",
+      "displayLink": "www.facebook.com",
+      "snippet": "They say it's “engineered to elevate your paragliding experience with cutting-edge features and unparalleled precision”. More at · XC Tracer Maxx III unveiled.",
+      "htmlSnippet": "They say it&#39;s “engineered to elevate your paragliding experience with cutting-edge features and unparalleled precision”. More at &middot; \u003cb\u003eXC\u003c/b\u003e Tracer Maxx III unveiled.",
+      "formattedUrl": "https://www.facebook.com/xcmag/",
+      "htmlFormattedUrl": "https://www.facebook.com/xcmag/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvnIS5PnhUPNPWL5GpUs7mpTujI3UjW-CkFw-4c5oqX-vNWs4hWZPPtU&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "SocialMediaPosting": [
+          {}
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100063890705820",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063890705820",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100063890705820",
+            "og:description": "Cross Country Magazine, Lewes, East Sussex. 60,092 likes · 218 talking about this · 96 were here. International Free Flying Magazine\n In the core, since 1988",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063890705820",
+            "twitter:image:alt": "Cross Country Magazine | Lewes",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Cross Country Magazine | Lewes",
+            "twitter:title": "Cross Country Magazine | Lewes",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Cross Country Magazine | Lewes",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100063890705820",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Cross Country Magazine, Lewes, East Sussex. 60,092 likes · 218 talking about this · 96 were here. International Free Flying Magazine\n In the core, since 1988",
+            "og:locale": "en_US",
+            "fb-version": "453.0.0.0.62:2768",
+            "og:url": "https://www.facebook.com/xcmag/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063890705820"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Latest Issue | Out Now - Cross Country Magazine",
+      "htmlTitle": "Latest Issue | Out Now - Cross Country Magazine",
+      "link": "https://xcmag.com/current-issue/",
+      "displayLink": "xcmag.com",
+      "snippet": "Features · Blowing Up · Tunnel vision · Winter Eigertour 101 · Bar hopping Fiji style · Dune addiction. Bryan van Ostheim designs giant kites for cargo ships – ...",
+      "htmlSnippet": "Features &middot; Blowing Up &middot; Tunnel vision &middot; Winter Eigertour 101 &middot; Bar hopping Fiji style &middot; Dune addiction. Bryan van Ostheim designs giant kites for cargo ships –&nbsp;...",
+      "formattedUrl": "https://xcmag.com/current-issue/",
+      "htmlFormattedUrl": "https://xcmag.com/current-issue/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxAp0CTOdXdmXnLFDxzNZ8rTkE6CsjV6DqBpARHOnidLAaTWiCeGDKaXXS&s",
+            "width": "316",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2025/03/cross-country-issue-256-f-jeff-hamann-fiji.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "og:image:width": "2560",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "og:title": "Current Issue",
+            "og:image:height": "1290",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "Join us in celebrating the diversity in our sport, from winter ski-and-fly to cross-country flying adventures.",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "article:modified_time": "2025-03-03T09:43:33+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/current-issue/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2025/03/cross-country-issue-256-f-jeff-hamann-fiji.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cross Country USA Magazine: HOME",
+      "htmlTitle": "\u003cb\u003eCross Country\u003c/b\u003e USA \u003cb\u003eMagazine\u003c/b\u003e: HOME",
+      "link": "https://www.crosscountryusamagazine.com/",
+      "displayLink": "www.crosscountryusamagazine.com",
+      "snippet": "Your printed source for Christian & Positive Country music news, charts, artist features and more! CLICK HERE TO VIEW DIGITAL EDITION. IN THIS ISSUE ...",
+      "htmlSnippet": "Your printed source for Christian &amp; Positive Country music news, charts, artist features and more! CLICK HERE TO VIEW DIGITAL EDITION. IN THIS ISSUE&nbsp;...",
+      "formattedUrl": "https://www.crosscountryusamagazine.com/",
+      "htmlFormattedUrl": "https://www.crosscountryusa\u003cb\u003emagazine\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJuHQPt6drREgCuS5gIR_ezBgLwUEsrT1qnOFU8wUQ3jv33lMC2baVOM&s",
+            "width": "169",
+            "height": "216"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "HOME | Cross Country USA Magazine",
+            "og:site_name": "CC Mag",
+            "skype_toolbar": "skype_toolbar_parser_compatible",
+            "viewport": "width=320, user-scalable=yes",
+            "og:title": "HOME | Cross Country USA Magazine",
+            "og:url": "https://www.crosscountryusamagazine.com",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://static.wixstatic.com/media/aa670e_6a0aa010804d48988f057c03c920a2bd~mv2.jpg/v1/fill/w_169,h_216,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/March%202025.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Staccato XC no longer compatible w 3rd party mags : r/2011",
+      "htmlTitle": "Staccato \u003cb\u003eXC\u003c/b\u003e no longer compatible w 3rd party mags : r/2011",
+      "link": "https://www.reddit.com/r/2011/comments/1g59tb5/staccato_xc_no_longer_compatible_w_3rd_party_mags/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 17, 2024 ... Absolutely dumb business move but excited as someone about to put my XC up for sale. Didn't think mag compatibility would be a distinguishing ...",
+      "htmlSnippet": "Oct 17, 2024 \u003cb\u003e...\u003c/b\u003e Absolutely dumb business move but excited as someone about to put my \u003cb\u003eXC\u003c/b\u003e up for sale. Didn&#39;t think \u003cb\u003emag\u003c/b\u003e compatibility would be a distinguishing&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../staccato_xc_no_longer_compatible_w_3rd_part...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../staccato_\u003cb\u003exc\u003c/b\u003e_no_longer_compatible_w_3rd_part...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMMvNxvuIkYg6u3BpDifdoc0UwLkH9HjZRPCUgA-itYRC2rFZXyCbJoQ&s",
+            "width": "321",
+            "height": "157"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/staccato-xc-no-linger-compatible-w-3rd-party-mags-v0-j9xo6qhljdod1.jpeg?width=1080&crop=smart&auto=webp&s=2787f91c6ef10767c08af7859c0bcbb7e20cdb1a",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/2011 on Reddit: Staccato XC no longer compatible w 3rd party mags",
+            "og:site_name": "Reddit",
+            "og:title": "r/2011 on Reddit: Staccato XC no longer compatible w 3rd party mags",
+            "og:image:height": "529",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/greatestging - 34 votes and 53 comments",
+            "twitter:image": "https://preview.redd.it/staccato-xc-no-linger-compatible-w-3rd-party-mags-v0-j9xo6qhljdod1.jpeg?width=1080&crop=smart&auto=webp&s=2787f91c6ef10767c08af7859c0bcbb7e20cdb1a",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/2011/comments/1g59tb5/staccato_xc_no_longer_compatible_w_3rd_party_mags/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/staccato-xc-no-linger-compatible-w-3rd-party-mags-v0-j9xo6qhljdod1.jpeg?width=1080&crop=smart&auto=webp&s=2787f91c6ef10767c08af7859c0bcbb7e20cdb1a"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cross Country Skier | The Journal of Nordic Skiing - Cross Country ...",
+      "htmlTitle": "\u003cb\u003eCross Country\u003c/b\u003e Skier | The Journal of Nordic Skiing - \u003cb\u003eCross Country\u003c/b\u003e ...",
+      "link": "https://www.crosscountryskier.com/",
+      "displayLink": "www.crosscountryskier.com",
+      "snippet": "Many people dream about leaving their mark on the world; Eric Anderson and Angela Santini, owners of the Active Backwoods Retreat (ABR) Nordic trail system in ...",
+      "htmlSnippet": "Many people dream about leaving their mark on the world; Eric Anderson and Angela Santini, owners of the Active Backwoods Retreat (ABR) Nordic trail system in&nbsp;...",
+      "formattedUrl": "https://www.crosscountryskier.com/",
+      "htmlFormattedUrl": "https://www.crosscountryskier.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0KHoXEssie02ubHaR3EnERHwzKzz0HWKCTaOV2BNHBZV1ax1pRlMt2s&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.crosscountryskier.com/wp-content/uploads/2022/08/thomas-dils-ZEraBEoSRSw-unsplash-2-scaled.jpg",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Skier",
+            "article:modified_time": "2025-01-22T19:43:13+00:00",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1",
+            "og:title": "Cross Country Skier | The Journal of Nordic Skiing - Cross Country Skier",
+            "og:locale": "en_US",
+            "og:url": "https://www.crosscountryskier.com/",
+            "msapplication-tileimage": "https://www.crosscountryskier.com/wp-content/uploads/2017/02/cropped-xcs-vector-red-1-270x270.png",
+            "og:description": "Gear Competition & news Destinations Tips & techniques Latest Issues"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.crosscountryskier.com/wp-content/uploads/2022/08/thomas-dils-ZEraBEoSRSw-unsplash-2-scaled.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "I decided to create a Scion XB (Yokoda XC-S Ingame) magazine : r ...",
+      "htmlTitle": "I decided to create a Scion XB (Yokoda \u003cb\u003eXC\u003c/b\u003e-S Ingame) \u003cb\u003emagazine\u003c/b\u003e : r ...",
+      "link": "https://www.reddit.com/r/MidnightRacingTokyo/comments/jxtj4c/i_decided_to_create_a_scion_xb_yokoda_xcs_ingame/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Nov 20, 2020 ... I decided to create a Scion XB (Yokoda XC-S Ingame) magazine · Comments Section · Community Info Section · More posts you may like. r/ ...",
+      "htmlSnippet": "Nov 20, 2020 \u003cb\u003e...\u003c/b\u003e I decided to create a Scion XB (Yokoda \u003cb\u003eXC\u003c/b\u003e-S Ingame) \u003cb\u003emagazine\u003c/b\u003e &middot; Comments Section &middot; Community Info Section &middot; More posts you may like. r/&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../i_decided_to_create_a_scion_xb_yokoda_xcs_i...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../i_decided_to_create_a_scion_xb_yokoda_xcs_i...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsGKuq24tNEpCZ85LMZziKEjr-F1xSpw-gbtiInBFbPRljRhBy-1HfcFM&s",
+            "width": "190",
+            "height": "265"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/sboogdpvkf061.png?auto=webp&s=4f858b3b02f50efd27f3842c74a68da0bc6dc844",
+            "theme-color": "#000000",
+            "og:image:width": "439",
+            "og:type": "website",
+            "og:image:alt": "a red truck with headlights on",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/MidnightRacingTokyo on Reddit: I decided to create a Scion XB (Yokoda XC-S Ingame) magazine",
+            "og:site_name": "Reddit",
+            "og:title": "r/MidnightRacingTokyo on Reddit: I decided to create a Scion XB (Yokoda XC-S Ingame) magazine",
+            "og:image:height": "613",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/BowlOfSteamedRice - 58 votes and 10 comments",
+            "twitter:image": "https://preview.redd.it/sboogdpvkf061.png?auto=webp&s=4f858b3b02f50efd27f3842c74a68da0bc6dc844",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/MidnightRacingTokyo/comments/jxtj4c/i_decided_to_create_a_scion_xb_yokoda_xcs_ingame/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/sboogdpvkf061.png?auto=webp&s=4f858b3b02f50efd27f3842c74a68da0bc6dc844"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Tifosi Rail XC Cycling Sunglasses Review - Off-Piste Magazine",
+      "htmlTitle": "Tifosi Rail \u003cb\u003eXC\u003c/b\u003e Cycling Sunglasses Review - Off-Piste \u003cb\u003eMagazine\u003c/b\u003e",
+      "link": "https://offpistemag.com/tifosi-rail-xc-affordable-cycling-sunglasses/",
+      "displayLink": "offpistemag.com",
+      "snippet": "May 23, 2023 ... The Tifosi Rail XC — shield-style sunglasses with interchangeable lenses — come at a very reasonable $79. Tifosi Rail XC ...",
+      "htmlSnippet": "May 23, 2023 \u003cb\u003e...\u003c/b\u003e The Tifosi Rail \u003cb\u003eXC\u003c/b\u003e — shield-style sunglasses with interchangeable lenses — come at a very reasonable $79. Tifosi Rail \u003cb\u003eXC\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://offpistemag.com/tifosi-rail-xc-affordable-cycling-sunglasses/",
+      "htmlFormattedUrl": "https://offpistemag.com/tifosi-rail-\u003cb\u003exc\u003c/b\u003e-affordable-cycling-sunglasses/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSixUe3XgY1-bwY-CkrMryjWJqbjb4WneK-gYmiKQ84ydoMSxzmXJ__I8&s",
+            "width": "342",
+            "height": "147"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://offpistemag.com/wp-content/uploads/2023/05/railxc_clarionblue.jpg-e1684116543679.webp",
+            "og:type": "article",
+            "article:published_time": "2023-05-23T12:00:44+00:00",
+            "og:image:width": "664",
+            "og:site_name": "Off-Piste Magazine",
+            "author": "Dave Waag",
+            "og:title": "Tifosi Rail XC Cycling Sunglasses Review - Off-Piste Magazine",
+            "og:image:height": "286",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:image:type": "image/webp",
+            "og:description": "You don't need to spend $200 bucks for quality cycling sunglasses. The Tifosi Rail XC comes in at a very reasonable $79.",
+            "article:publisher": "https://www.instagram.com/offpistemag/",
+            "twitter:data1": "Dave Waag",
+            "twitter:data2": "6 minutes",
+            "article:modified_time": "2025-02-20T23:38:59+00:00",
+            "viewport": "initial-scale=1.0; maximum-scale=4.0; user-scalable=yes",
+            "og:locale": "en_US",
+            "og:url": "https://offpistemag.com/tifosi-rail-xc-affordable-cycling-sunglasses/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://offpistemag.com/wp-content/uploads/2023/05/railxc_clarionblue.jpg-e1684116543679.webp"
+          }
+        ]
+      }
+    }
+  ]
+}

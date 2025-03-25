@@ -1,0 +1,256 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Paragliding Forum",
+        "totalResults": "12800000",
+        "searchTerms": "Paragliding Forum",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Paragliding Forum",
+        "totalResults": "12800000",
+        "searchTerms": "Paragliding Forum",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.281147,
+    "formattedSearchTime": "0.28",
+    "totalResults": "12800000",
+    "formattedTotalResults": "12,800,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Forum - Index - new",
+      "htmlTitle": "\u003cb\u003eParagliding Forum\u003c/b\u003e - Index - new",
+      "link": "https://www.paraglidingforum.com/",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Paragliding Forum - Forum Index · All topics · Gallery. Forum: View all topics · View All Topics+ · View topics with new posts -- Register ...",
+      "htmlSnippet": "\u003cb\u003eParagliding Forum\u003c/b\u003e - Forum Index &middot; All topics &middot; Gallery. Forum: View all topics &middot; View All Topics+ &middot; View topics with new posts -- Register&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View Forum - Beginner, Intermediate and Sport ... - Paragliding Forum",
+      "htmlTitle": "View Forum - Beginner, Intermediate and Sport ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewforum.php?f=37",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Paragliding Forum - Forum Index -\u003e Beginner, Intermediate and Sport wings , 2, 3 ... 16, 17, 18 Next :: Mark all topics read No new posts",
+      "htmlSnippet": "\u003cb\u003eParagliding Forum\u003c/b\u003e - Forum Index -&gt; Beginner, Intermediate and Sport wings , 2, 3 ... 16, 17, 18 Next :: Mark all topics read No new posts",
+      "formattedUrl": "https://www.paraglidingforum.com/viewforum.php?f=37",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/view\u003cb\u003eforum\u003c/b\u003e.php?f=37",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "All Topics - new - Paragliding Forum",
+      "htmlTitle": "All Topics - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/alltopics.php",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Neck pain after long flights ? View latest post :: General Discussion -- Replies: 9 -- Last Post: 24-Mar-25 22:15 ...",
+      "htmlSnippet": "Neck pain after long flights ? View latest post :: General Discussion -- Replies: 9 -- Last Post: 24-Mar-25 22:15&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/alltopics.php",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/alltopics.php",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Ozone Lyght 2-liner C - new - Paragliding Forum",
+      "htmlTitle": "View topic - Ozone Lyght 2-liner C - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p676668",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jun 1, 2024 ... When it comes to stability, they are the best solution anyway, which is why they are standard in skydiving for decades already (and one metallic ...",
+      "htmlSnippet": "Jun 1, 2024 \u003cb\u003e...\u003c/b\u003e When it comes to stability, they are the best solution anyway, which is why they are standard in skydiving for decades already (and one metallic&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p676668",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?p=p676668",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View Forum - Harnesses - new - Paragliding Forum",
+      "htmlTitle": "View Forum - Harnesses - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewforum.php?f=38",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "This topic is locked: you cannot edit posts or make replies. Global Announcement: Search the forum before starting a new topic · View latest post. Replies: 0 ...",
+      "htmlSnippet": "This topic is locked: you cannot edit posts or make replies. Global Announcement: Search the \u003cb\u003eforum\u003c/b\u003e before starting a new topic &middot; View latest post. Replies: 0&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewforum.php?f=38",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/view\u003cb\u003eforum\u003c/b\u003e.php?f=38",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Morocco - PROBLEMS AGAIN! - new - Paragliding Forum",
+      "htmlTitle": "View topic - Morocco - PROBLEMS AGAIN! - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p684932",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jan 15, 2025 ... It seems that now all air arrivals bringing 'parachutes' into Morocco will have to provide an official written permit from the Moroccan CAA to the customs on ...",
+      "htmlSnippet": "Jan 15, 2025 \u003cb\u003e...\u003c/b\u003e It seems that now all air arrivals bringing &#39;parachutes&#39; into Morocco will have to provide an official written permit from the Moroccan CAA to the customs on&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p684932",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?p=p684932",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Advance Lightness 4 - new - Paragliding Forum",
+      "htmlTitle": "View topic - Advance Lightness 4 - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=106755",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "May 23, 2022 ... A wish list for the Lightness 4. - inflatable air protector for small packing size - construction like to the weightless but more robust - at leat 2 color ...",
+      "htmlSnippet": "May 23, 2022 \u003cb\u003e...\u003c/b\u003e A wish list for the Lightness 4. - inflatable air protector for small packing size - construction like to the weightless but more robust - at leat 2 color&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=106755",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?t=106755",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - OZONE / Photon (2 liner EN-C) - new - Paragliding Forum",
+      "htmlTitle": "View topic - OZONE / Photon (2 liner EN-C) - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p654647",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jan 12, 2023 ... Here is some official news on the new Photon. Enjoy. Someone should change the name of the topic since the wing name is now confirmed.",
+      "htmlSnippet": "Jan 12, 2023 \u003cb\u003e...\u003c/b\u003e Here is some official news on the new Photon. Enjoy. Someone should change the name of the topic since the wing name is now confirmed.",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p654647",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?p=p654647",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Skywalk Range Xalps 3 - new - Paragliding Forum",
+      "htmlTitle": "View topic - Skywalk Range Xalps 3 - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=108894",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jan 21, 2023 ... Many new features and tweaks made their way to the RXA3. Most obvious is the more durable construction (especially the pod) I think.",
+      "htmlSnippet": "Jan 21, 2023 \u003cb\u003e...\u003c/b\u003e Many new features and tweaks made their way to the RXA3. Most obvious is the more durable construction (especially the pod) I think.",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=108894",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?t=108894",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - New Niviuk harness Hawk & Arrow ... - Paragliding Forum",
+      "htmlTitle": "View topic - New Niviuk harness Hawk & Arrow ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p667988",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Oct 17, 2023 ... Niviuk has reacted and has now developed a fall-out protection as a retrofit kit, which will soon be available for already delivered Arrow harnesses.",
+      "htmlSnippet": "Oct 17, 2023 \u003cb\u003e...\u003c/b\u003e Niviuk has reacted and has now developed a fall-out protection as a retrofit kit, which will soon be available for already delivered Arrow harnesses.",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p667988",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparaglidingforum\u003c/b\u003e.com/viewtopic.php?p=p667988",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    }
+  ]
+}

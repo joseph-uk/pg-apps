@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>XC Skies</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta charset="utf-8" />
+<link rel="icon" href="/static/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/static/leaflet.css?v=a496d05cd99054446bf78fcd8c521f71" />
+<link rel="stylesheet" href="/static/leaflet-sidebar.css?v=2bd2116b9f148d6e318d726c590aa16e" />
+<link rel="stylesheet" href="/static/L.VisualClick.css?v=677b430beaaf3806cf6a8a699357beec" />
+<link rel="stylesheet" href="/static/flatpickr.min.css?v=6be08266610d122a4148e98cab5b5468" />
+<link rel="stylesheet" href="/static/xc.css?v=0ccd5f5df587531868fcf483310b19d6" />
+<link rel="stylesheet" href="/static/icons/css/xcs.css?v=f985d8f9ee625f20cf6ca29c910bc0fb" />
+<link rel="stylesheet" href="/static/icons/css/animation.css?v=5efb6f925470166045ba28c25131f79a" />
+<script src="/static/d3.v4.min.js?v=6b849bfef462d0ee1373c8276bc1ea74"></script>
+<script src="/static/flatpickr.min.js?v=76de67c64a304f6681fb3357e61cd235"></script>
+<script src="/static/d3-contour.v1.min.js?v=132cc1f9f3414fe2d87f64baa91ff6ba"></script>
+<script src="/static/saveSvgAsPng.js?v=6b789754a483afe23721ee93432ef928"></script>
+<script src="/static/draggable.bundle.min.js?v=f96011a0b82255104c99c9b20cd13b22"></script>
+<script src="/static/sortable.min.js?v=24a9c8ec09ab5dcda740d1f8ea69ccd1"></script>
+<script src="/static/polyfill.min.js?v=feda7666367553913201a1b1e718f865"></script>
+<script src="/static/fetch.umd.min.js?v=074550b4b11d65ca798a73000d22738a"></script>
+
+<script src="/static/leaf.js?v=7a4706ed1a7b5647634f822f2c01139e"></script>
+<script src="/static/xcv3.5.7.js?v=7d848d4279efd8e60cdfd9da020498eb"></script>
+
+<!-- MapLibre GL -->
+<!-- <link href="/static/maplibre-gl.css?v=1fa5e6194ed240e1d03a1f886c3f3076" rel='stylesheet' />
+<script src="/static/maplibre-gl.js?v=471fa8754afce1a7ddb682f8fdee1357"></script>
+<script src="/static/leaflet-maplibre-gl.js?v=f9f25341df6d3a2dbcd31c0f343cfa7a"></script>
+<script src="/static/leaflet-rain.js?v=302ed9827dc28f2bfa5938911d5d88f8"></script> -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLSV8KSWHP"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-TLSV8KSWHP');
+</script>
+</head>
+<body onload="init();getLocation()">
+<div id="tooltip" class="tooltip"></div>
+<div id="tooltip2" class="tooltip2"></div>
+<div id="modifiedlayer" class="leaflet-bottom leaflet-left modlayer"><i class="xx fa-attention"></i></div>
+<div id="sidebar" class="sidebar collapsed hiderangewidget">
+<!-- Nav tabs -->
+<div class="sidebar-tabs">
+<ul role="tablist">
+<li><a href="#home" role="tab"><i class="fa-menu"></i></a></li>
+<li><a href="#favs" role="tab"><i class="fa-star"></i></a></li>
+<li><a href="#settings" role="tab"><i class="fa-cog"></i></a></li>
+<li><a href="#info" role="tab"><i class="fa-info-circled"></i></a></li>
+<!-- <li><a href="javascript:void(0)" role="tab" onclick="getLocation()"><i class="fa-target-2"></i></a></li> -->
+<li><a href="/" role="tab"><i class="fa-home"></i></a></li>
+</ul>
+</div>
+<!-- Tab panes -->
+<div class="sidebar-content">
+<div class="sidebar-pane" id="home">
+<h1 class="sidebar-header">
+<a href="/">XC Skies</a>
+<span class="sidebar-close"><i class="xx fa-left-dir"></i></span>
+</h1>
+<div id="base_layer"></div>
+<div id="opacity"></div>
+<div id="xc_params"></div>
+<hr/>
+<br/>
+<div id="sun_incidence">
+<a id="sun_incidence_a" class="basemapImg" onclick="showSunAngle()">
+<div id="sun_base">
+<img src="/static/images/sun_incidence.jpg" width="38px"/>
+</div>
+</a>
+</div>
+<div>
+<br/><br/>
+<a class="minibtn btnblue" href="https://docs.xcskies.com/home/documentation/xc-skies-layers" target="_blank">Layer details</a>
+<br/><br/>
+<div><a href="/"><img src="/static/images/xcskies_map2.gif"/></a></div>
+<div id="debug"></div>
+</div>
+</div>
+<div class="sidebar-pane" id="favs">
+<h1 class="sidebar-header">
+Profiles
+<span class="sidebar-close"><i class="fa-left-dir"></i></span>
+</h1>
+<div style="text-align:left" id="profile_controls" class="hiderangewidget">
+<a class="minibtn btngreen btnsmall" href="javascript:void(0)" onclick="prepareProfileSave()"><i class="fa-doc-new fa-1x"></i> New</a>
+<a class="minibtn btngrey btnsmall" href="javascript:void(0)" onclick="buildUserProfiles('edit')"><i class="fa-th-list fa-1x"></i> Reorder</a>
+<a class="minibtn btngrey btnsmall" href="/myxcskies" onclick=""><i class="fa-cog fa-1x"></i> Manage</a>
+</div>
+<div style="text-align:left" class="profile_controls_edit hiderangewidget">
+<a class="minibtn btngreen btnsmall" href="javascript:void(0)" onclick="saveProfileEdits()"><i class="fa-ok-circled fa-1x"></i> Save changes</a>
+<a class="minibtn btngrey btnsmall" href="javascript:void(0)" onclick="buildUserProfiles()">Cancel</a>
+<br/><br/>
+<div class="param">Drag profiles to reorder</div>
+</div>
+<div id="xc_profiles">
+
+<div class="msg">
+To use profiles you must have an account and be logged in. Creating an account in XC Skies is free.
+<br/><br/>
+<a class="minibtn btnblue" href="/signup">Create account</a>
+</div>
+
+</div>
+<div style="text-align:left" class="profile_controls_edit hiderangewidget">
+<a class="minibtn btngreen btnsmall" href="javascript:void(0)" onclick="saveProfileEdits()"><i class="fa-ok-circled fa-1x"></i> Save changes</a>
+<a class="minibtn btngrey btnsmall" href="javascript:void(0)" onclick="buildUserProfiles()">Cancel</a>
+</div>
+<br/><br/><br/><br/>
+</div>
+<div class="sidebar-pane" id="info">
+<h1 class="sidebar-header">Help<span class="sidebar-close"><i class="fa-left-dir"></i></span></h1>
+<br/>
+<div class="" style="text-align:center;font-weight:bold">
+<a href="https://docs.xcskies.com/" target="_blank">Documentation</a>
+</div>
+<br/>
+<div class="">
+<a href="https://docs.xcskies.com/home/tutorials" target="_blank">Tutorials</a>
+</div>
+<ul>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/creating-an-account" target="_blank">Signing up</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/user-settings" target="_blank">Setting your experience </a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/creating-profiles" target="_blank"> Setting up your first profile</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/xc-map-basics" target="_blank">Understanding XC Map basics</a>
+</li>
+<br/>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/click-me-the-map" target="_blank">XC Map: Click me!</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/map-plots-in-general" target="_blank">XC Map: Reading plots in general</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/map-comparing-models" target="_blank">XC Map: Compare forecasts at a point</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/map-routes" target="_blank">XC Map: Using route forecasts</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/map-pointcast" target="_blank">XC Map: Using point forecasts</a>
+</li>
+<li>
+<a href="https://docs.xcskies.com/home/tutorials/map-skew-t" target="_blank">XC Map: Using Skew-T forecasts</a>
+</li>
+</ul>
+<br/>
+<small>(links open in new window)</small>
+<br/><br/>
+</div>
+<div class="sidebar-pane" id="settings">
+<h1 class="sidebar-header">Settings & Units<span class="sidebar-close"><i class="xx fa-left-dir"></i></span></h1>
+<div><svg class="opac" id="opacityslider" width="210" height="36"></svg></div>
+<table cellpadding="5" cellspacing="0" border="0" width="100%" >
+<tr>
+<td>
+<div class="unithead">Heights</div>
+<select name="height_unit" onchange="XC.session.hunit=this.value; sethunit()">
+<option value="ft" selected="selected">Feet</option>
+<option value="m">Meters</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Wind Speed</div>
+<select name="windspeed_unit" onchange="XC.session.wunit=this.value;setwunit()">
+<option value="mph" selected="selected">Miles per hour</option>
+<option value="kts">Knots</option>
+<option value="kph">Kilometers per hour</option>
+<option value="ms">Meters per second</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Vertical Speed</div>
+<select name="vertspeed_unit" onchange="XC.session.vunit=this.value;setunitgeneric();">
+<option value="fpm">Feet per minute</option>
+<option value="ms" selected="selected">Meters per second</option>
+<option value="kts">Knots</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Temperature</div>
+<select name="temp_unit" onchange="XC.session.tunit=this.value;setunitgeneric();">
+<option value="f" selected="selected">Fahrenheit (F)</option>
+<option value="c">Celsius (C)</option>
+<option value="k">Kelvin (K)</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Pressure</div>
+<select name="press_unit" onchange="XC.session.mbunit=this.value;setunitgeneric();">
+<option value="mb">Millibars (mb/mbar)</option>
+<option value="hPa">Hectopascals (hPa)</option>
+<option value="mmHg">mm of mercury (mmHg)</option>
+<option value="inHg" selected="selected">in. of mercury (inHg/Hg)</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Precipitation</div>
+<select name="precip_unit" onchange="XC.session.punit=this.value;setunitgeneric();">
+<option value="mm">Millimeters (mm)</option>
+<option value="cm">Centimeters (cm)</option>
+<option value="in">Inches (in)</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Distance</div>
+<select name="distance_unit" onchange="XC.session.dunit=this.value;setunitgeneric();">
+<option value="miles" selected="selected">Miles</option>
+<option value="km">Kilometers</option>
+<option value="nmiles">Nautical miles</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">XC Speed</div>
+<select name="xcspeed_unit" onchange="XC.session.xcunit=this.value;setunitgeneric();">
+<option value="mph" selected="selected">Miles per hour</option>
+<option value="kph">Kilometers per hour</option>
+<option value="kts">Knots</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Timezone offset</div>
+<span class="timezoneoffset"></span> &nbsp;
+( <a href="javascript:void(0)" onclick="showOffsetControl()"><small>Change Offset</small></a> )
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Daylight Overlay</div>
+<div class="unitdesc"><input type="checkbox" value="1" id="nightmask" onclick="_S.nightmask = _S.nightmask ? false : true; updateMiscUI();"/> Show sun path</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Show Plots</div>
+<div id="showplotssection">
+<div id="showplotssectioninner">
+<div>
+<input name="showplots" type="checkbox" value="vels" onclick="setshowplots()"/>Thermal strength
+</div>
+<div>
+<input name="showplots" type="checkbox" value="tis" onclick="setshowplots()"/>Thermal index (TI)
+</div>
+<div>
+<input name="showplots" type="checkbox" value="turbs" onclick="setshowplots()"/>Wind shear
+</div>
+<div>
+<input name="showplots" type="checkbox" value="bs" onclick="setshowplots()"/>Buoyancy / shear ratio
+</div>
+<div>
+<input name="showplots" type="checkbox" value="vvels" onclick="setshowplots()"/>Vertical velocity (large scale)
+</div>
+<div>
+<input name="showplots" type="checkbox" value="clds" onclick="setshowplots()"/>All clouds
+</div>
+<div>
+<input name="showplots" type="checkbox" value="wind" onclick="setshowplots()"/>Wind
+</div>
+<div>
+<input name="showplots" type="checkbox" value="tmps" onclick="setshowplots()"/>Temperature
+</div>
+<div>
+<input name="showplots" type="checkbox" value="dps" onclick="setshowplots()"/>Dew point temperature
+</div>
+<div>
+<input name="showplots" type="checkbox" value="rhs" onclick="setshowplots()"/>Relative humidity
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">PointCast Previous Days</div>
+<div class="unitdesc">
+Select the number of previous days you want to show on the PointCast plots. Showing previous days allows for you to trend
+against prior forecasts as they related to the true conditions.
+</div>
+<br/>
+<select name="pointcastbackdays" onchange="XC.session.pointcastbackdays=this.value;setunitgeneric();fetchPlotSomething(undefined,'force')">
+<option value="1" selected="selected">1 day</option>
+<option value="2">2 days</option>
+<option value="3">3 days</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+<div class="unithead">Glider / Balloon Trajectory</div>
+<div class="unitdesc">
+An experimental concept that helps visualize the path of an object "floating" in a wind field.
+When wind animations are active, a single click on the map will drop a tracer into the flow.
+</div>
+<br/>
+<div class="unitdesc"><input type="checkbox" value="1" id="windtraj" onclick="_S.traj = _S.traj ? false : true;"/> Show object in wind field</div>
+</td>
+</tr>
+</table>
+<br/><br/><br/><br/>
+</div>
+</div>
+</div>
+<div id="windslider">
+<div id="mwindsel"></div>
+<svg class="winda hiderangewidget" id="windsliderinner" width="50" height="400"></svg>
+</div>
+<div id="map" class="sidebar-map">
+<div id="savemain">
+<a id="" class="minibtn btngreen" href="javascript:void(0)" onclick="prepareProfileSave()"><i class="fa-star fa-2x"></i><br/><span class="">Save</span></a>
+</div>
+</div>
+<div id="mapinfobar" class="mapinfo">
+<span id="opacitybox"></span>
+<span id="mapinfobarinner"></span>
+</div>
+<div id="skewtprocontainer" class="hiderangewidget">
+<div id="skewtthumbdiv"></div>
+<div class="skewtprodetails">
+<div class="prodetailhead">Profile Details</div>
+<table class="poptable" style="width: 250px">
+<tr>
+<td width="50%">
+Env. Air Temperature:
+</td>
+<td>
+<span id="skewt_tmp">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Dew point Temperature:
+</td>
+<td>
+<span id="skewt_dp">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Env. Lapse Rate:
+</td>
+<td>
+<span id="skewt_envlr">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Thermal Index (TI) in C:
+</td>
+<td>
+<span id="skewt_ti">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Winds:
+</td>
+<td>
+<span id="skewt_wind">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Pressure Level:
+</td>
+<td>
+<span id="skewt_press">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Altitude:
+</td>
+<td>
+<span id="skewt_alt">-</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="detailprocontainer" class="hiderangewidget">
+<div style="text-align:center" class="prodetailhead">
+<div id="detailprocontainertitle"></div>
+</div>
+<div id="xcscore" class="prodetailhead hiderangewidget">
+XC Score: <span id="pro_score">-</span>
+</div>
+<div id="prodetails">
+<div class="">
+<div class="prodetailhead">Lift</div>
+<table class="poptable">
+<tr>
+<td>
+Top of usable lift:
+</td>
+<td>
+<span id="pro_tol">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Conservative lift top:
+</td>
+<td>
+<span id="pro_conservative">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Boundary layer top:
+</td>
+<td>
+<span id="pro_bl">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Lift above ground:
+</td>
+<td>
+<span id="pro_bldepth">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Surface elevation:
+</td>
+<td>
+<span id="pro_elev">-</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="">
+<div class="prodetailhead">Cloud and Moisture</div>
+<table class="poptable">
+<tr>
+<td>
+Cu Cloud base:
+</td>
+<td>
+<span id="pro_cbase">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Cu Cloud top (estimate):
+</td>
+<td>
+<span id="pro_ctop">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Cu Cloud depth:
+</td>
+<td>
+<span id="pro_cdepth">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Cloud cover max:
+</td>
+<td>
+<span id="pro_cldmax">-</span>
+</td>
+</tr>
+<tr>
+<td>
+RH max (BL):
+</td>
+<td>
+<span id="pro_rhblmax">-</span>
+</td>
+</tr>
+<tr>
+<td>
+RH max (aloft):
+</td>
+<td>
+<span id="pro_rhmax">-</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="">
+<div class="prodetailhead">Weather and Wind</div>
+<table class="poptable">
+<tr>
+<td>
+Precipitation:
+</td>
+<td>
+<span id="pro_precip">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Wind shear max (BL):
+</td>
+<td>
+<span id="pro_turbblmax">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Wind speed avg (BL):
+</td>
+<td>
+<span id="pro_windavg">-</span>
+</td>
+</tr>
+<tr>
+<td>
+BS avg:
+</td>
+<td>
+<span id="pro_bsavg">-</span>
+</td>
+</tr>
+</table>
+</div>
+<div class="">
+<div class="prodetailhead">Time and Sun</div>
+<table class="poptable">
+<tr>
+<td>
+Time:
+</td>
+<td>
+<span id="pro_date">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Sun angle:
+</td>
+<td>
+<span id="pro_sun">-</span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="maptop">
+<div id="time_control"></div>
+<div id="offset_control" class="hiderangewidget">
+<table>
+<tr>
+<th colspan="3">Timezone Offset</th>
+</tr>
+<tr>
+<td>-13</td><td>-12</td><td>-11</td>
+</tr>
+<tr>
+<td>-10</td><td>-9</td><td>-8</td>
+</tr>
+<tr>
+<td>-7</td><td>-6</td><td>-5</td>
+</tr>
+<tr>
+<td>-4</td><td>-3</td><td>-2</td>
+</tr>
+<tr>
+<td>-1</td><td>0</td><td>1</td>
+</tr>
+<tr>
+<td>2</td><td>3</td><td>4</td>
+</tr>
+<tr>
+<td>5</td><td>6</td><td>7</td>
+</tr>
+<tr>
+<td>8</td><td>9</td><td>10</td>
+</tr>
+<tr>
+<td>11</td><td>12</td><td>13</td>
+</tr>
+<tr>
+<th colspan="3"><a href="javascript:void(0)" onclick="_D('#offset_control').classed('hiderangewidget', true)">Close</a></th>
+</tr>
+</table>
+</div>
+</div>
+<div id="mapcolorbar">
+<div id="colorbar"></div>
+<div id="cbtoggle">
+<a href="javascript:void(0)" onclick="togglecb()" ><i class="fa-up-open fa-2x"></i></a>
+</div>
+</div>
+<div id="usercontrol">
+
+<i class="fa-user fa-3x" onclick="_D('#msg4').remove();makeBlackoutModal('#loginbox')"></i>
+
+</div>
+<div id="userpanel" class="plothidden">
+<div id="username">Hi, </div>
+<div><a class="minibtn btnblue" href="/account">Account settings</a></div>
+<div><a class="minibtn btngrey" href="/logout">Log out</a></div>
+<br/>
+<div style="text-align:center"><a class="closemsg" href="javascript:void(0)" onclick="toggleUserOptions()">Close</a></div>
+</div>
+<div id="mapsunclock">
+<div id="sunclock"></div>
+</div>
+<div id="windbar" class="hdisplay">
+<ul>
+<li><a id="windmode" class="" href="javascript:void(0)" onclick="setHControlMode('windmode', 'windicon', 'windhide')"><div class="anolabel">winds</div><i class="fa-wind-1 fa-2x"></i></a></li>
+<li class="windicon windhide"><a id="barbicon" href="javascript:void(0)" onclick="setWindType('barb',1)" ><svg width="16px" height="16px" class="wind-arrow"><path d="M1 2 L8 2 M0 0 L1 2 M1 0 L2 2 Z" vector-effect="non-scaling-stroke" transform="translate(0,0) scale(2.0) rotate(326 0 0) translate(-3, 5)" class="wind-arrow"></path></svg></a></li>
+<li class="windicon windhide"><a id="streamicon" href="javascript:void(0)" onclick="setWindType('stream',1)" ><i class="xx fa-air"></i></a></li>
+<li class="windicon windhide"><a id="wanimicon" href="javascript:void(0)" onclick="windAnimToggle()"><i class="xx fa-play"></i></a></li>
+<li class="windicon windhide"><a id="wgreyanimicon" href="javascript:void(0)" onclick="windGreyAnimToggle()"><i class="xx fa-adjust"></i></a></li>
+</ul>
+</div>
+<div id="modelcontrol" class="hdisplay plothidden"></div>
+<div id="modeloptions" class="hiderangewidget"></div>
+<div id="drag" class="hiderangewidget"></div>
+<div id="plotcontaineroutter">
+<div id="mobilerotate" class="hiderangewidget"></div>
+<div id="plotoptions">
+<div>
+<a id="plotoptionpro" class="glass" href="javascript:void(0)" onclick="togglePro()"><i class="fa-search fa-2x"></i></a>
+</div>
+<div>
+<a id="plotoptionwind" class="plotoptionselected glass" href="javascript:void(0)" onclick="toggleWind()"><i class="fa-wind-1 fa-2x"></i></a>
+</div>
+<div>
+<a id="plotoptionbarborarrow" class="plotoptionselected glass" href="javascript:void(0)" onclick="toggleBarbArrow()">
+<svg id="plotoptionbarb" width="16px" height="16px" class="wind-arrow"><path d="M1 2 L8 2 M0 0 L1 2 M1 0 L2 2 Z" vector-effect="non-scaling-stroke" transform="translate(0,0) scale(2.0) rotate(326 0 0) translate(-3, 5)" class="wind-arrow"></path></svg>
+<svg id="plotoptionarrow" width="16px" height="16px" class="wind-arrow" viewBox="0 0 50 50">
+<defs>
+<marker id="arrowheadi" markerWidth="8" markerHeight="5" refX="0" refY="2.5" orient="auto">
+<polygon points="0 0, 8 2.5, 0 5" ></polygon>
+</marker>
+</defs>
+<line x1="4" y1="20" x2="20" y2="10" stroke="#999" vector-effect="non-scaling-stroke"
+stroke-width="2" marker-end="url(#arrowheadi)"></line>
+</svg>
+</a>
+</div>
+<div>
+<a id="plotoptioncdepth" class="glass" href="javascript:void(0)" onclick="toggleCloudDepth()"><i class="fa-cloud fa-2x"></i></a>
+</div>
+<div>
+<a id="plotoptionsense" class="glass" href="javascript:void(0)" onclick="toggleSensitivity()"><i class="fa-plus-circled fa-2x"></i></a>
+</div>
+<div>
+<a id="plotoptionfullprofile" class="plotoptionselected glass" href="javascript:void(0)" onclick="toggleFullProfile()"><i class="fa-chart-area fa-2x"></i></a>
+</div>
+</div>
+<!-- <span class="pctabresize">
+<a href="javascript:void(0)" onclick="togglePlotHeight()"><i id="plotHeightRatio" class="fa-up-open fa-2x"></i></a>
+</span> -->
+<!-- <div id="pctabclose" class="xclose">
+<a href="javascript:void(0)" onclick="togglePlotTab()"><i class="fa-cancel-circled fa-2x"></i></a>
+</div> -->
+<div id="plotcontainer">
+<!-- <div id="plottabs" class="mdisplay">
+<ul>
+<li class=""><a id="pointplottab" href="javascript:void(0)" onclick="setPlotTab('pointplot')"><i class="fa-th-list fa-2x"></i><span class="tablabel">Compare </span></a></li>
+<li class=""><a id="skewtplottab" href="javascript:void(0)" onclick="setPlotTab('skewtplot')"><i class="fa-flash fa-2x"></i><span class="tablabel">Skew-T / Sounding</span></a></li>
+<li class=""><a id="ndayplottab" href="javascript:void(0)" onclick="setPlotTab('ndayplot')" ><i class="fa-dot-circled fa-2x"></i><span class="tablabel">PointCast </span></a></li>
+<li class=""><a id="routeplottab" href="javascript:void(0)" onclick="setPlotTab('routeplot')"><i class="fa-chart fa-2x"></i><span class="tablabel">Route </span></a></li>
+</ul>
+</div> -->
+<div id="skewtplot" class="plotarea">
+<div class="plotactions">
+<span class="resizepane">
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.30;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: 6px;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.5;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.70;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: -6px;">&ndash;</span></div></a>
+</span>
+<span class="clearsave">
+<a id="" class="minibtn btngreen" href="javascript:void(0)" onclick="saveActivePlot()"><i class="fa-star fa-2x"></i><span class="tablabel">Save</span></a>
+</span>
+<span class="xclose">
+<a class="plotclose" href="javascript:void(0)" onclick="togglePlotTab();"><i class="fa-cancel-circled fa-2x"></i></a>
+</span>
+</div>
+<div id="skewtplotinner" class="plotslide plotslidey">
+<div id="sk">
+<div class="skewtprodetails">
+<div class="prodetailhead">Profile Details</div>
+<table class="poptable" style="width: 250px">
+<tr>
+<td width="50%">
+Env. Air Temperature:
+</td>
+<td>
+<span id="skewt1_tmp">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Dew point Temperature:
+</td>
+<td>
+<span id="skewt1_dp">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Env. Lapse Rate:
+</td>
+<td>
+<span id="skewt1_envlr">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Thermal Index (TI) in C:
+</td>
+<td>
+<span id="skewt1_ti">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Winds:
+</td>
+<td>
+<span id="skewt1_wind">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Pressure Level:
+</td>
+<td>
+<span id="skewt1_press">-</span>
+</td>
+</tr>
+<tr>
+<td>
+Altitude:
+</td>
+<td>
+<span id="skewt1_alt">-</span>
+</td>
+</tr>
+</table>
+</div>
+<div id="skewtplotsvgdiv">
+<div class="plotempty">
+Skew-T and soundings.
+</div>
+</div>
+</div>
+</div>
+<div class="plotcontrols">
+<div class="slidehintleft"><i class="fa-left-dir fa-1x"></i></div>
+<div class="slidehintright"><i class="fa-right-dir fa-1x"></i></div>
+<div class="plotslide">
+<a id="skewtmode" class="minibtn btnblue" href="javascript:void(0)" onclick="skewtMode()">More hours</a>
+<span id="skewthours"></span>
+</div>
+</div>
+</div>
+<div id="resetplot" class="hiderangewidget">
+<a class="minibtn btnblue" href="javascript:void(0)" onclick="resetPlot()">Reset</a>
+</div>
+<div id="ndayplot" class="plotarea">
+<div id="ndayplotinner">
+<div class="plotactions">
+<!-- <a id="" style="margin-left: 40px;" class="minibtn btnblue" href="javascript:void(0)" onclick=""><i class="fa-chart fa-2x"></i><span class="tablabel">June 1...</span></a> -->
+<span class="resizepane">
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.30;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: 6px;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.5;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.70;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: -6px;">&ndash;</span></div></a>
+</span>
+<span class="clearsave">
+<!-- <a id="" class="minibtn btngrey" href="javascript:void(0)" onclick="removeRoutePoly()"><i class="fa-cancel fa-2x"></i><span class="tablabel">Clear</span></a> -->
+<a id="" class="skewtmark hiderangewidget" href="javascript:void(0)" onclick="removeSkewtMark()"><i class="fa-lock fa-2x"></i><span class="tablabel"></span></a>
+<a id="" class="minibtn btngreen" href="javascript:void(0)" onclick="saveActivePlot()"><i class="fa-star fa-2x"></i><span class="tablabel">Save</span></a>
+</span>
+<span class="xclose">
+<a class="plotclose" href="javascript:void(0)" onclick="closeNDayPlot();"><i class="fa-cancel-circled fa-2x"></i></a>
+</span>
+</div>
+<div id="ndayplotsvgdiv">
+<div class="plotempty">
+Click a point on the map and select PointCast to see all available forecasts across time for that location for the model selected.
+</div>
+<div id="ndayplotcb"></div>
+</div>
+</div>
+<div class="plotcontrols routepoint">
+<div class="slidehintleft"><i class="fa-left-dir fa-1x"></i></div>
+<div class="slidehintright"><i class="fa-right-dir fa-1x"></i></div>
+<div class="plotslide">
+<i class="fa-cog" onclick="togglePlotsPopup()"></i>
+<a name="vels" href="javascript:void(0)" onclick="XC.session.ndayplot='vels'; drawPointCast('ndayplot')">Thermal Strength</a>
+<a name="tis" href="javascript:void(0)" onclick="XC.session.ndayplot='tis'; drawPointCast('ndayplot')">Thermal Idx</a>
+<a name="turbs" href="javascript:void(0)" onclick="XC.session.ndayplot='turbs'; drawPointCast('ndayplot')">Wind Shear</a>
+<a name="bs" href="javascript:void(0)" onclick="XC.session.ndayplot='bs'; drawPointCast('ndayplot')">Buoyancy / Shear</a>
+<a name="vvels" href="javascript:void(0)" onclick="XC.session.ndayplot='vvels'; drawPointCast('ndayplot')">Vertical Velocity</a>
+<a name="clds" href="javascript:void(0)" onclick="XC.session.ndayplot='clds'; drawPointCast('ndayplot')">All Clouds</a>
+<a name="wind" href="javascript:void(0)" onclick="XC.session.ndayplot='wind'; drawPointCast('ndayplot')">Wind</a>
+<a name="tmps" href="javascript:void(0)" onclick="XC.session.ndayplot='tmps'; drawPointCast('ndayplot')">Temp.</a>
+<a name="dps" href="javascript:void(0)" onclick="XC.session.ndayplot='dps'; drawPointCast('ndayplot')">Dew Pt.</a>
+<a name="rhs" href="javascript:void(0)" onclick="XC.session.ndayplot='rhs'; drawPointCast('ndayplot')">RH</a>
+<!-- <a href="javascript:void(0)" onclick="XC.session.plotsensitivity = XC.session.plotsensitivity ? false : true; drawPointCast('ndayplot')">Toggle Sensitivity</a> -->
+<!--<a href="javascript:void(0)" onclick="XC.session.ndayplot=''; drawPointCast('ndayplot')">None</a>-->
+<!-- <a href="javascript:void(0)" onclick="clearPlot('ndayplot')"><i class="fa-cancel fa-1x"></i>Remove</a>
+<a name="vels" href="javascript:void(0)" onclick="XC.session.ndayplot='vels'; drawPointCast('ndayplot')">Thermal Strength</a>
+<a name="tis" href="javascript:void(0)" onclick="XC.session.ndayplot='tis'; drawPointCast('ndayplot')">Thermal Idx</a>
+<a name="wind" href="javascript:void(0)" onclick="XC.session.ndayplot='wind'; drawPointCast('ndayplot')">Wind</a>
+<a name="tmps" href="javascript:void(0)" onclick="XC.session.ndayplot='tmps'; drawPointCast('ndayplot')">Temp</a>
+<a name="dps" href="javascript:void(0)" onclick="XC.session.ndayplot='dps'; drawPointCast('ndayplot')">Dew Pt</a>
+<a name="rhs" href="javascript:void(0)" onclick="XC.session.ndayplot='rhs'; drawPointCast('ndayplot')">RH</a> -->
+<!--<a href="javascript:void(0)" onclick="sharePlot('ndayplot')">Share</a>-->
+</div>
+</div>
+</div>
+<!-- <div class="closepc"><a href="javascript:void(0)" onclick="closeNDayForecast('routeplot')">X</a></div> -->
+<div id="routeplot" class="plotarea">
+<div id="routeinfo">
+<span class="xclose">
+<a id="showrouteinfo" class="plotclose" href="javascript:void(0)" onclick="toggleRouteInfo();"><i class="fa-cancel-circled fa-2x"></i></a>
+</span>
+<br/>
+<center><b>Route Details</b></center>
+<br/>
+<div id="routeinfostats"></div>
+</div>
+<div id="routeplotinner">
+<div class="plotactions">
+<a id="" style="margin-left: 40px;" class="minibtn btnblue" href="javascript:void(0)" onclick="plotRoute()"><i class="fa-chart fa-2x"></i><span class="tablabel">Plot Route</span></a>
+<a class="minibtn btnblue hiderangewidget" id="routetimebtn" href="javascript:void(0)" onclick="routeTimesOptions()"><i class="fa-clock fa-2x"></i></a>
+<span id="routetimebox" class="hiderangewidget">
+Start
+<span class="timegrp">
+<select id="starthour" onchange="setRouteTimes()"></select>:
+<select id="startminute" onchange="setRouteTimes()"><option value="0">00</option><option value="900000">15</option><option value="1800000">30</option><option value="2700000">45</option></select>
+</span>
+End
+<span class="timegrp">
+<select id="endhour" onchange="setRouteTimes()"></select>:
+<select id="endminute" onchange="setRouteTimes()"><option value="0">00</option><option value="900000">15</option><option value="1800000">30</option><option value="2700000">45</option></select>
+</span>
+</span>
+<span>
+<input type="checkbox" name="autoroute" id="autoroute" value="" checked/> Auto plot
+</span>
+<span class="resizepane">
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.30;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: 6px;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.5;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.70;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: -6px;">&ndash;</span></div></a>
+</span>
+<span class="clearsave">
+<a id="" class="skewtmark hiderangewidget" href="javascript:void(0)" onclick="removeSkewtMark()"><i class="fa-lock fa-2x"></i><span class="tablabel"></span></a>
+<a id="" class="minibtn btngrey" href="javascript:void(0)" onclick="removeRoutePoly()"><i class="fa-cancel fa-2x"></i><span class="tablabel">Clear</span></a>
+<a id="routeplotsaveoptions" class="hiderangewidget minibtn btngreen" href="javascript:void(0)" onclick="saveActivePlot()"><i class="fa-star fa-2x"></i><span class="tablabel">Save</span></a>
+</span>
+<span class="xclose">
+<a class="plotclose" href="javascript:void(0)" onclick="removeRoutePoly();closeRoutePlot();"><i class="fa-cancel-circled fa-2x"></i></a>
+</span>
+</div>
+<div id="routeplotsvgdiv">
+<div class="plotempty">
+Create a route to explore by adding points on the map. Click anywhere on the map to get started.
+</div>
+<div id="routeplotcb"></div>
+</div>
+</div>
+<div class="plotcontrols routepoint">
+<div class="slidehintleft"><i class="fa-left-dir fa-1x"></i></div>
+<div class="slidehintright"><i class="fa-right-dir fa-1x"></i></div>
+<div class="plotslide">
+<!-- <span class="btnsmall btnblue">Change</span> -->
+<i class="fa-cog" onclick="togglePlotsPopup()"></i>
+<a name="vels" href="javascript:void(0)" onclick="XC.session.routeplot='vels'; drawPointCast('routeplot')">Thermal Strength</a>
+<a name="tis" href="javascript:void(0)" onclick="XC.session.routeplot='tis'; drawPointCast('routeplot')">Thermal Idx</a>
+<a name="turbs" href="javascript:void(0)" onclick="XC.session.routeplot='turbs'; drawPointCast('routeplot')">Wind Shear</a>
+<a name="bs" href="javascript:void(0)" onclick="XC.session.routeplot='bs'; drawPointCast('routeplot')">Buoyancy / Shear</a>
+<a name="vvels" href="javascript:void(0)" onclick="XC.session.routeplot='vvels'; drawPointCast('routeplot')">Vertical Velocity</a>
+<a name="clds" href="javascript:void(0)" onclick="XC.session.routeplot='clds'; drawPointCast('routeplot')">All Clouds</a>
+<a name="wind" href="javascript:void(0)" onclick="XC.session.routeplot='wind'; drawPointCast('routeplot')">Wind</a>
+<a name="tmps" href="javascript:void(0)" onclick="XC.session.routeplot='tmps'; drawPointCast('routeplot')">Temp.</a>
+<a name="dps" href="javascript:void(0)" onclick="XC.session.routeplot='dps'; drawPointCast('routeplot')">Dew Pt.</a>
+<a name="rhs" href="javascript:void(0)" onclick="XC.session.routeplot='rhs'; drawPointCast('routeplot')">RH</a>
+<a href="javascript:void(0)" onclick="XC.session.plotsensitivity = XC.session.plotsensitivity ? false : true; drawPointCast('routeplot')">Toggle Sensitivity</a>
+<!--<a href="javascript:void(0)" onclick="sharePlot('routeplot')">Share</a>-->
+</div>
+</div>
+</div>
+<div id="pointplot" class="plotarea">
+<div id="pointplotinner">
+<div class="plotactions">
+<span class="resizepane">
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.30;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: 6px;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.5;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;">&ndash;</span></div></a>
+<a id="" class="adjustpane minibtn btnlightgrey" href="javascript:void(0)" onclick="_S.plotHeightRatio=.70;sectionUpdate();sizeUIUpdate()"><div class=""><span style="position:relative;top: -6px;">&ndash;</span></div></a>
+</span>
+<span class="clearsave">
+<a id="" class="minibtn btngreen" href="javascript:void(0)" onclick="saveActivePlot()"><i class="fa-star fa-2x"></i><span class="tablabel">Save</span></a>
+</span>
+<span class="xclose">
+<a class="plotclose" href="javascript:void(0)" onclick="togglePlotTab();"><i class="fa-cancel-circled fa-2x"></i></a>
+</span>
+</div>
+<div id="pointplotsvgdiv">
+<div class="plotempty">
+Click on the map and select the compare option to see comparisons here.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<span id="maponoffcontrol" class=""><i class="fa-eye fa-1x"></i></span>
+<div class="hiderangewidget" id="runtimes_table"></div>
+<div id="closemapother" class="hiderangewidget">
+<span id="closemapname"></span>
+:
+<span class="">
+<a class="minibtn btnblue" href="javascript:void(0)" onclick="_S.xcparam='xclift225';setNewUris('xcparam');_D('body').node().appendChild(_D('#closemapother').node());"><i class="fa-cancel-circled fa-2x"></i>Close</a>
+</span>
+</div>
+
+<script>
+function preInit(){}//nothing
+function onloadPlot(){}
+function setUnits(){setUIUnits()}
+</script>
+
+
+
+<div id="msg2" class="initmessage2 msg hiderangewidget">
+<b>Set your default units.</b>
+<br/><br/>
+You have not set your default units and timezone offset yet. You might not be looking at what you think you're looking at! It only takes a few seconds.
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="XC.session.sidebar.open('settings');_D('#msg2').remove()">Set units</a>
+<br/><br/><br/>
+<a class="minibtn btngrey" href="javascript:void(0)" onclick="_D('#msg2').remove()">Not now</a>
+</div>
+<br/><br/>
+</div>
+
+
+<div id="msg4" class="initmessage msg hiderangewidget">
+<b class="feature-title">Hi there!</b>
+<br/><br/>
+To get the most out of XC Skies, consider signing up and subscribing.
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btnblue" href="/signup">Subscribe</a>
+</div>
+<br/><br/>
+<div style="text-align:center">
+Already a member?<br/><br/>
+<!-- <a class="minibtn btngreen" href="/login">Login</a> -->
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="_D('#msg4').remove();makeBlackoutModal('#loginbox')">Login</a>
+</div>
+<br/>
+<div style="text-align:center"><a class="closemsg" href="javascript:void(0)" onclick="_D('#msg4').remove()">Close</a></div>
+</div>
+
+
+
+<div class="blackout"></div>
+<div class="blackoutmsgbox"><div class="msginner"></div></div>
+<div class="savedmessage"></div>
+<div id="plot_form_ask" class="hiderangewidget">
+You are currently using a profile named <b><span class="pnamelabel"></span></b>.
+<br/><br/>
+What would you like to do?
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btnblue" href="javascript:void(0)" onclick="makeBlackoutModal('#plot_form_save', _S.pid)">Save to this profile</a>
+<br/><br/><span>or</span><br/><br/>
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="makeBlackoutModal('#plot_form_save')">Create new profile</a>
+<br/><br/>
+<a class="minibtn btngrey" href="javascript:void(0)" onclick="cancelBlackout()">Cancel</a>
+</div>
+</div>
+
+<div id="profile_update" class="hiderangewidget">
+You are currently using a profile named <b><span class="pnamelabel"></span></b>.
+<br/><br/>
+Select how you want to save your current information:
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btnblue" href="javascript:void(0)" onclick="updateProfile()">Update this profile</a>
+<br/><br/><span>or</span><br/><br/>
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="newProfile()">Create a new profile</a>
+<br/><br/>
+<br/>
+<a class="closemsg" href="javascript:void(0)" onclick="cancelBlackout()">Cancel</a>
+</div>
+</div>
+<div id="profile_form" class="hiderangewidget">
+<div class="phead">Profile</div>
+<span>Name:</span><span><i id="pnewmsg"></i></span>
+<br/>
+<input type="text" id="newpname" size="" style="width:90%"/>
+<br/><br/>
+<span>Description: <small>(optional)</small></span>
+<br/>
+<textarea rows="4" cols="" style="width:90%" id="newpdesc"></textarea>
+<br/>
+<span><input id="newpdefault" type="checkbox" value="1"/> Set as default profile.</span>
+<br/><br/>
+<div class="msgmini">
+<span>
+<div id="newpl1"></div>
+<div id="newpl2"></div>
+<div id="newpl3"></div>
+</span>
+</div>
+<div id="plots_also" class="hiderangewidget">
+<span>Add the current plot:</span>
+<br/><br/>
+<div id="known_plots">
+<span>
+<input id="plot_save_check2" type="checkbox" value="0"/>
+<a class="minibtn btngrey btnsmall"><i id="plot_save_icon2" class="fa-1x "></i></a>
+</span>
+<input id="plot_save_name2" type="text" value="" name="plot_save_name2" size="" style="width:90%" placeholder="Name"/>
+</div>
+</div>
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="saveProfile()"><i class="fa-ok-circled"></i>Save</a>
+<a class="minibtn btngrey" href="javascript:void(0)" onclick="cancelBlackout()">Cancel</a>
+</div>
+</div>
+<div id="plot_save" class="hiderangewidget">
+Saving plot to profile named:<br/><b><span class="pnamelabel"></span></b>.
+<br/><br/>
+Name: <input id="plot_save_name" type="text" value="" name="plot_save_name" size="" style="width:90%"/>
+<br/><br/>
+<div style="text-align:center">
+<a class="minibtn btnblue" href="javascript:void(0)" onclick="updateProfile(1)">Add to profile</a>
+<br/><br/><span>or</span><br/><br/>
+<a class="minibtn btngreen" href="javascript:void(0)" onclick="newProfile()">Create a new profile</a>
+<br/><br/>
+<br/>
+<a class="closemsg" href="javascript:void(0)" onclick="cancelBlackout()">Cancel</a>
+</div>
+</div>
+
+<div id="routepointlegend" style="visibility:hidden;display:none">
+Legend:
+<svg height="16" width="24">
+<line x1="0" y1="12" x2="24" y2="12" style="stroke:#A59E91;stroke-width:10"></line>
+</svg>
+Surface
+<svg height="16" width="24">
+<line x1="0" y1="12" x2="24" y2="12" style="stroke:red;stroke-width:2"></line>
+</svg>
+Top of usable lift
+<svg height="16" width="24">
+<line x1="0" y1="12" x2="24" y2="12" style="stroke:black;stroke-width:2"></line>
+</svg>
+Boundary layer top
+<svg height="16" width="24">
+<line x1="0" y1="12" x2="24" y2="12" style="stroke:pink;stroke-width:2"></line>
+</svg>
+Dew point level (CCL)
+<svg height="16" width="24">
+<line x1="0" y1="12" x2="24" y2="12" style="stroke:grey;stroke-width:4"></line>
+</svg>
+Potential cumulus cloud
+</div>
+
+<div id="loginbox" class="hiderangewidget">
+<div class="hb bb">
+<h3>
+XC Skies Login
+</h3>
+</div>
+<table>
+<tr>
+<td>
+<div class="label">Username (email):</div>
+</td>
+<td>
+<div class="fld">
+<input id="loginusername" type="text" name="login" placeholder="username" style="width:80%" onkeypress="loginchecksubmit(event)"/>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="label">Password:</div>
+</td>
+<td>
+<div class="fld">
+<input id="loginpassword" type="password" name="passwd" placeholder="password" style="width:80%" onkeypress="loginchecksubmit(event)"/>
+</div>
+</td>
+</tr>
+</table>
+<div class="hb bb">
+<span class="">
+<small>
+<a href="/oops">Forgot Password? <u>Click here</u></a>
+</small>
+</span>
+<span class="fld" style="">
+<input class="btn" type="submit" value="Login" id="loginsubmit" onclick="loginsubmit()">
+</span>
+<div id="loginmsg" style="color: red"></div>
+</div>
+</div>
+
+
+<div id="gatewayerror" class="hiderangewidget">
+<i class="fa-info-circled fa-2x"></i>
+<span></span>
+<br/><br/>
+<input type="button" class="minibtn btnblue" onclick="_D('#gatewayerror').classed('hiderangewidget',true)" value="Close"/>
+</div>
+<div id="sun_control" class="hiderangewidget">
+Month: <select id="sun_month" onchange="_S.sun_mm = this.value;makeSunDays();updateSun()"></select>
+Day: <select id="sun_day" onchange="_S.sun_dd = this.value;updateSun()"></select>
+<div id="sun_msg">
+<b>Sun Incidence Angle Percentage</b>
+<br/><br/>
+This is not a forecast layer
+<br/><br/>
+Select a date and hour to review the sun angle relative to terrain.
+This layer is a percentage of the maximum incoming solar radiation for the incident angle.
+Crosshatch areas are where incoming solar radiation is two-thirds (66%) or greater of maximum potential radiation intersecting with the terrain, a good indication of adequate surface heating for thermals when conditionally unstable lapse rates exist. Assumes clear skies.
+<br/><br/>
+<div style="text-align:center"><a class="minibtn btnblue" href="javascript:void(0)" onclick="cancelBlackout()">OK</a></div>
+</div>
+<div id="sun_hours" class=""></div>
+</div>
+<script>
+var isResizing = false,
+lastDownY = 0,
+dragDown = false;
+(function() {
+var container = document.body,
+top = document.getElementById("map"),
+bottom = document.getElementById("plotcontaineroutter"),
+handle = document.getElementById("drag");
+//offsetBottom;
+handle.onmousedown = start;
+handle.ontouchstart = start;
+function start(e) {
+isResizing = true;
+lastDownY = e.clientY;
+dragDown = true;
+};
+document.onmousemove = move;
+document.ontouchmove = move;
+function move(e) {
+if (!isResizing) {
+return;
+}
+if (e.clientY / window.innerHeight > .30 && e.clientY / window.innerHeight < .75){
+var p = parseInt((e.clientY / window.innerHeight) * 100)
+top.style.height = 'calc('+p+'vh - 0px)';
+bottom.style.height = 'calc('+(100-p)+'vh - 4px)';
+handle.style.top = 'calc('+(p)+'vh + 0px)';
+}
+}
+document.onmouseup = end;
+document.ontouchend = end;
+function end(e) {
+// stop resizing
+isResizing = false;
+if (dragDown == true ){
+if (1 == 1 || _S.proPlotHeightRatio == 0){
+_S.plotHeightRatio = (bottom.clientHeight) / window.innerHeight;
+sizeUIUpdate();
+}
+dragDown = false;
+}
+}
+})();
+</script>
+</body>
+</html>

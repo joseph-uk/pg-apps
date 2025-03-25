@@ -1,0 +1,423 @@
+
+    
+    
+  <html xmlns:v="urn:schemas-microsoft-com:vml" lang="en">
+   <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+      
+                     <meta name="description" content="XContest - paragliding live!"/>                           
+                                      <meta property="og:image" content="https://s.xcontest.app/img/xcontest-fb.png"/>
+                              
+
+      <meta name="keywords" content="paragliding, létání, přelet, termika, padák, ČPP"/>      <title> LIVE! :: XContest.org - world of XC paragliding</title>
+      <link rel="stylesheet" href="https://s.xcontest.app/css/style.css"/>
+      <link rel="alternate" type="application/rss+xml" title="Last 20 flights" href="https://www.xcontest.org/rss/flights/?world/en"/>      <link rel="icon" href="https://s.xcontest.app/img/xcontest-ic.png"/>
+      <link rel="prefetch" href="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"/>
+      <link rel="prefetch" href="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css"/>
+      <link rel="prefetch" href="https://d393ilck4xazzy.cloudfront.net/widget/flight-map/2.1.1/bundle.js"/>
+      <link rel="prefetch" href="https://d393ilck4xazzy.cloudfront.net/widget/flight-map/2.1.1/bundle.css"/>
+
+                     </head>
+
+   <body>
+      <div id="page" class="sect-cpp">
+
+         <div id="page-inner">
+                           <!-- logo -->
+               <div id="logo" class="xcontestII" style="top:15px; left: 20px"><a href="/" title="XContest - home"><img width="165" height="81" alt="XContest [logo]" src="https://s.xcontest.app/img/xcontest.gif"/></a></div>
+               <a id="logo-xcmag" href="https://xcmag.com/" target="_blank" title="Cross Country - International free flying magazine" style="display : block; position : absolute; z-index: 2; left: 42px; top :110px; -moz-opacity: 0.9; opacity: 0.9; filter:alpha(opacity=90)"><img width="133" height="40" alt="XCmag logo" src="https://s.xcontest.app/img/logos/cross-country-logo.png"/></a>
+            
+            
+            <!-- nadpis sekce -->
+            <div id="heading-section"><strong>X C o n t e s t &nbsp; 2 0 2 5</strong></div>
+
+            <hr class="hide"/>
+
+            
+               <!-- prihlasovaci formik -->
+               <form class="common" id="login" method="post">
+
+                  
+                                       <input type="text" class="text short" autocomplete="username" id="login-username" name="login[username]" value=""/>
+                                                         <input type="password" class="password short" autocomplete="current-password" id="login-password" name="login[password]"/>
+                                                         <label for="login-persist_login">Persistent login</label>
+                     <input type="checkbox" id="login-persist_login" name="login[persist_login]" value="Y"/>
+                                    <input type="submit" class="submit" value="::LogIN::"/>
+
+                                    <div style="text-shadow: 0 0 3px white;">
+                    <a href="https://www.xcontest.org/world/en/forgotten-password/">Forgotten password?</a>
+                  </div>
+               </form>
+
+
+               
+               <hr class="hide"/>
+
+               
+            <!-- main box -->
+            <div id="main-box"><div class="in1">
+
+               <!--content and context (right) column -->
+               <div id="content-and-context">
+                  <!-- obsah -->
+                  <div id="content">
+
+                     <!-- drobeckova navigace -->
+                     <div id="breadcrumb-navi">
+                                                   <a href="/"></a>                           <span class="arrow"><span class="hide">&gt;</span></span>
+                                                                              <a href="/world/en">World XContest</a>                           <span class="arrow"><span class="hide">&gt;</span></span>
+                                                                              <a href="/world/en/flights/">Flights</a>                           <span class="arrow"><span class="hide">&gt;</span></span>
+                                                                                                         
+                           <span>LIVE!</span>                                             </div>
+
+      
+                     <div class="bar">
+                        <h1>LIVE!</h1>
+                     </div>
+
+
+
+                              <div class="under-bar">
+                        
+                        
+            
+	    <div class="wsw"></div>
+              
+        <div class="wsw" style="margin-bottom:20px; display:flex">
+          <p>
+            WARNING! Only pilots in the contest <b>World XContest 2025</b> are visible. Actual flown/unfinished triangle distances are computed according to the current contest rules.
+          </p>
+          <p style="margin: 10px 0 10px 10px; white-space: nowrap">
+            <a href="/world/en/flights/live/:fp" style="padding:10px;border:1px solid orange;border-radius:5px;text-decoration:none" onclick="this.href += window.location.hash"><b>FULL PAGE VERSION</b></a>
+          </p>
+        </div>
+        
+
+        <div id="map" style="width:565px; height:565px; position: relative; top:0;left:0; opacity:0"></div>
+
+        <div class="wsw">
+          <p>
+           Alternatively you can watch <b><a href="/api.s/widget/live-map/all/" target="_blank">all live pilots [new window]</a></b> without filtering to this contest. But it's limited to free flight optimization (no free/FAI triangles).
+          </p>
+        </div>
+
+
+      	<link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js">
+        <link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/c.js">
+      	<link rel="stylesheet" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.css">
+
+        <script type="module">
+          import app from "https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js";
+          app.setApi("api", {league : "world", volume: "2025"});
+          app.getBoundsByGeolocation().then(bounds => {
+            app.initMap(bounds);
+            
+          });
+
+          window.setTimeout(() => {
+            const node = document.querySelector("#map");
+            //document.body.appendChild(node);
+            node.style.opacity = 1;
+          }, 500);
+        </script>
+
+
+       
+                     </div>
+         <hr class="hide"/>
+                  </div>
+
+                  <hr class="hide"/>
+
+                  <!-- right box -->
+                  <div id="box-right">
+                          
+   
+   <!-- right menu -->
+   <ul id="menu-right" class="menu-side">
+      <li>
+         <strong>For Pilots:</strong>                  <ul>
+            <li>
+               <a href="/world/en/how-to-claim-flight/"><span>How to claim flight</span></a>
+            </li><li>
+               <a href="/world/en/registration/"><span>Registration</span></a>
+            </li><li>
+               <a href="/world/en/forgotten-password/"><span>Forgotten password</span></a>
+            </li>         </ul>
+      </li>
+   </ul>      
+   <div class="partners">
+      <h3>Main Partners:</h3>
+            	            <a target="_blank" rel="noopener" href="http://www.swing.de/" title="Swing">
+        	    <img src=" https://s.xcontest.app/img/logos/swing2022.gif" title="Swing" alt=" logo Swing"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="http://www.flybgd.com/en/" title="Bruce Goldsmith Design">
+        	    <img src=" https://s.xcontest.app/img/logos/bgd-banner1.png" title="Bruce Goldsmith Design" alt=" logo Bruce Goldsmith Design"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="http://www.flyozone.com/" title="OZONE">
+        	    <img src=" https://s.xcontest.app/img/logos/ozone-banner.gif" title="OZONE" alt=" logo OZONE"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://skywalk.info/" title="Skywalk">
+        	    <img src=" https://s.xcontest.app/img/logos/skywalk2022.gif" title="Skywalk" alt=" logo Skywalk"/>
+           </a>
+                              	                     <a target="_blank" rel="noopener" href="http://www.free.aero/" title="free.aero">
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" width="150" height="150" style=" width:150px; height:150px">
+                              <source src=" https://s.xcontest.app/img/logos/free-aero.webm" type=" video/webm"></source>
+                              <source src=" https://s.xcontest.app/img/logos/free-aero.mp4" type=" video/mp4"></source>
+                          </video>
+           </a>
+                     	            <a target="_blank" rel="noopener" href="https://www.facebook.com/thermikmagazin" title="Thermik">
+        	    <img src=" https://s.xcontest.app/img/logos/thermik.jpg" title="Thermik" alt=" logo Thermik"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="http://www.niviuk.com/" title="Niviuk">
+        	    <img src=" https://s.xcontest.app/img/logos/NIVIUK-banner.png" title="Niviuk" alt=" logo Niviuk"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://nova.eu/" title="NOVA">
+        	    <img src=" https://s.xcontest.app/img/logos/nova2022.gif" title="NOVA" alt=" logo NOVA"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://ad-gliders.com/?lang=en" title="AirDesign">
+        	    <img src=" https://s.xcontest.app/img/logos/airdesign_banner-xcontest.jpg" title="AirDesign" alt=" logo AirDesign"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="http://www.advance.ch/" title="Advance">
+        	    <img src=" https://s.xcontest.app/img/logos/logo_ADV_xcontest_1.jpg" title="Advance" alt=" logo Advance"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="http://www.gingliders.com/" title="GIN">
+        	    <img src=" https://s.xcontest.app/img/logos/gin.gif" title="GIN" alt=" logo GIN"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://www.macpara.com/en" title="MAC Para">
+        	    <img src=" https://s.xcontest.app/img/logos/macpara_banner.jpg" title="MAC Para" alt=" logo MAC Para"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://flydavinci.com/" title="DaVinci Gliders">
+        	    <img src=" https://s.xcontest.app/img/logos/davinci-banner.png" title="DaVinci Gliders" alt=" logo DaVinci Gliders"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://sky-cz.com/en" title="Sky paragliders">
+        	    <img src=" https://s.xcontest.app/img/logos/sky-banner.png" title="Sky paragliders" alt=" logo Sky paragliders"/>
+           </a>
+                              	            <a target="_blank" rel="noopener" href="https://www.supair.com/" title="Supair">
+        	    <img src=" https://s.xcontest.app/img/logos/supair150.png" title="Supair" alt=" logo Supair"/>
+           </a>
+                           </div>   
+         <div class="custom-content"></div>
+   <div class="wysiwyg"></div>
+   
+                                                </div>
+
+                  <hr class="hide"/>
+               </div>
+
+
+
+               <!--left box-->
+               <div id="box-left">
+                     <!-- left menu -->
+   <strong class="hide">Menu sekce World XContest:</strong>
+
+   <ul id="menu-left" class="menu-side">
+      			<li>
+	         	            	         	         <a href="/world/en/" class="lvl0"><span>World XContest 2025 [home]</span></a>
+	         	         	                      	      </li>      			<li class="open">
+	         	         <a href="/world/en/flights/" class="lvl0"><span>Flights</span></a>
+	         	         	           <ul>
+      			<li>
+
+	         <a href="/world/en/flights/live/" class="active"><span>
+	            LIVE!</span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/flights/daily-score-pg/"><span>
+	            Daily score PG                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/flights/daily-score-hg-rw/"><span>
+	            Daily score HG/RW                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/hotspots"><span>
+	            Daily Hot-Spots PG                              </span>
+
+	            	         </a>
+
+	               	</li>         </ul>           	      </li>      			<li class="open">
+	         	         
+	         <strong><span>Ranking categories</span></strong>	         	           <ul>
+      			<li>
+
+	         <a href="/world/en/ranking-pg-open/"><span>
+	            PG Open                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-serial/"><span>
+	            PG Serial                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-sport/"><span>
+	            PG Sport                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-standard/"><span>
+	            PG Standard                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-women/"><span>
+	            PG Women                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-tandem/"><span>
+	            PG Tandem                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-hg-open/"><span>
+	            HG (FAI-1) Open                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-rw-fai2-open/"><span>
+	            RW (FAI-2) Open                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-rw-fai5-open/"><span>
+	            RW (FAI-5) Open                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-pg-national-teams/"><span>
+	            PG national teams                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li>
+
+	         <a href="/world/en/ranking-hg-national-teams/"><span>
+	            HG/RW national teams                              </span>
+
+	            	         </a>
+
+	               	</li>      			<li class="open">
+
+	         <a href="/world/en/ranking-club-100k-plus/"><span>
+	            Club 100k+ &amp; more                              </span>
+
+	            	         </a>
+
+	               	</li>         </ul>           	      </li>      			<li>
+	         	         <a href="/world/en/pilots/" class="lvl0"><span>Pilots</span></a>
+	         	         	                      	      </li>      			<li>
+	         	         <a href="/world/en/rules/" class="lvl0"><span>Rules</span></a>
+	         	         	                      	      </li>      			<li>
+	         	         <a href="/world/en/faq/" class="lvl0"><span>FAQ</span></a>
+	         	         	                      	      </li>      			<li class="open">
+	         	         
+	         <strong><span>Useful features</span></strong>	         	           <ul>
+      			<li>
+
+	         <a href="/world/en/flights-search/"><span>
+	            Worldwide flights search                              </span>
+
+	            	         </a>
+
+	               	</li>         </ul>           	      </li>         </ul>
+   
+
+                                    <div style="margin: 40px 20px 0 20px; text-align:right">
+
+                  <a href="https://www.facebook.com/pages/XContest/173691706168"><img style="position:relative; top:2px;" width="16" height="16" alt="Facebook logo" src="https://s.xcontest.app/img/fcb.png"/></a>
+                  <a href="https://www.facebook.com/pages/XContest/173691706168">Join us on <strong>Facebook</strong>!</a>
+
+                  </div>
+               </div>
+
+               <hr class="clearer"/>
+
+            </div></div>
+
+            <hr class="hide"/>
+
+                        <!-- top menu -->
+            <strong class="hide">Sections:</strong>
+
+            <div id="menu-top"><div class="in1">
+
+               <div id="menu-top-line"><div class="in2">
+
+                  <div id="menu-top-buttons"><div class="in3">
+
+                    
+                                             
+                                                  <div class="button" id="button-world"><div class="corner"><div class="arrow">
+                            <a title="World XContest" href="https://www.xcontest.org/world/en/"><strong>WORLD XContest</strong></a>
+                          </div></div></div>
+
+                                             
+                     <div class="button" id="button-nations"><div class="corner"><div class="arrow">
+                       <a title="National XContests" href="https://www.xcontest.org/national/"><strong>NATIONAL XContests</strong></a>
+                     </div></div></div>
+
+                     <div class="button" id="button-gipsy"><div class="corner"><div class="arrow">
+                        <a title="XCTrack" href="https://www.xcontest.org/xctrack/"><strong>XCTrack</strong></a>
+                     </div></div></div>
+                     <div class="button" id="button-gipsy"><div class="corner"><div class="arrow">
+                        <a href="https://airspace.xcontest.org" title="Airspace tools" target="_blank" rel="noopener"><strong>Airspace</strong></a>
+                     </div></div></div>
+                                            <div class="button" id="button-paramotors"><div class="corner"><div class="arrow">
+                          <a title="Paramotors XContest" href="https://paramotors.xcontest.org/world/en/"><strong>Paramotors</strong></a>
+                       </div></div></div>
+                     
+                     
+
+
+
+                  </div></div>
+
+               </div></div>
+            </div></div>
+
+            <hr class="hide"/>
+         </div>
+
+         <!-- footer -->
+         <div id="footer"><div>
+            <a style="text-decoration: none" href="https://www.xcontest.org/world/en/about/">&#169; XContest 2025</a>
+             | <a href="https://www.xcontest.org/world/en/privacy-policy/">Privacy policy</a>
+
+                     </div></div>
+      </div>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce03b14067c3435f848f7f4c0a1a5b16"}'></script>   </body>
+</html>
+   
+
+   

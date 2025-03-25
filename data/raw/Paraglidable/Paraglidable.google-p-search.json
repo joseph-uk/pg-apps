@@ -1,0 +1,626 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Paraglidable",
+        "totalResults": "1040",
+        "searchTerms": "Paraglidable",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Paraglidable",
+        "totalResults": "1040",
+        "searchTerms": "Paraglidable",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.280431,
+    "formattedSearchTime": "0.28",
+    "totalResults": "1040",
+    "formattedTotalResults": "1,040"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Paraglidable",
+      "htmlTitle": "\u003cb\u003eParaglidable\u003c/b\u003e",
+      "link": "https://paraglidable.com/",
+      "displayLink": "paraglidable.com",
+      "snippet": "Color blind mode: off Mobile version Android app How does it work? The neural network Past data What is the API? Get an API key Share link Share on Facebook",
+      "htmlSnippet": "Color blind mode: off Mobile version Android app How does it work? The neural network Past data What is the API? Get an API key Share link Share on Facebook",
+      "formattedUrl": "https://paraglidable.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eparaglidable\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9M4hb82gc3bA2iOKhj4zkB7m0PZZ15O0UsK_B7R9mdEFhNxsmFx1YiPFM&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#FFFFFF",
+            "og:image": "https://paraglidable.com/imgs/oc_image2.jpeg",
+            "msapplication-config": "imgs/favicon/browserconfig.xml",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:title": "paraglidable.com",
+            "og:image:height": "630",
+            "og:url": "https://paraglidable.com",
+            "msapplication-tileimage": "imgs/favicon/favicon-144.png",
+            "og:description": "AI-based flying conditions forecast for paragliding"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://paraglidable.com/imgs/oc_image2.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "AntoineMeler/Paraglidable: A.I.-based flying conditions ... - GitHub",
+      "htmlTitle": "AntoineMeler/Paraglidable: A.I.-based flying conditions ... - GitHub",
+      "link": "https://github.com/AntoineMeler/Paraglidable",
+      "displayLink": "github.com",
+      "snippet": "Paraglidable. Paraglidable is an A.I.-based flying conditions forecasting program for paragliding. ... This repository contains: Scripts for setting and training ...",
+      "htmlSnippet": "\u003cb\u003eParaglidable\u003c/b\u003e. \u003cb\u003eParaglidable\u003c/b\u003e is an A.I.-based flying conditions forecasting program for paragliding. ... This repository contains: Scripts for setting and training&nbsp;...",
+      "formattedUrl": "https://github.com/AntoineMeler/Paraglidable",
+      "htmlFormattedUrl": "https://github.com/AntoineMeler/\u003cb\u003eParaglidable\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrajXBRt2732s-H6Hq26oA7Yb113H8sN27W9voLLVC0GaNDYvf4_fyP1E&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "AntoineMeler",
+            "name": "Paraglidable",
+            "text": "Paraglidable Paraglidable is an A.I.-based flying conditions forecasting program for paragliding. You can find it live here: https://paraglidable.com This repository contains: Scripts for setting..."
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/AntoineMeler/Paraglidable",
+            "og:image": "https://opengraph.githubassets.com/b3fa1ed99a862c89009c3e04821052fb28bde892cb8306a0de1101585b5aad9a/AntoineMeler/Paraglidable",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:238019542",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "html-safe-nonce": "3089e64305601f8aa8277693d8ca58493436c6f6ed6796d8555a495e3fbc8b1e",
+            "expected-hostname": "github.com",
+            "og:description": "A.I.-based flying conditions forecast for paragliding - AntoineMeler/Paraglidable",
+            "twitter:image": "https://opengraph.githubassets.com/b3fa1ed99a862c89009c3e04821052fb28bde892cb8306a0de1101585b5aad9a/AntoineMeler/Paraglidable",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "AntoineMeler",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJFM0JFOkY3M0E0OjExMEFEMzQ6MTZGNUYwMjo2N0RCNkQxMSIsInZpc2l0b3JfaWQiOiI2NTA5MjExOTA0NTA2NTU1NjY1IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=",
+            "github-keyboard-shortcuts": "repository,copilot",
+            "octolytics-dimension-repository_id": "238019542",
+            "octolytics-dimension-repository_network_root_nwo": "AntoineMeler/Paraglidable",
+            "twitter:title": "GitHub - AntoineMeler/Paraglidable: A.I.-based flying conditions forecast for paragliding",
+            "og:image:alt": "A.I.-based flying conditions forecast for paragliding - AntoineMeler/Paraglidable",
+            "og:type": "object",
+            "og:title": "GitHub - AntoineMeler/Paraglidable: A.I.-based flying conditions forecast for paragliding",
+            "visitor-hmac": "3ff944ed2d9117c32db2a0e41f7ef9467f9d44fc68d8d48ed74e2600ee1dda03",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "disambiguate",
+            "request-id": "E3BE:F73A4:110AD34:16F5F02:67DB6D11",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/AntoineMeler/Paraglidable git https://github.com/AntoineMeler/Paraglidable.git",
+            "octolytics-dimension-user_id": "60217835",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "238019542",
+            "octolytics-dimension-repository_nwo": "AntoineMeler/Paraglidable",
+            "viewport": "width=device-width",
+            "twitter:description": "A.I.-based flying conditions forecast for paragliding - AntoineMeler/Paraglidable",
+            "route-controller": "files",
+            "current-catalog-service-hash": "f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb",
+            "og:url": "https://github.com/AntoineMeler/Paraglidable"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://avatars.githubusercontent.com/u/60217835?v=4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paraglidable",
+      "htmlTitle": "\u003cb\u003eParaglidable\u003c/b\u003e",
+      "link": "https://paraglidable.com/mobile.html",
+      "displayLink": "paraglidable.com",
+      "snippet": "Today (Mon). 24/03/2025 · 95% ; Tomorrow (Tue). 25/03/2025 · 87% ; Wednesday. 26/03/2025 · 51% ; Thursday. 27/03/2025 · 73% ; Friday. 28/03/2025 · 98%.",
+      "htmlSnippet": "Today (Mon). 24/03/2025 &middot; 95% ; Tomorrow (Tue). 25/03/2025 &middot; 87% ; Wednesday. 26/03/2025 &middot; 51% ; Thursday. 27/03/2025 &middot; 73% ; Friday. 28/03/2025 &middot; 98%.",
+      "formattedUrl": "https://paraglidable.com/mobile.html",
+      "htmlFormattedUrl": "https://\u003cb\u003eparaglidable\u003c/b\u003e.com/mobile.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9M4hb82gc3bA2iOKhj4zkB7m0PZZ15O0UsK_B7R9mdEFhNxsmFx1YiPFM&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#FFFFFF",
+            "og:image": "https://paraglidable.com/imgs/oc_image2.jpeg",
+            "msapplication-config": "imgs/favicon/browserconfig.xml",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "paraglidable.com",
+            "og:url": "https://paraglidable.com",
+            "msapplication-tileimage": "imgs/favicon/favicon-144.png",
+            "og:description": "AI-based flying conditions forecast for paragliding"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://paraglidable.com/imgs/oc_image2.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Paraglidable - new - Paragliding Forum",
+      "htmlTitle": "View topic - Paraglidable - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=94801",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Mar 4, 2019 ... There is a new online tool that I found to predict flyable days: www.paraglidable.com (has it been mentioned on the forum before? Didn't find ...",
+      "htmlSnippet": "Mar 4, 2019 \u003cb\u003e...\u003c/b\u003e There is a new online tool that I found to predict flyable days: www.\u003cb\u003eparaglidable\u003c/b\u003e.com (has it been mentioned on the forum before? Didn&#39;t find&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=94801",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=94801",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Weather API into sensor - sharing for others to use and ...",
+      "htmlTitle": "Paragliding Weather API into sensor - sharing for others to use and ...",
+      "link": "https://community.home-assistant.io/t/paragliding-weather-api-into-sensor-sharing-for-others-to-use-and-improvement/683458",
+      "displayLink": "community.home-assistant.io",
+      "snippet": "Feb 2, 2024 ... I thought I'd share a little viz I did, connecting the paraglidable API to a home assistant sensor. I am very new to HA and have done little with JSON so ideas ...",
+      "htmlSnippet": "Feb 2, 2024 \u003cb\u003e...\u003c/b\u003e I thought I&#39;d share a little viz I did, connecting the \u003cb\u003eparaglidable\u003c/b\u003e API to a home assistant sensor. I am very new to HA and have done little with JSON so ideas&nbsp;...",
+      "formattedUrl": "https://community.home-assistant.io/t/paragliding-weather.../683458",
+      "htmlFormattedUrl": "https://community.home-assistant.io/t/paragliding-weather.../683458",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr8O_6Oqh30o_dTUPlYm3cGrNts7y7qSUMLC3bYZk6AkMrjI7HFY_oYykv&s",
+            "width": "208",
+            "height": "243"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://community-assets.home-assistant.io/original/4X/c/6/b/c6b150b91322bbf7137c5124594bff3f5de0a3e4.png"
+          }
+        ],
+        "person": [
+          {
+            "name": "scootaash",
+            "url": "scootaash"
+          },
+          {
+            "name": "Wingnut",
+            "url": "Wingnut"
+          },
+          {
+            "name": "scootaash",
+            "url": "scootaash"
+          },
+          {
+            "name": "Frinn",
+            "url": "Frinn"
+          },
+          {
+            "name": "flyingP",
+            "url": "flyingP"
+          }
+        ],
+        "organization": [
+          {
+            "name": "Home Assistant"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://community-assets.home-assistant.io/original/4X/6/6/e/66e98372289e51125c23979246d72cb9f0e9d56e.png",
+            "theme-color": "#03a9f4",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "Paragliding Weather API into sensor - sharing for others to use and improvement!",
+            "article:published_time": "2024-02-02T14:02:36+00:00",
+            "og:site_name": "Home Assistant Community",
+            "twitter:url": "https://community.home-assistant.io/t/paragliding-weather-api-into-sensor-sharing-for-others-to-use-and-improvement/683458",
+            "og:title": "Paragliding Weather API into sensor - sharing for others to use and improvement!",
+            "color-scheme": "light dark",
+            "og:description": "Hi  While the overlap between paragliding and home assistant is probably small I thought I’d share a little viz I did, connecting the paraglidable API to a home assistant sensor. I am very new to HA and have done little with JSON so ideas on how to improve would be great - but it works 🙂  The end result is a little widget that sits on top of my weather cards:     or a bigger version here     This corresponds to the paraglideable ‘can I fly’ metric provided by the API for a defined l...",
+            "twitter:image": "https://community-assets.home-assistant.io/original/4X/6/6/e/66e98372289e51125c23979246d72cb9f0e9d56e.png",
+            "og:article:tag": "sensor",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
+            "twitter:description": "Hi  While the overlap between paragliding and home assistant is probably small I thought I’d share a little viz I did, connecting the paraglidable API to a home assistant sensor. I am very new to HA and have done little with JSON so ideas on how to improve would be great - but it works 🙂  The end result is a little widget that sits on top of my weather cards:     or a bigger version here     This corresponds to the paraglideable ‘can I fly’ metric provided by the API for a defined l...",
+            "og:article:section": "Share your Projects!",
+            "og:url": "https://community.home-assistant.io/t/paragliding-weather-api-into-sensor-sharing-for-others-to-use-and-improvement/683458",
+            "og:article:section:color": "F7941D"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "image": "https://community-assets.home-assistant.io/original/4X/6/6/e/66e98372289e51125c23979246d72cb9f0e9d56e.png",
+            "keywords": "sensor",
+            "datemodified": "2024-02-02T14:02:36Z",
+            "articlesection": "Dashboards & Frontend",
+            "position": "1",
+            "text": "Hi While the overlap between paragliding and home assistant is probably small I thought I’d share a little viz I did, connecting the paraglidable API to a home assistant sensor. I am very...",
+            "headline": "Paragliding Weather API into sensor - sharing for others to use and improvement!",
+            "url": "https://community.home-assistant.io/t/paragliding-weather-api-into-sensor-sharing-for-others-to-use-and-improvement/683458",
+            "datepublished": "2024-02-02T14:02:35Z",
+            "mainentityofpage": "https://community.home-assistant.io/t/paragliding-weather-api-into-sensor-sharing-for-others-to-use-and-improvement/683458"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2024-04-26T22:23:33Z",
+            "position": "2",
+            "text": "This looks interesting and I’d like to do something similar in the UK. But I have no idea how to start. Your step 1 has stumped me because I don’t know what “create an API” even means...",
+            "datepublished": "2024-04-26T22:23:33Z"
+          },
+          {
+            "image": "https://community-assets.home-assistant.io/original/4X/8/d/9/8d920c4871094573f0b5471ef6ffd67d893388b2.jpeg",
+            "datemodified": "2024-06-22T08:24:03Z",
+            "position": "3",
+            "text": "hi Graham, sorry it’s taken me so long to reply. I’m UK based too - wiltshire Paraglideable does cover the UK although I think is french. Keeping an eye on it it does seem to provide a...",
+            "datepublished": "2024-06-22T08:24:03Z"
+          },
+          {
+            "datemodified": "2025-01-04T09:26:48Z",
+            "position": "4",
+            "text": "Amazing Project! I am using your approach to monitor the fly value of five nearby mountains for the next days (today, tomorrow & day after tomorrow) Additionly - instead of integrating the...",
+            "datepublished": "2025-01-04T09:26:48Z"
+          },
+          {
+            "datemodified": "2025-03-21T16:22:04Z",
+            "position": "5",
+            "text": "Thank you for this great Solution! I was thinking of building my own weather-logic with simple data, but that’s definitely more elegant. Sadly, I’m not good wenn it comes to .json-files....",
+            "datepublished": "2025-03-21T16:22:04Z"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://community-assets.home-assistant.io/original/4X/6/6/e/66e98372289e51125c23979246d72cb9f0e9d56e.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Share your Projects!",
+            "name": "Share your Projects!",
+            "position": "1"
+          },
+          {
+            "item": "Dashboards & Frontend",
+            "name": "Dashboards & Frontend",
+            "position": "2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Paraglidable",
+      "htmlTitle": "Profile for \u003cb\u003eParaglidable\u003c/b\u003e",
+      "link": "https://www.facebook.com/paraglidable/",
+      "displayLink": "www.facebook.com",
+      "snippet": "New neural network for improved predictions. Takeoff predictions on mobile. Android App Widget: you can display multiple widgets for different spots.",
+      "htmlSnippet": "New neural network for improved predictions. Takeoff predictions on mobile. Android App Widget: you can display multiple widgets for different spots.",
+      "formattedUrl": "https://www.facebook.com/paraglidable/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eparaglidable\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScx_W1FbiEnn177Nj63Vbb1cwC2jtCS2OpaTbVTsgVFXpWMrelg1Ck1yXq&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100048919166040",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100048919166040",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100048919166040",
+            "og:description": "Paraglidable. 982 likes · 1 talking about this. Website",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100048919166040",
+            "twitter:image:alt": "Paraglidable",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Paraglidable",
+            "twitter:title": "Paraglidable",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Paraglidable",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100048919166040",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Paraglidable. 982 likes · 1 talking about this. Website",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/paraglidable/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100048919166040"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Intelligenter Hammertagalarm",
+      "htmlTitle": "Intelligenter Hammertagalarm",
+      "link": "https://lu-glidz.blogspot.com/2019/02/intelligenter-hammertagalarm.html",
+      "displayLink": "lu-glidz.blogspot.com",
+      "snippet": "Feb 14, 2019 ... Die Meteo-Seite Paraglidable.com liefert einen schnellen Überblick, wo in Europa in den nächsten Tagen XC-Wetter herrscht.",
+      "htmlSnippet": "Feb 14, 2019 \u003cb\u003e...\u003c/b\u003e Die Meteo-Seite \u003cb\u003eParaglidable\u003c/b\u003e.com liefert einen schnellen Überblick, wo in Europa in den nächsten Tagen XC-Wetter herrscht.",
+      "formattedUrl": "https://lu-glidz.blogspot.com/2019/02/intelligenter-hammertagalarm.html",
+      "htmlFormattedUrl": "https://lu-glidz.blogspot.com/2019/02/intelligenter-hammertagalarm.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrfz50r9xziZOPqX5r7V6eq4S7tVPQcdkaDOSOrGX1OShg0OX1AmDHHw&s",
+            "width": "284",
+            "height": "177"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6mQrJFo8zmkWlFuokRsu92yuEV2JmUbTJDxoaETVjAgI6guquNjKc0yQ7F6iMkj5S_VmXw20PkJH0PoJxxNylCD3Z7ufF7EowDteHtjA_W7pfsgwZ5um11kl5RkZgksfuveh9wg/w680/Paraglidable-Uebersicht.png",
+            "og:type": "article",
+            "twitter:card": "summary",
+            "twitter:title": "Intelligenter Hammertagalarm",
+            "og:site_name": "Lu-Glidz",
+            "twitter:domain": "https://lu-glidz.blogspot.com/2019/02/intelligenter-hammertagalarm.html",
+            "og:title": "Intelligenter Hammertagalarm",
+            "og:description": "Das Gleitschirm-Magazin im Blogformat von Lucian Haas. Aktuelle News aus der Gleitschirmszene, Tests und Podcast.",
+            "twitter:image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6mQrJFo8zmkWlFuokRsu92yuEV2JmUbTJDxoaETVjAgI6guquNjKc0yQ7F6iMkj5S_VmXw20PkJH0PoJxxNylCD3Z7ufF7EowDteHtjA_W7pfsgwZ5um11kl5RkZgksfuveh9wg/w680/Paraglidable-Uebersicht.png",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1",
+            "twitter:description": "Das Gleitschirm-Magazin im Blogformat von Lucian Haas. Aktuelle News aus der Gleitschirmszene, Tests und Podcast.",
+            "google-adsense-platform-domain": "blogspot.com",
+            "google-adsense-platform-account": "ca-host-pub-1556223355139109",
+            "og:url": "https://lu-glidz.blogspot.com/2019/02/intelligenter-hammertagalarm.html"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6mQrJFo8zmkWlFuokRsu92yuEV2JmUbTJDxoaETVjAgI6guquNjKc0yQ7F6iMkj5S_VmXw20PkJH0PoJxxNylCD3Z7ufF7EowDteHtjA_W7pfsgwZ5um11kl5RkZgksfuveh9wg/w680/Paraglidable-Uebersicht.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Hey everyone! Just to let you know that you can now contribute to ...",
+      "htmlTitle": "Hey everyone! Just to let you know that you can now contribute to ...",
+      "link": "https://www.facebook.com/paraglidable/posts/hey-everyonejust-to-let-you-know-that-you-can-now-contribute-to-the-costs-of-par/800278974946067/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Jul 2, 2023 ... ... Paraglidable if you find value in it. I tried my best to squeeze it ... paraglidable - https://www.buymeacoffee.com/paraglidable Thank ...",
+      "htmlSnippet": "Jul 2, 2023 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003eParaglidable\u003c/b\u003e if you find value in it. I tried my best to squeeze it ... \u003cb\u003eparaglidable\u003c/b\u003e - https://www.buymeacoffee.com/\u003cb\u003eparaglidable\u003c/b\u003e Thank&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/paraglidable/.../800278974946067/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eparaglidable\u003c/b\u003e/.../800278974946067/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://external-atl3-2.xx.fbcdn.net/emg1/v/t13/2850354979855556463?url=https%3a%2f%2fimg.buymeacoffee.com%2fapi%2f%3furl%3daHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMy8wNy82MTBlZTI4Y2Q0YzliMmQ0ZmFhZTM3OGFjZGU5NDhkOC5wbmdAMzAwd18wZS5qcGc%3d%26creator%3dParaglidablesa%26design_code%3d2%26design_color%3d%25235F7FFF%26slug%3dparaglidable%26meta%3deyJjcmVhdG9yIjoiUGFyYWdsaWRhYmxlIn0%3d&fb_obo=1&utld=buymeacoffee.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p600x600_q75_tt6&_nc_oc=AdnfYSTc3o6HYkAy7ZMTl8QPDRI9br9Ztoku1z3OCNzmRx0HytR_kP4Oadn9Ja_Wbw4&ccb=13-1&oh=06_Q39-1_r9_jgaK3CK1PWg0Ux9I1L3MQDdgVd70zwvg5ea9N4&oe=67E30B6C&_nc_sid=867500",
+            "og:type": "video.other",
+            "og:image:alt": "Paraglidable",
+            "twitter:card": "summary",
+            "twitter:title": "Paraglidable",
+            "theme-color": "#FFFFFF",
+            "og:title": "Paraglidable",
+            "google": "notranslate",
+            "og:description": "Hey everyone!\nJust to let you know that you can now contribute to the costs of Paraglidable if you find value in it.\nI tried my best to squeeze it into a small server but the computing needs an...",
+            "twitter:image": "https://external-atl3-2.xx.fbcdn.net/emg1/v/t13/2850354979855556463?url=https%3A%2F%2Fimg.buymeacoffee.com%2Fapi%2F%3Furl%3DaHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMy8wNy82MTBlZTI4Y2Q0YzliMmQ0ZmFhZTM3OGFjZGU5NDhkOC5wbmdAMzAwd18wZS5qcGc%3D%26creator%3DParaglidablesa%26design_code%3D2%26design_color%3D%25235F7FFF%26slug%3Dparaglidable%26meta%3DeyJjcmVhdG9yIjoiUGFyYWdsaWRhYmxlIn0%3D&fb_obo=1&utld=buymeacoffee.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p600x600_q75_tt6&_nc_oc=AdnfYSTc3o6HYkAy7ZMTl8QPDRI9br9Ztoku1z3OCNzmRx0HytR_kP4Oadn9Ja_Wbw4&ccb=13-1&oh=06_Q39-1_r9_jgaK3CK1PWg0Ux9I1L3MQDdgVd70zwvg5ea9N4&oe=67E30B6C&_nc_sid=867500",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Paraglidable",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Hey everyone!\nJust to let you know that you can now contribute to the costs of Paraglidable if you find value in it.\nI tried my best to squeeze it into a small server but the computing needs an...",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/paraglidable/posts/hey-everyonejust-to-let-you-know-that-you-can-now-contribute-to-the-costs-of-par/800278974946067/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-atl3-2.xx.fbcdn.net/emg1/v/t13/2850354979855556463?url=https%3a%2f%2fimg.buymeacoffee.com%2fapi%2f%3furl%3daHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMy8wNy82MTBlZTI4Y2Q0YzliMmQ0ZmFhZTM3OGFjZGU5NDhkOC5wbmdAMzAwd18wZS5qcGc%3d%26creator%3dParaglidablesa%26design_code%3d2%26design_color%3d%25235F7FFF%26slug%3dparaglidable%26meta%3deyJjcmVhdG9yIjoiUGFyYWdsaWRhYmxlIn0%3d&fb_obo=1&utld=buymeacoffee.com&stp=c0.5000x0.5000f_dst-jpg_flffffff_p600x600_q75_tt6&_nc_oc=AdnfYSTc3o6HYkAy7ZMTl8QPDRI9br9Ztoku1z3OCNzmRx0HytR_kP4Oadn9Ja_Wbw4&ccb=13-1&oh=06_Q39-1_r9_jgaK3CK1PWg0Ux9I1L3MQDdgVd70zwvg5ea9N4&oe=67E30B6C&_nc_sid=867500"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "SpotAiR - Integrations",
+      "htmlTitle": "SpotAiR - Integrations",
+      "link": "https://www.spotair.mobi/help/integrations.php",
+      "displayLink": "www.spotair.mobi",
+      "snippet": "paraglidable: the paraglidable.com forecast; skyways: the skyways map; thermals: the thermals map. The spots (only one possible): None; spotpg: the Paragliding ...",
+      "htmlSnippet": "\u003cb\u003eparaglidable\u003c/b\u003e: the \u003cb\u003eparaglidable\u003c/b\u003e.com forecast; skyways: the skyways map; thermals: the thermals map. The spots (only one possible): None; spotpg: the Paragliding&nbsp;...",
+      "formattedUrl": "https://www.spotair.mobi/help/integrations.php",
+      "htmlFormattedUrl": "https://www.spotair.mobi/help/integrations.php",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL64jN3yX9fsWBl_R3PH85b_worawt0jNpndLnx7dNjZ2jEJ8nxuDRyS0&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "SpotAiR",
+            "msapplication-tilecolor": "#ff8020",
+            "msapplication-config": "/favicons/browserconfig.xml",
+            "og:image": "https://www.spotair.mobi/favicons/android-chrome-256x256.png",
+            "theme-color": "#ff8020",
+            "og:type": "website",
+            "apple-mobile-web-app-title": "SpotAiR",
+            "og:title": "SpotAiR",
+            "og:description": "SpotAiR is dedicated to outdoor practices that depend heavily on weather conditions: paragliding, hanggliding, speed riding, kite. SpotAiR Aggregates many 'real time' data sources, allowing you to appreciate and share with your friends the conditions: weather stations, webcams, snow heights, shakas.",
+            "apple-mobile-web-app-status-bar-style": "#ff8020",
+            "og:locale:alternate": "fr_FR",
+            "viewport": "width=device-width",
+            "apple-mobile-web-app-capable": "yes",
+            "og:url": "https://www.spotair.mobi"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.spotair.mobi/icones/pois/poi.svg.php"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Android app is released: https://play.google.com/store/apps ...",
+      "htmlTitle": "The Android app is released: https://play.google.com/store/apps ...",
+      "link": "https://www.facebook.com/story.php?story_fbid=453716515158484&id=426922767837859",
+      "displayLink": "www.facebook.com",
+      "snippet": "The Android app is released: https://play.google.com/store/apps/details?id=com.paraglidable.paraglidable.",
+      "htmlSnippet": "The Android app is released: https://play.google.com/store/apps/details?id=com.\u003cb\u003eparaglidable\u003c/b\u003e.\u003cb\u003eparaglidable\u003c/b\u003e.",
+      "formattedUrl": "https://www.facebook.com/story.php?story_fbid=453716515158484...",
+      "htmlFormattedUrl": "https://www.facebook.com/story.php?story_fbid=453716515158484...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVX-xS0P0Ca0UO-Divlm0__8v4AReHot0SQaPvsmC9o0ZbvBg2cRmcXSg&s",
+            "width": "345",
+            "height": "146"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "video.other",
+            "twitter:card": "summary",
+            "twitter:title": "Paraglidable",
+            "theme-color": "#FFFFFF",
+            "og:title": "Paraglidable",
+            "google": "notranslate",
+            "og:description": "The Android app is released: https://play.google.com/store/apps/details?id=com.paraglidable.paraglidable",
+            "referrer": "origin-when-crossorigin",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "The Android app is released: https://play.google.com/store/apps/details?id=com.paraglidable.paraglidable",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/paraglidable/posts/the-android-app-is-released-httpsplaygooglecomstoreappsdetailsidcomparaglidablep/453716515158484/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=880852347378791"
+          }
+        ]
+      }
+    }
+  ]
+}

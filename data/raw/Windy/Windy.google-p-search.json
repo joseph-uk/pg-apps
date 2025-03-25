@@ -1,0 +1,509 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Windy",
+        "totalResults": "169000000",
+        "searchTerms": "Windy",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Windy",
+        "totalResults": "169000000",
+        "searchTerms": "Windy",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.314162,
+    "formattedSearchTime": "0.31",
+    "totalResults": "169000000",
+    "formattedTotalResults": "169,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Windy: Wind map & weather forecast",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e: Wind map &amp; weather forecast",
+      "link": "https://www.windy.com/-Waves-waves",
+      "displayLink": "www.windy.com",
+      "snippet": "Weather radar, wind and waves forecast for kiters, surfers, paragliders, pilots, sailors and anyone else. Worldwide animated weather map, with easy to use ...",
+      "htmlSnippet": "Weather radar, wind and waves forecast for kiters, surfers, paragliders, pilots, sailors and anyone else. Worldwide animated weather map, with easy to use&nbsp;...",
+      "formattedUrl": "https://www.windy.com/-Waves-waves",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ewindy\u003c/b\u003e.com/-Waves-waves",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFqLtohumJ2KNkG6uP4TV6ecjdjnQBdzxBYm5Xe078DczTfYrgJN3MNBF5&s",
+            "width": "294",
+            "height": "171"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.windy.com/img/socialshare4.png",
+            "apple-itunes-app": "app-id=1161387262",
+            "og:image:width": "800",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#9d0300",
+            "og:site_name": "Windy.com/",
+            "minifest-ecmwf-hres-premium": "{\"dst\":[[1,1,90],[3,93,144],[6,150,354]],\"info\":\"2024112500\",\"ref\":\"2025-03-25T06:00:00Z\",\"update\":\"2025-03-25T12:48:03Z\",\"v\":\"2.4\"}",
+            "twitter:url": "https://www.windy.com/",
+            "msapplication-tileimage": "https://img.windy.com/albums/icons/mstile-144x144.png",
+            "og:description": "50+ weather layers, weather radar and satellite",
+            "twitter:creator": "@windycom",
+            "twitter:image": "https://www.windy.com/img/socialshare4.png",
+            "twitter:site": "@windycom",
+            "model": "ecmwf",
+            "minifest-ecmwf-hres": "{\"dst\":[[3,3,90],[3,93,144],[6,150,360]],\"info\":\"2024112500\",\"ref\":\"2025-03-25T00:00:00Z\",\"update\":\"2025-03-25T07:55:07Z\",\"v\":\"2.4\"}",
+            "application-name": "Windy.com",
+            "msapplication-tilecolor": "#9d0300",
+            "og:type": "article",
+            "twitter:title": "Professional weather forecast",
+            "geoip": "66.249.73.229,39.6663,-104.8343,US,Aurora",
+            "author": "Windyty, SE",
+            "og:title": "Professional weather forecast",
+            "og:image:height": "373",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmYiOnsidWEiOiJNb3ppbGxhXC81LjAgKExpbnV4OyBBbmRyb2lkIDYuMC4xOyBOZXh1cyA1WCBCdWlsZFwvTU1CMjlQKSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMzQuMC42OTk4LjE2NSBNb2JpbGUgU2FmYXJpXC81MzcuMzYgKGNvbXBhdGlibGU7IEdvb2dsZWJvdFwvMi4xOyAraHR0cDpcL1wvd3d3Lmdvb2dsZS5jb21cL2JvdC5odG1sKSIsImlwIjoiNjYuMjQ5LjczLjIyOSJ9LCJleHAiOjE3NDMwOTYzNDYsImlhdCI6MTc0MjkyMzU0Nn0.C2PIUorkZilLPEUXPQSCHE3KaxRa7gZQNRrJ-wQ1M3c",
+            "fb:app_id": "426030704216458",
+            "viewport": "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover",
+            "twitter:description": "50+ weather layers, weather radar and satellite",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.windy.com/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.windy.com/img/socialshare4.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy.app – Live wind map & weather forecast",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e.app – Live wind map &amp; weather forecast",
+      "link": "https://windy.app/",
+      "displayLink": "windy.app",
+      "snippet": "Windy.app is a professional weather app, created for water and wind sports and all outdoor activities. Get a detailed online 10 day weather forecast, live ...",
+      "htmlSnippet": "\u003cb\u003eWindy\u003c/b\u003e.app is a professional weather app, created for water and wind sports and all outdoor activities. Get a detailed online 10 day weather forecast, live&nbsp;...",
+      "formattedUrl": "https://windy.app/",
+      "htmlFormattedUrl": "https://\u003cb\u003ewindy\u003c/b\u003e.app/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymhfUFmegwFUF16JgIhXkWTykWZcR7xALjkkoVkhluHyzFAO_Fyb41kx&s",
+            "width": "224",
+            "height": "224"
+          }
+        ],
+        "softwareapplication": [
+          {
+            "name": "WINDY.APP",
+            "url": "https://windy.app/"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://windy.app/img/og_image_new.png?v2?v2",
+            "og:type": "article",
+            "twitter:card": "summary",
+            "twitter:title": "Windy.app – Live wind map & weather forecast",
+            "og:site_name": "WINDY.APP",
+            "twitter:url": "https://windy.app",
+            "og:title": "Windy.app – Live wind map & weather forecast",
+            "og:description": "Wind speed and direction map. Detailed weather forecast for your location.  Weather tools for kiters, surfers, sailors and all outdoor sports lovers. Forecast models ECMWF, ICON, GFS, NAM, WRF",
+            "twitter:image": "https://windy.app/img/og_image_new.png?v2",
+            "twitter:image:alt": "Windy.app – Live wind map & weather forecast",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "Wind speed and direction map. Detailed weather forecast for your location.  Weather tools for kiters, surfers, sailors and all outdoor sports lovers. Forecast models ECMWF, ICON, GFS, NAM, WRF",
+            "csrf-token": "ofpdLqvG",
+            "og:url": "https://windy.app"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://windy.app/img/og_image_new.png?v2?v2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy - Home",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e - Home",
+      "link": "https://www.windyboats.com/",
+      "displayLink": "www.windyboats.com",
+      "snippet": "Technically advanced sports cruisers that deliver class-leading performance and fuel economy. Safe, confidence inspiring offshore cruisers that put families at ...",
+      "htmlSnippet": "Technically advanced sports cruisers that deliver class-leading performance and fuel economy. Safe, confidence inspiring offshore cruisers that put families at&nbsp;...",
+      "formattedUrl": "https://www.windyboats.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ewindy\u003c/b\u003eboats.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxib1cY_wO09Qjb6PozSoXQUSUX-5io8VoC6PU_IyB7Z34XMpbVOcMLU&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Windy - Home",
+            "og:url": "https://www.windyboats.com/",
+            "og:description": "When Windy Boats was established in 1966 our first sport boats set new standards for performance and craftsmanship. 50 years on, we’re still driven by the urge to be the best. All Windy Boats bear the hallmark of quality without compromise."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.windyboats.com/media/41mnb023/sr40-premiere-at-pibs.jpg?anchor=center&mode=crop&heightratio=0.5625&width=992&rnd=133858335137330000"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy.com - Weather Forecast - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e.com - Weather Forecast - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.windyty.android&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "The uniqueness of Windy lies in the fact that it brings you better quality information than the other weather apps' pro-features, while our product is ...",
+      "htmlSnippet": "The uniqueness of \u003cb\u003eWindy\u003c/b\u003e lies in the fact that it brings you better quality information than the other weather apps&#39; pro-features, while our product is&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=com.windyty.android...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.\u003cb\u003ewindy\u003c/b\u003ety.android...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=com.windyty.android&rdid=com.windyty.android&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkT-0uGXjyYDua7uFwoQjVoWvOPLQMB50MvtUvGfSQw1qoDAyvGbAw_U&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/qXBOdC6WVNPPZso8m5_Z_lCiNTG130ZwHAumXlLpF5r9yaPYICJw9tGGtPt5v9yh35E",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Windy.com - Weather Forecast - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=com.windyty.android&hl=en_US",
+            "appstore:developer_url": "https://www.windy.com",
+            "og:title": "Windy.com - Weather Forecast - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/qXBOdC6WVNPPZso8m5_Z_lCiNTG130ZwHAumXlLpF5r9yaPYICJw9tGGtPt5v9yh35E=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "com.windyty.android",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "com.windyty.android",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Weather radar, satellite, wind, waves, ocean and hurricane forecasts.",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=com.windyty.android&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/qXBOdC6WVNPPZso8m5_Z_lCiNTG130ZwHAumXlLpF5r9yaPYICJw9tGGtPt5v9yh35E"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy.com - Weather & Radar on the App Store",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e.com - Weather &amp; Radar on the App Store",
+      "link": "https://apps.apple.com/au/app/windy-com-weather-radar/id1161387262",
+      "displayLink": "apps.apple.com",
+      "snippet": "You can interrogate the atmosphere at any height using a slider, and look at temperature, wind speed and direction, etc etc. For student pilots and newly ...",
+      "htmlSnippet": "You can interrogate the atmosphere at any height using a slider, and look at temperature, wind speed and direction, etc etc. For student pilots and newly&nbsp;...",
+      "formattedUrl": "https://apps.apple.com/au/app/windy-com-weather-radar/id1161387262",
+      "htmlFormattedUrl": "https://apps.apple.com/au/app/\u003cb\u003ewindy\u003c/b\u003e-com-weather-radar/id1161387262",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mV2mUdu68QIzqjl57ZSoHORfZDssT7eZ9vzDYL55a__kafdJXECqm1wt&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/ca/a0/a8caa0af-460f-4f9e-f165-07e4ed58ca6e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200eA UNIQUE WEATHER FORECAST VISUALISATION\nWhile most weather forecasting apps rely only on free global models, Windy has gone a few steps further and invested heavily in the most accurate models available, always at the highest possible resolution, to ensure accurate weather forecasts. \n\nAvailable wea…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/ca/a0/a8caa0af-460f-4f9e-f165-07e4ed58ca6e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/ca/a0/a8caa0af-460f-4f9e-f165-07e4ed58ca6e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "Windy.com - Weather & Radar on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "Windy.com - Weather & Radar on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200eWindy.com - Weather & Radar",
+            "og:title": "\u200eWindy.com - Weather & Radar",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200eA UNIQUE WEATHER FORECAST VISUALISATION\nWhile most weather forecasting apps rely only on free global models, Windy has gone a few steps further and invested heavily in the most accurate models available, always at the highest possible resolution, to ensure accurate weather forecasts. \n\nAvailable wea…",
+            "og:locale": "en_AU",
+            "apple:content_id": "1161387262",
+            "og:url": "https://apps.apple.com/au/app/windy-com-weather-radar/id1161387262"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a8/ca/a0/a8caa0af-460f-4f9e-f165-07e4ed58ca6e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/1200x630wa.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "WINDY Definition & Meaning - Merriam-Webster",
+      "htmlTitle": "\u003cb\u003eWINDY\u003c/b\u003e Definition &amp; Meaning - Merriam-Webster",
+      "link": "https://www.merriam-webster.com/dictionary/windy",
+      "displayLink": "www.merriam-webster.com",
+      "snippet": "Mar 17, 2025 ... 1 ... a ... 1 ... windswept ... a windy coast ... 2 ... marked by strong wind or by more wind than usual ... a windy day ... b ... violent, stormy ... 2 ... flatulent ...",
+      "htmlSnippet": "Mar 17, 2025 \u003cb\u003e...\u003c/b\u003e 1 ... a ... 1 ... windswept ... a \u003cb\u003ewindy\u003c/b\u003e coast ... 2 ... marked by strong wind or by more wind than usual ... a \u003cb\u003ewindy\u003c/b\u003e day ... b ... violent, stormy ... 2 ... flatulent&nbsp;...",
+      "formattedUrl": "https://www.merriam-webster.com/dictionary/windy",
+      "htmlFormattedUrl": "https://www.merriam-webster.com/dictionary/\u003cb\u003ewindy\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKksTSKYwpW8It403nrjw5t1_a8pLO2PI6ImEG7uvFrNfacgiziPZgG-_O&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#2b5797",
+            "og:image": "https://merriam-webster.com/assets/mw/static/social-media-share/mw-logo-245x245@1x.png",
+            "twitter:title": "Definition of WINDY",
+            "twitter:card": "summary",
+            "theme-color": "#0f3850",
+            "twitter:url": "https://www.merriam-webster.com/dictionary/windy",
+            "og:title": "Definition of WINDY",
+            "twitter:aria-text": "Share the Definition of windy on Twitter",
+            "og:aria-text": "Post the Definition of windy to Facebook",
+            "og:description": "windswept; marked by strong wind or by more wind than usual; violent, stormy… See the full definition",
+            "twitter:image": "https://merriam-webster.com/assets/mw/static/social-media-share/mw-logo-245x245@1x.png",
+            "referrer": "unsafe-url",
+            "fb:app_id": "178450008855735",
+            "twitter:site": "@MerriamWebster",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "windswept; marked by strong wind or by more wind than usual; violent, stormy… See the full definition",
+            "og:url": "https://www.merriam-webster.com/dictionary/windy"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://merriam-webster.com/assets/mw/static/social-media-share/mw-logo-245x245@1x.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy City Smokeout: Home Page",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e City Smokeout: Home Page",
+      "link": "https://www.windycitysmokeout.com/",
+      "displayLink": "www.windycitysmokeout.com",
+      "snippet": "Windy City Smokeout Country Music and BBQ Festival · July 10 - 13, 2025 Chicago, IL · Your 2025 Smokeout Lineup · Thursday, July 10 · Friday, July 11 · Saturday ...",
+      "htmlSnippet": "\u003cb\u003eWindy\u003c/b\u003e City Smokeout Country Music and BBQ Festival &middot; July 10 - 13, 2025 Chicago, IL &middot; Your 2025 Smokeout Lineup &middot; Thursday, July 10 &middot; Friday, July 11 &middot; Saturday&nbsp;...",
+      "formattedUrl": "https://www.windycitysmokeout.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ewindy\u003c/b\u003ecitysmokeout.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlOIpuW4HqzUDx8HQEtrKi-IClxxVxhOKFvubPmfjhZFmlmSdeHYrUJ7s&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://storage.googleapis.com/windycitysmokeout2025_bucket/wp-content/uploads/1b4633d7-windy-city-smokeout_raising-canes-1021.webp",
+            "og:image:alt": "smokeout main stage in front of a full crowd",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Home Page - Windy City Smokeout",
+            "og:site_name": "Windy City Smokeout",
+            "og:title": "Home Page - Windy City Smokeout",
+            "og:description": "Windy City Smokeout - The nation's best in Country Music, BBQ & Beer",
+            "twitter:image": "https://storage.googleapis.com/windycitysmokeout2025_bucket/wp-content/uploads/1b4633d7-windy-city-smokeout_raising-canes-1021.webp",
+            "twitter:image:alt": "smokeout main stage in front of a full crowd",
+            "twitter:site": "Windy City Smokeout",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Windy City Smokeout - The nation's best in Country Music, BBQ & Beer",
+            "og:url": "https://windycitysmokeout-backend-production-2025-401581158498.us-central1.run.app/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://storage.googleapis.com/windycitysmokeout2025_bucket/wp-content/uploads/1b4633d7-windy-city-smokeout_raising-canes-1021.webp"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy Ford in Alva, Oklahoma: Home",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e Ford in Alva, Oklahoma: Home",
+      "link": "https://windyford.com/",
+      "displayLink": "windyford.com",
+      "snippet": "Your Ford ownership journey begins at Windy Ford. We invite you to visit our dealership, conveniently located in the Alva, Oklahoma. Our team of Ford ...",
+      "htmlSnippet": "Your Ford ownership journey begins at \u003cb\u003eWindy\u003c/b\u003e Ford. We invite you to visit our dealership, conveniently located in the Alva, Oklahoma. Our team of Ford&nbsp;...",
+      "formattedUrl": "https://windyford.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003ewindy\u003c/b\u003eford.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMk-qYwSiZN7_8gWrt-7FzJbbTGg-nrn_oiTzPbkY6zqYqGZ-5Miw8Lt8&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://images.app.ridemotive.com/aps13ekct3jkbhb42ic6v8tuytxz",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Home | Windy Ford in Alva, Oklahoma",
+            "og:site_name": "Windy Ford",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Windy Ford is a dealership in Alva, Oklahoma with a large inventory of vehicles for sale. Check out our inventory or contact us for more information!",
+            "og:title": "Home | Windy Ford in Alva, Oklahoma",
+            "og:url": "https://windyford.com/",
+            "og:description": "Windy Ford is a dealership in Alva, Oklahoma with a large inventory of vehicles for sale. Check out our inventory or contact us for more information!",
+            "twitter:image": "https://images.app.ridemotive.com/aps13ekct3jkbhb42ic6v8tuytxz",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images.app.ridemotive.com/aps13ekct3jkbhb42ic6v8tuytxz"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy City Harvest | Chicago Botanic Garden",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e City Harvest | Chicago Botanic Garden",
+      "link": "https://www.chicagobotanic.org/urbanagriculture",
+      "displayLink": "www.chicagobotanic.org",
+      "snippet": "Windy City Harvest. The Chicago Botanic Garden's education and jobs-training program helps to bring food, health, and jobs to the community. Learn more. Food: ...",
+      "htmlSnippet": "\u003cb\u003eWindy\u003c/b\u003e City Harvest. The Chicago Botanic Garden&#39;s education and jobs-training program helps to bring food, health, and jobs to the community. Learn more. Food:&nbsp;...",
+      "formattedUrl": "https://www.chicagobotanic.org/urbanagriculture",
+      "htmlFormattedUrl": "https://www.chicagobotanic.org/urbanagriculture",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90dRvBxwvQnDZv-u2mpR-lDwQONWi3vp5MX15O0nRhdcZoGA7iEIs7WEk&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Windy City Harvest",
+            "og:site_name": "Chicago Botanic Garden",
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Windy City Harvest",
+            "mobileoptimized": "width",
+            "og:url": "https://www.chicagobotanic.org/urbanagriculture"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.chicagobotanic.org/sites/default/files/images/urban_ag/farm_on_ogden/FOO_square_tour.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Windy Chien (@windychien) • Instagram photos and videos",
+      "htmlTitle": "\u003cb\u003eWindy\u003c/b\u003e Chien (@windychien) • Instagram photos and videos",
+      "link": "https://www.instagram.com/windychien/?hl=en",
+      "displayLink": "www.instagram.com",
+      "snippet": "Artist. Creator of @theyearofknots. Past: Apple, iTunes, Aquarius Records. My book and more. Made in California.",
+      "htmlSnippet": "Artist. Creator of @theyearofknots. Past: Apple, iTunes, Aquarius Records. My book and more. Made in California.",
+      "formattedUrl": "https://www.instagram.com/windychien/?hl=en",
+      "htmlFormattedUrl": "https://www.instagram.com/\u003cb\u003ewindy\u003c/b\u003echien/?hl=en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ40zaJqR2W3DKIP7kMRP2mjz9WnSB128Taa3FogpfB7a4Vj86FgD1C3nds&s",
+            "width": "168",
+            "height": "300"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/95717086_238957880686578_7777571824660905984_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=tFeC4LtL8JcQ7kNvgFfCMp4&_nc_oc=Adkbr2LdDtsiskqBj8iDjddvDDLoptlErtPMFfVD-SwfBxesoEqp0ZGtvDxXmYf21LI&_nc_zt=24&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYHNe6ohCp_SWCqYfkT_gibBPsjfW5GUYvkNjOUd_iMupg&oe=67E85342",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Windy Chien (@windychien) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=windychien",
+            "color-scheme": "light",
+            "og:description": "74K Followers, 4,625 Following, 2,784 Posts - See Instagram photos and videos from Windy Chien (@windychien)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/windychien/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/windychien/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3056308292507800848"
+          }
+        ]
+      }
+    }
+  ]
+}

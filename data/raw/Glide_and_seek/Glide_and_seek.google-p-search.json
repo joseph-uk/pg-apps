@@ -1,0 +1,625 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Glide and seek",
+        "totalResults": "6650000",
+        "searchTerms": "Glide and seek",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Glide and seek",
+        "totalResults": "6650000",
+        "searchTerms": "Glide and seek",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.17985,
+    "formattedSearchTime": "0.18",
+    "totalResults": "6650000",
+    "formattedTotalResults": "6,650,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Glide and Seek",
+      "htmlTitle": "\u003cb\u003eGlide and Seek\u003c/b\u003e",
+      "link": "https://glideandseek.com/",
+      "displayLink": "glideandseek.com",
+      "snippet": "About. Glide and Seek is a modern and mobile friendly glider and aircraft tracker designed for easy use with features including tasks, rain radar, barographs ...",
+      "htmlSnippet": "About. \u003cb\u003eGlide and Seek\u003c/b\u003e is a modern and mobile friendly glider and aircraft tracker designed for easy use with features including tasks, rain radar, barographs&nbsp;...",
+      "formattedUrl": "https://glideandseek.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eglideandseek\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlwsmb8Z7zw76pBLp6jZ9qTnqaDu7zPuR_5kKXLyIf_d-rZ2kvRNi5kbaN&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://glideandseek.com/og-image-2.png",
+            "theme-color": "#0074D9",
+            "og:type": "website",
+            "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+            "og:title": "Glide and Seek",
+            "og:url": "https://glideandseek.com",
+            "og:description": "OGN Glider and Aircraft tracker"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://glideandseek.com/og-image-2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide And Seek - Sable Guide - IGN",
+      "htmlTitle": "\u003cb\u003eGlide And Seek\u003c/b\u003e - Sable Guide - IGN",
+      "link": "https://www.ign.com/wikis/sable/Glide_And_Seek",
+      "displayLink": "www.ign.com",
+      "snippet": "Sep 23, 2021 ... This quest becomes available after replacing the power core in the Heartbreak In The City quest. Get the quest in Eccria, Redsee.",
+      "htmlSnippet": "Sep 23, 2021 \u003cb\u003e...\u003c/b\u003e This quest becomes available after replacing the power core in the Heartbreak In The City quest. Get the quest in Eccria, Redsee.",
+      "formattedUrl": "https://www.ign.com/wikis/sable/Glide_And_Seek",
+      "htmlFormattedUrl": "https://www.ign.com/wikis/sable/\u003cb\u003eGlide_And_Seek\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8wW7Wxi_fSlByLi7y6H4kDGsj3MMiS_mNgr6a9i9axTxOUo-LVMj0tGb&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "thumbnail": [
+          {
+            "src": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/sable/1/10/20210922172823_1.jpg"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/sable/1/10/20210922172823_1.jpg",
+            "twitter:app:url:iphone": "ign://www.ign.com/wikis/sable/Glide_And_Seek",
+            "twitter:app:id:googleplay": "com.mobile.ign",
+            "theme-color": "#BF1313",
+            "article:published_time": "2021-09-24T19:45:36Z",
+            "twitter:card": "summary",
+            "copyright": "IGN Entertainment, Inc.",
+            "og:site_name": "IGN",
+            "cxenseparse:keywords": "Sable,Xbox One,Xbox Series X|S,PC,PlayStation 5,",
+            "twitter:app:url:ipad": "ign://www.ign.com/wikis/sable/Glide_And_Seek",
+            "al:android:package": "com.mobile.ign",
+            "section": "wiki",
+            "twitter:app:name:googleplay": "IGN",
+            "al:ios:url": "ign://ign.com/wikis/sable/Glide_And_Seek",
+            "twitter:app:id:iphone": "284819997",
+            "og:description": "This is a guide for IGN&apos;s Sable Quest section. Sable is comprised of many quests in the non-linear story. This quest becomes available after replacing the",
+            "al:ios:app_store_id": "284819997",
+            "next-head-count": "48",
+            "twitter:site": "@IGN",
+            "article:modified_time": "2021-10-16T05:41:55Z",
+            "og:type": "website",
+            "thumbnail": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/sable/1/10/20210922172823_1.jpg",
+            "al:ios:app_name": "IGN: Video Game News, Reviews, Guides",
+            "cpid": "5a8bca0b2d985966302b4671c3a001ee",
+            "og:title": "Glide And Seek - Sable Guide - IGN",
+            "twitter:app:id:ipad": "284819997",
+            "al:web:url": "https://www.ign.com/wikis/sable/Glide_And_Seek",
+            "fb:pages": "59685491632",
+            "facebook-domain-verification": "960w7qsbsscw9stu2hxr2xfaes6cvc",
+            "al:android:url": "ign://www.ign.com/wikis/sable/Glide_And_Seek",
+            "referrer": "always",
+            "twitter:app:url:googleplay": "ign://www.ign.com/wikis/sable/Glide_And_Seek",
+            "fb:app_id": "115982828429116",
+            "twitter:app:name:ipad": "IGN: Video Game News, Reviews, Guides",
+            "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+            "twitter:imageurl": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/sable/1/10/20210922172823_1.jpg",
+            "og:url": "https://www.ign.com/wikis/sable/Glide_And_Seek",
+            "al:android:app_name": "IGN",
+            "twitter:app:name:iphone": "IGN: Video Game News, Reviews, Guides"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/sable/1/10/20210922172823_1.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Can't finish glide and seek quest : r/sablegame",
+      "htmlTitle": "Can&#39;t finish \u003cb\u003eglide and seek\u003c/b\u003e quest : r/sablegame",
+      "link": "https://www.reddit.com/r/sablegame/comments/1alboas/cant_finish_glide_and_seek_quest/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Feb 7, 2024 ... One is by the docks, one is near the beggar, and one is hiding to the left of the merchant's trade area, one of the weird containers in the ground for dye/ ...",
+      "htmlSnippet": "Feb 7, 2024 \u003cb\u003e...\u003c/b\u003e One is by the docks, one is near the beggar, and one is hiding to the left of the merchant&#39;s trade area, one of the weird containers in the ground for dye/&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/sablegame/.../cant_finish_glide_and_seek_quest/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/sablegame/.../cant_finish_\u003cb\u003eglide_and_seek\u003c/b\u003e_quest/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAO4JtUMPxP04CRHhK637Q2A0lokju27BWrNieHxdMl5I8urI9MyWr6I&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/cant-finish-glide-and-seek-quest-v0-zmjk1dejv7hc1.jpeg?width=1080&crop=smart&auto=webp&s=29dc599922f7295b168356a3411977694abd4cc5",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/sablegame on Reddit: Can't finish glide and seek quest",
+            "og:site_name": "Reddit",
+            "og:title": "r/sablegame on Reddit: Can't finish glide and seek quest",
+            "og:image:height": "607",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/BryanGamerXL - 13 votes and 5 comments",
+            "twitter:image": "https://preview.redd.it/cant-finish-glide-and-seek-quest-v0-zmjk1dejv7hc1.jpeg?width=1080&crop=smart&auto=webp&s=29dc599922f7295b168356a3411977694abd4cc5",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/sablegame/comments/1alboas/cant_finish_glide_and_seek_quest/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/cant-finish-glide-and-seek-quest-v0-zmjk1dejv7hc1.jpeg?width=1080&crop=smart&auto=webp&s=29dc599922f7295b168356a3411977694abd4cc5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide & Seek - ADS-B Flight Tracking - FlightAware Discussions",
+      "htmlTitle": "\u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e - ADS-B Flight Tracking - FlightAware Discussions",
+      "link": "https://discussions.flightaware.com/t/glide-seek/82935",
+      "displayLink": "discussions.flightaware.com",
+      "snippet": "May 25, 2022 ... Glide & Seek ... A friend of mine, was at a local glider station, and was told about glider and “other” tracking. It's called Glide & Seek. I don' ...",
+      "htmlSnippet": "May 25, 2022 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e ... A friend of mine, was at a local \u003cb\u003eglider\u003c/b\u003e station, and was told about \u003cb\u003eglider\u003c/b\u003e and “other” tracking. It&#39;s called \u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e. I don&#39;&nbsp;...",
+      "formattedUrl": "https://discussions.flightaware.com/t/glide-seek/82935",
+      "htmlFormattedUrl": "https://discussions.flightaware.com/t/\u003cb\u003eglide\u003c/b\u003e-\u003cb\u003eseek\u003c/b\u003e/82935",
+      "pagemap": {
+        "person": [
+          {
+            "name": "PhilDoggo",
+            "url": "PhilDoggo"
+          },
+          {
+            "name": "foxhunter",
+            "url": "foxhunter"
+          },
+          {
+            "name": "PhilDoggo",
+            "url": "PhilDoggo"
+          },
+          {
+            "name": "system",
+            "url": "system"
+          }
+        ],
+        "organization": [
+          {
+            "name": "FlightAware"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://us1.discourse-cdn.com/flex019/uploads/flightaware/optimized/3X/e/9/e971d544af6418778972edeb9a3b2444dab9cdea_2_1024x537.png",
+            "theme-color": "#ffffff",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "Glide & Seek",
+            "article:published_time": "2022-05-25T08:55:43+00:00",
+            "og:site_name": "FlightAware Discussions",
+            "twitter:url": "https://discussions.flightaware.com/t/glide-seek/82935",
+            "og:title": "Glide & Seek",
+            "color-scheme": "light",
+            "og:description": "A friend of mine, was at a local glider station, and was told about glider and “other” tracking. It’s called Glide & Seek.  I don’t think it’s ADSB, and possibly the aircraft are linked by this system?  Quite good to zoom out and see the weather layers!",
+            "twitter:image": "https://us1.discourse-cdn.com/flex019/uploads/flightaware/optimized/3X/e/9/e971d544af6418778972edeb9a3b2444dab9cdea_2_1024x537.png",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, viewport-fit=cover",
+            "twitter:description": "A friend of mine, was at a local glider station, and was told about glider and “other” tracking. It’s called Glide & Seek.  I don’t think it’s ADSB, and possibly the aircraft are linked by this system?  Quite good to zoom out and see the weather layers!",
+            "og:article:section": "FlightAware",
+            "og:url": "https://discussions.flightaware.com/t/glide-seek/82935",
+            "og:article:section:color": "0E76BD"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "image": "https://us1.discourse-cdn.com/flex019/uploads/flightaware/original/3X/e/9/e971d544af6418778972edeb9a3b2444dab9cdea.png",
+            "datemodified": "2022-05-25T08:55:43Z",
+            "articlesection": "ADS-B Flight Tracking",
+            "position": "1",
+            "text": "A friend of mine, was at a local glider station, and was told about glider and “other” tracking. It’s called Glide & Seek. I don’t think it’s ADSB, and possibly the aircraft are linked...",
+            "headline": "Glide & Seek",
+            "url": "https://discussions.flightaware.com/t/glide-seek/82935",
+            "datepublished": "2022-05-25T08:55:43Z",
+            "mainentityofpage": "https://discussions.flightaware.com/t/glide-seek/82935"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2022-05-25T10:32:26Z",
+            "position": "2",
+            "text": "As far as i understand, most lightweight aircraft are tracked via FLARM FLARM Technology | Traffic awareness, collision avoidance, identification and tracking for General Aviation and UAVs...",
+            "datepublished": "2022-05-25T10:32:26Z"
+          },
+          {
+            "datemodified": "2022-05-25T10:51:16Z",
+            "position": "3",
+            "text": "Ah, this all makes sense now! Cheers",
+            "datepublished": "2022-05-25T10:51:16Z"
+          },
+          {
+            "datemodified": "2023-05-25T10:51:58Z",
+            "position": "4",
+            "text": "This topic was automatically closed 365 days after the last reply. New replies are no longer allowed.",
+            "datepublished": "2023-05-25T10:51:58Z"
+          }
+        ],
+        "itemlist": [
+          {
+            "itemlistorder": "http://schema.org/ItemListOrderDescending"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://us1.discourse-cdn.com/flex019/uploads/flightaware/optimized/3X/e/9/e971d544af6418778972edeb9a3b2444dab9cdea_2_1024x537.png"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "FlightAware",
+            "name": "FlightAware",
+            "position": "1"
+          },
+          {
+            "item": "ADS-B Flight Tracking",
+            "name": "ADS-B Flight Tracking",
+            "position": "2"
+          },
+          {
+            "position": "1",
+            "url": "FLARM"
+          },
+          {
+            "position": "2",
+            "url": "FLARM - Open Glider Network"
+          },
+          {
+            "position": "3",
+            "url": "Kann man/ Tracking gliders"
+          },
+          {
+            "position": "4",
+            "url": "Filter for Gliders"
+          },
+          {
+            "position": "5",
+            "url": "New guy looking for some advice"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide n' Seek | KONG Company",
+      "htmlTitle": "\u003cb\u003eGlide\u003c/b\u003e n&#39; \u003cb\u003eSeek\u003c/b\u003e | KONG Company",
+      "link": "https://www.kongcompany.com/catalogue/CA48/",
+      "displayLink": "www.kongcompany.com",
+      "snippet": "Cats will love the thrill of the chase with the new KONG Glide 'n Seek toy. Magnetic levitation technology brings the feather toy to life—bouncing, jumping and ...",
+      "htmlSnippet": "Cats will love the thrill of the chase with the new KONG \u003cb\u003eGlide\u003c/b\u003e &#39;n \u003cb\u003eSeek\u003c/b\u003e toy. Magnetic levitation technology brings the feather toy to life—bouncing, jumping and&nbsp;...",
+      "formattedUrl": "https://www.kongcompany.com/catalogue/CA48/",
+      "htmlFormattedUrl": "https://www.kongcompany.com/catalogue/CA48/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6wxriD7kXacJ40f1H71IEFd4srOuHIs7zIXUSsxVXnAtKqfArNDGX-0&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "The KONG Company",
+            "article:modified_time": "2023-10-17T16:23:02+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Product",
+            "og:locale": "en_US",
+            "og:url": "https://www.kongcompany.com/catalogue/product/",
+            "msapplication-tileimage": "https://www.kongcompany.com/wp-content/uploads/2022/09/cropped-KONG-Shape_Red-270x270.png",
+            "article:publisher": "https://www.facebook.com/KONGCompany/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.amplifi.pattern.com/de567ad2-1ef5-4ab2-acd5-d7d0e1476421_medium"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide & Seek Champion - Roblox",
+      "htmlTitle": "\u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e Champion - Roblox",
+      "link": "https://www.roblox.com/catalog/17804732867/Glide-Seek-Champion",
+      "displayLink": "www.roblox.com",
+      "snippet": "Customize your avatar with the Glide & Seek Champion and millions of other items. Mix & match this hat with other items to create an avatar that is unique ...",
+      "htmlSnippet": "Customize your avatar with the \u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e Champion and millions of other items. Mix &amp; match this hat with other items to create an avatar that is unique&nbsp;...",
+      "formattedUrl": "https://www.roblox.com/catalog/17804732867/Glide-Seek-Champion",
+      "htmlFormattedUrl": "https://www.roblox.com/catalog/17804732867/\u003cb\u003eGlide\u003c/b\u003e-\u003cb\u003eSeek\u003c/b\u003e-Champion",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_T6VaokIwnNisWf-6OCDbrJmSPgHG0E0ysjkmrQywsMDGei_PpP-RUw&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=431946152",
+            "og:image": "https://tr.rbxcdn.com/180DAY-525ffa2f064fd59dafa4fad6d3cd22f5/420/420/Hat/Png/noFilter",
+            "twitter:app:id:googleplay": "com.roblox.client",
+            "og:type": "product",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Glide & Seek Champion",
+            "og:site_name": "Roblox",
+            "author": "Roblox Corporation",
+            "og:title": "Glide & Seek Champion",
+            "twitter:app:id:ipad": "431946152",
+            "twitter:app:name:googleplay": "Roblox",
+            "twitter:image1": "https://tr.rbxcdn.com/180DAY-525ffa2f064fd59dafa4fad6d3cd22f5/420/420/Hat/Png/noFilter",
+            "twitter:app:id:iphone": "431946152",
+            "og:description": "Customize your avatar with the Glide & Seek Champion and millions of other items. Mix & match this hat with other items to create an avatar that is unique to you!",
+            "fb:app_id": "190191627665278",
+            "twitter:site": "@Roblox",
+            "twitter:app:name:ipad": "Roblox Mobile",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:app:country": "US",
+            "twitter:description": "Customize your avatar with the Glide & Seek Champion and millions of other items. Mix & match this hat with other items to create an avatar that is unique to you!",
+            "og:url": "https://www.roblox.com/catalog/17804732867/Glide-Seek-Champion",
+            "twitter:app:name:iphone": "Roblox Mobile"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://tr.rbxcdn.com/180DAY-525ffa2f064fd59dafa4fad6d3cd22f5/420/420/Hat/Png/noFilter"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "glide and seek ⚡️ @johannesjwagner @kevin_maderegger #ski ...",
+      "htmlTitle": "\u003cb\u003eglide and seek\u003c/b\u003e ⚡️ @johannesjwagner @kevin_maderegger #ski ...",
+      "link": "https://www.instagram.com/lyndstroem/reel/DFqOF9sCGjh/",
+      "displayLink": "www.instagram.com",
+      "snippet": "Feb 4, 2025 ... 492 likes, 5 comments - lyndstroem on February 4, 2025: \"glide and seek ⚡️ @johannesjwagner @kevin_maderegger #ski #freeride #pow #tirol ...",
+      "htmlSnippet": "Feb 4, 2025 \u003cb\u003e...\u003c/b\u003e 492 likes, 5 comments - lyndstroem on February 4, 2025: &quot;\u003cb\u003eglide and seek\u003c/b\u003e ⚡️ @johannesjwagner @kevin_maderegger #ski #freeride #pow #tirol&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/lyndstroem/reel/DFqOF9sCGjh/",
+      "htmlFormattedUrl": "https://www.instagram.com/lyndstroem/reel/DFqOF9sCGjh/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.75761-15/475992188_18050773184172105_83315264571738070_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=3qxlQrDgftQQ7kNvgFHoZgr&_nc_oc=AdmvU8IS8EJ9zjJ_dxVqUE2wXAIlBAKkV_jqTil25jNTC85J-_iKZGY2tH7ApuSWEVo&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=E7S7g6VB4Qx2yhSNEVpvBg&oh=00_AYFpQu_EQxiDdxSSAmwAT78VVzy3fxfEYmaYsC76DA-j9A&oe=67E35C44",
+            "theme-color": "#FFFFFF",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Instagram",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "medium": "image",
+            "al:ios:url": "instagram://media?id=3560720437875337441",
+            "og:description": "492 likes, 5 comments - lyndstroem on February 4, 2025: \"glide and seek ⚡️\n\n🎿\n@johannesjwagner \n@kevin_maderegger \n\n#ski #freeride #pow #tirol #droneshot #skiing #alps #alpen #mountains #berge #innsbruck\".",
+            "twitter:image": "https://scontent-atl3-2.cdninstagram.com/v/t51.75761-15/475992188_18050773184172105_83315264571738070_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=3qxlQrDgftQQ7kNvgFHoZgr&_nc_oc=AdmvU8IS8EJ9zjJ_dxVqUE2wXAIlBAKkV_jqTil25jNTC85J-_iKZGY2tH7ApuSWEVo&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=E7S7g6VB4Qx2yhSNEVpvBg&oh=00_AYFpQu_EQxiDdxSSAmwAT78VVzy3fxfEYmaYsC76DA-j9A&oe=67E35C44",
+            "al:ios:app_store_id": "389801252",
+            "twitter:site": "@instagram",
+            "instapp:owner_user_id": "35216044104",
+            "og:type": "article",
+            "twitter:title": "leander oerley (@lyndstroem) • Instagram reel",
+            "al:ios:app_name": "Instagram",
+            "og:title": "leander oerley on Instagram: \"glide and seek ⚡️\n\n🎿\n@johannesjwagner \n@kevin_maderegger \n\n#ski #freeride #pow #tirol #droneshot #skiing #alps #alpen #mountains #berge #innsbruck\"",
+            "twitter:maxage": "86400",
+            "color-scheme": "light",
+            "al:android:url": "https://www.instagram.com/lyndstroem/reel/DFqOF9sCGjh/",
+            "fb:app_id": "124024574287414",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/lyndstroem/reel/DFqOF9sCGjh/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-2.cdninstagram.com/v/t51.75761-15/475992188_18050773184172105_83315264571738070_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=3qxlQrDgftQQ7kNvgFHoZgr&_nc_oc=AdmvU8IS8EJ9zjJ_dxVqUE2wXAIlBAKkV_jqTil25jNTC85J-_iKZGY2tH7ApuSWEVo&_nc_zt=23&_nc_ht=scontent-atl3-2.cdninstagram.com&_nc_gid=E7S7g6VB4Qx2yhSNEVpvBg&oh=00_AYFpQu_EQxiDdxSSAmwAT78VVzy3fxfEYmaYsC76DA-j9A&oe=67E35C44"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide & Seek Champion | Roblox Item - Rolimon's",
+      "htmlTitle": "\u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e Champion | Roblox Item - Rolimon&#39;s",
+      "link": "https://www.rolimons.com/item/17804732867",
+      "displayLink": "www.rolimons.com",
+      "snippet": "Jun 10, 2024 ... Glide & Seek Champion · UGC Limited · Sale Location · Description · More From Creator · Charts · UGC Items · Roblox Items. Crown of the Dark ...",
+      "htmlSnippet": "Jun 10, 2024 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e Champion &middot; UGC Limited &middot; Sale Location &middot; Description &middot; More From Creator &middot; Charts &middot; UGC Items &middot; Roblox Items. Crown of the Dark&nbsp;...",
+      "formattedUrl": "https://www.rolimons.com/item/17804732867",
+      "htmlFormattedUrl": "https://www.rolimons.com/item/17804732867",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKPbdiG__HkEQC1QiZ7fuP24wWtcBUiCKEMKIywUq4ZsOypLl-rUKasuE&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#242021",
+            "og:image": "https://tr.rbxcdn.com/180DAY-525ffa2f064fd59dafa4fad6d3cd22f5/420/420/Hat/Webp/noFilter",
+            "theme-color": "#242021",
+            "og:type": "website",
+            "og:site_name": "Rolimon's",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "og:title": "Glide & Seek Champion",
+            "og:url": "https://www.rolimons.com/item/17804732867",
+            "og:description": "Glide & Seek Champion is a Roblox UGC Limited Hat created by the group Walmart."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://tr.rbxcdn.com/180DAY-525ffa2f064fd59dafa4fad6d3cd22f5/420/420/Hat/Webp/noFilter"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide and Seek",
+      "htmlTitle": "\u003cb\u003eGlide and Seek\u003c/b\u003e",
+      "link": "https://bit.ly/acitrackday9",
+      "displayLink": "bit.ly",
+      "snippet": "About. Glide and Seek is a modern and mobile friendly glider and aircraft tracker designed for easy use with features including tasks, rain radar, barographs ...",
+      "htmlSnippet": "About. \u003cb\u003eGlide and Seek\u003c/b\u003e is a modern and mobile friendly glider and aircraft tracker designed for easy use with features including tasks, rain radar, barographs&nbsp;...",
+      "formattedUrl": "https://bit.ly/acitrackday9",
+      "htmlFormattedUrl": "https://bit.ly/acitrackday9",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlwsmb8Z7zw76pBLp6jZ9qTnqaDu7zPuR_5kKXLyIf_d-rZ2kvRNi5kbaN&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://glideandseek.com/og-image-2.png",
+            "theme-color": "#0074D9",
+            "og:type": "website",
+            "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+            "og:title": "Glide and Seek",
+            "og:url": "https://glideandseek.com",
+            "og:description": "OGN Glider and Aircraft tracker"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://glideandseek.com/og-image-2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Glide & Seek Pal | Roblox Item - Rolimon's",
+      "htmlTitle": "\u003cb\u003eGlide\u003c/b\u003e &amp; \u003cb\u003eSeek\u003c/b\u003e Pal | Roblox Item - Rolimon&#39;s",
+      "link": "https://www.rolimons.com/item/17804743826",
+      "displayLink": "www.rolimons.com",
+      "snippet": "Type ... Shoulder Accessory ... Sale Location ... In-Experience ... Asset ID ... Created ... Jun 10, 2024. Updated ... Updated ... Jun 10, ... Purchase ...",
+      "htmlSnippet": "Type ... Shoulder Accessory ... Sale Location ... In-Experience ... Asset ID ... Created ... Jun 10, 2024. Updated ... Updated ... Jun 10, ... Purchase&nbsp;...",
+      "formattedUrl": "https://www.rolimons.com/item/17804743826",
+      "htmlFormattedUrl": "https://www.rolimons.com/item/17804743826",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLuILA_O5KIJmv89A1047vBiN2oDepLcYgAwK8MlR37li9aSNoFIT0UJU&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#242021",
+            "og:image": "https://tr.rbxcdn.com/180DAY-2f19125df70898c81e6e78255eb4d901/420/420/ShoulderAccessory/Webp/noFilter",
+            "theme-color": "#242021",
+            "og:type": "website",
+            "og:site_name": "Rolimon's",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "og:title": "Glide & Seek Pal",
+            "og:url": "https://www.rolimons.com/item/17804743826",
+            "og:description": "Glide & Seek Pal is a Roblox UGC Limited Shoulder Accessory created by the group Walmart."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://tr.rbxcdn.com/180DAY-2f19125df70898c81e6e78255eb4d901/420/420/ShoulderAccessory/Webp/noFilter"
+          }
+        ]
+      }
+    }
+  ]
+}

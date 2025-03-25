@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="dns-prefetch" href="https://cdnstatic.ventusky.com">
+	<link rel="dns-prefetch" href="https://data.ventusky.com">
+	<link rel="dns-prefetch" href="https://api.ventusky.com">
+	<link rel="dns-prefetch" href="https://webcams.ventusky.com">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="apple-itunes-app" content="app-id=1280984498"> -->
+    <title>Ribblehead - Webcams | Ventusky</title>
+    <link rel=stylesheet href="https://cdnstatic.ventusky.com/media/style.css?1739635200">
+    <script>
+    document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+    });
+
+    </script>
+    <meta name="description" content="Ribblehead - Weather forecast for 10 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this place">
+    <meta name="keywords" content="weather, forecast, maps, wind, temperature, precipitation, rain, cloud, pressure, CAPE">
+    <meta name="application-name" content="Ventusky">
+    
+        
+    <meta property="og:image" content="https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg">
+    		   
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Ventuskycom">
+    <meta name="twitter:title" content="Ribblehead - Webcams | Ventusky">
+    <meta name="twitter:description" content="Ribblehead - Weather forecast for 10 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this place">
+    <meta name="twitter:image" content="https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg">
+		
+    <link rel="shortcut icon" href="https://cdnstatic.ventusky.com/images_v2/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdnstatic.ventusky.com/images_v2/apple-touch-icon-152x152.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- cz -->
+</head>
+<body>
+    <form id="header">
+        <h1><a href="https://www.ventusky.com/">Ventusky: Weather Forecast Maps</a></h1>
+        <label>
+            <input name="q">
+        </label>
+        <ul>
+            <li class="progress"></li>
+        </ul>
+    </form>
+	<menu>
+        <li>
+			<a href="https://my.ventusky.com/premium/" id="menu-premium" class="button">Premium</a>
+		</li>
+		<li>
+			<a href="https://my.ventusky.com/" id="menu-my" class="button">myVentusky</a>
+		</li>
+		<li>
+			<a href="https://my.ventusky.com/about/" id="menu-about" class="button">About</a>
+        </li>
+    </menu>
+
+    <div id="no-js">
+     <ul>
+     <li>Temperature</li>
+     <li>Precipitation</li>
+     <li>Wind</li>
+     <li>Gust</li>
+     <li>Clouds</li>
+     <li>Air pressure</li>
+     <li>CAPE</li>
+     <li>Snow cover</li>
+     <li>Freezing level</li>
+     </ul>
+     
+     Wind animation <br>
+     GFS, ICON, GEM
+
+    </div>
+	
+	<div id="news" data-news="news-32" style="width: 280px;">
+      <a href="https://my.ventusky.com/guide/news/ventusky-expands-forecast-accuracy-with-the-harmonie-weather-model-35/">
+	    <strong>New High-Resolution HARMONIE Weather Model</strong>
+	    <img src="https://cdnstatic.ventusky.com/images/promo/harmonie.png" alt="HARMONIE">        
+      </a>
+    </div>
+
+
+    <script>
+var MapOptions = {
+  "root": "https://www.ventusky.com/",
+  "lang": "en",
+  "lat": 53.7817,
+  "lon": -1.7776,
+  "zoom": 5,
+  "model": "auto",
+  "now":               Date.UTC(2025, 2, 25, 21, 56),
+  "camTilesUpdated": 1721888611,
+
+  "icon-deTimelineStart": Date.UTC(2024, 0, 1, 0),
+"icon-deTimelineEnd": Date.UTC(2025, 2, 27, 18),
+"icon-deUpdated": Date.UTC(2025, 2, 25, 18, 0),
+"icon-deAccumulationStart": Date.UTC(2025, 2, 25, 18),
+
+"icon-waterTimelineStart": Date.UTC(2017, 6, 1, 0),
+"icon-waterTimelineEnd": Date.UTC(2024, 4, 25, 0),
+"icon-waterUpdated": Date.UTC(2024, 4, 24, 0, 0),
+
+"icon-eu-waterTimelineStart": Date.UTC(2020, 1, 17, 0),
+"icon-eu-waterTimelineEnd": Date.UTC(2025, 2, 28, 18),
+"icon-eu-waterUpdated": Date.UTC(2025, 2, 25, 12, 0),
+
+"gfsTimelineStart": Date.UTC(2018, 0, 1, 0),
+"gfsTimelineEnd": Date.UTC(2025, 3, 8, 12),
+"gfsUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"gfsAccumulationStart": Date.UTC(2025, 2, 25, 15),
+
+"gemTimelineStart": Date.UTC(2025, 0, 1, 0),
+"gemTimelineEnd": Date.UTC(2025, 3, 4, 0),
+"gemUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"gemAccumulationStart": Date.UTC(2025, 2, 25, 15),
+
+"hrrrTimelineStart": Date.UTC(2021, 0, 1, 0),
+"hrrrTimelineEnd": Date.UTC(2025, 2, 27, 18),
+"hrrrUpdated": Date.UTC(2025, 2, 25, 20, 0),
+"hrrrAccumulationStart": Date.UTC(2025, 2, 25, 20),
+
+"nbmTimelineStart": Date.UTC(2025, 0, 1, 0),
+"nbmTimelineEnd": Date.UTC(2025, 2, 27, 7),
+"nbmUpdated": Date.UTC(2025, 2, 25, 20, 0),
+"nbmAccumulationStart": Date.UTC(2025, 2, 25, 20),
+
+"euradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"euradTimelineEnd": Date.UTC(2025, 2, 25, 22),
+"euradUpdated": Date.UTC(2025, 2, 25, 23, 20),
+
+"eurad_hresTimelineStart": Date.UTC(2023, 7, 27, 0),
+"eurad_hresTimelineEnd": Date.UTC(2025, 2, 25, 21),
+"eurad_hresUpdated": Date.UTC(2025, 2, 25, 23, 20),
+
+"usradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"usradTimelineEnd": Date.UTC(2025, 2, 25, 22),
+"usradUpdated": Date.UTC(2025, 2, 25, 23, 25),
+
+"earadTimelineStart": Date.UTC(2024, 4, 5, 0),
+"earadTimelineEnd": Date.UTC(2025, 2, 25, 22),
+"earadUpdated": Date.UTC(2025, 2, 25, 23, 20),
+
+"woradTimelineStart": Date.UTC(2019, 0, 1, 0),
+"woradTimelineEnd": Date.UTC(2025, 2, 25, 21),
+"woradUpdated": Date.UTC(2025, 2, 25, 23, 20),
+
+"silamTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silamTimelineEnd": Date.UTC(2025, 2, 30, 0),
+"silamUpdated": Date.UTC(2025, 2, 25, 0, 0),
+
+"silam-euTimelineStart": Date.UTC(2020, 1, 15, 0),
+"silam-euTimelineEnd": Date.UTC(2025, 2, 30, 0),
+"silam-euUpdated": Date.UTC(2025, 2, 25, 3, 0),
+
+"goesTimelineStart": Date.UTC(2022, 0, 1, 0),
+"goesTimelineEnd": Date.UTC(2025, 2, 25, 21),
+"goesUpdated": Date.UTC(2025, 2, 25, 21, 50),
+
+"rtofsTimelineStart": Date.UTC(2021, 5, 28, 0),
+"rtofsTimelineEnd": Date.UTC(2025, 3, 2, 0),
+"rtofsUpdated": Date.UTC(2025, 2, 25, 0, 0),
+
+"ovationTimelineStart": Date.UTC(2021, 3, 1, 0),
+"ovationTimelineEnd": Date.UTC(2025, 2, 25, 22),
+"ovationUpdated": Date.UTC(2025, 2, 25, 22, 0),
+
+"aromeTimelineStart": Date.UTC(2024, 0, 1, 0),
+"aromeTimelineEnd": Date.UTC(2025, 2, 27, 6),
+"aromeUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"aromeAccumulationStart": Date.UTC(2025, 2, 25, 12),
+
+"ukmoTimelineStart": Date.UTC(2022, 4, 24, 0),
+"ukmoTimelineEnd": Date.UTC(2025, 2, 26, 12),
+"ukmoUpdated": Date.UTC(2025, 2, 25, 12, 0),
+
+"ukmo-ukTimelineStart": Date.UTC(2023, 2, 1, 0),
+"ukmo-ukTimelineEnd": Date.UTC(2025, 2, 30, 3),
+"ukmo-ukUpdated": Date.UTC(2025, 2, 25, 10, 0),
+"ukmo-uk3hStart": Date.UTC(2025, 2, 27, 15),
+"ukmo-ukAccumulationStart": Date.UTC(2025, 2, 25, 10),
+
+"iconTimelineStart": Date.UTC(2018, 0, 1, 0),
+"iconTimelineEnd": Date.UTC(2025, 3, 2, 0),
+"iconUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"icon3hStart": Date.UTC(2025, 2, 28, 18),
+"iconAccumulationStart": Date.UTC(2025, 2, 25, 12),
+
+"icon-euTimelineStart": Date.UTC(2018, 10, 0, 0),
+"icon-euTimelineEnd": Date.UTC(2025, 2, 30, 12),
+"icon-euUpdated": Date.UTC(2025, 2, 25, 15, 0),
+"icon-eu3hStart": Date.UTC(2025, 2, 28, 18),
+"icon-euAccumulationStart": Date.UTC(2025, 2, 25, 15),
+
+"mepsTimelineStart": Date.UTC(2023, 3, 8, 0),
+"mepsTimelineEnd": Date.UTC(2025, 2, 28, 9),
+"mepsUpdated": Date.UTC(2025, 2, 25, 15, 0),
+"mepsAccumulationStart": Date.UTC(2025, 2, 25, 15),
+
+"wavewatch-noTimelineStart": Date.UTC(2023, 4, 15, 0),
+"wavewatch-noTimelineEnd": Date.UTC(2025, 2, 28, 6),
+"wavewatch-noUpdated": Date.UTC(2025, 2, 25, 6, 0),
+
+"stofsTimelineStart": Date.UTC(2016, 4, 1, 12),
+"stofsTimelineEnd": Date.UTC(2025, 3, 1, 23),
+"stofsUpdated": Date.UTC(2025, 2, 25, 7, 0),
+
+"smocTimelineStart": Date.UTC(2016, 4, 1, 12),
+"smocTimelineEnd": Date.UTC(2025, 3, 1, 23),
+"smocUpdated": Date.UTC(2025, 2, 25, 0, 0),
+
+"mfwamTimelineStart": Date.UTC(2024, 3, 14, 0),
+"mfwamTimelineEnd": Date.UTC(2025, 3, 4, 0),
+"mfwamUpdated": Date.UTC(2025, 2, 25, 3, 0),
+
+"ecmwf-mresTimelineStart": Date.UTC(2024, 3, 21, 0),
+"ecmwf-mresTimelineEnd": Date.UTC(2025, 3, 8, 12),
+"ecmwf-mresUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"ecmwf-mres6hStart": Date.UTC(2025, 2, 31, 12),
+"ecmwf-mresAccumulationStart": Date.UTC(2025, 2, 25, 12),
+
+"aladinTimelineStart": Date.UTC(2024, 5, 23, 0),
+"aladinTimelineEnd": Date.UTC(2025, 2, 28, 12),
+"aladinUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"aladinAccumulationStart": Date.UTC(2025, 2, 25, 12),
+
+"kma_umTimelineStart": Date.UTC(2024, 9, 19, 0),
+"kma_umTimelineEnd": Date.UTC(2025, 3, 6, 12),
+"kma_umUpdated": Date.UTC(2025, 2, 25, 12, 0),
+"kma_um6hStart": Date.UTC(2025, 2, 29, 0),
+"kma_umAccumulationStart": Date.UTC(2025, 2, 25, 12),
+
+"harmonie_euTimelineStart": Date.UTC(2025, 1, 9, 0),
+"harmonie_euTimelineEnd": Date.UTC(2025, 2, 28, 6),
+"harmonie_euUpdated": Date.UTC(2025, 2, 25, 18, 0),
+"harmonie_euAccumulationStart": Date.UTC(2025, 2, 25, 18),
+
+"harmonie_carTimelineStart": Date.UTC(2025, 1, 9, 0),
+"harmonie_carTimelineEnd": Date.UTC(2025, 2, 28, 6),
+"harmonie_carUpdated": Date.UTC(2025, 2, 25, 18, 0),
+"harmonie_carAccumulationStart": Date.UTC(2025, 2, 25, 18),
+
+"nam_usTimelineStart": Date.UTC(2025, 1, 15, 0),
+"nam_usTimelineEnd": Date.UTC(2025, 2, 28, 6),
+"nam_usUpdated": Date.UTC(2025, 2, 25, 18, 0),
+"nam_usAccumulationStart": Date.UTC(2025, 2, 25, 18),
+
+"nam_hawaiTimelineStart": Date.UTC(2025, 1, 15, 0),
+"nam_hawaiTimelineEnd": Date.UTC(2025, 2, 28, 6),
+"nam_hawaiUpdated": Date.UTC(2025, 2, 25, 18, 0),
+"nam_hawaiAccumulationStart": Date.UTC(2025, 2, 25, 18),
+
+  
+  "ukmo-ukUpdated": Date.UTC(2025, 2, 25, 19, 0), //overrides non-radar version
+ 
+  "ecmwfTimelineStart": Date.UTC(1979, 5, 1, 0),
+  "ecmwfTimelineEnd":   Date.UTC(2020, 9, 31, 21),
+  "ecmwfUpdated":       Date.UTC(2021, 0, 29, 0, 0),    
+               
+  "hurricanesUpdated":  Date.UTC(2025, 2, 25, 18, 40)
+};
+    </script>
+
+    <script src="https://cdnstatic.ventusky.com/media/script-en.js?1739635200"></script>
+    
+
+        
+        <div id="aside">
+            <div id="aside_inner">
+            <span id="aside_close_btn" onclick="document.getElementById('aside').className='hidden'">
+                <span class="aside_close_btn_ico"></span>
+            </span>
+                <div class="header">
+	<div class="header_background">
+		<h1>Ribblehead</h1>	
+		
+		<a href="#" id="star" data-add="Save on &#10;map" data-remove="Remove from &#10;map" data-star="54.21;-2.35;Ribblehead"><span></span></a>		
+	</div>
+
+</div>
+
+<!--/header-->
+
+
+<img src="https://webcams.ventusky.com/data/19/128086619/hour/20250325_2100.jpg?1742939676" alt="Ribblehead - Webcams" class="w-100" onload="camera(this, '128086619', {'hour': [1742936400,1742932800,1742929200,1742925600,1742922000,1742918400,1742914800,1742911200,1742907600,1742904000,1742900400,1742896800,1742893200,1742889600,1742886000,1742882400,1742878800,1742875200,1742871600,1742868000,1742864400,1742860800,1742857200,1742853600], 'day': [1742904000,1742817600,1742731200,1742644800,1742558400,1742472000,1742385600,1742299200,1742212800,1742126400,1742040000,1741953600,1741867200,1741780800,1741694400,1741608000,1741521600,1741435200,1741348800,1741262400,1741176000,1741089600,1741003200,1740916800,1740830400,1740744000,1740657600,1740571200,1740484800,1740398400,1740312000], 'month': [1742385600,1741780800,1741176000,1740571200,1739966400,1739361600,1738756800,1738152000,1737547200,1736942400,1736337600,1735732800,1734955200,1734350400,1733745600,1733140800,1732536000,1731931200,1731326400,1730721600,1730116800,1729512000,1728907200,1728302400,1727697600,1727092800,1726488000,1725883200,1725278400,1724673600,1724068800,1723464000,1722859200,1722254400,1721649600,1721044800,1720440000,1719835200,1719230400,1718625600,1718020800,1717416000,1716811200,1716206400,1715601600,1714996800,1714392000,1713787200,1713182400,1712577600,1711972800,1711368000]})">
+
+<div class="p-2">
+    <span class="quality-text-0">●</span> a minute ago    
+</div>
+<hr class="m-0" />
+
+<div class="section pb-0">
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>
+                    Location                </td>
+                <td>
+                    Ribblehead -
+                    <a href="https://www.ventusky.com/54.2111;-2.35293" dest="panel">
+                        Forecast                    </a>
+                </td>
+            </tr>
+                        <tr>
+                <td>
+                    Provided by                </td>
+                <td>
+                    gov.uk from <a href="https://www.northyorks.gov.uk/road-cameras-and-weather-conditions" target="_blank">northyorks.gov.uk</a>                </td>
+            </tr>
+                    </tbody>
+    </table>
+
+    <p class="text-center">
+        <a href="https://www.ventusky.com/webcam/add" class="btn btn-primary my-3">
+            Add webcam        </a>
+        <a href="https://www.ventusky.com/webcam-128086619/report" class="btn btn-primary my-3 mx-2">
+            Report a problem        </a>
+            </p>
+
+    <div class="section_header clearfix">
+    <h2>Yesterday & Today</h2>
+</div>
+</div>
+
+<script defer src="https://cdnstatic.ventusky.com/media/img-comparison-slider.js"></script>
+
+
+<img-comparison-slider>
+
+    <figure slot="first" class="before">
+        <img src="https://webcams.ventusky.com/data/19/128086619/hour/20250324_2100.jpg" alt="Ribblehead - Yesterday" class="w-100" />
+        <figcaption>Yesterday</figcaption>
+    </figure>
+    <figure slot="second" class="after">
+        <img src="https://webcams.ventusky.com/data/19/128086619/hour/20250325_2100.jpg?1742939676" alt="Ribblehead - Today" class="w-100" />
+        <figcaption>Today</figcaption>
+    </figure>
+
+    <svg slot="handle" xmlns="http://www.w3.org/2000/svg" width="100" viewbox="-8 -3 16 6">
+        <path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
+    </svg>
+</img-comparison-slider>
+<div class="p-2">
+    <small class="text-muted">Comparison of the image from the last available time (right) with the image from 24 hours ago (left).</small>
+</div>
+<hr class="m-0" />
+
+<div class="section">
+
+    
+
+    <div class="section_header clearfix">
+        <h2>
+            Nearest webcams        </h2>
+    </div>
+
+
+    <div class="row row-cols-2 row-cols-sm-3 g-1">
+
+        
+        <div class="col">
+            <div class="card">
+                <a href="https://www.ventusky.com/webcam-920062868" title="View" dest="panel">
+                    <div class="card-cam" style="background-image: url(https://webcams.ventusky.com/data/68/920062868/latest_thumb.jpg?1742933273);"></div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">
+                        <span class="quality-text-1">●</span>
+                        <a href="https://www.ventusky.com/webcam-920062868" dest="panel">
+                            <strong>
+                                A684 Garsdale Head                            </strong>
+                        </a>
+                        13 km
+
+                        <small class="text-muted">
+                            westmorlandandfurness.gov.uk                        </small>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col">
+            <div class="card">
+                <a href="https://www.ventusky.com/webcam-434940045" title="View" dest="panel">
+                    <div class="card-cam" style="background-image: url(https://webcams.ventusky.com/data/45/434940045/latest_thumb.jpg?1742926843);"></div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">
+                        <span class="quality-text-1">●</span>
+                        <a href="https://www.ventusky.com/webcam-434940045" dest="panel">
+                            <strong>
+                                A65 Settle                            </strong>
+                        </a>
+                        14 km
+
+                        <small class="text-muted">
+                            westmorlandandfurness.gov.uk                        </small>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col">
+            <div class="card">
+                <a href="https://www.ventusky.com/webcam-966896211" title="View" dest="panel">
+                    <div class="card-cam" style="background-image: url(https://webcams.ventusky.com/data/11/966896211/latest_thumb.jpg?1742938193);"></div>
+                </a>
+                <div class="card-body">
+                    <p class="card-text">
+                        <span class="quality-text-0">●</span>
+                        <a href="https://www.ventusky.com/webcam-966896211" dest="panel">
+                            <strong>
+                                Settle                            </strong>
+                        </a>
+                        18 km
+
+                        <small class="text-muted">
+                            gov.uk                        </small>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+            </div>
+        </div>    
+     
+
+ 
+</body>
+</html>

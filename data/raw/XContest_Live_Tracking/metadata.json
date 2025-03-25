@@ -1,0 +1,9 @@
+{
+  "name": "XContest Live Tracking",
+  "url": "https://www.xcontest.org/api.s/widget/live-map/all/",
+  "platform": "website",
+  "type": "location viewing",
+  "short_description": "real time locatoin tracking of xctrack users + anyone else pushing to xcontest",
+  "timestamp": "2025-03-25T21:58:45Z",
+  "website_fetched": true
+}

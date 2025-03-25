@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<link rel="shortcut icon" href="favicon.ico"/> 
+	<link rel="stylesheet/less" type="text/css" href="app/css/index.less" />
+	<script src="//cdn.jsdelivr.net/npm/less"></script>
+	<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDZk94ZB8YDRiHypNDXWqDMON_RtUXtdlQ"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="app/js/loader.js"></script>
+	<title>Live</title>
+	<script>
+		let app = null;
+
+		function open() {
+			app = new PwcaLiveApp("top");
+
+			app.open();
+		}
+	</script>
+</head>
+<body id="top" style="margin: 0px !important">
+	<p>Loading App...</p>
+</body>
+</html>

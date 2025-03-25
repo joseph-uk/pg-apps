@@ -1,0 +1,1710 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Ginger Nomad Weather",
+        "totalResults": "272000",
+        "searchTerms": "Ginger Nomad Weather",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Ginger Nomad Weather",
+        "totalResults": "272000",
+        "searchTerms": "Ginger Nomad Weather",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.216252,
+    "formattedSearchTime": "0.22",
+    "totalResults": "272000",
+    "formattedTotalResults": "272,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Ginger Nomad Weather",
+      "htmlTitle": "\u003cb\u003eGinger Nomad Weather\u003c/b\u003e",
+      "link": "https://www.gingernomad.co.uk/weather/",
+      "displayLink": "www.gingernomad.co.uk",
+      "snippet": "Get the Latest Updates. Click on Allow to get notifications. Later. Allow. by PushAlert. + –. ⇧. i. Today (Saturday), Tomorrow (Sunday), Monday 24 March ...",
+      "htmlSnippet": "Get the Latest Updates. Click on Allow to get notifications. Later. Allow. by PushAlert. + –. ⇧. i. Today (Saturday), Tomorrow (Sunday), Monday 24 March&nbsp;...",
+      "formattedUrl": "https://www.gingernomad.co.uk/weather/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003egingernomad\u003c/b\u003e.co.uk/\u003cb\u003eweather\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover",
+            "author": "Andy Gilbert"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Shop – Ginger Nomad & Ginger Air",
+      "htmlTitle": "Paragliding Shop – \u003cb\u003eGinger Nomad\u003c/b\u003e &amp; \u003cb\u003eGinger\u003c/b\u003e Air",
+      "link": "https://gingernomad.co.uk/product-category/paragliding-shop/",
+      "displayLink": "gingernomad.co.uk",
+      "snippet": "Terms and Conditions · Privacy / GDPR · Shipping and Returns. Import Air Ltd T/A Ginger Nomad Reg. No: 04808903 Reg. Addr. 16 Parwich Close, Chesterfield, S40 ...",
+      "htmlSnippet": "Terms and Conditions &middot; Privacy / GDPR &middot; Shipping and Returns. Import Air Ltd T/A \u003cb\u003eGinger Nomad\u003c/b\u003e Reg. No: 04808903 Reg. Addr. 16 Parwich Close, Chesterfield, S40&nbsp;...",
+      "formattedUrl": "https://gingernomad.co.uk/product-category/paragliding-shop/",
+      "htmlFormattedUrl": "https://\u003cb\u003egingernomad\u003c/b\u003e.co.uk/product-category/paragliding-shop/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ6m1QIXzIu34csC6aRqcmWciAHMIc8076umbz7LobOp7SXUzS0iHgS5g&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://gingernomad.co.uk/wp-content/uploads/2019/02/cropped-ginger-nomad-paragliding-270x270.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://gingernomad.co.uk/wp-content/uploads/2019/03/download-5.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ginger Weather is here! After... - Ginger Nomad Paragliding ...",
+      "htmlTitle": "\u003cb\u003eGinger Weather\u003c/b\u003e is here! After... - \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding ...",
+      "link": "https://www.facebook.com/importair/posts/ginger-weather-is-here-after-much-consultation-we-wanted-a-simple-easy-to-use-ap/855578149902553/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Dec 20, 2023 ... Ginger Weather is here! After much consultation we wanted a simple easy to use app. Thanks to Andy Gilbert for the assistance!",
+      "htmlSnippet": "Dec 20, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGinger Weather\u003c/b\u003e is here! After much consultation we wanted a simple easy to use app. Thanks to Andy Gilbert for the assistance!",
+      "formattedUrl": "https://www.facebook.com/.../ginger-weather.../855578149902553/",
+      "htmlFormattedUrl": "https://www.facebook.com/.../\u003cb\u003eginger\u003c/b\u003e-\u003cb\u003eweather\u003c/b\u003e.../855578149902553/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDKuylW-Wv5htDFFR9Htxv1cWFuFPnkDrt_BSjpLqdU7BTtWT1HPvR1CfM&s",
+            "width": "171",
+            "height": "295"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=855577946569240",
+            "og:type": "video.other",
+            "og:image:alt": "Ginger Nomad Paragliding",
+            "twitter:card": "summary",
+            "twitter:title": "Ginger Nomad Paragliding",
+            "theme-color": "#FFFFFF",
+            "og:title": "Ginger Nomad Paragliding",
+            "google": "notranslate",
+            "og:description": "Ginger Weather is here! \nAfter much consultation we wanted a simple easy to use app. \nThanks to Andy Gilbert for the assistance!\nV2 is already being worked on to expand and enhance…...",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=855577946569240",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Ginger Nomad Paragliding",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Ginger Weather is here! \nAfter much consultation we wanted a simple easy to use app. \nThanks to Andy Gilbert for the assistance!\nV2 is already being worked on to expand and enhance…...",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.106:2741",
+            "og:url": "https://www.facebook.com/importair/posts/ginger-weather-is-here-after-much-consultation-we-wanted-a-simple-easy-to-use-ap/855578149902553/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=855577946569240"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ginger Nomad & Ginger Air – Full of Ginger Outdoor Goodness ...",
+      "htmlTitle": "\u003cb\u003eGinger Nomad\u003c/b\u003e &amp; \u003cb\u003eGinger\u003c/b\u003e Air – Full of \u003cb\u003eGinger\u003c/b\u003e Outdoor Goodness ...",
+      "link": "https://gingernomad.co.uk/",
+      "displayLink": "gingernomad.co.uk",
+      "snippet": "Help. Customer Services · Terms and Conditions · Privacy / GDPR · Shipping and Returns. Import Air Ltd T/A Ginger Nomad Reg. No: 04808903 Reg. Addr. 16 Parwich ...",
+      "htmlSnippet": "Help. Customer Services &middot; Terms and Conditions &middot; Privacy / GDPR &middot; Shipping and Returns. Import Air Ltd T/A \u003cb\u003eGinger Nomad\u003c/b\u003e Reg. No: 04808903 Reg. Addr. 16 Parwich&nbsp;...",
+      "formattedUrl": "https://gingernomad.co.uk/",
+      "htmlFormattedUrl": "https://\u003cb\u003egingernomad\u003c/b\u003e.co.uk/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYH4Cem7bo22wtWMvi55_H7zNaQVAYhjJbUkwqiwGXEs7OjrU6gVtwGbh&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://gingernomad.co.uk/wp-content/uploads/2019/02/cropped-ginger-nomad-paragliding-270x270.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://gingernomad.co.uk/wp-content/uploads/2023/02/paragliding-ginger-nomad-flow-freedom-greece.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Ginger Nomad Paragliding",
+      "htmlTitle": "Profile for \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding",
+      "link": "https://www.facebook.com/importair/?locale=en_GB",
+      "displayLink": "www.facebook.com",
+      "snippet": "A great time helping the Pennine club with the repack today. Great fun and a few howlers sorted. Great team with Bernard Clewer, James from Aerofix Paragliding ...",
+      "htmlSnippet": "A great time helping the Pennine club with the repack today. Great fun and a few howlers sorted. Great team with Bernard Clewer, James from Aerofix Paragliding&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/importair/?locale=en_GB",
+      "htmlFormattedUrl": "https://www.facebook.com/importair/?locale=en_GB",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSP8payFTzPhILAxJgscr_YI1Q0tZsGtNvs44Wm_vDsgp1761ymW3Zu0&s",
+            "width": "267",
+            "height": "189"
+          }
+        ],
+        "SocialMediaPosting": [
+          {},
+          {},
+          {}
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100063511273271",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063511273271",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100063511273271",
+            "og:description": "Ginger Nomad Paragliding, Nottingham, United Kingdom. 1,571 likes · 3 talking about this · 2 were here. Outdoors Equipment and Paragliding Supplies, free and unbiased advice based on 50 years experience",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063511273271",
+            "twitter:image:alt": "Ginger Nomad Paragliding | Nottingham",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Ginger Nomad Paragliding | Nottingham",
+            "twitter:title": "Ginger Nomad Paragliding | Nottingham",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Ginger Nomad Paragliding | Nottingham",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100063511273271",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Ginger Nomad Paragliding, Nottingham, United Kingdom. 1,571 likes · 3 talking about this · 2 were here. Outdoors Equipment and Paragliding Supplies, free and unbiased advice based on 50 years experience",
+            "og:locale": "en_GB",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/importair/?locale=en_GB",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063511273271"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Monday Obsession: Blue Ginger Jars - Nomad Luxuries",
+      "htmlTitle": "Monday Obsession: Blue \u003cb\u003eGinger\u003c/b\u003e Jars - \u003cb\u003eNomad\u003c/b\u003e Luxuries",
+      "link": "https://nomadluxuries.com/monday-obession-blue-ginger-jars/",
+      "displayLink": "nomadluxuries.com",
+      "snippet": "Jul 22, 2013 ... How was the weekend? The weather was absolutely perfect here in Chicago. Finally, after that heat wave we had going on! I spent Saturday morning ...",
+      "htmlSnippet": "Jul 22, 2013 \u003cb\u003e...\u003c/b\u003e How was the weekend? The \u003cb\u003eweather\u003c/b\u003e was absolutely perfect here in Chicago. Finally, after that heat wave we had going on! I spent Saturday morning&nbsp;...",
+      "formattedUrl": "https://nomadluxuries.com/monday-obession-blue-ginger-jars/",
+      "htmlFormattedUrl": "https://\u003cb\u003enomad\u003c/b\u003eluxuries.com/monday-obession-blue-\u003cb\u003eginger\u003c/b\u003e-jars/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16AkCV0Iyk6e1LZkAWrXtYrbtaruFg28INcyBgGcRVjIphR5KWNqT0bhi&s",
+            "width": "191",
+            "height": "264"
+          }
+        ],
+        "person": [
+          {
+            "name": "Yana"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://nomadluxuries.com/wp-content/uploads/2013/07/wood-800.jpg",
+            "og:type": "article",
+            "article:published_time": "2013-07-22T15:03:40+00:00",
+            "og:image:width": "800",
+            "og:site_name": "Nomad Luxuries",
+            "author": "Yana",
+            "og:title": "Monday Obsession: Blue Ginger Jars - Nomad Luxuries",
+            "og:image:height": "1103",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "og:description": "Good Morning lovelies! How was the weekend? The weather was absolutely perfect here in Chicago. Finally, after that heat wave we had going on! I spent Saturday morning with clients and then we went for a history lesson at The Field…",
+            "twitter:data1": "Yana",
+            "article:author": "Yana",
+            "twitter:data2": "1 minute",
+            "p3v": "4.9.1 | Nomad Luxuries v1.0.0 | f87fb1251f_ | https://nomadluxuries.com",
+            "article:modified_time": "2015-02-06T23:55:53+00:00",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "og:locale": "en_US",
+            "og:url": "https://nomadluxuries.com/monday-obession-blue-ginger-jars/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://nomadluxuries.com/wp-content/uploads/2013/07/wood-800.jpg"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ],
+        "blogposting": [
+          {
+            "articlebody": "Good Morning lovelies! How was the weekend? The weather was absolutely perfect here in Chicago. Finally, after that heat wave we had going on! I spent Saturday morning with clients and then...",
+            "headline": "Monday Obsession: Blue Ginger Jars",
+            "datepublished": "2013-07"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "A few years ago at Coupe... - Ginger Nomad Paragliding | Facebook",
+      "htmlTitle": "A few years ago at Coupe... - \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding | Facebook",
+      "link": "https://www.facebook.com/importair/posts/a-few-years-ago-at-coupe-dicare-before-360-cameras-mounted-to-ginges-head/1041460834647616/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Sep 11, 2024 ... Ginger Nomad Paragliding profile picture. Ginger Nomad Paragliding. 3h󰞋󱟠. 󰟝. Our weather App has many new Clubs added. Dales Pennine Peak ...",
+      "htmlSnippet": "Sep 11, 2024 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding profile picture. \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding. 3h󰞋󱟠. 󰟝. Our \u003cb\u003eweather\u003c/b\u003e App has many new Clubs added. Dales Pennine Peak&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/importair/posts/.../1041460834647616/",
+      "htmlFormattedUrl": "https://www.facebook.com/importair/posts/.../1041460834647616/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1Tehgx7DR2Ntlx5L8q732ByRbM2NBfNJAi69PE-ubbY0w_KD3cTubw&s=0",
+            "width": "69",
+            "height": "150"
+          }
+        ],
+        "SocialMediaPosting": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/459201761_1173307400567649_7827861820494192651_n.jpg?stp=dst-jpg_s1000x1200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c26028&_nc_ohc=sBBRtI4fas4Q7kNvgGBm88z&_nc_oc=AdhqIZocW5MkjRPxTFtCWEqVxjd8UBgkorMzA2IHBICOJcMMxXIg61fsRP-18c_8Koc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=AZvfpKQliLSi9mJCIrvnCl6&oh=00_AYDX3yPEivMB0ig3FWWd4ZE3SrIZnfrqtFTAaewRyYyuIw&oe=67B0646A",
+            "og:type": "video.other",
+            "og:image:alt": "Ginger Nomad Paragliding",
+            "twitter:card": "summary",
+            "twitter:title": "Ginger Nomad Paragliding",
+            "theme-color": "#FFFFFF",
+            "og:title": "Ginger Nomad Paragliding",
+            "google": "notranslate",
+            "og:description": "A few years ago at Coupe D’Icare. Before 360 camera’s mounted to Ginge’s head!",
+            "twitter:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/459201761_1173307400567649_7827861820494192651_n.jpg?stp=dst-jpg_s1000x1200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=c26028&_nc_ohc=sBBRtI4fas4Q7kNvgGBm88z&_nc_oc=AdhqIZocW5MkjRPxTFtCWEqVxjd8UBgkorMzA2IHBICOJcMMxXIg61fsRP-18c_8Koc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=AZvfpKQliLSi9mJCIrvnCl6&oh=00_AYDX3yPEivMB0ig3FWWd4ZE3SrIZnfrqtFTAaewRyYyuIw&oe=67B0646A",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Ginger Nomad Paragliding",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "A few years ago at Coupe D’Icare. Before 360 camera’s mounted to Ginge’s head!",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.65:2738",
+            "og:url": "https://www.facebook.com/importair/posts/a-few-years-ago-at-coupe-dicare-before-360-cameras-mounted-to-ginges-head/1041460834647616/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1161606685966363"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Itinerant Ginger – Travel along with The Itinerant Ginger! Join us ...",
+      "htmlTitle": "The Itinerant \u003cb\u003eGinger\u003c/b\u003e – Travel along with The Itinerant \u003cb\u003eGinger\u003c/b\u003e! Join us ...",
+      "link": "https://theitinerantginger.com/",
+      "displayLink": "theitinerantginger.com",
+      "snippet": "The life and travels of a wandering ginger. From Alaska to Italy and ... warm weather fun · Long term travel. Family travel. Work with us.",
+      "htmlSnippet": "The life and travels of a wandering \u003cb\u003eginger\u003c/b\u003e. From Alaska to Italy and ... warm \u003cb\u003eweather\u003c/b\u003e fun &middot; Long term travel. Family travel. Work with us.",
+      "formattedUrl": "https://theitinerantginger.com/",
+      "htmlFormattedUrl": "https://theitinerant\u003cb\u003eginger\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYaWUPM13zAQm3fn8IN8spcGfyste-9E6pkooP7oeIDO-tTyU4LZxMh0l&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1",
+            "msapplication-tileimage": "https://theitinerantginger.com/wp-content/uploads/2022/09/cropped-the-itinerant-ginger-2-270x270.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://theitinerantginger.com/wp-content/uploads/2022/09/cropped-the-itinerant-ginger-2.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "At Coupe d'Icare but flying... - Ginger Nomad Paragliding | Facebook",
+      "htmlTitle": "At Coupe d&#39;Icare but flying... - \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding | Facebook",
+      "link": "https://www.facebook.com/importair/posts/at-coupe-dicare-but-flying-tractors-are-an-issue-this-year-oooarr/1047369490723417/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Sep 18, 2024 ... 󰤧. Recent Posts. Ginger Nomad Paragliding profile picture. Ginger Nomad Paragliding. 3h󰞋󱟠. 󰟝. Our weather App has many new Clubs added. Dales ...",
+      "htmlSnippet": "Sep 18, 2024 \u003cb\u003e...\u003c/b\u003e 󰤧. Recent Posts. \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding profile picture. \u003cb\u003eGinger Nomad\u003c/b\u003e Paragliding. 3h󰞋󱟠. 󰟝. Our \u003cb\u003eweather\u003c/b\u003e App has many new Clubs added. Dales&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/importair/posts/at.../1047369490723417/",
+      "htmlFormattedUrl": "https://www.facebook.com/importair/posts/at.../1047369490723417/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe45ZStVh_WwSqtXqKaXrSkw1aGTJXkdZzEK3l3m6N5l8tJ9e5zJVNEjyq&s",
+            "width": "168",
+            "height": "300"
+          }
+        ],
+        "SocialMediaPosting": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/460539895_3798762627009132_4639461618252092425_n.jpg?stp=dst-jpg_s1000x1200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c26028&_nc_ohc=IUJx08EQQ44Q7kNvgG-gG6n&_nc_oc=Adi9O6b87LFQwBlYMWOlMdOEmikUTXQnm1rGn32wemxV0IrJ0zkC2zliIPE1eN47m3U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=AiyBytj7Z7pZdcTkWRhXlCR&oh=00_AYB5WtlGgcn1raQ4NFQGSpwghqGZvU18ryzyZYRAS899iA&oe=67B067E2",
+            "og:type": "video.other",
+            "og:image:alt": "Ginger Nomad Paragliding",
+            "twitter:card": "summary",
+            "twitter:title": "Ginger Nomad Paragliding",
+            "theme-color": "#FFFFFF",
+            "og:title": "Ginger Nomad Paragliding",
+            "google": "notranslate",
+            "og:description": "At Coupe d’Icare but flying tractors are an issue this year. Oooarr!",
+            "twitter:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t15.5256-10/460539895_3798762627009132_4639461618252092425_n.jpg?stp=dst-jpg_s1000x1200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=c26028&_nc_ohc=IUJx08EQQ44Q7kNvgG-gG6n&_nc_oc=Adi9O6b87LFQwBlYMWOlMdOEmikUTXQnm1rGn32wemxV0IrJ0zkC2zliIPE1eN47m3U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=AiyBytj7Z7pZdcTkWRhXlCR&oh=00_AYB5WtlGgcn1raQ4NFQGSpwghqGZvU18ryzyZYRAS899iA&oe=67B067E2",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Ginger Nomad Paragliding",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "At Coupe d’Icare but flying tractors are an issue this year. Oooarr!",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.65:2738",
+            "og:url": "https://www.facebook.com/importair/posts/at-coupe-dicare-but-flying-tractors-are-an-issue-this-year-oooarr/1047369490723417/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1309026957171415&get_thumbnail=1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cameron Ginger (@Cameron_Ginger) / X",
+      "htmlTitle": "Cameron \u003cb\u003eGinger\u003c/b\u003e (@\u003cb\u003eCameron_Ginger\u003c/b\u003e) / X",
+      "link": "https://x.com/cameron_ginger?lang=en",
+      "displayLink": "x.com",
+      "snippet": "Mar 13. We are hiring!! Nomad Baseball is looking for a pitching coach to join our growing team. ... Fort myers was cut short due to weather before bracket play.",
+      "htmlSnippet": "Mar 13. We are hiring!! \u003cb\u003eNomad\u003c/b\u003e Baseball is looking for a pitching coach to join our growing team. ... Fort myers was cut short due to \u003cb\u003eweather\u003c/b\u003e before bracket play.",
+      "formattedUrl": "https://x.com/cameron_ginger?lang=en",
+      "htmlFormattedUrl": "https://x.com/cameron_\u003cb\u003eginger\u003c/b\u003e?lang=en",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKop12MipSVARUb5u3Eg4NoTzRILrxTDFgQuzS04xmtBwyQhWTtpUxgXw&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "imageobject": [
+          {
+            "contenturl": "https://pbs.twimg.com/media/GlBCMo3XkAA_ayM.jpg",
+            "width": "1320",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GlBCMo3XkAA_ayM?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GkPEf43WUAAv2Q0.jpg",
+            "width": "1094",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GkPEf43WUAAv2Q0?format=jpg&name=thumb"
+          },
+          {
+            "contenturl": "https://pbs.twimg.com/media/GZSzLZqXMAErjhW.jpg",
+            "width": "1620",
+            "caption": "Image",
+            "thumbnailurl": "https://pbs.twimg.com/media/GZSzLZqXMAErjhW?format=jpg&name=thumb"
+          }
+        ],
+        "person": [
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1704228289290612736",
+            "givenname": "Nomad Baseball",
+            "additionalname": "NomadBaseball"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "2927264070",
+            "givenname": "Ian Smith",
+            "disambiguatingdescription": "Prep Baseball",
+            "additionalname": "IanSmittyGA"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1560798115602477057",
+            "givenname": "ex5oclockhitter",
+            "additionalname": "JayGibbons15"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1134190814157004801",
+            "givenname": "Shane Sdao",
+            "additionalname": "ShaneSdao"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "25689223",
+            "givenname": "Bob Hamp",
+            "additionalname": "bobhamp"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1604551117",
+            "givenname": "Die-Hard Chicago Bulls Fans",
+            "additionalname": "DieHardCBfans"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "97904497",
+            "givenname": "Steve Magness",
+            "additionalname": "stevemagness"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "97904497",
+            "givenname": "Steve Magness",
+            "additionalname": "stevemagness"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "918099037076770817",
+            "givenname": "Michael Schweiss",
+            "additionalname": "CoachSchweiss"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1529763962094596097",
+            "givenname": "Wide Awake Media",
+            "additionalname": "wideawake_media"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "14515734",
+            "givenname": "Dr. Drew",
+            "additionalname": "drdrew"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "918099037076770817",
+            "givenname": "Michael Schweiss",
+            "additionalname": "CoachSchweiss"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "918099037076770817",
+            "givenname": "Michael Schweiss",
+            "additionalname": "CoachSchweiss"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "918099037076770817",
+            "givenname": "Michael Schweiss",
+            "additionalname": "CoachSchweiss"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1663022617391951873",
+            "givenname": "Ayden Elliott",
+            "additionalname": "aydene1022"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "69156861",
+            "givenname": "Chief Nerd",
+            "additionalname": "TheChiefNerd"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          },
+          {
+            "identifier": "1415346691486724096",
+            "givenname": "Dawson Cleveland",
+            "additionalname": "dcleveland05"
+          },
+          {
+            "identifier": "287725736",
+            "givenname": "Cameron Ginger",
+            "additionalname": "Cameron_Ginger"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "10",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/NomadBaseball/status/1900334908620275909/likes"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/NomadBaseball/status/1900334908620275909/retweets"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/NomadBaseball/status/1900334908620275909/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/NomadBaseball/status/1900334908620275909"
+          },
+          {
+            "userinteractioncount": "3023",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1900598730748776819/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/Cameron_Ginger/status/1900598730748776819/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1900598730748776819/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/Cameron_Ginger/status/1900598730748776819"
+          },
+          {
+            "userinteractioncount": "244",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "41",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/IanSmittyGA/status/1898176971252609327/likes"
+          },
+          {
+            "userinteractioncount": "6",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/IanSmittyGA/status/1898176971252609327/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/IanSmittyGA/status/1898176971252609327/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/IanSmittyGA/status/1898176971252609327"
+          },
+          {
+            "userinteractioncount": "3821",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "274",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/JayGibbons15/status/1898111334883246235/likes"
+          },
+          {
+            "userinteractioncount": "20",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/JayGibbons15/status/1898111334883246235/retweets"
+          },
+          {
+            "userinteractioncount": "13",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/JayGibbons15/status/1898111334883246235/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "26",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/JayGibbons15/status/1898111334883246235"
+          },
+          {
+            "userinteractioncount": "128538",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "3668",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/ShaneSdao/status/1896088234876366906/likes"
+          },
+          {
+            "userinteractioncount": "269",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/ShaneSdao/status/1896088234876366906/retweets"
+          },
+          {
+            "userinteractioncount": "158",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/ShaneSdao/status/1896088234876366906/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "470",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/ShaneSdao/status/1896088234876366906"
+          },
+          {
+            "userinteractioncount": "896766",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "14",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/bobhamp/status/1895819636098117809/likes"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/bobhamp/status/1895819636098117809/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/bobhamp/status/1895819636098117809/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/bobhamp/status/1895819636098117809"
+          },
+          {
+            "userinteractioncount": "470",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "21491",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/DieHardCBfans/status/1895455847192678681/likes"
+          },
+          {
+            "userinteractioncount": "2917",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/DieHardCBfans/status/1895455847192678681/retweets"
+          },
+          {
+            "userinteractioncount": "378",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/DieHardCBfans/status/1895455847192678681/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "708",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/DieHardCBfans/status/1895455847192678681"
+          },
+          {
+            "userinteractioncount": "2816003",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "858",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/stevemagness/status/1892623116796379600/likes"
+          },
+          {
+            "userinteractioncount": "197",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/stevemagness/status/1892623116796379600/retweets"
+          },
+          {
+            "userinteractioncount": "31",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/stevemagness/status/1892623116796379600/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "69",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/stevemagness/status/1892623116796379600"
+          },
+          {
+            "userinteractioncount": "182503",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "973",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/stevemagness/status/1892559150158163984/likes"
+          },
+          {
+            "userinteractioncount": "141",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/stevemagness/status/1892559150158163984/retweets"
+          },
+          {
+            "userinteractioncount": "42",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/stevemagness/status/1892559150158163984/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "41",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/stevemagness/status/1892559150158163984"
+          },
+          {
+            "userinteractioncount": "176758",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "6",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/CoachSchweiss/status/1890836284051968285/likes"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/CoachSchweiss/status/1890836284051968285/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/CoachSchweiss/status/1890836284051968285/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/CoachSchweiss/status/1890836284051968285"
+          },
+          {
+            "userinteractioncount": "2312",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "67046",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/wideawake_media/status/1888881540534325404/likes"
+          },
+          {
+            "userinteractioncount": "22727",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/wideawake_media/status/1888881540534325404/retweets"
+          },
+          {
+            "userinteractioncount": "1162",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/wideawake_media/status/1888881540534325404/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "1542",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/wideawake_media/status/1888881540534325404"
+          },
+          {
+            "userinteractioncount": "3840369",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "107984",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/drdrew/status/1885434389246419210/likes"
+          },
+          {
+            "userinteractioncount": "17534",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/drdrew/status/1885434389246419210/retweets"
+          },
+          {
+            "userinteractioncount": "645",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/drdrew/status/1885434389246419210/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "3392",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/drdrew/status/1885434389246419210"
+          },
+          {
+            "userinteractioncount": "3916128",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "24",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/CoachSchweiss/status/1884972919152939051/likes"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/CoachSchweiss/status/1884972919152939051/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/CoachSchweiss/status/1884972919152939051/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/CoachSchweiss/status/1884972919152939051"
+          },
+          {
+            "userinteractioncount": "5225",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "15",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/CoachSchweiss/status/1884037811294101758/likes"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/CoachSchweiss/status/1884037811294101758/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/CoachSchweiss/status/1884037811294101758/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/CoachSchweiss/status/1884037811294101758"
+          },
+          {
+            "userinteractioncount": "1670",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "25",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/CoachSchweiss/status/1873087797562884489/likes"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/CoachSchweiss/status/1873087797562884489/retweets"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/CoachSchweiss/status/1873087797562884489/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/CoachSchweiss/status/1873087797562884489"
+          },
+          {
+            "userinteractioncount": "15352",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1873107139490922982/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/Cameron_Ginger/status/1873107139490922982/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1873107139490922982/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/Cameron_Ginger/status/1873107139490922982"
+          },
+          {
+            "userinteractioncount": "1607",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "16",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/aydene1022/status/1843295265211773160/likes"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/aydene1022/status/1843295265211773160/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/aydene1022/status/1843295265211773160/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/aydene1022/status/1843295265211773160"
+          },
+          {
+            "userinteractioncount": "4361",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "15076",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/TheChiefNerd/status/1851692448424013875/likes"
+          },
+          {
+            "userinteractioncount": "2084",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/TheChiefNerd/status/1851692448424013875/retweets"
+          },
+          {
+            "userinteractioncount": "104",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/TheChiefNerd/status/1851692448424013875/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "159",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/TheChiefNerd/status/1851692448424013875"
+          },
+          {
+            "userinteractioncount": "957097",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "42",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/dcleveland05/status/1851028460459683890/likes"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/dcleveland05/status/1851028460459683890/retweets"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/dcleveland05/status/1851028460459683890/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/dcleveland05/status/1851028460459683890"
+          },
+          {
+            "userinteractioncount": "23298",
+            "interactiontype": "https://schema.org/ViewAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "https://schema.org/LikeAction",
+            "name": "Likes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1846293052798681557/likes"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Retweets",
+            "url": "https://twitter.com/Cameron_Ginger/status/1846293052798681557/retweets"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Quotes",
+            "url": "https://twitter.com/Cameron_Ginger/status/1846293052798681557/retweets/with_comments"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "https://schema.org/InteractAction",
+            "name": "Replies",
+            "url": "https://twitter.com/Cameron_Ginger/status/1846293052798681557"
+          },
+          {
+            "userinteractioncount": "2687",
+            "interactiontype": "https://schema.org/ViewAction"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=333903271",
+            "og:image": "https://pbs.twimg.com/profile_images/1702155358859374592/oZlw0YVK_200x200.jpg",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "og:site_name": "X (formerly Twitter)",
+            "al:ios:app_name": "X",
+            "apple-mobile-web-app-title": "Twitter",
+            "og:title": "Cameron Ginger (@Cameron_Ginger) on X",
+            "al:android:package": "com.twitter.android",
+            "al:ios:url": "twitter://user?screen_name=Cameron_Ginger",
+            "title": "Cameron Ginger (@Cameron_Ginger) on X",
+            "og:description": "Son | Husband | Dad | Lover of people | Developer of Futures | Propel hitting | Propel iD | Podcaster | Author",
+            "al:ios:app_store_id": "333903271",
+            "facebook-domain-verification": "x6sdcc8b5ju3bh8nbm59eswogvg6t1",
+            "al:android:url": "twitter://user?screen_name=Cameron_Ginger",
+            "fb:app_id": "2231777543",
+            "apple-mobile-web-app-status-bar-style": "white",
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://x.com/Cameron_Ginger",
+            "al:android:app_name": "X"
+          }
+        ],
+        "videoobject": [
+          {
+            "duration": "PT0H0M27S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1898176971252609327",
+            "contenturl": "https://video.twimg.com/amplify_video/1898176863970693120/vid/avc1/1920x1080/j4xb9WJ8XeuOeeua.mp4?tag=16",
+            "uploaddate": "2025-03-08T01:00:31.000Z",
+            "name": "@IanSmittyGA's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1898176863970693120/img/Fg3n_6rI-Ru_pgpK.jpg"
+          },
+          {
+            "duration": "PT0H5M8S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1898111334883246235",
+            "contenturl": "https://video.twimg.com/amplify_video/1898111142435962880/vid/avc1/1080x1920/kXauW7mIuWcH0NeY.mp4?tag=16",
+            "uploaddate": "2025-03-07T20:39:42.000Z",
+            "name": "@JayGibbons15's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1898111142435962880/img/XS0riUavXpZLQif7.jpg"
+          },
+          {
+            "duration": "PT0H1M4S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1895455847192678681",
+            "contenturl": "https://video.twimg.com/amplify_video/1895455750433972224/vid/avc1/1080x1350/-5V_iK5D06y0EAvq.mp4?tag=16",
+            "uploaddate": "2025-02-28T12:47:44.000Z",
+            "name": "@DieHardCBfans's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1895455750433972224/img/BMUGeLTgg6OuKton.jpg"
+          },
+          {
+            "duration": "PT0H0M11S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1890836284051968285",
+            "contenturl": "https://video.twimg.com/amplify_video/1890836203005419520/vid/avc1/1920x1080/upNXwelFSd9wnx9a.mp4?tag=16",
+            "uploaddate": "2025-02-15T18:51:14.000Z",
+            "name": "@CoachSchweiss's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1890836203005419520/img/Jnj1XgpYWFoMvlk4.jpg"
+          },
+          {
+            "duration": "PT0H0M7S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1890573292915863613",
+            "contenturl": "https://video.twimg.com/amplify_video/1890573180504252416/vid/avc1/1280x592/4-fgEF05kuqdcqQY.mp4?tag=14",
+            "uploaddate": "2025-02-15T01:26:12.000Z",
+            "name": "@koltonlang_'s video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1890573180504252416/img/TChXO7FXOlrbhkhj.jpg"
+          },
+          {
+            "duration": "PT0H0M11S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1890573292915863613",
+            "contenturl": "https://video.twimg.com/amplify_video/1890573180521107456/vid/avc1/1280x720/hOb63UchEwo4bHfL.mp4?tag=14",
+            "uploaddate": "2025-02-15T01:26:12.000Z",
+            "name": "@koltonlang_'s video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1890573180521107456/img/qI45J_Pv-tW79hKL.jpg"
+          },
+          {
+            "duration": "PT0H0M17S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1890573292915863613",
+            "contenturl": "https://video.twimg.com/amplify_video/1890573180512690176/vid/avc1/1280x720/AhAEEkc1k-7P7cWv.mp4?tag=14",
+            "uploaddate": "2025-02-15T01:26:12.000Z",
+            "name": "@koltonlang_'s video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/amplify_video_thumb/1890573180512690176/img/ELTP0YgqpGUHght-.jpg"
+          },
+          {
+            "duration": "PT0H2M12S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1888881540534325404",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1888881161931304960/pu/vid/avc1/854x480/zfyh7pSBzMRkCSbL.mp4?tag=12",
+            "uploaddate": "2025-02-10T09:23:47.000Z",
+            "name": "@wideawake_media's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1888881161931304960/pu/img/T4WiE6wOCvSfg-tO.jpg"
+          },
+          {
+            "duration": "PT0H0M11S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1843295265211773160",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1843295156067356672/pu/vid/avc1/960x540/5FetZIBAImxbkRo4.mp4?tag=12",
+            "uploaddate": "2024-10-07T14:20:12.000Z",
+            "name": "@aydene1022's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1843295156067356672/pu/img/3K51cQVqpp-JRV0l.jpg"
+          },
+          {
+            "duration": "PT0H0M19S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1843295265211773160",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1843295156029566977/pu/vid/avc1/960x540/bLMKvZa3vEWfZoc_.mp4?tag=12",
+            "uploaddate": "2024-10-07T14:20:12.000Z",
+            "name": "@aydene1022's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1843295156029566977/pu/img/dXr6FhDfrovZ4Zow.jpg"
+          },
+          {
+            "duration": "PT0H0M14S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1843295265211773160",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1843295155983413248/pu/vid/avc1/540x960/R0OBZ9H-yyPuVINK.mp4?tag=12",
+            "uploaddate": "2024-10-07T14:20:12.000Z",
+            "name": "@aydene1022's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1843295155983413248/pu/img/JWAbJBmg_djSIBb8.jpg"
+          },
+          {
+            "duration": "PT0H4M19S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1851692448424013875",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1851691879009497088/pu/vid/avc1/1920x1080/aUfWNZtetA1h1dSo.mp4?tag=14",
+            "uploaddate": "2024-10-30T18:27:37.000Z",
+            "name": "@TheChiefNerd's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1851691879009497088/pu/img/-6GyDzpKCofE3Lnt.jpg"
+          },
+          {
+            "duration": "PT0H0M43S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1851028460459683890",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1851028401152278528/pu/vid/avc1/834x720/FJtDCQtLyLKoYagf.mp4?tag=12",
+            "uploaddate": "2024-10-28T22:29:10.000Z",
+            "name": "@dcleveland05's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1851028401152278528/pu/img/1sY5WzLW71oExfm7.jpg"
+          },
+          {
+            "duration": "PT0H0M39S",
+            "embedurl": "https://platform.twitter.com/embed/Tweet.html?dnt=false&embedId=twitter-widget-1&frame=false&hideCard=false&hideThread=false&lang=en&id=1844561502826791223",
+            "contenturl": "https://video.twimg.com/ext_tw_video/1844561470048141321/pu/vid/avc1/540x960/tWH2eVBZYuEMrSMq.mp4?tag=12",
+            "uploaddate": "2024-10-11T02:11:47.000Z",
+            "name": "@aydene1022's video Tweet",
+            "description": "Embedded video",
+            "caption": "Embedded video",
+            "thumbnailurl": "https://pbs.twimg.com/ext_tw_video_thumb/1844561470048141321/pu/img/11Dj3Q6vsgMAqCvt.jpg"
+          }
+        ],
+        "collection": [
+          {
+            "name": "Profile posts"
+          }
+        ],
+        "creativework": [
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/Hsz2ZU7mAz"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/jD2VKK9WMF"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/Oq2NEDJrG7"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/RBqblQnz54"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/SqkOKA2Bxn"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/fFudGJf2rf"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/0oVmxoVXjU"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/ZeO0Fhf5nH"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/48KkSGCqOb"
+          },
+          {
+            "name": "Expanded Tweet URLs",
+            "url": "https://t.co/YfKxkaqlYL"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pbs.twimg.com/profile_images/1702155358859374592/oZlw0YVK_200x200.jpg"
+          }
+        ],
+        "socialmediaposting": [
+          {
+            "identifier": "1900598745684729986",
+            "position": "1",
+            "datecreated": "2025-03-14T17:23:47.000Z",
+            "datepublished": "2025-03-14T17:23:47.000Z"
+          },
+          {
+            "identifier": "1900334908620275909",
+            "commentcount": "0",
+            "articlebody": "We are hiring!! Nomad Baseball is looking for a pitching coach to join our growing team. Requirements: ✅ Growth Mindset ✅ High level of care for athletes ✅ Willingness to learn If interested,...",
+            "datecreated": "2025-03-13T23:55:23.000Z",
+            "datepublished": "2025-03-13T23:55:23.000Z",
+            "url": "https://twitter.com/NomadBaseball/status/1900334908620275909"
+          },
+          {
+            "identifier": "1900598730748776819",
+            "commentcount": "0",
+            "articlebody": "One of the best decisions you could ever make - choosing to be apart of nomad. The opportunities, growth, and impact you will have with them and what they are doing is more than you can comprehend....",
+            "position": "2",
+            "datecreated": "2025-03-14T17:23:43.000Z",
+            "isbasedon": "https://twitter.com/NomadBaseball/status/1900334908620275909",
+            "datepublished": "2025-03-14T17:23:43.000Z",
+            "url": "https://twitter.com/Cameron_Ginger/status/1900598730748776819"
+          },
+          {
+            "identifier": "1898205831960658060",
+            "position": "3",
+            "datecreated": "2025-03-08T02:55:11.000Z",
+            "datepublished": "2025-03-08T02:55:11.000Z"
+          },
+          {
+            "identifier": "1898176971252609327",
+            "commentcount": "0",
+            "articlebody": "Best start so far this spring for 2026 RHP Christian Colon. Kept the lineup off balance throughout while filling it up with IZMs. 11 K across 6.0 one-run IP. FB: 85-88 T89 CB: 74-76; depth...",
+            "datecreated": "2025-03-08T01:00:31.000Z",
+            "datepublished": "2025-03-08T01:00:31.000Z",
+            "url": "https://twitter.com/IanSmittyGA/status/1898176971252609327"
+          },
+          {
+            "identifier": "1898200724116247037",
+            "position": "4",
+            "datecreated": "2025-03-08T02:34:54.000Z",
+            "datepublished": "2025-03-08T02:34:54.000Z"
+          },
+          {
+            "identifier": "1898111334883246235",
+            "commentcount": "26",
+            "articlebody": "Good afternoon ! I miss you @Teacherman1986 Just a little video comparing what most of the greats do vs the HLP method and also what I did . @MLBNetwork @KMillar15 @TBW_baseball @TheRealGavinLux...",
+            "datecreated": "2025-03-07T20:39:42.000Z",
+            "datepublished": "2025-03-07T20:39:42.000Z",
+            "url": "https://twitter.com/JayGibbons15/status/1898111334883246235"
+          },
+          {
+            "identifier": "1896386494560166035",
+            "position": "5",
+            "datecreated": "2025-03-03T02:25:48.000Z",
+            "datepublished": "2025-03-03T02:25:48.000Z"
+          },
+          {
+            "identifier": "1896088234876366906",
+            "commentcount": "470",
+            "articlebody": ". @TAMU @12thMan",
+            "datecreated": "2025-03-02T06:40:37.000Z",
+            "datepublished": "2025-03-02T06:40:37.000Z",
+            "url": "https://twitter.com/ShaneSdao/status/1896088234876366906"
+          },
+          {
+            "identifier": "1895841495682597298",
+            "position": "6",
+            "datecreated": "2025-03-01T14:20:10.000Z",
+            "datepublished": "2025-03-01T14:20:10.000Z"
+          },
+          {
+            "identifier": "1895819636098117809",
+            "commentcount": "1",
+            "articlebody": "It is a strange phenomena that some of the greatest needs of the human race are the ones we do not recognize as needs. We know we need food and water, and air and sleep. Our bodies will not...",
+            "datecreated": "2025-03-01T12:53:18.000Z",
+            "datepublished": "2025-03-01T12:53:18.000Z",
+            "url": "https://twitter.com/bobhamp/status/1895819636098117809"
+          },
+          {
+            "identifier": "1895511110427779354",
+            "position": "7",
+            "datecreated": "2025-02-28T16:27:20.000Z",
+            "datepublished": "2025-02-28T16:27:20.000Z"
+          },
+          {
+            "identifier": "1895455847192678681",
+            "commentcount": "708",
+            "articlebody": "The difference between Jordan & LeBron: Michael Jordan: “Who is the best of all time? I can’t ever accept that. When I hear it, I cringe a little bit” LeBron James: “That right there...",
+            "datecreated": "2025-02-28T12:47:44.000Z",
+            "datepublished": "2025-02-28T12:47:44.000Z",
+            "url": "https://twitter.com/DieHardCBfans/status/1895455847192678681"
+          },
+          {
+            "identifier": "1893054104139706585",
+            "position": "8",
+            "datecreated": "2025-02-21T21:44:04.000Z",
+            "datepublished": "2025-02-21T21:44:04.000Z"
+          },
+          {
+            "identifier": "1892623116796379600",
+            "commentcount": "69",
+            "articlebody": "We've got a youth sport crisis. 70% of kids quit sports by 13. 64% experience high levels of fear of failure. 60% report overwhelming pressure to perform Adults need to stop ruining sports....",
+            "datecreated": "2025-02-20T17:11:28.000Z",
+            "datepublished": "2025-02-20T17:11:28.000Z",
+            "url": "https://twitter.com/stevemagness/status/1892623116796379600"
+          },
+          {
+            "identifier": "1893030153955013113",
+            "position": "9",
+            "datecreated": "2025-02-21T20:08:54.000Z",
+            "datepublished": "2025-02-21T20:08:54.000Z"
+          },
+          {
+            "identifier": "1892559150158163984",
+            "commentcount": "41",
+            "articlebody": "Fortnight is the new sandlot Kids have retreated to video games because it's the one place where adults can’t interfere, control, or critique And it's the one place where they can find autonomy...",
+            "datecreated": "2025-02-20T12:57:18.000Z",
+            "datepublished": "2025-02-20T12:57:18.000Z",
+            "url": "https://twitter.com/stevemagness/status/1892559150158163984"
+          },
+          {
+            "identifier": "1890880620621943177",
+            "position": "10",
+            "datecreated": "2025-02-15T21:47:25.000Z",
+            "datepublished": "2025-02-15T21:47:25.000Z"
+          },
+          {
+            "identifier": "1890836284051968285",
+            "commentcount": "0",
+            "articlebody": "Kolton hit another one yesterday on a 2 strike breaking ball. This kid should absolutely be on the radar of college coaches @koltonlang_ @kc_White5",
+            "datecreated": "2025-02-15T18:51:14.000Z",
+            "isbasedon": "https://twitter.com/koltonlang_/status/1890573292915863613",
+            "datepublished": "2025-02-15T18:51:14.000Z",
+            "url": "https://twitter.com/CoachSchweiss/status/1890836284051968285"
+          },
+          {
+            "identifier": "1889009035510239317",
+            "position": "11",
+            "datecreated": "2025-02-10T17:50:24.000Z",
+            "datepublished": "2025-02-10T17:50:24.000Z"
+          },
+          {
+            "identifier": "1888881540534325404",
+            "commentcount": "1542",
+            "articlebody": "RFK Jr: \"There's three giant corporations: BlackRock, State Street, and Vanguard.\" \"They've now decided to buy every single family home in America... They literally are trying to buy everything.\"...",
+            "datecreated": "2025-02-10T09:23:47.000Z",
+            "datepublished": "2025-02-10T09:23:47.000Z",
+            "url": "https://twitter.com/wideawake_media/status/1888881540534325404"
+          },
+          {
+            "identifier": "1885680527501345195",
+            "position": "12",
+            "datecreated": "2025-02-01T13:24:06.000Z",
+            "datepublished": "2025-02-01T13:24:06.000Z"
+          },
+          {
+            "identifier": "1885434389246419210",
+            "commentcount": "3392",
+            "articlebody": "Please explain to me why as a practicing physician, I cannot accept so much as a pen from a pharmaceutical COMPANY out of concern that it might adulterate or influence my decision-making, and...",
+            "datecreated": "2025-01-31T21:06:02.000Z",
+            "isbasedon": "https://twitter.com/BernieSanders/status/1885343921758495032",
+            "datepublished": "2025-01-31T21:06:02.000Z",
+            "url": "https://twitter.com/drdrew/status/1885434389246419210"
+          },
+          {
+            "identifier": "1885009160753852778",
+            "position": "13",
+            "datecreated": "2025-01-30T16:56:20.000Z",
+            "datepublished": "2025-01-30T16:56:20.000Z"
+          },
+          {
+            "identifier": "1884972919152939051",
+            "commentcount": "0",
+            "articlebody": "“Player development is having a player become their best coach” So many awesome nuggets from @MdMadeHitting in this podcast 🔥",
+            "datecreated": "2025-01-30T14:32:19.000Z",
+            "isbasedon": "https://twitter.com/PeloteroApp/status/1884361161962840512",
+            "datepublished": "2025-01-30T14:32:19.000Z",
+            "url": "https://twitter.com/CoachSchweiss/status/1884972919152939051"
+          },
+          {
+            "identifier": "1884090169126727999",
+            "position": "14",
+            "datecreated": "2025-01-28T04:04:35.000Z",
+            "datepublished": "2025-01-28T04:04:35.000Z"
+          },
+          {
+            "identifier": "1884037811294101758",
+            "commentcount": "0",
+            "articlebody": "A reminder that changing distal segments via cues, constraints, or implements can absolutely affect proximal segments—for better or worse. Some athletes have zero clue how their pelvis/spine...",
+            "datecreated": "2025-01-28T00:36:32.000Z",
+            "datepublished": "2025-01-28T00:36:32.000Z",
+            "url": "https://twitter.com/CoachSchweiss/status/1884037811294101758"
+          },
+          {
+            "identifier": "1873107153269211314",
+            "position": "15",
+            "datecreated": "2024-12-28T20:42:00.000Z",
+            "datepublished": "2024-12-28T20:42:00.000Z"
+          },
+          {
+            "identifier": "1873087797562884489",
+            "commentcount": "4",
+            "articlebody": "Seeing more and more threads on motor preferences—mostly trying to discredit or poke holes in the idea. Most of the time, I come away from these threads thinking the person really has no...",
+            "datecreated": "2024-12-28T19:25:05.000Z",
+            "datepublished": "2024-12-28T19:25:05.000Z",
+            "url": "https://twitter.com/CoachSchweiss/status/1873087797562884489"
+          },
+          {
+            "identifier": "1873107139490922982",
+            "commentcount": "0",
+            "articlebody": "So spot on true.",
+            "position": "16",
+            "datecreated": "2024-12-28T20:41:57.000Z",
+            "isbasedon": "https://twitter.com/CoachSchweiss/status/1873087797562884489",
+            "datepublished": "2024-12-28T20:41:57.000Z",
+            "url": "https://twitter.com/Cameron_Ginger/status/1873107139490922982"
+          },
+          {
+            "identifier": "1857185318895493553",
+            "position": "17",
+            "datecreated": "2024-11-14T22:14:19.000Z",
+            "datepublished": "2024-11-14T22:14:19.000Z"
+          },
+          {
+            "identifier": "1843295265211773160",
+            "commentcount": "0",
+            "articlebody": "Ending the fall batting well and pitching good. Fort myers was cut short due to weather before bracket play. Now the grind start for high school ball!! @ccrawford153 @lgbaseballpage @WowFactorScout...",
+            "datecreated": "2024-10-07T14:20:12.000Z",
+            "datepublished": "2024-10-07T14:20:12.000Z",
+            "url": "https://twitter.com/aydene1022/status/1843295265211773160"
+          },
+          {
+            "identifier": "1851797453705502848",
+            "position": "18",
+            "datecreated": "2024-10-31T01:24:52.000Z",
+            "datepublished": "2024-10-31T01:24:52.000Z"
+          },
+          {
+            "identifier": "1851692448424013875",
+            "commentcount": "159",
+            "articlebody": "Joe Rogan on Kamala Harris Ducking His Interview Offer \"She had an opportunity to come here when she was in Texas and I literally gave them an open invitation.\" @joerogan @KonstantinKisin",
+            "datecreated": "2024-10-30T18:27:37.000Z",
+            "datepublished": "2024-10-30T18:27:37.000Z",
+            "url": "https://twitter.com/TheChiefNerd/status/1851692448424013875"
+          },
+          {
+            "identifier": "1851242223309816039",
+            "position": "19",
+            "datecreated": "2024-10-29T12:38:35.000Z",
+            "datepublished": "2024-10-29T12:38:35.000Z"
+          },
+          {
+            "identifier": "1851028460459683890",
+            "commentcount": "4",
+            "articlebody": "I would like to thank God for the opportunity to play this amazing game, along with Cisco JC for my time spent there. With that, I have decided to reopen my recruitment to seek out other juco...",
+            "datecreated": "2024-10-28T22:29:10.000Z",
+            "datepublished": "2024-10-28T22:29:10.000Z",
+            "url": "https://twitter.com/dcleveland05/status/1851028460459683890"
+          },
+          {
+            "identifier": "1846293052798681557",
+            "commentcount": "0",
+            "articlebody": "Ayyyyyeeeee my dude. So good. 👀👀",
+            "position": "20",
+            "datecreated": "2024-10-15T20:52:20.000Z",
+            "isbasedon": "https://twitter.com/aydene1022/status/1844561502826791223",
+            "datepublished": "2024-10-15T20:52:20.000Z",
+            "url": "https://twitter.com/Cameron_Ginger/status/1846293052798681557"
+          }
+        ]
+      }
+    }
+  ]
+}

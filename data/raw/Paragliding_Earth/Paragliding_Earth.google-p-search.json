@@ -1,0 +1,401 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Paragliding Earth",
+        "totalResults": "2640000",
+        "searchTerms": "Paragliding Earth",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Paragliding Earth",
+        "totalResults": "2640000",
+        "searchTerms": "Paragliding Earth",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.206044,
+    "formattedSearchTime": "0.21",
+    "totalResults": "2640000",
+    "formattedTotalResults": "2,640,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Earth",
+      "htmlTitle": "\u003cb\u003eParagliding Earth\u003c/b\u003e",
+      "link": "https://paraglidingearth.com/",
+      "displayLink": "paraglidingearth.com",
+      "snippet": "Welcome on PgEarth! Important disclaimer! The data provided on this site is for informational and planning purposes only.",
+      "htmlSnippet": "Welcome on PgEarth! Important disclaimer! The data provided on this site is for informational and planning purposes only.",
+      "formattedUrl": "https://paraglidingearth.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eparaglidingearth\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5j_h5s6JzCddKQPxnL0oajZ95_2pWBrxU8OSEve2OjOkmMXDyKJtO-1s&s",
+            "width": "399",
+            "height": "126"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#000000",
+            "viewport": "initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width",
+            "apple-mobile-web-app-capable": "yes",
+            "author": "pgEarth",
+            "mobile-web-app-capable": "yes",
+            "title": "paragliding earth, free flights sites database, worldwide, collaborative."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://paraglidingearth.com/assets/img/header-guc.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "PARAGLIDING MAP - #1 App With Worldwide Info!",
+      "htmlTitle": "\u003cb\u003ePARAGLIDING\u003c/b\u003e MAP - #1 App With Worldwide Info!",
+      "link": "https://www.paraglidingmap.com/",
+      "displayLink": "www.paraglidingmap.com",
+      "snippet": "Paragliding sites with live weather, forecasts, webcams & photos. See where you can fly right now. Worldwide! Official data for Germany, France, Switzerland ...",
+      "htmlSnippet": "\u003cb\u003eParagliding sites\u003c/b\u003e with live weather, forecasts, webcams &amp; photos. See where you can fly right now. Worldwide! Official data for Germany, France, Switzerland&nbsp;...",
+      "formattedUrl": "https://www.paraglidingmap.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparagliding\u003c/b\u003emap.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlllC2itVMVSVVmku42JWLKwgFEsOT8MbXMnVsCmjEsc6CcXSgCkceZ3w&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#ffdba4",
+            "viewport": "width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///681965bf67489518c361a7a15ee41605741508262d1464a0f842888a25df29bf"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Earth",
+      "htmlTitle": "\u003cb\u003eParagliding Earth\u003c/b\u003e",
+      "link": "https://paraglidingearth.com/?site=7001[/url]",
+      "displayLink": "paraglidingearth.com",
+      "snippet": "paragliding earth is an open, collaborative, worldwide database of free flight sites.",
+      "htmlSnippet": "\u003cb\u003eparagliding earth\u003c/b\u003e is an open, collaborative, worldwide database of free flight sites.",
+      "formattedUrl": "https://paraglidingearth.com/?site=7001[/url]",
+      "htmlFormattedUrl": "https://\u003cb\u003eparaglidingearth\u003c/b\u003e.com/?site=7001[/url]",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5j_h5s6JzCddKQPxnL0oajZ95_2pWBrxU8OSEve2OjOkmMXDyKJtO-1s&s",
+            "width": "399",
+            "height": "126"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#000000",
+            "viewport": "initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width",
+            "apple-mobile-web-app-capable": "yes",
+            "author": "pgEarth",
+            "mobile-web-app-capable": "yes",
+            "title": "paragliding earth, free flights sites database, worldwide, collaborative."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://paraglidingearth.com/assets/img/header-guc.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Developing New Paragliding Sites - Penguin Paragliding",
+      "htmlTitle": "Developing New \u003cb\u003eParagliding Sites\u003c/b\u003e - Penguin Paragliding",
+      "link": "https://www.penguinparagliding.com/newsites/developing-new-paragliding-sites",
+      "displayLink": "www.penguinparagliding.com",
+      "snippet": "Dec 23, 2021 ... I've been looking for new sites since I started paragliding a few years ago. The process is tedious, it involves mostly stumbling around and looking at google ...",
+      "htmlSnippet": "Dec 23, 2021 \u003cb\u003e...\u003c/b\u003e I&#39;ve been looking for new \u003cb\u003esites\u003c/b\u003e since I started \u003cb\u003eparagliding\u003c/b\u003e a few years ago. The process is tedious, it involves mostly stumbling around and looking at google&nbsp;...",
+      "formattedUrl": "https://www.penguinparagliding.com/.../developing-new-paragliding-sites",
+      "htmlFormattedUrl": "https://www.penguin\u003cb\u003eparagliding\u003c/b\u003e.com/.../developing-new-\u003cb\u003eparagliding\u003c/b\u003e-sites",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWXG2RkppH8deUBns-re6uI0L8eMphhulVzutHj5vyH59vHdfRQwNvGA4c&s",
+            "width": "165",
+            "height": "224"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://www.penguinparagliding.com/uploads/1/2/4/5/124512444/published/3e198d66-05d2-41b4-98c5-c5c7ee8ca9fd.jpeg?1664771199",
+            "og:site_name": "Penguin Paragliding",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Developing New Paragliding Sites",
+            "og:url": "http://www.penguinparagliding.com/5/post/2021/12/developing-new-paragliding-sites.html",
+            "og:description": "Developing New Paragliding Sites They say necessity is the mother of all inventions.  Well, the same goes for developing new paragliding sites.  2021 has been a strange year for many reasons, one..."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://www.penguinparagliding.com/uploads/1/2/4/5/124512444/published/3e198d66-05d2-41b4-98c5-c5c7ee8ca9fd.jpeg?1664771199"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Map - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eParagliding\u003c/b\u003e Map - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "Feb 10, 2025 ... The world's most popular free-flight app! The most comprehensive source for site info, forecasts, webcams, photos & more!",
+      "htmlSnippet": "Feb 10, 2025 \u003cb\u003e...\u003c/b\u003e The \u003cb\u003eworld&#39;s\u003c/b\u003e most popular free-flight app! The most comprehensive source for site info, forecasts, webcams, photos &amp; more!",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.\u003cb\u003eparagliding\u003c/b\u003emap&amp;hl...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&rdid=com.paraglidingmap&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaiIgCp1qKEKoqpag1Przj0TR94LIgXW1FB62EPyc4Flaft2mtSjumdCA&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Paragliding Map - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US",
+            "appstore:developer_url": "https://www.ParaglidingMap.com",
+            "og:title": "Paragliding Map - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "com.paraglidingmap",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "com.paraglidingmap",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "See where you can fly right now. Worldwide!",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=com.paraglidingmap&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/6VQCkhsmdkzBt_gF3JDSdqYskibuvKd9TcKtKK0mvp8AcnbX5jwiaNet9KmInknfu7jj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Google Earth .kml site download ... - Paragliding Forum",
+      "htmlTitle": "View topic - Google Earth .kml site download ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=47538",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "May 5, 2012 ... I recently downloaded a free database of PG sites worldwide in the form of a .kml file viewable in Google Earth.",
+      "htmlSnippet": "May 5, 2012 \u003cb\u003e...\u003c/b\u003e I recently downloaded a free database of PG \u003cb\u003esites\u003c/b\u003e worldwide in the form of a .kml file viewable in Google \u003cb\u003eEarth\u003c/b\u003e.",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=47538",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparagliding\u003c/b\u003eforum.com/viewtopic.php?t=47538",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Google Earth Layer for HG launch / landing sites? - Hang Gliding Org",
+      "htmlTitle": "Google \u003cb\u003eEarth\u003c/b\u003e Layer for HG launch / landing \u003cb\u003esites\u003c/b\u003e? - \u003cb\u003eHang Gliding\u003c/b\u003e Org",
+      "link": "https://forum.hanggliding.org/viewtopic.php?t=37498",
+      "displayLink": "forum.hanggliding.org",
+      "snippet": "Nov 8, 2023 ... MAPS (Not Downloadable): Paragliding Earth: Very detailed map, focused mostly on paragliding, but does contain hang gliding information too.",
+      "htmlSnippet": "Nov 8, 2023 \u003cb\u003e...\u003c/b\u003e MAPS (Not Downloadable): \u003cb\u003eParagliding Earth\u003c/b\u003e: Very detailed map, focused mostly on paragliding, but does contain hang gliding information too.",
+      "formattedUrl": "https://forum.hanggliding.org/viewtopic.php?t=37498",
+      "htmlFormattedUrl": "https://forum.hanggliding.org/viewtopic.php?t=37498",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:site_name": "Hang Gliding Org",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "designer": "SiteSplat https://themeforest.net/user/themesplat/portfolio?ref=ThemeSplat"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Board index",
+            "name": "Board index",
+            "position": "1"
+          },
+          {
+            "item": "Just Hang Gliding",
+            "name": "Just Hang Gliding",
+            "position": "2"
+          },
+          {
+            "item": "Hang gliding general",
+            "name": "Hang gliding general",
+            "position": "3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What do you guys think about the Paragliding Map App? I find it ...",
+      "htmlTitle": "What do you guys think about the \u003cb\u003eParagliding\u003c/b\u003e Map App? I find it ...",
+      "link": "https://www.reddit.com/r/freeflight/comments/12pxass/what_do_you_guys_think_about_the_paragliding_map/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Apr 17, 2023 ... Living by the sea, the XC sites as you propose are not adapted to my practice. So I created my own forecast site. Making weather forecasts is ...",
+      "htmlSnippet": "Apr 17, 2023 \u003cb\u003e...\u003c/b\u003e Living by the sea, the XC \u003cb\u003esites\u003c/b\u003e as you propose are not adapted to my practice. So I created my own forecast site. Making weather forecasts is&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../what_do_you_guys_think_about_the_paraglidin...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../what_do_you_guys_think_about_the_\u003cb\u003eparaglidin\u003c/b\u003e...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNE_rgoV4Z50WG_H_SKbevT44uv_qwQfocoTDvm8c1118Udb_Se-7sEYQ&s",
+            "width": "164",
+            "height": "308"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: What do you guys think about the Paragliding Map App? I find it amazing.",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: What do you guys think about the Paragliding Map App? I find it amazing.",
+            "og:image:height": "2025",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/c3sco799999 - 11 votes and 30 comments",
+            "twitter:image": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/12pxass/what_do_you_guys_think_about_the_paragliding_map/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/what-do-you-guys-think-about-the-paragliding-map-app-i-find-v0-8omy0f22zjua1.jpg?width=1080&crop=smart&auto=webp&s=2f3a3dc589837969e9e2574ed42eca326c3be3e9"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Best sites in South Spain for winter ... - Paragliding Forum",
+      "htmlTitle": "View topic - Best sites in South Spain for winter ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=27321",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Sep 21, 2009 ... Kamil have done a very good job. I would highlight Montellano and Tebas. Usually in winter, the North wind is the frequent one. But you know, it ...",
+      "htmlSnippet": "Sep 21, 2009 \u003cb\u003e...\u003c/b\u003e Kamil have done a very good job. I would highlight Montellano and Tebas. Usually in winter, the North wind is the frequent one. But you know, it&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=27321",
+      "htmlFormattedUrl": "https://www.\u003cb\u003eparagliding\u003c/b\u003eforum.com/viewtopic.php?t=27321",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding in upstate NY : r/freeflight",
+      "htmlTitle": "\u003cb\u003eParagliding\u003c/b\u003e in upstate NY : r/freeflight",
+      "link": "https://www.reddit.com/r/freeflight/comments/a5jbme/paragliding_in_upstate_ny/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Dec 12, 2018 ... 14 votes, 10 comments. Can anyone recommend paragliding locations/launch sites in Upstate NY or Adirondacks? According to Google, there is ...",
+      "htmlSnippet": "Dec 12, 2018 \u003cb\u003e...\u003c/b\u003e 14 votes, 10 comments. Can anyone recommend \u003cb\u003eparagliding\u003c/b\u003e locations/launch \u003cb\u003esites\u003c/b\u003e in Upstate NY or Adirondacks? According to Google, there is&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/comments/.../paragliding_in_upstate_ny...",
+      "htmlFormattedUrl": "https://www.reddit.com/r/freeflight/comments/.../\u003cb\u003eparagliding\u003c/b\u003e_in_upstate_ny...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/a5jbme",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: Paragliding in upstate NY",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: Paragliding in upstate NY",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/JimmyGaroppoLOL - 14 votes and 10 comments",
+            "twitter:image": "https://share.redd.it/preview/post/a5jbme",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/a5jbme/paragliding_in_upstate_ny/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://share.redd.it/preview/post/a5jbme"
+          }
+        ]
+      }
+    }
+  ]
+}

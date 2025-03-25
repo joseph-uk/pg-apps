@@ -1,0 +1,431 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - The Flight Vario",
+        "totalResults": "1790000",
+        "searchTerms": "The Flight Vario",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - The Flight Vario",
+        "totalResults": "1790000",
+        "searchTerms": "The Flight Vario",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.169367,
+    "formattedSearchTime": "0.17",
+    "totalResults": "1790000",
+    "formattedTotalResults": "1,790,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "theFlightVario - paragliding vario & bluetooth vario",
+      "htmlTitle": "\u003cb\u003etheFlightVario\u003c/b\u003e - paragliding vario &amp; bluetooth vario",
+      "link": "https://www.theflightvario.com/",
+      "displayLink": "www.theflightvario.com",
+      "snippet": "First vario app built around the Inertial Measurement Unit with best in class precision and outstanding location accuracy. Instant vario feedback by processing ...",
+      "htmlSnippet": "First \u003cb\u003evario\u003c/b\u003e app built around the Inertial Measurement Unit with best in class precision and outstanding location accuracy. Instant \u003cb\u003evario\u003c/b\u003e feedback by processing&nbsp;...",
+      "formattedUrl": "https://www.theflightvario.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003etheflightvario\u003c/b\u003e.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "strict-origin-when-cross-origin",
+            "og:image": "https://lh6.googleusercontent.com/tif3BW0lTb5INYZxrGzIn-YAOpI589OQnk2w76lsvCKNgc2d_EHppqppMlm_K-iotXLZaQ=w16383",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "theFlightVario - paragliding vario & bluetooth vario",
+            "og:url": "https://www.theflightvario.com/",
+            "og:description": "The first vario app for paragliding engineered around the Inertial Measurement Unit (IMU) to detect motion in all directions. The IMU centric design allows for a vario app outstanding in both,  precision and robustness. This is achieved by continuously cross checking all sensor readings from the"
+          }
+        ],
+        "webpage": [
+          {
+            "image": "https://lh6.googleusercontent.com/tif3BW0lTb5INYZxrGzIn-YAOpI589OQnk2w76lsvCKNgc2d_EHppqppMlm_K-iotXLZaQ=w16383",
+            "imageurl": "https://lh6.googleusercontent.com/tif3BW0lTb5INYZxrGzIn-YAOpI589OQnk2w76lsvCKNgc2d_EHppqppMlm_K-iotXLZaQ=w16383",
+            "name": "theFlightVario - paragliding vario & bluetooth vario",
+            "description": "The first vario app for paragliding engineered around the Inertial Measurement Unit (IMU) to detect motion in all directions. The IMU centric design allows for a vario app outstanding in both,...",
+            "url": "https://www.theflightvario.com/",
+            "thumbnailurl": "https://lh6.googleusercontent.com/tif3BW0lTb5INYZxrGzIn-YAOpI589OQnk2w76lsvCKNgc2d_EHppqppMlm_K-iotXLZaQ=w16383"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lh6.googleusercontent.com/tif3BW0lTb5INYZxrGzIn-YAOpI589OQnk2w76lsvCKNgc2d_EHppqppMlm_K-iotXLZaQ=w16383"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What is Vario? Tried googling it but got nowhere. : r/flightsim",
+      "htmlTitle": "What is \u003cb\u003eVario\u003c/b\u003e? Tried googling it but got nowhere. : r/flightsim",
+      "link": "https://www.reddit.com/r/flightsim/comments/ynh1o8/what_is_vario_tried_googling_it_but_got_nowhere/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Nov 6, 2022 ... Variometer is a word for the vertical speed indicator in some languages (eg. French, Polish and Russian). In English it's used exclusively in ...",
+      "htmlSnippet": "Nov 6, 2022 \u003cb\u003e...\u003c/b\u003e Variometer is a word for the vertical speed indicator in some languages (eg. French, Polish and Russian). In English it&#39;s used exclusively in&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/.../flightsim/.../what_is_vario_tried_googling_it_bu...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../\u003cb\u003eflight\u003c/b\u003esim/.../what_is_\u003cb\u003evario\u003c/b\u003e_tried_googling_it_bu...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Jk5SJBBV83vy6_bvb7i85h7wqDBIF6Amy_ugiVoclcNW48lTBTFJihav&s",
+            "width": "299",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/what-is-vario-tried-googling-it-but-got-nowhere-v0-49ict7z9zay91.png?width=1080&crop=smart&auto=webp&s=92c029715f5e0b7f7451f9478a78e7bcde7c65bb",
+            "theme-color": "#000000",
+            "og:image:width": "1080",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/flightsim on Reddit: What is Vario? Tried googling it but got nowhere.",
+            "og:site_name": "Reddit",
+            "og:title": "r/flightsim on Reddit: What is Vario? Tried googling it but got nowhere.",
+            "og:image:height": "608",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Previous_Spring_7700 - 119 votes and 40 comments",
+            "twitter:image": "https://preview.redd.it/what-is-vario-tried-googling-it-but-got-nowhere-v0-49ict7z9zay91.png?width=1080&crop=smart&auto=webp&s=92c029715f5e0b7f7451f9478a78e7bcde7c65bb",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/flightsim/comments/ynh1o8/what_is_vario_tried_googling_it_but_got_nowhere/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/what-is-vario-tried-googling-it-but-got-nowhere-v0-49ict7z9zay91.png?width=1080&crop=smart&auto=webp&s=92c029715f5e0b7f7451f9478a78e7bcde7c65bb"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "FAQ ... - theFlightVario - paragliding vario & bluetooth vario",
+      "htmlTitle": "FAQ ... - theFlightVario - paragliding vario & bluetooth vario",
+      "link": "https://www.theflightvario.com/faq-frequently-asked-questions",
+      "displayLink": "www.theflightvario.com",
+      "snippet": "To display in flight and feedback information to the pilot, notifications are used within the vario app. Also, if the vario app is pushed to the background, ...",
+      "htmlSnippet": "To display in \u003cb\u003eflight\u003c/b\u003e and feedback information to the pilot, notifications are used within the \u003cb\u003evario\u003c/b\u003e app. Also, if the \u003cb\u003evario\u003c/b\u003e app is pushed to the background,&nbsp;...",
+      "formattedUrl": "https://www.theflightvario.com/faq-frequently-asked-questions",
+      "htmlFormattedUrl": "https://www.\u003cb\u003etheflightvario\u003c/b\u003e.com/faq-frequently-asked-questions",
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "strict-origin-when-cross-origin",
+            "og:image": "https://lh5.googleusercontent.com/VcyWIGELYTZZaXY2Zvbg2ukURL4TwQd8rSKjABHRYU42PJkHaWZfsEVMfK4_hUB8sp4QTQ=w16383",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "theFlightVario - paragliding vario & bluetooth vario - FAQ - Frequently Asked Questions",
+            "og:url": "https://www.theflightvario.com/faq-frequently-asked-questions",
+            "og:description": "Frequently Asked Questions\nThe following sections handle some common questions found in paragliding. We hope to answer these as objective as possible.  Also, a good amount is spent clarifying the differences and expectations of using a smartphone as a variometer for paragliding. Needless to say, a"
+          }
+        ],
+        "webpage": [
+          {
+            "image": "https://lh5.googleusercontent.com/VcyWIGELYTZZaXY2Zvbg2ukURL4TwQd8rSKjABHRYU42PJkHaWZfsEVMfK4_hUB8sp4QTQ=w16383",
+            "imageurl": "https://lh5.googleusercontent.com/VcyWIGELYTZZaXY2Zvbg2ukURL4TwQd8rSKjABHRYU42PJkHaWZfsEVMfK4_hUB8sp4QTQ=w16383",
+            "name": "theFlightVario - paragliding vario & bluetooth vario - FAQ - Frequently Asked Questions",
+            "description": "Frequently Asked Questions The following sections handle some common questions found in paragliding. We hope to answer these as objective as possible. Also, a good amount is spent clarifying...",
+            "url": "https://www.theflightvario.com/faq-frequently-asked-questions",
+            "thumbnailurl": "https://lh5.googleusercontent.com/VcyWIGELYTZZaXY2Zvbg2ukURL4TwQd8rSKjABHRYU42PJkHaWZfsEVMfK4_hUB8sp4QTQ=w16383"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lh5.googleusercontent.com/VcyWIGELYTZZaXY2Zvbg2ukURL4TwQd8rSKjABHRYU42PJkHaWZfsEVMfK4_hUB8sp4QTQ=w16383"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flight Vario App great : r/freeflight",
+      "htmlTitle": "\u003cb\u003eFlight Vario\u003c/b\u003e App great : r/freeflight",
+      "link": "https://www.reddit.com/r/freeflight/comments/1g57him/flight_vario_app_great/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 16, 2024 ... Comments Section · when properly setup, the app is more reactive than many standalone varios · your phone needs to have a high frequency ...",
+      "htmlSnippet": "Oct 16, 2024 \u003cb\u003e...\u003c/b\u003e Comments Section &middot; when properly setup, the app is more reactive than many standalone \u003cb\u003evarios\u003c/b\u003e &middot; your phone needs to have a high frequency&nbsp;...",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/comments/.../flight_vario_app_great/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/free\u003cb\u003eflight\u003c/b\u003e/comments/.../\u003cb\u003eflight\u003c/b\u003e_\u003cb\u003evario\u003c/b\u003e_app_great/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF30cota-6lbkDHy92LGvf2Yix9-FRw2KNCA429saSZVYBuDZYHMy68KQ&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://external-preview.redd.it/flight-vario-app-great-v0-biU9NI85Wr9yp1_hnnzofuQmKbOomykOdGJFE9LDOUY.jpg?auto=webp&s=310e6ce38a8ba93dae682d2303b2140d94e84109",
+            "theme-color": "#000000",
+            "og:image:width": "512",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: Flight Vario App great",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: Flight Vario App great",
+            "og:image:height": "512",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Mindless_Walrus386 - 5 votes and 18 comments",
+            "twitter:image": "https://external-preview.redd.it/flight-vario-app-great-v0-biU9NI85Wr9yp1_hnnzofuQmKbOomykOdGJFE9LDOUY.jpg?auto=webp&s=310e6ce38a8ba93dae682d2303b2140d94e84109",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1g57him/flight_vario_app_great/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://external-preview.redd.it/flight-vario-app-great-v0-biU9NI85Wr9yp1_hnnzofuQmKbOomykOdGJFE9LDOUY.jpg?auto=webp&s=310e6ce38a8ba93dae682d2303b2140d94e84109"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - theFlightVario - Zero Delay Vario ... - Paragliding Forum",
+      "htmlTitle": "View topic - theFlightVario - Zero Delay Vario ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=101430",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Sep 5, 2020 ... It is a vario app for android smartphones that uses the IMU + barometer to provide an instant beep and instant audio.",
+      "htmlSnippet": "Sep 5, 2020 \u003cb\u003e...\u003c/b\u003e It is a \u003cb\u003evario\u003c/b\u003e app for \u003cb\u003eandroid smartphones\u003c/b\u003e that uses the IMU + barometer to provide an instant beep and instant audio.",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=101430",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=101430",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Android Apps by theFlightVario.com on Google Play",
+      "htmlTitle": "Android Apps by \u003cb\u003etheFlightVario\u003c/b\u003e.com on Google Play",
+      "link": "https://play.google.com/store/apps/dev?id=6199555890032271589&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "theFlightVario.com. The vario app for paragliding with bluetooth, thermals, airspaces, waypoints a flight book and IMU centric design for outstanding precision.",
+      "htmlSnippet": "\u003cb\u003etheFlightVario\u003c/b\u003e.com. The \u003cb\u003evario\u003c/b\u003e app for paragliding with bluetooth, thermals, airspaces, waypoints \u003cb\u003ea flight\u003c/b\u003e book and IMU centric design for outstanding precision.",
+      "formattedUrl": "https://play.google.com/store/apps/dev?id=6199555890032271589...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/dev?id=6199555890032271589...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=org.theflightvario.simplevario.xc&rdid=org.theflightvario.simplevario.xc&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZMb4TcCFJCwGifSdDmLDTkuXFIbl0UE7EuIyZSfSMpE10rvby_PNNBkcE&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/yVbxqMVFlF__-6iExe7PJHUszxlSRIcDSleOedn0y9Hsh8zig5uOvO8iwJH69AIcExw",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Android Apps by theFlightVario.com on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/dev?id=6199555890032271589&hl=en_US",
+            "og:title": "Android Apps by theFlightVario.com on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/yVbxqMVFlF__-6iExe7PJHUszxlSRIcDSleOedn0y9Hsh8zig5uOvO8iwJH69AIcExw=w600-h300-pc0xffffff-pd",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "The vario app for paragliding with bluetooth, thermals, airspaces, waypoints a flight book and IMU centric design for outstanding precision.",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/dev?id=6199555890032271589&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/yVbxqMVFlF__-6iExe7PJHUszxlSRIcDSleOedn0y9Hsh8zig5uOvO8iwJH69AIcExw"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - XC Vario - a lag free vario - new - Paragliding Forum",
+      "htmlTitle": "View topic - XC Vario - a lag free vario - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p662178",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Nov 21, 2022 ... The latter is definitely lacking what you describe as barometric vent. So I would be happy if you share your findings after test flying without ...",
+      "htmlSnippet": "Nov 21, 2022 \u003cb\u003e...\u003c/b\u003e The latter is definitely lacking what you describe as barometric vent. So I would be happy if you share your findings after test \u003cb\u003eflying\u003c/b\u003e without&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p662178",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p662178",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Variometer - Wikipedia",
+      "htmlTitle": "\u003cb\u003eVariometer\u003c/b\u003e - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Variometer",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "In aviation, a variometer – also known as a rate of climb and descent indicator (RCDI), rate-of-climb indicator, vertical speed indicator (VSI), or vertical ...",
+      "htmlSnippet": "In aviation, a \u003cb\u003evariometer\u003c/b\u003e – also known as a rate of climb and descent indicator (RCDI), rate-of-climb indicator, vertical speed indicator (VSI), or vertical&nbsp;...",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Variometer",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eVario\u003c/b\u003emeter",
+      "pagemap": {
+        "metatags": [
+          {
+            "referrer": "origin",
+            "og:image": "https://upload.wikimedia.org/wikipedia/en/c/c9/R22-VSI.jpg",
+            "theme-color": "#eaecf0",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": "Variometer - Wikipedia",
+            "og:image:height": "1221",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Best place to attach a vario? - new - Paragliding Forum",
+      "htmlTitle": "View topic - Best place to attach a vario? - new - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=38533",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Apr 14, 2011 ... Strapped to the leg. 2. Strapped to one of the harness straps (not a flight deck). Strap it to your leg. Provided, that is, ...",
+      "htmlSnippet": "Apr 14, 2011 \u003cb\u003e...\u003c/b\u003e Strapped to the leg. 2. Strapped to one of the harness straps (not \u003cb\u003ea flight\u003c/b\u003e deck). Strap it to your leg. Provided, that is,&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=38533",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=38533",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Syride SYS'Nav XL Vario - Store - Lookout Mountain Flight Park",
+      "htmlTitle": "Syride SYS&#39;Nav XL \u003cb\u003eVario\u003c/b\u003e - Store - Lookout Mountain \u003cb\u003eFlight\u003c/b\u003e Park",
+      "link": "https://flylookout.com/store/Syride-SYSNav-XL-Vario-p552491837",
+      "displayLink": "flylookout.com",
+      "snippet": "Shop the Syride SYS'Nav XL Vario at Lookout Mountain Flight Park, the Southeast's premier paragliding and hang gliding school and equipment shop.",
+      "htmlSnippet": "Shop the Syride SYS&#39;Nav XL \u003cb\u003eVario\u003c/b\u003e at Lookout Mountain \u003cb\u003eFlight\u003c/b\u003e Park, the Southeast&#39;s premier paragliding and hang gliding school and equipment shop.",
+      "formattedUrl": "https://flylookout.com/store/Syride-SYSNav-XL-Vario-p552491837",
+      "htmlFormattedUrl": "https://flylookout.com/store/Syride-SYSNav-XL-\u003cb\u003eVario\u003c/b\u003e-p552491837",
+      "pagemap": {
+        "offer": [
+          {
+            "pricecurrency": "USD",
+            "price": "555",
+            "availability": "http://schema.org/InStock",
+            "itemcondition": "http://schema.org/NewCondition"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbTPM1wodq0M887E2jOGYCN0hi4oq3GK-tHgBABZ7h36hpNl5IfRfs5BA&s",
+            "width": "424",
+            "height": "119"
+          }
+        ],
+        "product": [
+          {
+            "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/87161674/4002476855.png",
+            "name": "Syride SYS'Nav XL Vario",
+            "description": "Sys’Nav XL Compact technology! Simple, light, and efficient. The SYS'NAV XL is an eXtra Light instrument with the most recent technologies. With it, you’ll be able you to improve yourself...",
+            "sku": "3087_sku"
+          }
+        ],
+        "organization": [
+          {
+            "name": "Lookout Mountain Flight Park"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://d2j6dbq0eux0bg.cloudfront.net/images/87161674/4002476855.png",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Syride SYS'Nav XL Vario - Store - Lookout Mountain Flight Park",
+            "og:site_name": "Lookout Mountain Flight Park",
+            "og:title": "Syride SYS'Nav XL Vario - Store - Lookout Mountain Flight Park",
+            "twitter:label1": "Est. reading time",
+            "og:description": "Shop the Syride SYS'Nav XL Vario at Lookout Mountain Flight Park, the Southeast's premier paragliding and hang gliding school and equipment shop.",
+            "article:publisher": "https://www.facebook.com/lookoutmountainflightpark",
+            "twitter:data1": "1 minute",
+            "twitter:image": "https://d2j6dbq0eux0bg.cloudfront.net/images/87161674/4002476855.png",
+            "article:modified_time": "2024-11-25T21:05:26+00:00",
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "twitter:description": "Shop the Syride SYS'Nav XL Vario at Lookout Mountain Flight Park, the Southeast's premier paragliding and hang gliding school and equipment shop.",
+            "og:locale": "en_US",
+            "og:url": "https://flylookout.com/store/Syride-SYSNav-XL-Vario-p552491837"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://d2j6dbq0eux0bg.cloudfront.net/images/87161674/4002476855.png"
+          }
+        ],
+        "hproduct": [
+          {
+            "fn": "Syride SYS'Nav XL Vario",
+            "description": "Sys’Nav XL Compact technology! Simple, light, and efficient. The SYS'NAV XL is an eXtra Light instrument with the most recent technologies. With it, you’ll be able you to improve yourself...",
+            "photo": "https://d2j6dbq0eux0bg.cloudfront.net/images/87161674/4002476856.png",
+            "currency": "USD",
+            "currency_iso4217": "840"
+          }
+        ]
+      }
+    }
+  ]
+}

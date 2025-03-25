@@ -1,0 +1,9 @@
+{
+  "name": "XCSoar",
+  "url": "https://www.xcsoar.org",
+  "platform": "android, windows, linux",
+  "type": "flight instrument",
+  "short_description": "Open source flight computer",
+  "timestamp": "2025-03-25T21:17:45Z",
+  "website_fetched": true
+}

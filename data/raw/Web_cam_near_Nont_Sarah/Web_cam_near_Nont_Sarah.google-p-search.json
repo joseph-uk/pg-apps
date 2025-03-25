@@ -1,0 +1,496 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Web cam near Nont Sarah",
+        "totalResults": "788000",
+        "searchTerms": "Web cam near Nont Sarah",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Web cam near Nont Sarah",
+        "totalResults": "788000",
+        "searchTerms": "Web cam near Nont Sarah",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.241359,
+    "formattedSearchTime": "0.24",
+    "totalResults": "788000",
+    "formattedTotalResults": "788,000"
+  },
+  "spelling": {
+    "correctedQuery": "Webcam near Nont Sarah",
+    "htmlCorrectedQuery": "\u003cb\u003e\u003ci\u003eWebcam\u003c/i\u003e\u003c/b\u003e near Nont Sarah"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Bay Cam - Live Streaming Webcam from Mission Bay | Bahia Resort ...",
+      "htmlTitle": "Bay Cam - Live Streaming \u003cb\u003eWebcam\u003c/b\u003e from Mission Bay | Bahia Resort ...",
+      "link": "https://www.bahiahotel.com/live-cam",
+      "displayLink": "www.bahiahotel.com",
+      "snippet": "Mar 7, 2022 ... Wonder what's going on at the Bahia Resort Hotel and Mission Bay? Check out our live webcam to see what is happening on scenic Mission Bay ...",
+      "htmlSnippet": "Mar 7, 2022 \u003cb\u003e...\u003c/b\u003e Wonder what&#39;s going on at the Bahia Resort Hotel and Mission Bay? Check out our \u003cb\u003elive webcam\u003c/b\u003e to see what is happening on scenic Mission Bay&nbsp;...",
+      "formattedUrl": "https://www.bahiahotel.com/live-cam",
+      "htmlFormattedUrl": "https://www.bahiahotel.com/live-\u003cb\u003ecam\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKnC4C5t2Hgo3TcffuCXD76V1RCT9LgEvgezUiUjHHDixz0xrz1zLg_e5&s",
+            "width": "325",
+            "height": "155"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#ffffff",
+            "og:image": "http://assets.bahiahotel.com/bahia-webcam.jpg",
+            "og:type": "article",
+            "article:published_time": "Fri, 03/21/2025 - 08:37",
+            "theme-color": "#ffffff",
+            "og:site_name": "Bahia Resort Hotel",
+            "og:image:url": "http://assets.bahiahotel.com/bahia-webcam.jpg",
+            "handheldfriendly": "true",
+            "og:title": "Live Streaming Cam from Mission Bay, San Diego",
+            "og:description": "Get a sneak peek of the Bahia Hotel Resort live webcam with views of Mission Bay, Mission Beach and Pacific Beach.",
+            "article:author": "Bahia Resort Hotel",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width",
+            "og:url": "https://www.bahiahotel.com/live-cam"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://assets.bahiahotel.com/bahia-webcam.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Webcams Live - All webcams of Les Gets ski resort",
+      "htmlTitle": "\u003cb\u003eWebcams\u003c/b\u003e Live - All \u003cb\u003ewebcams\u003c/b\u003e of Les Gets ski resort",
+      "link": "https://www.lesgets.com/en/webcams/",
+      "displayLink": "www.lesgets.com",
+      "snippet": "3 days ago ... ... weather all year round. Follow us… We will take you on a 360° visual tour of the resort from the following locations : The top of Mont Chéry ...",
+      "htmlSnippet": "3 days ago \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003eweather\u003c/b\u003e all year round. Follow us… We will take you on a 360° visual tour of the resort from the following locations : The top of \u003cb\u003eMont\u003c/b\u003e Chéry&nbsp;...",
+      "formattedUrl": "https://www.lesgets.com/en/webcams/",
+      "htmlFormattedUrl": "https://www.lesgets.com/en/\u003cb\u003ewebcam\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmM3qeqaZvLUBBGOP0h-8QHaB5wccuEGy1t9xqPEWtxmPzqSXqJZHrgR0&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.lesgets.com/wp/../app/uploads/2024/10/2016_03_06_telecabine_lesgets_2-scaled.jpg",
+            "og:type": "article",
+            "og:image:width": "2560",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Les Gets",
+            "og:title": "Webcams Live - All webcams of Les Gets ski resort",
+            "og:image:height": "1710",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://www.lesgets.com/wp/../app/uploads/2024/11/cropped-LogoLesGets-Estampe-Bleu-270x270.png",
+            "og:description": "Find all the webcams of the resort to see live the weather and snow conditions at several locations in the area (snow front, peaks, lift departures).",
+            "twitter:data1": "1 minute",
+            "article:modified_time": "2024-12-23T09:56:32+00:00",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:locale": "en_US",
+            "og:url": "https://www.lesgets.com/en/webcams/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.lesgets.com/app/uploads/2025/02/2023_03_14_domaine_skiable_neige_fraiche_cpLesGets_LD-06.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "The Life-Changing Loaf of Bread - My New Roots -",
+      "htmlTitle": "The Life-Changing Loaf of Bread - My New Roots -",
+      "link": "https://www.mynewroots.org/2013/02/the-life-changing-loaf-of-bread/",
+      "displayLink": "www.mynewroots.org",
+      "snippet": "Feb 12, 2013 ... ... Sarah Britton says: November 21, 2023 at 6:21 pm. Hi Holly! We sent ... web that are nut and seed bread type things with any number of ...",
+      "htmlSnippet": "Feb 12, 2013 \u003cb\u003e...\u003c/b\u003e ... \u003cb\u003eSarah\u003c/b\u003e Britton says: November 21, 2023 at 6:21 pm. Hi Holly! We sent ... \u003cb\u003eweb\u003c/b\u003e that are nut and seed bread type things with any number of&nbsp;...",
+      "formattedUrl": "https://www.mynewroots.org/2013/02/the-life-changing-loaf-of-bread/",
+      "htmlFormattedUrl": "https://www.mynewroots.org/2013/02/the-life-changing-loaf-of-bread/",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "dona",
+            "nickname": "dona"
+          },
+          {
+            "url_text": "Carroll County Reckless Driving",
+            "fn": "Carroll County Reckless Driving",
+            "url": "https://srislawyer.com/reckless-driving-carroll-county-va-lawyer/"
+          },
+          {
+            "fn": "Nina",
+            "nickname": "Nina"
+          },
+          {
+            "fn": "Holly",
+            "nickname": "Holly"
+          },
+          {
+            "fn": "Sarah Britton"
+          },
+          {
+            "fn": "I just made my first loaf in a glass pan lined with parchment paper. It comes out perfectly. Love this bread."
+          },
+          {
+            "url_text": "Dubai Sim",
+            "fn": "Dubai Sim",
+            "url": "https://dubaisims.com/"
+          },
+          {
+            "url_text": "Prestige Park Grove",
+            "fn": "Prestige Park Grove",
+            "url": "https://www.prestigeparksgrove.ind.in/"
+          },
+          {
+            "url_text": "Toimistotila Helsinki",
+            "fn": "Toimistotila Helsinki",
+            "url": "https://www.matchoffice.fi/vuokraus/toimisto/helsinki"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bbh__npXKXGUW557A69kjZkn2p1QyQSrSh1_lP-NiraB-QrLYi1Wf4s&s",
+            "width": "262",
+            "height": "192"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.mynewroots.org/wp-content/uploads/2013/02/bread-1.jpg",
+            "msapplication-config": "/site/wp-content/uploads/fbrfg/browserconfig.xml?v=A0024PXGbb",
+            "article:published_time": "2013-02-12T17:16:31+00:00",
+            "og:image:width": "680",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#ffffff",
+            "og:site_name": "My New Roots",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "/site/wp-content/uploads/fbrfg/mstile-144x144.png?v=A0024PXGbb",
+            "og:description": "This plant-based, gluten-free, Life-Changing Loaf of Bread has appeared on the plates of thousands of readers and is a staple in my home too!",
+            "twitter:creator": "@mynewroots",
+            "article:publisher": "https://www.facebook.com/MyNewRoots/",
+            "twitter:data1": "Sarah Britton",
+            "twitter:data2": "9 minutes",
+            "twitter:site": "@mynewroots",
+            "article:modified_time": "2024-09-16T17:33:55+00:00",
+            "msapplication-tilecolor": "#da532c",
+            "og:type": "recipe",
+            "author": "Sarah Britton",
+            "og:title": "The Life-Changing Loaf of Bread - My New Roots -",
+            "og:image:height": "500",
+            "facebook-domain-verification": "6te9s779cmcgw76ldvru70u44no4i7",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.mynewroots.org/2013/02/the-life-changing-loaf-of-bread/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.mynewroots.org/wp-content/uploads/2013/02/bread-1.jpg"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Weather & Snow Report",
+      "htmlTitle": "\u003cb\u003eWeather\u003c/b\u003e &amp; Snow Report",
+      "link": "https://www.sierraattahoe.com/weather-snow-report/",
+      "displayLink": "www.sierraattahoe.com",
+      "snippet": "Sunny, with a high near 59. Light and variable wind becoming south southwest ... 3106. Lifts & Trails Status Web Cams Snow Totals Storm Tracker. Ski Snowflakes ...",
+      "htmlSnippet": "Sunny, with a high \u003cb\u003enear\u003c/b\u003e 59. Light and variable wind becoming south southwest ... 3106. Lifts &amp; Trails Status \u003cb\u003eWeb Cams\u003c/b\u003e Snow Totals Storm Tracker. Ski Snowflakes&nbsp;...",
+      "formattedUrl": "https://www.sierraattahoe.com/weather-snow-report/",
+      "htmlFormattedUrl": "https://www.sierraattahoe.com/weather-snow-report/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YU1zNzUzWMyay5cA3BaV_H5Ptl_dySDN5NTyP62a_79WqtS9-05ri1jv&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://stgsierra.blob.core.windows.net/sierra/uploaded/og_image/20220512_brianwalker_00121.jpg",
+            "og:type": "website",
+            "fb:app_id": "2265300210355497",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "Weather & Snow Report",
+            "com.silverpop.brandeddomains": "www.pages03.net,sierratahoe.mkt7500.com,www.sierraattahoe.com",
+            "og:url": "https://www.sierraattahoe.com/weather-snow-report/",
+            "og:description": "This report is updated by 6:00 am daily before grooming activities are completed. The accuracy of the report is our top priority, however, weather conditions, equipment issues and update lag times may prevent 100% accuracy from the time you read this report to the time you arrive on the snow. Be aware Ski with care!",
+            "com.silverpop.cothost": "pod3.ibmmarketingcloud.com",
+            "facebook-domain-verification": "88yu68oo1nzqktex67s24076ra6hhs"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://stgsierra.blob.core.windows.net/sierra/uploaded/og_image/20220512_brianwalker_00121.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Live WebCam | Mount Dora, FL - Official Website",
+      "htmlTitle": "\u003cb\u003eLive WebCam\u003c/b\u003e | Mount Dora, FL - Official Website",
+      "link": "https://ci.mount-dora.fl.us/805/Live-WebCam",
+      "displayLink": "ci.mount-dora.fl.us",
+      "snippet": "Click on the image to open the Live WebCam page where you can view our beautiful downtown/Donnelly Park area or Palm Island/Lake Dora area.",
+      "htmlSnippet": "Click on the image to open the \u003cb\u003eLive WebCam\u003c/b\u003e page where you can view our beautiful downtown/Donnelly Park area or Palm Island/Lake Dora area.",
+      "formattedUrl": "https://ci.mount-dora.fl.us/805/Live-WebCam",
+      "htmlFormattedUrl": "https://ci.mount-dora.fl.us/805/Live-\u003cb\u003eWebCam\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRwdh7OIy-ZcUbRa7NT571QujU-0kTXUP-VXIigHegTTo0nTPqQaISMxJI&s",
+            "width": "303",
+            "height": "166"
+          }
+        ],
+        "metatags": [
+          {
+            "category2": "Live WebCam",
+            "theme-color": "#981b1f",
+            "viewport": "width=device-width, initial-scale=1",
+            "category0": "Home",
+            "category1": "Visitors"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ci.mount-dora.fl.us/ImageRepository/Document?documentID=6222"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "New Hampshire Skiing & Snowboarding | Mount Sunapee Ski Resort",
+      "htmlTitle": "New Hampshire Skiing &amp; Snowboarding | Mount Sunapee Ski Resort",
+      "link": "https://www.mountsunapee.com/",
+      "displayLink": "www.mountsunapee.com",
+      "snippet": "New Hampshire Ski Resort set on the shores of Lake Sunapee, visit for family atmosphere, attractions and scenic beauty.",
+      "htmlSnippet": "New Hampshire Ski Resort set on the shores of Lake Sunapee, visit for family atmosphere, attractions and scenic beauty.",
+      "formattedUrl": "https://www.mountsunapee.com/",
+      "htmlFormattedUrl": "https://www.mountsunapee.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjiQgp2odk7pbm024RZRNG-FekedaHfs8trgiRlDNVYe0viOeviqoQvw8&s",
+            "width": "400",
+            "height": "124"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scene7.vailresorts.com/is/image/vailresorts/Season%20Passes%20HERO-1",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0",
+            "og:title": "New Hampshire Skiing & Snowboarding | Mount Sunapee Ski Resort",
+            "og:url": "https://www.mountsunapee.com/",
+            "og:description": "New Hampshire Ski Resort set on the  shores of Lake Sunapee, visit for family atmosphere, attractions and scenic beauty.",
+            "format-detection": "telephone=no",
+            "facebook-domain-verification": "wo3qihogkobeseg22ubziyzwsg04nq"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scene7.vailresorts.com/is/image/vailresorts/Season%20Passes%20HERO-1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Vail Ski Resort: Colorado Skiing & Snowboarding",
+      "htmlTitle": "Vail Ski Resort: Colorado Skiing &amp; Snowboarding",
+      "link": "https://www.vail.com/",
+      "displayLink": "www.vail.com",
+      "snippet": "Close Close Search. Search Submit Search. Top Searches. Jobs · Help Center · Lift ... Live Webcams and Weather. Real Time Operational Alerts. View Your Personal ...",
+      "htmlSnippet": "\u003cb\u003eClose Close\u003c/b\u003e Search. Search Submit Search. Top Searches. Jobs &middot; Help Center &middot; Lift ... \u003cb\u003eLive Webcams\u003c/b\u003e and \u003cb\u003eWeather\u003c/b\u003e. Real Time Operational Alerts. View Your Personal&nbsp;...",
+      "formattedUrl": "https://www.vail.com/",
+      "htmlFormattedUrl": "https://www.vail.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMr0X5nK5pQ5l5TR6V1y5uVppsMZlxaYi-5Iyf03uQsqHhhME84Ar3uAEV&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scene7.vailresorts.com/is/image/vailresorts/20220204_VL_DUNN_02:Cards",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0",
+            "og:title": "Colorado Skiing & Snowboarding | Vail Ski Resort",
+            "og:url": "https://www.vail.com/",
+            "og:description": "Vail, Colorado Ski Resort – Experience legendary, world-class skiing and snowboarding, like nothing on Earth.",
+            "format-detection": "telephone=no",
+            "facebook-domain-verification": "exbrxx6nr1hoj42v6nnqwhucnc9efv"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scene7.vailresorts.com/is/image/vailresorts/20220204_VL_DUNN_02:Cards"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "StretchLab | Don't just stretch - get stretched",
+      "htmlTitle": "StretchLab | Don&#39;t just stretch - get stretched",
+      "link": "https://www.stretchlab.com/",
+      "displayLink": "www.stretchlab.com",
+      "snippet": "ONE-ON-ONE ASSISTED STRETCHES WITH MOBILITY EXPERTS. Hit your body's reset button. Decrease pain, move better, and feel better, at a studio near you. TRY IT ...",
+      "htmlSnippet": "ONE-ON-ONE ASSISTED STRETCHES WITH MOBILITY EXPERTS. Hit your body&#39;s reset button. Decrease pain, move better, and feel better, at a studio \u003cb\u003enear\u003c/b\u003e you. TRY IT&nbsp;...",
+      "formattedUrl": "https://www.stretchlab.com/",
+      "htmlFormattedUrl": "https://www.stretchlab.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNxsJOE_HCo9AUIemMWZQviV3ZVRPh0QRS0ztasIvWLTy2E3h3VOfdI2hf&s",
+            "width": "294",
+            "height": "171"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+            "twitter:title": "StretchLab | Don't just stretch - get stretched",
+            "og:image:width": "300",
+            "og:image:alt": "StretchLab",
+            "twitter:card": "summary_large_image",
+            "author": "StretchLab Franchise",
+            "og:title": "StretchLab | Don't just stretch - get stretched",
+            "og:image:height": "175",
+            "og:description": "StretchLab offers customized assisted stretch sessions with certified stretch practitioners who are trained in kinesiology and other types of therapy.",
+            "twitter:image": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg",
+            "twitter:image:alt": "StretchLab",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "StretchLab offers customized assisted stretch sessions with certified stretch practitioners who are trained in kinesiology and other types of therapy.",
+            "og:url": "https://www.stretchlab.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.stretchlab.com/hubfs/stretchlab_featured.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Town of Stowe: Home",
+      "htmlTitle": "Town of Stowe: Home",
+      "link": "https://www.stowevt.gov/Home",
+      "displayLink": "www.stowevt.gov",
+      "snippet": "Select the Escape key to close the menu. Focus will then be set to the first menu item. Home. Online Payments · Voting & Elections · Meeting Calendar · Agendas ...",
+      "htmlSnippet": "Select the Escape key to \u003cb\u003eclose\u003c/b\u003e the menu. Focus will then be set to the first menu item. Home. \u003cb\u003eOnline\u003c/b\u003e Payments &middot; Voting &amp; Elections &middot; Meeting Calendar &middot; Agendas&nbsp;...",
+      "formattedUrl": "https://www.stowevt.gov/Home",
+      "htmlFormattedUrl": "https://www.stowevt.gov/Home",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9vCtzVn-6AWPDmN9a4gFhDgG0jHR49OHq2y0Wi8J-D-N1AlWstkX_Vw&s",
+            "width": "440",
+            "height": "114"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#FFFFFF",
+            "msapplication-config": "/files/ocfavicon/Town/browserconfig.xml?V=638538617658923431",
+            "theme-color": "#FFFFFF",
+            "og:type": "article",
+            "twitter:card": "summary",
+            "twitter:title": "Official Website of the Town of Stowe, Vermont",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "apple-mobile-web-app-capable": "yes",
+            "og:title": "Official Website of the Town of Stowe, Vermont",
+            "og:url": "https://www.stowevt.gov/Home"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.stowevt.gov/files/sharedassets/town/v/1/roadwork.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cheaha State Park | Alapark",
+      "htmlTitle": "Cheaha State Park | Alapark",
+      "link": "https://www.alapark.com/parks/cheaha-state-park",
+      "displayLink": "www.alapark.com",
+      "snippet": "... near the highest point, and CCC primitive camping near Cheaha Lake. Groups ... Group Sales and Event Coordinator Sarah Gilbert has been doing great ...",
+      "htmlSnippet": "... \u003cb\u003enear\u003c/b\u003e the highest point, and CCC primitive camping \u003cb\u003enear\u003c/b\u003e Cheaha Lake. Groups ... Group Sales and Event Coordinator \u003cb\u003eSarah\u003c/b\u003e Gilbert has been doing great&nbsp;...",
+      "formattedUrl": "https://www.alapark.com/parks/cheaha-state-park",
+      "htmlFormattedUrl": "https://www.alapark.com/parks/cheaha-state-park",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJcdcwGzqH2WbEJH1vWN939sahqGPLWtKhZABgOPbZacm2DXeFWCpVfi2C&s",
+            "width": "376",
+            "height": "134"
+          }
+        ],
+        "metatags": [
+          {
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.alapark.com/themes/custom/alapark/logo.svg"
+          }
+        ]
+      }
+    }
+  ]
+}

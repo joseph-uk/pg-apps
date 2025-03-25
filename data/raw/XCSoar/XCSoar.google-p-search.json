@@ -1,0 +1,403 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XCSoar",
+        "totalResults": "22400",
+        "searchTerms": "XCSoar",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XCSoar",
+        "totalResults": "22400",
+        "searchTerms": "XCSoar",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.325581,
+    "formattedSearchTime": "0.33",
+    "totalResults": "22400",
+    "formattedTotalResults": "22,400"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar",
+      "htmlTitle": "\u003cb\u003eXCSoar\u003c/b\u003e",
+      "link": "https://www.xcsoar.org/",
+      "displayLink": "www.xcsoar.org",
+      "formattedUrl": "https://www.xcsoar.org/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excsoar\u003c/b\u003e.org/"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Should we forget about XCSoar : r/Gliding",
+      "htmlTitle": "Should we forget about \u003cb\u003eXCSoar\u003c/b\u003e : r/Gliding",
+      "link": "https://www.reddit.com/r/Gliding/comments/1emxpvo/should_we_forget_about_xcsoar/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Aug 8, 2024 ... It seems that the development of XCSoar is more or less stopped. Should we move to something else? May be XCSoar jet? Any advise?",
+      "htmlSnippet": "Aug 8, 2024 \u003cb\u003e...\u003c/b\u003e It seems that the development of \u003cb\u003eXCSoar\u003c/b\u003e is more or less stopped. Should we move to something else? May be \u003cb\u003eXCSoar\u003c/b\u003e jet? Any advise?",
+      "formattedUrl": "https://www.reddit.com/r/Gliding/.../should_we_forget_about_xcsoar/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/Gliding/.../should_we_forget_about_\u003cb\u003excsoar\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1emxpvo",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/Gliding on Reddit: Should we forget about XCSoar",
+            "og:site_name": "Reddit",
+            "og:title": "r/Gliding on Reddit: Should we forget about XCSoar",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Nadir__ - 2 votes and 15 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1emxpvo",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/Gliding/comments/1emxpvo/should_we_forget_about_xcsoar/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar/XCSoar: ... the open-source glide computer - GitHub",
+      "htmlTitle": "XCSoar/XCSoar: ... the open-source glide computer - GitHub",
+      "link": "https://github.com/XCSoar/XCSoar",
+      "displayLink": "github.com",
+      "snippet": "XCSoar Logo XCSoar ... XCSoar is a tactical glide computer for Android, Linux, macOS, and Windows. This file is aimed at developers. Developers should read the ...",
+      "htmlSnippet": "\u003cb\u003eXCSoar\u003c/b\u003e Logo \u003cb\u003eXCSoar\u003c/b\u003e ... \u003cb\u003eXCSoar\u003c/b\u003e is a tactical glide computer for Android, Linux, macOS, and Windows. This file is aimed at developers. Developers should read the&nbsp;...",
+      "formattedUrl": "https://github.com/XCSoar/XCSoar",
+      "htmlFormattedUrl": "https://github.com/\u003cb\u003eXCSoar\u003c/b\u003e/\u003cb\u003eXCSoar\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoAT61dIqz6lTnKBBEPblX7P_17EzAL7ZqWaDtQQaZ1d-56Y9KFLT6UII&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "softwaresourcecode": [
+          {
+            "author": "XCSoar",
+            "name": "XCSoar",
+            "text": "XCSoar XCSoar is a tactical glide computer for Android, Linux, macOS, and Windows. This file is aimed at developers. Developers should read the developer manual. Users can refer to the Users'..."
+          }
+        ],
+        "metatags": [
+          {
+            "octolytics-url": "https://collector.github.com/github/collect",
+            "apple-itunes-app": "app-id=1477376905, app-argument=https://github.com/XCSoar/XCSoar",
+            "og:image": "https://opengraph.githubassets.com/7f93e757b72659d82911e97b30f96214f04ba22736d9cbceeeecce066fb6fccb/XCSoar/XCSoar",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "1200",
+            "theme-color": "#1e2327",
+            "og:site_name": "GitHub",
+            "hovercard-subject-tag": "repository:341270",
+            "turbo-body-classes": "logged-out env-production page-responsive",
+            "release": "45a734e61ae8d799799de71fe2b404cdefb40b62",
+            "html-safe-nonce": "7e0c8a3912e4ef2effbb03cf821a0f82e183844b55e8fca6e2932a6e3824a1ba",
+            "expected-hostname": "github.com",
+            "og:description": "... the open-source glide computer. Contribute to XCSoar/XCSoar development by creating an account on GitHub.",
+            "twitter:image": "https://opengraph.githubassets.com/7f93e757b72659d82911e97b30f96214f04ba22736d9cbceeeecce066fb6fccb/XCSoar/XCSoar",
+            "browser-errors-url": "https://api.github.com/_private/browser/errors",
+            "octolytics-dimension-user_login": "XCSoar",
+            "hostname": "github.com",
+            "twitter:site": "@github",
+            "browser-stats-url": "https://api.github.com/_private/browser/stats",
+            "route-pattern": "/:user_id/:repository",
+            "visitor-payload": "eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJBNDU0OjFFRTIyRjo0RDQ3NkI6NjZBMTE1OjY3RTIwQTIyIiwidmlzaXRvcl9pZCI6IjcyOTA2NjcyOTY5MTAwODQ2NDMiLCJyZWdpb25fZWRnZSI6ImlhZCIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==",
+            "github-keyboard-shortcuts": "repository,copilot",
+            "octolytics-dimension-repository_id": "341270",
+            "octolytics-dimension-repository_network_root_nwo": "XCSoar/XCSoar",
+            "twitter:title": "GitHub - XCSoar/XCSoar: ... the open-source glide computer",
+            "og:image:alt": "... the open-source glide computer. Contribute to XCSoar/XCSoar development by creating an account on GitHub.",
+            "og:type": "object",
+            "og:title": "GitHub - XCSoar/XCSoar: ... the open-source glide computer",
+            "visitor-hmac": "0fd469add3e0b9a22754ad3fa3ef81796bd2330cbbf576038e91044d99eb5b95",
+            "og:image:height": "600",
+            "turbo-cache-control": "no-preview",
+            "route-action": "disambiguate",
+            "request-id": "A454:1EE22F:4D476B:66A115:67E20A22",
+            "analytics-location": "/\u003cuser-name\u003e/\u003crepo-name\u003e",
+            "color-scheme": "light dark",
+            "octolytics-dimension-repository_is_fork": "false",
+            "go-import": "github.com/XCSoar/XCSoar git https://github.com/XCSoar/XCSoar.git",
+            "octolytics-dimension-user_id": "861328",
+            "octolytics-dimension-repository_public": "true",
+            "fb:app_id": "1401488693436528",
+            "octolytics-dimension-repository_network_root_id": "341270",
+            "octolytics-dimension-repository_nwo": "XCSoar/XCSoar",
+            "viewport": "width=device-width",
+            "twitter:description": "... the open-source glide computer. Contribute to XCSoar/XCSoar development by creating an account on GitHub.",
+            "route-controller": "files",
+            "current-catalog-service-hash": "f3abb0cc802f3d7b95fc8762b94bdcb13bf39634c40c357301c4aa1d67a256fb",
+            "og:url": "https://github.com/XCSoar/XCSoar"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://opengraph.githubassets.com/7f93e757b72659d82911e97b30f96214f04ba22736d9cbceeeecce066fb6fccb/XCSoar/XCSoar"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar 7 - the open-source glide computer User Manual",
+      "htmlTitle": "\u003cb\u003eXCSoar\u003c/b\u003e 7 - the open-source glide computer User Manual",
+      "link": "https://download.xcsoar.org/releases/7.27/XCSoar-manual.pdf",
+      "displayLink": "download.xcsoar.org",
+      "snippet": "Aug 24, 2022 ... IT IS THE USER'S RESPONSIBILITY TO USE THIS SOFTWARE. PRUDENTLY. THIS SOFTWARE IS INTENDED TO BE USED ONLY.",
+      "htmlSnippet": "Aug 24, 2022 \u003cb\u003e...\u003c/b\u003e IT IS THE USER&#39;S RESPONSIBILITY TO USE THIS SOFTWARE. PRUDENTLY. THIS SOFTWARE IS INTENDED TO BE USED ONLY.",
+      "formattedUrl": "https://download.xcsoar.org/releases/7.27/XCSoar-manual.pdf",
+      "htmlFormattedUrl": "https://download.\u003cb\u003excsoar\u003c/b\u003e.org/releases/7.27/\u003cb\u003eXCSoar\u003c/b\u003e-manual.pdf",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOpoQIHBaxPlEKCzyChpmzCzTJOf0GUb6tbgzDiYTDQaLNPQafhcjGcEn&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20220923221003+02'00'",
+            "creationdate": "D:20220923221003+02'00'",
+            "creator": "LaTeX with hyperref",
+            "producer": "GPL Ghostscript 9.53.3"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///bf92b14d8f70b84d94e3dacfab758c54a5aa5b1a6a923534d6f2a897dd9a0a7b"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "New to XCSoar - Question on Logger",
+      "htmlTitle": "New to \u003cb\u003eXCSoar\u003c/b\u003e - Question on Logger",
+      "link": "https://groups.google.com/g/rec.aviation.soaring/c/d2huh_DB7es",
+      "displayLink": "groups.google.com",
+      "snippet": "Oct 23, 2022 ... I've just started using XCSoar 7. My understanding is that it has an internal logger but, it doesn't seem to be saving flights anywhere. Any suggestions?",
+      "htmlSnippet": "Oct 23, 2022 \u003cb\u003e...\u003c/b\u003e I&#39;ve just started using \u003cb\u003eXCSoar\u003c/b\u003e 7. My understanding is that it has an internal logger but, it doesn&#39;t seem to be saving flights anywhere. Any suggestions?",
+      "formattedUrl": "https://groups.google.com/g/rec.aviation.soaring/c/d2huh_DB7es",
+      "htmlFormattedUrl": "https://groups.google.com/g/rec.aviation.soaring/c/d2huh_DB7es",
+      "pagemap": {
+        "metatags": [
+          {
+            "application-name": "Google Groups",
+            "referrer": "origin",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "apple-mobile-web-app-title": "Google Groups",
+            "mobile-web-app-capable": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar PDA on Quest 2 - Condor",
+      "htmlTitle": "\u003cb\u003eXCSoar\u003c/b\u003e PDA on Quest 2 - Condor",
+      "link": "https://www.condorsoaring.com/forums/viewtopic.php?t=20440",
+      "displayLink": "www.condorsoaring.com",
+      "snippet": "Jan 16, 2021 ... XCSoar PDA on Quest 2 · 1) Get the XCSoar desktop app ( https://xcsoar.org/ ) running on your PC and link it to Condor 2. · 2) Configure XCSoar ...",
+      "htmlSnippet": "Jan 16, 2021 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eXCSoar\u003c/b\u003e PDA on Quest 2 &middot; 1) Get the \u003cb\u003eXCSoar\u003c/b\u003e desktop app ( https://\u003cb\u003excsoar\u003c/b\u003e.org/ ) running on your PC and link it to Condor 2. &middot; 2) Configure \u003cb\u003eXCSoar\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.condorsoaring.com/forums/viewtopic.php?t=20440",
+      "htmlFormattedUrl": "https://www.condorsoaring.com/forums/viewtopic.php?t=20440",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6MFCQSRG1C8SuTUmMlnNC7WPMt1DHnTqQlTX-GjqeCayoK6j5rXp8ncVk&s",
+            "width": "225",
+            "height": "224"
+          }
+        ],
+        "breadcrumb": [
+          {
+            "title": "Condor",
+            "url": "Condor"
+          },
+          {
+            "title": "Board index",
+            "url": "Board index"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.imgur.com/1AujZeM.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar gone from Google Play store?",
+      "htmlTitle": "\u003cb\u003eXCSoar\u003c/b\u003e gone from Google Play store?",
+      "link": "https://groups.google.com/g/rasprime/c/0di8VtjCMDY",
+      "displayLink": "groups.google.com",
+      "snippet": "XCSoar is still supported but currently seems to be available only on F-droid, not on the Google play store. There are instructions how to download from F-droid ...",
+      "htmlSnippet": "\u003cb\u003eXCSoar\u003c/b\u003e is still supported but currently seems to be available only on F-droid, not on the Google play store. There are instructions how to download from F-droid&nbsp;...",
+      "formattedUrl": "https://groups.google.com/g/rasprime/c/0di8VtjCMDY",
+      "htmlFormattedUrl": "https://groups.google.com/g/rasprime/c/0di8VtjCMDY",
+      "pagemap": {
+        "metatags": [
+          {
+            "application-name": "Google Groups",
+            "referrer": "origin",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "apple-mobile-web-app-title": "Google Groups",
+            "mobile-web-app-capable": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Hello, what device (PDA/tablet) you recommend to use for XCSoar ...",
+      "htmlTitle": "Hello, what device (PDA/tablet) you recommend to use for \u003cb\u003eXCSoar\u003c/b\u003e ...",
+      "link": "https://www.facebook.com/groups/455141392155560/posts/hello-what-device-pdatablet-you-recommend-to-use-for-xcsoar-thank-you/753680632301633/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Jan 2, 2023 ... I would recommend a HiSense A5 or A7 Phone wich have Colour E-Ink on Android base. So you have an easy update function via Google Play, no DIY tweaks necessary.",
+      "htmlSnippet": "Jan 2, 2023 \u003cb\u003e...\u003c/b\u003e I would recommend a HiSense A5 or A7 Phone wich have Colour E-Ink on Android base. So you have an easy update function via Google Play, no DIY tweaks necessary.",
+      "formattedUrl": "https://www.facebook.com/groups/...to...xcsoar.../753680632301633/",
+      "htmlFormattedUrl": "https://www.facebook.com/groups/...to...\u003cb\u003excsoar\u003c/b\u003e.../753680632301633/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtzorYDT_hztyf0WfsDXKPBVt7mxYmQrBl3H8GREcpBDqg49NcmVHUAbQ&s",
+            "width": "246",
+            "height": "205"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://story/?graphqlid=UzpfSTE1MTc1MzQ3NTE6Vks6NzUzNjgwNjMyMzAxNjMz",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=192673216258874",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://story/?graphqlid=UzpfSTE1MTc1MzQ3NTE6Vks6NzUzNjgwNjMyMzAxNjMz",
+            "og:description": "Hello, what device (PDA/tablet) you recommend to use for XCSoar? Thank you.",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=192673216258874",
+            "twitter:image:alt": "Hello, what device (PDA/tablet) you recommend to use for XCSoar? Thank you.",
+            "twitter:site": "@facebookapp",
+            "application-name": "Facebook Groups",
+            "og:type": "video.other",
+            "og:image:alt": "Hello, what device (PDA/tablet) you recommend to use for XCSoar? Thank you.",
+            "twitter:title": "Hello, what device (PDA/tablet) you recommend to use for XCSoar?...",
+            "al:ios:app_name": "Facebook",
+            "application-url": "https://www.facebook.com/groups/",
+            "og:title": "Hello, what device (PDA/tablet) you recommend to use for XCSoar? Thank you.",
+            "google": "notranslate",
+            "al:android:url": "fb://native_post/UzpfSTE1MTc1MzQ3NTE6Vks6NzUzNjgwNjMyMzAxNjMz",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Hello, what device (PDA/tablet) you recommend to use for XCSoar? Thank you.",
+            "og:locale": "en_US",
+            "fb-version": "447.0.0.0.20:2737",
+            "og:url": "https://www.facebook.com/groups/455141392155560/posts/hello-what-device-pdatablet-you-recommend-to-use-for-xcsoar-thank-you/753680632301633/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=192673216258874"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Location data files",
+      "htmlTitle": "Location data files",
+      "link": "https://groups.google.com/g/xcsoar-user/c/U1um5-ceTkY",
+      "displayLink": "groups.google.com",
+      "snippet": "I'm running XCsoar on an Android phone for years now. My (Motorola) phone runs Android 11. All of my datafiles are located in the directory called ...",
+      "htmlSnippet": "I&#39;m running \u003cb\u003eXCsoar\u003c/b\u003e on an Android phone for years now. My (Motorola) phone runs Android 11. All of my datafiles are located in the directory called&nbsp;...",
+      "formattedUrl": "https://groups.google.com/g/xcsoar-user/c/U1um5-ceTkY",
+      "htmlFormattedUrl": "https://groups.google.com/g/\u003cb\u003excsoar\u003c/b\u003e-user/c/U1um5-ceTkY",
+      "pagemap": {
+        "metatags": [
+          {
+            "application-name": "Google Groups",
+            "referrer": "origin",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "msapplication-tap-highlight": "no",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "apple-mobile-web-app-title": "Google Groups",
+            "mobile-web-app-capable": "yes"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XCSoar basic setup and usage. – Soaring Tools",
+      "htmlTitle": "\u003cb\u003eXCSoar\u003c/b\u003e basic setup and usage. – Soaring Tools",
+      "link": "https://www.soaringtools.org/index.php/xcsoar-basic-setup-and-usage/",
+      "displayLink": "www.soaringtools.org",
+      "snippet": "XCSoar basic setup and usage. XCSoar is a great application (and FREE) for use by the beginner to the experienced contest pilot. Besides their website, which ...",
+      "htmlSnippet": "\u003cb\u003eXCSoar\u003c/b\u003e basic setup and usage. \u003cb\u003eXCSoar\u003c/b\u003e is a great application (and FREE) for use by the beginner to the experienced contest pilot. Besides their website, which&nbsp;...",
+      "formattedUrl": "https://www.soaringtools.org/index.php/xcsoar-basic-setup-and-usage/",
+      "htmlFormattedUrl": "https://www.soaringtools.org/index.php/\u003cb\u003excsoar\u003c/b\u003e-basic-setup-and-usage/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ],
+        "webpage": [
+          {
+            "maincontentofpage": "XCSoar basic setup and usage. XCSoar is a great application (and FREE) for use by the beginner to the experienced contest pilot. Besides their website, which has both a complete manual (170+..."
+          }
+        ]
+      }
+    }
+  ]
+}

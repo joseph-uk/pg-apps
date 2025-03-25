@@ -1,0 +1,467 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XC Guide",
+        "totalResults": "53900000",
+        "searchTerms": "XC Guide",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XC Guide",
+        "totalResults": "53900000",
+        "searchTerms": "XC Guide",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.417425,
+    "formattedSearchTime": "0.42",
+    "totalResults": "53900000",
+    "formattedTotalResults": "53,900,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "XC Guide Paragliding App",
+      "htmlTitle": "\u003cb\u003eXC Guide\u003c/b\u003e Paragliding App",
+      "link": "https://pg-race.aero/xcguide/",
+      "displayLink": "pg-race.aero",
+      "snippet": "Reviews from Professional Guides . . . · Choose your Paragliding Role · Collate & Track Data from Multiple Sources · Guiding . Strategy . Retrieves · The one ...",
+      "htmlSnippet": "Reviews from Professional \u003cb\u003eGuides\u003c/b\u003e . . . &middot; Choose your Paragliding Role &middot; Collate &amp; Track Data from Multiple Sources &middot; Guiding . Strategy . Retrieves &middot; The one&nbsp;...",
+      "formattedUrl": "https://pg-race.aero/xcguide/",
+      "htmlFormattedUrl": "https://pg-race.aero/\u003cb\u003excguide\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyN6S-kbZILJgNzvwLmzWi0O-tD-jU77NnYYPTy-nkyjiTmqpbkyvPqJjI&s",
+            "width": "274",
+            "height": "184"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "assets/images/index-meta.png",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "XC Guide Paragliding App",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1",
+            "twitter:image:src": "assets/images/index-meta.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pg-race.aero/xcguide/assets/images/index-meta.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Guide – Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eXC Guide\u003c/b\u003e – Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=indysoft.xc_guide&hl=en_GB",
+      "displayLink": "play.google.com",
+      "snippet": "About this app. arrow_forward. XC Guide is a flight instrument with extensive live-tracking capabilities. ... App features include: 1) A Flight Computer. This ...",
+      "htmlSnippet": "About this app. arrow_forward. \u003cb\u003eXC Guide\u003c/b\u003e is a flight instrument with extensive live-tracking capabilities. ... App features include: 1) A Flight Computer. This&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=indysoft.xc_guide&hl...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=indysoft.\u003cb\u003exc\u003c/b\u003e_\u003cb\u003eguide\u003c/b\u003e&amp;hl...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=indysoft.xc_guide&rdid=indysoft.xc_guide&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutLimtYaXveJ0r7owKMMcPu4A6jRWLBfrNmD-6gFygdjuDlUgsZv2roGc&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/R7JUQQiLZmlcomISaJmeHevHi4SyuGidbWnlLZbAbIiH7S3G6ePKxOnqjCX3CRi2qUs",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "XC Guide – Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=indysoft.xc_guide&hl=en_GB",
+            "appstore:developer_url": "https://pg-race.aero/xcguide/",
+            "og:title": "XC Guide – Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/R7JUQQiLZmlcomISaJmeHevHi4SyuGidbWnlLZbAbIiH7S3G6ePKxOnqjCX3CRi2qUs=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "indysoft.xc_guide",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "indysoft.xc_guide",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Paragliding, hang gliding and paramotoring flight instrument",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=indysoft.xc_guide&hl=en_GB"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/R7JUQQiLZmlcomISaJmeHevHi4SyuGidbWnlLZbAbIiH7S3G6ePKxOnqjCX3CRi2qUs"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Guide specificities for AIR³ & XCTrack - AIR³",
+      "htmlTitle": "\u003cb\u003eXC Guide\u003c/b\u003e specificities for AIR³ &amp; XCTrack - AIR³",
+      "link": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xcguide-specific-air3-features/",
+      "displayLink": "www.fly-air3.com",
+      "snippet": "Dec 15, 2021 ... To let XC Guide and XCTrack communicate with each other, you have to set XC Guide as a localhost server for XCTrack and configure XCTrack to get ...",
+      "htmlSnippet": "Dec 15, 2021 \u003cb\u003e...\u003c/b\u003e To let \u003cb\u003eXC Guide\u003c/b\u003e and XCTrack communicate with each other, you have to set \u003cb\u003eXC Guide\u003c/b\u003e as a localhost server for XCTrack and configure XCTrack to get&nbsp;...",
+      "formattedUrl": "https://www.fly-air3.com/en/support/air3.../xcguide-specific-air3-features/",
+      "htmlFormattedUrl": "https://www.fly-air3.com/en/support/air3.../\u003cb\u003excguide\u003c/b\u003e-specific-air3-features/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2siBo2jbFrKSqE7Mybju0yW60dejQL7hNT_6JpBsCJP_rbeVTG5X_unE&s",
+            "width": "284",
+            "height": "177"
+          }
+        ],
+        "webpageelement": [
+          {
+            "headline": "XC Guide specificities for AIR³ & XCTrack"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.fly-air3.com/wp-content/uploads/sites/15/2021/12/XC-guide-ADSB-traffic.png",
+            "og:type": "article",
+            "og:image:width": "1920",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "AIR³",
+            "og:title": "XC Guide specificities for AIR³ & XCTrack - AIR³",
+            "og:image:height": "1200",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://www.fly-air3.com/wp-content/uploads/sites/15/2019/04/cropped-AIR³-CARRE_Logo-1-270x270.png",
+            "og:description": "XC Guide is probably AIR³’s best “additional app” for AIR³. You can either use it as a stand-alone application, using it as a flight computer, or use it alongside XCTrack, in the background, to extend the functionalities of any AIR³ or to communicate with AIR³ FANET/Flarm module included in AIR³ 7.3+. You can find more Read more about XC Guide specificities for AIR³ & XCTrack[…]",
+            "article:publisher": "https://www.facebook.com/FLYAIRCUBE/",
+            "twitter:data1": "66 minutes",
+            "article:modified_time": "2025-03-13T09:44:46+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xcguide-specific-air3-features/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.fly-air3.com/wp-content/uploads/sites/15/2021/12/XC-guide-ADSB-traffic.png"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC guide paragliding cross country coach - XC guide",
+      "htmlTitle": "\u003cb\u003eXC guide\u003c/b\u003e paragliding cross country coach - \u003cb\u003eXC guide\u003c/b\u003e",
+      "link": "https://www.xcguide.com/en/xc-guide-paragliding-cross-country-coach/",
+      "displayLink": "www.xcguide.com",
+      "snippet": "XC Guide helps you organize your paragliding cross-country trip. Just let me know when you want to come and your accommodation preferences, and I'll take care ...",
+      "htmlSnippet": "\u003cb\u003eXC Guide\u003c/b\u003e helps you organize your paragliding cross-country trip. Just let me know when you want to come and your accommodation preferences, and I&#39;ll take care&nbsp;...",
+      "formattedUrl": "https://www.xcguide.com/en/xc-guide-paragliding-cross-country-coach/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excguide\u003c/b\u003e.com/en/\u003cb\u003exc\u003c/b\u003e-\u003cb\u003eguide\u003c/b\u003e-paragliding-cross-country-coach/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVVh-KtygOEVj8n-mwsyT6HqFBR3r84l9AC9g42DGqyy6NEE0yu1NZWrG&s",
+            "width": "198",
+            "height": "254"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://www.xcguide.com/wp-content/uploads/paragliding-cross-country-coach-234x300.jpeg",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "XC guide",
+            "og:locale:alternate": "fr_FR",
+            "article:modified_time": "2024-10-11T11:18:17+00:00",
+            "viewport": "width=device-width",
+            "og:title": "XC guide paragliding cross country coach - XC guide",
+            "og:locale": "en_GB",
+            "og:url": "https://www.xcguide.com/en/xc-guide-paragliding-cross-country-coach/",
+            "msapplication-tileimage": "https://www.xcguide.com/wp-content/uploads/cropped-blanc-carrée-270x270.jpg",
+            "og:description": "Experienced paragliding cross country coach. Tailor made paragliding cross country trips. Be at the right place at the right time"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://www.xcguide.com/wp-content/uploads/paragliding-cross-country-coach-234x300.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC Guide - YouTube",
+      "htmlTitle": "\u003cb\u003eXC Guide\u003c/b\u003e - YouTube",
+      "link": "https://www.youtube.com/@xcguide",
+      "displayLink": "www.youtube.com",
+      "snippet": "Share your videos with friends, family, and the world.",
+      "htmlSnippet": "Share your videos with friends, family, and the world.",
+      "formattedUrl": "https://www.youtube.com/@xcguide",
+      "htmlFormattedUrl": "https://www.youtube.com/@\u003cb\u003excguide\u003c/b\u003e",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "XC Guide",
+            "url": "https://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_YGbKj3pPPBQb-CTX-UlbBokskovnKhreEydG8AF15tylfrVbS5JmO7t9&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/gvLe0hXi6GrgUU8pniXJqwCfpqSsaP1oAPY2MZlIpnB8rZWcOb77yQP5pp5Fh0tb20GATu9oBQo=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "XC Guide",
+            "url": "https://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/@xcguide?referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://yt3.googleusercontent.com/gvLe0hXi6GrgUU8pniXJqwCfpqSsaP1oAPY2MZlIpnB8rZWcOb77yQP5pp5Fh0tb20GATu9oBQo=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:app:url:iphone": "vnd.youtube://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw",
+            "twitter:app:id:googleplay": "com.google.android.youtube",
+            "theme-color": "rgba(255, 255, 255, 0.9)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/@xcguide",
+            "twitter:app:url:ipad": "vnd.youtube://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw",
+            "al:android:package": "com.google.android.youtube",
+            "twitter:app:name:googleplay": "YouTube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "The essential paragliding app for guiding, tracking and retrieves. XC Guide is designed to help XC pilots and retrieve drivers follow their group using various live tracking systems. The app includes flight data, navigation, airspace and weather information. XC Guide works on most android phones and only requires a GPS and mobile data service or wifi",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/gvLe0hXi6GrgUU8pniXJqwCfpqSsaP1oAPY2MZlIpnB8rZWcOb77yQP5pp5Fh0tb20GATu9oBQo=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "twitter:title": "XC Guide",
+            "al:ios:app_name": "YouTube",
+            "og:title": "XC Guide",
+            "og:image:height": "900",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "https://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw?feature=applinks",
+            "al:android:url": "https://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw?feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:url:googleplay": "https://www.youtube.com/channel/UCpyMEfM-qZd7zy_P43STzzw",
+            "twitter:app:name:ipad": "YouTube",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "The essential paragliding app for guiding, tracking and retrieves. XC Guide is designed to help XC pilots and retrieve drivers follow their group using various live tracking systems. The app includes flight data, navigation, airspace and weather information. XC Guide works on most android phones and only requires a GPS and mobile data service or wifi",
+            "og:url": "https://www.youtube.com/@xcguide",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://i.ytimg.com/vi/ePctvA8R_Xc/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGE4gZShOMA8=&rs=AOn4CLCo8R6MPOKMpYo5JvgoZx5WhWr2Ew"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Android Apps: XC Guide & PG ... - Paragliding Forum",
+      "htmlTitle": "View topic - Android Apps: XC Guide & PG ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=620612",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Nov 22, 2020 ... XC Guide is a flight computer with extensive live-tracking capabilities. It is free and without adverts at: https://play.google.com/store/apps/details?id= ...",
+      "htmlSnippet": "Nov 22, 2020 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eXC Guide\u003c/b\u003e is a flight computer with extensive live-tracking capabilities. It is free and without adverts at: https://play.google.com/store/apps/details?id=&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=620612",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=620612",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Drone XC Dash Cam User Guide | DroneMobile Help Center",
+      "htmlTitle": "Drone \u003cb\u003eXC\u003c/b\u003e Dash Cam User \u003cb\u003eGuide\u003c/b\u003e | DroneMobile Help Center",
+      "link": "https://help.dronemobile.com/s/article/Drone-XC-Dash-Cam-User-Guide",
+      "displayLink": "help.dronemobile.com",
+      "snippet": "Nov 19, 2024 ... Whether you have purchased a Drone XC or are shopping for one, here is the documentation that explains how the camera works.",
+      "htmlSnippet": "Nov 19, 2024 \u003cb\u003e...\u003c/b\u003e Whether you have purchased a Drone \u003cb\u003eXC\u003c/b\u003e or are shopping for one, here is the documentation that explains how the camera works.",
+      "formattedUrl": "https://help.dronemobile.com/s/article/Drone-XC-Dash-Cam-User-Guide",
+      "htmlFormattedUrl": "https://help.dronemobile.com/s/article/Drone-\u003cb\u003eXC\u003c/b\u003e-Dash-Cam-User-\u003cb\u003eGuide\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65xTWEe0oyUT40t2NyMJSH2SXupZQzdz6X9GjWtp_XvM2Oh2Q731lOag&s",
+            "width": "197",
+            "height": "256"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, minimal-ui"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://help.dronemobile.com/servlet/rtaImage?eid=ka0UZ0000001Gqj&feoid=00N4P00000EmFnV&refid=0EMUZ000002XQIj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - Android Apps: XC Guide & PG ... - Paragliding Forum",
+      "htmlTitle": "View topic - Android Apps: XC Guide & PG ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p662255",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "May 30, 2023 ... XC Guide V538 is now available on Play Store. The APK is available to download at the home page https://pg-race.aero/xcguide/",
+      "htmlSnippet": "May 30, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eXC Guide\u003c/b\u003e V538 is now available on Play Store. The APK is available to download at the home page https://pg-race.aero/xcguide/",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p662255",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p662255",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Seiler and Limo Guide Owls at Stan Sims XC Opener - Kennesaw ...",
+      "htmlTitle": "Seiler and Limo \u003cb\u003eGuide\u003c/b\u003e Owls at Stan Sims \u003cb\u003eXC\u003c/b\u003e Opener - Kennesaw ...",
+      "link": "https://ksuowls.com/news/2024/8/30/mens-cross-country-seiler-and-limo-guide-owls-at-stan-sims-xc-opener.aspx",
+      "displayLink": "ksuowls.com",
+      "snippet": "Aug 30, 2024 ... Natalie Cummings ran a time of 18:10.26 to place 12th. She was followed closely by Madigan Wallace who finished in a time of 18:13.99 to place ...",
+      "htmlSnippet": "Aug 30, 2024 \u003cb\u003e...\u003c/b\u003e Natalie Cummings ran a time of 18:10.26 to place 12th. She was followed closely by Madigan Wallace who finished in a time of 18:13.99 to place&nbsp;...",
+      "formattedUrl": "https://ksuowls.com/.../mens-cross-country-seiler-and-limo-guide-owls-at-st...",
+      "htmlFormattedUrl": "https://ksuowls.com/.../mens-cross-country-seiler-and-limo-\u003cb\u003eguide\u003c/b\u003e-owls-at-st...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiFkyTo6dKAje2f-xO_rIv-IFKV15mGW_JlI2MYjnbF8y1IqhPsNcdEx4&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:determiner": "the",
+            "og:image": "https://ksuowls.com/images/2024/8/30/240830--jspaar-8__1_.JPG?preset=large.socialmediaimage",
+            "apple-itunes-app": "app-id=1571198671",
+            "theme-color": "#fdbb30",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "og:image:width": "800",
+            "og:image:alt": "Madison Seiler",
+            "og:site_name": "Kennesaw State University Athletics",
+            "og:title": "Seiler and Limo Guide Owls at Stan Sims XC Opener - Kennesaw State University Athletics",
+            "og:image:height": "450",
+            "og:description": "Men's Results | Women's Results \r\n\r\nACWORTH, Ga. – 23 members of the Kennesaw State men's and women's cross country teams competed at the Stan Sims Cross Country",
+            "twitter:creator": "@KSUTrackFieldXC",
+            "twitter:image": "https://ksuowls.com/images/2024/8/30/240830--jspaar-8__1_.JPG?preset=large.socialmediaimage",
+            "fb:app_id": "291243702517",
+            "twitter:image:alt": "Madison Seiler",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
+            "twitter:description": "Men's Results | Women's Results \r\n\r\nACWORTH, Ga. – 23 members of the Kennesaw State men's and women's",
+            "og:locale": "en_US",
+            "og:url": "https://ksuowls.com/news/2024/8/30/mens-cross-country-seiler-and-limo-guide-owls-at-stan-sims-xc-opener.aspx",
+            "sport": "mens-cross-country,womens-cross-country"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ksuowls.com/images/2024/8/30/240830--jspaar-8__1_.JPG?preset=large.socialmediaimage"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XC GUIDEs by Paragliding XC Stories : r/freeflight",
+      "htmlTitle": "\u003cb\u003eXC GUIDEs\u003c/b\u003e by Paragliding XC Stories : r/freeflight",
+      "link": "https://www.reddit.com/r/freeflight/comments/1fxeah3/xc_guides_by_paragliding_xc_stories/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Oct 6, 2024 ... One of the things I cover in my videos is the XC GUIDE series, where I explain how to fly some of the most popular paragliding routes.",
+      "htmlSnippet": "Oct 6, 2024 \u003cb\u003e...\u003c/b\u003e One of the things I cover in my videos is the \u003cb\u003eXC GUIDE\u003c/b\u003e series, where I explain how to fly some of the most popular paragliding routes.",
+      "formattedUrl": "https://www.reddit.com/r/freeflight/.../xc_guides_by_paragliding_xc_storie...",
+      "htmlFormattedUrl": "https://www.reddit.com/r/freeflight/.../\u003cb\u003exc\u003c/b\u003e_\u003cb\u003eguide\u003c/b\u003es_by_paragliding_\u003cb\u003exc\u003c/b\u003e_storie...",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1fxeah3",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: XC GUIDEs by Paragliding XC Stories",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: XC GUIDEs by Paragliding XC Stories",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/dymanoid - 23 votes and 15 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1fxeah3",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1fxeah3/xc_guides_by_paragliding_xc_stories/"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Holfuy Weather Stations",
+        "totalResults": "6310",
+        "searchTerms": "Holfuy Weather Stations",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Holfuy Weather Stations",
+        "totalResults": "6310",
+        "searchTerms": "Holfuy Weather Stations",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.337332,
+    "formattedSearchTime": "0.34",
+    "totalResults": "6310",
+    "formattedTotalResults": "6,310"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Holfuy automatic weather stations and sensors, mobile, GSM, NB ...",
+      "htmlTitle": "\u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e and sensors, mobile, GSM, NB ...",
+      "link": "https://holfuy.com/",
+      "displayLink": "holfuy.com",
+      "snippet": "Holfuy is an all in one solution for getting real time weather data from almost everywhere in the World. Our automatic weather stations are fully autonomous by ...",
+      "htmlSnippet": "\u003cb\u003eHolfuy\u003c/b\u003e is an all in one solution for getting real time weather data from almost everywhere in the World. Our automatic \u003cb\u003eweather stations\u003c/b\u003e are fully autonomous by&nbsp;...",
+      "formattedUrl": "https://holfuy.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtD08I4YbVw_6MR0yQNAeORimAfHTP2qNQ42pXDRU-EhPNGy7zGayKDVO8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/shop/holfuy-standard-weather-station.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Map view of Holfuy automatic weather stations.",
+      "htmlTitle": "Map view of \u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e.",
+      "link": "https://holfuy.com/en/map",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/map",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/map",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Map view of Holfuy automatic weather stations.",
+      "htmlTitle": "Map view of \u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e.",
+      "link": "https://holfuy.com/en/map/la=56.80534&lo=-5.0031&z=14",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/map/la=56.80534&lo=-5.0031&z=14",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/map/la=56.80534&amp;lo=-5.0031&amp;z=14",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyMsAZ-748nhmWUOh6oHX9iwgI2Vi0DFJV0_nJclZzcysnxUApoc3wA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/logo_big.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Map view of Holfuy automatic weather stations.",
+      "htmlTitle": "Map view of \u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e.",
+      "link": "https://holfuy.com/en/map/wind&la=55.11521&lo=-4.00000&z=5.5",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/map/wind&la=55.11521&lo=-4.00000&z=5.5",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/map/wind&amp;la=55.11521&amp;lo=-4.00000&amp;z=5.5",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Little Black -SDHGPA, wind & weather report - Holfuy",
+      "htmlTitle": "Little Black -SDHGPA, wind & weather report - Holfuy",
+      "link": "https://holfuy.com/en/weather/834",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations ... E.g. we store your preferred units (temperature, wind). If you accept their use please ...",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e ... E.g. we store your preferred units (temperature, wind). If you accept their use please&nbsp;...",
+      "formattedUrl": "https://holfuy.com/en/weather/834",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/\u003cb\u003eweather\u003c/b\u003e/834",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Golden Beach 1582, wind & weather report - Holfuy",
+      "htmlTitle": "Golden Beach 1582, wind & weather report - Holfuy",
+      "link": "https://holfuy.com/en/weather/1582",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations ... E.g. we store your preferred units (temperature, wind). If you accept their use please ...",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e ... E.g. we store your preferred units (temperature, wind). If you accept their use please&nbsp;...",
+      "formattedUrl": "https://holfuy.com/en/weather/1582",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/\u003cb\u003eweather\u003c/b\u003e/1582",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Springfield Ridge, wind & weather report - Holfuy",
+      "htmlTitle": "Springfield Ridge, wind & weather report - Holfuy",
+      "link": "https://holfuy.com/en/weather/239",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/weather/239",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/\u003cb\u003eweather\u003c/b\u003e/239",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Map view of Holfuy automatic weather stations.",
+      "htmlTitle": "Map view of \u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e.",
+      "link": "https://holfuy.com/en/map/wind&la=60.77900&lo=23.43885&z=4.9",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/map/wind&la=60.77900&lo=23.43885&z=4.9",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/map/wind&amp;la=60.77900&amp;lo=23.43885&amp;z=4.9",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyMsAZ-748nhmWUOh6oHX9iwgI2Vi0DFJV0_nJclZzcysnxUApoc3wA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/logo_big.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Lookout Mtn - RMPHA, wind & weather report - Holfuy",
+      "htmlTitle": "Lookout Mtn - RMPHA, wind & weather report - Holfuy",
+      "link": "https://holfuy.com/en/weather/1295",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/weather/1295",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/\u003cb\u003eweather\u003c/b\u003e/1295",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKndfX49cD-Q4c1xSJP-VchLfpZl_JDxk-pnD-4KpNLV6rxSz_uIGZBA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/holfuy-logo-storke.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Map view of Holfuy automatic weather stations.",
+      "htmlTitle": "Map view of \u003cb\u003eHolfuy\u003c/b\u003e automatic \u003cb\u003eweather stations\u003c/b\u003e.",
+      "link": "https://holfuy.com/en/map/wind&la=-41.00000&lo=176.00000&z=5.0",
+      "displayLink": "holfuy.com",
+      "snippet": "Online weather data by Holfuy automatic mobile weather stations.",
+      "htmlSnippet": "Online weather data by \u003cb\u003eHolfuy\u003c/b\u003e automatic mobile \u003cb\u003eweather stations\u003c/b\u003e.",
+      "formattedUrl": "https://holfuy.com/en/map/wind&la=-41.00000&lo=176.00000&z=5.0",
+      "htmlFormattedUrl": "https://\u003cb\u003eholfuy\u003c/b\u003e.com/en/map/wind&amp;la=-41.00000&amp;lo=176.00000&amp;z=5.0",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpyMsAZ-748nhmWUOh6oHX9iwgI2Vi0DFJV0_nJclZzcysnxUApoc3wA&s",
+            "width": "355",
+            "height": "119"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:card": "summary",
+            "og:site_name": "Holfuy",
+            "twitter:site": "@holfuy_stations",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=0",
+            "author": "Holfuy",
+            "og:url": "https://holfuy.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://holfuy.com/image/logo/logo_big.png"
+          }
+        ]
+      }
+    }
+  ]
+}

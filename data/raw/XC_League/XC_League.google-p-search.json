@@ -1,0 +1,375 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XC League",
+        "totalResults": "7660000",
+        "searchTerms": "XC League",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XC League",
+        "totalResults": "7660000",
+        "searchTerms": "XC League",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.374426,
+    "formattedSearchTime": "0.37",
+    "totalResults": "7660000",
+    "formattedTotalResults": "7,660,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Cross Country - Horizon League",
+      "htmlTitle": "\u003cb\u003eCross Country\u003c/b\u003e - Horizon \u003cb\u003eLeague\u003c/b\u003e",
+      "link": "https://horizonleague.org/index.aspx?path=xc",
+      "displayLink": "horizonleague.org",
+      "snippet": "Schedule, Full Calendar, There are currently no upcoming events. Choose Sport Baseball Cross Country Men's Basketball Men's Golf Men's Soccer Men's Tennis ...",
+      "htmlSnippet": "Schedule, Full Calendar, There are currently no upcoming events. Choose Sport Baseball \u003cb\u003eCross Country\u003c/b\u003e Men&#39;s Basketball Men&#39;s Golf Men&#39;s Soccer Men&#39;s Tennis&nbsp;...",
+      "formattedUrl": "https://horizonleague.org/index.aspx?path=xc",
+      "htmlFormattedUrl": "https://horizon\u003cb\u003eleague\u003c/b\u003e.org/index.aspx?path=\u003cb\u003exc\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1-nmg-SujKVdGk8KGyVIjmNADQrtDGleg_DB0yOff5D6ElpyaZ0y-HsJ&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:determiner": "the",
+            "og:image": "https://horizonleague.org",
+            "theme-color": "#303032",
+            "og:type": "website",
+            "og:image:alt": "Horizon League Logo",
+            "twitter:card": "summary",
+            "og:site_name": "Horizon League",
+            "og:title": "Cross Country",
+            "og:description": "The official Cross Country page for Horizon League",
+            "twitter:site": "@HorizonLeague",
+            "viewport": "width=device-width",
+            "og:locale": "en_US",
+            "og:url": "https://horizonleague.org/sports/xc"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://horizonleague.org/images/2024/10/8/LITL_Design.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Northern California Cross Country League – Fly-ins with a mission",
+      "htmlTitle": "Northern California \u003cb\u003eCross Country League\u003c/b\u003e – Fly-ins with a mission",
+      "link": "https://norcalxc.com/",
+      "displayLink": "norcalxc.com",
+      "snippet": "The Cross Country league is an informal series of cross country competitions running from March through to October held at flying sites within driving distance ...",
+      "htmlSnippet": "The \u003cb\u003eCross Country league\u003c/b\u003e is an informal series of cross country competitions running from March through to October held at flying sites within driving distance&nbsp;...",
+      "formattedUrl": "https://norcalxc.com/",
+      "htmlFormattedUrl": "https://norcalxc.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJadw7shiVzh5-VCtyceZ9OkJklJDWWiJzFxaExL9p-MMrSvLTh-BIEUQ&s",
+            "width": "271",
+            "height": "186"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "msapplication-tileimage": "https://norcalxc.com/wp-content/uploads/2023/01/NCXC-logo-square-transparent-300x300.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://norcalxc.com/wp-content/uploads/2024/06/FLYMASTER-USA-LOGo-2x.webp"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Untitled",
+      "htmlTitle": "Untitled",
+      "link": "https://xcleague.com/xc",
+      "displayLink": "xcleague.com",
+      "formattedUrl": "https://xcleague.com/xc",
+      "htmlFormattedUrl": "https://\u003cb\u003excleague\u003c/b\u003e.com/\u003cb\u003exc\u003c/b\u003e"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2023 Cross Country Championships - The Summit League",
+      "htmlTitle": "2023 \u003cb\u003eCross Country\u003c/b\u003e Championships - The Summit \u003cb\u003eLeague\u003c/b\u003e",
+      "link": "https://thesummitleague.org/tournaments/?id=241",
+      "displayLink": "thesummitleague.org",
+      "snippet": "Oct 28, 2023 ... The 2023 Summit League Cross Country Championships will take place Saturday, October 28th at the Edgebrook Golf Course in Brookings, ...",
+      "htmlSnippet": "Oct 28, 2023 \u003cb\u003e...\u003c/b\u003e The 2023 Summit \u003cb\u003eLeague Cross Country\u003c/b\u003e Championships will take place Saturday, October 28th at the Edgebrook Golf Course in Brookings,&nbsp;...",
+      "formattedUrl": "https://thesummitleague.org/tournaments/?id=241",
+      "htmlFormattedUrl": "https://thesummit\u003cb\u003eleague\u003c/b\u003e.org/tournaments/?id=241",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIU838Fv0MBk6V9lBYY32w0xWrcH3QzN0onZRwT07xkr7gE1e97x5o3A&s",
+            "width": "220",
+            "height": "124"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#003494",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
+            "og:url": "https://thesummitleague.org/tournaments/?id=241"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://thesummitleague.org/images/2024/9/19/South_Dakota_Corn_220_x124_.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Southern California XC League",
+      "htmlTitle": "Southern California \u003cb\u003eXC League\u003c/b\u003e",
+      "link": "https://www.socalxcleague.com/",
+      "displayLink": "www.socalxcleague.com",
+      "snippet": "The SoCal league meets are low-key and very informal, more like a monthly touring fly-in than a serious competition. Registration is open to all pilots and all ...",
+      "htmlSnippet": "The SoCal \u003cb\u003eleague\u003c/b\u003e meets are low-key and very informal, more like a monthly touring fly-in than a serious competition. Registration is open to all pilots and all&nbsp;...",
+      "formattedUrl": "https://www.socalxcleague.com/",
+      "htmlFormattedUrl": "https://www.socal\u003cb\u003excleague\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp9r82ffLOplzn0mc65hhrQV6bDOivXbLwRU_C2oFElCCmQdPxlHwoZdkn&s",
+            "width": "294",
+            "height": "172"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.socalxcleague.com/images/face_book_logo.jpg",
+            "og:type": "website",
+            "og:title": "SoCal XC League",
+            "og:url": "http://www.socalxcleague.com",
+            "og:description": "A league designed for intermediate to advanced paraglider pilots to fly fun cross country tasks in Southern California. Informal competitions are held all at different sites throughout the year on a monthly basis from March to September."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.socalxcleague.com/images/face_book_logo.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2022 Ivy League Heptagonal Cross Country Championships - Ivy ...",
+      "htmlTitle": "2022 Ivy \u003cb\u003eLeague\u003c/b\u003e Heptagonal \u003cb\u003eCross Country\u003c/b\u003e Championships - Ivy ...",
+      "link": "https://ivyleague.com/feature/22xcchampionships",
+      "displayLink": "ivyleague.com",
+      "snippet": "The Ivy League has announced the men's and women's cross country coach of the year selections as well as the Academic All-Ivy student-athletes.",
+      "htmlSnippet": "The Ivy \u003cb\u003eLeague\u003c/b\u003e has announced the men&#39;s and women&#39;s \u003cb\u003ecross country\u003c/b\u003e coach of the year selections as well as the Academic All-Ivy student-athletes.",
+      "formattedUrl": "https://ivyleague.com/feature/22xcchampionships",
+      "htmlFormattedUrl": "https://ivy\u003cb\u003eleague\u003c/b\u003e.com/feature/22xcchampionships",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://ivyleague.com",
+            "og:image:alt": "Ivy League Logo",
+            "twitter:card": "summary",
+            "og:type": "notification",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "2022 Ivy League Heptagonal Cross Country Championships - Ivy League",
+            "og:url": "https://ivyleague.com/feature/22xcchampionships",
+            "og:description": "The official athletics website for Ivy League"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ivyleague.com"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "2024 Patriot League Cross Country Championships - Patriot League",
+      "htmlTitle": "2024 Patriot \u003cb\u003eLeague Cross Country\u003c/b\u003e Championships - Patriot \u003cb\u003eLeague\u003c/b\u003e",
+      "link": "https://patriotleague.org/tournaments/?id=415&path=cross",
+      "displayLink": "patriotleague.org",
+      "snippet": "Nov 2, 2024 ... Lafayette College | Easton, Pa. Today's Student-Athletes, Tomorrow's Leaders The 2024 Patriot League Men's and Women's Cross Country ...",
+      "htmlSnippet": "Nov 2, 2024 \u003cb\u003e...\u003c/b\u003e Lafayette College | Easton, Pa. Today&#39;s Student-Athletes, Tomorrow&#39;s Leaders The 2024 Patriot \u003cb\u003eLeague\u003c/b\u003e Men&#39;s and Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://patriotleague.org/tournaments/?id=415&path=cross",
+      "htmlFormattedUrl": "https://patriot\u003cb\u003eleague\u003c/b\u003e.org/tournaments/?id=415&amp;path=cross",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd4JAWaT6tBBRtfZu63t0y-M6OATfuxA1v7P8ckeMQ7gFAnuLQXY4u_mbN&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#cc0000",
+            "viewport": "width=device-width",
+            "og:url": "https://patriotleague.org/tournaments/?id=415&path=cross"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://patriotleague.org/common/controls/image_handler.aspx?thumb_id=13&image_path=/images/2024/11/2/WOMENS_TEAM_CHAMPION.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Women's Cross Country - Ivy League",
+      "htmlTitle": "Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e - Ivy \u003cb\u003eLeague\u003c/b\u003e",
+      "link": "https://ivyleague.com/index.aspx?path=wcross",
+      "displayLink": "ivyleague.com",
+      "snippet": "Women's Cross Country Final NCAA Championships at NCAA Championships Individual Women's Cross Country Final Women's Cross Country Final",
+      "htmlSnippet": "Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e Final NCAA Championships at NCAA Championships Individual Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e Final Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e Final",
+      "formattedUrl": "https://ivyleague.com/index.aspx?path=wcross",
+      "htmlFormattedUrl": "https://ivy\u003cb\u003eleague\u003c/b\u003e.com/index.aspx?path=wcross",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8diNC0kn6Yg99g-0C780gUT_qZORREsO2Bx4qluwhfw&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:determiner": "the",
+            "og:image": "https://ivyleague.com",
+            "theme-color": "#046a38",
+            "og:type": "website",
+            "og:image:alt": "Ivy League Logo",
+            "twitter:card": "summary",
+            "og:site_name": "Ivy League",
+            "og:title": "Women's Cross Country",
+            "og:description": "The official Women's Cross Country page for Ivy League",
+            "twitter:site": "@IvyLeague",
+            "viewport": "width=device-width",
+            "og:locale": "en_US",
+            "og:url": "https://ivyleague.com/sports/wcross"
+          }
+        ],
+        "cse_image": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Kids City XC League",
+      "htmlTitle": "Kids City \u003cb\u003eXC League\u003c/b\u003e",
+      "link": "http://www.kidscityxc.com/",
+      "displayLink": "www.kidscityxc.com",
+      "snippet": "Kids City XC League · Kids City XC League · Home · Kids City XC League · LOCATIONS · COACHES. Photo Credit: ms.akr. A team of passionate coaches & volunteers ...",
+      "htmlSnippet": "Kids City \u003cb\u003eXC League\u003c/b\u003e &middot; Kids City \u003cb\u003eXC League\u003c/b\u003e &middot; Home &middot; Kids City \u003cb\u003eXC League\u003c/b\u003e &middot; LOCATIONS &middot; COACHES. Photo Credit: ms.akr. A team of passionate coaches &amp; volunteers&nbsp;...",
+      "formattedUrl": "http://www.kidscityxc.com/",
+      "htmlFormattedUrl": "http://www.kidscityxc.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7EF2Si9dAVqJADQPGRvvBGgMmXz9W7sI9jLyumgAlQTndLpmRAmIcWjX&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "website",
+            "twitter:title": "Kids City XC League",
+            "twitter:card": "summary",
+            "og:site_name": "Kids City XC League",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:url": "http://www.kidscityxc.com",
+            "og:title": "Kids City XC League",
+            "og:url": "http://www.kidscityxc.com"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images.squarespace-cdn.com/content/v1/53ba9526e4b0cb9c954129aa/00b138f2-e588-4f7f-9d1e-9fb963f8a22a/KidsCityXC.final-59.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Women's Cross Country - The Official Site of the Crossroads League",
+      "htmlTitle": "Women&#39;s \u003cb\u003eCross Country\u003c/b\u003e - The Official Site of the Crossroads \u003cb\u003eLeague\u003c/b\u003e",
+      "link": "https://crossroadsleague.com/sports/wxc/index",
+      "displayLink": "crossroadsleague.com",
+      "snippet": "Featured Headlines · CL Women&rsquo;s Cross Country Claims Eight All-American Honors Thumbnail. November 25, 2024 · Halterman Crowned NAIA Individual Champion ...",
+      "htmlSnippet": "Featured Headlines &middot; CL Women&amp;rsquo;s \u003cb\u003eCross Country\u003c/b\u003e Claims Eight All-American Honors Thumbnail. November 25, 2024 &middot; Halterman Crowned NAIA Individual Champion&nbsp;...",
+      "formattedUrl": "https://crossroadsleague.com/sports/wxc/index",
+      "htmlFormattedUrl": "https://crossroads\u003cb\u003eleague\u003c/b\u003e.com/sports/wxc/index",
+      "pagemap": {
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#007db3",
+            "profile-site-logo": "/images/setup/Primary_Logo_CL.png",
+            "msapplication-config": "/assets/favicons/browserconfig.xml",
+            "og:image": "https://crossroadsleague.com/images/setup/default-thumbnail.png?max_width=1200&max_height=675",
+            "theme-color": "#007db3",
+            "og:image:alt": "The Official Site of the Crossroads League thumbnail",
+            "og:type": "article",
+            "og:site_name": "The Official Site of the Crossroads League",
+            "dcterms.type": "article",
+            "og:title": "Women's Cross Country",
+            "dcterms.title": "Women's Cross Country",
+            "theme-primary-color": "#007db3",
+            "dcterms.description": "Women's Cross Country",
+            "og:description": "Women's Cross Country",
+            "fb:app_id": "280467664480",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "theme-secondary-color": "#555555",
+            "og:url": "https://crossroadsleague.com/sports/wxc/index",
+            "dcterms.identifier": "https://crossroadsleague.com/sports/wxc/index"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://crossroadsleague.com/images/setup/default-thumbnail.png?max_width=1200&max_height=675"
+          }
+        ]
+      }
+    }
+  ]
+}

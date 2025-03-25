@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>XC Retrieve</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <script src="scripts/querystring.js?r=1017"></script>
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?libraries=geometry&amp;key=AIzaSyCgj_i1FQCZsu6anxc_eIYg6DzDd1C0dFM"></script>
+  <script type="text/javascript" src="scripts/labels.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/symbol_paths.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/oms.min.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/polyfill.js?r=1129" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/utils.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/markers.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/location.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/spot.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/delorme.js?r=1095" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/airwhere.js?r=1074" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/livetrack.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/sites.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/measure.js?r=1019" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/groups.js?r=1018" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/areas.js?r=1018" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/current_location.js?r=1017" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/tgmap.js?r=1245" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut-icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon_16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon_32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon_48.png" sizes="48x48" type="image/png">
+  <link rel="icon" href="/favicon_128.png" sizes="128x128" type="image/png">
+  <link rel="icon" href="/favicon_256.png" sizes="256x256" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon_180.png" type="image/png">
+  <link rel="canonical" href="http://xcrt.aero">
+  <meta property="og:site_name" content="XC Retrieve">
+  <meta property="og:image" content="http://xcrt.aero/favicon_128.png">
+</head>
+
+<body>
+  <div id="sidebar_root">
+    <div id="sidebar_placeholder" onclick="showSidebar()"></div>
+    <div id="sidebar">
+      <div id="sidebar_close" onclick="hideSidebar()"></div>
+      <div id="sidebar_refresh" onclick="refreshAll()"></div>
+      <div id="sidebar_recenter" onclick="requestedBounds = null; resetMapBounds()"></div>
+      <div id="last_update">Loading...</div>
+      <label for="map_type">Map Type:</label>
+      <select id="map_type" onchange="setMapType()">
+        <option value="0" selected>Road</option>
+        <option value="1">Satellite</option>
+        <option value="2">Hybrid</option>
+        <option value="3">Terrain</option>
+      </select>
+      <div id="sidebar_map" class="sidebar_map"></div>
+      <label for="group">Group:</label>
+      <br>
+      <select id="group" onchange="updateSelectedGroup()">
+        <option value="">All</option>
+      </select>
+      <br>
+      <input type="checkbox" id="autohide_menu_enabled" onclick="updateAutohideMenuState()"><label for="autohide_menu_enabled">Auto-hide menu</label>
+      <br>
+      <label for="geo_link_type">Directions Link Type:</label>
+      <br>
+      <select id="geo_link_type" onchange="setGeoLinkType()">
+        <option value="default">Default</option>
+        <option value="geo">geo</option>
+        <option value="google">Google</option>
+        <option value="apple">Apple</option>
+        <option value="sygic">Sygic</option>
+        <option value="what3words">What3Words</option>
+        <option value="osm">OpenStreetMap</option>
+      </select>
+      <br>
+      <label for="location_updates_type">Your location updates:</label>
+      <br>
+      <select id="location_updates_type" onchange="setLocationUpdatesType()">
+        <option value="off">Off</option>
+        <option value="slow">Slow/Innacurate (low power)</option>
+        <option value="fast">Fast/Accurate (high power)</option>
+      </select>
+      <br>
+      <input type="checkbox" id="livetracking_enabled" onclick="updateLiveTrackingState()"><label for="livetracking_enabled">LiveTrack24</label>
+      <br>
+      <label for="livetracking_group">LiveTrack24 Group</label>
+      <br>
+      <input id="livetracking_group" onchange="updateLiveTrackingState()">
+      <br>
+      <input type="checkbox" id="spot_enabled" onclick="updateSpotState()"><label for="spot_enabled">Spot</label>
+      <br>
+      <input type="checkbox" id="delorme_enabled" onclick="updateDelormeState()"><label for="delorme_enabled">Delorme</label>
+      <br>
+      <input type="checkbox" id="measure_enabled" onclick="updateMeasureState( false )"><label for="measure_enabled">Measure Tool</label>
+      <br>
+      <input type="checkbox" id="sites_enabled" onclick="updateSitesState()"><label for="sites_enabled">Flying Sites</label>
+      <br>
+      <label for="area">Area:</label>
+      <br>
+      <select id="area" onchange="updateSelectedArea()">
+      </select>
+      <br>
+      <a href="https://flyaszent.wordpress.com/xc-retrieve/" target="_blank">Instructions</a>
+      <br>
+      <a href="/instructions/dutch.html" target="_blank">Instructions (Dutch)</a>
+      <br>
+      <a href="/" id="page_url_link">Page Link</a>
+      <br>
+    </div>
+  </div>
+  <div id="no_locs_label">No locations available</div>
+  <script type="text/javascript" charset="utf-8">
+    document.write('<div id="map" style="width: 100%; height: 100%; position:relative;"><\/div>');
+  </script>
+  <noscript><b>Javascript must be enabled in order to use Google Maps.</b></noscript>
+</body>
+
+</html>

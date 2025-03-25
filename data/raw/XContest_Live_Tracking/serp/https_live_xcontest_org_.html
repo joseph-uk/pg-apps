@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+
+	<title>XContest LIVETRACKING - all live pilots</title>
+	<link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js">
+  <link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/c.js">
+	<link rel="stylesheet" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.css">
+	<link rel='stylesheet' href='./global.css'>
+</head>
+
+<body>
+	<div id="map" style="width:100%; height:100%; position: absolute; top:0;left:0; opacity:0"></div>
+
+  <script type="module">
+		import app from 'https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js';
+		app.setApi('api', {league : "live", volume: 9999});
+		app.getBoundsByGeolocation().then(bounds => app.initMap(bounds));
+
+		window.setTimeout(() => {
+		  const node = document.querySelector('#map');
+		  document.body.appendChild(node);
+		  node.style.opacity = 1;
+		}, 500);
+	</script>
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce03b14067c3435f848f7f4c0a1a5b16"}'></script>
+</body>
+</html>

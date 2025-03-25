@@ -1,0 +1,9 @@
+{
+  "name": "Met Office Summit Forecasts (eg Dodd Fell)",
+  "url": "https://tinyurl.com/c38m6ds7",
+  "platform": "website",
+  "type": "weather",
+  "short_description": "The Met Office provide summit forecasts for many Dales flying sites",
+  "timestamp": "2025-03-25T21:56:07Z",
+  "website_fetched": true
+}

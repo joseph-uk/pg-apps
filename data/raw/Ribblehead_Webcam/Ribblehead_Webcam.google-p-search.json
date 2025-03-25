@@ -1,0 +1,469 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Ribblehead Webcam",
+        "totalResults": "2050",
+        "searchTerms": "Ribblehead Webcam",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Ribblehead Webcam",
+        "totalResults": "2050",
+        "searchTerms": "Ribblehead Webcam",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.161579,
+    "formattedSearchTime": "0.16",
+    "totalResults": "2050",
+    "formattedTotalResults": "2,050"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Webcams – Settle and Carlisle Railway Trust – Visit and Stay at our ...",
+      "htmlTitle": "\u003cb\u003eWebcams\u003c/b\u003e – Settle and Carlisle Railway Trust – Visit and Stay at our ...",
+      "link": "https://settlecarlisletrust.org.uk/webcams/",
+      "displayLink": "settlecarlisletrust.org.uk",
+      "snippet": "If the webcam is black there is an issue with the camera, please try again later or please contact Railcam. Important announcement. The webcams on Ribblehead ...",
+      "htmlSnippet": "If the \u003cb\u003ewebcam\u003c/b\u003e is black there is an issue with the camera, please try again later or please contact Railcam. Important announcement. The \u003cb\u003ewebcams\u003c/b\u003e on \u003cb\u003eRibblehead\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://settlecarlisletrust.org.uk/webcams/",
+      "htmlFormattedUrl": "https://settlecarlisletrust.org.uk/\u003cb\u003ewebcam\u003c/b\u003es/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLVzJfuhaXS0l6t_XnQuTbumyDaCNegAnY7LiIy4CYZdgymnmNUHDvcc&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "user-scalable=no, width=device-width, maximum-scale=1, minimum-scale=1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://settlecarlisletrust.org.uk/images/logo.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ribblehead and Kirkby Stephen webcams | FoSCL",
+      "htmlTitle": "\u003cb\u003eRibblehead\u003c/b\u003e and Kirkby Stephen \u003cb\u003ewebcams\u003c/b\u003e | FoSCL",
+      "link": "https://www.foscl.org.uk/content/ribblehead-and-kirkby-stephen-webcams",
+      "displayLink": "www.foscl.org.uk",
+      "snippet": "Ribblehead and Kirkby Stephen webcams ... View of Ribblehead viaduct and the railway tracks leading to it, from the Stationmaster's House next door to Ribblehead ...",
+      "htmlSnippet": "\u003cb\u003eRibblehead\u003c/b\u003e and Kirkby Stephen \u003cb\u003ewebcams\u003c/b\u003e ... View of \u003cb\u003eRibblehead\u003c/b\u003e viaduct and the railway tracks leading to it, from the Stationmaster&#39;s House next door to \u003cb\u003eRibblehead\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.foscl.org.uk/content/ribblehead-and-kirkby-stephen-webcams",
+      "htmlFormattedUrl": "https://www.foscl.org.uk/content/\u003cb\u003eribblehead\u003c/b\u003e-and-kirkby-stephen-\u003cb\u003ewebcam\u003c/b\u003es",
+      "pagemap": {
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#800000",
+            "referrer": "no-referrer",
+            "msapplication-config": "/themes/scenic/favicon/browserconfig.xml",
+            "theme-color": "#800000",
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Webcam — The Station Inn at Ribblehead",
+      "htmlTitle": "\u003cb\u003eWebcam\u003c/b\u003e — The Station Inn at \u003cb\u003eRibblehead\u003c/b\u003e",
+      "link": "https://www.thestationinnribblehead.com/webcam/",
+      "displayLink": "www.thestationinnribblehead.com",
+      "snippet": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities.",
+      "htmlSnippet": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities.",
+      "formattedUrl": "https://www.thestationinnribblehead.com/webcam/",
+      "htmlFormattedUrl": "https://www.thestationinn\u003cb\u003eribblehead\u003c/b\u003e.com/\u003cb\u003ewebcam\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWZIS9EgD2AVUPfC8R6BMuw9pm1ex5aF9mtUGprdh64YaT0iCJCCT8IR0&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg",
+            "og:image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Webcam — The Station Inn at Ribblehead",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "twitter:description": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities",
+            "og:title": "Webcam — The Station Inn at Ribblehead",
+            "og:url": "https://www.thestationinnribblehead.com/webcam/",
+            "og:description": "Situated in an imposing and rural position in the heart of the Yorkshire Dales, The Station Inn provides a perfect base for a host of activities",
+            "twitter:image": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://station-inn.s3.eu-west-2.amazonaws.com/video-cover.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ribblehead Viaduct | Live Webcam view | North Yorkshire",
+      "htmlTitle": "\u003cb\u003eRibblehead\u003c/b\u003e Viaduct | Live \u003cb\u003eWebcam\u003c/b\u003e view | North Yorkshire",
+      "link": "https://www.mangolinkworld.com/webcams/transport/ribblehead-viaduct.html",
+      "displayLink": "www.mangolinkworld.com",
+      "snippet": "The Ribblehead Viaduct or Batty Moss Viaduct carries the Settle–Carlisle railway across Batty Moss in the Ribble Valley at Ribblehead, in North Yorkshire, ...",
+      "htmlSnippet": "The \u003cb\u003eRibblehead\u003c/b\u003e Viaduct or Batty Moss Viaduct carries the Settle–Carlisle railway across Batty Moss in the Ribble Valley at \u003cb\u003eRibblehead\u003c/b\u003e, in North Yorkshire,&nbsp;...",
+      "formattedUrl": "https://www.mangolinkworld.com/webcams/.../ribblehead-viaduct.html",
+      "htmlFormattedUrl": "https://www.mangolinkworld.com/\u003cb\u003ewebcam\u003c/b\u003es/.../\u003cb\u003eribblehead\u003c/b\u003e-viaduct.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KZxazVCHlU8oqziVys9qHoqBI2eX60x_oh72OR6QBkCiwWc4rXzZzN4&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.mangolinkworld.com/img/trains.jpg",
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.mangolinkworld.com/webcams/transport/img/ribblehead-viaduct-2.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Road cameras and weather conditions | North Yorkshire Council",
+      "htmlTitle": "Road cameras and weather conditions | North Yorkshire Council",
+      "link": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+      "displayLink": "www.northyorks.gov.uk",
+      "snippet": "Yorkshire Dales and Harrogate · A6068 Cowling Moss · A6108 Low Burton (near Masham) · A65 Settle · A658 Harrogate bypass · A684 Leyburn · B6255 Ribblehead · B6265 ...",
+      "htmlSnippet": "Yorkshire Dales and Harrogate &middot; A6068 Cowling Moss &middot; A6108 Low Burton (near Masham) &middot; A65 Settle &middot; A658 Harrogate bypass &middot; A684 Leyburn &middot; B6255 \u003cb\u003eRibblehead\u003c/b\u003e &middot; B6265&nbsp;...",
+      "formattedUrl": "https://www.northyorks.gov.uk/.../road-cameras-and-weather-conditions",
+      "htmlFormattedUrl": "https://www.northyorks.gov.uk/.../road-cameras-and-weather-conditions",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxHBMxdvgPJLzD9EGTBlv6uQ6we6qkbLc8esM8fQ-SWjaFvbcf7VYx7k_&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "article:published_time": "Tue, 25/10/2022 - 15:43",
+            "theme-color": "#ffffff",
+            "og:site_name": "North Yorkshire Council",
+            "dcterms.language": "en-GB",
+            "dcterms.title": "Road cameras and weather conditions",
+            "geo.position": "GB",
+            "og:description": "View pictures of road conditions across North Yorkshire from our weather station cameras.",
+            "favicon-generator": "Drupal responsive_favicons + realfavicongenerator.net",
+            "icbm": "54.095461 N, 001.389730 W",
+            "article:modified_time": "Fri, 07/03/2025 - 08:18",
+            "dcterms.publisher": "North Yorkshire Council",
+            "rights": "North Yorkshire Council",
+            "msapplication-tilecolor": "#005489",
+            "og:type": "Information",
+            "dcterms.contributor": "North Yorkshire Council",
+            "handheldfriendly": "true",
+            "dcterms.type": "Service",
+            "og:title": "Road cameras and weather conditions",
+            "dcterms.creator": "North Yorkshire Council",
+            "dcterms.description": "View pictures of road conditions across North Yorkshire from our weather station cameras.",
+            "dcterms.date": "Fri, 07/03/2025 - 08:18",
+            "og:updated_time": "Fri, 07/03/2025 - 08:18",
+            "og:country_name": "United Kingdom",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width",
+            "og:locale": "en_GB",
+            "dcterms.format": "html/text",
+            "dcterms.rights": "North Yorkshire Council",
+            "og:url": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+            "geo.placename": "North Yorkshire",
+            "dcterms.identifier": "https://www.northyorks.gov.uk/roads-parking-and-travel/winter-service/road-cameras-and-weather-conditions",
+            "dcterms.coverage": "North Yorkshire, England, United Kingdom"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.northyorks.gov.uk/nycc_weather_cameras/cameras/126"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Webcams in the Settle Area - Visit Settle",
+      "htmlTitle": "Webcams in the Settle Area - Visit Settle",
+      "link": "https://www.visitsettle.co.uk/webcams-in-the-settle-area.html",
+      "displayLink": "www.visitsettle.co.uk",
+      "snippet": "Webcams in the Settle Area. Settle Weir \u003e\u003e · Ingleborough \u003e\u003e · Horton in Ribblesdale: Pen-y-ghent \u003e\u003e · Ribblehead Station \u003e\u003e · Ribblehead Viaduct \u003e\u003e · Malham ...",
+      "htmlSnippet": "\u003cb\u003eWebcams\u003c/b\u003e in the Settle Area. Settle Weir &gt;&gt; &middot; Ingleborough &gt;&gt; &middot; Horton in Ribblesdale: Pen-y-ghent &gt;&gt; &middot; \u003cb\u003eRibblehead\u003c/b\u003e Station &gt;&gt; &middot; \u003cb\u003eRibblehead\u003c/b\u003e Viaduct &gt;&gt; &middot; Malham&nbsp;...",
+      "formattedUrl": "https://www.visitsettle.co.uk/webcams-in-the-settle-area.html",
+      "htmlFormattedUrl": "https://www.visitsettle.co.uk/\u003cb\u003ewebcam\u003c/b\u003es-in-the-settle-area.html",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Yorkshire Dales Weather and Webcams",
+      "htmlTitle": "Yorkshire Dales Weather and \u003cb\u003eWebcams\u003c/b\u003e",
+      "link": "https://www.dalesbus.org/weather.html",
+      "displayLink": "www.dalesbus.org",
+      "snippet": "Mar 15, 2025 ... Ribblehead Viaduct Webcam (provided by The Station Inn) Settle ... Wensleydale Weather Station Hawes Webcam (provided by Penny Garth Cafe) ...",
+      "htmlSnippet": "Mar 15, 2025 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eRibblehead\u003c/b\u003e Viaduct \u003cb\u003eWebcam\u003c/b\u003e (provided by The Station Inn) Settle ... Wensleydale Weather Station Hawes \u003cb\u003eWebcam\u003c/b\u003e (provided by Penny Garth Cafe)&nbsp;...",
+      "formattedUrl": "https://www.dalesbus.org/weather.html",
+      "htmlFormattedUrl": "https://www.dalesbus.org/weather.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-1K1kOTI6NFqFRcoRskgfz8TqrDsskdH7zss6gs-76ntJ2ckqyDN&s",
+            "width": "86",
+            "height": "30"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.dalesbus.org/uploads/1/1/3/9/113919127/bbc_1_orig.jpg",
+            "og:site_name": "DalesBus - Public Transport in the Yorkshire Dales",
+            "viewport": "width=device-width, initial-scale=1.0;",
+            "og:title": "Yorkshire Dales Weather and Webcams",
+            "og:url": "https://www.dalesbus.org/weather.html",
+            "og:description": "Yorkshire Dales Weather and Webcams"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.dalesbus.org/uploads/1/1/3/9/113919127/bbc_1_orig.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "【LIVE】 Live Cam Ribblehead Viaduct - England | SkylineWebcams",
+      "htmlTitle": "【LIVE】 Live Cam \u003cb\u003eRibblehead\u003c/b\u003e Viaduct - England | SkylineWebcams",
+      "link": "https://www.skylinewebcams.com/en/webcam/united-kingdom/england/ribblehead/ribblehead-viaduct.html",
+      "displayLink": "www.skylinewebcams.com",
+      "snippet": "So pack your bags, lace up your hiking boots, and get ready to uncover the many wonders awaiting you around the Ribblehead Viaduct. NEARBY WEBCAMS. NEARBY ...",
+      "htmlSnippet": "So pack your bags, lace up your hiking boots, and get ready to uncover the many wonders awaiting you around the \u003cb\u003eRibblehead\u003c/b\u003e Viaduct. NEARBY \u003cb\u003eWEBCAMS\u003c/b\u003e. NEARBY&nbsp;...",
+      "formattedUrl": "https://www.skylinewebcams.com/.../webcam/.../ribblehead/ribblehead-viad...",
+      "htmlFormattedUrl": "https://www.skyline\u003cb\u003ewebcam\u003c/b\u003es.com/.../\u003cb\u003ewebcam\u003c/b\u003e/.../\u003cb\u003eribblehead\u003c/b\u003e/\u003cb\u003eribblehead\u003c/b\u003e-viad...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1XNVurNBhGWGDEMUUWUxTXdDoSoKzUS6LNjMaVSNso96GU1GK9kNv7SG4&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "VideoObject": [
+          {}
+        ],
+        "softwareapplication": [
+          {
+            "name": "SkylineWebcams",
+            "applicationcategory": "Webcam"
+          }
+        ],
+        "aggregaterating": [
+          {
+            "ratingvalue": "5",
+            "ratingcount": "12",
+            "bestrating": "5"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://cdn.skylinewebcams.com/social5112.jpg",
+            "og:type": "video.movie",
+            "og:image:width": "600",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "SkylineWebcams",
+            "og:title": "【LIVE】 Live Cam Ribblehead Viaduct - England | SkylineWebcams",
+            "og:image:height": "315",
+            "og:updated_time": "1742663974",
+            "og:description": "View of Ribblehead Viaduct in England Live cam",
+            "fb:app_id": "400491433318197",
+            "twitter:site": "@SkylineWebcams",
+            "viewport": "width=device-width,initial-scale=1",
+            "og:url": "https://www.skylinewebcams.com/en/webcam/united-kingdom/england/ribblehead/ribblehead-viaduct.html"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.skylinewebcams.com/social5112.jpg"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "https://www.skylinewebcams.com/en/webcam.html",
+            "name": "Live Cams",
+            "position": "1"
+          },
+          {
+            "item": "United Kingdom",
+            "name": "United Kingdom",
+            "position": "2"
+          },
+          {
+            "item": "England",
+            "name": "England",
+            "position": "3"
+          },
+          {
+            "item": "Ribblehead",
+            "name": "Ribblehead",
+            "position": "4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "New cameras installed on Severn Valley Railway | Rail News",
+      "htmlTitle": "New cameras installed on Severn Valley Railway | Rail News",
+      "link": "https://www.railtechnologymagazine.com/articles/railcam-uk-cameras-severn-valley-railway",
+      "displayLink": "www.railtechnologymagazine.com",
+      "snippet": "Aug 13, 2021 ... Pictured: Ribblehead Viaduct as seen from our Ribblehead webcam, hosted by Settle Carlisle Properties Ltd. Live video broadcasts from the ...",
+      "htmlSnippet": "Aug 13, 2021 \u003cb\u003e...\u003c/b\u003e Pictured: Ribblehead Viaduct as seen from our \u003cb\u003eRibblehead webcam\u003c/b\u003e, hosted by Settle Carlisle Properties Ltd. Live video broadcasts from the&nbsp;...",
+      "formattedUrl": "https://www.railtechnologymagazine.com/.../railcam-uk-cameras-severn-val...",
+      "htmlFormattedUrl": "https://www.railtechnologymagazine.com/.../railcam-uk-cameras-severn-val...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJCmfcFwqtdf_driIRadnzbp1UK7kj4udSaxOvrB9755FW7VOb9OftrWg&s",
+            "width": "270",
+            "height": "186"
+          }
+        ],
+        "Article": [
+          {
+            "image": "Security camera",
+            "name": "New cameras installed on Severn Valley Railway"
+          },
+          {
+            "image": "Welcome Point"
+          },
+          {
+            "image": "Greater Anglia lines "
+          },
+          {
+            "image": "Manchester Inc Rail"
+          },
+          {
+            "image": "Karen Grimshaw"
+          },
+          {
+            "image": "Mirfield Ariel View"
+          },
+          {
+            "image": "Oakhampton Work"
+          },
+          {
+            "image": "Northern Train"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.railtechnologymagazine.com/sites/rtm/files/styles/banner_medium/public/2021-08/iStock-482112104f.jpg?itok=paf7Kjjz",
+            "twitter:card": "summary",
+            "og:site_name": "Rail Technology Magazine",
+            "twitter:site": "@rtmnews",
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "New cameras installed on Severn Valley Railway | Rail Technology Magazine",
+            "mobileoptimized": "width",
+            "og:url": "https://www.railtechnologymagazine.com/articles/railcam-uk-cameras-severn-valley-railway",
+            "og:description": "Railcam UK Ltd, who install and operate webcams which provide views over mainline and heritage railway locations across the UK,"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.railtechnologymagazine.com/sites/rtm/files/styles/banner_medium/public/2021-08/iStock-482112104f.jpg?itok=paf7Kjjz"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ribblehead - Webcams | Ventusky",
+      "htmlTitle": "\u003cb\u003eRibblehead\u003c/b\u003e - \u003cb\u003eWebcams\u003c/b\u003e | Ventusky",
+      "link": "https://www.ventusky.com/webcam-128086619",
+      "displayLink": "www.ventusky.com",
+      "snippet": "Ribblehead - Weather forecast for 10 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this ...",
+      "htmlSnippet": "\u003cb\u003eRibblehead\u003c/b\u003e - Weather forecast for 10 days, information from meteorological stations, \u003cb\u003ewebcams\u003c/b\u003e, sunrise and sunset, wind and precipitation maps for this&nbsp;...",
+      "formattedUrl": "https://www.ventusky.com/webcam-128086619",
+      "htmlFormattedUrl": "https://www.ventusky.com/\u003cb\u003ewebcam\u003c/b\u003e-128086619",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpaElLhzrL2lOp36EUxQEpig4Gyeru6S6DCJ0EqStwn847ClIyqSFugU&s",
+            "width": "294",
+            "height": "171"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Ventusky",
+            "og:image": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Ribblehead - Webcams | Ventusky",
+            "twitter:site": "@Ventuskycom",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "Ribblehead - Weather forecast for 10 days, information from meteorological stations, webcams, sunrise and sunset, wind and precipitation maps for this place",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:image": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdnstatic.ventusky.com/images_v2/ventusky-share.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

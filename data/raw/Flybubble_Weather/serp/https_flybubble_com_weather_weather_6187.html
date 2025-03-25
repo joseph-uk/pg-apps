@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+		var mapOpenCount = parseInt("15000");
+		var site = {"error":"invalid endpoint"};
+		var openPlanner = 0;
+		var draftCode = "";
+	</script>
+	<link rel="stylesheet" href="/weather/assets/css/site_weather.css?105">
+	<meta property="og:title" content=" Paragliding 5 day Weather Forecast" />
+	<link rel="icon" href="https://flybubble.com/media/favicon/default/favicon_2.ico" type="image/x-icon" />
+	<link rel="manifest" href="/weather/manifest.json" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+	<meta name="description" content="5-day weather forecast for , focused on paragliding and hang gliding." />
+	<meta name='mapOpenCount' content='15000'>
+	<link rel="canonical" href="https://flybubble.com/weather/-/weather/6187" />
+	<title> Paragliding 5 day Weather Forecast</title>
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-N3RDSGL');
+	</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body class="exp0">
+	<div class="siteClosed warning">THIS SITE IS CURRENTLY CLOSED</div>
+	<!-- <div class="support mob_only">
+		<a href="https://flybubble.com"><video src="/weather/assets/video/flybubble-thinner-1.mp4" muted loop autoplay width="100%"></video></a>
+	</div> -->
+	<div class="banner">
+		<div class="bannerInner">
+			<div class="last_updated_container">
+				Updated: <span id="last_updated"></span>
+			</div>
+			<a href="https://flybubble.com/" title="Flybubble Paragliding" class="logo">
+				<img src="/weather/assets/imgs/flybubbles_white-01.png" alt="Flybubble Paragliding">
+			</a>
+			<div class="filters">
+				<input class="site_search" placeholder="Search site name.." />
+				<select id="daySelect" class="timeday"></select>
+				<select id="timeSelect" class="timeday"></select>
+				<a class="green" href="/weather/support.php" style="width:90px">Support Flybubble</a>
+			</div>
+		</div>
+	</div>
+	<div class=" content">
+		<!-- <div class="support desktop_only">
+			<a href="https://flybubble.com"><video src="/weather/assets/video/flybubble-thinner-1.mp4" muted loop autoplay width="100%"></video></a>
+		</div> -->
+		<div class="content_inner site_weather">
+			<div class="specific_site">
+				<div class="top p5">
+					<button class='backToSearch'>
+						<span class="notonmobile">
+							< Overview</span><span class="mob_only">
+									< All</span>
+					</button>
+					<div class='units radiotabs'>
+						<div class='kph' data-value='kph'>kph</div>
+						<div class='knts' data-value='knts'>knts</div>
+						<div class='mph' data-value='mph'>mph</div>
+					</div>
+					<!-- <button id="someoneflying"></button> -->
+					<button id="bookmark"><img src="/weather/assets/imgs/svgs/bell-solid.svg" alt="notifications" /><span class="notonmobile">Notifications</span></button>
+					<button class="canpButton"><span class="notonmobile">Post a </span>CANP</button>
+				</div>
+
+				<div class="col col_6">
+					<div class="forecast"></div>
+				</div>
+				<div class="col col_6">
+					<!-- <div class="mapTabs">
+						<div class="tabButton active" data-tab="map">Map</div>
+						<div class="tabButton" data-tab="guide">Guide</div>
+					</div> -->
+					<div class="mapTab" data-tab="guide" id="guide">
+					</div>
+					<div class="mapTab active m" data-tab="map">
+						<div class="iframe_no_scroll ">
+							<div class="mapBottom">
+								<span class="w3w">
+									<button class="change changeLocationFormat">
+										<img src="/weather/assets/imgs/change-icon.svg" height="100%" />
+
+									</button>
+									<span class="loc_op op_w3w active" data-op="0">
+										<a href="https://what3words.com/" target="_blank">
+											<img src="/weather/assets/imgs/w3w.png" />
+											<span></span>
+										</a>
+									</span>
+									<span class="loc_op op_os " data-op="1">
+										<a href="https://explore.osmaps.com/location?lat=&lon=-0.447386/" target="_blank">
+											<img src="/weather/assets/imgs/os.png" />
+											<span></span>
+										</a>
+									</span>
+									<span class="loc_op op_ll " data-op="2">
+										<a href="https://explore.osmaps.com/location?lat=&lon=-0.447386/" target="_blank">
+											<img src="/weather/assets/imgs/lat-lon.svg" style="height:14px; margin-top:3px; margin-left:4px;" />
+											<span>LON LAT</span>
+										</a>
+									</span>
+								</span>
+								<a class="clubPage" style="display:none" target="_blank" href="">
+									<img src="/weather/assets/imgs/linkIcon.png" />
+									<span title="">View Club Page"/span>
+								</a>
+							</div>
+							<div class="tideData">
+								<div></div>
+							</div>
+							<div class="compass"></div>
+							<div class="arrow"></div>
+							<h1><span class='site_title'></span> <span class='activity'>Paragliding</span> Weather</h1>
+							<iframe id="main_map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" data-loadsrc="https://www.openstreetmap.org/export/embed.html?bbox=-0.007%2C-0.007%2C0.007%2C0.007&amp;layer=cyclemap&amp;marker=%2C" src="about:blank"></iframe>
+						</div>
+						<div id="other_details" data-tab="map">
+							<div class="col_4" style="width:50%;">
+								<div class="w label">Wind</div>
+								<div class="data">
+									<br />
+									<span style='width:50px; display:inline-block;'>Launch:</span> <span class="wind_speed"></span> @ <span class="wind_dir"></span>&deg;<br />
+									<span style='width:50px; display:inline-block;'>Aloft: </span> <span class="wind_bl_speed"></span> @ <span class="wind_bl_dir"></span>&deg;
+								</div>
+							</div>
+							<div class="col_4 mob_col_6" style="width:38%">
+								<div class="t label">Thermals</div>
+								<div class="data">
+									<span class="thermal_stars"></span><br />
+									Climbs: <span class="thermal_height"></span><br />
+									<div style="display:none">Base: <span class="cloudbase"></span></div>
+								</div>
+							</div>
+							<div class="col_4 mob_col_6" style="width:12%;">
+								<div class="r label">Weather</div>
+								<div class="data">
+									<span class="rain"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clr"></div>
+			</div>
+			<div class="col_12 windmap" style="margin-top:0;">
+				<div class="relative p5 topMenu">
+					<!-- <h2 class="overview" align="center">Find the best flying</h2>
+				<h4 class="overview" align="center">Hover for site names, click for details</h4> -->
+					<div class='radiotabs units overview'>
+						<div class='kph' data-value='kph'>kph</div>
+						<div class='knts' data-value='knts'>knts</div>
+						<div class='mph' data-value='mph'>mph</div>
+					</div>
+
+					<div class='radiotabs overviewMapView'>
+						<div class='wind active' data-value='w'>Wind at 10m</div>
+						<div class='stars' data-value='s'>Stars</div>
+					</div>
+
+					<div class="clr mob_only"></div>
+
+					<div class="airspace">
+						<div class="toggle airspace_toggle">Airspace</div>
+						<div class="toggle notam_toggle">NOTAMs</div>
+						<div class="input_container hide">
+							<div class="updown_container">
+								<div class="updown down">-</div>
+								<input id="airspace" value="0" readonly />
+								<span class="unit">ft</span>
+								<div class="updown up">+</div>
+								<div class="download" title="Download current airspace / NOTAM selection"><i class="fas fa-file-download"></i></div>
+								<div class="helpbutton white" style="position:relative; float:right; margin:8px 3px 0 3px" data-popup="airspace"><i class="fas fa-info-circle"></i></div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="xcp">
+						<div class="toggle">XC Planner</div>
+					</div> -->
+					<div class='radiotabs flyableOnly'>
+						<div id="hideUnflyable" data-value='w'><img src="/weather/svg/map-marker-orange-green.svg?v=1" /> Only</div>
+					</div>
+					<div class="radiotabs hgpg">
+						<div class="hg" data-value="hg" title="Hang Glider wind speeds"></div>
+						<div class="pg" data-value="pg" title="Paraglider wind speeds"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+				<a id="overviewmap" name="overviewmap"></a>
+				<div id="map"></div>
+			</div>
+
+			<div class="disclaimer">
+				<!-- <div class="col"> -->
+				<H3 class="bold">IMPORTANT NOTES</h3>
+				<ul>
+					<li>
+						<b>The inclusion of a site on our website in no way gives you permission to fly it, <a href="https://www.bhpa.co.uk/clubs/" target="_blank">for site info find the local club</a></b>
+					</li>
+					<li>
+						While we do our best to make sure the forecasts are as accurate as
+						possible you should always assess the conditions when you arrive at launch and decide for
+						yourself if it's safe for you to fly.
+					</li>
+				</ul>
+				<div id="embedArea" class="specific_site">
+					<H3 class="bold">EMBED THIS ON YOUR WEBSITE</h3>
+					<p>You can embed a one day forecast on your website by clicking the embed button and copying the HTML code to your website.</p>
+					<button id="copyEmbed">Get Embed Code</button>
+					<p>
+						<textarea id="embedCode" spellcheck="false" style="display:none; border: none;resize: none; width: 300px; height: 100px;"></textarea>
+					</p>
+				</div>
+				<p>Need Help? Check our <a href="https://flybubble.com/blog/flybubble-weather" target="_blank">INSTRUCTIONS</a>
+					<br /><a href="/weather/sitelist">Full list of flying sites</a>
+					<br /><a href="/cdn-cgi/l/email-protection#582f3d392c303d2a183e34213a2d3a3a343d763b3735" target="rasp">Feedback and suggestions</a>
+					<br />Flybubble Weather is built using RASP - thanks go to <a href="http://www.drjack.info" target="rasp">Dr Jack and the whole RASP community</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="flyingmodal" class="modal">
+		<div class="inner">
+			<h4><b>Mark this site as currently being flown?</b></h4>
+			<p>Only confirm if someone currently flying here.
+				This will help other pilots identify flyable sites.</p>
+			<!-- <p>
+				You name: <input placeholder="Your name" id="reportername" />
+			</p> -->
+			<div id="active_error" class="error"></div>
+			<button class="g-recaptcha flt_lt mr10 active_pg" data-sitekey="6LfZcP0UAAAAAKoOYetb9TYp0URxmFYrk9sjOf3K" data-callback='markFlyingPG' data-action='submit'>
+				<img src='/weather/svg/pg_fff.svg' /> <span>Paragliding</span>
+			</button>
+			<button class="g-recaptcha flt_lt mr10 active_hg" data-sitekey="6LfZcP0UAAAAAKoOYetb9TYp0URxmFYrk9sjOf3K" data-callback='markFlyingHG' data-action='submit'>
+				<img src='/weather/svg/hg_fff.svg' /> <span>Hang Gliding</span>
+			</button>
+			<button class="modelClose">Close</button>
+		</div>
+	</div>
+	<div id="notifymodal" class="modal">
+		<div class="inner">
+			<h4><b>Get Weather Emails For This Site</b></h4>
+			<p>You will recieve an email with weather forecasts for this site (and any others you subscribe to).</p>
+			<p>You can unsubscribe from your notifications by clicking the link at the bottom of the emails you receive.</p>
+			<p><input id="notifyEmail" placeholder="email address" type="email" required /></p>
+			<p>
+				<label><input type="checkbox" id="eveningEmail" checked="checked" /> Evening email (for next day)</label><br />
+				<label><input type="checkbox" id="morningEmail" checked="checked" /> Morning email (if it's looking good)</label>
+			</p>
+
+			<button id="getNotifications">
+				Subscribe
+			</button>
+			<button class="modelClose">Close</button>
+		</div>
+	</div>
+	<div id="canpTooLate" class="modal">
+		<div class="inner">
+			<h4><b>Too late, sorry.</b></h4>
+			<p>CANPs must be submitted at least the day before you plan to fly. If you want to file a CANP for a day later in the week, select that day in the forecast and try again.</p>
+			<button class="grey" onClick='$(".modal").hide();'>Close</button>
+		</div>
+	</div>
+	<div id="canpModal" class="modal">
+		<div class="inner">
+			<h4><b>Civil Aircraft Notification Procedure (CANP)</b></h4>
+			<p>Complete this form and we'll compose an email with all the details required to submit a CANP. This procedure is
+				primarily designed to warn military low flying aircraft of your activity,
+				but since 2014 CANPs have also been published as NOTAMs.</p>
+			<form id="canpForm">
+				<input type="hidden" name="Activity" value="Hang Gliding / Paragliding" />
+				<input type="hidden" name="locationName" value="" id="CANP-locName" />
+				<input type="hidden" name="location" value="" id="CANP-location" />
+				<label>Name: <input type="text" name="contactName" id="CANP-name" value="" /></label>
+				<label>Phone number: <input type="text" name="contactPhoneNumber" id="CANP-phone" value="" /></label>
+				<label>Email address: <input type="text" name="notificationEmail" id="CANP-email" value="" /></label>
+				<label>Start date and time: <input type="text" name="from" id="CANP-from" /></label>
+				<label>End date and time: <input type="text" name="to" id="CANP-to" /></label>
+				<input type="hidden" name="AreaOfOperation" value="2nm" />
+				<input type="hidden" name="AnticipatedMaximumOperatingAltitude" value="2000AGL" />
+				<label>Remember my details: <input type="checkbox" id="CANP-remember"  /> </label>
+				<input type="hidden" name="numberOfGliders" value="5 or more" id="CANP-location" />
+				<!-- <input type="hidden" name="longitude" value="" id="CANP-locLon" /> -->
+			</form>
+			<button id="composeEmailBtn">Compose email</button>
+			<button class="grey" onClick='$(".modal").hide();' style="float:right">Cancel</button>
+		</div>
+	</div>
+	<div id="unsubmodal" class="modal">
+		<div class="inner">
+			<h4><b>You have been unsubscribed</b></h4>
+			<p class="one">You will no longer receive notifications for this site.</p>
+			<p class="all">You will no longer receive notifications for any sites.</p>
+			<button class="modelClose">Close</button>
+		</div>
+	</div>
+	<div id="subconfirm" class="modal">
+		<div class="inner">
+			<h4><b>Thanks for confirming your email</b></h4>
+			<p>You will now receive notification emails when a site is active or in the morning if it's looking good that day.</p>
+			<button class="modelClose">Close</button>
+		</div>
+	</div>
+	<div id="subManage" class="modal">
+		<div class="inner">
+			<h4><b>Manage Your Email Notifications</b></h4>
+			<p>Turn on and off morning and evening weather notification emails for
+				your saved sites (turning off both will remove the site):</p>
+			<div class="subSites"></div>
+			<button class="modelClose blue" id="subsSave">Save</button>
+			<button class="modelClose">Cancel</button>
+		</div>
+	</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9261a98deeb1cca6',t:'MTc0MjkzOTgyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script> -->
+<!-- <script type="text/javascript" src="/weather/js/wind_flow.js?105"></script> -->
+<script type="text/javascript" src="/weather/js/geotools.js?105"></script>
+<script type="text/javascript" src="/weather/js/mtosgridref.js?105"></script>
+
+<script src="/weather/js/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key="></script>
+<script src="/weather/js/markerclusterer.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery-ui-1.10.2.custom.min.js?105"></script> -->
+<link rel="stylesheet" href="/weather/assets/css/jquery-ui.css">
+<script src="/weather/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/carhartl/jquery-cookie/d72bb07e/src/jquery.cookie.js"></script>
+<!-- <script type="text/javascript" src="/weather/js/jquery.colorbox-min.js?105"></script> -->
+<script type="text/javascript" src="/weather/js/jquery.selectBox.min.js?105"></script>
+<script type="text/javascript" src="/weather/js/openairspace.js?105"></script>
+<script type="text/javascript" src="/weather/js/weather_rasp.js?105"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="/weather/js/xcplanner.js?105"></script>
+<script type="text/javascript" src="/weather/js/site_weather.js?105"></script>
+<link rel="stylesheet" href="/weather/assets/css/jquery.selectbox.css?105">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Crimson+Text:700italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="/css/custom-theme/jquery-ui-1.10.2.custom.css?105"> -->
+
+	<script>
+		const interval = setInterval(function() {
+			console.log("checking");
+			$found = $("div").filter(function() {
+				return $(this).text().trim() === "This page can't load Google Maps correctly.";
+			});
+			if ($found.length > 0) {
+				$found.parent().remove();
+				disabled = true;
+				clearInterval(interval);
+			}
+		}, 100);
+	</script>
+
+</html>

@@ -1,0 +1,361 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - XContest Live Tracking",
+        "totalResults": "6940",
+        "searchTerms": "XContest Live Tracking",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - XContest Live Tracking",
+        "totalResults": "6940",
+        "searchTerms": "XContest Live Tracking",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.316566,
+    "formattedSearchTime": "0.32",
+    "totalResults": "6940",
+    "formattedTotalResults": "6,940"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "XContest LIVETRACKING - all live pilots",
+      "htmlTitle": "\u003cb\u003eXContest LIVETRACKING\u003c/b\u003e - all live pilots",
+      "link": "https://live.xcontest.org/",
+      "displayLink": "live.xcontest.org",
+      "formattedUrl": "https://live.xcontest.org/",
+      "htmlFormattedUrl": "https://\u003cb\u003elive\u003c/b\u003e.\u003cb\u003excontest\u003c/b\u003e.org/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LIVE! :: XContest.org - world of XC paragliding",
+      "htmlTitle": "\u003cb\u003eLIVE\u003c/b\u003e! :: \u003cb\u003eXContest\u003c/b\u003e.org - world of XC paragliding",
+      "link": "https://www.xcontest.org/world/en/flights/live/",
+      "displayLink": "www.xcontest.org",
+      "snippet": "LIVE! WARNING! Only pilots in the contest World XContest 2025 are visible. Actual flown/unfinished triangle distances are computed according to ...",
+      "htmlSnippet": "\u003cb\u003eLIVE\u003c/b\u003e! WARNING! Only pilots in the contest World \u003cb\u003eXContest\u003c/b\u003e 2025 are visible. Actual flown/unfinished triangle distances are computed according to&nbsp;...",
+      "formattedUrl": "https://www.xcontest.org/world/en/flights/live/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excontest\u003c/b\u003e.org/world/en/flights/\u003cb\u003elive\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gR2aQjW3SOze0yJ6vhtNka1utUdiHj2UT3f_nRrQR3I11N1GwDMGL8El&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Configure XContest",
+      "htmlTitle": "Configure \u003cb\u003eXContest\u003c/b\u003e",
+      "link": "https://puretrack.io/help/xcontest",
+      "displayLink": "puretrack.io",
+      "snippet": "Enable XContest livetracking either in XCTrack app, or in FlySkyHy app. Click this link to Join the PureTrack XContest Group: Join Now. By joining the PureTrack ...",
+      "htmlSnippet": "Enable \u003cb\u003eXContest livetracking\u003c/b\u003e either in XCTrack app, or in FlySkyHy app. Click this link to Join the PureTrack XContest Group: Join Now. By joining the PureTrack&nbsp;...",
+      "formattedUrl": "https://puretrack.io/help/xcontest",
+      "htmlFormattedUrl": "https://puretrack.io/help/\u003cb\u003excontest\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1TSCBGyPlbPxQkk2uhzQG1gYvepKgRPCb7FcrzL0o6dEDZoXIKdX2xkc&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "csrf-token": "erpuxc7Q8Cvb2EkuIrioEW7VU85TlJHy59hzDCtj",
+            "user": "null"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://puretrack.io/images/source-icons/xcontest.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "World XContest 2025 [home] :: XContest.org - world of XC paragliding",
+      "htmlTitle": "World \u003cb\u003eXContest\u003c/b\u003e 2025 [home] :: \u003cb\u003eXContest\u003c/b\u003e.org - world of XC paragliding",
+      "link": "https://www.xcontest.org/",
+      "displayLink": "www.xcontest.org",
+      "snippet": "XContest - paragliding live!",
+      "htmlSnippet": "\u003cb\u003eXContest\u003c/b\u003e - paragliding \u003cb\u003elive\u003c/b\u003e!",
+      "formattedUrl": "https://www.xcontest.org/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excontest\u003c/b\u003e.org/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gR2aQjW3SOze0yJ6vhtNka1utUdiHj2UT3f_nRrQR3I11N1GwDMGL8El&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Social - Flyskyhy Soaring App",
+      "htmlTitle": "Social - Flyskyhy Soaring App",
+      "link": "https://flyskyhy.com/social.html",
+      "displayLink": "flyskyhy.com",
+      "snippet": "Live Tracking. Tracking Details. The \"Social\" extension brings live ... XContest Live (xcontest.org); SportsTrackLive (sportstracklive.com); Loctome ...",
+      "htmlSnippet": "\u003cb\u003eLive Tracking\u003c/b\u003e. \u003cb\u003eTracking\u003c/b\u003e Details. The &quot;Social&quot; extension brings \u003cb\u003elive\u003c/b\u003e ... \u003cb\u003eXContest Live\u003c/b\u003e (\u003cb\u003excontest\u003c/b\u003e.org); SportsTrackLive (sportstracklive.com); Loctome&nbsp;...",
+      "formattedUrl": "https://flyskyhy.com/social.html",
+      "htmlFormattedUrl": "https://flyskyhy.com/social.html",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0hCGoukthwZstkQ2GzlalbhTQIX4yzUQigSR6tZamNkh-MkGTulnQ-DY&s",
+            "width": "223",
+            "height": "226"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://flyskyhy.com/uploads/3/0/7/8/3078577/6580356.png",
+            "og:site_name": "Flyskyhy Soaring App",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:title": "Airspaces",
+            "og:url": "http://flyskyhy.com/social.html",
+            "og:description": "The airspaces extension gives access to airspace information of a large number of countries. Airspace information is automatically loaded, and does not need to be managed by you. Airspaces are shown..."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://flyskyhy.com/uploads/3/0/7/8/3078577/6580356.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "LIVETRACKING :: XContest.org - world of XC paragliding",
+      "htmlTitle": "\u003cb\u003eLIVETRACKING\u003c/b\u003e :: \u003cb\u003eXContest\u003c/b\u003e.org - world of XC paragliding",
+      "link": "https://www.xcontest.org/2020/rana/live/",
+      "displayLink": "www.xcontest.org",
+      "snippet": "Only pilots in the contest Raná Cup 2020 are visible. Actual flown/unfinished triangle distances are computed according to the current contest rules.",
+      "htmlSnippet": "Only pilots in the contest Raná Cup 2020 are visible. Actual flown/unfinished triangle distances are computed according to the current contest rules.",
+      "formattedUrl": "https://www.xcontest.org/2020/rana/live/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003excontest\u003c/b\u003e.org/2020/rana/\u003cb\u003elive\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gR2aQjW3SOze0yJ6vhtNka1utUdiHj2UT3f_nRrQR3I11N1GwDMGL8El&s",
+            "width": "200",
+            "height": "200"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://s.xcontest.app/img/xcontest-fb.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - An all-in-one livetracking platform ... - Paragliding Forum",
+      "htmlTitle": "View topic - An all-in-one livetracking platform ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?t=111972",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Jan 27, 2024 ... Definitely a good thing as it allows many pilots to start using puretrack.io without changing their flight deck in any way. - XContest live ...",
+      "htmlSnippet": "Jan 27, 2024 \u003cb\u003e...\u003c/b\u003e Definitely a good thing as it allows many pilots to start using puretrack.io without changing their flight deck in any way. - \u003cb\u003eXContest live\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=111972",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?t=111972",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Menu Livetracking - XCTrack Pro manual - AIR³ - Full details ...",
+      "htmlTitle": "Menu \u003cb\u003eLivetracking\u003c/b\u003e - XCTrack Pro manual - AIR³ - Full details ...",
+      "link": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xctrack-manual/livetracking/",
+      "displayLink": "www.fly-air3.com",
+      "snippet": "Apr 7, 2020 ... On the Live webpage of Xcontest, you can view all the pilots using livetracking. Select which pilot you want to track by checking the small ...",
+      "htmlSnippet": "Apr 7, 2020 \u003cb\u003e...\u003c/b\u003e On the \u003cb\u003eLive\u003c/b\u003e webpage of \u003cb\u003eXcontest\u003c/b\u003e, you can view all the pilots using \u003cb\u003elivetracking\u003c/b\u003e. Select which pilot you want to \u003cb\u003etrack\u003c/b\u003e by checking the small&nbsp;...",
+      "formattedUrl": "https://www.fly-air3.com/en/support/air3-xctrack-manual/.../livetracking/",
+      "htmlFormattedUrl": "https://www.fly-air3.com/en/support/air3-xctrack-manual/.../\u003cb\u003elivetracking\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0W5_1kTyMZtKIZYSx6FZa4z_V5dvdhGQ3sUVLqOKzDp4OIu6RsgvilYur&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "webpageelement": [
+          {
+            "headline": "Livetracking"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.fly-air3.com/wp-content/uploads/sites/15/2020/04/XCTrack-Pro-Manual-logo3.png",
+            "og:type": "article",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "AIR³",
+            "og:title": "Menu Livetracking - XCTrack Pro manual - AIR³ - Full details & description",
+            "og:image:height": "628",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://www.fly-air3.com/wp-content/uploads/sites/15/2019/04/cropped-AIR³-CARRE_Logo-1-270x270.png",
+            "og:description": "XCTrack Pro Manual. This page describes the Livetracking menu of XCTrack. Check the other sections to learn details about the menus and the widgets of XCTrack",
+            "article:publisher": "https://www.facebook.com/FLYAIRCUBE/",
+            "twitter:data1": "33 minutes",
+            "article:modified_time": "2025-03-17T15:37:29+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.fly-air3.com/en/support/air3-xctrack-manual/xctrack-manual/livetracking/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.fly-air3.com/wp-content/uploads/sites/15/2020/04/XCTrack-Pro-Manual-logo3.png"
+          }
+        ],
+        "hatomfeed": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "View topic - SeeYou Navigator for iOS and ... - Paragliding Forum",
+      "htmlTitle": "View topic - SeeYou Navigator for iOS and ... - Paragliding Forum",
+      "link": "https://www.paraglidingforum.com/viewtopic.php?p=p666939",
+      "displayLink": "www.paraglidingforum.com",
+      "snippet": "Aug 17, 2023 ... I would very happily pay a bit extra to show up on xcontest live (it's integrated for uploading flights), so why it isn't for livetracking is a ...",
+      "htmlSnippet": "Aug 17, 2023 \u003cb\u003e...\u003c/b\u003e I would very happily pay a bit extra to show up on \u003cb\u003excontest live\u003c/b\u003e (it&#39;s integrated for uploading flights), so why it isn&#39;t for \u003cb\u003elivetracking\u003c/b\u003e is a&nbsp;...",
+      "formattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p666939",
+      "htmlFormattedUrl": "https://www.paraglidingforum.com/viewtopic.php?p=p666939",
+      "pagemap": {
+        "metatags": [
+          {
+            "date-creation-yyyymmdd": "20041220",
+            "category": "Sports",
+            "distribution": "global",
+            "date-revision-yyyymmdd": "200537"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "XContest & XCTrack support added to PureTrack.io : r/freeflight",
+      "htmlTitle": "\u003cb\u003eXContest\u003c/b\u003e &amp; XCTrack support added to PureTrack.io : r/freeflight",
+      "link": "https://www.reddit.com/r/freeflight/comments/1bbzfto/xcontest_xctrack_support_added_to_puretrackio/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Mar 11, 2024 ... Hi I'm the developer of https://PureTrack.io , a live tracking website. I had a number of requests to add XContest and XCTrack support.",
+      "htmlSnippet": "Mar 11, 2024 \u003cb\u003e...\u003c/b\u003e Hi I&#39;m the developer of https://PureTrack.io , a \u003cb\u003elive tracking\u003c/b\u003e website. I had a number of requests to add \u003cb\u003eXContest\u003c/b\u003e and XCTrack support.",
+      "formattedUrl": "https://www.reddit.com/r/.../xcontest_xctrack_support_added_to_puretracki...",
+      "htmlFormattedUrl": "https://www.reddit.com/r/.../\u003cb\u003excontest\u003c/b\u003e_xctrack_support_added_to_puretracki...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1NXYBDSq4zgQm-Ko9EYuqO9SxhfATacEtjHepyv7F6w&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1bbzfto",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/freeflight on Reddit: XContest & XCTrack support added to PureTrack.io",
+            "og:site_name": "Reddit",
+            "og:title": "r/freeflight on Reddit: XContest & XCTrack support added to PureTrack.io",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/ipearx - 19 votes and 7 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1bbzfto",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/freeflight/comments/1bbzfto/xcontest_xctrack_support_added_to_puretrackio/"
+          }
+        ],
+        "cse_image": [
+          {}
+        ]
+      }
+    }
+  ]
+}

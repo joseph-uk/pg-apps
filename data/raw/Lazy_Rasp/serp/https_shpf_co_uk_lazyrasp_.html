@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <!-- <meta http-equiv='refresh' content='5'/> -->
+    <title>Lazy RASP</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { font-family: Arial, Helvetica, Sans-Serif; Color: #333333; }
+  
+    select {
+      max-width: 20em;
+    }
+    </style>
+
+<script type="text/javascript">
+
+      const linkUrl = 'https://rasp.stratus.org.uk/app/vb/viewer-basic.php';
+      const imageRoot = 'images';
+
+      function selectChanged() {
+          let select = document.getElementById('paramSelect');
+          let raspParam = select.options[select.selectedIndex].value;
+          populateTable(raspParam);
+      }
+
+      function populateTable(raspParam) {
+          const days = [0, 1, 2, 3, 4, 5, 6];
+          const times = [1000, 1200, 1400, 1600];
+
+          let table = document.getElementById('plots');
+
+          // Clear the table contents
+          while (table.firstChild) {
+              table.removeChild(table.firstChild);
+          }
+
+          // Create the header row
+          let headerRow = document.createElement('tr');
+          table.appendChild(headerRow);
+
+          let headerCell = document.createElement('th');
+          headerRow.appendChild(headerCell);
+          headerCell.appendChild(document.createTextNode('Day'));
+
+          times.forEach(function(time) {
+              headerCell = document.createElement('th');
+              headerRow.appendChild(headerCell);
+              headerCell.appendChild(document.createTextNode(time.toString()));
+          });
+
+          // Populate the content rows
+          days.forEach(function(day) {
+              let row = document.createElement('tr');
+              table.appendChild(row);
+
+              let cell = document.createElement('td');
+              row.appendChild(cell);
+              cell.appendChild(document.createTextNode(getDate(day)));
+
+              times.forEach(function(time) {
+                  cell = document.createElement('td');
+                  row.appendChild(cell);
+
+                  let link = document.createElement('a');
+                  cell.appendChild(link);
+                  link.setAttribute('href', getLinkTarget(day, time, raspParam));
+
+                  let img = document.createElement('img');
+                  link.appendChild(img);
+                  img.setAttribute('src', getImgSrc(day, time, raspParam));
+                  img.setAttribute('alt', getImgAltText(day, time));
+                  img.setAttribute('width', '200');
+              });
+          });
+      }
+
+      function getDate(day) {
+          let targetDate = new Date();
+          targetDate.setDate(targetDate.getDate() + day);
+          return targetDate.toDateString();
+      }
+
+      function getLinkDate(day) {
+          let targetDate = new Date();
+          targetDate.setDate(targetDate.getDate() + day);
+          let yyyy = targetDate.getFullYear().toString();
+          let mm = (targetDate.getMonth()+1).toString(); // getMonth() is zero-based
+          let dd  = targetDate.getDate().toString();
+          return `${yyyy}${mm[1]?mm:"0"+mm[0]}${dd[1]?dd:"0"+dd[0]}`;
+      }
+
+      function getLinkTarget(day, time, raspParam) {
+          return `${linkUrl}?date=${getLinkDate(day)}&param=${raspParam}&time=${time}`;
+      }
+
+      function getImgSrc(day, time, raspParam) {
+          return `${imageRoot}/UK+${day}/${raspParam}.${time}.png`;
+      }
+
+      function getImgAltText(day, time) {
+          return `Today${day ? ('+'+day) : ''} ${time}`;
+      }
+
+</script>
+</head>
+<body>
+
+<div id="content">
+  <div>
+	  <h3>Lazy RASP</h3>
+		<p>Quick forecasts for when you have limited internet connectivity.</p>
+          <p>RASP forecast provided by <a href="http://rasp.stratus.org.uk/app/vb/viewer-basic.php">Stratus</a>.
+	      Check the latest run status <a href="http://rasp.stratus.org.uk/app/blipsystemstatus.php">here</a>.<br />
+	      Lazy RASP Status: Last run completed at Thu Jul 4 02:07:02 CEST 2024 in 22019 seconds
+</p>
+
+          <label for="paramSelect">Select a RASP parameter:</label><br/>
+          <select id="paramSelect" name="paramSelect" size="6" autofocus onchange="selectChanged()" style="width:50%; height:10em;">
+              <option value="stars">Star rating (original)</option>
+              <option value="starshg">Star rating (footlaunch)</option>
+              <option value="sfcwind">Surface wind (10m)</option>
+              <option value="blwind">BL average wind</option>
+              <option value="wblmaxmin">B/L Max Up/Down (Convergence)</option>
+              <option value="wstar_bsratio">Thermal updraft velocity &amp; B/S Ratio </option>
+          </select>
+
+    <p>Note that this page does not check if RASP plots are up to date.</p>
+      </div>
+
+      <div>
+          <table id="plots" border="1"></table>
+      </div>
+  </div>
+</body>

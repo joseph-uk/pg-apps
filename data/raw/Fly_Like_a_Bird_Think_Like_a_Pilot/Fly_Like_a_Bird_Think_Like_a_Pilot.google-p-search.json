@@ -1,0 +1,824 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Fly Like a Bird, Think Like a Pilot",
+        "totalResults": "14800000",
+        "searchTerms": "Fly Like a Bird, Think Like a Pilot",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Fly Like a Bird, Think Like a Pilot",
+        "totalResults": "14800000",
+        "searchTerms": "Fly Like a Bird, Think Like a Pilot",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.408857,
+    "formattedSearchTime": "0.41",
+    "totalResults": "14800000",
+    "formattedTotalResults": "14,800,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Fly Like a Bird, Think Like a Pilot - NZHGPA",
+      "htmlTitle": "\u003cb\u003eFly Like a Bird\u003c/b\u003e, \u003cb\u003eThink Like a Pilot\u003c/b\u003e - NZHGPA",
+      "link": "https://nzhgpa.org.nz/fly-like-a-bird-think-like-a-pilot/",
+      "displayLink": "nzhgpa.org.nz",
+      "snippet": "Sep 6, 2024 ... Settings ... “Focus on the thinking part of your flying as well as the doing part. Think about where you're at now and where you want to get to – ...",
+      "htmlSnippet": "Sep 6, 2024 \u003cb\u003e...\u003c/b\u003e Settings ... “Focus on the \u003cb\u003ethinking\u003c/b\u003e part of your \u003cb\u003eflying as\u003c/b\u003e well \u003cb\u003eas\u003c/b\u003e the doing part. \u003cb\u003eThink\u003c/b\u003e about where you&#39;re at now and where you want to get to –&nbsp;...",
+      "formattedUrl": "https://nzhgpa.org.nz/fly-like-a-bird-think-like-a-pilot/",
+      "htmlFormattedUrl": "https://nzhgpa.org.nz/\u003cb\u003efly\u003c/b\u003e-\u003cb\u003elike-a-bird\u003c/b\u003e-\u003cb\u003ethink\u003c/b\u003e-\u003cb\u003elike-a-pilot\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vLENj8Y4uqZV54-Olx0YWx3LHRHvLuFGHtnc86eOep_1HPj3sMIv_OZo&s",
+            "width": "296",
+            "height": "170"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://nzhgpa.org.nz/wp-content/uploads/2024/09/think-like-a-pilot-blog.png",
+            "og:type": "article",
+            "article:published_time": "2024-09-05T21:02:26+00:00",
+            "og:image:width": "1106",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "NZHGPA",
+            "author": "matadigital",
+            "og:title": "Fly Like a Bird, Think Like a Pilot - NZHGPA",
+            "og:image:height": "637",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "og:image:type": "image/png",
+            "msapplication-tileimage": "https://nzhgpa.org.nz/wp-content/uploads/2022/03/cropped-Group-56-270x270.png",
+            "og:description": "The NZHGPA recently launched a national safety campaign helping pilots to advance their flying careers by staying safe in the fun zone.     “Focus on the thinking part of your flying as well as the doing part. Think about where you’re at now and where you want to get to – on today’s flight […]",
+            "twitter:data1": "matadigital",
+            "twitter:data2": "1 minute",
+            "article:modified_time": "2024-09-05T21:42:07+00:00",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            "og:locale": "en_US",
+            "og:url": "https://nzhgpa.org.nz/fly-like-a-bird-think-like-a-pilot/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://nzhgpa.org.nz/wp-content/uploads/2024/09/think-like-a-pilot-blog.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly like a bird (but think like a pilot)",
+      "htmlTitle": "\u003cb\u003eFly like a bird\u003c/b\u003e (but \u003cb\u003ethink like a pilot\u003c/b\u003e)",
+      "link": "https://xcmag.com/fly-better/safety/fly-like-a-bird-but-think-like-a-pilot/",
+      "displayLink": "xcmag.com",
+      "snippet": "Jan 10, 2025 ... “Fly like a bird – think like a pilot” is the catchphrase for a campaign in New Zealand encouraging free flight pilots to adopt a more safety-conscious ...",
+      "htmlSnippet": "Jan 10, 2025 \u003cb\u003e...\u003c/b\u003e “Fly like a bird – think like a pilot” is the catchphrase for a campaign in New Zealand encouraging free flight pilots to adopt a more safety-conscious&nbsp;...",
+      "formattedUrl": "https://xcmag.com/fly-better/safety/fly-like-a-bird-but-think-like-a-pilot/",
+      "htmlFormattedUrl": "https://xcmag.com/\u003cb\u003efly\u003c/b\u003e-better/safety/\u003cb\u003efly\u003c/b\u003e-\u003cb\u003elike-a-bird\u003c/b\u003e-but-\u003cb\u003ethink\u003c/b\u003e-\u003cb\u003elike-a-pilot\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70aOvtfqpm_owSzO_EnfsDuCDGAaIzFTtgncEQ1PgujXqgX0tVpFHd8k&s",
+            "width": "316",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#da532c",
+            "og:image": "https://xcmag.com/wp-content/uploads/2025/01/Fly-like-a-bird-NZHGPA.jpg",
+            "theme-color": "#ffffff",
+            "og:type": "article",
+            "article:published_time": "2025-01-10T10:30:00+00:00",
+            "og:image:width": "2560",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Cross Country Magazine",
+            "author": "Tarquin Cooper",
+            "og:title": "Fly like a bird (but think like a pilot)",
+            "og:image:height": "1290",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://xcmag.com/wp-content/uploads/2024/06/cropped-Cross-Country-Logo-512-270x270.jpg",
+            "og:description": "\"Fly like a bird – think like a pilot\" – a campaign in New Zealand encourages free flight pilots to adopt a more safety-conscious approach",
+            "twitter:creator": "@xcmag",
+            "article:publisher": "http://facebook.com/xcmag",
+            "twitter:site": "@xcmag",
+            "viewport": "width=device-width, initial-scale=1",
+            "onesignal": "wordpress-plugin",
+            "og:locale": "en_GB",
+            "og:url": "https://xcmag.com/fly-better/safety/fly-like-a-bird-but-think-like-a-pilot/",
+            "plausible-analytics-version": "2.1.4"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://xcmag.com/wp-content/uploads/2025/01/Fly-like-a-bird-NZHGPA.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Think Like a Pilot - NZHGPA",
+      "htmlTitle": "\u003cb\u003eThink Like a Pilot\u003c/b\u003e - NZHGPA",
+      "link": "https://nzhgpa.org.nz/thinklikeapilot/",
+      "displayLink": "nzhgpa.org.nz",
+      "snippet": "Weather is one of the most important factors in your ability to fly a paraglider or hang glider safely through the sky – it features as a causal or contributing ...",
+      "htmlSnippet": "Weather is one of the most important factors in your ability to \u003cb\u003efly\u003c/b\u003e a paraglider or hang glider safely through the sky – it features \u003cb\u003eas\u003c/b\u003e a causal or contributing&nbsp;...",
+      "formattedUrl": "https://nzhgpa.org.nz/thinklikeapilot/",
+      "htmlFormattedUrl": "https://nzhgpa.org.nz/\u003cb\u003ethinklikeapilot\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yFFebjeUofzsSemTZwjrCvUUR8sQJjoCX2NfTKVyJhhhm9b_vr4sSkD5&s",
+            "width": "183",
+            "height": "276"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "NZHGPA",
+            "article:modified_time": "2024-09-12T21:12:59+00:00",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            "og:title": "Think Like a Pilot - NZHGPA",
+            "og:locale": "en_US",
+            "twitter:label1": "Est. reading time",
+            "og:url": "https://nzhgpa.org.nz/thinklikeapilot/",
+            "msapplication-tileimage": "https://nzhgpa.org.nz/wp-content/uploads/2022/03/cropped-Group-56-270x270.png",
+            "twitter:data1": "12 minutes"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://nzhgpa.org.nz/wp-content/uploads/2024/07/think-like-a-pilot-paraglider.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "What does flying fpv really feel like : r/fpv",
+      "htmlTitle": "What does \u003cb\u003eflying\u003c/b\u003e fpv really \u003cb\u003efeel like\u003c/b\u003e : r/fpv",
+      "link": "https://www.reddit.com/r/fpv/comments/1cbwenb/what_does_flying_fpv_really_feel_like/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Apr 24, 2024 ... Flying in real life locations changes the way you look at the world around you. Just knowing you can fly and see everything from that perspective.",
+      "htmlSnippet": "Apr 24, 2024 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eFlying\u003c/b\u003e in real life locations changes the way you look at the world around you. Just knowing you can \u003cb\u003efly\u003c/b\u003e and see everything from that perspective.",
+      "formattedUrl": "https://www.reddit.com/r/fpv/.../what_does_flying_fpv_really_feel_like/",
+      "htmlFormattedUrl": "https://www.reddit.com/r/fpv/.../what_does_\u003cb\u003efly\u003c/b\u003eing_fpv_really_feel_\u003cb\u003elike\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://share.redd.it/preview/post/1cbwenb",
+            "theme-color": "#000000",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "og:image:alt": "An image containing a preview of the post",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/fpv on Reddit: What does flying fpv really feel like",
+            "og:site_name": "Reddit",
+            "og:title": "r/fpv on Reddit: What does flying fpv really feel like",
+            "og:image:height": "630",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Your_Lies_ARE_FALSE - 29 votes and 94 comments",
+            "twitter:image": "https://share.redd.it/preview/post/1cbwenb",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/fpv/comments/1cbwenb/what_does_flying_fpv_really_feel_like/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Could I please have some... Motivation? - Infinite Flight Community",
+      "htmlTitle": "Could I please have some... Motivation? - Infinite Flight Community",
+      "link": "https://community.infiniteflight.com/t/could-i-please-have-some-motivation/479154",
+      "displayLink": "community.infiniteflight.com",
+      "snippet": "Aug 31, 2020 ... Airplanes allow you to fly like a bird, to be able to help others ... pilots just makes me feel I wanna fly. And also like @Chatta290 ...",
+      "htmlSnippet": "Aug 31, 2020 \u003cb\u003e...\u003c/b\u003e Airplanes allow you to \u003cb\u003efly like a bird\u003c/b\u003e, to \u003cb\u003ebe\u003c/b\u003e able to help others ... \u003cb\u003epilots\u003c/b\u003e just makes me \u003cb\u003efeel\u003c/b\u003e I wanna fly. And also \u003cb\u003elike\u003c/b\u003e @Chatta290&nbsp;...",
+      "formattedUrl": "https://community.infiniteflight.com/t/could-i-please-have-some.../479154",
+      "htmlFormattedUrl": "https://community.infiniteflight.com/t/could-i-please-have-some.../479154",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdsLZS782hRc2-DLVMnjRS8fDpVCFuw64d9snG5WI3wJ7hZBuAg2nBQU7&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "url": "https://global.discourse-cdn.com/infiniteflight/original/4X/e/7/c/e7cf986e5fe777f9fab289ccce8bf7335c263aab.png"
+          }
+        ],
+        "person": [
+          {
+            "name": "Liam06",
+            "url": "Liam06"
+          },
+          {
+            "name": "Thunderbolt",
+            "url": "Thunderbolt"
+          },
+          {
+            "name": "AviationFreak",
+            "url": "AviationFreak"
+          },
+          {
+            "name": "Butter_Boi",
+            "url": "Butter_Boi"
+          },
+          {
+            "name": "Liam06",
+            "url": "Liam06"
+          },
+          {
+            "name": "Chatta290",
+            "url": "Chatta290"
+          },
+          {
+            "name": "PilotChrisSG",
+            "url": "PilotChrisSG"
+          },
+          {
+            "name": "Sharan.Somayaji",
+            "url": "Sharan.Somayaji"
+          },
+          {
+            "name": "Aceorbit",
+            "url": "Aceorbit"
+          },
+          {
+            "name": "bcc.123",
+            "url": "bcc.123"
+          },
+          {
+            "name": "Zachary",
+            "url": "Zachary"
+          },
+          {
+            "name": "Jack_Q",
+            "url": "Jack_Q"
+          },
+          {
+            "name": "Planeviation",
+            "url": "Planeviation"
+          },
+          {
+            "name": "Captain-787",
+            "url": "Captain-787"
+          },
+          {
+            "name": "Liam06",
+            "url": "Liam06"
+          },
+          {
+            "name": "Rand1",
+            "url": "Rand1"
+          },
+          {
+            "name": "Andre_S",
+            "url": "Andre_S"
+          },
+          {
+            "name": "xsrvmy",
+            "url": "xsrvmy"
+          },
+          {
+            "name": "system",
+            "url": "system"
+          }
+        ],
+        "organization": [
+          {
+            "name": "Infinite Flight LLC"
+          }
+        ],
+        "interactioncounter": [
+          {
+            "userinteractioncount": "6",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "5",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "4",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "3",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "2",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "1",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          },
+          {
+            "userinteractioncount": "0",
+            "interactiontype": "http://schema.org/LikeAction"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://global.discourse-cdn.com/infiniteflight/original/4X/8/c/2/8c24449ce2a3b6f57a48ad5646fc9151c09db6e8.jpeg",
+            "theme-color": "#1b1c1d",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Could I please have some... Motivation?",
+            "article:published_time": "2020-08-31T00:29:03+00:00",
+            "og:site_name": "Infinite Flight Community",
+            "twitter:url": "https://community.infiniteflight.com/t/could-i-please-have-some-motivation/479154",
+            "og:title": "Could I please have some... Motivation?",
+            "color-scheme": "light",
+            "og:description": "Hey IFC,  I have a really strong love for passenger aircraft and would love to be a pilot someday but lately I have been feeling a bit “odd” and would love some motivation to remind me why I love planes and why they are so “great”. I really don’t like feeling the way I do right now and want it to stop because I truly do love aviation, I’m just not feeling it.  If anyone has ever felt this way or has something to say which may help, please write it in the comments below.  Thanks everyone, happy f...",
+            "twitter:image": "https://global.discourse-cdn.com/infiniteflight/original/4X/c/3/d/c3dfa4ca2cd8fb74416997938edd68fb4b0a8ed4.jpeg",
+            "apple-mobile-web-app-status-bar-style": "#414f5c",
+            "og:ignore_canonical": "true",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Hey IFC,  I have a really strong love for passenger aircraft and would love to be a pilot someday but lately I have been feeling a bit “odd” and would love some motivation to remind me why I love planes and why they are so “great”. I really don’t like feeling the way I do right now and want it to stop because I truly do love aviation, I’m just not feeling it.  If anyone has ever felt this way or has something to say which may help, please write it in the comments below.  Thanks everyone, happy f...",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://community.infiniteflight.com/t/could-i-please-have-some-motivation/479154"
+          }
+        ],
+        "discussionforumposting": [
+          {
+            "datemodified": "2020-08-31T00:29:03Z",
+            "articlesection": "General",
+            "position": "1",
+            "text": "Hey IFC, I have a really strong love for passenger aircraft and would love to be a pilot someday but lately I have been feeling a bit “odd” and would love some motivation to remind me why...",
+            "headline": "Could I please have some... Motivation?",
+            "url": "https://community.infiniteflight.com/t/could-i-please-have-some-motivation/479154",
+            "datepublished": "2020-08-31T00:29:03Z",
+            "mainentityofpage": "https://community.infiniteflight.com/t/could-i-please-have-some-motivation/479154"
+          }
+        ],
+        "comment": [
+          {
+            "datemodified": "2020-08-31T00:30:43Z",
+            "position": "2",
+            "text": "Liam06: motivation to remind me why I love planes They are one of the only (if not the only) manmade objects that can fly. And, you have the opportunity of making those million dollar(s) objects...",
+            "datepublished": "2020-08-31T00:30:43Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:33:21Z",
+            "position": "3",
+            "text": "Sometimes if you’re not feeling it, maybe you just need a little break. And when you come back after a day or two, you feel that same motivations as you once had! :)",
+            "datepublished": "2020-08-31T00:33:21Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:38:44Z",
+            "position": "4",
+            "text": "The feeling of flight is like no other. The experiential lifting off the runway and going to the realm of the birds is something like nothing else. Airplanes allow you to fly like a bird, to...",
+            "datepublished": "2020-08-31T00:38:44Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:42:17Z",
+            "position": "5",
+            "text": "Okay thanks everyone. I think I will follow what @AviationFreak said and have a short break from infinite flight and the community. @Butter_Boi Thanks for reminding me about the feeling of...",
+            "datepublished": "2020-08-31T00:42:17Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:44:57Z",
+            "position": "6",
+            "text": "If you don’t feel as excited then that’s not an issue. You don’t want to push yourself into something you have lost interest in. It’s not healthy at all, there are lots of other things...",
+            "datepublished": "2020-08-31T00:44:57Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:46:30Z",
+            "position": "7",
+            "text": "As @Chatta290 said, Try not to do it everyday. That’s how people lose interest (some). I try to make myself fly like every other day. It’s good to take a break every once in a while.",
+            "datepublished": "2020-08-31T00:46:30Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:55:56Z",
+            "position": "8",
+            "text": "It’s okay to feel less motivated sometimes… But not always… Well whenever I feel that, I just watch some YouTube videos and after looking at the aircrafts taking off and landing or any...",
+            "datepublished": "2020-08-31T00:55:56Z"
+          },
+          {
+            "datemodified": "2020-08-31T00:58:46Z",
+            "position": "9",
+            "text": "You should branch out a bit more from just what our resident old man Maxmustang likes to call “trash haulers”, I recommend checking out some of the more adventurous Youtubers like Trent...",
+            "datepublished": "2020-08-31T00:58:46Z"
+          },
+          {
+            "datemodified": "2020-08-31T02:07:44Z",
+            "position": "10",
+            "text": "Watch either Top Gun orSully. You’ll get an instant sense of motivation.😂 👨🏼\u200d✈️",
+            "datepublished": "2020-08-31T02:07:44Z"
+          },
+          {
+            "datemodified": "2020-08-31T02:33:22Z",
+            "position": "12",
+            "text": "Though this is counterintuitive to what you’re asking, sometimes it is better to take a break from what you know you love so that when you come back, you will appreciate it even more. I’ve...",
+            "datepublished": "2020-08-31T02:33:22Z"
+          },
+          {
+            "datemodified": "2020-08-31T02:39:28Z",
+            "position": "13",
+            "text": "This is a great thread plus there are several more linked to it, take a scroll. What motivates you to keep flying? What I used to think of aviation, what I did when I first fell in love with...",
+            "datepublished": "2020-08-31T02:39:28Z"
+          },
+          {
+            "image": "https://global.discourse-cdn.com/infiniteflight/original/4X/3/d/d/3dd7f45eb2a9870e97e3ebecbbfbfeef7ac1792b.jpeg",
+            "datemodified": "2020-08-31T03:32:35Z",
+            "position": "14",
+            "text": "YouTube Boeing – No Small Dream Together, Boeing’s founders shaped our world. Now, it’s our turn. What will we dream next? Maybe this will help 😉",
+            "datepublished": "2020-08-31T03:32:35Z"
+          },
+          {
+            "datemodified": "2020-09-01T02:32:18Z",
+            "position": "15",
+            "text": "Remember what made you so interested in aviation in the first place. Also, take a week break from the IFC, Infinite Flight, and really anything in aviation. Then come back, do a flight in the...",
+            "datepublished": "2020-09-01T02:32:18Z"
+          },
+          {
+            "datemodified": "2020-09-01T03:02:28Z",
+            "position": "16",
+            "text": "Thanks everyone for responses. I mentioned earlier that I would take a break but I didn’t really… (mostly because I wanted to hear what other had to say). I’m really grateful for every...",
+            "datepublished": "2020-09-01T03:02:28Z"
+          },
+          {
+            "datemodified": "2020-09-01T13:46:05Z",
+            "position": "17",
+            "text": "Watch a lot of aviation videos,trip report ,Ultimate Airport Dubai,Britain’s Busiest Airport,Behind the Cockpit Easyjet,Watch airplane documentaries. Sometimes you feel like losing motivation...",
+            "datepublished": "2020-09-01T13:46:05Z"
+          },
+          {
+            "datemodified": "2020-09-01T14:11:04Z",
+            "position": "18",
+            "text": "Go and do some plane spotting! Hear the engines roar and smell the jetfuel. That will get you motivated",
+            "datepublished": "2020-09-01T14:11:04Z"
+          },
+          {
+            "datemodified": "2020-09-01T14:13:19Z",
+            "position": "19",
+            "text": "Maybe try and fly some other kind of aircraft instead (GA, military, cargo).",
+            "datepublished": "2020-09-01T14:13:19Z"
+          },
+          {
+            "datemodified": "2020-11-30T14:13:20Z",
+            "position": "20",
+            "text": "This topic was automatically closed 90 days after the last reply. New replies are no longer allowed.",
+            "datepublished": "2020-11-30T14:13:20Z"
+          }
+        ],
+        "itemlist": [
+          {
+            "itemlistorder": "http://schema.org/ItemListOrderDescending"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://global.discourse-cdn.com/infiniteflight/original/4X/8/c/2/8c24449ce2a3b6f57a48ad5646fc9151c09db6e8.jpeg"
+          }
+        ],
+        "sitenavigationelement": [
+          {
+            "name": "Home",
+            "url": "Home"
+          },
+          {
+            "name": "Categories",
+            "url": "Categories"
+          },
+          {
+            "name": "Guidelines",
+            "url": "Guidelines"
+          },
+          {
+            "name": "Terms of Service",
+            "url": "Terms of Service"
+          },
+          {
+            "name": "Privacy Policy",
+            "url": "Privacy Policy"
+          }
+        ],
+        "listitem": [
+          {
+            "position": "1",
+            "url": "Lost Interest..?"
+          },
+          {
+            "position": "2",
+            "url": "Loss of motivation"
+          },
+          {
+            "position": "3",
+            "url": "No motivation"
+          },
+          {
+            "position": "4",
+            "url": "Help restore my faith"
+          },
+          {
+            "position": "5",
+            "url": "Lost motivation"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Think Like a Bird: An Army Pilot's Story: Amazon.co.uk: Kimbell, Alex ...",
+      "htmlTitle": "\u003cb\u003eThink Like a Bird\u003c/b\u003e: An Army \u003cb\u003ePilot&#39;s\u003c/b\u003e Story: Amazon.co.uk: Kimbell, Alex ...",
+      "link": "https://www.amazon.co.uk/Think-Like-Bird-Pilots-Story/dp/1904744052",
+      "displayLink": "www.amazon.co.uk",
+      "snippet": "... flying career. From the first budding of the idea to become a pilot to that of being nominated as one who could be trusted to fly army VIP's. He takes us ...",
+      "htmlSnippet": "... \u003cb\u003eflying\u003c/b\u003e career. From the first budding of the idea to become a \u003cb\u003epilot\u003c/b\u003e to that of being nominated \u003cb\u003eas\u003c/b\u003e one who could \u003cb\u003ebe\u003c/b\u003e trusted to \u003cb\u003efly\u003c/b\u003e army VIP&#39;s. He takes us&nbsp;...",
+      "formattedUrl": "https://www.amazon.co.uk/Think-Like-Bird-Pilots-Story/dp/1904744052",
+      "htmlFormattedUrl": "https://www.amazon.co.uk/\u003cb\u003eThink\u003c/b\u003e-\u003cb\u003eLike\u003c/b\u003e-\u003cb\u003eBird\u003c/b\u003e-\u003cb\u003ePilot\u003c/b\u003es-Story/dp/1904744052",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqoLFQeGa8t1akBD8LC7p2Ig_EUEZ8uS_WuwTCPADTzh7A9qeh2qqqJiN&s",
+            "width": "181",
+            "height": "279"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://m.media-amazon.com/images/I/41a5+ufYUvL._BO30,255,255,255_UF900,850_SR1910,1000,0,C_ZA47,500,900,420,420,AmazonEmber,50,4,0,0_PIRIOFOURANDHALF-medium,BottomLeft,30,-20_QL100_.jpg",
+            "theme-color": "#131921",
+            "og:type": "book",
+            "og:image:width": "1910",
+            "viewport": "width=device-width, maximum-scale=2, minimum-scale=1, initial-scale=1, shrink-to-fit=no",
+            "og:sitename": "Amazon.co.uk",
+            "og:title": "Think Like a Bird: An Army Pilot's Story",
+            "og:image:height": "1000",
+            "title": "Think Like a Bird: An Army Pilot's Story: Amazon.co.uk: Kimbell, Alex: 9781904744054: Books",
+            "og:url": "https://www.amazon.co.uk/dp/1904744052",
+            "og:description": "Think Like a Bird: An Army Pilot's Story",
+            "encrypted-slate-token": "AnYxduIQu+XG30wqcIh47SL6CbqVe777LiqjrwJSzftfRxV/AYtvBPosEXefBXozmNJ/iQ6ikptAPi4cZt9u1FVcrLNMyFlLoEZ3XQbiFZLRYDKoDDc19Wr1FdRhjj0DaawHtplL7cyF2xQBJlhbkW/QOmSM+H2T3TonXkGkpOA9/gtC5m0in3/yKR86eQPh1831P5TJd0HBNHCAQkuf9kEhMeOjIZPa9jr9AfHR681LxdK1m196zX8hdcNZnL2zvKBD4gZ6/HP7rKqMPwitWbw0lOmYXcS2DtKe+7kwaKBGYw=="
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://m.media-amazon.com/images/I/41a5+ufYUvL._AC_UF894,1000_QL80_.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Taking Wing: To Fly like an Eagle - FLYING Magazine",
+      "htmlTitle": "Taking Wing: To \u003cb\u003eFly like\u003c/b\u003e an Eagle - \u003cb\u003eFLYING\u003c/b\u003e Magazine",
+      "link": "https://www.flyingmag.com/taking-wing-fly-like-an-eagle/",
+      "displayLink": "www.flyingmag.com",
+      "snippet": "Nov 8, 2021 ... I mean bird dreams, minus the molting and the worm diet—just pure, joyful, unadulterated flight, wheeling over the earth with absolute freedom, ...",
+      "htmlSnippet": "Nov 8, 2021 \u003cb\u003e...\u003c/b\u003e I mean \u003cb\u003ebird\u003c/b\u003e dreams, minus the molting and the worm diet—just pure, joyful, unadulterated flight, wheeling over the earth with absolute freedom,&nbsp;...",
+      "formattedUrl": "https://www.flyingmag.com/taking-wing-fly-like-an-eagle/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003efly\u003c/b\u003eingmag.com/taking-wing-\u003cb\u003efly\u003c/b\u003e-\u003cb\u003elike\u003c/b\u003e-an-eagle/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyk5Wrdk4hXgKpy66OJjJSVWErqoeK7RD6HXSgPSiJ22cNCsRVMlfC1MtR&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.flyingmag.com/uploads/2021/08/FLY0320_TAK_002-1.jpg?auto=webp&width=2000&height=1333",
+            "theme-color": "#e22922",
+            "article:published_time": "2020-04-16T16:00:13-04:00",
+            "og:image:width": "2000",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Taking Wing: To Fly like an Eagle",
+            "og:site_name": "FLYING Magazine",
+            "author": "Sam Weigel",
+            "og:title": "Taking Wing: To Fly like an Eagle",
+            "og:image:height": "1333",
+            "twitter:label1": "Written by",
+            "twitter:label2": "Est. reading time",
+            "twitter:image": "https://www.flyingmag.com/uploads/2021/08/FLY0320_TAK_002-1.jpg?auto=webp",
+            "twitter:data1": "Sam Weigel",
+            "“facebook-domain-verification”": "“ijmj3skc4kz1zjn4dhzeby6apdh5lj”",
+            "twitter:data2": "8 minutes",
+            "next-head-count": "37",
+            "twitter:site": "https://twitter.com/FlyingMagazine/",
+            "article:modified_time": "2021-11-08T14:54:54-05:00",
+            "viewport": "initial-scale=1, width=device-width",
+            "og:locale": "en_US",
+            "og:url": "https://www.flyingmag.com/taking-wing-fly-like-an-eagle/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.flyingmag.com/uploads/2021/08/FLY0320_TAK_002-1.jpg?auto=webp&width=2000&height=1333"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How to get the sensation of flying like a bird - Quora",
+      "htmlTitle": "How to get the sensation of \u003cb\u003eflying like a bird\u003c/b\u003e - Quora",
+      "link": "https://www.quora.com/How-can-I-get-the-sensation-of-flying-like-a-bird",
+      "displayLink": "www.quora.com",
+      "snippet": "Apr 10, 2021 ... Birds who find ways to avoid flapping, like soaring on thermals, must be very careful about where they soar so as to stay in the right air currents.",
+      "htmlSnippet": "Apr 10, 2021 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eBirds\u003c/b\u003e who find ways to avoid flapping, \u003cb\u003elike\u003c/b\u003e soaring on thermals, must \u003cb\u003ebe\u003c/b\u003e very careful about where they soar so \u003cb\u003eas\u003c/b\u003e to stay in the right air currents.",
+      "formattedUrl": "https://www.quora.com/How-can-I-get-the-sensation-of-flying-like-a-bird",
+      "htmlFormattedUrl": "https://www.quora.com/How-can-I-get-the-sensation-of-\u003cb\u003efly\u003c/b\u003eing-\u003cb\u003elike-a-bird\u003c/b\u003e",
+      "pagemap": {
+        "metatags": [
+          {
+            "al:android:url": "intent://www.quora.com/How-can-I-get-the-sensation-of-flying-like-a-bird#Intent;scheme=qhttp;package=com.quora.android;S.market_referrer=launch_url=https%3A%2F%2Fwww.quora.com%2FHow-can-I-get-the-sensation-of-flying-like-a-bird&logging_data=uid%3DNone;end",
+            "theme-color": "#b92b27",
+            "viewport": "initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimum-scale=1, viewport-fit=cover",
+            "al:android:package": "com.quora.android",
+            "fb:pages": "255232486973",
+            "twitter:widgets:theme": "light"
+          }
+        ],
+        "QAPage": [
+          {}
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly Like a Bird – Wonderful West Virginia Magazine",
+      "htmlTitle": "\u003cb\u003eFly Like a Bird\u003c/b\u003e – Wonderful West Virginia Magazine",
+      "link": "https://wonderfulwv.com/fly-like-a-bird/",
+      "displayLink": "wonderfulwv.com",
+      "snippet": "A hang gliding pilot flies using a rigid, framed metal structure that ... What's it feel like when you're standing on a ridge about to launch? “It's ...",
+      "htmlSnippet": "A hang gliding \u003cb\u003epilot flies\u003c/b\u003e using a rigid, framed metal structure that ... What&#39;s it \u003cb\u003efeel like\u003c/b\u003e when you&#39;re standing on a ridge about to launch? “It&#39;s&nbsp;...",
+      "formattedUrl": "https://wonderfulwv.com/fly-like-a-bird/",
+      "htmlFormattedUrl": "https://wonderfulwv.com/\u003cb\u003efly\u003c/b\u003e-\u003cb\u003elike-a-bird\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zzLwtT8VgTi3ZN4ItDvh1xoUpuMgdbDTDhTQFQDq49nLZFChq44ItgJC&s",
+            "width": "267",
+            "height": "189"
+          }
+        ],
+        "metatags": [
+          {
+            "numberofitems": "3",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "itemlistorder": "Ascending",
+            "msapplication-tileimage": "https://wonderfulwv.com/wp-content/uploads/2021/02/cropped-7138ARTHH2L-1-270x270.png",
+            "facebook-domain-verification": "i5e2pqmhyydtf7b0qiv7j2kryww7ms"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://wonderfulwv.com/wp-content/uploads/2022/09/High-Point-10-8-20-1-scaled.jpg"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Home",
+            "name": "Home",
+            "position": "1"
+          },
+          {
+            "item": "Adventure",
+            "name": "Adventure",
+            "position": "2"
+          },
+          {
+            "item": "Fly Like a Bird",
+            "name": "Fly Like a Bird",
+            "position": "3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Rudder Coordination Exercise - PilotWorkshops",
+      "htmlTitle": "Rudder Coordination Exercise - \u003cb\u003ePilotWorkshops\u003c/b\u003e",
+      "link": "https://pilotworkshop.com/tips/rudder-coordination-skills-01-22/",
+      "displayLink": "pilotworkshop.com",
+      "snippet": "Perfect coordinated turns along my flight path I feel like a bird flying for the happiness of flying. ... How much depends on the airplane, as Pilot Workshops ...",
+      "htmlSnippet": "Perfect coordinated turns along my flight path I \u003cb\u003efeel like a bird flying\u003c/b\u003e for the happiness of \u003cb\u003eflying\u003c/b\u003e. ... How much depends on the airplane, \u003cb\u003eas Pilot\u003c/b\u003e Workshops&nbsp;...",
+      "formattedUrl": "https://pilotworkshop.com/tips/rudder-coordination-skills-01-22/",
+      "htmlFormattedUrl": "https://\u003cb\u003epilot\u003c/b\u003eworkshop.com/tips/rudder-coordination-skills-01-22/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnD-i9IHl12TCl7cWSL-kFTXvsI_6KKyz4ULgdFBWLyjrdUW1SPACVImJ&s",
+            "width": "273",
+            "height": "184"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://pilotworkshop.com/wp-content/uploads/2018/09/rudder6-1.jpg",
+            "og:type": "article",
+            "og:image:width": "510",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "PilotWorkshops",
+            "og:title": "Rudder Coordination Exercise - PilotWorkshops",
+            "og:image:height": "344",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "og:description": "Rod: “One of my favorite methods of developing rudder and aileron coordination skills is known as a coordination roll. What I’m talking about here is a maneuver where you point the airplane’s nose at some outside reference and roll right and left with a moderate bank, while keeping the rudder and aileron coordinated. How do […]",
+            "article:publisher": "https://www.facebook.com/PilotWorkshops/",
+            "twitter:data1": "2 minutes",
+            "twitter:site": "@PilotWorkshops",
+            "article:modified_time": "2022-02-09T13:10:11+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://pilotworkshop.com/tips/rudder-coordination-skills-01-22/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://pilotworkshop.com/wp-content/uploads/2018/09/rudder6-1.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

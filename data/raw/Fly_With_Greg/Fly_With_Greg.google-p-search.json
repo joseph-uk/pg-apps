@@ -1,0 +1,543 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Fly With Greg",
+        "totalResults": "23800000",
+        "searchTerms": "Fly With Greg",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Fly With Greg",
+        "totalResults": "23800000",
+        "searchTerms": "Fly With Greg",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.178636,
+    "formattedSearchTime": "0.18",
+    "totalResults": "23800000",
+    "formattedTotalResults": "23,800,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Fly With Greg",
+      "htmlTitle": "\u003cb\u003eFly With Greg\u003c/b\u003e",
+      "link": "https://flywithgreg.com/",
+      "displayLink": "flywithgreg.com",
+      "snippet": "I'm a certified Chief Instructor with over 30 years of experience, teaching, flying and competing at the highest level.",
+      "htmlSnippet": "I&#39;m a certified Chief Instructor with over 30 years of experience, teaching, \u003cb\u003eflying\u003c/b\u003e and competing at the highest level.",
+      "formattedUrl": "https://flywithgreg.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003eflywithgreg\u003c/b\u003e.com/",
+      "pagemap": {
+        "metatags": [
+          {
+            "twitter:title": "Online Paragliding Course",
+            "viewport": "width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description": "Follow the most complete online paragliding course with Greg Hamerton, a qualified Chief Instructor and paragliding coach with over 30 years experience.",
+            "og:title": "Online Paragliding Course",
+            "csrf-token": "H0amrSWo3eVMvPc5_5FYwmb-dSBod-faIYb7eFDZqLoYYJZiIsoVSdSg2q-plmtDreP4vYdOLRi88LOniYALAA",
+            "csrf-param": "authenticity_token",
+            "og:description": "Follow the most complete online paragliding course with Greg Hamerton, a qualified Chief Instructor and paragliding coach with over 30 years experience."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly With Greg - YouTube",
+      "htmlTitle": "\u003cb\u003eFly With Greg\u003c/b\u003e - YouTube",
+      "link": "https://www.youtube.com/c/FlyWithGreg",
+      "displayLink": "www.youtube.com",
+      "snippet": "Paragliding Safety · Paragliding safety begins with understanding the principles. Join Greg for a progressive learning series about paragliding accidents and ...",
+      "htmlSnippet": "Paragliding Safety &middot; Paragliding safety begins with understanding the principles. Join \u003cb\u003eGreg\u003c/b\u003e for a progressive learning series about paragliding accidents and&nbsp;...",
+      "formattedUrl": "https://www.youtube.com/c/FlyWithGreg",
+      "htmlFormattedUrl": "https://www.youtube.com/c/\u003cb\u003eFlyWithGreg\u003c/b\u003e",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Fly With Greg",
+            "url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fiBNh6bzhQDZJGpM9SxPPcQZzkAxJ5rDAVTpZvGpxyM5q7qJA1DQYYIs&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "Fly With Greg",
+            "url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=544007664, app-argument=https://m.youtube.com/c/FlyWithGreg?referring_app=com.apple.mobilesafari-smartbanner, affiliate-data=ct=smart_app_banner_polymer&pt=9008",
+            "og:image": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "theme-color": "rgba(255, 255, 255, 0.9)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/c/FlyWithGreg",
+            "al:android:package": "com.google.android.youtube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A",
+            "og:description": "Join me in the sky to learn flight skills, have fun and share in my paragliding adventures. Let's explore the world of freeflight together!",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "twitter:title": "Fly With Greg",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Fly With Greg",
+            "og:image:height": "900",
+            "al:web:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A?feature=applinks",
+            "og:video:tag": "paragliding",
+            "al:android:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A?feature=applinks",
+            "fb:app_id": "87741124305",
+            "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,",
+            "twitter:description": "Join me in the sky to learn flight skills, have fun and share in my paragliding adventures. Let's explore the world of freeflight together!",
+            "og:url": "https://www.youtube.com/c/FlyWithGreg",
+            "al:android:app_name": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Paragliding Instruction Online | Fly With Greg",
+      "htmlTitle": "Paragliding Instruction Online | \u003cb\u003eFly With Greg\u003c/b\u003e",
+      "link": "https://flywithgreg.com/catalog",
+      "displayLink": "flywithgreg.com",
+      "snippet": "Learn to PARAGLIDE ... the best way! How to fly a PARAGLIDER (in 5 minutes) How To Feel The WIND In the HILLS Understanding AERODYNAMICS How AIRSPEED works",
+      "htmlSnippet": "Learn to PARAGLIDE ... the best way! How to \u003cb\u003efly\u003c/b\u003e a PARAGLIDER (in 5 minutes) How To Feel The WIND In the HILLS Understanding AERODYNAMICS How AIRSPEED works",
+      "formattedUrl": "https://flywithgreg.com/catalog",
+      "htmlFormattedUrl": "https://\u003cb\u003eflywithgreg\u003c/b\u003e.com/catalog",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWBZ83u8bjAbgjvMboIjerV-54cMHYAfXsZg0lvNj9hl6UpMkrcTY1Ycv&s",
+            "width": "298",
+            "height": "169"
+          }
+        ],
+        "metatags": [
+          {
+            "twitter:card": "summary",
+            "twitter:title": "Paragliding Instruction Online | Fly With Greg",
+            "og:type": "website",
+            "og:image:width": "740",
+            "og:site_name": "Fly With Greg",
+            "og:image:url": "https://alpha.uscreencdn.com/1110xnull/11513/uploads/13221c9d-8398-4f26-9d78-6fa0fb741b7e.png?auto=webp",
+            "og:title": "Paragliding Instruction Online",
+            "og:image:height": "420",
+            "og:description": "Get advanced paragliding instruction online from Greg Hamerton. Watch detailed tutorials on all aspects of flight safety and flying skills.",
+            "twitter:image": "https://alpha.uscreencdn.com/198xnull/11513/uploads/13221c9d-8398-4f26-9d78-6fa0fb741b7e.png?auto=webp",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            "twitter:description": "Get advanced paragliding instruction online from Greg Hamerton. Watch detailed tutorials on all aspects of flight safety and flying skills.",
+            "og:url": "https://flywithgreg.com/catalog"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://alpha.uscreencdn.com/images/programs/2737626/horizontal/big_8cad71ab-8397-4ed1-b0ca-a2453e06f62d.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly With Greg - YouTube",
+      "htmlTitle": "\u003cb\u003eFly With Greg\u003c/b\u003e - YouTube",
+      "link": "https://www.youtube.com/c/FlyWithGreg?app=desktop",
+      "displayLink": "www.youtube.com",
+      "snippet": "Join me to learn together and cross mountains as we reach for a dream: on this channel, we can fly! Take your learning to the next level on https://flywithgreg.",
+      "htmlSnippet": "Join me to learn together and cross mountains as we reach for a dream: on this channel, we can \u003cb\u003efly\u003c/b\u003e! Take your learning to the next level on https://flywithgreg.",
+      "formattedUrl": "https://www.youtube.com/c/FlyWithGreg?app=desktop",
+      "htmlFormattedUrl": "https://www.youtube.com/c/\u003cb\u003eFlyWithGreg\u003c/b\u003e?app=desktop",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Fly With Greg",
+            "url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4fiBNh6bzhQDZJGpM9SxPPcQZzkAxJ5rDAVTpZvGpxyM5q7qJA1DQYYIs&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "imageobject": [
+          {
+            "width": "900",
+            "url": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "height": "900"
+          }
+        ],
+        "person": [
+          {
+            "name": "Fly With Greg",
+            "url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "theme-color": "rgba(255, 255, 255, 0.98)",
+            "og:image:width": "900",
+            "twitter:card": "summary",
+            "og:site_name": "YouTube",
+            "twitter:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A",
+            "al:android:package": "com.google.android.youtube",
+            "al:ios:url": "vnd.youtube://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A",
+            "twitter:app:id:iphone": "544007664",
+            "og:description": "Join me in the sky to learn flight skills, have fun and share in my paragliding adventures. Let's explore the world of freeflight together!",
+            "al:ios:app_store_id": "544007664",
+            "twitter:image": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj",
+            "twitter:site": "@youtube",
+            "og:type": "profile",
+            "twitter:title": "Fly With Greg",
+            "al:ios:app_name": "YouTube",
+            "og:title": "Fly With Greg",
+            "og:image:height": "900",
+            "twitter:app:id:ipad": "544007664",
+            "al:web:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A?feature=applinks",
+            "og:video:tag": "paragliding",
+            "al:android:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A?feature=applinks",
+            "fb:app_id": "87741124305",
+            "twitter:app:name:ipad": "YouTube",
+            "twitter:description": "Join me in the sky to learn flight skills, have fun and share in my paragliding adventures. Let's explore the world of freeflight together!",
+            "og:url": "https://www.youtube.com/channel/UCqcTRjUGEiAumD-K9_Nw05A",
+            "al:android:app_name": "YouTube",
+            "twitter:app:name:iphone": "YouTube"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://yt3.googleusercontent.com/ytc/AIdro_kwN7ZzesD8u5PhqL67MFZ0MIyo7M59auN3oWB1jT1QMA=s900-c-k-c0x00ffffff-no-rj"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Greg Fly (@gregfly1989) • Instagram photos and videos",
+      "htmlTitle": "\u003cb\u003eGreg Fly\u003c/b\u003e (@gregfly1989) • Instagram photos and videos",
+      "link": "https://www.instagram.com/gregfly1989/",
+      "displayLink": "www.instagram.com",
+      "snippet": "Second generation tattooer. A lifetime of experience ~9 Meroke Ln. East Islip NY~ To book a appointment you can use the Squareup link below ⬇️ · Photo by Greg ...",
+      "htmlSnippet": "Second generation tattooer. A lifetime of experience ~9 Meroke Ln. East Islip NY~ To book a appointment you can use the Squareup link below ⬇️ &middot; Photo by \u003cb\u003eGreg\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.instagram.com/gregfly1989/",
+      "htmlFormattedUrl": "https://www.instagram.com/\u003cb\u003egregfly\u003c/b\u003e1989/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRocIaAlGtBdMs5ctZFbxOhI4kFmGDAXC1fMK73QakJ_zr8U08Wcy1efeIF&s",
+            "width": "168",
+            "height": "300"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/457378524_1037818517866675_3868626682190946035_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=110&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=MziKHa0WNFIQ7kNvgGRoTpu&_nc_oc=Adn8hX-Gvb3mAOPGUo80XlWnmfURuFlYm73BNC3r0kLDXravSPcZaJU5hBAq3HrrWHc&_nc_zt=24&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYGcGDcg-aaFL1sGFGaZ9ANZ1a6EDKi-O65jtuRmZnj_Ig&oe=67E786F8",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Greg Fly (@gregfly1989) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=gregfly1989",
+            "color-scheme": "light",
+            "og:description": "5,624 Followers, 2,943 Following, 702 Posts - See Instagram photos and videos from Greg Fly (@gregfly1989)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/gregfly1989/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/gregfly1989/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3460213687371829470"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "SS (Short Shank) Salmon Fly - by Greg Weisgerber – Flyfishing and ...",
+      "htmlTitle": "SS (Short Shank) Salmon \u003cb\u003eFly\u003c/b\u003e - by \u003cb\u003eGreg\u003c/b\u003e Weisgerber – Flyfishing and ...",
+      "link": "https://ftjangler.com/blogs/fly-tying/ss-short-shank-salmon-fly-by-greg-weisgerber",
+      "displayLink": "ftjangler.com",
+      "snippet": "Nov 10, 2023 ... Most patterns use long-shank hooks which can add up in terms of weight/ float-ability and provide increased leverage for fish when fighting larger ones.",
+      "htmlSnippet": "Nov 10, 2023 \u003cb\u003e...\u003c/b\u003e Most patterns use long-shank hooks which can add up in terms of weight/ float-ability and provide increased leverage for fish when fighting larger ones.",
+      "formattedUrl": "https://ftjangler.com/.../fly.../ss-short-shank-salmon-fly-by-greg-weisgerber",
+      "htmlFormattedUrl": "https://ftjangler.com/.../\u003cb\u003efly\u003c/b\u003e.../ss-short-shank-salmon-\u003cb\u003efly\u003c/b\u003e-by-\u003cb\u003egreg\u003c/b\u003e-weisgerber",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMPrhBIZmopVEscYp4iyEIX2EHjkPVMoE-cxjCK_kOETQlO70peBesBZ7o&s",
+            "width": "222",
+            "height": "227"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "http://ftjangler.com/cdn/shop/articles/Photo_Nov_12_10_13_20_AM_1200x1200.jpg?v=1648587757",
+            "theme-color": "#557b97",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "SS (Short Shank) Salmon Fly - by Greg Weisgerber",
+            "og:site_name": "Flyfishing and Tying Journal",
+            "og:title": "SS (Short Shank) Salmon Fly - by Greg Weisgerber",
+            "shopify-checkout-api-token": "ee59ef27f8f7dfc19714daad982c3294",
+            "og:description": "As a Fly designer, I strive to create new flies or improve on existing patterns to solve a problem, not just to make something new for the sake of it. In that pursuit, I’m always on the lookout for new materials to incorporate into flies. Even those that are not made for fly tying. This is certainly not something unique to me, I am confident every fly tier does the same. This is why we have such an amazing array of materials we did not have even 10 years ago. \nOver the past few seasons while fishing the beloved Salmon Fly Hatch on the Deschutes I wondered if I could improve upon the standard foam patterns that I have found so successful for many years. I thought about the potential issues I have with the current patterns. Such as, not being able to see them in dying light and the silhouette they cast to awaiting Trout. At 46 years old I am realizing I can’t see as well as I used to. This fact upped the ante for me in terms of why and how I needed to design my version of foam salmon flies. \n\nWith the pri",
+            "og:image:secure_url": "https://ftjangler.com/cdn/shop/articles/Photo_Nov_12_10_13_20_AM_1200x1200.jpg?v=1648587757",
+            "viewport": "width=device-width,initial-scale=1",
+            "twitter:description": "As a Fly designer, I strive to create new flies or improve on existing patterns to solve a problem, not just to make something new for the sake of it. In that pursuit, I’m always on the lookout for new materials to incorporate into flies. Even those that are not made for fly tying. This is certainly not something unique to me, I am confident every fly tier does the same. This is why we have such an amazing array of materials we did not have even 10 years ago. \nOver the past few seasons while fishing the beloved Salmon Fly Hatch on the Deschutes I wondered if I could improve upon the standard foam patterns that I have found so successful for many years. I thought about the potential issues I have with the current patterns. Such as, not being able to see them in dying light and the silhouette they cast to awaiting Trout. At 46 years old I am realizing I can’t see as well as I used to. This fact upped the ante for me in terms of why and how I needed to design my version of foam salmon flies. \n\nWith the pri",
+            "shopify-digital-wallet": "/3044212771/digital_wallets/dialog",
+            "og:url": "https://ftjangler.com/blogs/fly-tying/ss-short-shank-salmon-fly-by-greg-weisgerber"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://ftjangler.com/cdn/shop/articles/Photo_Nov_12_10_13_20_AM_1200x1200.jpg?v=1648587757"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Fly with Greg",
+      "htmlTitle": "Profile for \u003cb\u003eFly with Greg\u003c/b\u003e",
+      "link": "https://www.facebook.com/flywithgreg/",
+      "displayLink": "www.facebook.com",
+      "snippet": "The most inspiring paragliding moments! - https: //mailchi.mp/flywithgreg/the-most-inspiring- paragliding-moments Photos make me feel connected with my flying ...",
+      "htmlSnippet": "The most inspiring paragliding moments! - https: //mailchi.mp/flywithgreg/the-most-inspiring- paragliding-moments Photos make me feel connected with my \u003cb\u003eflying\u003c/b\u003e&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/flywithgreg/",
+      "htmlFormattedUrl": "https://www.facebook.com/\u003cb\u003eflywithgreg\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5jd3BGWuLuRLk_gfkbwByqgZH1HxO-jQwEw1X_7feLQGFTSSVAhD0toM&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100063681336351",
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063681336351",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100063681336351",
+            "og:description": "Fly with Greg. 2,965 likes · 60 talking about this. Join me on my paragliding adventures  and the search for freedom",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063681336351",
+            "twitter:image:alt": "Fly with Greg",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Fly with Greg",
+            "twitter:title": "Fly with Greg",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Fly with Greg",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100063681336351",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Fly with Greg. 2,965 likes · 60 talking about this. Join me on my paragliding adventures  and the search for freedom",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/flywithgreg/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100063681336351"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Greg Fleischaker | family chef, glassblower and Bernedoodle owner",
+      "htmlTitle": "\u003cb\u003eGreg\u003c/b\u003e Fleischaker | family chef, glassblower and Bernedoodle owner",
+      "link": "https://gregfly.com/",
+      "displayLink": "gregfly.com",
+      "snippet": "Handmade Glass For Sale!! Home · About · My Diet · Blog · Recipes · Glassblowing · Contact Greg · Privacy Policy | Terms Of Use | FAQ | Greg Fly | Manhattan - ...",
+      "htmlSnippet": "Handmade Glass For Sale!! Home &middot; About &middot; My Diet &middot; Blog &middot; Recipes &middot; Glassblowing &middot; Contact \u003cb\u003eGreg\u003c/b\u003e &middot; Privacy Policy | Terms Of Use | FAQ | \u003cb\u003eGreg Fly\u003c/b\u003e | Manhattan -&nbsp;...",
+      "formattedUrl": "https://gregfly.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003egregfly\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXvcB5i2-Az_Rb8G_s85NoI22r2kjLK39Ba1JdPmKR8UKENlxGN66VIA&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "p:domain_verify": "667b26faa2db433833212a19ddfec0be",
+            "og:image": "https://gregfly.com/wp-content/uploads/2019/04/greg-fly-background.jpg",
+            "og:type": "website",
+            "og:image:width": "1024",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Greg Fly",
+            "msvalidate.01": "0124118B6D828E2E5977D6607D9F26CB",
+            "og:title": "Greg Fly",
+            "og:image:height": "512",
+            "og:image:type": "image/jpeg",
+            "og:description": "Greg Fleischaker does all the grocery shopping and cooking for his family, is a glassblowing artist, enjoys training his Bernedoodle and aims to improve his lifestyle every day...",
+            "twitter:site": "@gregfleischaker",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://gregfly.com/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://gregfly.com/wp-content/uploads/2019/04/greg-fly-background.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly as Hell: An Interview with Greg Tate | Los Angeles Review of Books",
+      "htmlTitle": "\u003cb\u003eFly\u003c/b\u003e as Hell: An Interview with \u003cb\u003eGreg\u003c/b\u003e Tate | Los Angeles Review of Books",
+      "link": "https://lareviewofbooks.org/article/fly-as-hell-an-interview-with-greg-tate",
+      "displayLink": "lareviewofbooks.org",
+      "snippet": "Mar 1, 2018 ... Our day-long conversation about his books, his band, and his collaborations took place on October 14, 2016, Tate's birthday.",
+      "htmlSnippet": "Mar 1, 2018 \u003cb\u003e...\u003c/b\u003e Our day-long conversation about his books, his band, and his collaborations took place on October 14, 2016, Tate&#39;s birthday.",
+      "formattedUrl": "https://lareviewofbooks.org/article/fly-as-hell-an-interview-with-greg-tate",
+      "htmlFormattedUrl": "https://lareviewofbooks.org/article/\u003cb\u003efly\u003c/b\u003e-as-hell-an-interview-with-\u003cb\u003egreg\u003c/b\u003e-tate",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqJsxD2pK7zPxcpExGbVDaqE2VXoWYX1wEIK7laL_Z0AK7MJAV2LrGTk&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#FFFFFF",
+            "og:image": "https://cdn.lareviewofbooks.org/unsafe/1100x0/filters:format(jpeg):quality(75)/https%3A%2F%2Fassets.lareviewofbooks.org%2Fuploads%2F201803MirakhorTate.png",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Fly as Hell: An Interview with Greg Tate | Los Angeles Review of Books",
+            "article:published_time": "2018-03-01T18:00:43.000Z",
+            "og:image:alt": "Fly as Hell: An Interview with Greg Tate",
+            "og:image:width": "1100",
+            "og:type": "article",
+            "og:site_name": "Los Angeles Review of Books",
+            "og:title": "Fly as Hell: An Interview with Greg Tate | Los Angeles Review of Books",
+            "og:image:height": "618",
+            "twitter:creator": "@LAReviewofBooks",
+            "og:description": "Leah Mirakhor interviews author, musician, and cultural critic Greg Tate.",
+            "twitter:image:src": "https://cdn.lareviewofbooks.org/unsafe/1100x0/filters:format(jpeg):quality(75)/https%3A%2F%2Fassets.lareviewofbooks.org%2Fuploads%2F201803MirakhorTate.png",
+            "next-head-count": "21",
+            "twitter:site": "@LAReviewofBooks",
+            "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+            "twitter:description": "Leah Mirakhor interviews author, musician, and cultural critic Greg Tate.",
+            "og:url": "https://lareviewofbooks.org/article/fly-as-hell-an-interview-with-greg-tate"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.lareviewofbooks.org/unsafe/1100x0/filters:format(jpeg):quality(75)/https%3A%2F%2Fassets.lareviewofbooks.org%2Fuploads%2F201803MirakhorTate.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fly boy, fly – farewell to Greg Tate — I make sense",
+      "htmlTitle": "\u003cb\u003eFly\u003c/b\u003e boy, \u003cb\u003efly\u003c/b\u003e – farewell to \u003cb\u003eGreg\u003c/b\u003e Tate — I make sense",
+      "link": "https://www.imakesense.org/blog/fly-boy-fly-farewell-greg-tate",
+      "displayLink": "www.imakesense.org",
+      "snippet": "Dec 10, 2021 ... Greg's essays on contemporary America, where he raged curiously through the prisms of race, politics, literature and music.",
+      "htmlSnippet": "Dec 10, 2021 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eGreg&#39;s\u003c/b\u003e essays on contemporary America, where he raged curiously through the prisms of race, politics, literature and music.",
+      "formattedUrl": "https://www.imakesense.org/blog/fly-boy-fly-farewell-greg-tate",
+      "htmlFormattedUrl": "https://www.imakesense.org/blog/\u003cb\u003efly\u003c/b\u003e-boy-\u003cb\u003efly\u003c/b\u003e-farewell-\u003cb\u003egreg\u003c/b\u003e-tate",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0qGC5-uyXrITxjINipJafNWjWIqbxyUCDWeioHLNXRhh4vJVsyKZZHn8z&s",
+            "width": "202",
+            "height": "202"
+          }
+        ],
+        "metatags": [
+          {
+            "p:domain_verify": "d0b93a440f72ffa71d9d4b8e0bc0044c",
+            "og:image": "http://static1.squarespace.com/static/505875d2c4aa5fcea75608a9/505875d2c4aa5fcea75608c4/61b24bd30c17a15eff57591d/1639162043123/Greg-Tate.jpeg?format=1500w",
+            "og:type": "article",
+            "og:image:width": "202",
+            "twitter:title": "Fly boy, fly – farewell to Greg Tate — I make sense",
+            "twitter:card": "summary",
+            "og:site_name": "I make sense",
+            "twitter:url": "https://www.imakesense.org/blog/fly-boy-fly-farewell-greg-tate",
+            "og:title": "Fly boy, fly – farewell to Greg Tate — I make sense",
+            "og:image:height": "202",
+            "og:latitude": "50.8538829",
+            "og:description": "Greg Tate would place the transformative potential of the now in the context of lineage and cosmology – with a scholar's stature, a griot's oratory and a fan's fervour. Often all in one line. And he had swagger to his vernacular. Writers like this should be reverred as much as the art they critique.",
+            "twitter:image": "http://static1.squarespace.com/static/505875d2c4aa5fcea75608a9/505875d2c4aa5fcea75608c4/61b24bd30c17a15eff57591d/1639162043123/Greg-Tate.jpeg?format=1500w",
+            "og:longitude": "-0.16539639999996325",
+            "viewport": "width=device-width",
+            "twitter:description": "Greg Tate would place the transformative potential of the now in the context of lineage and cosmology – with a scholar's stature, a griot's oratory and a fan's fervour. Often all in one line. And he had swagger to his vernacular. Writers like this should be reverred as much as the art they critique.",
+            "og:url": "https://www.imakesense.org/blog/fly-boy-fly-farewell-greg-tate"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "http://static1.squarespace.com/static/505875d2c4aa5fcea75608a9/505875d2c4aa5fcea75608c4/61b24bd30c17a15eff57591d/1639162043123/Greg-Tate.jpeg?format=1500w"
+          }
+        ]
+      }
+    }
+  ]
+}

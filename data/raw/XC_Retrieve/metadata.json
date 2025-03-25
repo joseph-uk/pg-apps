@@ -1,0 +1,9 @@
+{
+  "name": "XC Retrieve",
+  "url": "https://xcrt.aero",
+  "platform": "website",
+  "type": "location viewing",
+  "short_description": "This is the website to view locations. Specifically this ties into the Telegram retrieve groups system. Primarily uses livetrack24 but can also use inreach/spot satellite trackers",
+  "timestamp": "2025-03-25T21:56:59Z",
+  "website_fetched": true
+}

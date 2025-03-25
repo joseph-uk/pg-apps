@@ -1,0 +1,465 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Ogoy",
+        "totalResults": "185000",
+        "searchTerms": "Ogoy",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Ogoy",
+        "totalResults": "185000",
+        "searchTerms": "Ogoy",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.347478,
+    "formattedSearchTime": "0.35",
+    "totalResults": "185000",
+    "formattedTotalResults": "185,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Ogoy Island - Wikipedia",
+      "htmlTitle": "\u003cb\u003eOgoy\u003c/b\u003e Island - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Ogoy_Island",
+      "displayLink": "en.wikipedia.org",
+      "snippet": "The largest island in the Maloe More strait of Lake Baikal. It has an elongated shape, 2.9 km (1.8 mi) in length and 0.6 km (0.37 mi) in width.",
+      "htmlSnippet": "The largest island in the Maloe More strait of Lake Baikal. It has an elongated shape, 2.9 km (1.8 mi) in length and 0.6 km (0.37 mi) in width.",
+      "formattedUrl": "https://en.wikipedia.org/wiki/Ogoy_Island",
+      "htmlFormattedUrl": "https://en.wikipedia.org/wiki/\u003cb\u003eOgoy\u003c/b\u003e_Island",
+      "pagemap": {
+        "hcard": [
+          {
+            "fn": "Ogoy остров Огой"
+          }
+        ],
+        "metatags": [
+          {
+            "referrer": "origin",
+            "og:image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ogoy_island_in_winter.jpg/1200px-Ogoy_island_in_winter.jpg",
+            "theme-color": "#eaecf0",
+            "og:image:width": "1200",
+            "og:type": "website",
+            "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": "Ogoy Island - Wikipedia",
+            "og:image:height": "801",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Justin Ogoy, OD",
+      "htmlTitle": "Justin \u003cb\u003eOgoy\u003c/b\u003e, OD",
+      "link": "https://www.2020riverside.com/team/juston-ogoy/",
+      "displayLink": "www.2020riverside.com",
+      "snippet": "Justin Ogoy, OD ... Justin Ogoy, OD, received his Bachelor of Science degree from University of California, Los Angeles (UCLA) and his Doctor of Optometry degree ...",
+      "htmlSnippet": "Justin \u003cb\u003eOgoy\u003c/b\u003e, OD ... Justin \u003cb\u003eOgoy\u003c/b\u003e, OD, received his Bachelor of Science degree from University of California, Los Angeles (UCLA) and his Doctor of Optometry degree&nbsp;...",
+      "formattedUrl": "https://www.2020riverside.com/team/juston-ogoy/",
+      "htmlFormattedUrl": "https://www.2020riverside.com/team/juston-\u003cb\u003eogoy\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorpMl30U0pYsZ9heYeYx3OwqOz5kS3qkzpTJTUinmRIRgRFa5hKnF2N8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/4190/2023/01/juston_GSP_UID_9859ddd0-6dcc-4283-b60c-654eeec25464.jpeg",
+            "og:type": "website",
+            "twitter:card": "summary",
+            "twitter:title": "Justin Ogoy, OD",
+            "og:site_name": "20/20 Vision Associates Optometry",
+            "viewport": "width=device-width, initial-scale=1",
+            "author": "doctorsvisioncare",
+            "og:title": "Justin Ogoy, OD",
+            "og:url": "https://www.2020riverside.com/team/juston-ogoy/",
+            "twitter:image": "https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/4190/2023/01/juston_GSP_UID_9859ddd0-6dcc-4283-b60c-654eeec25464.jpeg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://da4e1j5r7gw87.cloudfront.net/wp-content/uploads/sites/4190/2023/01/juston_GSP_UID_9859ddd0-6dcc-4283-b60c-654eeec25464.jpeg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ogoy - Visualize your flight",
+      "htmlTitle": "\u003cb\u003eOgoy\u003c/b\u003e - Visualize your flight",
+      "link": "https://ogoy.app/",
+      "displayLink": "ogoy.app",
+      "snippet": "Replay your paragliding tracklog in 3D. Relive your experience. A stunning 3D View. Analyze your flight. Compare the flights of your group. Better Orientation ...",
+      "htmlSnippet": "Replay your paragliding tracklog in 3D. Relive your experience. A stunning 3D View. Analyze your flight. Compare the flights of your group. Better Orientation&nbsp;...",
+      "formattedUrl": "https://ogoy.app/",
+      "htmlFormattedUrl": "https://\u003cb\u003eogoy\u003c/b\u003e.app/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSyd1WVweK7VwaV6e1HR_yJXXnpvFIbkotkjPlVWaKcGwfTVMgj38ud8&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://ogoy.app/ogoy_light_on_background_square.png",
+            "og:image:width": "250",
+            "og:type": "website",
+            "viewport": "width=device-width",
+            "og:title": "Ogoy - Visualize your flight",
+            "og:image:height": "170",
+            "title": "Home",
+            "og:description": "Replay your paragliding tracklog in 3D. Relive your experience, analyze your flight and share it with others.\r\n\r\nWatch your flight in a stunning 3D view, with 2D miniMap or as SplitScreen View."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://ogoy.app/ogoy_light_on_background_square.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "January-Jill Ogoy, PA-C | Critical Care Medicine | Tacoma, WA ...",
+      "htmlTitle": "January-Jill \u003cb\u003eOgoy\u003c/b\u003e, PA-C | Critical Care Medicine | Tacoma, WA ...",
+      "link": "https://www.vmfh.org/find-a-doctor/critical-care-medicine/january-jill-ogoy-1699061812",
+      "displayLink": "www.vmfh.org",
+      "snippet": "2420 S. State Street, Tacoma, WA 98405 (253) 426-4000 Fax: (253) 428-8440 View all providers at this location Get Directions Specialties Critical Care Medicine",
+      "htmlSnippet": "2420 S. State Street, Tacoma, WA 98405 (253) 426-4000 Fax: (253) 428-8440 View all providers at this location Get Directions Specialties Critical Care Medicine",
+      "formattedUrl": "https://www.vmfh.org/find-a-doctor/.../january-jill-ogoy-1699061812",
+      "htmlFormattedUrl": "https://www.vmfh.org/find-a-doctor/.../january-jill-\u003cb\u003eogoy\u003c/b\u003e-1699061812",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH2vg8Rt0TOLdjUew3DpYYUUBU0GQoeQxm1LEe6t2CppKw2heh5HFctxEg&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "template": "vmfh-empty-page",
+            "og:image": "https://api.clearsensecloud.com/provider-api/v1/tenants/chi/images/provider/91d6393d-ed60-446c-aa0f-70ff55a7b17e",
+            "twitter:title": "Find a Doctor | VMFH",
+            "og:type": "WEBSITE",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "VMFH",
+            "twitter:site": "VMFH",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:title": "January-Jill Ogoy, PA-C | Critical Care Medicine | Tacoma, WA 98405 | VMFH",
+            "og:url": "https://www.vmfh.org/find-a-doctor/critical-care-medicine/january-jill-ogoy-1699061812",
+            "locale": "en",
+            "twitter:image": "https://api.clearsensecloud.com/provider-api/v1/tenants/chi/images/provider/91d6393d-ed60-446c-aa0f-70ff55a7b17e"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://api.clearsensecloud.com/provider-api/v1/tenants/chi/images/provider/91d6393d-ed60-446c-aa0f-70ff55a7b17e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Fralyn Ogoy's Baby Registry at Babylist",
+      "htmlTitle": "Fralyn \u003cb\u003eOgoy&#39;s\u003c/b\u003e Baby Registry at Babylist",
+      "link": "https://my.babylist.com/fralyn-ogoy",
+      "displayLink": "my.babylist.com",
+      "snippet": "Fralyn & Glenn's Baby Registry. Fralyn Ogoy ... Fralyn Ogoy ... Fralyn Ogoy. Moreno Valley, CA ... December 4, 2024 ... My heart is full. Thank you all my ...",
+      "htmlSnippet": "Fralyn &amp; Glenn&#39;s Baby Registry. Fralyn \u003cb\u003eOgoy\u003c/b\u003e ... Fralyn \u003cb\u003eOgoy\u003c/b\u003e ... Fralyn \u003cb\u003eOgoy\u003c/b\u003e. Moreno Valley, CA ... December 4, 2024 ... My heart is full. Thank you all my&nbsp;...",
+      "formattedUrl": "https://my.babylist.com/fralyn-ogoy",
+      "htmlFormattedUrl": "https://my.babylist.com/fralyn-\u003cb\u003eogoy\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAdau6yTAz9sHDQHIH9g5ztaP77rXbrzcs9W59EkFujo7o5sWDLK7rhjg&s",
+            "width": "243",
+            "height": "207"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "Babylist",
+            "og:image": "https://images.babylist.com/image/upload/v1738260627/registry-opengraph-images/registry-default.png",
+            "theme-color": "#ffffff",
+            "og:image:width": "680",
+            "og:site_name": "Babylist",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5",
+            "apple-mobile-web-app-title": "Babylist",
+            "og:title": "Fralyn & Glenn’s  Baby Registry",
+            "og:image:height": "580"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images.babylist.com/image/upload/v1738260627/registry-opengraph-images/registry-default.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Profile for Beth Mercadal-Elmido Ogoy",
+      "htmlTitle": "Profile for Beth Mercadal-Elmido \u003cb\u003eOgoy\u003c/b\u003e",
+      "link": "https://www.facebook.com/beth.m.ogoy/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Beth Mercadal-Elmido Ogoy · Online Seller/ Owner at Mommy Beth One Stop Shop · Lives in Virginia Beach, Virginia · Joined October 2009 · Followed by 1,075 ...",
+      "htmlSnippet": "Beth Mercadal-Elmido \u003cb\u003eOgoy\u003c/b\u003e &middot; Online Seller/ Owner at Mommy Beth One Stop Shop &middot; Lives in Virginia Beach, Virginia &middot; Joined October 2009 &middot; Followed by 1,075&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/beth.m.ogoy/",
+      "htmlFormattedUrl": "https://www.facebook.com/beth.m.\u003cb\u003eogoy\u003c/b\u003e/",
+      "pagemap": {
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=284882215, app-argument=fb://profile/100000443772049",
+            "og:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/484187950_9999659893392037_3627252464748213715_n.jpg?cstp=mx1284x1284&ctp=s720x720&_nc_cat=110&ccb=1-7&_nc_sid=3ab345&_nc_ohc=QVyBW7mPuSEQ7kNvgHplqM9&_nc_oc=AdkWCZWbhXApYV5ycroygXJtpWoGoWnQ-DgABWRH5_DdoPJ1xghA0fGXUb1LoTxDQLE&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=I6PGDoX6SiU_YdfGB0oieA&oh=00_AYHRwu4z7IWd_aFh8XIeDZKJhXS5BC8AzZ4thb94ei3LoA&oe=67E64F7B",
+            "twitter:card": "summary",
+            "theme-color": "#FFFFFF",
+            "al:android:package": "com.facebook.katana",
+            "al:ios:url": "fb://profile/100000443772049",
+            "og:description": "Beth Mercadal-Elmido Ogoy is on Facebook. Join Facebook to connect with Beth Mercadal-Elmido Ogoy and others you may know. Facebook gives people the power to share and makes the world more open and...",
+            "al:ios:app_store_id": "284882215",
+            "twitter:image": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/484187950_9999659893392037_3627252464748213715_n.jpg?cstp=mx1284x1284&ctp=s720x720&_nc_cat=110&ccb=1-7&_nc_sid=3ab345&_nc_ohc=QVyBW7mPuSEQ7kNvgHplqM9&_nc_oc=AdkWCZWbhXApYV5ycroygXJtpWoGoWnQ-DgABWRH5_DdoPJ1xghA0fGXUb1LoTxDQLE&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=I6PGDoX6SiU_YdfGB0oieA&oh=00_AYHRwu4z7IWd_aFh8XIeDZKJhXS5BC8AzZ4thb94ei3LoA&oe=67E64F7B",
+            "twitter:image:alt": "Beth Mercadal-Elmido Ogoy",
+            "twitter:site": "@facebookapp",
+            "og:type": "video.other",
+            "og:image:alt": "Beth Mercadal-Elmido Ogoy",
+            "twitter:title": "Beth Mercadal-Elmido Ogoy",
+            "al:ios:app_name": "Facebook",
+            "og:title": "Beth Mercadal-Elmido Ogoy",
+            "google": "notranslate",
+            "al:android:url": "fb://profile/100000443772049",
+            "referrer": "origin-when-crossorigin",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "Beth Mercadal-Elmido Ogoy is on Facebook. Join Facebook to connect with Beth Mercadal-Elmido Ogoy and others you may know. Facebook gives people the power to share and makes the world more open and...",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/beth.m.ogoy/",
+            "al:android:app_name": "Facebook"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-1/484187950_9999659893392037_3627252464748213715_n.jpg?cstp=mx1284x1284&ctp=s720x720&_nc_cat=110&ccb=1-7&_nc_sid=3ab345&_nc_ohc=QVyBW7mPuSEQ7kNvgHplqM9&_nc_oc=AdkWCZWbhXApYV5ycroygXJtpWoGoWnQ-DgABWRH5_DdoPJ1xghA0fGXUb1LoTxDQLE&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&_nc_gid=I6PGDoX6SiU_YdfGB0oieA&oh=00_AYHRwu4z7IWd_aFh8XIeDZKJhXS5BC8AzZ4thb94ei3LoA&oe=67E64F7B"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Service, trips make freedom ring for NCO | Article | The United States ...",
+      "htmlTitle": "Service, trips make freedom ring for NCO | Article | The United States ...",
+      "link": "https://www.army.mil/article/24188/service_trips_make_freedom_ring_for_nco",
+      "displayLink": "www.army.mil",
+      "snippet": "Jul 10, 2009 ... Staff Sgt. Raymundo Ogoy, CECOM LCMC Non-Commissioned Officer of the Year, said that visiting New York City during his time here and seeing ...",
+      "htmlSnippet": "Jul 10, 2009 \u003cb\u003e...\u003c/b\u003e Staff Sgt. Raymundo \u003cb\u003eOgoy\u003c/b\u003e, CECOM LCMC Non-Commissioned Officer of the Year, said that visiting New York City during his time here and seeing&nbsp;...",
+      "formattedUrl": "https://www.army.mil/article/.../service_trips_make_freedom_ring_for_nco",
+      "htmlFormattedUrl": "https://www.army.mil/article/.../service_trips_make_freedom_ring_for_nco",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQTl2sxgiKhQcoEkYyj3UnUyTD6tbe4GkOeddDV58yzTqXhhgqWMpFLV3O&s",
+            "width": "183",
+            "height": "275"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=342689843",
+            "og:image": "https://api.army.mil/e2/c/-images/2009/07/10/44475/max1200-army.mil-44475-2009-07-10-110732.jpg",
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Service, trips make freedom ring for NCO",
+            "article:published_time": "2009-07-10T11:46:43-05:00",
+            "og:site_name": "www.army.mil",
+            "og:title": "Service, trips make freedom ring for NCO",
+            "og:description": "Staff Sgt. Raymundo Ogoy, CECOM LCMC Non-Commissioned Officer of the Year, said that visiting New York City during his time here and seeing the Statue of Liberty and Ground Zero made it very clear to him what freedoms he is defending.",
+            "twitter:image": "https://api.army.mil/e2/c/-images/2009/07/10/44475/max1200-army.mil-44475-2009-07-10-110732.jpg",
+            "twitter:site": "@USArmy",
+            "article:modified_time": "2011-07-22T16:16:51-05:00",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "og:headline": "Service, trips make freedom ring for NCO",
+            "twitter:description": "Staff Sgt. Raymundo Ogoy, CECOM LCMC Non-Commissioned Officer of the Year, said that visiting New York City during his time here and seeing the Statue of Liberty and Ground Zero made it very clear to him what freedoms he is defending.",
+            "og:url": "https://www.army.mil/article/24188/service_trips_make_freedom_ring_for_nco"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://api.army.mil/e2/c/-images/2009/07/10/44475/max1200-army.mil-44475-2009-07-10-110732.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "I love our Airmen, and literally laughed out loud when I ran into ...",
+      "htmlTitle": "I love our Airmen, and literally laughed out loud when I ran into ...",
+      "link": "https://www.facebook.com/CMSAFOfficial/posts/i-love-our-airmen-and-literally-laughed-out-loud-when-i-ran-into-ahjay-ogoy-yest/733179998169923/",
+      "displayLink": "www.facebook.com",
+      "snippet": "Feb 25, 2023 ... I love our Airmen, and literally laughed out loud when I ran into Ahjay Ogoy yesterday. He's currently in USAFA Prep School…however, ...",
+      "htmlSnippet": "Feb 25, 2023 \u003cb\u003e...\u003c/b\u003e I love our Airmen, and literally laughed out loud when I ran into Ahjay \u003cb\u003eOgoy\u003c/b\u003e yesterday. He&#39;s currently in USAFA Prep School…however,&nbsp;...",
+      "formattedUrl": "https://www.facebook.com/.../posts/i...ogoy.../733179998169923/",
+      "htmlFormattedUrl": "https://www.facebook.com/.../posts/i...\u003cb\u003eogoy\u003c/b\u003e.../733179998169923/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6othC21dMog2D8B_qPugw5Mzf7DRuNsb2Yok0_MJliogg3f_UV-M_Jua3&s",
+            "width": "194",
+            "height": "259"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=733166608171262",
+            "og:type": "video.other",
+            "og:image:alt": "Chief Master Sergeant of the Air Force",
+            "twitter:card": "summary",
+            "twitter:title": "Chief Master Sergeant of the Air Force",
+            "theme-color": "#FFFFFF",
+            "og:title": "Chief Master Sergeant of the Air Force",
+            "google": "notranslate",
+            "og:description": "I love our Airmen, and literally laughed out loud when I ran into Ahjay Ogoy yesterday. \n\nHe’s currently in USAFA Prep School…however, a year ago, he was stationed at Edwards AFB as a Senior Airman,...",
+            "twitter:image": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=733166608171262",
+            "referrer": "origin-when-crossorigin",
+            "twitter:image:alt": "Chief Master Sergeant of the Air Force",
+            "twitter:site": "@facebookapp",
+            "viewport": "width=device-width, initial-scale=1",
+            "twitter:description": "I love our Airmen, and literally laughed out loud when I ran into Ahjay Ogoy yesterday. \n\nHe’s currently in USAFA Prep School…however, a year ago, he was stationed at Edwards AFB as a Senior Airman,...",
+            "og:locale": "en_US",
+            "fb-version": "452.0.0.0.65:2766",
+            "og:url": "https://www.facebook.com/CMSAFOfficial/posts/i-love-our-airmen-and-literally-laughed-out-loud-when-i-ran-into-ahjay-ogoy-yest/733179998169923/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=733166608171262"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Ogoy 3 - Dúlra Photography",
+      "htmlTitle": "\u003cb\u003eOgoy\u003c/b\u003e 3 - Dúlra Photography",
+      "link": "https://dulraphotography.com/product/ogoy-3/",
+      "displayLink": "dulraphotography.com",
+      "snippet": "Ogoy 3. €125.00 – €3,800.00. Choose size and finish of print below. Delivery charges are detailed below and are added to the total price shown once the print ...",
+      "htmlSnippet": "\u003cb\u003eOgoy\u003c/b\u003e 3. €125.00 – €3,800.00. Choose size and finish of print below. Delivery charges are detailed below and are added to the total price shown once the print&nbsp;...",
+      "formattedUrl": "https://dulraphotography.com/product/ogoy-3/",
+      "htmlFormattedUrl": "https://dulraphotography.com/product/\u003cb\u003eogoy\u003c/b\u003e-3/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNX7HkoAhOonIUoXlhAfunDj2p5O_ujjmB_DqSUybiKhvj1bVqbSI883C0&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://dulraphotography.com/wp-content/uploads/2018/12/Ogoy-3.jpg",
+            "og:type": "article",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Dúlra Photography",
+            "og:title": "Ogoy 3 - Dúlra Photography",
+            "og:image:height": "800",
+            "twitter:label1": "Est. reading time",
+            "og:image:type": "image/jpeg",
+            "msapplication-tileimage": "https://dulraphotography.com/wp-content/uploads/2018/12/cropped-FAVICON-e1543714162303-270x270.jpg",
+            "og:description": "Dulra Photography - Fine art landscape photography. Online store. Limited Edition prints online. Commercial architecture photographer.",
+            "twitter:data1": "4 minutes",
+            "article:modified_time": "2020-07-03T18:44:31+00:00",
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
+            "og:locale": "en_US",
+            "og:url": "https://dulraphotography.com/product/ogoy-3/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://dulraphotography.com/wp-content/uploads/2018/12/Ogoy-3.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Joel Ogoy Ortega (@joelogoyortega) • Instagram photos and videos",
+      "htmlTitle": "Joel \u003cb\u003eOgoy\u003c/b\u003e Ortega (@joelogoyortega) • Instagram photos and videos",
+      "link": "https://www.instagram.com/joelogoyortega/",
+      "displayLink": "www.instagram.com",
+      "snippet": "1882 Followers, 687 Following, 284 Posts - Joel Ogoy Ortega (@joelogoyortega) on Instagram: \"28 | | 🏳️\u200d \"",
+      "htmlSnippet": "1882 Followers, 687 Following, 284 Posts - Joel \u003cb\u003eOgoy\u003c/b\u003e Ortega (@joelogoyortega) on Instagram: &quot;28 | | 🏳️\u200d  &quot;",
+      "formattedUrl": "https://www.instagram.com/joelogoyortega/",
+      "htmlFormattedUrl": "https://www.instagram.com/joel\u003cb\u003eogoy\u003c/b\u003eortega/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPkWeuhdW8UqF4rbyRdDPhN8ioZzkOFT4e6F3cW8RhdJgBMagFI4nWPMHs&s",
+            "width": "201",
+            "height": "251"
+          }
+        ],
+        "xfn": [
+          {}
+        ],
+        "metatags": [
+          {
+            "og:image": "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/458461644_547654007609481_3181895014008075663_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=106&ccb=1-7&_nc_sid=bf7eb4&_nc_ohc=7zgGFkjZgTMQ7kNvgEi84yO&_nc_oc=Adlffkos8nXLeLrTO7dr0SzT75jUktBy5hhoePQPVIn-wNYhsVwb_bun5o8ZGSzPOrw&_nc_zt=24&_nc_ht=scontent-atl3-1.cdninstagram.com&oh=00_AYEH1AxuTJfE0HcI5ImwgHq5LVSSt46p95L-grWKmTSRYQ&oe=67E7FFF0",
+            "theme-color": "#FFFFFF",
+            "og:type": "profile",
+            "al:ios:app_name": "Instagram",
+            "og:title": "Joel Ogoy Ortega (@joelogoyortega) • Instagram photos and videos",
+            "al:android:package": "com.instagram.android",
+            "bingbot": "noarchive",
+            "al:ios:url": "instagram://user?username=joelogoyortega",
+            "color-scheme": "light",
+            "og:description": "1,882 Followers, 687 Following, 284 Posts - See Instagram photos and videos from Joel Ogoy Ortega (@joelogoyortega)",
+            "al:ios:app_store_id": "389801252",
+            "al:android:url": "https://instagram.com/_u/joelogoyortega/",
+            "apple-mobile-web-app-status-bar-style": "default",
+            "viewport": "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://www.instagram.com/joelogoyortega/",
+            "al:android:app_name": "Instagram"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3479550336871020754"
+          }
+        ]
+      }
+    }
+  ]
+}

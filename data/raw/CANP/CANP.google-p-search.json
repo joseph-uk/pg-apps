@@ -1,0 +1,425 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - CANP",
+        "totalResults": "902000",
+        "searchTerms": "CANP",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - CANP",
+        "totalResults": "902000",
+        "searchTerms": "CANP",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.475302,
+    "formattedSearchTime": "0.48",
+    "totalResults": "902000",
+    "formattedTotalResults": "902,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "CANP \u003e Home",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e &gt; Home",
+      "link": "https://canpweb.org/",
+      "displayLink": "canpweb.org",
+      "snippet": "The California Association for Nurse Practitioners (CANP) provides a forum and unifying voice for more than 30,000 nurse practitioners statewide, often joining ...",
+      "htmlSnippet": "The \u003cb\u003eCalifornia Association for Nurse Practitioners\u003c/b\u003e (\u003cb\u003eCANP\u003c/b\u003e) provides a forum and unifying voice for more than 30,000 nurse practitioners statewide, often joining&nbsp;...",
+      "formattedUrl": "https://canpweb.org/",
+      "htmlFormattedUrl": "https://\u003cb\u003ecanp\u003c/b\u003eweb.org/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Familiarization with Contact Aspiration using Non-Penetrating of the ...",
+      "htmlTitle": "Familiarization with Contact Aspiration using Non-Penetrating of the ...",
+      "link": "https://pubmed.ncbi.nlm.nih.gov/34488006/",
+      "displayLink": "pubmed.ncbi.nlm.nih.gov",
+      "snippet": "Sep 3, 2021 ... CANP technique was safe with low risk of hemorrhagic complication and effective for the initial procedure of acute ischemic stroke.",
+      "htmlSnippet": "Sep 3, 2021 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eCANP\u003c/b\u003e technique was safe with low risk of hemorrhagic complication and effective for the initial procedure of acute ischemic stroke.",
+      "formattedUrl": "https://pubmed.ncbi.nlm.nih.gov/34488006/",
+      "htmlFormattedUrl": "https://pubmed.ncbi.nlm.nih.gov/34488006/",
+      "pagemap": {
+        "metatags": [
+          {
+            "og:image": "https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg",
+            "citation_publication_date": "2021/11",
+            "theme-color": "#20558a",
+            "twitter:card": "summary_large_image",
+            "citation_title": "Familiarization with Contact Aspiration using Non-Penetrating of the Thrombus (CANP) Technique as the Initial Procedure for Acute Ischemic Stroke",
+            "citation_author_institution": "Department of Neurosurgery, Saitama Cardiovascular and Respiratory Center, 1696 Itai, Kumagaya, Saitama, Japan, 360-0197. Electronic address: neki04@hama-med.ac.jp.",
+            "og:site_name": "PubMed",
+            "twitter:url": "https://pubmed.ncbi.nlm.nih.gov/34488006/",
+            "citation_publisher": "J Stroke Cerebrovasc Dis",
+            "citation_journal_title": "Journal of stroke and cerebrovascular diseases : the official journal of National Stroke Association",
+            "ncbi_pdid": "abstract",
+            "ncbi_phid": "1EF400019203EA75000035937301A1F0.1.m_2",
+            "og:description": "CANP technique was safe with low risk of hemorrhagic complication and effective for the initial procedure of acute ischemic stroke.",
+            "ncbi_cost_center": "pubmed",
+            "og:image:secure_url": "https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg",
+            "twitter:image": "https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg",
+            "uid": "34488006",
+            "ncbi_db": "pubmed",
+            "ncbi_pinger_stat_url": "https://www.ncbi.nlm.nih.gov/stat",
+            "log_category": "literature",
+            "ncbi_pinger_gtm_track": "true",
+            "og:type": "website",
+            "twitter:title": "Familiarization with Contact Aspiration using Non-Penetrating of the Thrombus (CANP) Technique as the Initial Procedure for Acute Ischemic Stroke - PubMed",
+            "handheldfriendly": "True",
+            "twitter:domain": "pubmed.ncbi.nlm.nih.gov",
+            "citation_journal_abbrev": "J Stroke Cerebrovasc Dis",
+            "ncbi_app": "pubmed",
+            "log_icons_present": "true",
+            "og:title": "Familiarization with Contact Aspiration using Non-Penetrating of the Thrombus (CANP) Technique as the Initial Procedure for Acute Ischemic Stroke - PubMed",
+            "citation_author": "Hiroaki Neki",
+            "log_op": "retrieve",
+            "citation_issue": "11",
+            "referrer": "origin-when-cross-origin",
+            "log_source_db": "pubmed",
+            "citation_firstpage": "106066",
+            "log_displayeduids": "34488006",
+            "ncbi_uid": "34488006",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "CANP technique was safe with low risk of hemorrhagic complication and effective for the initial procedure of acute ischemic stroke.",
+            "mobileoptimized": "320",
+            "citation_volume": "30",
+            "og:url": "https://pubmed.ncbi.nlm.nih.gov/34488006/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP \u003e Log In",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e &gt; Log In",
+      "link": "https://canpweb.org/Log-In",
+      "displayLink": "canpweb.org",
+      "snippet": "Members Log in below with your account information. EMAIL Password Log in checkbox Remember Login Forgot Password? Not a Member?",
+      "htmlSnippet": "Members Log in below with your account information. EMAIL Password Log in checkbox Remember Login Forgot Password? Not a Member?",
+      "formattedUrl": "https://canpweb.org/Log-In",
+      "htmlFormattedUrl": "https://\u003cb\u003ecanp\u003c/b\u003eweb.org/Log-In",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Log In",
+            "name": "Log In",
+            "position": "1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP Graduates - CT Nursery & Landscape Association",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e Graduates - CT Nursery &amp; Landscape Association",
+      "link": "https://www.cnla.biz/canp-graduates/",
+      "displayLink": "www.cnla.biz",
+      "snippet": "Started in 1981, this continuing education program is considered one of the most valuable benefits of membership.",
+      "htmlSnippet": "Started in 1981, this continuing education program is considered one of the most valuable benefits of membership.",
+      "formattedUrl": "https://www.cnla.biz/canp-graduates/",
+      "htmlFormattedUrl": "https://www.cnla.biz/\u003cb\u003ecanp\u003c/b\u003e-graduates/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnOp2y2SJl5irEDFfNFOd0HnX2iBkf9BptnvA8R5qUSFV4tuOP38mVsGZt&s",
+            "width": "268",
+            "height": "188"
+          }
+        ],
+        "Event": [
+          {
+            "endDate": "2026-01-22T17:00:00-05:00",
+            "eventStatus": "http://schema.org/EventScheduled",
+            "name": "2026 CNLA Winter Symposium",
+            "description": "\u003cp\u003eThe CNLA Winter Symposium is scheduled for",
+            "eventAttendanceMode": "http://schema.org/OfflineEventAttendanceMode",
+            "url": "https://www.cnla.biz/event/2026-cnla-winter-symposium/",
+            "startDate": "2026-01-21T08:00:00-05:00"
+          }
+        ],
+        "metatags": [
+          {
+            "og:type": "article",
+            "twitter:card": "summary_large_image",
+            "theme-color": "#ffffff",
+            "og:site_name": "CT Nursery & Landscape Association",
+            "tec-api-origin": "https://www.cnla.biz",
+            "og:title": "CANP Graduates - CT Nursery & Landscape Association",
+            "twitter:label1": "Est. reading time",
+            "og:description": "The following persons have successfully completed CNLA’s Connecticut Accredited Nursery Professional education program. Started in 1981, this continuing education program is considered one of the most valuable benefits of membership.",
+            "twitter:data1": "11 minutes",
+            "article:modified_time": "2022-12-01T19:55:06+00:00",
+            "viewport": "width=device-width, initial-scale=1",
+            "og:locale": "en_US",
+            "og:url": "https://www.cnla.biz/canp-graduates/",
+            "tec-api-version": "v1"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.cnla.biz/wp-content/themes/cnla-web/images/logo.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP \u003e Events \u003e Annual Educational Conference",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e &gt; Events &gt; Annual Educational Conference",
+      "link": "https://canpweb.org/Events/Annual-Educational-Conference",
+      "displayLink": "canpweb.org",
+      "snippet": "More than 600 NPs and health care professionals will convene to learn, exchange ideas, and explore the latest products and services in our field. From Wednesday ...",
+      "htmlSnippet": "More than 600 NPs and health care professionals will convene to learn, exchange ideas, and explore the latest products and services in our field. From Wednesday&nbsp;...",
+      "formattedUrl": "https://canpweb.org/Events/Annual-Educational-Conference",
+      "htmlFormattedUrl": "https://\u003cb\u003ecanp\u003c/b\u003eweb.org/Events/Annual-Educational-Conference",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Y5jhbPutPpOvwwMC55wTLXRFr9VRovxUdnSBtS2hg6ZBFpQwA2Sxr2M&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://canpweb.org/portals/0/Conferences/47_AC/CANP%20AC%2025%20Web%20Banner%20(updated).png?ver=cZKSG6ObIog0OBFq8Sn0xA%3D%3D"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Events",
+            "name": "Events",
+            "position": "1"
+          },
+          {
+            "item": "Annual Educational Conference",
+            "name": "Annual Educational Conference",
+            "position": "2"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Northern District of California: United States Probation Office",
+      "htmlTitle": "Northern District of California: United States Probation Office",
+      "link": "https://www.canp.uscourts.gov/",
+      "displayLink": "www.canp.uscourts.gov",
+      "snippet": "Main menu · Phillip Burton United States Courthouse 450 Golden Gate Avenue, Suite 17-6884. San Francisco, CA 94102-3434. Phone · Ronald V. Dellums Federal ...",
+      "htmlSnippet": "Main menu &middot; Phillip Burton United States Courthouse 450 Golden Gate Avenue, Suite 17-6884. San Francisco, CA 94102-3434. Phone &middot; Ronald V. Dellums Federal&nbsp;...",
+      "formattedUrl": "https://www.canp.uscourts.gov/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003ecanp\u003c/b\u003e.uscourts.gov/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFUlc2CGPuG0c3vIPY4Qq_EOvHyTlqNtrFyohACLCcSvOUvS5paXZ9TWo&s",
+            "width": "340",
+            "height": "148"
+          }
+        ],
+        "metatags": [
+          {
+            "handheldfriendly": "true",
+            "viewport": "width=device-width",
+            "mobileoptimized": "width"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.canp.uscourts.gov/sites/canp/files/styles/gallery_slider_full/public/Santa%20Rosa%20Bldg_0.png?itok=lSfnfycn"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP \u003e Events",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e &gt; Events",
+      "link": "https://canpweb.org/Events",
+      "displayLink": "canpweb.org",
+      "snippet": "Connect with colleagues, strengthen your practice, promote your profession, and impact legislation by participating in CANP-hosted events throughout the year.",
+      "htmlSnippet": "Connect with colleagues, strengthen your practice, promote your profession, and impact legislation by participating in \u003cb\u003eCANP\u003c/b\u003e-hosted events throughout the year.",
+      "formattedUrl": "https://canpweb.org/Events",
+      "htmlFormattedUrl": "https://\u003cb\u003ecanp\u003c/b\u003eweb.org/Events",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjRB82JSXy9RsknbKB0gy9sku_Wss_fCGBgvD7DcdkX9q84Mx6uzTe_Hl&s",
+            "width": "318",
+            "height": "159"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://canpweb.org/Portals/0/Images/9F068CF9-172C-4877-88F3F66A5788AFC8_landing.jpg"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Events",
+            "name": "Events",
+            "position": "1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP SMU Alumni Mixer 2025 | Samuel Merritt University",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e SMU Alumni Mixer 2025 | Samuel Merritt University",
+      "link": "https://www.samuelmerritt.edu/events/canp-smu-alumni-mixer-2025",
+      "displayLink": "www.samuelmerritt.edu",
+      "snippet": "CANP SMU Alumni Mixer. Gather with your fellow alums for complimentary hors d'oeuvres and a drink at the Westin Rancho Mirage Golf Resort & Spa.",
+      "htmlSnippet": "\u003cb\u003eCANP\u003c/b\u003e SMU Alumni Mixer. Gather with your fellow alums for complimentary hors d&#39;oeuvres and a drink at the Westin Rancho Mirage Golf Resort &amp; Spa.",
+      "formattedUrl": "https://www.samuelmerritt.edu/events/canp-smu-alumni-mixer-2025",
+      "htmlFormattedUrl": "https://www.samuelmerritt.edu/events/\u003cb\u003ecanp\u003c/b\u003e-smu-alumni-mixer-2025",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilz70n0JQNWfKV-0dYwkaIb-eYfxEnrD4rSxqE8r7aSYecUWk-ByPvJs&s",
+            "width": "311",
+            "height": "162"
+          }
+        ],
+        "metatags": [
+          {
+            "msapplication-tilecolor": "#111111",
+            "theme-color": "#ffffff",
+            "handheldfriendly": "true",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "mobileoptimized": "width"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.samuelmerritt.edu/sites/default/files/styles/width_860/public/2025-02/canp_ac_25_web_banner_updated.png.webp?itok=W-oN2YI8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "CANP \u003e Membership",
+      "htmlTitle": "\u003cb\u003eCANP\u003c/b\u003e &gt; Membership",
+      "link": "https://canpweb.org/Membership",
+      "displayLink": "canpweb.org",
+      "snippet": "Join the California Association for Nurse Practitioners (CANP), you become part of a proud, united community of advanced practice nursing professionals.",
+      "htmlSnippet": "Join the \u003cb\u003eCalifornia Association for Nurse Practitioners\u003c/b\u003e (\u003cb\u003eCANP\u003c/b\u003e), you become part of a proud, united community of advanced practice nursing professionals.",
+      "formattedUrl": "https://canpweb.org/Membership",
+      "htmlFormattedUrl": "https://\u003cb\u003ecanp\u003c/b\u003eweb.org/Membership",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcl3SxztRoAuS7-iWhYQyvDKXTuiUWOFdasWCw9KiY33f1kA-5xgCAI40&s",
+            "width": "275",
+            "height": "183"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://canpweb.org/Portals/0/images/Benefits.jpg"
+          }
+        ],
+        "listitem": [
+          {
+            "item": "Membership",
+            "name": "Membership",
+            "position": "1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Margaret Cariola, C.A.N.P. - Long Island Digestive Disease ...",
+      "htmlTitle": "Margaret Cariola, \u003cb\u003eC.A.N.P.\u003c/b\u003e - Long Island Digestive Disease ...",
+      "link": "http://longislanddigestive.com/margaret-cariola-canp.php",
+      "displayLink": "longislanddigestive.com",
+      "snippet": "Prior to Long Island Digestive Disease Consultants, Margaret worked at Winthrop University Hospital in Mineola for 19 years as a Critical Care Nurse in the ...",
+      "htmlSnippet": "Prior to Long Island Digestive Disease Consultants, Margaret worked at Winthrop University Hospital in Mineola for 19 years as a Critical Care Nurse in the&nbsp;...",
+      "formattedUrl": "http://longislanddigestive.com/margaret-cariola-canp.php",
+      "htmlFormattedUrl": "http://longislanddigestive.com/margaret-cariola-\u003cb\u003ecanp\u003c/b\u003e.php",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJhcHWQobpk1UPMhKi9SG-FV9D1q_LDRn7rugqVPWjmgZIiS4k4qEOHI&s",
+            "width": "141",
+            "height": "164"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1, maximum-scale=1",
+            "author": "Medical Management Associates, Inc."
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://longislanddigestive.com/client_files/image/margaret-cariola-canp.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - NOTAM Info",
+        "totalResults": "1140000",
+        "searchTerms": "NOTAM Info",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - NOTAM Info",
+        "totalResults": "1140000",
+        "searchTerms": "NOTAM Info",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.170878,
+    "formattedSearchTime": "0.17",
+    "totalResults": "1140000",
+    "formattedTotalResults": "1,140,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "Flight Planning Map - Spain and Portugal | NOTAM Info",
+      "htmlTitle": "Flight Planning Map - Spain and Portugal | \u003cb\u003eNOTAM Info\u003c/b\u003e",
+      "link": "https://notaminfo.com/spainmap",
+      "displayLink": "notaminfo.com",
+      "snippet": "Up to date NOTAMS plotted on a map, or delivered via RSS feeds and Email. Flight Planning Map - Spain and Portugal.",
+      "htmlSnippet": "Up to date \u003cb\u003eNOTAMS\u003c/b\u003e plotted on a map, or delivered via RSS feeds and Email. Flight Planning Map - Spain and Portugal.",
+      "formattedUrl": "https://notaminfo.com/spainmap",
+      "htmlFormattedUrl": "https://\u003cb\u003enotaminfo\u003c/b\u003e.com/spainmap",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYeMf0Ijo1EOTZEivqNWyqrfaGQmtTCJ106J11W_DwDQaRHA6kkVEoy8Q&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "initial-scale=1.0, user-scalable=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://notaminfo.com/maps/streets/6/32/23.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Defense Internet NOTAM Service",
+      "htmlTitle": "Defense Internet \u003cb\u003eNOTAM\u003c/b\u003e Service",
+      "link": "https://www.notams.faa.gov/",
+      "displayLink": "www.notams.faa.gov",
+      "snippet": "... info. Users are advised to use the ARTCC TFR link to locate Presidential TFR's UFN. NOTAM Retrieval. New! Graphical NOTAM now available for NOTAM Retrieval ...",
+      "htmlSnippet": "... \u003cb\u003einfo\u003c/b\u003e. Users are advised to use the ARTCC TFR link to locate Presidential TFR&#39;s UFN. \u003cb\u003eNOTAM\u003c/b\u003e Retrieval. New! Graphical \u003cb\u003eNOTAM\u003c/b\u003e now available for \u003cb\u003eNOTAM\u003c/b\u003e Retrieval&nbsp;...",
+      "formattedUrl": "https://www.notams.faa.gov/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003enotam\u003c/b\u003es.faa.gov/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-I_WfxgQfVhpw-lbQ3Sfv0HEqu9szrP8ockQBNNq4v5PsItsjFD9&s",
+            "width": "99",
+            "height": "104"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.notams.faa.gov/dinsQueryWeb/images/n_seal_navy.gif"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flight Planning Map: UK | NOTAM Info",
+      "htmlTitle": "Flight Planning Map: UK | \u003cb\u003eNOTAM Info\u003c/b\u003e",
+      "link": "https://notaminfo.com/ukmap",
+      "displayLink": "notaminfo.com",
+      "snippet": "Up to date NOTAMS plotted on a map, or delivered via RSS feeds and Email. Flight Planning Map: UK +− 100 km 50 mi",
+      "htmlSnippet": "Up to date \u003cb\u003eNOTAMS\u003c/b\u003e plotted on a map, or delivered via RSS feeds and Email. Flight Planning Map: UK +− 100 km 50 mi",
+      "formattedUrl": "https://notaminfo.com/ukmap",
+      "htmlFormattedUrl": "https://\u003cb\u003enotaminfo\u003c/b\u003e.com/ukmap",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfcsF3up_MEPRJYA0AP_Bj9uaN0ISWDGOGVk1dXcJXIY50bYU9epsKa88&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "initial-scale=1.0, user-scalable=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://notaminfo.com/maps/streets/6/32/19.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "National Flight Planning Map | NOTAM Info",
+      "htmlTitle": "National Flight Planning Map | \u003cb\u003eNOTAM Info\u003c/b\u003e",
+      "link": "https://notaminfo.massieweb.com/nationalmap",
+      "displayLink": "notaminfo.massieweb.com",
+      "snippet": "Up to date NOTAMS plotted on a map, or delivered via RSS feeds and Email. National Flight Planning Map. 100 km 50 mi.",
+      "htmlSnippet": "Up to date \u003cb\u003eNOTAMS\u003c/b\u003e plotted on a map, or delivered via RSS feeds and Email. National Flight Planning Map. 100 km 50 mi.",
+      "formattedUrl": "https://notaminfo.massieweb.com/nationalmap",
+      "htmlFormattedUrl": "https://\u003cb\u003enotaminfo\u003c/b\u003e.massieweb.com/nationalmap",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXafBGzU7udg2tRvPEHfu4TlqtRbBYHAQae_mVkUQK-W7dRgk1PmoUbKI&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "initial-scale=1.0, user-scalable=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://notaminfo.massieweb.com/maps/streets/6/32/19.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "NOTAM Info | Up to date NOTAMS plotted on a map, or delivered via ...",
+      "htmlTitle": "\u003cb\u003eNOTAM Info\u003c/b\u003e | Up to date NOTAMS plotted on a map, or delivered via ...",
+      "link": "https://notaminfo.com/",
+      "displayLink": "notaminfo.com",
+      "snippet": "I've managed to find a new source of NOTAMs - the FAA in the US. This has resulted in a few problems: a) Most, but not all, European airfields are covered.",
+      "htmlSnippet": "I&#39;ve managed to find a new source of \u003cb\u003eNOTAMs\u003c/b\u003e - the FAA in the US. This has resulted in a few problems: a) Most, but not all, European airfields are covered.",
+      "formattedUrl": "https://notaminfo.com/",
+      "htmlFormattedUrl": "https://\u003cb\u003enotaminfo\u003c/b\u003e.com/"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "IPPC - Norwegian Aerodrome Info",
+      "htmlTitle": "IPPC - Norwegian Aerodrome \u003cb\u003eInfo\u003c/b\u003e",
+      "link": "https://www.ippc.no/",
+      "displayLink": "www.ippc.no",
+      "snippet": "NOTAM marker colors. Click to toggle filter: Warning. MIL OPR area. Obstacle. En route. Unmanned ACFT. Aerodrome. Multiple NOTAM. Click once for short-list.",
+      "htmlSnippet": "\u003cb\u003eNOTAM\u003c/b\u003e marker colors. Click to toggle filter: Warning. MIL OPR area. Obstacle. En route. Unmanned ACFT. Aerodrome. Multiple \u003cb\u003eNOTAM\u003c/b\u003e. Click once for short-list.",
+      "formattedUrl": "https://www.ippc.no/",
+      "htmlFormattedUrl": "https://www.ippc.no/",
+      "pagemap": {
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "FEDERAL AVIATION ADMINISTRATION",
+      "htmlTitle": "FEDERAL AVIATION ADMINISTRATION",
+      "link": "https://www.faasafety.gov/files/notices/2023/Dec/WSMRNM_23-33_GPS_Flight_Advisory_.pdf",
+      "displayLink": "www.faasafety.gov",
+      "snippet": "Dec 6, 2023 ... NOTAM INFO: NAV GPS (WSMRNM GPS 23-33) (INCLUDING WAAS,. GBAS, AND ADS-B) MAY NOT BE AVBL WI A 289NM RADIUS CENTERED. AT 332952N1063639W ...",
+      "htmlSnippet": "Dec 6, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003eNOTAM INFO\u003c/b\u003e: NAV GPS (WSMRNM GPS 23-33) (INCLUDING WAAS,. GBAS, AND ADS-B) MAY NOT BE AVBL WI A 289NM RADIUS CENTERED. AT 332952N1063639W&nbsp;...",
+      "formattedUrl": "https://www.faasafety.gov/.../WSMRNM_23-33_GPS_Flight_Advisory_.pd...",
+      "htmlFormattedUrl": "https://www.faasafety.gov/.../WSMRNM_23-33_GPS_Flight_Advisory_.pd...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAXxe0L1o4p_9Ox5zpInZupA2YYExOo6uxgjseiDoV1QgJMIprBPV3r7y&s",
+            "width": "197",
+            "height": "255"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20231206104110-05'00'",
+            "creationdate": "D:20231206104109-05'00'",
+            "creator": "Acrobat PDFMaker 23 for Word",
+            "sourcemodified": "D:20231206154053",
+            "author": "FAA",
+            "producer": "Adobe PDF Library 23.6.96",
+            "company": "FAA",
+            "title": "FEDERAL AVIATION ADMINISTRATION"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///2e37107f1d8b641290bda53a5ebc548fd59afcb734bf77b0c1be0dbc7298c73d"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "FAA WeatherCams",
+      "htmlTitle": "FAA WeatherCams",
+      "link": "https://weathercams.faa.gov/map/-147.76234,61.65248,-146.021,62.01226/cameraSite/410/details/info",
+      "displayLink": "weathercams.faa.gov",
+      "snippet": "NorthEast (67°) · South (160°) · West (250°) · Weather Data · Weather Trends. PIREPs. RCO. Site Info. NOTAMs (PilotWeb). My Routes. Basemap. Cameras. Airports.",
+      "htmlSnippet": "NorthEast (67°) &middot; South (160°) &middot; West (250°) &middot; Weather Data &middot; Weather Trends. PIREPs. RCO. Site \u003cb\u003eInfo\u003c/b\u003e. \u003cb\u003eNOTAMs\u003c/b\u003e (PilotWeb). My Routes. Basemap. Cameras. Airports.",
+      "formattedUrl": "https://weathercams.faa.gov/map/-147.76234,61.65248,-146.../info",
+      "htmlFormattedUrl": "https://weathercams.faa.gov/map/-147.76234,61.65248,-146.../\u003cb\u003einfo\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoJeGN0QrUV5Y7KrBVIibdqjoXy_4GiUeLqKMCgmGOs-kkMeYVuM8CfLA&s",
+            "width": "259",
+            "height": "194"
+          }
+        ],
+        "metatags": [
+          {
+            "application-name": "WeatherCams",
+            "msapplication-tilecolor": "#14355e",
+            "image": "http://weathercams.faa.gov/images/faa-logo.png",
+            "og:image": "http://weathercams.faa.gov/images/faa-logo.png",
+            "msapplication-config": "/public/browserconfig.xml",
+            "twitter:card": "summary",
+            "twitter:title": "WeatherCams",
+            "og:type": "website",
+            "theme-color": "#14355e",
+            "og:site_name": "WeatherCams",
+            "author": "Federal Aviation Administration",
+            "og:title": "WeatherCams",
+            "apple-mobile-web-app-title": "WeatherCams",
+            "msapplication-tileimage": "/public/mstile-144x144.png",
+            "og:description": "FAA weather camera imagery, aviation and weather data, flight planning and weather monitoring tools, and other resources for pilots, forecasters, ...",
+            "twitter:image:src": "http://weathercams.faa.gov/images/faa-logo.png",
+            "apple-mobile-web-app-status-bar-style": "black-translucent",
+            "viewport": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "FAA weather camera imagery, aviation and weather data, flight planning and weather monitoring tools, and other resources for pilots, forecasters, ...",
+            "mobile-web-app-capable": "yes",
+            "og:url": "http://weathercams.faa.gov/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images.wcams-static.faa.gov/webimages/410/22/11293-1724338419075.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Orders & Notices – Search Results",
+      "htmlTitle": "Orders &amp; Notices – Search Results",
+      "link": "https://www.faa.gov/regulations_policies/orders_notices/index.cfm/go/document.list/?appliedFacets=%7B%22subjectclass%22%3A%226180%22%2C%22officenumber%22%3A%22AJW-1721%22%7D",
+      "displayLink": "www.faa.gov",
+      "snippet": "Maintenance of the United States NOTAM System (USNS), Active, AJW-1721, 2024-06 ... Get Important Info/Data. Accident & Incident Data · Airport Data ...",
+      "htmlSnippet": "Maintenance of the United States \u003cb\u003eNOTAM\u003c/b\u003e System (USNS), Active, AJW-1721, 2024-06 ... Get Important \u003cb\u003eInfo\u003c/b\u003e/Data. Accident &amp; Incident Data &middot; Airport Data&nbsp;...",
+      "formattedUrl": "https://www.faa.gov/regulations_policies/orders...cfm/.../document.list/?...",
+      "htmlFormattedUrl": "https://www.faa.gov/regulations_policies/orders...cfm/.../document.list/?...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRalLY-7OZpZ3khrNl8x2mW4nkqeMGBBnpw8lh3ldcTa2HUhrwVJLtRKTgY&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "theme-color": "#0a2245",
+            "handheldfriendly": "true",
+            "dcterms.modified": "2024-03-25T13:35:05-0400",
+            "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+            "dcterms.type": "template",
+            "mobileoptimized": "width",
+            "standalone": "standalone",
+            "format-detection": "telephone=no"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.faa.gov/themes/custom/dot_cms/images/assets/icon-https.svg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Norut UAS Department Activities",
+      "htmlTitle": "Norut UAS Department Activities",
+      "link": "https://www.uib.no/sites/w3.uib.no/files/attachments/norce_smi_eng_2019.pdf",
+      "displayLink": "www.uib.no",
+      "snippet": "Information gathering (Weather, NOTAMs, info on turbine position). Airspace access (BSL-G 4-2, within Norwegian EES) NOTAM, UTM. Logistics, data handling.",
+      "htmlSnippet": "Information gathering (Weather, \u003cb\u003eNOTAMs\u003c/b\u003e, \u003cb\u003einfo\u003c/b\u003e on turbine position). Airspace access (BSL-G 4-2, within Norwegian EES) NOTAM, UTM. Logistics, data handling.",
+      "formattedUrl": "https://www.uib.no/sites/w3.uib.no/files/.../norce_smi_eng_2019.pdf",
+      "htmlFormattedUrl": "https://www.uib.no/sites/w3.uib.no/files/.../norce_smi_eng_2019.pdf",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZtrEjpX0uMBVqU3N7tG0sz7HodeK0IbjmFKCW6N_7AqOtqSMemCuUTMu&s",
+            "width": "283",
+            "height": "178"
+          }
+        ],
+        "metatags": [
+          {
+            "moddate": "D:20190918113910+02'00'",
+            "creationdate": "D:20190918113910+02'00'",
+            "creator": "Microsoft® PowerPoint® for Office 365",
+            "producer": "Microsoft® PowerPoint® for Office 365",
+            "title": "Norut UAS Department Activities"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "x-raw-image:///aa73aea197cb8e0525a7d71ab964d1837e6c6527d2703d9deec69b7f8464a275"
+          }
+        ]
+      },
+      "mime": "application/pdf",
+      "fileFormat": "PDF/Adobe Acrobat"
+    }
+  ]
+}

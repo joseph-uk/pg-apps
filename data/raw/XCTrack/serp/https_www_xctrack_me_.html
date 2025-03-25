@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta property="og:title" content="XcTrack - The Mobile Pilot Tracker " />
+    <title>XcTrack - The Mobile Pilot Tracker </title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+lIEcLMvWy3Il4iDzUxt8qib5G9dH281AEy2g6J1c55X/B3RI63PnRnUGuBrPBqI5ubk+GnGF5C2l2IxPAZ5jA==" />
+
+    <link rel="stylesheet" media="all" href="/assets/application-12b45169d11b79440a249e2038ca255eb0c1ed22e6d1d6f0a9943303bef481ae.css" />
+
+    <script src="/assets/application-d3e3cdcaa61fe2288e726e0f7534eb7a589800486aa2a5345143070203839c16.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+
+    <script data-ad-client="ca-pub-5155287976010304" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse no-margin-vertical" style="border-radius: 0;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img style="height:45px;float:left;margin: -12px 10px 0 0" src="/assets/xctrack_logo-9cb2c862b597d9d37a7b1118a2735de8e18505725a4c759dea45718fd383c9b4.png" alt="Xctrack logo" />
+            XcTrack.me
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+              <li style="margin-top: 6px;">
+                <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support XcTrack', '#46b798', 'W7W7EPPV');kofiwidget2.draw();</script>
+              </li>
+              <li>
+<p class='navbar-btn toggle-pilot-container'>
+<a class="btn btn-primary" style="color: #FFF;" href="#">Add Pilots to Map</a>
+</p>
+</li>
+
+              <li><a href="/users/sign_up">Sign Up</a></li>
+              <li><a href="/users/sign_in">Login</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqg-JmDN0cCZUbpG16R9Taeg_-0eUYsuo'></script>
+<div class='row'>
+<div class='col-md-12 no-padding'>
+<div class='map-container'>
+<a id="toggleLocation" class="btn btn-default" href="#">Track My Location
+</a><div id='googleMap' style='width:100%;height:93vh;'></div>
+<div id='loading'>
+Loading...
+</div>
+</div>
+</div>
+</div>
+<div id='pilots-container'>
+<div class='col-lg-4 col-md-6 col-xs-11 no-padding pilot-container-block'>
+<ul class='list-group' style='margin: 0'>
+<div class='list-group-item'>
+<div class='row'>
+<div class='col-xs-6'>
+<div class='btn btn-block btn-primary disabled' id='updateMapButton' onclick='$(&#39;#pilot-names form&#39;).submit();'>
+Show Map
+</div>
+</div>
+<div class='col-xs-6'>
+<select class='form-control' onchange='pickGroup($(this));'>
+<option data-url='/' selected='selected'>
+All Groups
+</option>
+<option data-url='/groups/1271'>
+1 A Mcfly wk 2 (3 pilots)
+</option>
+<option data-url='/groups/1170'>
+1 Fly Mexico (6 pilots)
+</option>
+<option data-url='/groups/557'>
+1 skytribe (6 pilots)
+</option>
+<option data-url='/groups/131'>
+2020 valle (4 pilots)
+</option>
+<option data-url='/groups/64'>
+2021 Wyoming (8 pilots)
+</option>
+<option data-url='/groups/507'>
+2023 Alps (3 pilots)
+</option>
+<option data-url='/groups/498'>
+2023 El Peñon Classic Race (1 pilots)
+</option>
+<option data-url='/groups/514'>
+2023 King Mountain Glider Park (2 pilots)
+</option>
+<option data-url='/groups/521'>
+2023 Tiger XC  (1 pilots)
+</option>
+<option data-url='/groups/543'>
+2024 Muller Muppets (21 pilots)
+</option>
+<option data-url='/groups/570'>
+2024 SB Ladies Fly In (37 pilots)
+</option>
+<option data-url='/groups/518'>
+2024 SkyoutPG Colombia Advanced (1 pilots)
+</option>
+<option data-url='/groups/558'>
+2025 Sky Sisters Yoga &amp; Fly (7 pilots)
+</option>
+<option data-url='/groups/535'>
+231009_Jupiter (6 pilots)
+</option>
+<option data-url='/groups/574'>
+240606_Francis (5 pilots)
+</option>
+<option data-url='/groups/840'>
+240712_V (4 pilots)
+</option>
+<option data-url='/groups/675'>
+42069 DA BOYZZ (12 pilots)
+</option>
+<option data-url='/groups/571'>
+505XC (3 pilots)
+</option>
+<option data-url='/groups/416'>
+7/16/2022 Corral Mtn UT (6 pilots)
+</option>
+<option data-url='/groups/420'>
+7/27/22 Uinta (5 pilots)
+</option>
+<option data-url='/groups/544'>
+Above Utah (17 pilots)
+</option>
+<option data-url='/groups/494'>
+Airbutlers 23 (6 pilots)
+</option>
+<option data-url='/groups/172'>
+ALAS XC (47 pilots)
+</option>
+<option data-url='/groups/569'>
+Alpine Cross Paragliding (6 pilots)
+</option>
+<option data-url='/groups/456'>
+AMYSP (3 pilots)
+</option>
+<option data-url='/groups/575'>
+Annecy Glamp (3 pilots)
+</option>
+<option data-url='/groups/429'>
+ARGENTINA XC (2 pilots)
+</option>
+<option data-url='/groups/1335'>
+BADL (2 pilots)
+</option>
+<option data-url='/groups/560'>
+BFFS Colombia 25 (14 pilots)
+</option>
+<option data-url='/groups/426'>
+Boise Pilots (12 pilots)
+</option>
+<option data-url='/groups/140'>
+Boulder Free Flight (46 pilots)
+</option>
+<option data-url='/groups/441'>
+Boulder red rocks 2022 (11 pilots)
+</option>
+<option data-url='/groups/144'>
+Bozeman (54 pilots)
+</option>
+<option data-url='/groups/459'>
+Bozeman Migratory Birds (3 pilots)
+</option>
+<option data-url='/groups/209'>
+Bright Area XC Pilots - VIC Australia (1 pilots)
+</option>
+<option data-url='/groups/522'>
+Burque LoneStar (8 pilots)
+</option>
+<option data-url='/groups/1137'>
+🦋 BZPG 🦋 (10 pilots)
+</option>
+<option data-url='/groups/256'>
+California Desert Crew (4 pilots)
+</option>
+<option data-url='/groups/548'>
+Cascade Cloud Carvers (9 pilots)
+</option>
+<option data-url='/groups/417'>
+CAUCA25 (3 pilots)
+</option>
+<option data-url='/groups/111'>
+CAXC (85 pilots)
+</option>
+<option data-url='/groups/906'>
+CBP 240801 (5 pilots)
+</option>
+<option data-url='/groups/377'>
+Cheryl &amp; Mike (1 pilots)
+</option>
+<option data-url='/groups/1071'>
+CoddeMikeChris (3 pilots)
+</option>
+<option data-url='/groups/549'>
+Colima Lady Bird Tour (10 pilots)
+</option>
+<option data-url='/groups/501'>
+Colima Mens Group (7 pilots)
+</option>
+<option data-url='/groups/552'>
+Colima Trip 1 2024 (7 pilots)
+</option>
+<option data-url='/groups/46'>
+Colombia 2017 (3 pilots)
+</option>
+<option data-url='/groups/47'>
+Colorado (119 pilots)
+</option>
+<option data-url='/groups/1005'>
+Colorado Guys (11 pilots)
+</option>
+<option data-url='/groups/267'>
+COL pilots (Center Of Lift) (6 pilots)
+</option>
+<option data-url='/groups/313'>
+Columbia BFF roadtrip (14 pilots)
+</option>
+<option data-url='/groups/563'>
+Columbia Gorge XC Pilots (10 pilots)
+</option>
+<option data-url='/groups/68'>
+Cornizzolo XC (3 pilots)
+</option>
+<option data-url='/groups/328'>
+Cove triangle bobc  (6 pilots)
+</option>
+<option data-url='/groups/211'>
+CPR (7 pilots)
+</option>
+<option data-url='/groups/532'>
+Creatures from the North (4 pilots)
+</option>
+<option data-url='/groups/533'>
+Cronan (1 pilots)
+</option>
+<option data-url='/groups/561'>
+Cuba Week 1 (17 pilots)
+</option>
+<option data-url='/groups/562'>
+Cuba Week 2 (11 pilots)
+</option>
+<option data-url='/groups/564'>
+Cuba Week 3 (4 pilots)
+</option>
+<option data-url='/groups/109'>
+East Cascades Free Flyers (2 pilots)
+</option>
+<option data-url='/groups/167'>
+East Side (4 pilots)
+</option>
+<option data-url='/groups/432'>
+Ecuador (1 pilots)
+</option>
+<option data-url='/groups/642'>
+Ellis Peak 6/19 (5 pilots)
+</option>
+<option data-url='/groups/148'>
+Escalante (5 pilots)
+</option>
+<option data-url='/groups/110'>
+Espanhola SRP4 (1 pilots)
+</option>
+<option data-url='/groups/436'>
+Etna September 3 (5 pilots)
+</option>
+<option data-url='/groups/143'>
+Fernie (5 pilots)
+</option>
+<option data-url='/groups/51'>
+Flying Kiwis (5 pilots)
+</option>
+<option data-url='/groups/457'>
+Flyoté (4 pilots)
+</option>
+<option data-url='/groups/317'>
+FLYT Ladies  !  (5 pilots)
+</option>
+<option data-url='/groups/120'>
+FrontRangeXC (16 pilots)
+</option>
+<option data-url='/groups/378'>
+Golden2LizzesHouse (1 pilots)
+</option>
+<option data-url='/groups/447'>
+Golden Boys (3 pilots)
+</option>
+<option data-url='/groups/550'>
+Good Buddies Racing (2 pilots)
+</option>
+<option data-url='/groups/576'>
+Halal (6 pilots)
+</option>
+<option data-url='/groups/573'>
+Hermanita (10 pilots)
+</option>
+<option data-url='/groups/171'>
+Hyper lapse thermals (9 pilots)
+</option>
+<option data-url='/groups/807'>
+Idaho Fly In (19 pilots)
+</option>
+<option data-url='/groups/499'>
+Iguala (1 pilots)
+</option>
+<option data-url='/groups/59'>
+ILLINOIS PILOTS (2 pilots)
+</option>
+<option data-url='/groups/939'>
+Italy-France 2024 (2 pilots)
+</option>
+<option data-url='/groups/56'>
+Jackson XC (3 pilots)
+</option>
+<option data-url='/groups/132'>
+Jolly Alps 2020 (1 pilots)
+</option>
+<option data-url='/groups/128'>
+Jolly Oz (2 pilots)
+</option>
+<option data-url='/groups/265'>
+Joshua Moore (1 pilots)
+</option>
+<option data-url='/groups/446'>
+Junction Yukon Sep27 (6 pilots)
+</option>
+<option data-url='/groups/572'>
+Jupiter July22 (6 pilots)
+</option>
+<option data-url='/groups/515'>
+King Mountain Glider Park - 2024 (7 pilots)
+</option>
+<option data-url='/groups/553'>
+La Ventana Downwinder (2 pilots)
+</option>
+<option data-url='/groups/873'>
+Limitless Skies - Dolomites 09-2024 (7 pilots)
+</option>
+<option data-url='/groups/58'>
+Littles (2 pilots)
+</option>
+<option data-url='/groups/536'>
+Los Andes (3 pilots)
+</option>
+<option data-url='/groups/114'>
+Mansfield Encampment  (3 pilots)
+</option>
+<option data-url='/groups/1203'>
+Maricones (3 pilots)
+</option>
+<option data-url='/groups/1302'>
+Matt’s Minions - Colombia Guiding week 2 (6 pilots)
+</option>
+<option data-url='/groups/314'>
+Mendoza (2 pilots)
+</option>
+<option data-url='/groups/500'>
+Miles in May (16 pilots)
+</option>
+<option data-url='/groups/63'>
+Missoula (30 pilots)
+</option>
+<option data-url='/groups/568'>
+Mojave Convergence  (15 pilots)
+</option>
+<option data-url='/groups/369'>
+Monroe Senders 9-27 (14 pilots)
+</option>
+<option data-url='/groups/566'>
+Monterey boys and friends (5 pilots)
+</option>
+<option data-url='/groups/257'>
+Nevadastan 2021 (2 pilots)
+</option>
+<option data-url='/groups/54'>
+New England (14 pilots)
+</option>
+<option data-url='/groups/375'>
+NV 20220622 (5 pilots)
+</option>
+<option data-url='/groups/379'>
+NW Montana - Flathead Valley (2 pilots)
+</option>
+<option data-url='/groups/221'>
+NW XC Clinics (12 pilots)
+</option>
+<option data-url='/groups/108'>
+Oregon:Woodrat (27 pilots)
+</option>
+<option data-url='/groups/7'>
+Oregon WR regulars (11 pilots)
+</option>
+<option data-url='/groups/325'>
+Outpost Flight Test (2 pilots)
+</option>
+<option data-url='/groups/166'>
+Owens October 13-18 (10 pilots)
+</option>
+<option data-url='/groups/519'>
+Pakistan 2023 (7 pilots)
+</option>
+<option data-url='/groups/321'>
+Pancas (3 pilots)
+</option>
+<option data-url='/groups/538'>
+Paragliding Guides Valle 2023 (13 pilots)
+</option>
+<option data-url='/groups/272'>
+Parapatagonia - SMA 🪂 (8 pilots)
+</option>
+<option data-url='/groups/545'>
+Patagonia Para raft XC  (2 pilots)
+</option>
+<option data-url='/groups/520'>
+Pepé Le Pew! (7 pilots)
+</option>
+<option data-url='/groups/530'>
+PG Kilimanjaro Sep 2023 (2 pilots)
+</option>
+<option data-url='/groups/531'>
+PG Klubben-Denmark (4 pilots)
+</option>
+<option data-url='/groups/567'>
+Pickles XC (1 pilots)
+</option>
+<option data-url='/groups/497'>
+Piedechinche Feb 2023 (11 pilots)
+</option>
+<option data-url='/groups/277'>
+Piedechinche paragliding posse (10 pilots)
+</option>
+<option data-url='/groups/510'>
+Pine Mountain July 20 2023 (3 pilots)
+</option>
+<option data-url='/groups/1104'>
+Polacos in tha Patagonia (2 pilots)
+</option>
+<option data-url='/groups/1434'>
+Rat Patrol (14 pilots)
+</option>
+<option data-url='/groups/438'>
+Redgrade, WY (2 pilots)
+</option>
+<option data-url='/groups/503'>
+Red Rocks 2024 (73 pilots)
+</option>
+<option data-url='/groups/1039'>
+Red rocks Senders (5 pilots)
+</option>
+<option data-url='/groups/1038'>
+Red Rocks Senders (4 pilots)
+</option>
+<option data-url='/groups/554'>
+Red tail Colombia (6 pilots)
+</option>
+<option data-url='/groups/261'>
+RGSA (6 pilots)
+</option>
+<option data-url='/groups/1270'>
+Roldanillo 2025 (February 1-10) (13 pilots)
+</option>
+<option data-url='/groups/1401'>
+Rolda to Piede! (2 pilots)
+</option>
+<option data-url='/groups/774'>
+Rule1_dontdie (3 pilots)
+</option>
+<option data-url='/groups/135'>
+Rule2_Sendit (7 pilots)
+</option>
+<option data-url='/groups/62'>
+Sagebrush XC (23 pilots)
+</option>
+<option data-url='/groups/455'>
+SAHGA (3 pilots)
+</option>
+<option data-url='/groups/505'>
+Sandia Soaring NM (23 pilots)
+</option>
+<option data-url='/groups/44'>
+Santa Barbara  (37 pilots)
+</option>
+<option data-url='/groups/318'>
+SDHGPA (17 pilots)
+</option>
+<option data-url='/groups/537'>
+Sendia (7 pilots)
+</option>
+<option data-url='/groups/555'>
+shitBirdsOfAFeather (4 pilots)
+</option>
+<option data-url='/groups/540'>
+Simon (1 pilots)
+</option>
+<option data-url='/groups/546'>
+SkyFam Colombia (16 pilots)
+</option>
+<option data-url='/groups/5'>
+Sky People (16 pilots)
+</option>
+<option data-url='/groups/146'>
+Southwest Montana (1 pilots)
+</option>
+<option data-url='/groups/1368'>
+SRS Colombia (1 pilots)
+</option>
+<option data-url='/groups/214'>
+STL Toggle Monkeys (3 pilots)
+</option>
+<option data-url='/groups/115'>
+Stone House Chelan 2019 (6 pilots)
+</option>
+<option data-url='/groups/527'>
+Sun Valley 8.24.23 (6 pilots)
+</option>
+<option data-url='/groups/122'>
+Tahoe XC Mitches gaggle  (9 pilots)
+</option>
+<option data-url='/groups/105'>
+TAMDUONG (1 pilots)
+</option>
+<option data-url='/groups/453'>
+Taylor Davis (1 pilots)
+</option>
+<option data-url='/groups/372'>
+Team Brazil (1 pilots)
+</option>
+<option data-url='/groups/437'>
+Team Mooncake (4 pilots)
+</option>
+<option data-url='/groups/9'>
+Telluride (12 pilots)
+</option>
+<option data-url='/groups/278'>
+Tenancingo - Casa - Jan 2022 (4 pilots)
+</option>
+<option data-url='/groups/61'>
+Tennesee (9 pilots)
+</option>
+<option data-url='/groups/208'>
+Test123 (2 pilots)
+</option>
+<option data-url='/groups/129'>
+Thailand 2020  (8 pilots)
+</option>
+<option data-url='/groups/452'>
+Torno Team (2 pilots)
+</option>
+<option data-url='/groups/444'>
+Utah (53 pilots)
+</option>
+<option data-url='/groups/516'>
+Utah Senderellas (4 pilots)
+</option>
+<option data-url='/groups/547'>
+Valle 2025 (4 pilots)
+</option>
+<option data-url='/groups/207'>
+Wanaka Hike &amp; Fly 2021 (27 pilots)
+</option>
+<option data-url='/groups/524'>
+Wasatch Hike and Fly 2024 (14 pilots)
+</option>
+<option data-url='/groups/165'>
+Washington (2 pilots)
+</option>
+<option data-url='/groups/142'>
+Washington Mountain Rescue (5 pilots)
+</option>
+<option data-url='/groups/609'>
+Washington XC 2014 (7 pilots)
+</option>
+<option data-url='/groups/565'>
+Week 4 Cuba (4 pilots)
+</option>
+<option data-url='/groups/170'>
+Western Australia (1 pilots)
+</option>
+<option data-url='/groups/322'>
+Western Slope (17 pilots)
+</option>
+<option data-url='/groups/112'>
+Whaleback (1 pilots)
+</option>
+<option data-url='/groups/367'>
+Whiskey Peak (9 pilots)
+</option>
+<option data-url='/groups/1269'>
+WINDWOLVES (6 pilots)
+</option>
+<option data-url='/groups/741'>
+XC Chelan 7/21/24 (9 pilots)
+</option>
+<option data-url='/groups/382'>
+XC Ellenville 2022 (1 pilots)
+</option>
+<option data-url='/groups/708'>
+XC.helan ferda bois &#39;24 (11 pilots)
+</option>
+<option data-url='/groups/268'>
+X-Redrocks 2021 (35 pilots)
+</option>
+<option data-url='/groups/415'>
+Yanks in Utah 2022 (5 pilots)
+</option>
+<option data-url='/groups/new'>
+New Group
+</option>
+</select>
+</div>
+</div>
+</div>
+<script>
+    function pickGroup(el){
+      var $this = el
+      var data = $this.find(':selected').data('url');
+      location.assign(data)
+    }
+</script>
+
+</ul>
+<div class='well'>
+<ul class='list-group' style='margin-bottom: 10px;'>
+<div id='pilot-names'>
+<form action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<li class='list-group-item pilot-on-map' data-flight-length='0' data-name='Andrew Karnowski' data-straight-distance='0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2540'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2540">Andrew Karnowski
+<br>
+<small>
+about 21 hours
+ago
+&#8226;
+&Delta;
+0
+km
+&#8226
+|
+0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.23' data-name='Anneka Herndon' data-straight-distance='1.44'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='262'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/262">Anneka Herndon
+<br>
+<small>
+44 minutes
+ago
+&#8226;
+&Delta;
+3.23
+km
+&#8226
+|
+1.44
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.23' data-name='Anneka Herndon' data-straight-distance='1.44'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2638'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2638">Anneka Herndon
+<br>
+<small>
+44 minutes
+ago
+&#8226;
+&Delta;
+3.23
+km
+&#8226
+|
+1.44
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.31' data-name='Ari in the Air' data-straight-distance='2.04'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1738'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1738">Ari in the Air
+<br>
+<small>
+7 minutes
+ago
+&#8226;
+&Delta;
+2.31
+km
+&#8226
+|
+2.04
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.21' data-name='Ben Horton' data-straight-distance='1.19'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='674'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/674">Ben Horton
+<br>
+<small>
+22 minutes
+ago
+&#8226;
+&Delta;
+1.21
+km
+&#8226
+|
+1.19
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='263.79' data-name='Bill Lemon' data-straight-distance='64.18'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='4809'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/4809">Bill Lemon
+<br>
+<small>
+18 minutes
+ago
+&#8226;
+&Delta;
+263.79
+km
+&#8226
+|
+64.18
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.88' data-name='Bill Patrick' data-straight-distance='0.88'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='7020'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/7020">Bill Patrick
+<br>
+<small>
+about 2 hours
+ago
+&#8226;
+&Delta;
+0.88
+km
+&#8226
+|
+0.88
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='4.37' data-name='Brenden doyle' data-straight-distance='2.58'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='4644'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/4644">Brenden doyle
+<br>
+<small>
+27 minutes
+ago
+&#8226;
+&Delta;
+4.37
+km
+&#8226
+|
+2.58
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='25.45' data-name='Britton Shaw' data-straight-distance='22.46'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1059'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1059">Britton Shaw
+<br>
+<small>
+16 minutes
+ago
+&#8226;
+&Delta;
+25.45
+km
+&#8226
+|
+22.46
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.64' data-name='Cameron Weber' data-straight-distance='1.45'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1040'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1040">Cameron Weber
+<br>
+<small>
+about 3 hours
+ago
+&#8226;
+&Delta;
+1.64
+km
+&#8226
+|
+1.45
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.25' data-name='Cheryl Morgan' data-straight-distance='0.04'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2785'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2785">Cheryl Morgan
+<br>
+<small>
+about 5 hours
+ago
+&#8226;
+&Delta;
+0.25
+km
+&#8226
+|
+0.04
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='107.08' data-name='Chris Lorimer' data-straight-distance='3.44'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='628'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/628">Chris Lorimer
+<br>
+<small>
+23 minutes
+ago
+&#8226;
+&Delta;
+107.08
+km
+&#8226
+|
+3.44
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.0' data-name='Clifford' data-straight-distance='0.0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1848'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1848">Clifford
+<br>
+<small>
+about 8 hours
+ago
+&#8226;
+&Delta;
+0.0
+km
+&#8226
+|
+0.0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.12' data-name='Dan Zaslavsky' data-straight-distance='0.51'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='230'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/230">Dan Zaslavsky
+<br>
+<small>
+18 minutes
+ago
+&#8226;
+&Delta;
+2.12
+km
+&#8226
+|
+0.51
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='108.3' data-name='David Cox' data-straight-distance='101.62'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='634'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/634">David Cox
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+108.3
+km
+&#8226
+|
+101.62
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='43.13' data-name='David Harrington' data-straight-distance='17.7'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2297'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2297">David Harrington
+<br>
+<small>
+23 minutes
+ago
+&#8226;
+&Delta;
+43.13
+km
+&#8226
+|
+17.7
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='4.53' data-name='Davis dailey' data-straight-distance='0.9'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2848'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2848">Davis dailey
+<br>
+<small>
+about 4 hours
+ago
+&#8226;
+&Delta;
+4.53
+km
+&#8226
+|
+0.9
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='5.17' data-name='Doug Anawalt' data-straight-distance='1.5'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2336'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2336">Doug Anawalt
+<br>
+<small>
+19 minutes
+ago
+&#8226;
+&Delta;
+5.17
+km
+&#8226
+|
+1.5
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0' data-name='Enes Mentese' data-straight-distance='0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='815'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/815">Enes Mentese
+<br>
+<small>
+12 minutes
+ago
+&#8226;
+&Delta;
+0
+km
+&#8226
+|
+0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.13' data-name='Eric Klammer' data-straight-distance='0.13'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='291'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/291">Eric Klammer
+<br>
+<small>
+19 minutes
+ago
+&#8226;
+&Delta;
+0.13
+km
+&#8226
+|
+0.13
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='8.92' data-name='Ethan Nyeste' data-straight-distance='0.85'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2680'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2680">Ethan Nyeste
+<br>
+<small>
+about 2 hours
+ago
+&#8226;
+&Delta;
+8.92
+km
+&#8226
+|
+0.85
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.73' data-name='Evan Burgess' data-straight-distance='1.19'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1751'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1751">Evan Burgess
+<br>
+<small>
+29 minutes
+ago
+&#8226;
+&Delta;
+1.73
+km
+&#8226
+|
+1.19
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.25' data-name='Evan Cohen' data-straight-distance='1.96'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='272'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/272">Evan Cohen
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+2.25
+km
+&#8226
+|
+1.96
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.02' data-name='Frank Henriquez' data-straight-distance='0.02'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2314'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2314">Frank Henriquez
+<br>
+<small>
+9 minutes
+ago
+&#8226;
+&Delta;
+0.02
+km
+&#8226
+|
+0.02
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='8.45' data-name='Greg Clark' data-straight-distance='7.87'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2489'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2489">Greg Clark
+<br>
+<small>
+about 2 hours
+ago
+&#8226;
+&Delta;
+8.45
+km
+&#8226
+|
+7.87
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.92' data-name='Jack Diaz' data-straight-distance='0.41'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='806'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/806">Jack Diaz
+<br>
+<small>
+13 minutes
+ago
+&#8226;
+&Delta;
+3.92
+km
+&#8226
+|
+0.41
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.14' data-name='Jackie Rossman' data-straight-distance='0.02'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2021'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2021">Jackie Rossman
+<br>
+<small>
+about 5 hours
+ago
+&#8226;
+&Delta;
+0.14
+km
+&#8226
+|
+0.02
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='8.66' data-name='James DuPlain' data-straight-distance='7.04'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2205'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2205">James DuPlain
+<br>
+<small>
+25 minutes
+ago
+&#8226;
+&Delta;
+8.66
+km
+&#8226
+|
+7.04
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0' data-name='James Willis' data-straight-distance='0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='5106'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/5106">James Willis
+<br>
+<small>
+26 minutes
+ago
+&#8226;
+&Delta;
+0
+km
+&#8226
+|
+0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='7.26' data-name='Jason Davis' data-straight-distance='2.95'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2679'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2679">Jason Davis
+<br>
+<small>
+17 minutes
+ago
+&#8226;
+&Delta;
+7.26
+km
+&#8226
+|
+2.95
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.74' data-name='Jesse Williams' data-straight-distance='1.29'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1740'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1740">Jesse Williams
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+1.74
+km
+&#8226
+|
+1.29
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.88' data-name='Jessica Green' data-straight-distance='3.44'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2441'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2441">Jessica Green
+<br>
+<small>
+about 10 hours
+ago
+&#8226;
+&Delta;
+3.88
+km
+&#8226
+|
+3.44
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.9' data-name='Jim Owen' data-straight-distance='1.87'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2695'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2695">Jim Owen
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+1.9
+km
+&#8226
+|
+1.87
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='6.85' data-name='Jordan Porter' data-straight-distance='1.76'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1734'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1734">Jordan Porter
+<br>
+<small>
+about 7 hours
+ago
+&#8226;
+&Delta;
+6.85
+km
+&#8226
+|
+1.76
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='40.0' data-name='Josh McFli' data-straight-distance='0.18'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2294'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2294">Josh McFli
+<br>
+<small>
+10 minutes
+ago
+&#8226;
+&Delta;
+40.0
+km
+&#8226
+|
+0.18
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0' data-name='Justin Cannon' data-straight-distance='0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='963'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/963">Justin Cannon
+<br>
+<small>
+11 minutes
+ago
+&#8226;
+&Delta;
+0
+km
+&#8226
+|
+0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='81.55' data-name='Justin Grisham' data-straight-distance='10.79'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1110'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1110">Justin Grisham
+<br>
+<small>
+36 minutes
+ago
+&#8226;
+&Delta;
+81.55
+km
+&#8226
+|
+10.79
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.03' data-name='Kim Sage Keller' data-straight-distance='0.98'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1763'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1763">Kim Sage Keller
+<br>
+<small>
+about 3 hours
+ago
+&#8226;
+&Delta;
+1.03
+km
+&#8226
+|
+0.98
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='180.08' data-name='Kris Holub' data-straight-distance='50.07'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='137'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/137">Kris Holub
+<br>
+<small>
+20 minutes
+ago
+&#8226;
+&Delta;
+180.08
+km
+&#8226
+|
+50.07
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.8' data-name='Luke Rome' data-straight-distance='3.72'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1912'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1912">Luke Rome
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+3.8
+km
+&#8226
+|
+3.72
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.02' data-name='Matt Dadam' data-straight-distance='0.02'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='939'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/939">Matt Dadam
+<br>
+<small>
+about 7 hours
+ago
+&#8226;
+&Delta;
+0.02
+km
+&#8226
+|
+0.02
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.6' data-name='maxchehab' data-straight-distance='0.32'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2843'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2843">maxchehab
+<br>
+<small>
+2 minutes
+ago
+&#8226;
+&Delta;
+1.6
+km
+&#8226
+|
+0.32
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.64' data-name='Maxime Lasserre' data-straight-distance='0.82'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1906'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1906">Maxime Lasserre
+<br>
+<small>
+6 minutes
+ago
+&#8226;
+&Delta;
+1.64
+km
+&#8226
+|
+0.82
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='55.1' data-name='Max Montgomery' data-straight-distance='7.58'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='522'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/522">Max Montgomery
+<br>
+<small>
+17 minutes
+ago
+&#8226;
+&Delta;
+55.1
+km
+&#8226
+|
+7.58
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.27' data-name='Meredyth Malocsay' data-straight-distance='0.27'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='6790'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/6790">Meredyth Malocsay
+<br>
+<small>
+21 minutes
+ago
+&#8226;
+&Delta;
+0.27
+km
+&#8226
+|
+0.27
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.01' data-name='Mike Brown' data-straight-distance='0.01'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1162'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1162">Mike Brown
+<br>
+<small>
+16 minutes
+ago
+&#8226;
+&Delta;
+0.01
+km
+&#8226
+|
+0.01
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.36' data-name='Misha Banks' data-straight-distance='1.24'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='399'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/399">Misha Banks
+<br>
+<small>
+18 minutes
+ago
+&#8226;
+&Delta;
+2.36
+km
+&#8226
+|
+1.24
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='3.37' data-name='Muffin Grinder' data-straight-distance='3.24'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2961'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2961">Muffin Grinder
+<br>
+<small>
+15 minutes
+ago
+&#8226;
+&Delta;
+3.37
+km
+&#8226
+|
+3.24
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.53' data-name='Noah Briller' data-straight-distance='1.29'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='3654'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/3654">Noah Briller
+<br>
+<small>
+30 minutes
+ago
+&#8226;
+&Delta;
+1.53
+km
+&#8226
+|
+1.29
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.02' data-name='Patti Mayfield' data-straight-distance='0.02'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2872'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2872">Patti Mayfield
+<br>
+<small>
+28 minutes
+ago
+&#8226;
+&Delta;
+0.02
+km
+&#8226
+|
+0.02
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='60.34' data-name='Peter Forster' data-straight-distance='19.82'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1171'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1171">Peter Forster
+<br>
+<small>
+about 3 hours
+ago
+&#8226;
+&Delta;
+60.34
+km
+&#8226
+|
+19.82
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='84.0' data-name='Ramy Yanetz' data-straight-distance='56.7'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='296'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/296">Ramy Yanetz
+<br>
+<small>
+14 minutes
+ago
+&#8226;
+&Delta;
+84.0
+km
+&#8226
+|
+56.7
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='580.05' data-name='Randy Hughes' data-straight-distance='4.01'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1103'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1103">Randy Hughes
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+580.05
+km
+&#8226
+|
+4.01
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.0' data-name='Reavis Sutphin-Gray' data-straight-distance='0.0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='7'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/7">Reavis Sutphin-Gray
+<br>
+<small>
+24 minutes
+ago
+&#8226;
+&Delta;
+0.0
+km
+&#8226
+|
+0.0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.51' data-name='Richard Siberell' data-straight-distance='0.5'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1685'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1685">Richard Siberell
+<br>
+<small>
+about 2 hours
+ago
+&#8226;
+&Delta;
+0.51
+km
+&#8226
+|
+0.5
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.44' data-name='Rick Damiani' data-straight-distance='1.06'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1528'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1528">Rick Damiani
+<br>
+<small>
+23 minutes
+ago
+&#8226;
+&Delta;
+1.44
+km
+&#8226
+|
+1.06
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.18' data-name='Rob Curran ' data-straight-distance='1.21'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2494'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2494">Rob Curran 
+<br>
+<small>
+16 minutes
+ago
+&#8226;
+&Delta;
+2.18
+km
+&#8226
+|
+1.21
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='7.48' data-name='Ronjohn Crist' data-straight-distance='3.72'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2582'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2582">Ronjohn Crist
+<br>
+<small>
+about 22 hours
+ago
+&#8226;
+&Delta;
+7.48
+km
+&#8226
+|
+3.72
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.91' data-name='Ryan Friedman' data-straight-distance='0.89'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='949'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/949">Ryan Friedman
+<br>
+<small>
+about 3 hours
+ago
+&#8226;
+&Delta;
+0.91
+km
+&#8226
+|
+0.89
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='2.51' data-name='Ryan Mullen' data-straight-distance='2.19'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2589'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2589">Ryan Mullen
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+2.51
+km
+&#8226
+|
+2.19
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.0' data-name='Samwise' data-straight-distance='0.0'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='702'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/702">Samwise
+<br>
+<small>
+11 minutes
+ago
+&#8226;
+&Delta;
+0.0
+km
+&#8226
+|
+0.0
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='64.97' data-name='Sarah Crosier' data-straight-distance='1.11'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2199'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2199">Sarah Crosier
+<br>
+<small>
+28 minutes
+ago
+&#8226;
+&Delta;
+64.97
+km
+&#8226
+|
+1.11
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.07' data-name='Scott Drinkard' data-straight-distance='0.02'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='887'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/887">Scott Drinkard
+<br>
+<small>
+about 4 hours
+ago
+&#8226;
+&Delta;
+0.07
+km
+&#8226
+|
+0.02
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='0.39' data-name='Scott Raznoff' data-straight-distance='0.05'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='7582'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/7582">Scott Raznoff
+<br>
+<small>
+about 3 hours
+ago
+&#8226;
+&Delta;
+0.39
+km
+&#8226
+|
+0.05
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='13.18' data-name='Thorin Day' data-straight-distance='8.68'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='2225'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/2225">Thorin Day
+<br>
+<small>
+20 minutes
+ago
+&#8226;
+&Delta;
+13.18
+km
+&#8226
+|
+8.68
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='42.26' data-name='Trevor Downing' data-straight-distance='42.23'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='7614'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/7614">Trevor Downing
+<br>
+<small>
+28 minutes
+ago
+&#8226;
+&Delta;
+42.26
+km
+&#8226
+|
+42.23
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='6.58' data-name='Trevor MacMurray' data-straight-distance='1.43'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='3159'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/3159">Trevor MacMurray
+<br>
+<small>
+about 1 hour
+ago
+&#8226;
+&Delta;
+6.58
+km
+&#8226
+|
+1.43
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='24.32' data-name='Vinay Shah' data-straight-distance='17.86'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='1441'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/1441">Vinay Shah
+<br>
+<small>
+26 minutes
+ago
+&#8226;
+&Delta;
+24.32
+km
+&#8226
+|
+17.86
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<li class='list-group-item pilot-on-map' data-flight-length='1.76' data-name='Zane Oconnor' data-straight-distance='0.27'>
+<div class='row'>
+<div class='col-xs-4 col-sm-4'>
+<a class='btn btn-default btn-default btn-block pilot-toggle-button add-pilot-btn' data-pilot-id='506'>
+&#43;
+</a>
+</div>
+<div class='col-xs-8 col-sm-8'>
+<div class='text-center'>
+<a href="/users/506">Zane Oconnor
+<br>
+<small>
+30 minutes
+ago
+&#8226;
+&Delta;
+1.76
+km
+&#8226
+|
+0.27
+km
+</small>
+</a></div>
+</div>
+</div>
+</li>
+<input type="hidden" name="pilots" id="pilots" value="" />
+<input type="submit" value="Update Map" class="hidden" data-disable-with="Update Map" />
+</form>
+
+<a target="_blank" class="ffl-logo" href="http://www.freeflightlab.org">FREE FLIGHT LAB</a>
+
+</div>
+</ul>
+<div class='row'>
+</div>
+</div>
+</div>
+</div>
+
+<div id='coordinates'>
+</div>
+<div id='turnpoints'>
+</div>
+
+        </div>
+      </div><!--/row-->
+    </div> <!-- /container -->
+  </body>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87655988-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Map view of Holfuy automatic weather stations. </title>
+<meta name="description" content="Online weather data by Holfuy automatic mobile weather stations.">
+<meta name="keywords" content="paragliding, weather, station, solar, gsm, 3G, wind, surfing, automatic">
+<meta name="author" content="Holfuy">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Holfuy">
+<meta property="og:url" content="https://holfuy.com">
+<meta name="twitter:site" content="@holfuy_stations">
+<meta name="twitter:card" content="summary">
+
+<link rel="shortcut icon" href="/image/logo/favicon_32x32.png" />
+<link rel="apple-touch-icon" href="/image/logo/holfuy_logo_black_54.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/image/logo/holfuy_logo_black_72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/image/logo/holfuy_logo_black_114.png"/>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=4.6" />
+<link rel="stylesheet" type="text/css" href="/css/stylesmall.css?v=4.6" />
+<link rel="stylesheet" href="/static/font/fa/css/font-awesome.css">
+
+<script src="/js/lib/j-min.js"></script>
+<script src="/js/lib/j-ui.js"></script>
+<script LANGUAGE="JavaScript" SRC="/js/main.js?v=4.6"></script>	<script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+	<script type="text/javascript" src="/js/map_mapbox.js?v=4.6"></script>
+<link rel="stylesheet" type="text/css" href="/css/map.css" />
+
+<script>
+var marker_mode="wind"; 
+var lang_def='en';
+$(document).ready(function(){
+	initMapi({lat:53,lng:-4},5.5);
+	});
+	
+</script>
+</head>
+<body>
+	<div id="login_box" >
+		<div id="login_error_msg"></div>
+	<FORM ACTION="/login" METHOD=post>
+
+	<INPUT NAME="email" placeholder="e-mail" value="" type="email" style="width:140px">
+	<br>
+	<INPUT NAME="password" placeholder="password" style="width:140px" TYPE="password">
+	<br>
+	<INPUT type=submit class="login_butt" NAME=submit_login VALUE="Login">
+	<a style="font-size: x-small;" href="/en/forgotpassword">Forgot Password?</a>
+	</FORM>
+	</div>
+<div  id="login_state" >
+	<table style=" border-spacing: 0px 0px; height:35px;">
+		<tr>
+			<td><a class="login_butt" style="font-size: 20px; padding: 0 4px; color:lightgray;" href="/en/favorites"><i title="Favorites" class="fa fa-star"></i></a></td>
+			<td><a class="login_butt" style="font-size: 20px; padding: 0 4px; color:lightgray;" href="/en/settings"><i title="Account settings" class="fa fa-cog"></i></a></td>
+						    <td style=" padding: 0 5px; max-width:50px; background:#DDAA44;"><a class="login_butt" href="/en/register">Register</a></td>
+			    <td onclick="showLogin();" style="background: white; width:45px; cursor: pointer; padding:0px 5px;"><a id="login_button" class="login_butt">Login</a></td>
+					</tr>
+	</table>  
+</div>
+<div id="top-line">
+		<div style="float:left;" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+	    <div class = "just_small">
+			<input type="text" onkeyup="searchStations(false)" id="search_box"  style="float:left; " placeholder="name or id">	
+			<i class="fa fa-search"  style="padding-left:3px; font-size:1em; margin-top:10px; color:#AAAAAA;"></i>
+			<div id="output_list" class="just_small output_list"></div>
+		</div>
+
+<div class="clear">	</div>
+<div class="container">
+
+<nav>
+	<div class="container">
+		<div id="station_selector">
+		    <div class="no_small" style="padding-bottom: 3px; margin-bottom: 3px; font-size: 0.9em; border-bottom: 1px solid gray;">
+		    			    </div>
+		    <input class="no_small" type="text" onkeyup="searchStations(true)" id="search_box_normal" placeholder=" Search for name or ID">
+		    <span class="no_small"><i class="no_small fa fa-search"  style="margin-right:5px; margin-left:5px; font-size:1em; color:black; text-align: left;"></i></span>
+		    <div style="display: inline-block;">
+				<select id="regions_dd" class="station-selector"></select>
+				<img id="region_img" class="no_small" src="" style=" vertical-align:bottom; height:18px; ">
+			</div>
+			<div style="display: inline-block; padding-top:3px;">
+				<select id="stations_dd" class="station-selector"></select>
+			</div>
+			<div class="no_small button" style=" float:right;   font-size: medium; margin-right:5px;  background: #CCCCCC; margin-top:2px; padding:1px 4px; cursor:pointer;" onclick="$('#station_selector').hide();"><b> X </b></div>
+			<div class="clear"></div>
+		<div id="output_list_normal" class="output_list no_small"></div>
+		</div>
+	</div>
+	<ul>
+		<li class="h_button"><a href="/en"><i class="fa fa-home menu-icon"></i>HOME</a></li>
+		<li style="font-color:white;" class="h_button"><a href="/en/map"><i class="fa fa-globe menu-icon"></i>MAP</a>
+			<ul>
+				<li class="sub_menu" ><a href="/en/map/temperature">Temperature</a></li>
+				<li class="sub_menu" ><a href="/en/map/wind">Wind</a></li>
+			</ul>
+		</li>
+		<li class="h_button no_small"  id="stations_butt" style="cursor: pointer;" onclick="showStationSelector();"><a id="stations-icon"><i  class="fa fa-area-chart menu-icon"></i>STATIONS</a></li>
+		<li class="h_button"><a href="/en/about"><i class="fa fa-info-circle menu-icon"></i>ABOUT</a>
+			<ul>
+				<li class="sub_menu" ><a href="/en/about">About Holfuy</a></li>
+				<li class="sub_menu" ><a href="/en/faq">FAQ</a></li>
+				<li class="sub_menu" ><a href="/en/support">Support</a></li>
+				<li class="sub_menu" ><a href="/en/widget">Web modules</a></li>
+				<li class="sub_menu" ><a href="/en/references">References</a></li>
+			</ul>
+		</li>
+					<li style="" class="h_button"><a href="/en/shop"><i class="fa fa-shopping-cart menu-icon"></i>SHOP</a>
+				<ul>
+					<li class="sub_menu" ><a href="/en/shop">New station</a></li>
+					<li class="sub_menu" ><a href="/en/shopacc">Parts & Accessories</a></li>
+				</ul>
+			</li>
+				<li class="h_button"><a href="/en/contact"><i class="fa fa-envelope menu-icon"></i>CONTACT</a></li>
+	 			<li class="h_button just_small"><a> </a></li>
+		<li class="h_button just_small"><a> </a></li>
+		<li class="h_button just_small"><a> </a></li>
+	</ul>
+</nav>
+</div>
+</div>
+
+<div id="page_mask">
+</div>
+<script>
+var lang_def='en';
+var station_selector_showed=0;
+ $("#page_mask").click(function () {
+		$("body").css("height","auto");
+		$("body").css("overflow-y","auto");
+		$("html").css("height","auto");
+		$("html").css("overflow-y","auto");
+		$("nav").hide();
+		$("#page_mask").hide();
+		$("#login_state").show();	
+	});
+ $("#hamburger").click(function () {
+ 		showStationSelector();
+		var myHeight=0;
+		$("nav").css("min-height",window.innerHeight);
+		myHeight = $("nav").height();
+		$("#page_mask").css("height",myHeight);
+		$("body").css("height",myHeight);
+		$("body").css("overflow-y","hidden");
+		$("html").css("height",myHeight);
+		$("html").css("overflow-y","hidden");
+		$("nav").show();
+		$("#login_state").hide();
+		$("#page_mask").show();
+	
+	});
+$("#stations_butt").mouseenter(showStationSelector);
+$("#stations_butt").mouseout(function(){if(!$('#stations-icon').is(':hover'))setTimeout(hideStationSelector,200);});
+//init stations
+$("#regions_dd").change(function () {appendStations(document.getElementById('regions_dd').value);});
+$("#stations_dd").change(stationChanged);
+</script>
+<br> 	 
+<div style="margin-top:14px;"><script>
+	var units =JSON.parse('{"temp":"C","speed":"km\/h","height":"m"}');</script>
+		<div class="map_button_holder"><H2 style="margin:0px; padding:5px; text-align:center; color: gray; position:absolute;"></H2>
+		<hr> 
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('AU')"><img class="map_img" src="/image/icon/flag/AU.png"><span>Australi</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('AT')"><img class="map_img" src="/image/icon/flag/AT.png"><span>Austria</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('DE')"><img class="map_img" src="/image/icon/flag/DE.png"><span>Deutschl</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('FR')"><img class="map_img" src="/image/icon/flag/FR.png"><span>France</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('HU')"><img class="map_img" src="/image/icon/flag/HU.png"><span>Hungary</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('IS')"><img class="map_img" src="/image/icon/flag/IS.png"><span>Iceland</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('NZ')"><img class="map_img" src="/image/icon/flag/NZ.png"><span>New Zeal</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('NO')"><img class="map_img" src="/image/icon/flag/NO.png"><span>Norway</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('ES')"><img class="map_img" src="/image/icon/flag/ES.png"><span>Spain</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('SE')"><img class="map_img" src="/image/icon/flag/SE.png"><span>Sweden</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('CH')"><img class="map_img" src="/image/icon/flag/CH.png"><span>Switzerl</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('GB')"><img class="map_img" src="/image/icon/flag/GB.png"><span>United K</span></span>
+							<span style=" margin-left:0px;" class="area_butt button" onclick="change_area('US')"><img class="map_img" src="/image/icon/flag/US.png"><span>USA</span></span>
+				  	<hr>
+		  	<div class = "no_small">
+			  <input type="radio" checked value="wind" checked name="map_style" onchange="setMapMode(this)" ><b>Wind</b>
+			  <input type="radio"  value="temperature" name="map_style" onchange="setMapMode(this)" ><b>Temperature</b>
+			  <input type="radio"  value="camera" name="map_style" onchange="setMapMode(this)" ><b>Camera</b>
+			  <input type="checkbox" name="checkRfresh" onchange="checkRfresh(this)" >Automatic update (30 sec.) | Unit:<b><a href="/en/settings" ><span id="map-unit">km/h</span></a></b>
+			</div>  	
+		</div>
+         
+		<div id='map_canvas'></div>
+		
+		<div style="background:rgba(255,255,255,0.35);"><center><br><img style=" width:200px;" class="no_small" src="/image/logo/logo_big.png"></center><br><br></div>     
+					<div id="custom_selector">
+				<div onclick="setMapStyle('terrain')">Terrain</div>
+				<div onclick="setMapStyle('roadmap')">Roads</div>
+				<div onclick="setMapStyle('satellite')">Satelite</div>
+					
+					<div id="map-unit" style=" background:#333333; color:white;"><a style="text-decoration:none; color:gray" href="/en/settings">km/h</a></div>
+							</div>
+
+</div>
+</div>
+<div id="footer_line"> 
+	 <div id="footer_block" class="container">
+	    
+		<div class="small_footer">
+		  
+		  <center>
+			<a href="/en/" class="lang-button">EN</a>
+			<a  href="/de/" class="lang-button">DE</a> 
+			<a  href="/no/" class="lang-button">NO</a>
+			<a  href="/hu/" class="lang-button">HU</a>
+			<a  href="/fr/" class="lang-button">FR</a>
+			<a  href="/it/" class="lang-button">IT</a>
+			<a  href="/gr/" class="lang-button">GR</a>
+			<a  href="/tr/" class="lang-button">TR</a>
+			<a  href="/es/" class="lang-button">ES</a>
+			<a target="_blank" style="" href="http://www.facebook.com/holfuy"><img style="height:17px; margin:0 5px;" src="/image/icon/bf.png"></a>
+			
+			info@holfuy.hu			
+		   </center>	
+		</div>
+	
+		<div class="footer_div">
+			<div style="margin-bottom:10px;" class="footer_head">LANGUAGES</div>
+			<a href="/en/" class="lang-button">EN</a>
+			<a  href="/de/" class="lang-button">DE</a> 
+			<a  href="/no/" class="lang-button">NO</a>
+			<a  href="/hu/" class="lang-button">HU</a>
+			<a  href="/fr/" class="lang-button">FR</a>
+			<a  href="/it/" class="lang-button">IT</a>
+			<a  href="/gr/" class="lang-button">GR</a>
+			<a  href="/tr/" class="lang-button">TR</a>
+			<a  href="/es/" class="lang-button">ES</a>
+		  <br>
+		  <img onclick="window.location.href='/';" src="/image/logo/holfuy-logo-storke.png" style="  width:120px; margin-right:10px;margin-top:5px;">
+		</div>   
+		<div class="footer_div">
+		   <div class="footer_head">Join us</div>
+		   Order your Holfuy station today!<br><br><center>
+		   <a href="/en/shop/" style="text-decoration:none; box-shadow: 3px 3px 3px black;padding:5px 12px; border-radius:4px; width:120px; background:orange; color:black; font-weight:bold;">SHOP</a>
+		   </center>
+		</div>
+				<div class="footer_div">
+		   <div class="footer_head">About</div>
+		   <a class="footer_link" href="/en/about/">About Holfuy</a><br>
+		   <a class="footer_link" href="/en/support/">Support</a><br>
+		   <a class="footer_link" href="/en/faq/">FAQ</a><br>
+		   <a class="footer_link" href="/en/about/">Warranty</a><br>
+		   <a class="footer_link " hidden href="/en/privacy-policy/">Terms of service</a><br>
+		</div>
+		<div class="footer_div" style="border:0px;">
+		
+			<div class="footer_head">Contact</div>
+			<i class="fa fa-envelope-o"></i>
+			info@holfuy.hu			
+			<hr>
+						<br>	
+		</div>
+		<div class="clear"></div>
+	</div> 
+</div>
+<div class="last-foot" >
+	<center>
+		<b> © 2012-2025 Holfuy Meteorology</b> 
+		<a  href="/en/privacy-policy/">-Privacy-</a>
+		<a  href="/en/terms/">Terms-</a>
+	</center>
+	
+</div>	
+	
+<div id="cookie_alert" style="position:fixed; z-index:1010; top:0px; color:white; width:100%; min-height: 250px; font-size:normal; background:rgba(0,0,0,0.85); vertical-align: middle;">
+  <div style="margin:50px; ">We use <span style="font-size:x-large; font-weight:bold; color:whitesmoke;">Cookies</span> which help us to improve our services. E.g. we store your preferred units (temperature, wind). If you accept their use please choose if you accept all or the required cookies only. You can find out more about cookies we use <a href="/en/privacy-policy/"> at this page</a>.
+  	<br>
+  	<div onclick="setCookie_acc('all');" style="display: inline-block; border-radius:15px; cursor:pointer; min-width:100px; background:gray; padding:5px 12px; margin-top: 30px; text-align: center;  font-weight:bold; color:white; font-size:large;">Accept all</div>
+  	<div onclick="setCookie_acc('required');" style="display: inline-block; border-radius:15px; cursor:pointer; min-width:100px; background:gray; padding:5px 12px; margin-top: 30px; margin-left:50px; text-align: center; color:white; font-size:large;">Required only</div>
+  </div>
+  <script>
+  	function setCookie_acc(mode){
+  		$.getJSON('/puget/cookie.php?mode='+mode, function(result,status){
+  		});
+  		document.getElementById('cookie_alert').style.display="none";
+  	}
+  </script>
+</div>
+	 
+
+</body>
+</html>   

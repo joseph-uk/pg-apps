@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  lang='en' >
+<head>
+<title>LiveTrack24 | Login</title>
+<meta name="title" content="LiveTrack24 | Login" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin,greek">
+<link rel='stylesheet' type='text/css' href='https://www.livetrack24.com/grouped.min.css' />
+<script language='javascript' src='https://www.livetrack24.com/js/grouped.min.js'></script>
+<script type="text/javascript">
+var site_url = '/wall/';
+
+var delete_com_alert = "Are you sure you want to delete this comment?";
+var delete_post_alert = "Are you sure you want to delete this post?";
+var language_like = "Like";
+var language_unlike = "Unlike";
+var lang_com_next = "Next";
+var lang_write_comment = "Write a comment";
+var lang_group_label = "";
+var lang_account_sett = "Account Settings";
+var lang_remove_buddy = "REMEMBER: Removing a friend will remove all the posts and sharings between you and your friend permanently. Do you still want to Continue?";
+
+var lightbox_path = '/wall/assets/lightbox/';
+
+var _lang_time_few_sec = " seconds ago";
+var _lang_time_mints_ago = "minutes ago";
+var _lang_time_hours_ago = "hours ago";
+var txt_var_49 = "Error: It seems this post is deleted or you are not allowed do this action.";
+
+var MainPage = "";
+var notMyProfile = "";
+
+var objType = "0";
+var objID = "0";
+
+</script>
+
+
+    <script type="text/javascript" src="/js/jquery-polyglot.language.switcher.js"></script>
+    <link rel='stylesheet' type='text/css' href='/css/polyglot-language-switcher-2.css' />
+
+    <script type="application/javascript">
+        function geoip(json){}
+    </script>
+    <script async src="https://geojs.srv.waymore.io/geo.js"></script>
+
+    <script type="text/javascript">
+	var translateActive=0;
+	var translateDontFollowLinks=1;
+	var language='english';
+	
+    var  server_task_ajax='https://c4.livetrack24.com';
+    var  server_track_ajax='';
+
+
+    $.fn.extend({
+        popoverClosable: function (options) {
+            var defaults = {
+                template:
+                    '<div class="popover popoverService">\
+    <div class="arrow"></div>\
+    <div class="popover-header">\
+    <button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>\
+    <h3 class="popover-title"></h3>\
+    </div>\
+    <div class="popover-content"></div>\
+    </div>'
+            };
+            options = $.extend({}, defaults, options);
+            var $popover_togglers = this;
+            $popover_togglers.popover(options);
+            $popover_togglers.on('click', function (e) {
+                e.preventDefault();
+                $popover_togglers.not(this).popover('hide');
+                // $(this).parent().parent().hide().css('display:none;');
+            });
+            $('html').on('click', '[data-dismiss="popover"]', function (e) {
+                $popover_togglers.popover('hide');
+                $(this).parent().parent().hide().css('display:none;');
+            });
+        }
+    });
+
+
+    $(document).ready(function(){
+
+        $('#langSelect').polyglotLanguageSwitcher();
+
+        $(".serviceText").each(function(){
+            var this_id=$(this).attr('id');
+            var orgHtml=$(this).html();
+            var serviceName=this_id.substring(8);
+
+            $.getJSON(  '/ajax_actions.php?op=serviceInfo&name='+serviceName, function( data ) {
+                // alert(data['title']);
+                $("#service_"+data['name']).addClass('servicePopover');
+
+                var html=data['desc'];
+
+                if ( data['until']!=0 ){
+                    html+='<BR><BR><div class="alert alert-success">You have this feature activated until '+data['until']+'</div>';
+                } else {
+                    html+='<BR><BR><div class="alert alert-info">You can get this feature too, see below on how to buy extra services</div>';
+                }
+
+                if (data['packages']) {
+                    html+='It is included in the following services:<BR><BR>';
+
+                    for (key in data['packages']) {
+                        html+=
+                            '<a class="btn btn-primary" href="'+data['packages'][key]+'"><span class="glyphicon glyphicon-chevron-down"></span> '+key+'</a>&nbsp;';
+                    }
+                    html+='<BR>';
+                }
+
+
+
+                $("#service_"+data['name']).popoverClosable({
+                    'toggle':"popover",
+                    'html':true,
+                    'placement':"top",
+                    'title':data['title'],
+                    'content':html
+                });
+            });
+
+        });
+
+
+        
+		bindActionsToTrackDivs();
+
+        initClickovers();
+		/*
+		$("#breadcrumbs a").hover(
+		    function () {
+		        $(this).addClass("hover").children().addClass("hover");
+		        $(this).parent().prev().find("span.arrow:first").addClass("pre_hover");
+		    },
+		    function () {
+		        $(this).removeClass("hover").children().removeClass("hover");
+		        $(this).parent().prev().find("span.arrow:first").removeClass("pre_hover");
+		    }
+		);*/
+
+        
+
+    });
+
+
+	function bindActionsToTrackDivs() {
+		return;
+		//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+		//Caption Sliding (Partially Hidden to Visible)
+	
+		$('.boxgrid.caption').hover(function(){
+			$(".cover", this).stop().animate({top:'73px'},{queue:false,duration:160});
+			$(this).css( 'overflow', 'visible' );
+
+		}, function() {
+			 $(".cover", this).stop().animate({top:'103px'},{queue:false,duration:160});
+			 $(this).css( 'overflow', 'hidden' );
+		});
+
+				
+		// $(".zoomImg").thumbPopup();
+	}
+
+    function switchBeta(on) {
+        $.get('/ajax_actions.php?op=switch_beta&on='+on,
+            function(result){
+                location.reload();
+            }
+        );
+    }
+    function betaOptOut() {
+        $.get('/ajax_actions.php?op=beta_opt_out',
+            function(result){
+                location.reload();
+            }
+        );
+    }
+
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"light-bottom"};
+
+</script>
+
+<script type="text/javascript" src="/js/cookieconsent.min.js"></script>
+
+
+    <style type="text/css">
+<!--
+
+#translateDiv{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgb(232, 232, 232);
+    padding: 4px;
+    border: 2px solid #B3B3B3;
+    z-index:999999;
+    display: none;
+
+
+}
+#translateDiv{
+    overflow-y: scroll;
+}
+
+.translateStringDiv {
+    margin:2px;
+
+}
+#translateControl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: auto;
+    background: #D5DCFF;
+    font-size: 12px;
+    padding: 2px;
+    border: 2px solid #B3B3B3;
+}
+#translateDontFollowLinks {
+    text-decoration: none;
+    /* cursor: pointer; */
+    font-size: 9px;
+}
+.colorgraph {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+
+.navbar-collapse.collapse {
+    display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+.navbar-right {
+    float: right!important;
+}
+.pull-right {
+    float: right!important;
+}
+
+
+body , html, * {
+    /*font-family: "Open Sans", Arial, sans-serif;*/
+    font-family: "Roboto", sans-serif ;
+
+}
+
+.popoverService {
+    max-width: 400px ! important;
+}
+
+.beta-dialog .modal-dialog {
+    width: 800px;
+}
+
+.beta-dialog p , .beta-dialog li {
+    font-size:12px;
+}
+
+
+
+.mbc_container  {padding:0}
+
+ul.token-input-list-facebook {
+    width:80px;
+    float:left;
+}
+
+ .containerMC{
+    width: 500px;
+    height: auto;
+}
+
+#dock{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
+#user_menu_div  { width: 1000px; }
+.contentMain    {    width:1040px; }
+.leftCol        {    width:780px; }
+ 
+
+.style1 {font-size: 13px}
+.smallLink , .smallLink a:link, .smallLink a:visited, .smallLink a:active {font-size: 11px}
+.style2 {
+	color: #FF0000;
+	font-style: italic;
+}
+body, #wrapperMain , #wrapper , .main_div  {
+/*height:100%;*/
+}
+
+#wrapperMain , #wrapper , .main_div  {
+/*height:100%;*/
+}
+
+
+.flag {
+    margin-left:1px;
+    margin-right:1px;
+    width:24px;
+}
+
+.flagFilter {
+    margin-left:1px;
+    margin-right:1px;
+    width:20px;
+}
+
+.activityFilter {
+    margin-left:1px;
+    margin-right:1px;
+    width:16px;
+}
+
+.flagsDiv {
+    position:relative;
+    top:-17px;
+    left:7px;
+    padding:1px;
+    padding-left:0;
+    padding-right:0;
+    background-color:#FFFFFF;
+    width:80px;
+
+    overflow:hidden;
+}
+
+.activitiesDiv {
+    position:relative;
+    top:-19px;
+    left:7px;
+    padding:1px;
+    padding-left:0;
+    padding-right:0;
+    background-color:#FFFFFF;
+    width:80px;
+
+    overflow:hidden;
+}
+
+-->
+</style>
+
+
+    <script>
+    </script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4139288-2']);
+    _gaq.push(['_setDomainName', '.livetrack24.com']);
+    _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</head>
+<body >
+
+
+
+<div width=100% align=center id='wrapperMain' class='wrapperMain'>
+
+<div id='wrapper-e' align=center>
+  <div class="wrapper-l"> 
+    <div class="wrapper-r" style='width:1040px;'> 
+
+
+
+	
+<script type="text/javascript">
+
+var hidetimer;
+var site_url='/wall/';
+
+$(function() {
+
+	$('.vid_trigger').click( function(e){
+		var URL = $(this).attr('id');
+		var htm = '<iframe width="350" height="250" src="https://www.youtube.com/embed/' + URL + '?rel=0&autoplay=1" frameborder="0" allowfullscreen ></iframe>';
+		$(this).html(htm);
+		return false;
+	});
+
+});
+
+
+function changeLanguage(lang0) {
+    var lang=lang0;
+    if (!lang) lang=$("#selectLang").val();
+    $.get("/ajax_actions.php?op=change_language&new_language="+lang,
+        function(result){
+            location.reload();
+        }
+    );
+}
+
+function changeTZ() {
+    var changeOffset=$("#changeOffset").val();
+    var showLocalTimes=$("#showLocalTimes").is(':checked')?1:0;
+
+    $.get("/ajax_actions.php?op=change_tz&changeOffset="+changeOffset+"&showLocalTimes="+showLocalTimes,
+        function(result){
+            window.location.reload(true);
+           //window.location.href=window.location.href;
+        }
+    );
+
+}
+
+
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    //js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=83965197938";
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=83965197938";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+
+	$(function() {
+		var pageUrl = window.location;
+		var pageTitle=$("title").text();	
+	});
+
+
+
+
+
+$(document).ready(function () {
+	$("#userSearchBox").tokenInput("/EXT_pilot_functions.php?op=findPilot&format=json",
+		 {
+		hintText: "Search for username...",
+        minChars: 2,
+        theme: "light",
+        // tokenLimit: 1,
+        onAdd: function (item) {
+            var url='https://www.livetrack24.com/user/%USERID%';
+            url=url.replace('%USERID%',item.id);
+            window.location = url;
+        }
+	});
+
+	});
+</script>
+
+<div id="fb-root"></div>
+
+<div class="topdiv" id="topdiv" width="100%" align="center">
+	<div class="hsep5"></div>
+	<table class='topMenu'>
+    	<tr>
+        	<td rowspan="2" align="left">
+        	 <a href="/" > 
+						 
+        		<img src="/img/logo.png" />
+        	</a>
+        	</td>
+            <td align="center" rowspan="2">
+                
+                <a class="btn btn-danger" style="text-decoration:none" href="/docs/mobile" alt="Install on yuor phone & start Tracking">
+                    <i class="fa fa-android fa-1x" target="_blank"></i>&nbsp;
+                    <i class="fa fa-apple fa-1x" target="_blank"></i>&nbsp; Get Started</a>
+
+            </td>
+        	<td align="right" valign="top" style="padding-top:5px;">
+
+            	            <a href="/login" class="buttonsmall bluetop">Login</a>
+	            <a href="/register" class="buttonsmall bluetop">Sign Up</a>
+             
+
+            
+            <a contact-id='2' href="javascript:;" class="contactButton buttonsmall">Contact</a>
+            </td>
+        	<td align="left" valign="top" style="padding-top:7px; padding-left:8px;" width="160">
+        	
+                            <div id="langSelect" class="polyglot-language-switcher"  data-selected-lang="english" data-grid-columns="3" data-anim-effect="slide" data-open-mode="click">
+                    <ul style="display: none">
+                        <li><a href='javascript:changeLanguage("english");' title='English' data-lang-id='english'><img src='/img/flags/uk.gif' alt='English'> English</a></li>
+<li><a href='javascript:changeLanguage("german");' title='Deutsch' data-lang-id='german'><img src='/img/flags/de.gif' alt='Deutsch'> Deutsch</a></li>
+<li><a href='javascript:changeLanguage("french");' title='Français' data-lang-id='french'><img src='/img/flags/fr.gif' alt='Français'> Français</a></li>
+<li><a href='javascript:changeLanguage("italian");' title='Italiano' data-lang-id='italian'><img src='/img/flags/it.gif' alt='Italiano'> Italiano</a></li>
+<li><a href='javascript:changeLanguage("spanish");' title='Español' data-lang-id='spanish'><img src='/img/flags/es.gif' alt='Español'> Español</a></li>
+<li><a href='javascript:changeLanguage("portuguese");' title='Português' data-lang-id='portuguese'><img src='/img/flags/pt.gif' alt='Português'> Português</a></li>
+<li><a href='javascript:changeLanguage("greek");' title='Ελληνικά' data-lang-id='greek'><img src='/img/flags/gr.gif' alt='Ελληνικά'> Ελληνικά</a></li>
+<li><a href='javascript:changeLanguage("turkish");' title='Türkçe' data-lang-id='turkish'><img src='/img/flags/tr.gif' alt='Türkçe'> Türkçe</a></li>
+<li><a href='javascript:changeLanguage("danish");' title='Dansk' data-lang-id='danish'><img src='/img/flags/dk.gif' alt='Dansk'> Dansk</a></li>
+<li><a href='javascript:changeLanguage("swedish");' title='Svenska' data-lang-id='swedish'><img src='/img/flags/se.gif' alt='Svenska'> Svenska</a></li>
+<li><a href='javascript:changeLanguage("finnish");' title='Suomi' data-lang-id='finnish'><img src='/img/flags/fi.gif' alt='Suomi'> Suomi</a></li>
+<li><a href='javascript:changeLanguage("dutch");' title='Nederlands' data-lang-id='dutch'><img src='/img/flags/nl.gif' alt='Nederlands'> Nederlands</a></li>
+<li><a href='javascript:changeLanguage("polish");' title='Polski' data-lang-id='polish'><img src='/img/flags/pl.gif' alt='Polski'> Polski</a></li>
+<li><a href='javascript:changeLanguage("czech");' title='Čeština' data-lang-id='czech'><img src='/img/flags/cz.gif' alt='Čeština'> Čeština</a></li>
+<li><a href='javascript:changeLanguage("hungarian");' title='Magyar' data-lang-id='hungarian'><img src='/img/flags/hu.gif' alt='Magyar'> Magyar</a></li>
+<li><a href='javascript:changeLanguage("slovenian");' title='Slovenščina' data-lang-id='slovenian'><img src='/img/flags/si.gif' alt='Slovenščina'> Slovenščina</a></li>
+<li><a href='javascript:changeLanguage("afrikaans");' title='Afrikaans' data-lang-id='afrikaans'><img src='/img/flags/za.gif' alt='Afrikaans'> Afrikaans</a></li>
+<li><a href='javascript:changeLanguage("romanian");' title='Română' data-lang-id='romanian'><img src='/img/flags/ro.gif' alt='Română'> Română</a></li>
+<li><a href='javascript:changeLanguage("russian");' title='Ру́сский язы́к' data-lang-id='russian'><img src='/img/flags/ru.gif' alt='Ру́сский язы́к'> Ру́сский язы́к</a></li>
+<li><a href='javascript:changeLanguage("bulgarian");' title='български език' data-lang-id='bulgarian'><img src='/img/flags/bg.gif' alt='български език'> български език</a></li>
+<li><a href='javascript:changeLanguage("serbian");' title='Cрпски језик' data-lang-id='serbian'><img src='/img/flags/cs.gif' alt='Cрпски језик'> Cрпски језик</a></li>
+<li><a href='javascript:changeLanguage("croatian");' title='Hrvatski jezik' data-lang-id='croatian'><img src='/img/flags/hr.gif' alt='Hrvatski jezik'> Hrvatski jezik</a></li>
+<li><a href='javascript:changeLanguage("chinese");' title='中文' data-lang-id='chinese'><img src='/img/flags/cn.gif' alt='中文'> 中文</a></li>
+<li><a href='javascript:changeLanguage("hebrew");' title='עברית' data-lang-id='hebrew'><img src='/img/flags/il.gif' alt='עברית'> עברית</a></li>
+                    </ul>
+                </div>
+
+            </td>
+        </tr>
+        <tr>
+        
+        <td colspan='3' align='right'>
+                 	<div align='right' style='float: right; margin-right: 22px; margin-bottom: 11px; margin-top: 10px;'>
+
+                 <a href="https://twitter.com/livetrack24" class="twitter-follow-button"
+                    data-show-screen-name="false"
+                    data-show-count="false" data-size="normal">Follow @livetrack24</a>
+                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                 </script>
+
+
+
+                <div style='line-height: 10px' class="fb-like"
+                     data-href="https://www.facebook.com/LiveTrack24"
+                     data-width="120"
+                     data-height="40"
+                     data-colorscheme="light" data-layout="button_count"
+                     data-action="like" data-show-faces="false" data-send="false"></div>
+	        </ul>
+        	</div>	
+        	        	
+        	        </td>
+        </tr>
+    </table>
+
+
+
+
+<!----   second line menu  -->
+ <div class="navbar navbar-green">
+  <div class="container-fluidX">
+
+  <!---
+  <div class="navbar-collapse collapse">
+  -->
+    <div class="" >
+
+    <ul class="nav navbar-nav">
+        <li>
+            <a class="buttonTopMenu" href="/" class="">
+                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+        </li>
+        <li class="dropdown mega-menu-6 transition">
+            <a href="/tracks" class="buttonTopMenu ">Explore LiveTracks                                    <span class="badge btn-main">72</span>
+                            </a>
+        </li><!-- Regular Menu Ends -->
+        <li class="dropdown mega-menu-6 transition">
+            <a href="/events/year/2025">Live Events                              </a>
+        </li><!-- 3 Columns -->
+        <li class="dropdown menu-large">
+            <a href="/services/index" class="dropdown-toggle" data-toggle="dropdown">Services                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu megamenu row">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services1">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-bubbles-3 left"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_takeoff_assist_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Livetracking services for individuals</h3>
+                                <p>LiveTrack24 is the answer to every pilot's need.
+                                    Combining a robust reliable device with an innovative
+                                    and easy to use service, adding security and fun to your
+                                    activity</p>
+                                <p><a class="btn btn-primary" href="/services/index#services1"><i class=" icomoon-arrow-right-2  "></i>Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services2">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-stats center"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_event_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Services for Events / Competitions</h3>
+                                <p>
+                                    The Livetrack24 service gives you more than you thought was possible
+                                    Real time tracking, Live scoreboard and Retrieve made simple, all in one simple and affordable package.
+
+                                </p>
+                                <p><a class="btn btn-primary" href="/services/index#services2"><i class=" icomoon-arrow-right-2  "></i>Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="thumbnail ">
+                            <a href="#services3">
+                                <span class="img-circle homeThumbnailCircle"><i class="icomoon-cogs right"></i></span>
+                                <img class="img-circle" src='/img/banners/photo_code_small.jpg' width='90%'>
+                            </a>
+                            <div class="caption">
+                                <h3>Outsourcing Services / for 3rd party apps & services</h3>
+                                <p>We offer a complete set of APIs so that you can integrade Livetracking in your service very fast and easy.</p>
+                                <div style="height: 8px;"></div>
+                                <p><a class="btn btn-primary" href="/services/index#services3">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            </ul>
+        </li>
+                 <li class="dropdown mega-menu-6 transition">
+                 <div class="sb-toggle-left">
+
+                     <div class="navicon-line"></div>
+                     <div class="navicon-line"></div>
+                     <div class="navicon-line"></div>
+                 </div>
+         </li>
+    </ul>
+
+
+    
+    </div><!--/.nav-collapse -->
+</div>
+
+    </div><!-- /.navbar .navbar-inverse -->
+
+
+</div>
+
+
+
+
+<script language="javascript">
+
+    function translateSeeAll() {
+        $("#translateDiv").toggle();
+
+    }
+
+var msgBoxes=[];
+
+function hideMessageAlert(mID) {
+	$.post( '/ajax_actions.php?op=alert_message&action=hide', {mID:mID} );	
+	$("#msg_close_"+mID).html("<strong>OK</strong>").parent().parent().fadeOut(300);
+}
+
+function showContact(page) {
+	//var topicID=page.substring(1);
+    var topicID=page;
+	var url="/contact.php?topicID="+topicID;
+	$.get(url, 
+		function(result){
+            $("#modalDialog .modal-title").html('Contact us');
+            $("#modalDialog .modal-body").html( result );
+            $("#modalDialog .modal-footer").html('');
+            $('#modalDialog').modal();
+
+		}
+	);
+}
+
+function closePopup() {
+	activeUserMenu='';
+	$("#actionDiv").hide();
+	$("#takeoffAddID").hide();
+	$("#smsPopupDiv").hide();
+	$("#smsPopupError").hide();
+    $("#userMenuDiv").hide();
+
+}
+
+$(document).ready(function(){
+	// initBtn();
+	
+	$(".userMenuLinkX").live('click', function(e) {
+		if ($("#userMenuDiv").is(':visible') ) {
+			$("#userMenuDiv").hide();
+			return;
+		}
+		$("#userMenuDiv").css({
+				left:$(this).offset().left-5,
+				top:$(this).offset().top+15
+			}).html("<img src='/img/ajax-loader.gif'>").show();	
+		var this_id=$(this).attr('id'); 
+		var parts=this_id.split("_");
+		var user_id=parts[1];
+		
+		$("#userMenuDiv").load('/GUI_EXT_user.php?op=usermenu&user_id='+user_id);
+	});
+
+    $(".userMenuLinkX").clickover({
+        content: function() {
+            return "###";
+        },
+        html: true,
+        global_close: true,
+        trigger: 'click',
+        placement: 'bottom'
+    });
+
+    $('.userMenuLink').clickover({
+        placement: 'bottom',
+        trigger: 'click',
+        html: true,
+        title:'',
+        content:'content',
+        container: 'body',
+        class_name: 'clickover',
+        global_close: true,
+
+        onShown: function(e){
+            var clickover=this;
+            var this_id=this.$element[0].id;
+            var parts=this_id.split("_");
+
+            var url="/GUI_EXT_user.php?op=usermenu&user_id="+parts[1];
+            $.get(url,function(response) {
+                $("div.clickover").find("div.popover-content").html(response);
+                $("div.clickover").find(".popover-title").prepend(popoverCloseButtonHtml);
+                clickover.resetPosition();
+            });
+
+        }
+
+    });
+
+
+
+    $(document.body).on('click', '.closePopupButton', function() {
+        closePopup();
+    })
+
+	$(".closePopupButton").live('click', function(e) {
+			closePopup();
+	});
+
+	$(".contactButton").click(function(f) {		
+		showContact( $(this).attr('contact-id') );
+	});	
+		
+		
+	msgBoxes[13]=$.jGrowl('Due to a change in the default view your older than 30 days tracks are not shown. <a href="https://www.livetrack24.com/news/2023_08_19">Check here on how to find them</a><HR><div id="msg_close_13"><a href="javascript:void(0);" onclick="hideMessageAlert(13);">Dont show this message again</a></div>', { 
+		header: 'Older Tracks not shown',
+		theme: 'manilla',
+		sticky: true
+	});
+	
+
+});
+
+</script>
+
+
+<div class="maindiv" id="maindiv">
+    <div class="contentMain">
+        <div id='userMenuDiv'></div>
+
+<div style='clear:both;'><style type="text/css">
+label { display:block; font-weight:bold; color:#888; font:10px Arial, Helvetica, sans-serif; text-transform:uppercase; margin:12px 0 4px; }
+
+ul.success-reg { margin: 5px 0; padding:0; };
+ul.success-reg li { line-height: 25px; color: #999; list-style: none; }
+span.success-info { width: 70px; }
+
+input.edit_search { width:400px; }
+
+ul.success-reg { margin:10px 10px 10px 0; font-size:120%; }
+
+ul.success-reg li { padding: 5px 0; list-style: none; color: #999; border-bottom:1px dotted #ccc; }
+
+ul.success-reg li span.success-info b { padding-right:5px; color:#222; display:inline-block; width:80px; }
+
+.credentials { width:149px; float:left; text-align: center; padding:0 5px; margin:10px 5px; border-right:1px dotted #ccc; }
+
+/* Form style */
+
+fieldset { padding:20px; border:1px solid #eee; -moz-border-radius: 5px; -webkit-border-radius:5px; }
+legend { padding:7px 10px; font-weight:bold; color:#000; border:1px solid #eee; -moz-border-radius: 5px; -webkit-border-radius:5px; }
+
+span.required{ font-size: 13px; color: #08c; }
+</style>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	$("#user").focus();
+});
+</script>	
+<h1 class='pageheader'>  Login<small><a  href='/register'>Sign up <span class='caret'></span></a></small></h1>
+<div align='center' style="width:800px;">
+<div align='center' style="width:260px;">
+  <div align='left'>
+    <form method="POST" action="userFormProcess.php">
+   
+     <BR />
+    
+    <label>Username</label><input style="width:100%;" type="text" name="user" id="user" size="30" maxlength="30" value="">
+    
+    <br />
+    <label>Password</label><input style="width:100%;" name="pass" type="password" size="30" maxlength="30" value="">
+    <br />
+    <label>Remember me<input type="checkbox" name="remember"  > </label>
+     
+    <input type="hidden" name="sublogin" value="1">
+    <input style="width:100%;"  class='btn btn-lg btn-primary' type="submit" value="Login" name="login">
+      <br /><br /><br />
+     <p align="left"><a style="width:100%;" class='btn btn-sm btn-warning' href="/password-reset">Forgotten Password? ?</a></p>
+    <br />
+     <p align="left">
+         <a style="width:100%;" class='btn btn-sm btn-success' href="/register">
+             Not registered? <br />
+         It's free, quick &amp; easy to do so         here</a>
+     </p>
+    </form>                
+	</div>
+</div>
+</div>
+<br />
+
+</div> 	</div>
+
+    <div class="hsep1 clearfix" ></div>
+</div>
+
+    <div class="modal fade" id="modalDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">INFO</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="bottom1div" width="100%" style="clear:both;"></div>
+<div class="bottom2div" width="100%" style="clear:both;">
+
+    <div id="ft">
+        <div id="footer_nav">
+          <div class="yui-u first">
+            <ul class="left" style='width:180px'>
+              <li><strong>About</strong></li>
+              <li><a href="/docs/aboutus">About us</a></li>
+              <li><a href="/docs/index">How it works</a></li>
+              <li><a href="/apps/gprs_calculator">How much does it cost</a></li>
+              <li><a href="/services/index">Features and services</a></li>
+              <li><a contact-id='2' href="javascript:;" onclick="showContact( $(this).attr('contact-id') )">Contact Us</a></li>
+            </ul>
+            <ul class="left" style='width:180px'>
+              <li><strong>I want to be tracked...</strong></li>
+              <li><a href="/apps/index" >Install on the Phone </a></li>
+              <li><a href="/docs/mobile">Our App for Android/iPhone</a></li>
+              <li><a href="/store/index">Get a Tracking device</a></li>
+              <li><a href="/register">Create an account</a></li>
+              <li><a href="/docs/embed">Let your friends know</a></li>
+
+            </ul>
+            <ul class="left" style='width:200px'>
+              <li><strong>I want to track a friend</strong></li>
+              <li><a href="/docs/viewing">General FAQ for viewers</a></li>
+              <li><a href="/docs/rss">Rss feeds</a></li>
+              <li><a href="/docs/mobilepages">Pages for use on Mobile phones</a></li>
+            </ul>
+            <ul class="left" style='width:180px'>
+              <li><strong><a href="/tasks" rel="nofollow" >Events / Races / Comps</a></strong></li>
+              <li><a href="/services/events">Services for organizers</a></li>
+              <li><a href="/doc/Livetracking%20for%20Competitions.pdf">Guide for organizers</a></li>
+              <li><a contact-id='2' href="javascript:;" onclick="showContact( $(this).attr('contact-id') )">Contact Us</a></li>
+
+            </ul>
+            <div class="clearl"></div>
+          </div>
+
+
+
+            <div id="footer_copyright">
+            ©2006-2025 LiveTrack24 ::
+                <a href='/wiki'>Wiki</a> ::
+                <a href='/docs/api'>API</a>
+
+          </div>
+        </div>
+    </div>
+  
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
+

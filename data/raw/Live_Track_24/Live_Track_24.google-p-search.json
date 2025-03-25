@@ -1,0 +1,468 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [
+      {
+        "title": "Google Custom Search - Live Track 24",
+        "totalResults": "3210000000",
+        "searchTerms": "Live Track 24",
+        "count": 10,
+        "startIndex": 1,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ],
+    "nextPage": [
+      {
+        "title": "Google Custom Search - Live Track 24",
+        "totalResults": "3210000000",
+        "searchTerms": "Live Track 24",
+        "count": 10,
+        "startIndex": 11,
+        "inputEncoding": "utf8",
+        "outputEncoding": "utf8",
+        "safe": "off",
+        "cx": "54482041e4fa64c0f"
+      }
+    ]
+  },
+  "context": {
+    "title": "pg-apps"
+  },
+  "searchInformation": {
+    "searchTime": 0.404732,
+    "formattedSearchTime": "0.40",
+    "totalResults": "3210000000",
+    "formattedTotalResults": "3,210,000,000"
+  },
+  "items": [
+    {
+      "kind": "customsearch#result",
+      "title": "LiveTrack24 | Home",
+      "htmlTitle": "\u003cb\u003eLiveTrack24\u003c/b\u003e | Home",
+      "link": "https://www.livetrack24.com/",
+      "displayLink": "www.livetrack24.com",
+      "snippet": "We provide real-time GPS tracking for outdoor activities & complete solutions for sporting events.",
+      "htmlSnippet": "We provide real-time GPS \u003cb\u003etracking\u003c/b\u003e for outdoor activities &amp; complete solutions for sporting events.",
+      "formattedUrl": "https://www.livetrack24.com/",
+      "htmlFormattedUrl": "https://www.\u003cb\u003elivetrack24\u003c/b\u003e.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKM_bdwkdxPajAMSslSOdvtjJItkfvuoigKIiUjhkFPUpXUZjF2nEQ9t5v&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "title": "LiveTrack24 | Home"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.livetrack24.com/img/livetrack24_package.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flightradar24: Live Flight Tracker - Real-Time Flight Tracker Map",
+      "htmlTitle": "\u003cb\u003eFlightradar24\u003c/b\u003e: \u003cb\u003eLive\u003c/b\u003e Flight \u003cb\u003eTracker\u003c/b\u003e - Real-Time Flight \u003cb\u003eTracker\u003c/b\u003e Map",
+      "link": "https://www.flightradar24.com/",
+      "displayLink": "www.flightradar24.com",
+      "snippet": "Flightradar24 is the best live flight tracker that shows air traffic in real time. Best coverage and cool features!",
+      "htmlSnippet": "Flightradar24 is the best \u003cb\u003elive\u003c/b\u003e flight \u003cb\u003etracker\u003c/b\u003e that shows air traffic in real time. Best coverage and cool features!",
+      "formattedUrl": "https://www.flightradar24.com/",
+      "htmlFormattedUrl": "https://www.flightradar24.com/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCB7UyWNFICPhJcnkiYvvc586bmUI-babfbzC5TGl8lQxyBShXP17v_HwZ&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "apple-itunes-app": "app-id=382233851",
+            "og:image": "https://images.flightradar24.com/opengraph/fr24_logo_default.png",
+            "twitter:app:id:googleplay": "com.flightradar24free",
+            "og:image:width": "1200",
+            "twitter:card": "Application",
+            "theme-color": "#ffffff",
+            "og:site_name": "Flightradar24",
+            "twitter:app:url:ipad": "fr24://",
+            "twitter:app:name:googleplay": "Flightradar24",
+            "twitter:app:id:iphone": "382233851",
+            "msapplication-tileimage": "/favicons/ms-icon-144x144.png",
+            "og:description": "The world’s most popular flight tracker. Track planes in real-time on our flight tracker map and get up-to-date flight status &amp; airport information.",
+            "twitter:image": "https://images.flightradar24.com/opengraph/fr24_logo_twitter.png",
+            "twitter:site": "@flightradar24",
+            "msapplication-tilecolor": "#ffffff",
+            "og:type": "website",
+            "twitter:title": "Live Flight Tracker - Real-Time Flight Tracker Map | Flightradar24",
+            "og:image:url": "https://images.flightradar24.com/opengraph/fr24_logo_default.png",
+            "author": "Flightradar24",
+            "og:title": "Live Flight Tracker - Real-Time Flight Tracker Map | Flightradar24",
+            "og:image:height": "1200",
+            "twitter:app:id:ipad": "382233851",
+            "google": "notranslate",
+            "twitter:app:url:googleplay": "https://www.flightradar24.com/",
+            "twitter:app:name:ipad": "Flightradar24",
+            "viewport": "shrink-to-fit=no,initial-scale=1,width=device-width,user-scalable=yes,maximum-scale=5.0",
+            "twitter:description": "The world’s most popular flight tracker. Track planes in real-time on our flight tracker map and get up-to-date flight status &amp; airport information.",
+            "og:url": "https://www.flightradar24.com/",
+            "google-play-app": "app-id=com.flightradar24free",
+            "twitter:app:name:iphone": "Flightradar24"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://images.flightradar24.com/opengraph/fr24_logo_default.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Login - LiveTrack24",
+      "htmlTitle": "Login - LiveTrack24",
+      "link": "https://www.livetrack24.com/login",
+      "displayLink": "www.livetrack24.com",
+      "snippet": "Services for Events / Competitions. The Livetrack24 service gives you more than you thought was possible Real time tracking, Live scoreboard and Retrieve made ...",
+      "htmlSnippet": "Services for Events / Competitions. The \u003cb\u003eLivetrack24\u003c/b\u003e service gives you more than you thought was possible Real time \u003cb\u003etracking\u003c/b\u003e, \u003cb\u003eLive\u003c/b\u003e scoreboard and Retrieve made&nbsp;...",
+      "formattedUrl": "https://www.livetrack24.com/login",
+      "htmlFormattedUrl": "https://www.\u003cb\u003elivetrack24\u003c/b\u003e.com/login",
+      "pagemap": {
+        "metatags": [
+          {
+            "title": "LiveTrack24 | Login"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Model 24 | 24-Track Live Recorder & Mixing Console With Audio ...",
+      "htmlTitle": "Model \u003cb\u003e24\u003c/b\u003e | \u003cb\u003e24\u003c/b\u003e-\u003cb\u003eTrack Live\u003c/b\u003e Recorder &amp; Mixing Console With Audio ...",
+      "link": "https://tascam.com/us/product/model_24",
+      "displayLink": "tascam.com",
+      "snippet": "The TASCAM Model 24 is a full featured 24 Track Digital Multitrack Recorder and 24 Channel USB Audio Interface with integrated Analog Mixdown capabilities.",
+      "htmlSnippet": "The TASCAM Model \u003cb\u003e24\u003c/b\u003e is a full featured \u003cb\u003e24 Track\u003c/b\u003e Digital Multitrack Recorder and \u003cb\u003e24\u003c/b\u003e Channel USB Audio Interface with integrated Analog Mixdown capabilities.",
+      "formattedUrl": "https://tascam.com/us/product/model_24",
+      "htmlFormattedUrl": "https://tascam.com/us/product/model_\u003cb\u003e24\u003c/b\u003e",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR00oc1UznlPbqCRL-hpxMsvm4qYOIf26F2WNJmAOCs0vfSr7ncOoe58wA&s",
+            "width": "240",
+            "height": "210"
+          }
+        ],
+        "thumbnail": [
+          {
+            "src": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_24/model_24_p_top.jpg"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://tascam.com/wp-content/uploads/images/products/thumbnail_img/model_24_sub.jpg",
+            "thumbnail": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_24/model_24_p_top.jpg",
+            "twitter:card": "summary_large_image",
+            "og:type": "product",
+            "twitter:site": "https://tascam.com/us",
+            "og:site_name": "TASCAM - United States",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "Professional 24-channel digital multitrack recorder and mixer. Perfect for studios, live venues, and rehearsal spaces.",
+            "og:title": "Model 24 | 24-Track Live Recorder & Mixing Console With Audio Interface | TASCAM - United States",
+            "og:locale": "en-US",
+            "og:description": "Professional 24-channel digital multitrack recorder and mixer. Perfect for studios, live venues, and rehearsal spaces.",
+            "twitter:image:src": "https://tascam.com/wp-content/uploads/images/products/thumbnail_img/model_24_sub.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_24/model_24_p_top.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "How was live sound recorded on 24 track with more instruments in ...",
+      "htmlTitle": "How was \u003cb\u003elive\u003c/b\u003e sound recorded on \u003cb\u003e24 track\u003c/b\u003e with more instruments in ...",
+      "link": "https://www.reddit.com/r/livesound/comments/163xwpf/how_was_live_sound_recorded_on_24_track_with_more/",
+      "displayLink": "www.reddit.com",
+      "snippet": "Aug 28, 2023 ... 24 tracks was a big up from the 16 we'd been living with too. Drums were often an isolated kick & snare plus a mix down on 2 channels of the toms & overheads.",
+      "htmlSnippet": "Aug 28, 2023 \u003cb\u003e...\u003c/b\u003e \u003cb\u003e24 tracks\u003c/b\u003e was a big up from the 16 we&#39;d been \u003cb\u003eliving\u003c/b\u003e with too. Drums were often an isolated kick &amp; snare plus a mix down on 2 channels of the toms &amp; overheads.",
+      "formattedUrl": "https://www.reddit.com/.../livesound/.../how_was_live_sound_recorded_on...",
+      "htmlFormattedUrl": "https://www.reddit.com/.../\u003cb\u003elive\u003c/b\u003esound/.../how_was_\u003cb\u003elive\u003c/b\u003e_sound_recorded_on...",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4muDqxjiG2oj0MJFbVzZ5caPYOgq979dV7NCA_eFGsO25-k6Q3ngPsiM&s",
+            "width": "271",
+            "height": "186"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://preview.redd.it/how-was-live-sound-recorded-on-24-track-with-more-v0-0u075i3q0xkb1.jpg?auto=webp&s=94f8e8f5ff2ee7d2a654d538dc12fde7d1bb6fcc",
+            "theme-color": "#000000",
+            "og:image:width": "669",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "r/livesound on Reddit: How was live sound recorded on 24 track with more instruments in the 70s?",
+            "og:site_name": "Reddit",
+            "og:title": "r/livesound on Reddit: How was live sound recorded on 24 track with more instruments in the 70s?",
+            "og:image:height": "458",
+            "msapplication-navbutton-color": "#000000",
+            "og:description": "Posted by u/Sherbet18 - 126 votes and 91 comments",
+            "twitter:image": "https://preview.redd.it/how-was-live-sound-recorded-on-24-track-with-more-v0-0u075i3q0xkb1.jpg?auto=webp&s=94f8e8f5ff2ee7d2a654d538dc12fde7d1bb6fcc",
+            "apple-mobile-web-app-status-bar-style": "black",
+            "twitter:site": "@reddit",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "apple-mobile-web-app-capable": "yes",
+            "og:ttl": "600",
+            "og:url": "https://www.reddit.com/r/livesound/comments/163xwpf/how_was_live_sound_recorded_on_24_track_with_more/"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://preview.redd.it/how-was-live-sound-recorded-on-24-track-with-more-v0-0u075i3q0xkb1.jpg?auto=webp&s=94f8e8f5ff2ee7d2a654d538dc12fde7d1bb6fcc"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Model 2400 | 24-Track Flagship Analog Recording Console & Live ...",
+      "htmlTitle": "Model 2400 | \u003cb\u003e24\u003c/b\u003e-\u003cb\u003eTrack\u003c/b\u003e Flagship Analog Recording Console &amp; \u003cb\u003eLive\u003c/b\u003e ...",
+      "link": "https://tascam.com/us/product/model_2400",
+      "displayLink": "tascam.com",
+      "snippet": "22 channels, 24 tracks, one solution - from performance to recording, Model 2400 re-defines what you can do with a studio recording and live mixing console.",
+      "htmlSnippet": "22 channels, \u003cb\u003e24 tracks\u003c/b\u003e, one solution - from performance to recording, Model 2400 re-defines what you can do with a studio recording and \u003cb\u003elive\u003c/b\u003e mixing console.",
+      "formattedUrl": "https://tascam.com/us/product/model_2400",
+      "htmlFormattedUrl": "https://tascam.com/us/product/model_2400",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaqP2ruzoLDX9VcThCKKpXDwOqlOI9CyZlgNqokIlodRTmN7iPFsdrGoX2&s",
+            "width": "240",
+            "height": "210"
+          }
+        ],
+        "thumbnail": [
+          {
+            "src": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_2400/gallery/model_2400_p_front.jpg"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://tascam.com/wp-content/uploads/images/products/thumbnail_img/hero_w_model_2400.jpg",
+            "thumbnail": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_2400/gallery/model_2400_p_front.jpg",
+            "twitter:card": "summary_large_image",
+            "og:type": "product",
+            "twitter:site": "https://tascam.com/us",
+            "og:site_name": "TASCAM - United States",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "twitter:description": "TASCAM's flagship analog recording console and live mixer. Unrivaled sound, extensive connectivity, and intuitive workflow.",
+            "og:title": "Model 2400 | 24-Track Flagship Analog Recording Console & Live Mixer with Audio Interface | TASCAM - United States",
+            "og:locale": "en-US",
+            "og:description": "TASCAM's flagship analog recording console and live mixer. Unrivaled sound, extensive connectivity, and intuitive workflow.",
+            "twitter:image:src": "https://tascam.com/wp-content/uploads/images/products/thumbnail_img/hero_w_model_2400.jpg"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://tascam.com/wp-content/uploads/images/products/_tascam/model_2400/gallery/model_2400_p_front.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flightradar24 Flight Tracker - Apps on Google Play",
+      "htmlTitle": "\u003cb\u003eFlightradar24\u003c/b\u003e Flight \u003cb\u003eTracker\u003c/b\u003e - Apps on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=com.flightradar24free&hl=en_US",
+      "displayLink": "play.google.com",
+      "snippet": "The world's most popular flight tracker - #1 Travel app in over 150 countries. Turn your phone or tablet into a live plane tracker and see flights around ...",
+      "htmlSnippet": "The world&#39;s most popular flight \u003cb\u003etracker\u003c/b\u003e - #1 Travel app in over 150 countries. Turn your phone or tablet into a \u003cb\u003elive\u003c/b\u003e plane \u003cb\u003etracker\u003c/b\u003e and see flights around&nbsp;...",
+      "formattedUrl": "https://play.google.com/store/apps/details?id=com.flightradar24free...",
+      "htmlFormattedUrl": "https://play.google.com/store/apps/details?id=com.flightradar24free...",
+      "pagemap": {
+        "offer": [
+          {
+            "price": "0",
+            "url": "https://play.google.com/store/apps/details?id=com.flightradar24free&rdid=com.flightradar24free&feature=md&offerId"
+          }
+        ],
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROCPFIGUcWfopg1ibZOEdkoYT3ZnbiREURR3AzmAKPGVYfnD4i_5P4a2Hy&s",
+            "width": "225",
+            "height": "225"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://play-lh.googleusercontent.com/IxxF4rt1_5dQmlqaT2B-0KrF2mmwa_BNsHnkrPg1RsRAWCpT124I_r7rPKBbL1GtSo_e",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Flightradar24 Flight Tracker - Apps on Google Play",
+            "twitter:url": "https://play.google.com/store/apps/details?id=com.flightradar24free&hl=en_US",
+            "appstore:developer_url": "https://www.flightradar24.com",
+            "og:title": "Flightradar24 Flight Tracker - Apps on Google Play",
+            "twitter:image": "https://play-lh.googleusercontent.com/IxxF4rt1_5dQmlqaT2B-0KrF2mmwa_BNsHnkrPg1RsRAWCpT124I_r7rPKBbL1GtSo_e=w600-h300-pc0xffffff-pd",
+            "appstore:bundle_id": "com.flightradar24free",
+            "referrer": "origin",
+            "twitter:site": "@GooglePlay",
+            "appstore:store_id": "com.flightradar24free",
+            "viewport": "width=device-width, initial-scale=1",
+            "apple-mobile-web-app-capable": "yes",
+            "twitter:description": "Track airplanes and follow flights with our real-time flight tracker",
+            "mobile-web-app-capable": "yes",
+            "og:url": "https://play.google.com/store/apps/details?id=com.flightradar24free&hl=en_US"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://play-lh.googleusercontent.com/IxxF4rt1_5dQmlqaT2B-0KrF2mmwa_BNsHnkrPg1RsRAWCpT124I_r7rPKBbL1GtSo_e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Live Bus Tracker - MATBUS",
+      "htmlTitle": "Live Bus Tracker - MATBUS",
+      "link": "https://www.matbus.com/live-bus-tracker",
+      "displayLink": "www.matbus.com",
+      "snippet": "MATBUS Live Bus Tracker. To view the new live tracking in full screen, visit ... 24 - Route 24. 31 - Route 31. 33 - Route 33. 34 - Route 34. Legend. Vehicle ...",
+      "htmlSnippet": "MATBUS \u003cb\u003eLive\u003c/b\u003e Bus \u003cb\u003eTracker\u003c/b\u003e. To view the new \u003cb\u003elive tracking\u003c/b\u003e in full screen, visit ... \u003cb\u003e24\u003c/b\u003e - Route \u003cb\u003e24\u003c/b\u003e. 31 - Route 31. 33 - Route 33. 34 - Route 34. Legend. Vehicle&nbsp;...",
+      "formattedUrl": "https://www.matbus.com/live-bus-tracker",
+      "htmlFormattedUrl": "https://www.matbus.com/\u003cb\u003elive\u003c/b\u003e-bus-\u003cb\u003etrack\u003c/b\u003eer",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1dh_0Iv6lnx-vLCpmIYyaCaFV2QNIiC1AZhNXUqHt36YFQJ02qqF7B1I&s",
+            "width": "165",
+            "height": "165"
+          }
+        ],
+        "metatags": [
+          {
+            "viewport": "width=device-width, initial-scale=1.0",
+            "google-translate-customization": "ed67cc60d1a24773-f877602f7f9dd913-g0193f3f96357d469-14"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://download.matbus.com/resize/165/165/0/digital_bus_-_website.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Live Flight Tracker - FlightAware",
+      "htmlTitle": "\u003cb\u003eLive\u003c/b\u003e Flight \u003cb\u003eTracker\u003c/b\u003e - FlightAware",
+      "link": "https://www.flightaware.com/live/",
+      "displayLink": "www.flightaware.com",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport ... FlightAware has tracked 168,700 arrivals in the last 24 hours. FlightAware ...",
+      "htmlSnippet": "Best Flight \u003cb\u003eTracker\u003c/b\u003e: \u003cb\u003eLive Tracking\u003c/b\u003e Maps, Flight Status, and Airport ... FlightAware has \u003cb\u003etracked\u003c/b\u003e 168,700 arrivals in the last \u003cb\u003e24\u003c/b\u003e hours. FlightAware&nbsp;...",
+      "formattedUrl": "https://www.flightaware.com/live/",
+      "htmlFormattedUrl": "https://www.flightaware.com/\u003cb\u003elive\u003c/b\u003e/",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZE6EniYDOGIjxFMxFpz-O52QaLBstdqvyycPkLRFb318B9GNBRdmKkro&s",
+            "width": "300",
+            "height": "168"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://www.flightaware.com/images/og_default_image.png",
+            "twitter:card": "summary",
+            "og:type": "website",
+            "twitter:site": "@FlightAware",
+            "og:site_name": "FlightAware",
+            "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+            "og:title": "Live Flight Tracker - FlightAware",
+            "og:url": "http://www.flightaware.com/live/",
+            "og:description": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports.",
+            "facebook-domain-verification": "ijk4kalzz9je9chk38y60825grrr8m"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://www.flightaware.com/images/og_default_image.png"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Flightradar24 | Flight Tracker on the App Store",
+      "htmlTitle": "\u003cb\u003eFlightradar24\u003c/b\u003e | Flight \u003cb\u003eTracker\u003c/b\u003e on the App Store",
+      "link": "https://apps.apple.com/us/app/flightradar24-flight-tracker/id382233851",
+      "displayLink": "apps.apple.com",
+      "snippet": "This app is available only on the App Store for iPhone, iPad, and Apple Watch. Flightradar24 | Flight Tracker 4+. Live plane & flight tracker.",
+      "htmlSnippet": "This app is available only on the App Store for iPhone, iPad, and Apple Watch. \u003cb\u003eFlightradar24\u003c/b\u003e | Flight \u003cb\u003eTracker\u003c/b\u003e 4+. \u003cb\u003eLive\u003c/b\u003e plane &amp; flight \u003cb\u003etracker\u003c/b\u003e.",
+      "formattedUrl": "https://apps.apple.com/us/app/flightradar24-flight-tracker/id382233851",
+      "htmlFormattedUrl": "https://apps.apple.com/us/app/flightradar24-flight-\u003cb\u003etrack\u003c/b\u003eer/id382233851",
+      "pagemap": {
+        "cse_thumbnail": [
+          {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_AJLPQldTVm6ww1HP7Qb71XMbymTx5F6gHVrS0eJHXGjC6VsVWKVAvo&s",
+            "width": "310",
+            "height": "163"
+          }
+        ],
+        "metatags": [
+          {
+            "og:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/48/9f/24489f7b-949c-9a26-d3ac-f4d7920abe06/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x630wa.png",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "App Store",
+            "applicable-device": "pc,mobile",
+            "og:image:type": "image/png",
+            "og:description": "\u200eThe world's best flight tracker app - #1 Travel app in over 150 countries.\n\nTurn your iPhone or iPad into a live flight tracker and see planes around the world move in real-time on a detailed map. Or point your device at a plane to find out where it’s going and what kind of aircraft it is. Download…",
+            "og:image:secure_url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/48/9f/24489f7b-949c-9a26-d3ac-f4d7920abe06/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x630wa.png",
+            "twitter:image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/48/9f/24489f7b-949c-9a26-d3ac-f4d7920abe06/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x600wa.png",
+            "web-experience-app/config/environment": "%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222508.0.0%2B02a73239%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3",
+            "twitter:image:alt": "Flightradar24 | Flight Tracker on the App Store",
+            "twitter:site": "@AppStore",
+            "og:image:alt": "Flightradar24 | Flight Tracker on the App Store",
+            "og:type": "website",
+            "twitter:title": "\u200eFlightradar24 | Flight Tracker",
+            "og:title": "\u200eFlightradar24 | Flight Tracker",
+            "og:image:height": "630",
+            "version": "2508.0.0",
+            "globalnav-search-suggestions-enabled": "false",
+            "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+            "ac-gn-search-suggestions-enabled": "false",
+            "twitter:description": "\u200eThe world's best flight tracker app - #1 Travel app in over 150 countries.\n\nTurn your iPhone or iPad into a live flight tracker and see planes around the world move in real-time on a detailed map. Or point your device at a plane to find out where it’s going and what kind of aircraft it is. Download…",
+            "og:locale": "en_US",
+            "apple:content_id": "382233851",
+            "og:url": "https://apps.apple.com/us/app/flightradar24-flight-tracker/id382233851"
+          }
+        ],
+        "cse_image": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/24/48/9f/24489f7b-949c-9a26-d3ac-f4d7920abe06/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/1200x630wa.png"
+          }
+        ]
+      }
+    }
+  ]
+}

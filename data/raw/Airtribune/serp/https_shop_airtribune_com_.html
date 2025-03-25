@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<title>Airtribune, ¦ Sports GPS Tracking Service</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Airtribune Memorabilia Instruments Global Rescue Membership Donations to Airtribune Used Items Documents Trackers tracking, paragliding, shop, online shopping, store, hang gliding, FAI, airtribune " />
+<meta name="description" content="Airtribune :  - Airtribune Memorabilia Instruments Global Rescue Membership Donations to Airtribune Used Items Documents Trackers tracking, paragliding, shop, online shopping, store, hang gliding, FAI, airtribune" />
+<meta name="author" content="The Zen Cart&reg; Team and others" />
+<meta name="generator" content="shopping cart program by Zen Cart&reg;, http://www.zen-cart.com eCommerce" />
+
+<base href="https://shop.airtribune.com/" />
+
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/bootstrap-responsive.min.css" />
+
+
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/style_bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet-font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_carousel.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_columnar_pr.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_css_buttons.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_footer_menu.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_login_header.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_res_extra.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_select_popup.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_slider.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_vert_categories_menu.css" />
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/stylesheet_zen_lightbox.css" />
+<script type="text/javascript" src="includes/templates/mobishop_blue/jscript/jscript__jquery.min.js"></script>
+<script type="text/javascript" src="includes/templates/mobishop_blue/jscript/jscript_flexslider-min.js"></script>
+<script type="text/javascript" src="includes/templates/mobishop_blue/jscript/jscript_jquery.cycle.js"></script>
+<script type="text/javascript" src="includes/templates/mobishop_blue/jscript/jscript_menu_conf.js"></script>
+<script type="text/javascript"><!--//<![CDATA[
+if (typeof zcJS == "undefined" || !zcJS) {
+  window.zcJS = { name: 'zcJS', version: '0.1.0.0' };
+};
+
+zcJS.ajax = function (options) {
+  options.url = options.url.replace("&amp;", unescape("&amp;"));
+  var deferred = jQuery.Deferred(function (d) {
+      var securityToken = 'd38de5a45ceba8ef16f6a0d8899dd74a';
+      var defaults = {
+          cache: false,
+          type: 'POST',
+          traditional: true,
+          dataType: 'json',
+          timeout: 5000,
+          data: jQuery.extend(true,{
+            securityToken: securityToken
+        }, options.data)
+      },
+      settings = jQuery.extend(true, {}, defaults, options);
+      if (typeof(console.log) == 'function') {
+          console.log( settings );
+      }
+
+      d.done(settings.success);
+      d.fail(settings.error);
+      d.done(settings.complete);
+      var jqXHRSettings = jQuery.extend(true, {}, settings, {
+          success: function (response, textStatus, jqXHR) {
+            d.resolve(response, textStatus, jqXHR);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              if (window.console) {
+                if (typeof(console.log) == 'function') {
+                  console.log(jqXHR);
+                }
+              }
+              d.reject(jqXHR, textStatus, errorThrown);
+          },
+          complete: d.resolve
+      });
+      jQuery.ajax(jqXHRSettings);
+   }).fail(function(jqXHR, textStatus, errorThrown) {
+   var response = jqXHR.getResponseHeader('status');
+   var responseHtml = jqXHR.responseText;
+   var contentType = jqXHR.getResponseHeader("content-type");
+   switch (response)
+     {
+       case '403 Forbidden':
+         var jsonResponse = JSON.parse(jqXHR.responseText);
+         var errorType = jsonResponse.errorType;
+         switch (errorType)
+         {
+           case 'ADMIN_BLOCK_WARNING':
+           break;
+           case 'AUTH_ERROR':
+           break;
+           case 'SECURITY_TOKEN':
+           break;
+
+           default:
+             alert('An Internal Error of type '+errorType+' was received while processing an ajax call. The action you requested could not be completed.');
+         }
+       break;
+       default:
+        if (jqXHR.status === 200) {
+            if (contentType.toLowerCase().indexOf("text/html") >= 0) {
+                document.open();
+                document.write(responseHtml);
+                document.close();
+            }
+         }
+     }
+   });
+
+  var promise = deferred.promise();
+  return promise;
+};
+zcJS.timer = function (options) {
+  var defaults = {
+    interval: 10000,
+    startEvent: null,
+    intervalEvent: null,
+    stopEvent: null
+
+},
+  settings = jQuery.extend(true, {}, defaults, options);
+
+  var enabled = new Boolean(false);
+  var timerId = 0;
+  var mySelf;
+  this.Start = function()
+  {
+      this.enabled = new Boolean(true);
+
+      mySelf = this;
+      mySelf.settings = settings;
+      if (mySelf.enabled)
+      {
+          mySelf.timerId = setInterval(
+          function()
+          {
+              if (mySelf.settings.intervalEvent)
+              {
+                mySelf.settings.intervalEvent(mySelf);
+              }
+          }, mySelf.settings.interval);
+          if (mySelf.settings.startEvent)
+          {
+            mySelf.settings.startEvent(mySelf);
+          }
+      }
+  };
+  this.Stop = function()
+  {
+    mySelf.enabled = new Boolean(false);
+    clearInterval(mySelf.timerId);
+    if (mySelf.settings.stopEvent)
+    {
+      mySelf.settings.stopEvent(mySelf);
+    }
+  };
+};
+
+//]] --></script>
+
+<link rel="stylesheet" type="text/css" href="includes/templates/mobishop_blue/css/responsive_theme.css" /></head>
+
+<body id="indexHomeBody">
+
+<div class="container-fluid body-bg">
+<div class="body-upper-bg">
+
+<div id="header_wrapper" class="row-fluid">
+
+<div class="messages-st"></div>
+
+<!--bof-header logo and navigation display-->
+<div id="headerWrapper">
+
+<!--bof-branding display-->
+    <div id="logo"><a href="http://shop.airtribune.com/"><img src="includes/templates/mobishop_blue/images/logo.gif" alt="Designed by Airtribune" title=" Designed by Airtribune " width="297" height="66" /></a></div>
+<!--eof-branding display-->
+
+
+	<div>
+<!--bof-header ezpage links-->
+<div class="topper-menu float-right hidden-phone">
+</div>
+	           <!-- Languages/currency -->
+			   <div class="languages-wrapper">
+
+				<div class="top-item visible-phone">
+				 <a id="menu_more" class="item-icon" href="#">&nbsp;</a>
+                 <div id="menu_more_popup" class="popup popup-win pull-right">
+                 <img class="close-pic float-right" src="includes/templates/mobishop_blue/images/close_pic.gif" alt="close" />
+					<!--bof-header ezpage links-->
+										   					<hr />
+														    <a href="https://shop.airtribune.com/index.php?main_page=login">Log In</a>
+					
+					<!--eof-header ezpage links-->
+                 </div>
+                </div>
+
+
+                              
+			           
+                                 <div class="currency">
+                  <a href="#" id="currency_switcher">
+<span class="visible-phone">&euro;</span>
+<span class="hidden-phone">Euro&nbsp;(&euro;)</span>
+</a>
+                
+                    <div id="currPopup" class="popup popup-win">
+                      <img id="close-pic" class="close-pic float-right" src="includes/templates/mobishop_blue/images/close_pic.gif" alt="close" />
+                      <ul class="list-popup">
+                                                    <li><a href="/?currency=USD">US Dollar&nbsp;($)</a></li>
+                                                    <li><a href="/?currency=EUR">Euro&nbsp;(&euro;)</a></li>
+                                                    <li><a href="/?currency=GBP">GB Pound&nbsp;(&pound;)</a></li>
+                                              </ul>
+                    </div>
+
+                  </div>
+                                 
+		       </div>  
+<!--eof-header ezpage links-->
+
+
+<div class="clearRight"></div>
+
+
+<div id="top_nav">
+<div id="tab_nav">
+	<ul class="list-style-none">
+		<li class=""><a href="index.php?main_page=products_new">New Products</a></li>
+
+		<li class=""><a href="index.php?main_page=specials">Specials</a></li>
+
+		<li class=""><a href="index.php?main_page=featured_products">Featured Products</a></li>
+
+		<li class=""><a href="https://shop.airtribune.com/index.php?main_page=account">My Account</a></li>
+	</ul>
+</div>
+</div>
+
+<div id="login_logout_section" class="float-right">
+	    <a id="logindropd" href="https://shop.airtribune.com/index.php?main_page=login">Log In</a>
+
+		<div class="popup loginbox">
+		<div id="Content" class="sideBoxContent"><form name="login_box" action="https://shop.airtribune.com/index.php?main_page=login&amp;action=process" method="post" id="loginFormSidebox"><input type="hidden" name="securityToken" value="d38de5a45ceba8ef16f6a0d8899dd74a" />Email:<br /><input type="text" name="email_address" size="24" /><br />Password:<br /><input type="password" name="password" size="24" /><br /><a href="https://shop.airtribune.com/index.php?main_page=password_forgotten">Forgotten Password</a><br /><a href="https://shop.airtribune.com/index.php?main_page=login">Create Account</a><br /><input type="hidden" name="securityToken" value="d38de5a45ceba8ef16f6a0d8899dd74a" /><div class="centeredContent"><input class="cssButton submit_button button  button_login" onmouseover="this.className='cssButtonHover  button_login button_loginHover'" onmouseout="this.className='cssButton submit_button button  button_login'" type="submit" value="Sign In" /></div></form></div>		</div>
+
+	or    <a href="https://shop.airtribune.com/index.php?main_page=create_account">Register</a>
+
+</div>
+<div class="clearBoth"></div>
+
+
+</div>
+<div class="clearBoth"></div>
+	<!-- tools section -->
+<div class="tools-wrp">
+ <div id="tools_wrapper" class="align-center">
+	<div id="search-panel">
+		<div class="float-left td-search-header">
+			<div class="search-header float-left">
+	            <form name="quick_find_header" action="http://shop.airtribune.com/index.php?main_page=advanced_search_result" method="get"><input type="hidden" name="main_page" value="advanced_search_result" /><input type="hidden" name="search_in_description" value="1" /><div class="search-header-input"><input type="text" name="keyword" size="6" maxlength="30" value="Enter search keywords here" onfocus="if (this.value == 'Enter search keywords here') this.value = '';" onblur="if (this.value == '') this.value = 'Enter search keywords here';" /></div><input class="button-search-header" type="image" src="includes/templates/mobishop_blue/images/search_header_button.gif" alt="search" /></form>	    		<div class="advanced_search float-left">
+	                <a href="index.php?main_page=advanced_search">HEADER_ADVANCED_SEARCH</a>
+	            </div>
+			</div>
+	    </div>
+		<div class="cart-header-wrapper">
+					  <!-- header cart section -->
+					  <table class="align-center cart-header">
+						<tr>
+						   <td></td>
+						   <td class="cart-img-td">
+								<div id="cartBoxEmpty" class="cartBox"><a href="http://shop.airtribune.com/index.php?main_page=shopping_cart"><img class="cart-icon empty float-left" alt="" src="includes/templates/mobishop_blue/images/spacer.gif" /></a></div><span>Your cart is empty</span>		
+						   </td>
+						   <td id="delim"></td>
+						   						   <td class="blue-link">
+								<a href="https://shop.airtribune.com/index.php?main_page=checkout_shipping">Checkout</a>
+						   </td>
+						   						</tr>
+					</table>
+				</div>
+	</div>
+ </div>
+
+<!-- mobile header -->
+<div id="top_nav_mobile">
+<div id="tab_nav_mobile">
+	<ul class="list-style-none">
+		<li class="tm-catalog ">
+			<span class="dlm"></span>
+			<a id="catalog"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="50" height="50" alt="" /></a>
+		</li>
+
+		<li class="tm-account "><span class="dlm"></span><a href="https://shop.airtribune.com/index.php?main_page=account"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="50" height="50" alt="" /></a></li>
+
+		<li class="tm-cart "><span class="dlm"></span>
+			<a class="cart-icon" href="http://shop.airtribune.com/index.php?main_page=shopping_cart"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="50" height="50" alt="" />						</a>
+		</li>
+
+		<li class="tm-search "><span class="dlm"></span><a href="index.php?main_page=advanced_search"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="50" height="50" alt="" /></a></li>
+	</ul>
+</div>
+   <div id="categoriesPopup" class="sideBoxContent popup popup-win">
+<div class="categories-top-list no-dots"><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=9">Global Rescue Membership<span class="sub-count">&nbsp;(4)</span></a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=1">Airtribune Memorabilia<span class="sub-count">&nbsp;(2)</span></a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=5">Donations to Airtribune<span class="sub-count">&nbsp;(3)</span></a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=8">Trackers<span class="sub-count">&nbsp;(2)</span></a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=2">Instruments</a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=6">Used Items<span class="sub-count">&nbsp;(2)</span></a></div>
+<div class="categories-top-list "><a class="category-top" href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=7">Documents</a></div>
+<hr class="catBoxDivider" />
+<a class="category-links" href="http://shop.airtribune.com/index.php?main_page=products_new">New Products ...</a><br />
+<a class="category-links" href="http://shop.airtribune.com/index.php?main_page=featured_products">Featured Products ...</a><br />
+</div></div>
+<!-- /mobile header -->
+
+<!-- cart popup -->
+  <div id="cart_popup" class="cart-dropdown-wrapper popup">
+	  <div class="cart-tab-wrapper"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="1" height="1" alt="" /></div>
+	  <div class="popup-border">
+		 <div class="content-wrapper">
+		   <div class="cart-scrolling-wrapper">
+				<div><div class="cartBoxEmpty">Your cart is empty.</div></div>		   </div>
+
+		   <div class="popup-cart-link-box">
+				<a href="http://shop.airtribune.com/index.php?main_page=shopping_cart">View Cart</a>
+				<a href="https://shop.airtribune.com/index.php?main_page=checkout_shipping">Checkout</a>
+		   </div>
+		 </div>
+	  </div>
+  </div>
+<!-- /cart popup -->
+
+</div>
+<!-- /tools section -->
+</div>
+</div>
+
+<div class="mainWrapper row-fluid">
+<div class="span20">
+
+<!-- table-->
+<div class="row-fluid" id="contentMainWrapper">
+
+
+ <div class="span5" id="navColumnOne">
+	<div class="float-left" id="navColumnOneWrapper"><!--// bof: vertcategoriescss //-->
+<div class="leftBoxContainer" id="vertcategoriescss" style="width: 205">
+<div class="sidebox-header-left "><h3 class="leftBoxHeading " id="vertcategoriescssHeading">Categories</h3></div>
+<div id="vert_nav-cat"><ul class="level1"><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=9">Global Rescue Membership</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=1">Airtribune Memorabilia</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=5">Donations to Airtribune</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=8">Trackers</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=2">Instruments</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=6">Used Items</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=index&amp;cPath=7">Documents</a></li></ul><ul class="vert_level1"><li><a href="http://shop.airtribune.com/index.php?main_page=specials">Specials ...</a></li></ul><ul class="vert_level1"><li><a href="http://shop.airtribune.com/index.php?main_page=products_new">New Products ...</a></li></ul><ul class="vert_level1"><li><a href="http://shop.airtribune.com/index.php?main_page=featured_products">Featured Products ...</a></li></ul></div></div>
+<!--// eof: vertcategoriescss //-->
+<!--// bof: bannerbox //-->
+<div class="leftBoxContainer" id="bannerbox" style="width: 205">
+<div class="sidebox-header-left "><h3 class="leftBoxHeading " id="bannerboxHeading">Featured Event</h3></div>
+<div id="bannerboxContent" class="sideBoxContent centeredContent"><a href="http://shop.airtribune.com/index.php?main_page=redirect&amp;action=banner&amp;goto=3" target="_blank"><img src="images/banners/125x125_BGD_logo.gif" alt="BGD Weightless" title=" BGD Weightless " width="125" height="125" /></a></div></div>
+<!--// eof: bannerbox //-->
+<!--// bof: information //-->
+<div class="leftBoxContainer" id="information" style="width: 205">
+<div class="sidebox-header-left "><h3 class="leftBoxHeading " id="informationHeading">Information</h3></div>
+<div id="informationContent" class="sideBoxContent">
+<ul style="margin: 0; padding: 0; list-style-type: none;">
+<li><a href="http://shop.airtribune.com/index.php?main_page=shippinginfo">Shipping &amp; Returns</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=privacy">Privacy Notice</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=conditions">Conditions of Use</a></li>
+<li><a href="https://shop.airtribune.com/index.php?main_page=contact_us">Contact Us</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=site_map">Site Map</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=gv_faq">Gift Certificate FAQ</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=discount_coupon">Discount Coupons</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=unsubscribe">Newsletter Unsubscribe</a></li>
+</ul>
+</div></div>
+<!--// eof: information //-->
+</div>
+ </div>
+
+<div class="span15" id="columnCenter">
+<!-- bof  breadcrumb -->
+<!-- eof breadcrumb -->
+
+<!-- bof upload alerts -->
+<!-- eof upload alerts -->
+
+<div class="centerColumn" id="indexDefault">
+<!--
+<h1 id="indexDefaultHeading">Congratulations! You have successfully installed your Zen Cart&reg; E-Commerce Solution.</h1>
+
+Welcome <span class="greetUser">Guest!</span> Would you like to <a href="https://shop.airtribune.com/index.php?main_page=login">log yourself in</a>?
+<div id="" class="content">This is the main define statement for the page for english when no template defined file exists. It is located in: <strong>/includes/languages/english/index.php</strong></div>
+-->
+<!-- deprecated - to use uncomment this section
+<div id="" class="content">Define your main Index page copy here.</div>
+-->
+
+<div id="indexDefaultMainContent" class="content"><!-- Slideshow -->
+<div class="home-banner">
+<div class="flexslider">
+<ul class="slides">
+	<li><a href="index.php?main_page=specials"><img alt="" class="s-img" src="flxbanner_mobishop/images/mbanner_708_340_1.jpg" /></a></li>
+	<li><a href="https://airtribune.com/news/global-rescue-accident-cover"><img alt="" class="s-img" src="flxbanner_mobishop/images/mbanner_708_340_2.jpg" /></a></li>
+	<li><a href="index.php?main_page=index&cPath=1"><img alt="" class="s-img" src="flxbanner_mobishop/images/mbanner_708_340_3.jpg" /></a></li>
+	<li><a href="index.php?main_page=product_info&cPath=3_2&products_id=11"><img alt="" class="s-img" src="flxbanner_mobishop/images/mbanner_708_340_4.jpg" /></a></li>
+</ul>
+</div>
+</div>
+
+<div class="clearBoth">&nbsp;</div>
+<!-- Home page bannners -->
+
+<div class="h-banners">
+<ul class="list-style-none">
+	<li><a href="index.php?main_page=index&cPath=1"><img alt="" src="images/s_bnner1.jpg" width="236" /></a></li>
+	<li><a href="index.php?main_page=login"><img alt="" src="images/s_bnner2.jpg" width="236" /></a></li>
+	<li><a href="index.php?main_page=index&cPath=5"><img alt="" src="images/s_bnner3.jpg" width="236" /></a></li>
+</ul>
+
+<div class="clearBoth">&nbsp;</div>
+</div>
+<!-- /Home page bannners --></div>
+
+<!-- Home Page Banners -->
+
+<!-- /Home Page Banners -->
+
+
+
+
+
+<!-- bof: specials -->
+<!-- eof: specials -->
+
+
+
+
+
+
+<!-- bof: featured products  -->
+<div class="centerBoxWrapper carousel-box" id="featuredProducts">
+<h2 class="centerBoxHeading">Featured Products</h2><div class="flexslider2 carousel">
+<ul class="slides">
+    <li><div class="columnar-product-info"><div class="columnar-product-img"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=8&amp;products_id=14"><img src="images/FS_instruments/tracker_mb.png" alt="Flymaster 2G 360 Tracker - Used" title=" Flymaster 2G 360 Tracker - Used " width="76" height="110" /></a></div><div class="product-box-name"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=8&amp;products_id=14">Flymaster 2G 360 Track...</a></div><span class="productBasePrice">&euro;149.00</span></div><a class="detail-link" href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=8&amp;products_id=14">More details</a><div class="buynow-index"><a href="http://shop.airtribune.com/index.php?main_page=index&amp;action=buy_now&amp;products_id=14"><span class="cssButton normal_button button  button_buy_now" onmouseover="this.className='cssButtonHover normal_button button  button_buy_now button_buy_nowHover'" onmouseout="this.className='cssButton normal_button button  button_buy_now'">&nbsp;Buy Now&nbsp;</span></a></div></li>
+    <li><div class="columnar-product-info"><div class="columnar-product-img"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=16"><img src="images/global-rescue-logo.jpg" alt="1-day Global Rescue membership" title=" 1-day Global Rescue membership " width="110" height="85" /></a></div><div class="product-box-name"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=16">1-day Global Rescue me...</a></div><span class="productBasePrice">&euro;9.00</span></div><a class="detail-link" href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=16">More details</a><div class="buynow-index"><a href="http://shop.airtribune.com/index.php?main_page=index&amp;action=buy_now&amp;products_id=16"><span class="cssButton normal_button button  button_buy_now" onmouseover="this.className='cssButtonHover normal_button button  button_buy_now button_buy_nowHover'" onmouseout="this.className='cssButton normal_button button  button_buy_now'">&nbsp;Buy Now&nbsp;</span></a></div></li>
+    <li><div class="columnar-product-info"><div class="columnar-product-img"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=18"><img src="images/global-rescue-logo.jpg" alt="7-day Global Rescue membership" title=" 7-day Global Rescue membership " width="110" height="85" /></a></div><div class="product-box-name"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=18">7-day Global Rescue me...</a></div><span class="productBasePrice">&euro;63.00</span></div><a class="detail-link" href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=9&amp;products_id=18">More details</a><div class="buynow-index"><a href="http://shop.airtribune.com/index.php?main_page=index&amp;action=buy_now&amp;products_id=18"><span class="cssButton normal_button button  button_buy_now" onmouseover="this.className='cssButtonHover normal_button button  button_buy_now button_buy_nowHover'" onmouseout="this.className='cssButton normal_button button  button_buy_now'">&nbsp;Buy Now&nbsp;</span></a></div></li>
+    <li><div class="columnar-product-info"><div class="columnar-product-img"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=5&amp;products_id=8"><img src="images/icons/donate.png" alt="10€ Donation" title=" 10€ Donation " width="110" height="110" /></a></div><div class="product-box-name"><a href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=5&amp;products_id=8">10€ Donation</a></div><span class="productBasePrice">&euro;10.00</span></div><a class="detail-link" href="http://shop.airtribune.com/index.php?main_page=product_info&amp;cPath=5&amp;products_id=8">More details</a><div class="buynow-index"><a href="http://shop.airtribune.com/index.php?main_page=index&amp;action=buy_now&amp;products_id=8"><span class="cssButton normal_button button  button_buy_now" onmouseover="this.className='cssButtonHover normal_button button  button_buy_now button_buy_nowHover'" onmouseout="this.className='cssButton normal_button button  button_buy_now'">&nbsp;Buy Now&nbsp;</span></a></div></li>
+ 
+</ul>
+</div>
+<div class="clearBoth"></div>
+</div>
+<!-- eof: featured products  -->
+
+
+
+
+
+</div>
+</div>
+
+</div>
+<!-- /table-->
+
+</div>
+</div>
+</div>
+</div>
+<!--bof- banner #6 display -->
+<!--eof- banner #6 display -->
+<div class="container-fluid">
+
+
+<div class="body-bg">
+<div class="mainWrapper">
+
+<div class="bottom-wrapper">
+
+	<div id="footer">
+	<!--bof-navigation display -->
+		<div id="navSuppWrapper">
+		<!--BOF footer menu display-->
+		<table class="bottom-columns">
+<tr><td class="menuTitle">We accept</td><td class="menuTitle">Contact Information</td><td class="menuTitle">Site Information</td><td class="menuTitle">Deliveries &amp; Returns</td><td class="menuTitle">Social Media</td></tr><tr><td class="column zero">
+<img src="images/cards.gif" alt="" />
+</td><td class="column first">
+Whatsapp works best!<br/>
+Tel: (+386) 31 404 688<br/></td><td class="column second"><ul><li><a href="http://shop.airtribune.com/">Home</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=featured_products">Featured Products</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=specials">Specials</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=products_new">New Products</a></li><li><a href="http://shop.airtribune.com/index.php?main_page=products_all">All Products ...</a></li></ul></td><td class="column third"><ul>
+<li><a href="http://shop.airtribune.com/index.php?main_page=contact_us">Contact Us</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=shippinginfo">Shipping &amp; Returns</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=privacy">Privacy Notice</a></li>
+<li><a href="http://shop.airtribune.com/index.php?main_page=conditions">Conditions of Use</a></li>
+<li><a href="https://shop.airtribune.com/index.php?main_page=account">My Account</a></li>
+</ul></td><td class="column fourth"><ul>
+<li><a class="twitter-icon" target="_blank" href="http://twitter.com/airtribune">Follow us on Twitter</a></li>
+<li><a class="facebook-icon" target="_blank" href="https://www.facebook.com/Airtribune/">Facebook page</a></li>
+<li><a class="blog-icon" href="https://airtribune.com/news">Our blog and news</a></li>
+</ul></td></tr></table>
+
+
+<div class="bottom-icons"><img src="images/partners_icons.gif" alt="" /></div>
+		<!--EOF footer menu display-->
+		<div class="clearBoth"></div>
+		</div>
+	</div>
+
+</div>          
+	</div>
+</div>
+<div class="clearBoth"></div>
+
+<!--eof-navigation display -->
+<div class="bottom-wrapper mainWrapper footer-links">
+		<!--bof-navigation display -->
+								<!--eof-navigation display -->
+
+	<div class="visible-phone">
+				 	<a class="v-site-link" href="trigger.php?r_link=%2F"><strong>Desktop Version</strong></a>
+				<!--bof- social icons -->
+		<div class="padding social-links">
+	        <a class="twitter-icon" target="_blank" href="http://twitter.com/12leaves"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="25" height="25" alt="wabusiness template" /></a>
+	        <a class="facebook-icon" target="_blank" href="http://facebook.com/pages/12leaves/398940935514"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="25" height="25" alt="wabusiness template" /></a>
+	        <a class="blog-icon" target="_blank" href="http://blog.12leaves.com/"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="25" height="25" alt="wabusiness template" /></a>
+		</div>
+		<div class="clearBoth"></div>
+	</div>
+	<!--eof- social icons -->
+
+
+	<!--bof- site copyright display -->
+	<div id="siteinfoLegal" class="legalCopyright">Copyright &copy; 2025 <a href="https://airtribune.com" target="_blank">Airtribune</a>.</div>
+	<!--eof- site copyright display -->
+
+	<!--bof-ip address display -->
+		<!--eof-ip address display -->
+    <div class="clearBoth"><img src="includes/templates/mobishop_blue/images/spacer.gif" width="2" height="1" alt="wabusiness template" /></div>
+</div>
+
+</div>
+
+<!--bof- parse time display -->
+<!--eof- parse time display -->
+<!--bof- banner #6 display -->
+<!--eof- banner #6 display -->
+</body></html>

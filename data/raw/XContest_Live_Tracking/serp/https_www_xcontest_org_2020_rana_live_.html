@@ -1,0 +1,239 @@
+
+    
+    
+  <html xmlns:v="urn:schemas-microsoft-com:vml" lang="cs">
+   <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+      
+                     <meta name="description" content="XContest - paragliding live!"/>                           
+                                      <meta property="og:image" content="https://s.xcontest.app/img/xcontest-fb.png"/>
+                              
+
+      <meta name="keywords" content="paragliding, létání, přelet, termika, padák, ČPP"/>      <title> LIVETRACKING :: XContest.org - world of XC paragliding</title>
+      <link rel="stylesheet" href="https://s.xcontest.app/css/style.css"/>
+      <link rel="alternate" type="application/rss+xml" title="Last 20 flights" href="https://www.xcontest.org/rss/flights/?rana/cs"/>      <link rel="icon" href="https://s.xcontest.app/img/xcontest-ic.png"/>
+      <link rel="prefetch" href="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"/>
+      <link rel="prefetch" href="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css"/>
+      <link rel="prefetch" href="https://d393ilck4xazzy.cloudfront.net/widget/flight-map/2.1.1/bundle.js"/>
+      <link rel="prefetch" href="https://d393ilck4xazzy.cloudfront.net/widget/flight-map/2.1.1/bundle.css"/>
+
+                     </head>
+
+   <body class="no-right-box">
+      <div id="page" class="sect-cpp">
+
+         <div id="page-inner">
+            
+                           <!-- logo -->
+                                              <div id="logo" class="xcontestII"><a href="/" title="XContest - home"><img width="165" height="81" alt="XContest [logo]" src="https://s.xcontest.app/img/xcontest.gif"/></a></div>
+                           
+            <!-- nadpis sekce -->
+            <div id="heading-section"><strong>X C o n t e s t &nbsp; 2 0 2 0</strong></div>
+
+            <hr class="hide"/>
+
+            
+               <!-- prihlasovaci formik -->
+               <form class="common" id="login" method="post">
+
+                  
+                                       <input type="text" class="text short" autocomplete="username" id="login-username" name="login[username]" value=""/>
+                                                         <input type="password" class="password short" autocomplete="current-password" id="login-password" name="login[password]"/>
+                                                         <label for="login-persist_login">Trvalé přihlášení</label>
+                     <input type="checkbox" id="login-persist_login" name="login[persist_login]" value="Y"/>
+                                    <input type="submit" class="submit" value="Přihlásit se"/>
+
+                                    <div style="text-shadow: 0 0 3px white;">
+                    <a href="https://www.xcontest.org/world/cs/zapomenute-heslo/">Zapomenuté heslo?</a>
+                  </div>
+               </form>
+
+
+               
+               <hr class="hide"/>
+
+               
+            <!-- main box -->
+            <div id="main-box"><div class="in1">
+
+               <!--content and context (right) column -->
+               <div id="content-and-context">
+                  <!-- obsah -->
+                  <div id="content">
+
+                     <!-- drobeckova navigace -->
+                     <div id="breadcrumb-navi">
+                                                   <a href="/"></a>                           <span class="arrow"><span class="hide">&gt;</span></span>
+                                                                              <a href="/2020/rana">Raná Cup</a>                           <span class="arrow"><span class="hide">&gt;</span></span>
+                                                                                                         
+                           <span>LIVETRACKING</span>                                             </div>
+
+      
+                     <div class="bar">
+                        <h1>LIVETRACKING</h1>
+                     </div>
+
+
+
+                              <div class="under-bar">
+                        
+                        
+            
+	    <div class="wsw"></div>
+              
+        <div class="wsw" style="margin-bottom:20px; display:flex">
+          <p>
+            WARNING! Only pilots in the contest <b>Raná Cup 2020</b> are visible. Actual flown/unfinished triangle distances are computed according to the current contest rules.
+          </p>
+          <p style="margin: 10px 0 10px 10px; white-space: nowrap">
+            <a href="/2020/rana/live/:fp" style="padding:10px;border:1px solid orange;border-radius:5px;text-decoration:none" onclick="this.href += window.location.hash"><b>FULL PAGE VERSION</b></a>
+          </p>
+        </div>
+        
+
+        <div id="map" style="width:565px; height:565px; position: relative; top:0;left:0; opacity:0"></div>
+
+        <div class="wsw">
+          <p>
+           Alternatively you can watch <b><a href="/api.s/widget/live-map/all/" target="_blank">all live pilots [new window]</a></b> without filtering to this contest. But it's limited to free flight optimization (no free/FAI triangles).
+          </p>
+        </div>
+
+
+      	<link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js">
+        <link rel="modulepreload" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/c.js">
+      	<link rel="stylesheet" href="https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.css">
+
+        <script type="module">
+          import app from "https://d393ilck4xazzy.cloudfront.net/widget/live-map/3.1.3/bundle.js";
+          app.setApi("api", {league : "rana", volume: "2020"});
+          app.getBoundsByGeolocation().then(bounds => {
+            app.initMap(bounds);
+            
+          });
+
+          window.setTimeout(() => {
+            const node = document.querySelector("#map");
+            //document.body.appendChild(node);
+            node.style.opacity = 1;
+          }, 500);
+        </script>
+
+
+       
+                     </div>
+         <hr class="hide"/>
+                  </div>
+
+                  <hr class="hide"/>
+
+                  <!-- right box -->
+                  <div id="box-right">
+                          
+   
+   <!-- right menu -->
+   <ul id="menu-right" class="menu-side">
+      <li>
+         <strong>Pro piloty:</strong>                  <ul>
+            <li>
+               <a href="/2020/rana/prihlaseni-do-souteze/"><span>Přihlášení do soutěže</span></a>
+            </li>         </ul>
+      </li>
+   </ul>      
+      
+         <div class="custom-content"></div>
+   <div class="wysiwyg"></div>
+   
+                                                </div>
+
+                  <hr class="hide"/>
+               </div>
+
+
+
+               <!--left box-->
+               <div id="box-left">
+                     <!-- left menu -->
+   <strong class="hide">Menu sekce Raná Cup:</strong>
+
+   <ul id="menu-left" class="menu-side">
+      			<li>
+	         	            	         	         <a href="/2020/rana/" class="lvl0"><span>Raná Cup 2020</span></a>
+	         	         	                      	      </li>      			<li>
+	         	         <a href="/2020/rana/live/" class="lvl0 active"><span>LIVETRACKING</span></a>
+	         	         	                      	      </li>      			<li>
+	         	         <a href="/2020/rana/piloti/" class="lvl0"><span>Piloti</span></a>
+	         	         	                      	      </li>      			<li>
+	         	         <a href="/2020/rana/pravidla/" class="lvl0"><span>Informace/Pravidla</span></a>
+	         	         	                      	      </li>         </ul>
+   
+
+                                    <div style="margin: 40px 20px 0 20px; text-align:right">
+
+                  <a href="https://www.facebook.com/pages/XContest/173691706168"><img style="position:relative; top:2px;" width="16" height="16" alt="Facebook logo" src="https://s.xcontest.app/img/fcb.png"/></a>
+                  <a href="https://www.facebook.com/pages/XContest/173691706168">Join us on <strong>Facebook</strong>!</a>
+
+                  </div>
+               </div>
+
+               <hr class="clearer"/>
+
+            </div></div>
+
+            <hr class="hide"/>
+
+                        <!-- top menu -->
+            <strong class="hide">Sections:</strong>
+
+            <div id="menu-top"><div class="in1">
+
+               <div id="menu-top-line"><div class="in2">
+
+                  <div id="menu-top-buttons"><div class="in3">
+
+                    
+                                             
+                                                  <div class="button" id="button-world"><div class="corner"><div class="arrow">
+                            <a title="World XContest" href="https://www.xcontest.org/world/en/"><strong>WORLD XContest</strong></a>
+                          </div></div></div>
+
+                                             
+                     <div class="button" id="button-nations"><div class="corner"><div class="arrow">
+                       <a title="National XContests" href="https://www.xcontest.org/national/"><strong>NATIONAL XContests</strong></a>
+                     </div></div></div>
+
+                     <div class="button" id="button-gipsy"><div class="corner"><div class="arrow">
+                        <a title="XCTrack" href="https://www.xcontest.org/xctrack/"><strong>XCTrack</strong></a>
+                     </div></div></div>
+                     <div class="button" id="button-gipsy"><div class="corner"><div class="arrow">
+                        <a href="https://airspace.xcontest.org" title="Airspace tools" target="_blank" rel="noopener"><strong>Airspace</strong></a>
+                     </div></div></div>
+                                            <div class="button" id="button-paramotors"><div class="corner"><div class="arrow">
+                          <a title="Paramotors XContest" href="https://paramotors.xcontest.org/world/en/"><strong>Paramotors</strong></a>
+                       </div></div></div>
+                     
+                     
+
+
+
+                  </div></div>
+
+               </div></div>
+            </div></div>
+
+            <hr class="hide"/>
+         </div>
+
+         <!-- footer -->
+         <div id="footer"><div>
+            <a style="text-decoration: none" href="https://www.xcontest.org/world/en/about/">&#169; XContest 2025</a>
+             | <a href="https://www.xcontest.org/world/en/privacy-policy/">Privacy policy</a>
+
+                     </div></div>
+      </div>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce03b14067c3435f848f7f4c0a1a5b16"}'></script>   </body>
+</html>
+   
+
+   
