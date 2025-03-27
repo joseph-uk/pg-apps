@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"os"
@@ -19,12 +18,15 @@ import (
 )
 
 const (
-	// Configuration
-	projectRoot    = "/home/joseph/Projects/github/pg-apps"
-	dataDir        = projectRoot + "/data"
-	csvFile        = dataDir + "/paragliding-apps.csv"
-	rawDataDir     = dataDir + "/raw"
+	// Configuration.
 	rateLimitPause = 1000 * time.Millisecond // milliseconds between requests
+)
+
+var (
+	projectRoot string
+	dataDir     string
+	csvFile     string
+	rawDataDir  string
 )
 
 var (
@@ -33,7 +35,7 @@ var (
 	googlePSearchID  string
 )
 
-// App represents a paragliding app from the CSV
+// App represents a paragliding app from the CSV.
 type App struct {
 	Name             string `json:"name"`
 	URL              string `json:"url"`
@@ -45,7 +47,7 @@ type App struct {
 	Cons             string `json:"cons"`
 }
 
-// FetchResult represents the metadata for an app fetch
+// FetchResult represents the metadata for an app fetch.
 type FetchResult struct {
 	Name             string `json:"name"`
 	URL              string `json:"url"`
@@ -56,12 +58,12 @@ type FetchResult struct {
 	WebsiteFetched   bool   `json:"website_fetched"`
 }
 
-// EnsureDirExists creates a directory if it doesn't exist
+// EnsureDirExists creates a directory if it doesn't exist.
 func EnsureDirExists(dirPath string) error {
 	return os.MkdirAll(dirPath, os.ModePerm)
 }
 
-// FetchURL gets content from a URL
+// FetchURL gets content from a URL.
 func FetchURL(urlStr string) (string, error) {
 	client := &http.Client{
 		Timeout: 30 * time.Second,
@@ -84,7 +86,7 @@ func FetchURL(urlStr string) (string, error) {
 		return "", fmt.Errorf("status code: %d", resp.StatusCode)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", err
 	}
@@ -92,12 +94,23 @@ func FetchURL(urlStr string) (string, error) {
 	return string(body), nil
 }
 
-// FetchGoogleSearchResults fetches search results for the app name using Google Programmable Search Engine API
+// FetchGoogleSearchResults fetches search results for the app name using Google Programmable Search Engine API.
 func FetchGoogleSearchResults(appName string) (string, error) {
 	query := url.QueryEscape(appName)
 	apiURL := fmt.Sprintf("https://www.googleapis.com/customsearch/v1?q=%s&key=%s&cx=%s", query, googlePSearchKey, googlePSearchID)
 
-	resp, err := http.Get(apiURL)
+	client := &http.Client{
+		Timeout: 30 * time.Second,
+	}
+
+	req, err := http.NewRequest("GET", apiURL, nil)
+	if err != nil {
+		return "", fmt.Errorf("failed to create request: %w", err)
+	}
+
+	req.Header.Set("User-Agent", userAgent)
+
+	resp, err := client.Do(req)
 	if err != nil {
 		return "", fmt.Errorf("failed to fetch search results: %w", err)
 	}
@@ -107,7 +120,7 @@ func FetchGoogleSearchResults(appName string) (string, error) {
 		return "", fmt.Errorf("unexpected status code: %d", resp.StatusCode)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", fmt.Errorf("failed to read response body: %w", err)
 	}
@@ -115,7 +128,7 @@ func FetchGoogleSearchResults(appName string) (string, error) {
 	return string(body), nil
 }
 
-// ParseSearchResults parses the search results JSON and extracts URLs
+// ParseSearchResults parses the search results JSON and extracts URLs.
 func ParseSearchResults(searchResults string) ([]string, error) {
 	var result map[string]interface{}
 	err := json.Unmarshal([]byte(searchResults), &result)
@@ -135,7 +148,7 @@ func ParseSearchResults(searchResults string) ([]string, error) {
 	return urls, nil
 }
 
-// FetchAndSaveURLContent fetches and saves the content of a URL if the file does not already exist
+// FetchAndSaveURLContent fetches and saves the content of a URL if the file does not already exist.
 func FetchAndSaveURLContent(urlStr, dirPath string, wg *sync.WaitGroup, sem chan struct{}) {
 	defer wg.Done()
 	sem <- struct{}{}
@@ -149,7 +162,7 @@ func FetchAndSaveURLContent(urlStr, dirPath string, wg *sync.WaitGroup, sem chan
 			return
 		}
 
-		err = ioutil.WriteFile(filePath, []byte(content), 0644)
+		err = os.WriteFile(filePath, []byte(content), 0600)
 		if err != nil {
 			fmt.Printf("  Error writing file %s: %v\n", filePath, err)
 		}
@@ -160,7 +173,7 @@ func FetchAndSaveURLContent(urlStr, dirPath string, wg *sync.WaitGroup, sem chan
 	<-sem
 }
 
-// FetchURLContent gets content from a URL with error handling
+// FetchURLContent gets content from a URL with error handling.
 func FetchURLContent(urlStr string) (string, error) {
 	if urlStr == "" || strings.TrimSpace(urlStr) == "" {
 		return "", fmt.Errorf("invalid URL")
@@ -170,7 +183,7 @@ func FetchURLContent(urlStr string) (string, error) {
 	return FetchURL(urlStr)
 }
 
-// ProcessApp processes a single app
+// ProcessApp processes a single app.
 func ProcessApp(app App) (*FetchResult, error) {
 	fmt.Printf("Processing: %s\n", app.Name)
 
@@ -201,7 +214,7 @@ func ProcessApp(app App) (*FetchResult, error) {
 			result.WebsiteFetched = false
 		} else {
 			htmlFilePath := filepath.Join(appRawDir, SanitizeName(app.URL)+".html")
-			err = ioutil.WriteFile(htmlFilePath, []byte(htmlContent), 0644)
+			err = os.WriteFile(htmlFilePath, []byte(htmlContent), 0600)
 			if err != nil {
 				return nil, fmt.Errorf("failed to write HTML file: %w", err)
 			}
@@ -221,7 +234,7 @@ func ProcessApp(app App) (*FetchResult, error) {
 		if err != nil {
 			fmt.Printf("  Error fetching Google search results: %v\n", err)
 		} else {
-			err = ioutil.WriteFile(searchResultsFile, []byte(searchResults), 0644)
+			err = os.WriteFile(searchResultsFile, []byte(searchResults), 0600)
 			if err != nil {
 				return nil, fmt.Errorf("failed to write search results file: %w", err)
 			}
@@ -232,7 +245,7 @@ func ProcessApp(app App) (*FetchResult, error) {
 	}
 
 	// Parse search results and fetch URLs
-	searchResults, err := ioutil.ReadFile(searchResultsFile)
+	searchResults, err := os.ReadFile(searchResultsFile)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read search results file: %w", err)
 	}
@@ -251,9 +264,9 @@ func ProcessApp(app App) (*FetchResult, error) {
 	var wg sync.WaitGroup
 	sem := make(chan struct{}, 10) // Limit to 10 parallel requests
 
-	for _, urlStr := range urls {
+	for i := range urls {
 		wg.Add(1)
-		go FetchAndSaveURLContent(urlStr, serpDir, &wg, sem)
+		go FetchAndSaveURLContent(urls[i], serpDir, &wg, sem)
 	}
 
 	wg.Wait()
@@ -265,7 +278,7 @@ func ProcessApp(app App) (*FetchResult, error) {
 		return nil, fmt.Errorf("failed to marshal metadata: %w", err)
 	}
 
-	err = ioutil.WriteFile(metadataPath, metadataJSON, 0644)
+	err = os.WriteFile(metadataPath, metadataJSON, 0600)
 	if err != nil {
 		return nil, fmt.Errorf("failed to write metadata file: %w", err)
 	}
@@ -274,7 +287,39 @@ func ProcessApp(app App) (*FetchResult, error) {
 	return &result, nil
 }
 
-// ReadAppsFromCSV reads paragliding apps from the CSV file
+// getFieldValue safely gets a field value from CSV record using column map.
+func getFieldValue(record []string, colMap map[string]int, field string) string {
+	if idx, ok := colMap[field]; ok && idx < len(record) {
+		return record[idx]
+	}
+	return ""
+}
+
+// parseCSVRecord extracts an App from a CSV record using the column mapping.
+func parseCSVRecord(record []string, colMap map[string]int) App {
+	return App{
+		Name:             getFieldValue(record, colMap, "name"),
+		URL:              getFieldValue(record, colMap, "url"),
+		Platform:         getFieldValue(record, colMap, "platform"),
+		Type:             getFieldValue(record, colMap, "type"),
+		ShortDescription: getFieldValue(record, colMap, "short description"),
+		Cost:             getFieldValue(record, colMap, "cost"),
+		Pros:             getFieldValue(record, colMap, "pros"),
+		Cons:             getFieldValue(record, colMap, "cons"),
+	}
+}
+
+// isEmptyRecord checks if a record is empty (all fields are empty).
+func isEmptyRecord(record []string) bool {
+	for _, field := range record {
+		if field != "" {
+			return false
+		}
+	}
+	return true
+}
+
+// ReadAppsFromCSV reads paragliding apps from the CSV file.
 func ReadAppsFromCSV() ([]App, error) {
 	file, err := os.Open(csvFile)
 	if err != nil {
@@ -308,52 +353,18 @@ func ReadAppsFromCSV() ([]App, error) {
 		}
 
 		// Skip empty lines
-		isEmpty := true
-		for _, field := range record {
-			if field != "" {
-				isEmpty = false
-				break
-			}
-		}
-		if isEmpty {
+		if isEmptyRecord(record) {
 			continue
 		}
 
-		app := App{}
-
-		// Set fields based on header mapping
-		if idx, ok := colMap["name"]; ok && idx < len(record) {
-			app.Name = record[idx]
-		}
-		if idx, ok := colMap["url"]; ok && idx < len(record) {
-			app.URL = record[idx]
-		}
-		if idx, ok := colMap["platform"]; ok && idx < len(record) {
-			app.Platform = record[idx]
-		}
-		if idx, ok := colMap["type"]; ok && idx < len(record) {
-			app.Type = record[idx]
-		}
-		if idx, ok := colMap["short description"]; ok && idx < len(record) {
-			app.ShortDescription = record[idx]
-		}
-		if idx, ok := colMap["cost"]; ok && idx < len(record) {
-			app.Cost = record[idx]
-		}
-		if idx, ok := colMap["pros"]; ok && idx < len(record) {
-			app.Pros = record[idx]
-		}
-		if idx, ok := colMap["cons"]; ok && idx < len(record) {
-			app.Cons = record[idx]
-		}
-
+		app := parseCSVRecord(record, colMap)
 		apps = append(apps, app)
 	}
 
 	return apps, nil
 }
 
-// PromptUserForEnvVar prompts the user to enter a value for an environment variable
+// PromptUserForEnvVar prompts the user to enter a value for an environment variable.
 func PromptUserForEnvVar(envVarName, description string) string {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Printf("%s (%s): ", description, envVarName)
@@ -369,8 +380,8 @@ func WriteEnvFile(envVars map[string]string) error {
 	defer file.Close()
 
 	writer := bufio.NewWriter(file)
-	for key, value := range envVars {
-		_, err := writer.WriteString(fmt.Sprintf("%s=%s\n", key, value))
+	for key := range envVars {
+		_, err := writer.WriteString(fmt.Sprintf("%s=%s\n", key, envVars[key]))
 		if err != nil {
 			return fmt.Errorf("failed to write to .env file: %w", err)
 		}
@@ -378,9 +389,49 @@ func WriteEnvFile(envVars map[string]string) error {
 	return writer.Flush()
 }
 
-func main() {
+// initPaths initializes project paths relative to the current directory.
+func initPaths() error {
+	// Get the current directory
+	currentDir, err := os.Getwd()
+	if err != nil {
+		return fmt.Errorf("failed to get current directory: %w", err)
+	}
+
+	// The project root is 2 directories up from the current directory
+	projectRoot = filepath.Join(currentDir, "..", "..")
+	// Make sure the path is absolute and clean
+	projectRoot, err = filepath.Abs(projectRoot)
+	if err != nil {
+		return fmt.Errorf("failed to get absolute path: %w", err)
+	}
+
+	// Set up other paths based on project root
+	dataDir = filepath.Join(projectRoot, "data")
+	csvFile = filepath.Join(dataDir, "paragliding-apps.csv")
+	rawDataDir = filepath.Join(dataDir, "raw")
+
+	// Verify the important directories/files exist
+	if _, err := os.Stat(dataDir); os.IsNotExist(err) {
+		return fmt.Errorf("data directory does not exist: %s", dataDir)
+	}
+
+	if _, err := os.Stat(csvFile); os.IsNotExist(err) {
+		return fmt.Errorf("CSV file does not exist: %s", csvFile)
+	}
+
+	return nil
+}
+
+// setupEnvironment loads and sets up required environment variables.
+func setupEnvironment() error {
+	// Initialize paths
+	err := initPaths()
+	if err != nil {
+		return fmt.Errorf("failed to initialize paths: %w", err)
+	}
+
 	// Load environment variables from .env file if it exists
-	err := godotenv.Load()
+	err = godotenv.Load()
 	if err != nil {
 		fmt.Println("No .env file found, proceeding with environment variables.")
 	}
@@ -400,19 +451,86 @@ func main() {
 	}
 
 	if googlePSearchKey == "" || googlePSearchID == "" {
-		fmt.Println("Error: GOOGLE_P_SEARCH_KEY and GOOGLE_P_SEARCH_ID environment variables must be set.")
-		fmt.Println("Please set these environment variables and try again.")
-		os.Exit(1)
+		return fmt.Errorf("GOOGLE_P_SEARCH_KEY and GOOGLE_P_SEARCH_ID environment variables must be set")
 	}
 
 	if len(envVars) > 0 {
 		err = WriteEnvFile(envVars)
 		if err != nil {
-			fmt.Printf("Error writing .env file: %v\n", err)
-			os.Exit(1)
+			return fmt.Errorf("error writing .env file: %w", err)
 		}
 	}
 
+	return nil
+}
+
+// processSpecificApp processes a single app by name.
+func processSpecificApp(apps []App, appName string) {
+	fmt.Printf("Looking for app: %s\n", appName)
+
+	// Find the app by name
+	var found bool
+	for i := range apps {
+		if strings.EqualFold(apps[i].Name, appName) {
+			_, err := ProcessApp(apps[i])
+			if err != nil {
+				fmt.Printf("Error processing app %s: %v\n", apps[i].Name, err)
+			}
+			found = true
+			break
+		}
+	}
+
+	if !found {
+		fmt.Printf("App '%s' not found in CSV.\n", appName)
+	}
+}
+
+// processAllApps processes all apps and saves results.
+func processAllApps(apps []App) error {
+	var results []*FetchResult
+
+	for i := range apps {
+		result, err := ProcessApp(apps[i])
+		if err != nil {
+			fmt.Printf("Error processing app %s: %v\n", apps[i].Name, err)
+			continue
+		}
+
+		results = append(results, result)
+		time.Sleep(rateLimitPause)
+	}
+
+	// Save overall results
+	resultsJSON, err := json.MarshalIndent(results, "", "  ")
+	if err != nil {
+		return fmt.Errorf("error marshaling results: %w", err)
+	}
+
+	resultsPath := filepath.Join(rawDataDir, "fetch_results.json")
+	err = os.WriteFile(resultsPath, resultsJSON, 0600)
+	if err != nil {
+		return fmt.Errorf("error writing results file: %w", err)
+	}
+
+	fmt.Printf("Completed processing %d apps.\n", len(results))
+	return nil
+}
+
+func main() {
+	// Setup environment
+	err := setupEnvironment()
+	if err != nil {
+		fmt.Printf("Error setting up environment: %v\n", err)
+		os.Exit(1)
+	}
+
+	// Print the paths being used
+	fmt.Printf("Using project root: %s\n", projectRoot)
+	fmt.Printf("CSV file: %s\n", csvFile)
+	fmt.Printf("Raw data directory: %s\n", rawDataDir)
+
+	// Ensure raw data directory exists
 	err = EnsureDirExists(rawDataDir)
 	if err != nil {
 		fmt.Printf("Error creating raw data directory: %v\n", err)
@@ -428,54 +546,13 @@ func main() {
 
 	// Check if a specific app name was provided as argument
 	if len(os.Args) > 1 {
-		appName := os.Args[1]
-		fmt.Printf("Looking for app: %s\n", appName)
-
-		// Find the app by name
-		var found bool
-		for _, app := range apps {
-			if strings.EqualFold(app.Name, appName) {
-				_, err := ProcessApp(app)
-				if err != nil {
-					fmt.Printf("Error processing app %s: %v\n", app.Name, err)
-				}
-				found = true
-				break
-			}
-		}
-
-		if !found {
-			fmt.Printf("App '%s' not found in CSV.\n", appName)
-		}
+		processSpecificApp(apps, os.Args[1])
 	} else {
 		// Process all apps
-		var results []*FetchResult
-
-		for _, app := range apps {
-			result, err := ProcessApp(app)
-			if err != nil {
-				fmt.Printf("Error processing app %s: %v\n", app.Name, err)
-				continue
-			}
-
-			results = append(results, result)
-			time.Sleep(rateLimitPause)
-		}
-
-		// Save overall results
-		resultsJSON, err := json.MarshalIndent(results, "", "  ")
+		err = processAllApps(apps)
 		if err != nil {
-			fmt.Printf("Error marshaling results: %v\n", err)
+			fmt.Printf("Error processing apps: %v\n", err)
 			os.Exit(1)
 		}
-
-		resultsPath := filepath.Join(rawDataDir, "fetch_results.json")
-		err = ioutil.WriteFile(resultsPath, resultsJSON, 0644)
-		if err != nil {
-			fmt.Printf("Error writing results file: %v\n", err)
-			os.Exit(1)
-		}
-
-		fmt.Printf("Completed processing %d apps.\n", len(results))
 	}
 }
