@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - poetry_cache:/app/poetry_cache
+    command: ["poetry", "run", "python", "ai_enrich_data/main.py"]
+
+volumes:
+  poetry_cache:
