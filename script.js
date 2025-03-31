@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${content}
             </div>
             <div id="slideTags" class="mb-4 flex flex-wrap gap-2"></div>
-            <div id="markdownContent" class="prose max-w-none space-y-4"></div>
+            <div id="markdownContent" class="max-w-none space-y-4"></div>
         `;
         const slideTags = document.getElementById('slideTags');
         const tags = app.type.split(/,\s*/).filter(t => t);
