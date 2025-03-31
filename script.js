@@ -6,8 +6,10 @@ let currentSlide = 0;
 // Fetch and parse CSV data
 async function loadData() {
     try {
+        console.log('Loading data...');
         const response = await fetch('data/paragliding-apps.csv');
         const csvData = await response.text();
+        console.log('Data loaded:', csvData);
         
         // Parse CSV
         const rows = csvData.split('\n').filter(row => row.trim() !== '');
@@ -26,7 +28,7 @@ async function loadData() {
         });
 
         filteredApps = [...apps];
-        console.log('apps',filteredApps);
+        console.log('Parsed apps:', filteredApps);
         init();
     } catch (error) {
         console.error('Error loading data:', error);
@@ -39,16 +41,23 @@ async function loadData() {
 
 // Initialize app
 function init() {
+    console.log('Initializing app...');
     renderTable(filteredApps);
     renderTags();
-    setupEventListeners();
+    document.querySelector('.search-box').addEventListener('input', function(event) {
+        const query = event.target.value.toLowerCase();
+        console.log('Search query:', query);
+        filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
+        renderTable(filteredApps);
+    });
 }
 
 // Render main table
 function renderTable(data) {
+    console.log('Rendering table with data:', data);
     const tbody = document.getElementById('tableBody');
-    tbody.innerHTML = data.map(app => `
-        <tr onclick="showSlide(${apps.indexOf(app)})">
+    tbody.innerHTML = data.map((app, index) => `
+        <tr onclick="showSlide(${index})">
             <td>${app.name}</td>
             <td>${app.platform}</td>
             <td>${app.type}</td>
@@ -57,182 +66,73 @@ function renderTable(data) {
     `).join('');
 }
 
+// Function to show slide view
+function showSlide(index) {
+    console.log('Showing slide for index:', index);
+    currentSlide = index;
+    const app = filteredApps[index];
+    const slideContainer = document.getElementById('slideContainer');
+    slideContainer.innerHTML = `
+        <h2 class="text-2xl font-bold mb-4">${app.name}</h2>
+        <div class="slide-content">
+            <p><strong>Platform:</strong> ${app.platform}</p>
+            <p><strong>Type:</strong> ${app.type}</p>
+            <p><strong>Description:</strong> ${app.short_description}</p>
+        </div>
+    `;
+    document.getElementById('mainView').classList.add('hidden');
+    document.getElementById('slideView').classList.remove('hidden');
+}
+
+// Function to show main view
+function showMainView() {
+    document.getElementById('mainView').classList.remove('hidden');
+    document.getElementById('slideView').classList.add('hidden');
+}
+
+// Function to generate a color palette
+function generateColorPalette(tags) {
+    const colors = [
+        '#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#FF8C33', '#33FFF5', '#8C33FF', '#FF3333', '#33FF8C', '#FF5733'
+    ];
+    const tagColors = {};
+    tags.forEach((tag, index) => {
+        tagColors[tag] = colors[index % colors.length];
+    });
+    return tagColors;
+}
+
 // Render tag filters
 function renderTags() {
     const tags = [...new Set(apps.flatMap(app => 
         app.type.split(/,\s*/).filter(t => t)
     ))];
+    const tagColors = generateColorPalette(tags);
     const tagList = document.getElementById('tagList');
     tagList.innerHTML = tags.map(tag => `
-        <div class="tag" onclick="filterByTag('${tag}')">${tag}</div>
+        <button class="tag" style="background-color: ${tagColors[tag]}">
+            ${tag}
+        </button>
     `).join('');
 }
 
-// Filter by tag
-function filterByTag(tag) {
-    filteredApps = apps.filter(app => 
-        app.type.split(/,\s*/).includes(tag)
-    );
-    renderTable(filteredApps);
-}
-
-function showSlide(index) {
-    currentSlide = index;
-    document.getElementById('mainView').style.display = 'none';
-    document.getElementById('slideView').style.display = 'block';
-    
-    const app = filteredApps[index];
-    const slideContainer = document.getElementById('slideContainer');
-    slideContainer.innerHTML = `
-        <div class="container mx-auto px-4 py-8">
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <div class="flex justify-between items-start mb-6">
-                    <div>
-                        <h1 class="text-3xl font-bold text-gray-900 mb-2">${app.name}</h1>
-                        <a href="${app.url}" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
-                            ${app.url}
-                        </a>
-                    </div>
-                    <button onclick="showMainView()" class="text-gray-500 hover:text-gray-700 p-2 rounded-full hover:bg-gray-100">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="space-y-4 mb-8">
-                    ${app.platform ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Platform</dt>
-                        <dd class="mt-1 text-gray-900">${app.platform}</dd>
-                    </div>` : ''}
-
-                    ${app.type ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Type</dt>
-                        <dd class="mt-1 text-gray-900">${app.type}</dd>
-                    </div>` : ''}
-
-                    ${app.short_description ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Description</dt>
-                        <dd class="mt-1 text-gray-900">${app.short_description}</dd>
-                    </div>` : ''}
-
-                    ${app.pros ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Pros</dt>
-                        <dd class="mt-1 text-gray-900">${app.pros}</dd>
-                    </div>` : ''}
-
-                    ${app.cons ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Cons</dt>
-                        <dd class="mt-1 text-gray-900">${app.cons}</dd>
-                    </div>` : ''}
-
-                    ${app.cost ? `
-                    <div>
-                        <dt class="text-sm font-semibold text-gray-600 uppercase">Cost</dt>
-                        <dd class="mt-1 text-gray-900">${app.cost}</dd>
-                    </div>` : ''}
-
-                    <div id="extendedDescription" class="mt-8 pt-6 border-t border-gray-200 prose max-w-none"></div>
-                </div>
-
-                <div class="flex justify-between border-t border-gray-200 pt-6">
-                    <button 
-                        ${currentSlide === 0 ? 'disabled' : ''} 
-                        onclick="showSlide(${currentSlide - 1})"
-                        class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                        Previous
-                    </button>
-                    <button 
-                        ${currentSlide === filteredApps.length - 1 ? 'disabled' : ''} 
-                        onclick="showSlide(${currentSlide + 1})"
-                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                        Next
-                    </button>
-                </div>
-            </div>
-        </div>
-    `;
-
-    loadExtendedDescription(app);
-}
-
-// New method to load extended description
-async function loadExtendedDescription(app) {
-    const container = document.getElementById('extendedDescription');
-    if (!container) return;
-
-    const markdownPath = `data/apps/${encodeURIComponent(app.name)}/description.md`;
-    
-    try {
-        const response = await fetch(markdownPath);
-        if (!response.ok) return; // Skip if not found
-        
-        const markdown = await response.text();
-        const cleanHtml=marked.parse(markdown);;
-        // const unsafeHtml = marked.parse(markdown);
-        // const cleanHtml = DOMPurify.sanitize(unsafeHtml, {
-        //     USE_PROFILES: { html: true },
-        //     ALLOWED_TAGS: ['p', 'h1','h2', 'h3', 'h4','h5', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img'],
-        //     ALLOWED_ATTR: ['href', 'src', 'alt']
-        // });
-
-        container.innerHTML = cleanHtml;
-    } catch (error) {
-        console.error('Error loading extended description:', error);
-    }
-}
-// Return to main view
-function showMainView() {
-    document.getElementById('mainView').style.display = 'block';
-    document.getElementById('slideView').style.display = 'none';
-}
-
-function setupEventListeners() {
-    // Search functionality
-    const searchBox = document.querySelector('.search-box');
-    if (!searchBox) {
-        console.error('Search box element not found');
-        return;
-    }
-    
-    searchBox.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        filteredApps = apps.filter(app => 
-            Object.values(app).some(value =>
-                value.toLowerCase().includes(searchTerm)
-            )
-        );
+// Event listeners
+document.getElementById('tagList').addEventListener('click', function(event) {
+    if (event.target.classList.contains('tag')) {
+        const tag = event.target.textContent.trim().toLowerCase();
+        console.log('Tag clicked:', tag);
+        filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
         renderTable(filteredApps);
-    });
-
-    // Table sorting - wait for headers to exist
-    const setupTableHeaders = () => {
-        const headers = document.querySelectorAll('th');
-        if (headers.length === 0) {
-            requestAnimationFrame(setupTableHeaders);
-            return;
-        }
-
-        headers.forEach(th => {
-            th.addEventListener('click', () => {
-                const column = th.innerText.toLowerCase().replace(/ /g, '_');
-                filteredApps.sort((a, b) => (a[column] || '').localeCompare(b[column] || ''));
-                renderTable(filteredApps);
-            });
-        });
-    };
-
-    setupTableHeaders();
-}
-
-// Start the application when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    loadData();
+        showMainView();
+    }
 });
+
+document.querySelector('.search-box').addEventListener('input', function(event) {
+    const query = event.target.value.toLowerCase();
+    console.log('Search query:', query);
+    filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
+    renderTable(filteredApps);
+});
+
+// Load data on page load
+window.onload = loadData;

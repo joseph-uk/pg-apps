@@ -1,0 +1,156 @@
+[
+  {
+    "slideNumber": 1,
+    "title": "Paragliding Apps: From Forecast to Flight Analysis",
+    "imageUrl": "",
+    "notes": "Opening slide. Introduce yourself and the topic.",
+    "contentFile": "slide_1.md"
+  },
+  {
+    "slideNumber": 2,
+    "title": "Introduction - The Timeline Approach",
+    "imageUrl": "",
+    "notes": "Set the stage, explain the workflow approach, manage expectations about changing tech, encourage questions.",
+    "contentFile": "slide_2.md"
+  },
+  {
+    "slideNumber": 3,
+    "title": "Phase 1: Pre-Flight Planning (At Home/Work)",
+    "imageUrl": "",
+    "notes": "Introduce the first phase of the pilot workflow - planning and the initial set of tools used.",
+    "contentFile": "slide_3.md"
+  },
+  {
+    "slideNumber": 4,
+    "title": "Deep Dive: Windy",
+    "imageUrl": "",
+    "notes": "Introduce Windy as the primary forecasting tool. Emphasize the value of Premium and the importance of the UKV model for UK flying.",
+    "contentFile": "slide_4.md"
+  },
+  {
+    "slideNumber": 5,
+    "title": "Windy Features",
+    "imageUrl": "",
+    "notes": "Highlight the key features within Windy that pilots use - Layers, Model Comparison, Soundings etc. Emphasize using the comparison view.",
+    "contentFile": "slide_5.md"
+  },
+  {
+    "slideNumber": 6,
+    "title": "Understanding RASP",
+    "imageUrl": "",
+    "notes": "Explain what RASP is, its GFS dependency, and its limitations. Manage expectations about its accuracy and stress verification.",
+    "contentFile": "slide_6.md"
+  },
+  {
+    "slideNumber": 7,
+    "title": "Accessing RASP Data (UK Examples)",
+    "imageUrl": "",
+    "notes": "Show the different ways pilots typically access RASP data, highlighting the pros and cons of each interface.",
+    "contentFile": "slide_7.md"
+  },
+  {
+    "slideNumber": 8,
+    "title": "Other Forecasting & Site Tools",
+    "imageUrl": "",
+    "notes": "Discuss supplementary tools, emphasizing their specific uses and MAJOR caveats (especially Flybubble's RASP reliance and inaccurate tolerances).",
+    "contentFile": "slide_8.md"
+  },
+  {
+    "slideNumber": 9,
+    "title": "Phase 2: Social Coordination & Final Checks",
+    "imageUrl": "",
+    "notes": "Transition to the coordination phase. Highlight the importance of teamwork and introduce the tools used.",
+    "contentFile": "slide_9.md"
+  },
+  {
+    "slideNumber": 10,
+    "title": "Social Channels (Dales Club Context)",
+    "imageUrl": "",
+    "notes": "Explain the role of club Telegram groups, referencing specific Dales groups. Emphasize best practices for effective communication.",
+    "contentFile": "slide_10.md"
+  },
+  {
+    "slideNumber": 11,
+    "title": "Pre-Flight Admin: CANP",
+    "imageUrl": "",
+    "notes": "Explain the CANP system - what it is, why it's important (especially midweek), how and when to submit.",
+    "contentFile": "slide_11.md"
+  },
+  {
+    "slideNumber": 12,
+    "title": "Phase 3: XC Planning (Optional but Recommended)",
+    "imageUrl": "",
+    "notes": "Introduce XC planning. Explain why it's beneficial even for beginners and highlight the value of following experienced pilots' routes.",
+    "contentFile": "slide_12.md"
+  },
+  {
+    "slideNumber": 13,
+    "title": "XC Planning Tools",
+    "imageUrl": "",
+    "notes": "Detail the primary tools used for XC planning: FlyXC (emphasize QR codes), NCS tasks for practice, and Open Railway Map for retrieve points.",
+    "contentFile": "slide_13.md"
+  },
+  {
+    "slideNumber": 14,
+    "title": "Phase 4: Going Flying (Tracking & In-Flight)",
+    "imageUrl": "",
+    "notes": "Move to the actual flying phase. Stress the importance of tracking for safety/retrieve and introduce the key in-flight tools.",
+    "contentFile": "slide_14.md"
+  },
+  {
+    "slideNumber": 15,
+    "title": "In-Flight App: XCTrack (Android)",
+    "imageUrl": "",
+    "notes": "Deep dive into XCTrack. Cover its core functionalities, emphasizing airspace, live tracking, and buddy tracking. Acknowledge the learning curve.",
+    "contentFile": "slide_15.md"
+  },
+  {
+    "slideNumber": 16,
+    "title": "In-Flight App: FlySkyHy (iOS)",
+    "imageUrl": "",
+    "notes": "Cover FlySkyHy as the iOS alternative. Mention feature parity goals but highlight the common need for in-app purchases based on user feedback.",
+    "contentFile": "slide_16.md"
+  },
+  {
+    "slideNumber": 17,
+    "title": "Tracking: Ground vs. Air Summary",
+    "imageUrl": "",
+    "notes": "Summarize the two types of tracking needed: Google Maps for ground/retrieve, and flight tracking (XContest/PURETRACK etc.) for air visibility. Mention FLARM/Satellite.",
+    "contentFile": "slide_17.md"
+  },
+  {
+    "slideNumber": 18,
+    "title": "Phase 5: Post-Flight (Landing & Retrieve)",
+    "imageUrl": "",
+    "notes": "Outline the steps after landing: immediate actions (upload, communicate), and retrieve coordination using Telegram and Google Maps primarily. Briefly mention XC Retrieve system.",
+    "contentFile": "slide_18.md"
+  },
+  {
+    "slideNumber": 19,
+    "title": "Phase 6: Post-Flight Analysis & Logging (Back Home)",
+    "imageUrl": "",
+    "notes": "Introduce the final phase - what to do after the flying day is over. Focus on analysis, logging, and sharing.",
+    "contentFile": "slide_19.md"
+  },
+  {
+    "slideNumber": 20,
+    "title": "Analysis & Logging Tools",
+    "imageUrl": "",
+    "notes": "Detail the specific tools for analysis and logging: XContest, 3D viewers, the crucial role of the Club Forum, XC Analytics for deep dives, and the XC League.",
+    "contentFile": "slide_20.md"
+  },
+  {
+    "slideNumber": 21,
+    "title": "Summary & Key Takeaways",
+    "imageUrl": "",
+    "notes": "Summarize the entire workflow and reinforce the key tool recommendations for each stage.",
+    "contentFile": "slide_21.md"
+  },
+  {
+    "slideNumber": 22,
+    "title": "Questions & Discussion",
+    "imageUrl": "",
+    "notes": "Open the floor for questions and discussion.",
+    "contentFile": "slide_22.md"
+  }
+]
