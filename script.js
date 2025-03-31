@@ -33,11 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
             init();
         } catch (error) {
             console.error('Error loading data:', error);
-            const errorElement = document.createElement('div');
-            errorElement.className = 'error-message';
-            errorElement.textContent = 'Failed to load data. Please try again later.';
-            document.body.prepend(errorElement);
+            displayErrorMessage('Failed to load data. Please try again later.');
         }
+    }
+
+    // Display error message
+    function displayErrorMessage(message) {
+        const errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.textContent = message;
+        document.body.prepend(errorElement);
     }
 
     // Initialize app
@@ -45,16 +50,50 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Initializing app...');
         renderTable(filteredApps);
         renderTags();
-        document.querySelector('.search-box').addEventListener('input', function (event) {
-            const query = event.target.value.toLowerCase();
-            console.log('Search query:', query);
-            filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
-            updateViewHeading(query ? `Results for: "${query}"` : 'Displaying full list');
+        addEventListeners();
+    }
+
+    // Add event listeners
+    function addEventListeners() {
+        document.querySelector('.search-box').addEventListener('input', handleSearchInput);
+        document.getElementById('showFullListBtn').addEventListener('click', showFullList);
+        document.getElementById('backToListBtn').addEventListener('click', showMainView);
+        document.getElementById('tagList').addEventListener('click', handleTagClick);
+        document.getElementById('tableBody').addEventListener('click', handleTableRowClick);
+    }
+
+    // Handle search input
+    function handleSearchInput(event) {
+        const query = event.target.value.toLowerCase();
+        console.log('Search query:', query);
+        filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
+        updateViewHeading(query ? `Results for: "${query}"` : 'Displaying full list');
+        renderTable(filteredApps);
+        toggleShowFullListButton(query);
+        showMainView();
+    }
+
+    // Handle tag click
+    function handleTagClick(event) {
+        clearSearchInput();
+        if (event.target.classList.contains('tag')) {
+            const tag = event.target.textContent.trim().toLowerCase();
+            console.log('Tag clicked:', tag);
+            filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
+            updateViewHeading(`Viewing tag: "${tag}"`);
             renderTable(filteredApps);
-            toggleShowFullListButton(query);
-        });
-        const showFullListBtn = document.getElementById('showFullListBtn');
-        showFullListBtn.addEventListener('click', showFullList);
+            toggleShowFullListButton(tag);
+            showMainView();
+        }
+    }
+
+    // Handle table row click
+    function handleTableRowClick(event) {
+        const row = event.target.closest('tr');
+        if (row) {
+            const index = row.getAttribute('data-index');
+            showSlide(index);
+        }
     }
 
     // Render main table
@@ -62,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Rendering table with data:', data);
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = data.map((app, index) => `
-            <tr onclick="showSlide(${index})">
+            <tr data-index="${index}">
                 <td>${app.name}</td>
                 <td>${app.platform}</td>
                 <td>${app.type}</td>
@@ -71,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // Function to show slide view
+    // Show slide view
     function showSlide(index) {
         console.log('Showing slide for index:', index);
         currentSlide = index;
@@ -99,29 +138,28 @@ document.addEventListener('DOMContentLoaded', () => {
             <div id="slideTags" class="mb-4 flex flex-wrap gap-2"></div>
             <div id="markdownContent" class="max-w-none space-y-4"></div>
         `;
+        renderSlideTags(app.type);
+        document.getElementById('mainView').classList.add('hidden');
+        document.getElementById('slideView').classList.remove('hidden');
+        loadMarkdownContent(app.name);
+    }
+
+    // Render slide tags
+    function renderSlideTags(type) {
         const slideTags = document.getElementById('slideTags');
-        const tags = app.type.split(/,\s*/).filter(t => t);
+        const tags = type.split(/,\s*/).filter(t => t);
         const tagColors = generateColorPalette(tags);
         slideTags.innerHTML = tags.map(tag => `
             <button class="tag" style="background-color: ${tagColors[tag]}">
                 ${tag}
             </button>
         `).join('');
-        document.getElementById('mainView').classList.add('hidden');
-        document.getElementById('slideView').classList.remove('hidden');
-        slideTags.addEventListener('click', function (event) {
-            if (event.target.classList.contains('tag')) {
-                const tag = event.target.textContent.trim().toLowerCase();
-                console.log('Tag clicked:', tag);
-                filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
-                updateViewHeading(`Viewing tag: "${tag}"`);
-                renderTable(filteredApps);
-                showMainView();
-            }
-        });
+        slideTags.addEventListener('click', handleTagClick);
+    }
 
-        // Load and render markdown file if it exists
-        const markdownPath = `data/apps/${app.name.replace(/ /g, '_')}/description.md`;
+    // Load and render markdown content
+    function loadMarkdownContent(appName) {
+        const markdownPath = `data/apps/${appName.replace(/ /g, '_')}/description.md`;
         fetch(markdownPath)
             .then(response => {
                 if (!response.ok) {
@@ -137,21 +175,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Attach showSlide to the window object
-    window.showSlide = showSlide;
-
-    // Function to show main view
+    // Show main view
     function showMainView() {
         document.getElementById('mainView').classList.remove('hidden');
         document.getElementById('slideView').classList.add('hidden');
     }
 
-    // Function to update the view heading
+    // Update the view heading
     function updateViewHeading(text) {
         document.getElementById('viewHeading').textContent = text;
     }
 
-    // Function to generate a color from a string
+    // Generate a color from a string
     function stringToColor(str) {
         let hash = 0;
         for (let i = 0; i < str.length; i++) {
@@ -163,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return "00000".substring(0, 6 - color.length) + color;
     }
 
-    // Function to generate a color palette
+    // Generate a color palette
     function generateColorPalette(tags) {
         const tagColors = {};
         tags.forEach(tag => {
@@ -186,15 +221,16 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // Function to show the full list
+    // Show the full list
     function showFullList() {
+        clearSearchInput();
         filteredApps = [...apps];
         renderTable(filteredApps);
         updateViewHeading('Displaying full list');
         toggleShowFullListButton('');
     }
 
-    // Function to toggle the visibility of the "Display full list" button
+    // Toggle the visibility of the "Display full list" button
     function toggleShowFullListButton(query) {
         const showFullListBtn = document.getElementById('showFullListBtn');
         if (query) {
@@ -204,26 +240,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event listeners
-    document.getElementById('tagList').addEventListener('click', function (event) {
-        if (event.target.classList.contains('tag')) {
-            const tag = event.target.textContent.trim().toLowerCase();
-            console.log('Tag clicked:', tag);
-            filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
-            updateViewHeading(`Viewing tag: "${tag}"`);
-            renderTable(filteredApps);
-            toggleShowFullListButton(tag);
-            showMainView();
-        }
-    });
-
-    document.querySelector('.search-box').addEventListener('input', function (event) {
-        const query = event.target.value.toLowerCase();
-        console.log('Search query:', query);
-        filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
-        renderTable(filteredApps);
-        toggleShowFullListButton(query);
-    });
+    function clearSearchInput() {
+        document.querySelector('input.search-box').value = '';
+    }
 
     // Load data on page load
     loadData();
