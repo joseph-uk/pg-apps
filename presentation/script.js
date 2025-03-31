@@ -5,7 +5,7 @@ const SLIDESHOW_PLAN_URL = 'slideshow_plan.json';
 const FADE_TRANSITION_DURATION = 400;
 const SLIDESHOW_WINDOW_NAME = 'presentationSlideshowWindow';
 // REMOVED noopener from features to allow window.opener access
-const SLIDESHOW_WINDOW_FEATURES = 'width=1024,height=768,resizable=yes,scrollbars=no,status=no,toolbar=no,location=no,menubar=no,noreferrer';
+const SLIDESHOW_WINDOW_FEATURES = 'width=1024,height=768,resizable=yes,scrollbars=no,status=no,toolbar=no,location=no,menubar=no';
 
 // --- State Variables ---
 let appMode = 'controller'; // 'controller' or 'slideshow'
