@@ -118,21 +118,28 @@ jobs:
         CHANGE_SUMMARY="CSV Data Changes Summary:\n\n"
         
         if [ "${{ steps.calc_changes.outputs.added_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="- ${{ steps.calc_changes.outputs.added_count }} rows added\n"
+          CHANGE_SUMMARY+="
+        - ${{ steps.calc_changes.outputs.added_count }} rows added
+        "
         fi
         
         if [ "${{ steps.calc_changes.outputs.removed_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="- ${{ steps.calc_changes.outputs.removed_count }} rows removed\n"
+          CHANGE_SUMMARY+="
+        - ${{ steps.calc_changes.outputs.removed_count }} rows removed
+        "
         fi
         
         if [ "${{ steps.calc_changes.outputs.updated_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="- ${{ steps.calc_changes.outputs.updated_count }} rows updated\n"
+          CHANGE_SUMMARY+="
+        - ${{ steps.calc_changes.outputs.updated_count }} rows updated
+        "
         fi
         
         # Create PR with change summary
         gh pr create \
           --title "Update CSV data (automated)" \
-          --body "This PR contains the latest CSV data updates from the automated workflow.\n\n$CHANGE_SUMMARY" \
+          --body "This PR contains the latest CSV data updates from the automated workflow.
+        $CHANGE_SUMMARY" \
           --base main \
           --head $BRANCH_NAME
       env:
