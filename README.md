@@ -1,5 +1,7 @@
 # Paragliding Apps
 
+## [PUBLIC URL https://joseph-uk.github.io/pg-apps/](https://joseph-uk.github.io/pg-apps/)
+
 ## Contribute
 
 source data is managed via [google sheet](https://docs.google.com/spreadsheets/d/1JVbFwMKylrgj8e3HUP-ummgBl9O2EVyBKyMx6-xT-Qw/edit?gid=0#gid=0)
