@@ -80,17 +80,24 @@ function showSlide(index) {
         console.error('Slide container or tags element not found');
         return;
     }
+    const fields = ['name', 'url', 'platform', 'type', 'short_description', 'cost', 'pros', 'cons'];
+    const content = fields.map(field => {
+        if (app[field] && app[field] !== '0') {
+            if (field === 'url') {
+                return `<p><strong>${field.replace(/_/g, ' ')}:</strong> <a href="${app[field]}" target="_blank">${app[field]}</a></p>`;
+            }
+            return `<p><strong>${field.replace(/_/g, ' ')}:</strong> ${app[field]}</p>`;
+        }
+        return '';
+    }).join('');
     slideContainer.innerHTML = `
         <h2 class="text-2xl font-bold mb-4">${app.name}</h2>
         <div class="slide-content">
-            <p><strong>Platform:</strong> ${app.platform}</p>
-            <p><strong>Type:</strong> ${app.type}</p>
-            <p><strong>Description:</strong> ${app.short_description}</p>
+            ${content}
         </div>
         <div id="slideTags" class="mb-4 flex flex-wrap gap-2"></div>
     `;
     const slideTags = document.getElementById('slideTags');
-
     const tags = app.type.split(/,\s*/).filter(t => t);
     const tagColors = generateColorPalette(tags);
     slideTags.innerHTML = tags.map(tag => `
@@ -105,7 +112,7 @@ function showSlide(index) {
             const tag = event.target.textContent.trim().toLowerCase();
             console.log('Tag clicked:', tag);
             filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
-            updateViewHeading(`Viewing tag: "${tag}"`); // Update view heading
+            updateViewHeading(`Viewing tag: "${tag}"`);
             renderTable(filteredApps);
             showMainView();
         }
@@ -199,4 +206,3 @@ document.querySelector('.search-box').addEventListener('input', function (event)
 
 // Load data on page load
 window.onload = loadData;
-

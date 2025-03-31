@@ -82,62 +82,80 @@ function initializeControllerMode() {
 }
 
 function initializeSlideshowMode() {
-    console.log("Initializing in Slideshow mode.");
+    console.log("Slideshow mode: Initializing...");
     controllerWindowRef = window.opener;
+    console.log("Slideshow mode: window.opener is:", controllerWindowRef); // Debug log
 
     // Critical check: Needs window.opener (hence removing noopener)
     if (!controllerWindowRef) {
-        console.error("Slideshow mode: Could not get reference to opener window! Was 'noopener' used?");
+        console.error("Slideshow mode: CRITICAL - window.opener is null or undefined! Was 'noopener' used?");
         showError("This window must be opened by the controller.", slideErrorElement);
         if(slideContentElement) slideContentElement.innerHTML = "<h1>Error: Cannot find controller window.</h1><p>Please ensure popups are allowed and the presentation is started correctly.</p>";
-        // No point continuing without opener
-        return;
+        return; // Stop execution
     }
 
+    console.log("Slideshow mode: Adding message listener.");
     window.addEventListener('message', handleSlideshowMessages);
 
-    console.log("Slideshow mode: Sending 'slideshow_ready' message to controller.");
-    sendMessageToController({ type: 'slideshow_ready' });
+    // *** ADD A SMALL DELAY BEFORE SENDING 'READY' ***
+    console.log("Slideshow mode: Scheduling 'slideshow_ready' message send (200ms delay)."); // Updated log
+    setTimeout(() => {
+        // This code runs after 100ms
+        console.log("Slideshow mode: Attempting to send 'slideshow_ready' message NOW."); // Updated log
+        sendMessageToController({ type: 'slideshow_ready' });
+    }, 200); // Wait 200 milliseconds
+
 
     if(slideContentElement) slideContentElement.innerHTML = "<h1>Waiting for controller...</h1>";
 }
 
+
 // --- Message Handling ---
 
 function handleControllerMessages(event) {
-    // SECURITY: Check source only if we have a reference
+    // Add more detailed logging here for debugging
+    console.log(`Controller received message event. Origin: ${event.origin}, Source window exists?: ${!!event.source}`);
+
+    // SECURITY: Check source only if we have a reference to the slideshow window
     if (slideshowWindowRef && event.source !== slideshowWindowRef) {
         // console.warn("Controller received message from unexpected source (not the window we opened).");
-        return;
-    }
-    // SECURITY: Check origin
-    const expectedOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
-    if (expectedOrigin !== '*' && event.origin !== expectedOrigin) {
-        console.warn(`Controller received message from unexpected origin: ${event.origin}. Expected: ${expectedOrigin}`);
+        // It's possible to receive other messages (e.g., from browser extensions), so don't exit here necessarily.
+        // Just don't process it as a slideshow message.
         return;
     }
 
-    console.log("Controller received message:", event.data);
+    // SECURITY: Check origin - crucial for security, especially if targetOrigin was '*'
+    const expectedOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
+    if (expectedOrigin !== '*' && event.origin !== expectedOrigin) {
+        console.warn(`Controller received message from unexpected origin: ${event.origin}. Expected: ${expectedOrigin}. Ignoring.`);
+        return; // Ignore messages from wrong origins
+    }
+
+    // Now process the message data
+    console.log("Controller processing message data:", event.data);
     const message = event.data;
 
     if (message && message.type === 'slideshow_ready') {
-        // Check if we were actually waiting for this (i.e., slideshowWindowRef exists)
+        // Check if we were actually waiting for this
         if (!slideshowWindowRef || slideshowWindowRef.closed) {
             console.warn("Controller received 'slideshow_ready', but window ref is missing or closed.");
-            return;
+            return; // Don't process if the window context is gone
         }
-        console.log("Controller: Slideshow window is ready.");
+        console.log("Controller: Processing 'slideshow_ready' message.");
         isSlideshowReady = true;
-        // Hide "Waiting" status on button if applicable
         if (startButton && startButton.textContent.includes('Waiting')) {
-            startButton.style.display = 'none'; // Or just hide it completely now
+            startButton.style.display = 'none'; // Hide the button now
         }
         currentSlideIndex = 0;
         updateControllerView(); // Update notes and send command for slide 0
+    } else {
+        console.log("Controller: Received message of different type or invalid data.");
     }
 }
 
+
 function handleSlideshowMessages(event) {
+    console.log(`Slideshow received message event. Origin: ${event.origin}, Source is opener?: ${event.source === controllerWindowRef}`);
     // SECURITY: Check source is opener
     if (event.source !== controllerWindowRef) {
         // console.warn("Slideshow received message from unexpected source (not opener).");
@@ -146,20 +164,22 @@ function handleSlideshowMessages(event) {
     // SECURITY: Check origin
     const expectedOrigin = window.location.origin === 'null' ? '*' : window.location.origin; // Or controllerWindowRef.location.origin if same-origin
     if (expectedOrigin !== '*' && event.origin !== expectedOrigin) {
-        console.warn(`Slideshow received message from unexpected origin: ${event.origin}. Expected: ${expectedOrigin}`);
+        console.warn(`Slideshow received message from unexpected origin: ${event.origin}. Expected: ${expectedOrigin}. Ignoring.`);
         return;
     }
 
-    console.log("Slideshow received message:", event.data);
+    console.log("Slideshow processing message data:", event.data); // Change log level
     const message = event.data;
 
     if (message && message.type === 'goto_slide') {
         if (typeof message.index === 'number' && message.slideData) {
-            console.log(`Slideshow: Received command to go to slide ${message.index}`);
+            console.log(`Slideshow: Processing 'goto_slide' command for slide ${message.index}`); // Change log level
             displaySlideVisuals(message.index, message.slideData);
         } else {
             console.error("Slideshow: Invalid 'goto_slide' message payload:", message);
         }
+    } else {
+        console.log("Slideshow: Received message of different type or invalid data.");
     }
 }
 
@@ -177,18 +197,34 @@ function sendMessageToSlideshow(message) {
         }
     } else {
         console.warn("Controller: Cannot send message, slideshow window not available.");
-        handleSlideshowClose();
+        // Don't call handleSlideshowClose here directly, let the interval checker handle it or handleStartSlideshow error path
+        // handleSlideshowClose();
     }
 }
 
 function sendMessageToController(message) {
     if (controllerWindowRef) {
-        const targetOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
-        console.log(`Slideshow sending message to controller (targetOrigin: ${targetOrigin}):`, message);
+        // Derive target origin from opener if possible and same-origin, otherwise use own origin or '*' cautiously
+        let targetOrigin = '*'; // Default to wildcard cautiously - see below
+        try {
+            targetOrigin = controllerWindowRef.location.origin;
+            // Handle opaque origins (like file://)
+            if (targetOrigin === 'null') {
+                targetOrigin = '*'; // Must use wildcard for 'null' origins
+            }
+        } catch (e) {
+            // Cross-origin access error, fall back to own origin or wildcard
+            console.warn("Slideshow: Could not access controllerWindowRef.location.origin, using own origin/wildcard for postMessage target.");
+            targetOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
+        }
+
+
+        console.log(`Slideshow sending message to controller. Target Origin: ${targetOrigin}. Message:`, message);
         try {
             controllerWindowRef.postMessage(message, targetOrigin);
+            console.log("Slideshow: postMessage call seemingly successful (message sent)."); // Added log
         } catch (error) {
-            console.error("Slideshow: Error sending message to controller:", error);
+            console.error("Slideshow: Error during postMessage call:", error); // Added log
         }
     } else {
         console.warn("Slideshow: Cannot send message, controller window reference missing.");
@@ -210,7 +246,8 @@ async function handleStartSlideshow() {
     startButton.disabled = true;
     startButton.textContent = 'Opening...';
     isSlideshowReady = false;
-    if (closeCheckInterval) clearInterval(closeCheckInterval); // Clear previous interval if any
+    if (closeCheckInterval) clearInterval(closeCheckInterval);
+    closeCheckInterval = null;
 
     try {
         console.log("Controller: Opening slideshow window...");
@@ -222,36 +259,30 @@ async function handleStartSlideshow() {
 
             // Start checking if the window gets closed
             closeCheckInterval = setInterval(() => {
-                // Need to check ref first as it might be nulled by handleSlideshowClose
                 if (!slideshowWindowRef || slideshowWindowRef.closed) {
                     clearInterval(closeCheckInterval);
-                    closeCheckInterval = null; // Clear interval ID
-                    // Only call close handler if it wasn't already called (check isSlideshowReady maybe)
-                    if (isSlideshowReady || slideshowWindowRef) { // If we were ready or had a ref
+                    closeCheckInterval = null;
+                    if (isSlideshowReady || slideshowWindowRef) { // Check if we need to run cleanup
                         handleSlideshowClose();
                     }
                 }
-            }, 1000); // Check every second
+            }, 1000);
 
-            // Load presentation data
             const response = await fetch(SLIDESHOW_PLAN_URL);
             if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_PLAN_URL}`);
             const jsonData = await response.json();
             if (!Array.isArray(jsonData) || jsonData.length === 0) throw new Error("Slideshow data empty/invalid.");
 
             slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
-            console.log("Controller: Slideshow plan loaded:", slidesData);
+            console.log("Controller: Slideshow plan loaded:", slidesData.length, "slides");
 
-            // Switch view
             if (landingPage) landingPage.style.display = 'none';
             if (notesDisplayArea) notesDisplayArea.style.display = 'flex';
 
-            // Update status - waiting for ready signal
-            startButton.textContent = 'Waiting for Slideshow...';
+            startButton.textContent = 'Waiting for Slideshow...'; // Update status text
             console.log("Controller: Waiting for 'slideshow_ready' message...");
 
         } else {
-            // window.open returned null or undefined
             throw new Error("Popup blocked by browser or failed to open.");
         }
     } catch (error) {
@@ -264,7 +295,7 @@ async function handleStartSlideshow() {
         if (notesDisplayArea) notesDisplayArea.style.display = 'none';
         slideshowWindowRef = null;
         isSlideshowReady = false;
-        if (closeCheckInterval) clearInterval(closeCheckInterval); // Clear interval on error too
+        if (closeCheckInterval) clearInterval(closeCheckInterval);
         closeCheckInterval = null;
     }
 }
@@ -275,12 +306,13 @@ function updateControllerView() {
     if (!isSlideshowReady) {
         console.warn("Controller: Update requested, but slideshow not ready.");
         if(notesContentArea) notesContentArea.textContent = "Waiting for slideshow window...";
+        // Disable nav buttons while waiting
+        if (notesPrevButton) notesPrevButton.disabled = true;
+        if (notesNextButton) notesNextButton.disabled = true;
         return;
     }
 
-    // Double-check window status before proceeding
     if (!slideshowWindowRef || slideshowWindowRef.closed) {
-        // handleSlideshowClose might have already run via interval, but call again just in case
         handleSlideshowClose();
         return;
     }
@@ -289,10 +321,9 @@ function updateControllerView() {
     const slide = slidesData[currentSlideIndex];
     if (!slide) {
         console.error(`Controller: Invalid slide index ${currentSlideIndex}`);
-        return; // Should not happen if logic is correct
+        return;
     }
 
-    // Update Notes Display
     if (notesContentArea) {
         notesContentArea.textContent = slide.notes || "No notes for this slide.";
         notesContentArea.scrollTop = 0;
@@ -301,11 +332,9 @@ function updateControllerView() {
         notesSlideNumber.textContent = `Slide: ${currentSlideIndex + 1} / ${slidesData.length}`;
     }
 
-    // Update Controller Nav Button States
     if (notesPrevButton) notesPrevButton.disabled = currentSlideIndex === 0;
     if (notesNextButton) notesNextButton.disabled = currentSlideIndex >= slidesData.length - 1;
 
-    // Send Command to Slideshow Window
     sendMessageToSlideshow({
         type: 'goto_slide',
         index: currentSlideIndex,
@@ -334,7 +363,6 @@ function nextSlide() {
 }
 
 function handleControllerKeyDown(event) {
-    // Only active if controlling and slideshow is ready and window exists
     if (appMode !== 'controller' || !isSlideshowReady || !slideshowWindowRef || slideshowWindowRef.closed) return;
 
     switch (event.code) {
@@ -353,35 +381,35 @@ function handleControllerKeyDown(event) {
 
 function handleSlideshowClose() {
     if (appMode !== 'controller') return;
-    // Prevent multiple cleanup calls
-    if (!slideshowWindowRef && !isSlideshowReady && notesPrevButton?.disabled) {
+    // Prevent multiple cleanup calls if already reset
+    if (!slideshowWindowRef && !isSlideshowReady) {
         // console.log("handleSlideshowClose: Already handled or not active.");
         return;
     }
 
     console.warn("Controller: Slideshow window closed or connection lost.");
 
-    // Clear interval if it's still running
     if (closeCheckInterval) {
         clearInterval(closeCheckInterval);
         closeCheckInterval = null;
     }
 
+    // Reset state variables FIRST
+    slideshowWindowRef = null;
+    isSlideshowReady = false;
+
     showError("Slideshow window closed. Restart to continue.", loadingErrorElement);
+
+    // Reset UI elements
     if (notesContentArea) notesContentArea.textContent = "Slideshow window closed.";
     if (notesPrevButton) notesPrevButton.disabled = true;
     if (notesNextButton) notesNextButton.disabled = true;
-
-    slideshowWindowRef = null; // Clear the reference FIRST
-    isSlideshowReady = false; // Reset ready state
-
-    // Reset UI to initial state
     if (notesDisplayArea) notesDisplayArea.style.display = 'none';
-    if (landingPage) landingPage.style.display = 'block'; // Show landing page again
+    if (landingPage) landingPage.style.display = 'block';
     if (startButton) {
         startButton.disabled = false;
         startButton.textContent = 'Start Slideshow';
-        startButton.style.display = 'inline-block'; // Make sure it's visible
+        startButton.style.display = 'inline-block';
     }
 }
 
@@ -437,7 +465,12 @@ async function displaySlideVisuals(index, slideData) {
 function showError(message, element) {
     if (element) {
         element.textContent = message;
-        element.style.display = 'inline-block'; // Use inline-block or block as needed
+        // Use inline-block for errors that shouldn't take full width
+        element.style.display = (element.id === 'loading-error') ? 'block' : 'inline-block';
+        // Ensure error on landing page is visible if notes area is hidden
+        if (element.id === 'loading-error' && landingPage.style.display !== 'none') {
+            element.style.textAlign = 'center'; // Center text for block display
+        }
     }
     console.error("Error shown to user:", message);
 }
