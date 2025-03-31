@@ -1,5 +1,7 @@
 # Paragliding Apps
 
+This is designed to be a user friendly database of apps and websites related to paragliding
+
 ## [PUBLIC URL https://joseph-uk.github.io/pg-apps/](https://joseph-uk.github.io/pg-apps/)
 
 ## Contribute
