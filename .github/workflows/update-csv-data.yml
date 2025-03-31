@@ -9,6 +9,9 @@ on:
 jobs:
   update-csv:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -19,12 +22,53 @@ jobs:
       run: |
         mkdir -p data
         curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vTTebtcc367STxJXR6VWwH_wDke9hrwHgwJYdUCkdKK6VgrO_L6f04OqtgruNvzEIlQ_k8bS8AxNpmg/pub?output=csv" \
-          --fail --output data/paragliding-apps.csv
+          --fail --output data/paragliding-apps.csv.new
 
-    - name: Commit and push changes
+    - name: Sort CSV data
       run: |
+        # Skip header line, sort the data, then add header back
+        if [ -f data/paragliding-apps.csv.new ]; then
+          # Preserve the header
+          head -1 data/paragliding-apps.csv.new > data/header.csv
+          # Sort the data (skip header)
+          tail -n +2 data/paragliding-apps.csv.new | sort > data/sorted.csv
+          # Combine header and sorted data
+          cat data/header.csv data/sorted.csv > data/paragliding-apps.csv
+          # Clean up temporary files
+          rm data/paragliding-apps.csv.new data/header.csv data/sorted.csv
+        fi
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git add data/paragliding-apps.csv
+        if ! git diff --cached --quiet; then
+          echo "changes_detected=true" >> $GITHUB_OUTPUT
+        else
+          echo "changes_detected=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Create Pull Request
+      if: steps.check_changes.outputs.changes_detected == 'true'
+      run: |
+        # Set up git
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
+        
+        # Create a new branch with timestamp
+        BRANCH_NAME="update-csv-data-$(date +%Y%m%d-%H%M%S)"
+        git checkout -b $BRANCH_NAME
+        
+        # Commit changes
         git add data/paragliding-apps.csv
-        git diff-index --quiet HEAD || git commit -m "Update CSV data [automated]"
-        git push
+        git commit -m "Update CSV data [automated]"
+        git push origin $BRANCH_NAME
+        
+        # Create PR
+        gh pr create \
+          --title "Update CSV data (automated)" \
+          --body "This PR contains the latest CSV data updates from the automated workflow." \
+          --base main \
+          --head $BRANCH_NAME
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
