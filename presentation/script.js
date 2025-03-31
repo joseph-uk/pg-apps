@@ -1,7 +1,7 @@
 console.log("Slideshow script loading...");
 
 // --- Configuration ---
-const SLIDESHOW_PLAN_URL = 'slideshow_plan.json';
+const SLIDESHOW_DATA_URL = 'slideshow_data.json';
 const FADE_TRANSITION_DURATION = 400;
 const SLIDESHOW_WINDOW_NAME = 'presentationSlideshowWindow';
 // REMOVED noopener from features to allow window.opener access
@@ -268,8 +268,8 @@ async function handleStartSlideshow() {
                 }
             }, 1000);
 
-            const response = await fetch(SLIDESHOW_PLAN_URL);
-            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_PLAN_URL}`);
+            const response = await fetch(SLIDESHOW_DATA_URL);
+            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_DATA_URL}`);
             const jsonData = await response.json();
             if (!Array.isArray(jsonData) || jsonData.length === 0) throw new Error("Slideshow data empty/invalid.");
 
