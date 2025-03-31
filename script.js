@@ -1,3 +1,4 @@
+console.table({CONTRIBUTE: 'https://github.com/joseph-uk/pg-apps'});
 document.addEventListener('DOMContentLoaded', () => {
     // Global variables
     let apps = [];
