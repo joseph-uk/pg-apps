@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title will be set dynamically by JS based on mode -->
+    <title>Presentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<!-- Body class will be added by JS: 'mode-controller' or 'mode-slideshow' -->
+<body>
+<div id="app">
+    <!-- Initial Landing Page (Only shown in Controller mode initially) -->
+    <div id="landing-page">
+        <h1>Paragliding Apps Presentation</h1>
+        <button id="start-button">Start Slideshow</button>
+        <p id="loading-error" class="error-message" style="display: none;"></p>
+    </div>
+
+    <!-- Slideshow Container (Used only in Slideshow Mode) -->
+    <div id="slideshow-container">
+        <div class="slide-overlay"></div>
+        <div id="slide-content-wrapper">
+            <div id="slide-content">
+                <!-- Slide content injected here -->
+            </div>
+        </div>
+        <!-- Nav buttons hidden in slideshow mode via CSS, controlled by Controller -->
+        <button id="prev-slide" class="nav-button controller-only" aria-label="Previous Slide"><</button>
+        <button id="next-slide" class="nav-button controller-only" aria-label="Next Slide">></button>
+        <div id="slide-number-display" class="controller-only"></div> <!-- Also controller only -->
+        <p id="slide-error" class="error-message" style="display: none;"></p> <!-- Show error in either window -->
+    </div>
+
+    <!-- Notes Display Area (Used only in Controller Mode after start) -->
+    <div id="notes-display-area" style="display: none;">
+        <div id="notes-header">
+            <h1>Speaker Notes</h1>
+            <div id="notes-controls">
+                <span id="notes-slide-number">Slide: - / -</span>
+                <button id="notes-prev-slide" aria-label="Previous Slide">< Prev</button>
+                <button id="notes-next-slide" aria-label="Next Slide">Next ></button>
+            </div>
+        </div>
+        <pre id="notes-content-area">Notes will appear here once slideshow starts.</pre>
+    </div>
+
+</div> <!-- End #app -->
+
+<script src="script.js"></script>
+</body>
+</html>

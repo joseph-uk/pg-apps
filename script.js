@@ -10,11 +10,11 @@ async function loadData() {
         const response = await fetch('data/paragliding-apps.csv');
         const csvData = await response.text();
         console.log('Data loaded:', csvData);
-        
+
         // Parse CSV
         const rows = csvData.split('\n').filter(row => row.trim() !== '');
         const headers = rows[0].split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
-        
+
         apps = rows.slice(1).map(row => {
             const cells = row.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
             const obj = {};
@@ -44,7 +44,7 @@ function init() {
     console.log('Initializing app...');
     renderTable(filteredApps);
     renderTags();
-    document.querySelector('.search-box').addEventListener('input', function(event) {
+    document.querySelector('.search-box').addEventListener('input', function (event) {
         const query = event.target.value.toLowerCase();
         console.log('Search query:', query);
         filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
@@ -72,6 +72,10 @@ function showSlide(index) {
     currentSlide = index;
     const app = filteredApps[index];
     const slideContainer = document.getElementById('slideContainer');
+    if (!slideContainer) {
+        console.error('Slide container or tags element not found');
+        return;
+    }
     slideContainer.innerHTML = `
         <h2 class="text-2xl font-bold mb-4">${app.name}</h2>
         <div class="slide-content">
@@ -79,9 +83,28 @@ function showSlide(index) {
             <p><strong>Type:</strong> ${app.type}</p>
             <p><strong>Description:</strong> ${app.short_description}</p>
         </div>
+        <div id="slideTags" class="mb-4 flex flex-wrap gap-2"></div>
     `;
+    const slideTags = document.getElementById('slideTags');
+
+    const tags = app.type.split(/,\s*/).filter(t => t);
+    const tagColors = generateColorPalette(tags);
+    slideTags.innerHTML = tags.map(tag => `
+        <button class="tag" style="background-color: ${tagColors[tag]}">
+            ${tag}
+        </button>
+    `).join('');
     document.getElementById('mainView').classList.add('hidden');
     document.getElementById('slideView').classList.remove('hidden');
+    slideTags.addEventListener('click', function (event) {
+        if (event.target.classList.contains('tag')) {
+            const tag = event.target.textContent.trim().toLowerCase();
+            console.log('Tag clicked:', tag);
+            filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
+            renderTable(filteredApps);
+            showMainView();
+        }
+    });
 }
 
 // Function to show main view
@@ -90,21 +113,30 @@ function showMainView() {
     document.getElementById('slideView').classList.add('hidden');
 }
 
+// Function to generate a color from a string
+function stringToColor(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const color = (hash & 0x00FFFFFF)
+        .toString(16)
+        .toUpperCase();
+    return "00000".substring(0, 6 - color.length) + color;
+}
+
 // Function to generate a color palette
 function generateColorPalette(tags) {
-    const colors = [
-        '#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#FF8C33', '#33FFF5', '#8C33FF', '#FF3333', '#33FF8C', '#FF5733'
-    ];
     const tagColors = {};
-    tags.forEach((tag, index) => {
-        tagColors[tag] = colors[index % colors.length];
+    tags.forEach(tag => {
+        tagColors[tag] = `#${stringToColor(tag)}`;
     });
     return tagColors;
 }
 
 // Render tag filters
 function renderTags() {
-    const tags = [...new Set(apps.flatMap(app => 
+    const tags = [...new Set(apps.flatMap(app =>
         app.type.split(/,\s*/).filter(t => t)
     ))];
     const tagColors = generateColorPalette(tags);
@@ -117,7 +149,7 @@ function renderTags() {
 }
 
 // Event listeners
-document.getElementById('tagList').addEventListener('click', function(event) {
+document.getElementById('tagList').addEventListener('click', function (event) {
     if (event.target.classList.contains('tag')) {
         const tag = event.target.textContent.trim().toLowerCase();
         console.log('Tag clicked:', tag);
@@ -127,7 +159,7 @@ document.getElementById('tagList').addEventListener('click', function(event) {
     }
 });
 
-document.querySelector('.search-box').addEventListener('input', function(event) {
+document.querySelector('.search-box').addEventListener('input', function (event) {
     const query = event.target.value.toLowerCase();
     console.log('Search query:', query);
     filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));

@@ -1,0 +1,143 @@
+/* Basic Reset & Defaults */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f0f0f0; color: #333; overflow: hidden; }
+#app { height: 100%; width: 100%; display: flex; justify-content: center; align-items: center; position: relative; }
+
+/* --- Mode Specific Hiding --- */
+
+/* Hide elements meant only for the controller when in slideshow mode */
+.mode-slideshow #landing-page,
+.mode-slideshow #notes-display-area,
+.mode-slideshow .controller-only {
+    display: none !important; /* Force hide */
+}
+
+/* Hide elements meant only for slideshow when in controller mode */
+.mode-controller #slideshow-container {
+    display: none; /* Hide initially */
+}
+/* Initially hide notes area in controller mode */
+.mode-controller #notes-display-area {
+    display: none;
+}
+
+
+/* --- Landing Page Styles --- */
+#landing-page { text-align: center; padding: 2rem; }
+#landing-page h1 { margin-bottom: 1.5rem; font-size: 2.5rem; color: #2c3e50; }
+#start-button { padding: 1rem 2rem; font-size: 1.2rem; cursor: pointer; background-color: #3498db; color: white; border: none; border-radius: 5px; transition: background-color 0.3s ease; }
+#start-button:hover { background-color: #2980b9; }
+
+/* --- Slideshow Container Styles (Primarily for mode-slideshow) --- */
+/* Ensure it's visible and takes full space when active in slideshow mode */
+.mode-slideshow #slideshow-container {
+    display: flex; /* Use flex for centering content */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+.slide-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.6); z-index: 1; }
+#slide-content-wrapper { position: relative; z-index: 2; max-width: 90%; width: 800px; padding: 3rem 2rem; color: #ffffff; text-align: left; overflow-y: auto; max-height: 90vh; }
+#slide-content { opacity: 1; transition: opacity 0.4s ease-in-out; }
+#slide-content.fade-out { opacity: 0; }
+#slide-content h1 { font-size: 2.8rem; margin-bottom: 1.5rem; font-weight: bold; line-height: 1.2; }
+#slide-content p, #slide-content li { font-size: 1.4rem; line-height: 1.6; margin-bottom: 1rem; }
+#slide-content ul, #slide-content ol { margin-left: 2rem; margin-bottom: 1rem; }
+#slide-content strong, #slide-content b { font-weight: bold; color: #f1c40f; }
+#slide-content a { color: #3498db; text-decoration: none; transition: color 0.2s ease; }
+#slide-content a:hover { color: #5dade2; text-decoration: underline; }
+
+/* --- Controller-Only Elements (Navigation within Notes/Controller View) --- */
+.nav-button { /* Style as before, but they are controller-only now */
+    position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; background-color: rgba(50, 50, 50, 0.6); color: white; border: none; font-size: 3rem; padding: 0.5rem 1rem; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease; user-select: none; line-height: 1; }
+.nav-button:hover { background-color: rgba(80, 80, 80, 0.8); }
+.nav-button:disabled { opacity: 0.3; cursor: not-allowed; }
+#prev-slide { left: 1rem; }
+#next-slide { right: 1rem; }
+#slide-number-display { /* Style as before */
+    position: absolute; bottom: 1rem; right: 1rem; z-index: 3; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 0.3rem 0.8rem; border-radius: 3px; font-size: 0.9rem; }
+
+
+/* --- Notes Display Area Styles (Only for mode-controller after start) --- */
+/* Ensure it takes full space when active in controller mode */
+.mode-controller #notes-display-area {
+    display: flex; /* Use flex */
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+#notes-header {
+    padding: 1rem 1.5rem;
+    background-color: #e9ecef;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* Prevent header from shrinking */
+}
+#notes-header h1 {
+    font-size: 1.6rem;
+    color: #495057;
+    margin: 0;
+}
+#notes-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between controls */
+}
+#notes-controls span {
+    font-size: 0.9rem;
+    color: #6c757d;
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+#notes-controls button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+#notes-controls button:hover {
+    background-color: #0056b3;
+}
+#notes-controls button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+#notes-content-area {
+    flex-grow: 1; /* Take remaining space */
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto; /* Scroll long notes */
+    background-color: #ffffff;
+    color: #212529;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+
+/* --- Error Messages --- */
+.error-message { /* Style as before */
+    color: #e74c3c; font-weight: bold; margin-top: 1rem; background-color: rgba(255, 255, 255, 0.8); padding: 0.5em; border-radius: 4px; display: inline-block; z-index: 5; /* Ensure visibility */
+}
+/* Position error specifically in slideshow mode */
+.mode-slideshow #slide-error { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); }
+/* Position error specifically in controller/notes mode */
+.mode-controller #slide-error { margin: 1rem auto; /* Center below header potentially */ }
