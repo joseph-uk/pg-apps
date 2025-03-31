@@ -48,8 +48,12 @@ function init() {
         const query = event.target.value.toLowerCase();
         console.log('Search query:', query);
         filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
+        updateViewHeading(query ? `Results for: "${query}"` : 'Displaying full list');
         renderTable(filteredApps);
+        toggleShowFullListButton(query);
     });
+    const showFullListBtn = document.getElementById('showFullListBtn');
+    showFullListBtn.addEventListener('click', showFullList);
 }
 
 // Render main table
@@ -101,6 +105,7 @@ function showSlide(index) {
             const tag = event.target.textContent.trim().toLowerCase();
             console.log('Tag clicked:', tag);
             filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
+            updateViewHeading(`Viewing tag: "${tag}"`); // Update view heading
             renderTable(filteredApps);
             showMainView();
         }
@@ -111,6 +116,11 @@ function showSlide(index) {
 function showMainView() {
     document.getElementById('mainView').classList.remove('hidden');
     document.getElementById('slideView').classList.add('hidden');
+}
+
+// Function to update the view heading
+function updateViewHeading(text) {
+    document.getElementById('viewHeading').textContent = text;
 }
 
 // Function to generate a color from a string
@@ -148,13 +158,33 @@ function renderTags() {
     `).join('');
 }
 
+// Function to show the full list
+function showFullList() {
+    filteredApps = [...apps];
+    renderTable(filteredApps);
+    updateViewHeading('Displaying full list');
+    toggleShowFullListButton('');
+}
+
+// Function to toggle the visibility of the "Display full list" button
+function toggleShowFullListButton(query) {
+    const showFullListBtn = document.getElementById('showFullListBtn');
+    if (query) {
+        showFullListBtn.classList.remove('hidden');
+    } else {
+        showFullListBtn.classList.add('hidden');
+    }
+}
+
 // Event listeners
 document.getElementById('tagList').addEventListener('click', function (event) {
     if (event.target.classList.contains('tag')) {
         const tag = event.target.textContent.trim().toLowerCase();
         console.log('Tag clicked:', tag);
         filteredApps = apps.filter(app => app.type.toLowerCase().includes(tag));
+        updateViewHeading(`Viewing tag: "${tag}"`);
         renderTable(filteredApps);
+        toggleShowFullListButton(tag);
         showMainView();
     }
 });
@@ -164,7 +194,9 @@ document.querySelector('.search-box').addEventListener('input', function (event)
     console.log('Search query:', query);
     filteredApps = apps.filter(app => app.name.toLowerCase().includes(query));
     renderTable(filteredApps);
+    toggleShowFullListButton(query);
 });
 
 // Load data on page load
 window.onload = loadData;
+
