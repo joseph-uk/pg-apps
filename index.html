@@ -23,7 +23,7 @@
             <button id="showFullListBtn" class="hidden text-blue-500 hover:text-blue-600" onclick="showFullList()">Display full list</button>
         </div>
         <div class="bg-white rounded-lg shadow overflow-hidden">
-            <table class="w-full">
+            <table class="w-full data-table">
                 <thead class="bg-gray-50">
                     <tr>
                         <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100">Name</th>
@@ -44,9 +44,9 @@
             </svg>
             Back to List
         </button>
-        <div id="slideContainer" class="bg-white rounded-lg shadow p-6">
+        <div id="slideContainer" class="bg-white rounded-lg shadow p-6 space-y-4">
             <div id="slideTags" class="mb-4 flex flex-wrap gap-2"></div>
-            <div id="slideContent" class="prose max-w-none">
+            <div id="slideContent" class="prose max-w-none space-y-4">
                 <h3 id="slideName" class="text-lg font-bold"></h3>
                 <p id="slidePlatform" class="text-sm text-gray-500"></p>
                 <p id="slideType" class="text-sm text-gray-500"></p>
@@ -56,8 +56,13 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script>
+        function showSlide(index) {
+            window.showSlide(index);
+        }
+    </script>
 </body>
 </html>
