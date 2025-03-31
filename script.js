@@ -125,7 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const content = fields.map(field => {
             if (app[field] && app[field] !== '0') {
                 if (field === 'url') {
-                    return `<p><strong>${field.replace(/_/g, ' ')}:</strong> <a href="${app[field]}" target="_blank" class="text-blue-500 hover:underline">${app[field]}</a></p>`;
+                    let url = app[field];
+                    // Check if URL starts with http:// or https://
+                    if (url && !url.toLowerCase().startsWith('http')) {
+                        url = 'https://' + url;
+                    }
+                    return `<p><strong>${field.replace(/_/g, ' ')}:</strong> <a href="${url}" target="_blank" class="text-blue-500 hover:underline">${url}</a></p>`;
                 }
                 return `<p><strong>${field.replace(/_/g, ' ')}:</strong> ${app[field]}</p>`;
             }
