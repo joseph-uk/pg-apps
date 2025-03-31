@@ -157,9 +157,6 @@ function handleControllerMessages(event) {
 
     // SECURITY: Check source only if we have a reference to the slideshow window
     if (slideshowWindowRef && event.source !== slideshowWindowRef) {
-        // console.warn("Controller received message from unexpected source (not the window we opened).");
-        // It's possible to receive other messages (e.g., from browser extensions), so don't exit here necessarily.
-        // Just don't process it as a slideshow message.
         return;
     }
 
@@ -187,15 +184,11 @@ function handleControllerMessages(event) {
         }
         currentSlideIndex = 0;
         updateControllerView(); // Update notes and send command for slide 0
-    } else if (message && message.type === 'ready_for_next_slide') {
-        // Handle auto-advance request from slideshow
-        console.log("Controller: Received 'ready_for_next_slide' message for auto-advance");
-        if (isSlideshowReady && presentationSettings.advanceMethod === 'auto') {
-            if (currentSlideIndex < slidesData.length - 1) {
-                nextSlide(); // Advance to the next slide
-            } else {
-                console.log("Controller: Auto-advance requested but already at last slide");
-            }
+    } else if (message && message.type === 'bullet_advanced') {
+        // Update current bullet index based on slideshow message
+        if (typeof message.bulletIndex === 'number') {
+            currentBulletIndex = message.bulletIndex;
+            updateBulletVisibilityInNotes();
         }
     } else {
         console.log("Controller: Received message of different type or invalid data.");
@@ -207,7 +200,6 @@ function handleSlideshowMessages(event) {
     console.log(`Slideshow received message event. Origin: ${event.origin}, Source is opener?: ${event.source === controllerWindowRef}`);
     // SECURITY: Check source is opener
     if (event.source !== controllerWindowRef) {
-        // console.warn("Slideshow received message from unexpected source (not opener).");
         return;
     }
     // SECURITY: Check origin
@@ -251,6 +243,15 @@ function handleSlideshowMessages(event) {
         if (presentationSettings.displayMode === 'bullet' && slideBullets.length > 0) {
             advanceToNextBullet();
         }
+    } else if (message && message.type === 'reset_auto_timer') {
+        // Reset the auto-advance timer if in auto mode
+        if (presentationSettings.advanceMethod === 'auto') {
+            if (autoAdvanceTimer) {
+                clearTimeout(autoAdvanceTimer);
+                autoAdvanceTimer = null;
+            }
+            scheduleNextBulletOrSlide();
+        }
     } else {
         console.log("Slideshow: Received message of different type or invalid data.");
     }
@@ -270,34 +271,28 @@ function sendMessageToSlideshow(message) {
         }
     } else {
         console.warn("Controller: Cannot send message, slideshow window not available.");
-        // Don't call handleSlideshowClose here directly, let the interval checker handle it or handleStartSlideshow error path
-        // handleSlideshowClose();
     }
 }
 
 function sendMessageToController(message) {
     if (controllerWindowRef) {
-        // Derive target origin from opener if possible and same-origin, otherwise use own origin or '*' cautiously
         let targetOrigin = '*'; // Default to wildcard cautiously - see below
         try {
             targetOrigin = controllerWindowRef.location.origin;
-            // Handle opaque origins (like file://)
             if (targetOrigin === 'null') {
                 targetOrigin = '*'; // Must use wildcard for 'null' origins
             }
         } catch (e) {
-            // Cross-origin access error, fall back to own origin or wildcard
             console.warn("Slideshow: Could not access controllerWindowRef.location.origin, using own origin/wildcard for postMessage target.");
             targetOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
         }
 
-
         console.log(`Slideshow sending message to controller. Target Origin: ${targetOrigin}. Message:`, message);
         try {
             controllerWindowRef.postMessage(message, targetOrigin);
-            console.log("Slideshow: postMessage call seemingly successful (message sent)."); // Added log
+            console.log("Slideshow: postMessage call seemingly successful (message sent).");
         } catch (error) {
-            console.error("Slideshow: Error during postMessage call:", error); // Added log
+            console.error("Slideshow: Error during postMessage call:", error);
         }
     } else {
         console.warn("Slideshow: Cannot send message, controller window reference missing.");
@@ -335,7 +330,7 @@ async function handleStartSlideshow() {
                 if (!slideshowWindowRef || slideshowWindowRef.closed) {
                     clearInterval(closeCheckInterval);
                     closeCheckInterval = null;
-                    if (isSlideshowReady || slideshowWindowRef) { // Check if we need to run cleanup
+                    if (isSlideshowReady || slideshowWindowRef) {
                         handleSlideshowClose();
                     }
                 }
@@ -361,7 +356,6 @@ async function handleStartSlideshow() {
     } catch (error) {
         console.error("Controller: Failed to start slideshow:", error);
         showError(`Error starting: ${error.message}. Check pop-up blockers.`, loadingErrorElement);
-        // Reset UI fully on error
         startButton.disabled = false;
         startButton.textContent = 'Start Slideshow';
         if (landingPage) landingPage.style.display = 'block';
@@ -379,7 +373,6 @@ function updateControllerView() {
     if (!isSlideshowReady) {
         console.warn("Controller: Update requested, but slideshow not ready.");
         if(notesContentArea) notesContentArea.textContent = "Waiting for slideshow window...";
-        // Disable nav buttons while waiting
         if (notesPrevButton) notesPrevButton.disabled = true;
         if (notesNextButton) notesNextButton.disabled = true;
         return;
@@ -398,9 +391,62 @@ function updateControllerView() {
     }
 
     if (notesContentArea) {
-        notesContentArea.textContent = slide.notes || "No notes for this slide.";
+        notesContentArea.innerHTML = '';
+        
+        const slidePreviewDiv = document.createElement('div');
+        slidePreviewDiv.className = 'slide-preview';
+        
+        if (slide.title) {
+            const titleElement = document.createElement('h2');
+            titleElement.textContent = slide.title;
+            slidePreviewDiv.appendChild(titleElement);
+        }
+        
+        if (slide.contentFile) {
+            fetch(slide.contentFile)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.text();
+                })
+                .then(markdownText => {
+                    const contentHtml = marked.parse(markdownText);
+                    const contentDiv = document.createElement('div');
+                    contentDiv.innerHTML = contentHtml;
+                    
+                    // Store all bullets in a data attribute for future reference
+                    const bullets = contentDiv.querySelectorAll('li');
+                    slideBullets = Array.from(bullets);
+                    
+                    // Apply styling based on current bullet index
+                    if (presentationSettings.displayMode === 'bullet') {
+                        bullets.forEach((bullet, index) => {
+                            if (index > currentBulletIndex) {
+                                bullet.classList.add('not-yet-visible');
+                            }
+                        });
+                    }
+                    
+                    slidePreviewDiv.appendChild(contentDiv);
+                    
+                    // This ensures bullet visibility is updated immediately
+                    updateBulletVisibilityInNotes();
+                })
+                .catch(error => {
+                    console.error("Failed to load slide content for notes:", error);
+                    slidePreviewDiv.innerHTML += '<p>Error loading slide content</p>';
+                });
+        }
+        
+        notesContentArea.appendChild(slidePreviewDiv);
+        
+        const notesDiv = document.createElement('div');
+        notesDiv.className = 'speaker-notes';
+        notesDiv.textContent = slide.notes || "No notes for this slide.";
+        notesContentArea.appendChild(notesDiv);
+        
         notesContentArea.scrollTop = 0;
     }
+    
     if (notesSlideNumber) {
         notesSlideNumber.textContent = `Slide: ${currentSlideIndex + 1} / ${slidesData.length}`;
     }
@@ -408,16 +454,14 @@ function updateControllerView() {
     if (notesPrevButton) notesPrevButton.disabled = currentSlideIndex === 0;
     if (notesNextButton) notesNextButton.disabled = currentSlideIndex >= slidesData.length - 1;
 
-    // Reset bullet state when changing slides
+    // Reset bullet index when changing slides
     currentBulletIndex = -1;
 
-    // First send settings
     sendMessageToSlideshow({
         type: 'settings_update',
         settings: presentationSettings
     });
 
-    // Then send slide data
     sendMessageToSlideshow({
         type: 'goto_slide',
         index: currentSlideIndex,
@@ -439,6 +483,21 @@ function prevSlide() {
 
 function nextSlide() {
     if (appMode !== 'controller' || !isSlideshowReady) return;
+    
+    // If in bullet mode and there are more bullets to show, advance bullet instead
+    if (presentationSettings.displayMode === 'bullet') {
+        // Check if we can advance a bullet on the current slide
+        const slidePreview = notesContentArea.querySelector('.slide-preview');
+        if (slidePreview) {
+            const bullets = slidePreview.querySelectorAll('li');
+            if (currentBulletIndex < bullets.length - 1) {
+                advanceBulletOrSlide();
+                return;
+            }
+        }
+    }
+    
+    // Otherwise proceed to next slide
     if (currentSlideIndex < slidesData.length - 1) {
         currentSlideIndex++;
         updateControllerView();
@@ -452,13 +511,7 @@ function handleControllerKeyDown(event) {
         case 'Space': case 'ArrowRight': case 'PageDown':
             event.preventDefault();
             console.log("Controller: Next action keypress:", event.code);
-
-            // In bullet mode, first try to advance bullets in the current slide
-            if (presentationSettings.displayMode === 'bullet') {
-                advanceBulletOrSlide();
-            } else {
-                nextSlide();
-            }
+            advanceBulletOrSlide();
             break;
         case 'ArrowLeft': case 'PageUp':
             event.preventDefault();
@@ -483,7 +536,6 @@ function hideSettingsModal() {
 }
 
 function applySettingsAndStart() {
-    // Get display mode setting
     for (const radio of displayModeRadios) {
         if (radio.checked) {
             presentationSettings.displayMode = radio.value;
@@ -491,7 +543,6 @@ function applySettingsAndStart() {
         }
     }
 
-    // Get advance method setting
     for (const radio of advanceMethodRadios) {
         if (radio.checked) {
             presentationSettings.advanceMethod = radio.value;
@@ -499,7 +550,6 @@ function applySettingsAndStart() {
         }
     }
 
-    // Get auto advance delay if applicable
     if (presentationSettings.advanceMethod === 'auto' && autoDelayInput) {
         const delay = parseInt(autoDelayInput.value, 10);
         if (!isNaN(delay) && delay >= 1000) {
@@ -517,33 +567,79 @@ function applySettingsAndStart() {
 // --- Bullet Point Navigation ---
 
 function advanceBulletOrSlide() {
+    if (appMode !== 'controller' || !isSlideshowReady) return;
+    
     if (presentationSettings.displayMode !== 'bullet') {
         nextSlide();
         return;
     }
-
-    // Send message to slideshow to advance to next bullet
-    sendMessageToSlideshow({
-        type: 'next_bullet'
-    });
-
-    // If we're at the last bullet already, advance to next slide
-    if (slideshowWindowRef && !slideshowWindowRef.closed) {
-        // Use a delay to allow the slideshow to process the bullet advance first
-        setTimeout(() => {
-            // This will be checked by the slideshow, which will let us know when to advance to next slide
-            if (currentBulletIndex >= slideBullets.length - 1) {
-                nextSlide();
+    
+    // Get current slide's bullets
+    const slidePreview = notesContentArea.querySelector('.slide-preview');
+    if (slidePreview) {
+        const bullets = slidePreview.querySelectorAll('li');
+        
+        if (bullets.length > 0 && currentBulletIndex < bullets.length - 1) {
+            // Still have bullets to advance
+            currentBulletIndex++;
+            
+            sendMessageToSlideshow({
+                type: 'next_bullet'
+            });
+            
+            if (presentationSettings.advanceMethod === 'auto') {
+                sendMessageToSlideshow({
+                    type: 'reset_auto_timer'
+                });
             }
-        }, 100);
+            
+            updateBulletVisibilityInNotes();
+            return;
+        }
     }
+    
+    // No more bullets, go to next slide
+    if (currentSlideIndex < slidesData.length - 1) {
+        currentSlideIndex++;
+        updateControllerView();
+    }
+}
+
+function updateBulletVisibilityInNotes() {
+    if (appMode !== 'controller' || !notesContentArea) return;
+    
+    const slidePreview = notesContentArea.querySelector('.slide-preview');
+    if (!slidePreview) return;
+    
+    const bullets = slidePreview.querySelectorAll('li');
+    console.log(`Updating bullet visibility: current index=${currentBulletIndex}, total=${bullets.length}`);
+    
+    bullets.forEach((bullet, index) => {
+        if (index <= currentBulletIndex) {
+            bullet.classList.remove('not-yet-visible');
+        } else {
+            bullet.classList.add('not-yet-visible');
+        }
+    });
+}
+
+function scheduleNextBulletOrSlide() {
+    if (appMode !== 'slideshow' || presentationSettings.advanceMethod !== 'auto') return;
+
+    if (autoAdvanceTimer) {
+        clearTimeout(autoAdvanceTimer);
+    }
+
+    autoAdvanceTimer = setTimeout(() => {
+        if (presentationSettings.displayMode === 'bullet') {
+            advanceToNextBullet();
+        }
+    }, presentationSettings.autoAdvanceDelay);
 }
 
 function handleSlideshowClose() {
     if (appMode !== 'controller') return;
-    // Prevent multiple cleanup calls if already reset
     if (!slideshowWindowRef && !isSlideshowReady) {
-        // console.log("handleSlideshowClose: Already handled or not active.");
         return;
     }
 
@@ -554,13 +650,11 @@ function handleSlideshowClose() {
         closeCheckInterval = null;
     }
 
-    // Reset state variables FIRST
     slideshowWindowRef = null;
     isSlideshowReady = false;
 
     showError("Slideshow window closed. Restart to continue.", loadingErrorElement);
 
-    // Reset UI elements
     if (notesContentArea) notesContentArea.textContent = "Slideshow window closed.";
     if (notesPrevButton) notesPrevButton.disabled = true;
     if (notesNextButton) notesNextButton.disabled = true;
@@ -608,47 +702,33 @@ async function displaySlideVisuals(index, slideData) {
 
         slideContentElement.innerHTML = contentHtml;
 
-        // Handle bullet point mode if enabled
         if (presentationSettings.displayMode === 'bullet') {
-            // Find all list items in the slide content
             slideBullets = Array.from(slideContentElement.querySelectorAll('li'));
-            currentBulletIndex = -1; // Reset to no bullets visible
+            currentBulletIndex = -1;
 
-            // Hide all bullets initially
             slideBullets.forEach(bullet => {
                 bullet.classList.remove('visible');
             });
 
-            // Automatically reveal the first bullet if in auto mode or regular mode
             if (presentationSettings.displayMode === 'bullet') {
-                // Small delay to ensure DOM is ready
                 setTimeout(() => {
                     advanceToNextBullet();
 
-                    // Set up auto-advance if enabled
                     if (presentationSettings.advanceMethod === 'auto') {
                         scheduleNextBulletOrSlide();
                     }
                 }, 100);
             }
         } else {
-            // Full slide mode - show everything at once
-            // For list items, make them all visible
             const bullets = slideContentElement.querySelectorAll('li');
             bullets.forEach(bullet => {
                 bullet.classList.add('visible');
             });
-
-            // Schedule auto-advance if enabled
-            if (presentationSettings.advanceMethod === 'auto') {
-                scheduleNextSlide();
-            }
         }
 
         slideContentElement.classList.remove('fade-out');
         console.log(`Slideshow: Visuals for index ${index} updated.`);
 
-        // Set up click handler for bullet advancement if in bullet mode
         if (presentationSettings.displayMode === 'bullet') {
             slideContentElement.onclick = function(event) {
                 event.preventDefault();
@@ -673,89 +753,49 @@ async function displaySlideVisuals(index, slideData) {
 function advanceToNextBullet() {
     if (appMode !== 'slideshow' || presentationSettings.displayMode !== 'bullet') return;
 
-    // Clear any existing auto-advance timer
     if (autoAdvanceTimer) {
         clearTimeout(autoAdvanceTimer);
         autoAdvanceTimer = null;
     }
 
-    // If we have bullets
     if (slideBullets.length > 0) {
         if (currentBulletIndex < slideBullets.length - 1) {
-            // Show the next bullet
             currentBulletIndex++;
-            slideBullets[currentBulletIndex].classList.add('visible');
+            
+            // Make all bullets up to current index visible
+            slideBullets.forEach((bullet, index) => {
+                if (index <= currentBulletIndex) {
+                    bullet.classList.add('visible');
+                } else {
+                    bullet.classList.remove('visible');
+                }
+            });
 
-            // If in auto mode, schedule the next bullet
+            if (controllerWindowRef && !controllerWindowRef.closed) {
+                sendMessageToController({
+                    type: 'bullet_advanced',
+                    bulletIndex: currentBulletIndex
+                });
+            }
+
             if (presentationSettings.advanceMethod === 'auto') {
                 scheduleNextBulletOrSlide();
             }
 
-            return true; // Successfully advanced a bullet
+            return true;
         }
     }
 
-    // No more bullets or no bullets at all
     return false;
 }
-
-function scheduleNextBulletOrSlide() {
-    if (appMode !== 'slideshow' || presentationSettings.advanceMethod !== 'auto') return;
-
-    // Clear any existing timer
-    if (autoAdvanceTimer) {
-        clearTimeout(autoAdvanceTimer);
-    }
-
-    // Set a timer to advance to the next bullet or slide
-    autoAdvanceTimer = setTimeout(() => {
-        if (presentationSettings.displayMode === 'bullet') {
-            // If we can't advance bullets anymore and we're in auto mode, notify controller to advance slide
-            if (!advanceToNextBullet() && controllerWindowRef) {
-                // Tell the controller we're ready for the next slide
-                sendMessageToController({
-                    type: 'ready_for_next_slide'
-                });
-            }
-        } else {
-            // In full slide mode, just notify controller to go to next slide
-            if (controllerWindowRef) {
-                sendMessageToController({
-                    type: 'ready_for_next_slide'
-                });
-            }
-        }
-    }, presentationSettings.autoAdvanceDelay);
-}
-
-function scheduleNextSlide() {
-    if (appMode !== 'slideshow' || presentationSettings.advanceMethod !== 'auto') return;
-
-    // Clear any existing timer
-    if (autoAdvanceTimer) {
-        clearTimeout(autoAdvanceTimer);
-    }
-
-    // Set a timer to advance to the next slide
-    autoAdvanceTimer = setTimeout(() => {
-        if (controllerWindowRef) {
-            sendMessageToController({
-                type: 'ready_for_next_slide'
-            });
-        }
-    }, presentationSettings.autoAdvanceDelay);
-}
-
 
 // --- Utility Functions ---
 function showError(message, element) {
     if (element) {
         element.textContent = message;
-        // Use inline-block for errors that shouldn't take full width
         element.style.display = (element.id === 'loading-error') ? 'block' : 'inline-block';
-        // Ensure error on landing page is visible if notes area is hidden
         if (element.id === 'loading-error' && landingPage.style.display !== 'none') {
-            element.style.textAlign = 'center'; // Center text for block display
+            element.style.textAlign = 'center';
         }
     }
     console.error("Error shown to user:", message);
