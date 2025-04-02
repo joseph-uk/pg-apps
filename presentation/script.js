@@ -1101,6 +1101,9 @@ async function displaySlideVisuals(index, slideData) {
         }
 
         slideContentElement.innerHTML = contentHtml;
+        
+        // Process all links in the slide to open in new windows/popups
+        processSlideLinks(slideContentElement);
 
         if (presentationSettings.displayMode === 'bullet') {
             slideBullets = Array.from(slideContentElement.querySelectorAll('li'));
@@ -1137,6 +1140,37 @@ async function displaySlideVisuals(index, slideData) {
     } finally {
         isLoading = false;
     }
+}
+
+// --- Link Processing Function ---
+/**
+ * Process all links in the slide content to open in new windows/popups
+ * @param {HTMLElement} container - The container element with links to process
+ */
+function processSlideLinks(container) {
+    if (!container) return;
+    
+    const links = container.querySelectorAll('a');
+    
+    links.forEach(link => {
+        // Set attributes for new window/security
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+        
+        // Add event listener to open as popup instead
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            const url = this.getAttribute('href');
+            if (!url) return;
+            
+            // Open as popup with reasonable dimensions and features
+            const popupFeatures = 'width=800,height=600,resizable=yes,scrollbars=yes,status=no,location=yes';
+            window.open(url, 'slideContent', popupFeatures);
+        });
+    });
+    
+    console.log(`Processed ${links.length} links in slide to open as popups`);
 }
 
 // --- Bullet Point Control Functions ---
@@ -1193,3 +1227,4 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
+
