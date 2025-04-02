@@ -765,13 +765,9 @@ function updateControllerView() {
         }
         
         if (slide.contentFile) {
-            fetch(slide.contentFile)
-                .then(response => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    return response.text();
-                })
+            loadMarkdownContent(slide.contentFile)
                 .then(markdownText => {
-                    const contentHtml = marked.parse(markdownText);
+                    const contentHtml = renderMarkdown(markdownText);
                     const contentDiv = document.createElement('div');
                     contentDiv.innerHTML = contentHtml;
                     
@@ -803,7 +799,32 @@ function updateControllerView() {
         
         const notesDiv = document.createElement('div');
         notesDiv.className = 'speaker-notes';
-        notesDiv.textContent = slide.notes || "No notes for this slide.";
+        
+        // Check if the notes field contains a markdown filename
+        if (slide.notes && typeof slide.notes === 'string' && slide.notes.endsWith('.md')) {
+            // It's a file reference, load and parse the markdown
+            notesDiv.innerHTML = '<p>Loading notes...</p>';
+            loadMarkdownContent(slide.notes)
+                .then(markdownText => {
+                    notesDiv.innerHTML = renderMarkdown(markdownText);
+                })
+                .catch(error => {
+                    console.error(`Failed to load notes from file ${slide.notes}:`, error);
+                    notesDiv.innerHTML = `<p>Error loading notes: ${error.message}</p>`;
+                });
+        } else {
+            // It's direct notes content - also render as markdown for consistency
+            try {
+                const notesContent = slide.notes || "No notes for this slide.";
+                console.log("Rendering inline notes as markdown");
+                notesDiv.innerHTML = renderMarkdown(notesContent);
+            } catch (error) {
+                console.error("Failed to render inline notes as markdown:", error);
+                // Fallback to plain text if markdown rendering fails
+                notesDiv.textContent = slide.notes || "No notes for this slide.";
+            }
+        }
+        
         notesContentArea.appendChild(notesDiv);
         
         notesContentArea.scrollTop = 0;
@@ -1088,9 +1109,8 @@ async function displaySlideVisuals(index, slideData) {
             if (slideData.title) contentHtml += `<h1>${slideData.title}</h1>`;
             if (slideData.contentFile) {
                 console.log(`Slideshow: Fetching markdown ${slideData.contentFile}`);
-                const mdResponse = await fetch(slideData.contentFile);
-                if (!mdResponse.ok) throw new Error(`HTTP ${mdResponse.status} fetching ${slideData.contentFile}`);
-                contentHtml += marked.parse(await mdResponse.text());
+                const markdownText = await loadMarkdownContent(slideData.contentFile);
+                contentHtml += renderMarkdown(markdownText);
             } else if (!slideData.title) {
                 contentHtml += '<p>Slide content missing.</p>';
             }
@@ -1215,6 +1235,36 @@ function advanceToNextBullet() {
 }
 
 // --- Utility Functions ---
+/**
+ * Loads markdown content from a file and returns the raw text
+ * @param {string} filePath - Path to the markdown file
+ * @returns {Promise<string>} - The markdown content as text
+ */
+async function loadMarkdownContent(filePath) {
+    try {
+        console.log(`Loading markdown from ${filePath}`);
+        const response = await fetch(filePath);
+        if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${filePath}`);
+        return await response.text();
+    } catch (error) {
+        console.error(`Error loading markdown from ${filePath}:`, error);
+        throw error;
+    }
+}
+
+/**
+ * Renders markdown to HTML using the marked library
+ * @param {string} markdownText - Raw markdown text
+ * @returns {string} - HTML string
+ */
+function renderMarkdown(markdownText) {
+    if (typeof marked === 'undefined') {
+        console.error('Marked library not available');
+        return `<pre>${markdownText}</pre>`;
+    }
+    return marked.parse(markdownText);
+}
+
 function showError(message, element) {
     if (element) {
         element.textContent = message;
