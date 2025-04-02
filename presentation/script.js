@@ -8,11 +8,12 @@ const SLIDESHOW_WINDOW_NAME = 'presentationSlideshowWindow';
 const SLIDESHOW_WINDOW_FEATURES = 'width=1024,height=768,resizable=yes,scrollbars=no,status=no,toolbar=no,location=no,menubar=no';
 const DEFAULT_AUTO_ADVANCE_DELAY = 5000; // Default delay for auto-advance in ms
 
-// Timer configuration
-const SLIDE_TIMER_WARNING = 60; // Seconds before slide timer turns amber
-const SLIDE_TIMER_OVER = 120; // Seconds before slide timer turns red
-const PRESENTATION_TIMER_WARNING = 15 * 60; // 15 minutes before presentation timer turns amber
-const PRESENTATION_TIMER_OVER = 20 * 60; // 20 minutes before presentation timer turns red
+// Timer configuration - now configurable in settings
+const DEFAULT_SLIDE_TIMER_WARNING = 60; // Seconds before slide timer turns amber
+const DEFAULT_SLIDE_TIMER_OVER = 120; // Seconds before slide timer turns red
+const DEFAULT_PRESENTATION_TIMER_WARNING = 15 * 60; // 15 minutes before presentation timer turns amber
+const DEFAULT_PRESENTATION_TIMER_OVER = 20 * 60; // 20 minutes before presentation timer turns red
+const TIMER_FLASH_DURATION = 3; // Seconds for flash animation before transition
 
 // --- State Variables ---
 let appMode = 'controller'; // 'controller' or 'slideshow'
@@ -24,11 +25,18 @@ let controllerWindowRef = null; // Ref to the opener (used by slideshow)
 let isSlideshowReady = false; // Flag for controller to know popup is listening
 let closeCheckInterval = null; // Interval timer for checking if slideshow window closed
 
+// Flag to track if presentation timers should be auto-calculated
+let autoCalculatePresTimers = true;
+
 // --- Presentation Settings ---
 let presentationSettings = {
     displayMode: 'full', // 'full' or 'bullet'
     advanceMethod: 'manual', // 'manual' or 'auto'
-    autoAdvanceDelay: DEFAULT_AUTO_ADVANCE_DELAY
+    autoAdvanceDelay: DEFAULT_AUTO_ADVANCE_DELAY,
+    slideTimerWarning: DEFAULT_SLIDE_TIMER_WARNING,
+    slideTimerOver: DEFAULT_SLIDE_TIMER_OVER, 
+    presentationTimerWarning: DEFAULT_PRESENTATION_TIMER_WARNING,
+    presentationTimerOver: DEFAULT_PRESENTATION_TIMER_OVER
 };
 
 // --- Bullet Points State (for bullet-by-bullet mode) ---
@@ -44,6 +52,12 @@ let timersActive = false;
 let timersPaused = false;
 let timerInterval = null;
 
+// Timer transition state
+let slideTimerState = 'normal'; // 'normal', 'warning', 'over'
+let presentationTimerState = 'normal'; // 'normal', 'warning', 'over'
+let isSlideTimerFlashing = false;
+let isPresentationTimerFlashing = false;
+
 // --- DOM Elements ---
 const bodyElement = document.body;
 const landingPage = document.getElementById('landing-page');
@@ -57,6 +71,10 @@ const displayModeRadios = document.getElementsByName('display-mode');
 const advanceMethodRadios = document.getElementsByName('advance-method');
 const autoDelayContainer = document.getElementById('auto-delay-container');
 const autoDelayInput = document.getElementById('auto-delay');
+const slideWarningTimeInput = document.getElementById('slide-warning-time');
+const slideOverTimeInput = document.getElementById('slide-over-time');
+const presentationWarningTimeInput = document.getElementById('presentation-warning-time');
+const presentationOverTimeInput = document.getElementById('presentation-over-time');
 const cancelSettingsButton = document.getElementById('cancel-settings');
 const applySettingsButton = document.getElementById('apply-settings');
 
@@ -128,6 +146,26 @@ function initializeControllerMode() {
             });
         }
 
+        // Add event listeners for slide timer settings to update presentation timer settings
+        if (slideWarningTimeInput) {
+            slideWarningTimeInput.addEventListener('input', updatePresentationTimersFromSlideTimers);
+        }
+        if (slideOverTimeInput) {
+            slideOverTimeInput.addEventListener('input', updatePresentationTimersFromSlideTimers);
+        }
+
+        // Add event listeners for presentation timer settings to disable automatic updates
+        if (presentationWarningTimeInput) {
+            presentationWarningTimeInput.addEventListener('input', () => {
+                autoCalculatePresTimers = false;
+            });
+        }
+        if (presentationOverTimeInput) {
+            presentationOverTimeInput.addEventListener('input', () => {
+                autoCalculatePresTimers = false;
+            });
+        }
+
         cancelSettingsButton.addEventListener('click', hideSettingsModal);
         applySettingsButton.addEventListener('click', applySettingsAndStart);
     }
@@ -145,31 +183,181 @@ function initializeControllerMode() {
 }
 
 function initializeSlideshowMode() {
-    console.log("Slideshow mode: Initializing...");
+    console.log("Initializing in Slideshow mode.");
+    
+    // Store reference to opener window (controller)
     controllerWindowRef = window.opener;
-    console.log("Slideshow mode: window.opener is:", controllerWindowRef); // Debug log
-
-    // Critical check: Needs window.opener (hence removing noopener)
+    
     if (!controllerWindowRef) {
-        console.error("Slideshow mode: CRITICAL - window.opener is null or undefined! Was 'noopener' used?");
-        showError("This window must be opened by the controller.", slideErrorElement);
-        if(slideContentElement) slideContentElement.innerHTML = "<h1>Error: Cannot find controller window.</h1><p>Please ensure popups are allowed and the presentation is started correctly.</p>";
-        return; // Stop execution
+        console.error("Slideshow: No opener window reference found! Was this window opened directly?");
+        showError("This window should be opened by the controller. Please close and use main window.", slideErrorElement);
+        return;
+    }
+    
+    // Setup message handling from controller
+    window.addEventListener('message', handleSlideshowMessages);
+    
+    // Setup key events for slideshow
+    document.addEventListener('keydown', handleSlideshowKeyDown);
+    
+    // Signal to controller that slideshow is ready
+    console.log("Slideshow: Sending 'slideshow_ready' message to controller");
+    sendMessageToController({
+        type: 'slideshow_ready'
+    });
+    
+    // Show slideshow container
+    if (slideshowContainer) slideshowContainer.style.display = 'flex';
+    
+    // Setup click handler for manual advancement
+    slideContentElement.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (presentationSettings.displayMode === 'bullet') {
+            advanceToNextBullet();
+        }
+    });
+}
+
+function handleSlideshowKeyDown(event) {
+    if (appMode !== 'slideshow') return;
+    
+    switch (event.code) {
+        case 'Space': case 'ArrowRight': case 'PageDown':
+            event.preventDefault();
+            console.log("Slideshow: Next action keypress:", event.code);
+            if (presentationSettings.displayMode === 'bullet') {
+                advanceToNextBullet();
+            }
+            break;
+        case 'ArrowLeft': case 'PageUp':
+            // For now, do nothing on left arrow in slideshow mode
+            // This could be handled by controller
+            break;
+    }
+}
+
+// Function to calculate presentation timers based on slide timers and number of slides
+function updatePresentationTimersFromSlideTimers() {
+    if (!autoCalculatePresTimers || !slidesData || slidesData.length === 0) return;
+    
+    const slideCount = slidesData.length || 10; // Default to 10 if slides data not yet loaded
+    const slideWarning = parseInt(slideWarningTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_WARNING;
+    const slideOver = parseInt(slideOverTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_OVER;
+    
+    // Calculate total presentation time estimates in seconds
+    const totalWarningTime = slideWarning * slideCount;
+    const totalOverTime = slideOver * slideCount;
+    
+    // Convert to minutes for the input fields
+    const warningMinutes = Math.ceil(totalWarningTime / 60);
+    const overMinutes = Math.ceil(totalOverTime / 60);
+    
+    // Update the presentation timer input fields
+    if (presentationWarningTimeInput) {
+        presentationWarningTimeInput.value = warningMinutes;
+    }
+    
+    if (presentationOverTimeInput) {
+        presentationOverTimeInput.value = overMinutes;
+    }
+    
+    console.log(`Auto-calculated presentation timers: Warning=${warningMinutes}min, Over=${overMinutes}min based on ${slideCount} slides`);
+}
+
+function showSettingsModal() {
+    if (settingsModal) {
+        // Initialize settings inputs with current values
+        if (slideWarningTimeInput) slideWarningTimeInput.value = presentationSettings.slideTimerWarning;
+        if (slideOverTimeInput) slideOverTimeInput.value = presentationSettings.slideTimerOver;
+        
+        // Reset the auto-calculate flag when opening settings
+        autoCalculatePresTimers = true;
+        
+        // Auto-calculate presentation timers if we have slide data
+        if (slidesData && slidesData.length > 0) {
+            updatePresentationTimersFromSlideTimers();
+        } else {
+            // Use existing values if no slide data yet
+            if (presentationWarningTimeInput) presentationWarningTimeInput.value = Math.floor(presentationSettings.presentationTimerWarning / 60);
+            if (presentationOverTimeInput) presentationOverTimeInput.value = Math.floor(presentationSettings.presentationTimerOver / 60);
+        }
+        
+        settingsModal.classList.add('show');
+    }
+}
+
+async function handleStartSlideshow() {
+    console.log("Controller: Start slideshow initiated.");
+    if (slideshowWindowRef && !slideshowWindowRef.closed) {
+        console.log("Controller: Slideshow window already open, focusing.");
+        slideshowWindowRef.focus();
+        return; // Already running
     }
 
-    console.log("Slideshow mode: Adding message listener.");
-    window.addEventListener('message', handleSlideshowMessages);
+    // Clear previous errors and state
+    loadingErrorElement.style.display = 'none';
+    startButton.disabled = true;
+    startButton.textContent = 'Opening...';
+    isSlideshowReady = false;
+    if (closeCheckInterval) clearInterval(closeCheckInterval);
+    closeCheckInterval = null;
 
-    // *** ADD A SMALL DELAY BEFORE SENDING 'READY' ***
-    console.log("Slideshow mode: Scheduling 'slideshow_ready' message send (200ms delay)."); // Updated log
-    setTimeout(() => {
-        // This code runs after 100ms
-        console.log("Slideshow mode: Attempting to send 'slideshow_ready' message NOW."); // Updated log
-        sendMessageToController({ type: 'slideshow_ready' });
-    }, 200); // Wait 200 milliseconds
+    try {
+        console.log("Controller: Opening slideshow window...");
+        slideshowWindowRef = window.open('index.html?mode=slideshow', SLIDESHOW_WINDOW_NAME, SLIDESHOW_WINDOW_FEATURES);
 
+        if (slideshowWindowRef) {
+            console.log("Controller: Slideshow window reference obtained.");
+            startButton.textContent = 'Loading Data...';
 
-    if(slideContentElement) slideContentElement.innerHTML = "<h1>Waiting for controller...</h1>";
+            // Start checking if the window gets closed
+            closeCheckInterval = setInterval(() => {
+                if (!slideshowWindowRef || slideshowWindowRef.closed) {
+                    clearInterval(closeCheckInterval);
+                    closeCheckInterval = null;
+                    if (isSlideshowReady || slideshowWindowRef) {
+                        handleSlideshowClose();
+                    }
+                }
+            }, 1000);
+
+            const response = await fetch(SLIDESHOW_DATA_URL);
+            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_DATA_URL}`);
+            const jsonData = await response.json();
+            if (!Array.isArray(jsonData) || jsonData.length === 0) throw new Error("Slideshow data empty/invalid.");
+
+            slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
+            console.log("Controller: Slideshow plan loaded:", slidesData.length, "slides");
+            
+            // If we're in settings mode, update presentation timers with new slide count
+            if (settingsModal && settingsModal.classList.contains('show') && autoCalculatePresTimers) {
+                updatePresentationTimersFromSlideTimers();
+            }
+
+            if (landingPage) landingPage.style.display = 'none';
+            if (notesDisplayArea) notesDisplayArea.style.display = 'flex';
+
+            // Start timers when slideshow begins
+            startTimers();
+
+            startButton.textContent = 'Waiting for Slideshow...'; // Update status text
+            console.log("Controller: Waiting for 'slideshow_ready' message...");
+
+        } else {
+            throw new Error("Popup blocked by browser or failed to open.");
+        }
+    } catch (error) {
+        console.error("Controller: Failed to start slideshow:", error);
+        showError(`Error starting: ${error.message}. Check pop-up blockers.`, loadingErrorElement);
+        startButton.disabled = false;
+        startButton.textContent = 'Start Slideshow';
+        if (landingPage) landingPage.style.display = 'block';
+        if (notesDisplayArea) notesDisplayArea.style.display = 'none';
+        slideshowWindowRef = null;
+        isSlideshowReady = false;
+        if (closeCheckInterval) clearInterval(closeCheckInterval);
+        closeCheckInterval = null;
+    }
 }
 
 // --- Timer Functions ---
@@ -178,11 +366,15 @@ function startTimers() {
     if (!presentationTimerStarted) {
         presentationTimerStarted = true;
         presentationTimerValue = 0;
+        presentationTimerState = 'normal';
     }
     
     slideTimerValue = 0; // Reset slide timer
+    slideTimerState = 'normal'; // Reset slide timer state
     timersActive = true;
     timersPaused = false;
+    isSlideTimerFlashing = false;
+    isPresentationTimerFlashing = false;
     
     if (pauseTimersButton) {
         pauseTimersButton.textContent = 'Pause Timers';
@@ -194,6 +386,15 @@ function startTimers() {
         clearInterval(timerInterval);
     }
     
+    // Remove any existing classes
+    if (slideTimerElement) {
+        slideTimerElement.classList.remove('timer-warning', 'timer-over', 'timer-flash-warning', 'timer-flash-over');
+    }
+    
+    if (presentationTimerElement) {
+        presentationTimerElement.classList.remove('timer-warning', 'timer-over', 'timer-flash-warning', 'timer-flash-over');
+    }
+    
     // Update timers every second
     timerInterval = setInterval(updateTimers, 1000);
     
@@ -203,6 +404,13 @@ function startTimers() {
 
 function resetSlideTimer() {
     slideTimerValue = 0;
+    slideTimerState = 'normal';
+    isSlideTimerFlashing = false;
+    
+    if (slideTimerElement) {
+        slideTimerElement.classList.remove('timer-warning', 'timer-over', 'timer-flash-warning', 'timer-flash-over');
+    }
+    
     updateTimerDisplay();
 }
 
@@ -210,8 +418,115 @@ function updateTimers() {
     if (timersActive && !timersPaused) {
         presentationTimerValue++;
         slideTimerValue++;
+        checkTimerStateTransitions();
         updateTimerDisplay();
     }
+}
+
+function checkTimerStateTransitions() {
+    // Slide timer transitions
+    if (!isSlideTimerFlashing) {
+        // Check for approaching warning threshold
+        if (slideTimerState === 'normal' && 
+            slideTimerValue >= presentationSettings.slideTimerWarning - TIMER_FLASH_DURATION && 
+            slideTimerValue < presentationSettings.slideTimerWarning) {
+            
+            startSlideTimerFlashing('warning');
+        }
+        // Check for approaching over threshold
+        else if (slideTimerState === 'warning' && 
+                 slideTimerValue >= presentationSettings.slideTimerOver - TIMER_FLASH_DURATION &&
+                 slideTimerValue < presentationSettings.slideTimerOver) {
+            
+            startSlideTimerFlashing('over');
+        }
+        // Transition directly to states if we somehow missed the approach period
+        else if (slideTimerState === 'normal' && slideTimerValue >= presentationSettings.slideTimerWarning) {
+            slideTimerState = 'warning';
+        }
+        else if (slideTimerState === 'warning' && slideTimerValue >= presentationSettings.slideTimerOver) {
+            slideTimerState = 'over';
+        }
+    }
+
+    // Presentation timer transitions
+    if (!isPresentationTimerFlashing) {
+        // Check for approaching warning threshold
+        if (presentationTimerState === 'normal' && 
+            presentationTimerValue >= presentationSettings.presentationTimerWarning - TIMER_FLASH_DURATION &&
+            presentationTimerValue < presentationSettings.presentationTimerWarning) {
+            
+            startPresentationTimerFlashing('warning');
+        }
+        // Check for approaching over threshold
+        else if (presentationTimerState === 'warning' && 
+                 presentationTimerValue >= presentationSettings.presentationTimerOver - TIMER_FLASH_DURATION &&
+                 presentationTimerValue < presentationSettings.presentationTimerOver) {
+            
+            startPresentationTimerFlashing('over');
+        }
+        // Transition directly to states if we somehow missed the approach period
+        else if (presentationTimerState === 'normal' && presentationTimerValue >= presentationSettings.presentationTimerWarning) {
+            presentationTimerState = 'warning';
+        }
+        else if (presentationTimerState === 'warning' && presentationTimerValue >= presentationSettings.presentationTimerOver) {
+            presentationTimerState = 'over';
+        }
+    }
+}
+
+function startSlideTimerFlashing(targetState) {
+    if (!slideTimerElement || isSlideTimerFlashing) return;
+    
+    isSlideTimerFlashing = true;
+    
+    // Add appropriate flashing class
+    if (targetState === 'warning') {
+        slideTimerElement.classList.add('timer-flash-warning');
+    } else if (targetState === 'over') {
+        slideTimerElement.classList.add('timer-flash-over');
+    }
+    
+    // After animation completes (3s), update the state
+    setTimeout(() => {
+        isSlideTimerFlashing = false;
+        slideTimerElement.classList.remove('timer-flash-warning', 'timer-flash-over');
+        
+        if (targetState === 'warning') {
+            slideTimerState = 'warning';
+        } else if (targetState === 'over') {
+            slideTimerState = 'over';
+        }
+        
+        updateTimerDisplay();
+    }, TIMER_FLASH_DURATION * 1000);
+}
+
+function startPresentationTimerFlashing(targetState) {
+    if (!presentationTimerElement || isPresentationTimerFlashing) return;
+    
+    isPresentationTimerFlashing = true;
+    
+    // Add appropriate flashing class
+    if (targetState === 'warning') {
+        presentationTimerElement.classList.add('timer-flash-warning');
+    } else if (targetState === 'over') {
+        presentationTimerElement.classList.add('timer-flash-over');
+    }
+    
+    // After animation completes (3s), update the state
+    setTimeout(() => {
+        isPresentationTimerFlashing = false;
+        presentationTimerElement.classList.remove('timer-flash-warning', 'timer-flash-over');
+        
+        if (targetState === 'warning') {
+            presentationTimerState = 'warning';
+        } else if (targetState === 'over') {
+            presentationTimerState = 'over';
+        }
+        
+        updateTimerDisplay();
+    }, TIMER_FLASH_DURATION * 1000);
 }
 
 function updateTimerDisplay() {
@@ -220,9 +535,9 @@ function updateTimerDisplay() {
         
         // Update slide timer status
         slideTimerElement.classList.remove('timer-warning', 'timer-over');
-        if (slideTimerValue >= SLIDE_TIMER_OVER) {
+        if (slideTimerState === 'over') {
             slideTimerElement.classList.add('timer-over');
-        } else if (slideTimerValue >= SLIDE_TIMER_WARNING) {
+        } else if (slideTimerState === 'warning') {
             slideTimerElement.classList.add('timer-warning');
         }
     }
@@ -232,9 +547,9 @@ function updateTimerDisplay() {
         
         // Update presentation timer status
         presentationTimerElement.classList.remove('timer-warning', 'timer-over');
-        if (presentationTimerValue >= PRESENTATION_TIMER_OVER) {
+        if (presentationTimerState === 'over') {
             presentationTimerElement.classList.add('timer-over');
-        } else if (presentationTimerValue >= PRESENTATION_TIMER_WARNING) {
+        } else if (presentationTimerState === 'warning') {
             presentationTimerElement.classList.add('timer-warning');
         }
     }
@@ -422,75 +737,6 @@ function sendMessageToController(message) {
 
 // --- Controller Mode Logic ---
 
-async function handleStartSlideshow() {
-    console.log("Controller: Start slideshow initiated.");
-    if (slideshowWindowRef && !slideshowWindowRef.closed) {
-        console.log("Controller: Slideshow window already open, focusing.");
-        slideshowWindowRef.focus();
-        return; // Already running
-    }
-
-    // Clear previous errors and state
-    loadingErrorElement.style.display = 'none';
-    startButton.disabled = true;
-    startButton.textContent = 'Opening...';
-    isSlideshowReady = false;
-    if (closeCheckInterval) clearInterval(closeCheckInterval);
-    closeCheckInterval = null;
-
-    try {
-        console.log("Controller: Opening slideshow window...");
-        slideshowWindowRef = window.open('index.html?mode=slideshow', SLIDESHOW_WINDOW_NAME, SLIDESHOW_WINDOW_FEATURES);
-
-        if (slideshowWindowRef) {
-            console.log("Controller: Slideshow window reference obtained.");
-            startButton.textContent = 'Loading Data...';
-
-            // Start checking if the window gets closed
-            closeCheckInterval = setInterval(() => {
-                if (!slideshowWindowRef || slideshowWindowRef.closed) {
-                    clearInterval(closeCheckInterval);
-                    closeCheckInterval = null;
-                    if (isSlideshowReady || slideshowWindowRef) {
-                        handleSlideshowClose();
-                    }
-                }
-            }, 1000);
-
-            const response = await fetch(SLIDESHOW_DATA_URL);
-            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_DATA_URL}`);
-            const jsonData = await response.json();
-            if (!Array.isArray(jsonData) || jsonData.length === 0) throw new Error("Slideshow data empty/invalid.");
-
-            slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
-            console.log("Controller: Slideshow plan loaded:", slidesData.length, "slides");
-
-            if (landingPage) landingPage.style.display = 'none';
-            if (notesDisplayArea) notesDisplayArea.style.display = 'flex';
-
-            // Start timers when slideshow begins
-            startTimers();
-
-            startButton.textContent = 'Waiting for Slideshow...'; // Update status text
-            console.log("Controller: Waiting for 'slideshow_ready' message...");
-
-        } else {
-            throw new Error("Popup blocked by browser or failed to open.");
-        }
-    } catch (error) {
-        console.error("Controller: Failed to start slideshow:", error);
-        showError(`Error starting: ${error.message}. Check pop-up blockers.`, loadingErrorElement);
-        startButton.disabled = false;
-        startButton.textContent = 'Start Slideshow';
-        if (landingPage) landingPage.style.display = 'block';
-        if (notesDisplayArea) notesDisplayArea.style.display = 'none';
-        slideshowWindowRef = null;
-        isSlideshowReady = false;
-        if (closeCheckInterval) clearInterval(closeCheckInterval);
-        closeCheckInterval = null;
-    }
-}
-
 function updateControllerView() {
     if (appMode !== 'controller' || !slidesData.length) return;
 
@@ -650,12 +896,6 @@ function handleControllerKeyDown(event) {
 
 // --- Settings Modal Functions ---
 
-function showSettingsModal() {
-    if (settingsModal) {
-        settingsModal.classList.add('show');
-    }
-}
-
 function hideSettingsModal() {
     if (settingsModal) {
         settingsModal.classList.remove('show');
@@ -683,6 +923,44 @@ function applySettingsAndStart() {
             presentationSettings.autoAdvanceDelay = delay;
         } else {
             presentationSettings.autoAdvanceDelay = DEFAULT_AUTO_ADVANCE_DELAY;
+        }
+    }
+    
+    // Get timer settings
+    if (slideWarningTimeInput) {
+        const slideWarning = parseInt(slideWarningTimeInput.value, 10);
+        if (!isNaN(slideWarning) && slideWarning > 0) {
+            presentationSettings.slideTimerWarning = slideWarning;
+        }
+    }
+    
+    if (slideOverTimeInput) {
+        const slideOver = parseInt(slideOverTimeInput.value, 10);
+        if (!isNaN(slideOver) && slideOver > presentationSettings.slideTimerWarning) {
+            presentationSettings.slideTimerOver = slideOver;
+        } else {
+            // Ensure over time is at least warning time + 10 seconds
+            presentationSettings.slideTimerOver = presentationSettings.slideTimerWarning + 10;
+            if (slideOverTimeInput) slideOverTimeInput.value = presentationSettings.slideTimerOver;
+        }
+    }
+    
+    if (presentationWarningTimeInput) {
+        const presWarning = parseInt(presentationWarningTimeInput.value, 10);
+        if (!isNaN(presWarning) && presWarning > 0) {
+            presentationSettings.presentationTimerWarning = presWarning * 60; // Convert minutes to seconds
+        }
+    }
+    
+    if (presentationOverTimeInput) {
+        const presOver = parseInt(presentationOverTimeInput.value, 10);
+        if (!isNaN(presOver) && presOver > (presentationSettings.presentationTimerWarning / 60)) {
+            presentationSettings.presentationTimerOver = presOver * 60; // Convert minutes to seconds
+        } else {
+            // Ensure over time is at least warning time + 1 minute
+            const warningMinutes = presentationSettings.presentationTimerWarning / 60;
+            presentationSettings.presentationTimerOver = (warningMinutes + 1) * 60;
+            if (presentationOverTimeInput) presentationOverTimeInput.value = warningMinutes + 1;
         }
     }
 
@@ -932,3 +1210,4 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
+

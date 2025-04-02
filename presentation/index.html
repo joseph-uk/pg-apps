@@ -56,6 +56,35 @@
                     <input type="number" id="auto-delay" min="1000" max="60000" step="1000" value="5000">
                 </div>
             </div>
+            
+            <div class="settings-group">
+                <h3>Timer Thresholds</h3>
+                <div class="timer-settings">
+                    <div class="timer-setting-group">
+                        <h4>Slide Timer</h4>
+                        <div class="input-group">
+                            <label for="slide-warning-time">Warning (seconds):</label>
+                            <input type="number" id="slide-warning-time" min="10" max="600" step="5" value="60">
+                        </div>
+                        <div class="input-group">
+                            <label for="slide-over-time">Over (seconds):</label>
+                            <input type="number" id="slide-over-time" min="15" max="1200" step="5" value="120">
+                        </div>
+                    </div>
+                    <div class="timer-setting-group">
+                        <h4>Presentation Timer</h4>
+                        <div class="input-group">
+                            <label for="presentation-warning-time">Warning (minutes):</label>
+                            <input type="number" id="presentation-warning-time" min="1" max="60" step="1" value="15">
+                        </div>
+                        <div class="input-group">
+                            <label for="presentation-over-time">Over (minutes):</label>
+                            <input type="number" id="presentation-over-time" min="2" max="120" step="1" value="20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="button-group">
                 <button id="cancel-settings" class="secondary-button">Cancel</button>
                 <button id="apply-settings">Start Presentation</button>
@@ -82,25 +111,27 @@
     <div id="notes-display-area" style="display: none;">
         <div id="notes-header">
             <h1>Speaker Notes</h1>
-            <div id="timers-container">
-                <div id="timer-controls">
-                    <button id="pause-timers" class="timer-button">Pause Timers</button>
-                </div>
-                <div id="timer-displays">
-                    <div class="timer-wrapper">
-                        <span class="timer-label">Slide:</span>
-                        <span id="slide-timer" class="timer">00:00</span>
+            <div id="controls-and-timers-container">
+                <div id="timers-container">
+                    <div id="timer-controls">
+                        <button id="pause-timers" class="timer-button">Pause Timers</button>
                     </div>
-                    <div class="timer-wrapper">
-                        <span class="timer-label">Presentation:</span>
-                        <span id="presentation-timer" class="timer">00:00</span>
+                    <div id="timer-displays">
+                        <div class="timer-wrapper">
+                            <span class="timer-label">Slide:</span>
+                            <span id="slide-timer" class="timer">00:00</span>
+                        </div>
+                        <div class="timer-wrapper">
+                            <span class="timer-label">Presentation:</span>
+                            <span id="presentation-timer" class="timer">00:00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="notes-controls">
-                <span id="notes-slide-number">Slide: - / -</span>
-                <button id="notes-prev-slide" aria-label="Previous Slide">< Prev</button>
-                <button id="notes-next-slide" aria-label="Next Slide">Next ></button>
+                <div id="notes-controls">
+                    <span id="notes-slide-number">Slide: - / -</span>
+                    <button id="notes-prev-slide" aria-label="Previous Slide">< Prev</button>
+                    <button id="notes-next-slide" aria-label="Next Slide">Next ></button>
+                </div>
             </div>
         </div>
         <pre id="notes-content-area">Notes will appear here once slideshow starts.</pre>
