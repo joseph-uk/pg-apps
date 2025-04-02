@@ -5,4 +5,4 @@
     *   Often requires **in-app purchases** for different modules (e.g., advanced maps, airspace, live tracking features) to match full XCTrack functionality. Can add up.
     *   Check current version/pricing for features like XContest live tracking and buddy viewing.
 *   **Recommendation:** If you use iOS, this is likely your best option, but be prepared for potential costs for full XC features.
-*   **Link:** (Search on Apple App Store)
+*   **Link:** https://flyskyhy.com/

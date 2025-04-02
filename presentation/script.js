@@ -1232,6 +1232,13 @@ async function displaySlideVisuals(index, slideData) {
             });
         }
 
+        // Reset scroll position to top of content when switching slides
+        const slideContentWrapper = document.getElementById('slide-content-wrapper');
+        if (slideContentWrapper) {
+            slideContentWrapper.scrollTop = 0;
+            console.log('Reset slide content scroll position to top');
+        }
+
         slideContentElement.classList.remove('fade-out');
         console.log(`Slideshow: Visuals for index ${index} updated.`);
 
@@ -1388,3 +1395,4 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
+

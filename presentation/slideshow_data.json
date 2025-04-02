@@ -114,7 +114,7 @@
     "title": "In-Flight App: XCTrack (Android)",
     "imageUrl": "img/15.jpg",
     "notes": "Deep dive into XCTrack. Cover its core functionalities, emphasizing airspace, live tracking, and buddy tracking. Acknowledge the learning curve.",
-    "contentFile": "slide_15.md"
+    "contentFile": "slide_15.0.md"
   },
   {
     "slideNumber": 15.1,
@@ -167,9 +167,16 @@
   },
   {
     "slideNumber": 22,
-    "title": "Questions & Discussion",
+    "title": "Apps DB",
     "imageUrl": "img/22.jpg",
-    "notes": "Open the floor for questions and discussion.",
+    "notes": "Quick demo of apps DB",
     "contentFile": "slide_22.md"
+  },
+  {
+    "slideNumber": 23,
+    "title": "Questions?",
+    "imageUrl": "img/23.jpg",
+    "notes": "questoins etc",
+    "contentFile": "slide_23.md"
   }
 ]
