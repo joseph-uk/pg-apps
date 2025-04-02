@@ -164,12 +164,12 @@ function initializeControllerMode() {
 
         // Add event listeners for presentation timer settings to disable automatic updates
         if (presentationWarningTimeInput) {
-            presentationWarningTimeInput.addEventListener('input', () => {
+            presentationWarningTimeInput.addEventListener('focus', () => {
                 autoCalculatePresTimers = false;
             });
         }
         if (presentationOverTimeInput) {
-            presentationOverTimeInput.addEventListener('input', () => {
+            presentationOverTimeInput.addEventListener('focus', () => {
                 autoCalculatePresTimers = false;
             });
         }

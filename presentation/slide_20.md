@@ -7,8 +7,8 @@
       * https://www.dhpc.org.uk/forum/search.php
     *   Link: [Flight Logs](https://www.dhpc.org.uk/forum/viewforum.php?f=22)
 *   **4. IGC Analysis Software:**
-    *   **XC Analytics:** Excellent online tool for detailed IGC file analysis (thermal strength/drift, route choices, efficiency etc.). Great for learning. Link: [https://xcanalytics.fr/en/](https://xcanalytics.fr/en/)
-    *   *Others:* SeeYou (Paid Desktop), ParaTrack (Free Online), GPSDump (Free Desktop).
+  *   **XC Analytics:** Android app for detailed IGC file analysis (
+  * Link: [https://xcanalytics.fr/en/](https://xcanalytics.fr/en/)
 *   **5. UK XC League:** 
   * The Official UK league
   * https://xcleague.com/xc/leagues/latest.html
