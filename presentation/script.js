@@ -208,14 +208,6 @@ function initializeSlideshowMode() {
     
     // Show slideshow container
     if (slideshowContainer) slideshowContainer.style.display = 'flex';
-    
-    // Setup click handler for manual advancement
-    slideContentElement.addEventListener('click', function(event) {
-        event.preventDefault();
-        if (presentationSettings.displayMode === 'bullet') {
-            advanceToNextBullet();
-        }
-    });
 }
 
 function handleSlideshowKeyDown(event) {
@@ -1137,15 +1129,6 @@ async function displaySlideVisuals(index, slideData) {
         slideContentElement.classList.remove('fade-out');
         console.log(`Slideshow: Visuals for index ${index} updated.`);
 
-        if (presentationSettings.displayMode === 'bullet') {
-            slideContentElement.onclick = function(event) {
-                event.preventDefault();
-                advanceToNextBullet();
-            };
-        } else {
-            slideContentElement.onclick = null;
-        }
-
     } catch (error) {
         console.error(`Slideshow: Error displaying slide visuals ${index}:`, error);
         showError(`Error displaying slide ${index + 1}.`, slideErrorElement);
@@ -1210,4 +1193,3 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
-
