@@ -1,5 +1,5 @@
 *   **Overview:** Powerful, visual weather forecasting tool. Freemium model.
-    *   Website: [https://www.windy.com](https://www.windy.com)
+    *   Website: https://www.windy.com
 *   **Free vs. Premium:**
     *   Free: 3-hourly forecast intervals. Still very useful for initial checks.
     *   Premium (Highly Recommended): ~£2/month. *Primary benefit: 1-hourly forecast intervals.* Essential for detailed planning. Also more forecast updates, longer outlooks/loops. Well worth the cost (less than 1/3 tank of fuel/year!).

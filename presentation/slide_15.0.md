@@ -9,4 +9,4 @@
     *   **Task Navigation:** Follow pre-programmed routes (XC, competition tasks).
     *   **Customizable Screens:** Configure multiple pages showing the info you need.
 *   **Learning Curve:** Can seem complex initially, but essential tool for XC progression. Start simple, add complexity later. Lots of online guides/tutorials.
-*   **Link:** [https://xctrack.org/](https://xctrack.org/) (Also on Google Play Store)
+*   **Link:** https://xctrack.org/ (Also on Google Play Store)

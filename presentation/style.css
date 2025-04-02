@@ -285,24 +285,24 @@ html, body {
 }
 
 @keyframes flashWarning {
-    0%, 100% { 
-        color: inherit; 
-        background-color: inherit; 
+    0%, 100% {
+        color: inherit;
+        background-color: inherit;
     }
-    50% { 
-        color: #f39c12; 
-        background-color: #fef9e7; 
+    50% {
+        color: #f39c12;
+        background-color: #fef9e7;
     }
 }
 
 @keyframes flashOver {
-    0%, 100% { 
-        color: inherit; 
-        background-color: inherit; 
+    0%, 100% {
+        color: inherit;
+        background-color: inherit;
     }
-    50% { 
-        color: #e74c3c; 
-        background-color: #fdedeb; 
+    50% {
+        color: #e74c3c;
+        background-color: #fdedeb;
     }
 }
 
@@ -614,3 +614,10 @@ html, body {
     border-radius: 5px;
 }
 
+.timer-over-ref {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8em;
+    color: #888;
+    text-align: center;
+}

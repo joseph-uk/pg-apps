@@ -25,6 +25,12 @@ let controllerWindowRef = null; // Ref to the opener (used by slideshow)
 let isSlideshowReady = false; // Flag for controller to know popup is listening
 let closeCheckInterval = null; // Interval timer for checking if slideshow window closed
 
+// Track current slide timer settings (may be overridden per slide)
+let currentSlideTimerSettings = {
+    warning: DEFAULT_SLIDE_TIMER_WARNING,
+    over: DEFAULT_SLIDE_TIMER_OVER
+};
+
 // Flag to track if presentation timers should be auto-calculated
 let autoCalculatePresTimers = true;
 
@@ -93,6 +99,8 @@ const notesNextButton = document.getElementById('notes-next-slide');
 // Timer Elements
 const slideTimerElement = document.getElementById('slide-timer');
 const presentationTimerElement = document.getElementById('presentation-timer');
+const slideTimerOverRefElement = document.getElementById('slide-timer-over-ref');
+const presentationTimerOverRefElement = document.getElementById('presentation-timer-over-ref');
 const pauseTimersButton = document.getElementById('pause-timers');
 
 // --- Initialization ---
@@ -320,6 +328,7 @@ async function handleStartSlideshow() {
 
             slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
             console.log("Controller: Slideshow plan loaded:", slidesData.length, "slides");
+            console.debug(slidesData)
             
             // If we're in settings mode, update presentation timers with new slide count
             if (settingsModal && settingsModal.classList.contains('show') && autoCalculatePresTimers) {
@@ -392,18 +401,41 @@ function startTimers() {
     
     // Initial update
     updateTimerDisplay();
+
+    // Update timer reference displays
+    updateTimerReferenceDisplays();
 }
 
-function resetSlideTimer() {
+// Modified to accept timer overrides
+function resetSlideTimer(overrides = null) {
     slideTimerValue = 0;
     slideTimerState = 'normal';
     isSlideTimerFlashing = false;
+    
+    // Reset to global settings as default
+    currentSlideTimerSettings.warning = presentationSettings.slideTimerWarning;
+    currentSlideTimerSettings.over = presentationSettings.slideTimerOver;
+    
+    // Apply overrides if provided
+    if (overrides) {
+        console.log("Applying timer overrides for current slide:", overrides);
+        if (typeof overrides.warning === 'number' && overrides.warning > 0) {
+            currentSlideTimerSettings.warning = overrides.warning;
+            console.log(`Using custom warning time: ${currentSlideTimerSettings.warning} seconds`);
+        }
+        if (typeof overrides.over === 'number' && overrides.over > 0) {
+            currentSlideTimerSettings.over = overrides.over;
+            console.log(`Using custom over time: ${currentSlideTimerSettings.over} seconds`);
+        }
+    }
     
     if (slideTimerElement) {
         slideTimerElement.classList.remove('timer-warning', 'timer-over', 'timer-flash-warning', 'timer-flash-over');
     }
     
+    // Update timer display and reference display with potentially new values
     updateTimerDisplay();
+    updateTimerReferenceDisplays();
 }
 
 function updateTimers() {
@@ -416,32 +448,41 @@ function updateTimers() {
 }
 
 function checkTimerStateTransitions() {
-    // Slide timer transitions
+    // Enhanced logging for debugging timer state transitions
+    const prevSlideState = slideTimerState;
+    
+    // Slide timer transitions - use currentSlideTimerSettings instead of presentationSettings
     if (!isSlideTimerFlashing) {
         // Check for approaching warning threshold
         if (slideTimerState === 'normal' && 
-            slideTimerValue >= presentationSettings.slideTimerWarning - TIMER_FLASH_DURATION && 
-            slideTimerValue < presentationSettings.slideTimerWarning) {
+            slideTimerValue >= currentSlideTimerSettings.warning - TIMER_FLASH_DURATION && 
+            slideTimerValue < currentSlideTimerSettings.warning) {
             
             startSlideTimerFlashing('warning');
         }
         // Check for approaching over threshold
         else if (slideTimerState === 'warning' && 
-                 slideTimerValue >= presentationSettings.slideTimerOver - TIMER_FLASH_DURATION &&
-                 slideTimerValue < presentationSettings.slideTimerOver) {
+                 slideTimerValue >= currentSlideTimerSettings.over - TIMER_FLASH_DURATION &&
+                 slideTimerValue < currentSlideTimerSettings.over) {
             
             startSlideTimerFlashing('over');
         }
         // Transition directly to states if we somehow missed the approach period
-        else if (slideTimerState === 'normal' && slideTimerValue >= presentationSettings.slideTimerWarning) {
+        else if (slideTimerState === 'normal' && slideTimerValue >= currentSlideTimerSettings.warning) {
             slideTimerState = 'warning';
         }
-        else if (slideTimerState === 'warning' && slideTimerValue >= presentationSettings.slideTimerOver) {
+        else if (slideTimerState === 'warning' && slideTimerValue >= currentSlideTimerSettings.over) {
             slideTimerState = 'over';
         }
     }
+    
+    // Log state changes for debugging
+    if (prevSlideState !== slideTimerState) {
+        console.log(`Slide timer state changed: ${prevSlideState} -> ${slideTimerState}`);
+        console.log(`Current time: ${slideTimerValue}, Warning at: ${currentSlideTimerSettings.warning}, Over at: ${currentSlideTimerSettings.over}`);
+    }
 
-    // Presentation timer transitions
+    // Presentation timer transitions - unchanged, still use global settings
     if (!isPresentationTimerFlashing) {
         // Check for approaching warning threshold
         if (presentationTimerState === 'normal' && 
@@ -577,6 +618,24 @@ function stopTimers() {
     }
 }
 
+/**
+ * Updates the timer reference displays showing the "over time" thresholds
+ */
+function updateTimerReferenceDisplays() {
+    if (slideTimerOverRefElement) {
+        // Use current slide's timer settings which may include overrides
+        slideTimerOverRefElement.textContent = `Over: ${formatTime(currentSlideTimerSettings.over)}`;
+    }
+    
+    if (presentationTimerOverRefElement) {
+        // Format presentation timer in minutes:seconds
+        const minutes = Math.floor(presentationSettings.presentationTimerOver / 60);
+        const seconds = presentationSettings.presentationTimerOver % 60;
+        const formattedTime = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        presentationTimerOverRefElement.textContent = `Over: ${formattedTime}`;
+    }
+}
+
 // --- Message Handling ---
 
 function handleControllerMessages(event) {
@@ -642,7 +701,13 @@ function handleSlideshowMessages(event) {
 
     if (message && message.type === 'goto_slide') {
         if (typeof message.index === 'number' && message.slideData) {
-            console.log(`Slideshow: Processing 'goto_slide' command for slide ${message.index}`); // Change log level
+            console.log(`Slideshow: Processing 'goto_slide' command for slide ${message.index}`);
+            
+            // Extract timer override if present
+            const timerOverride = message.slideData.timerOverride || null;
+            if (timerOverride) {
+                console.log("Slideshow: Received timer override with slide data:", timerOverride);
+            }
 
             // Clear any existing auto-advance timer when changing slides
             if (autoAdvanceTimer) {
@@ -663,6 +728,11 @@ function handleSlideshowMessages(event) {
         if (message.settings) {
             presentationSettings = message.settings;
             console.log("Slideshow: Presentation settings updated:", presentationSettings);
+            
+            // Check specifically for timer settings
+            if (message.settings.currentSlideTimerOverride) {
+                console.log("Slideshow: Received timer override in settings:", message.settings.currentSlideTimerOverride);
+            }
         } else {
             console.error("Slideshow: Invalid 'settings_update' message payload:", message);
         }
@@ -751,6 +821,11 @@ function updateControllerView() {
         console.error(`Controller: Invalid slide index ${currentSlideIndex}`);
         return;
     }
+
+    // Check for timer overrides in the slide data and apply them
+    const timerOverrides = slide.timerOverride || null;
+    console.log("Timer overrides for current slide:", timerOverrides);
+    resetSlideTimer(timerOverrides);
 
     if (notesContentArea) {
         notesContentArea.innerHTML = '';
@@ -843,9 +918,13 @@ function updateControllerView() {
     // Reset bullet index when changing slides
     currentBulletIndex = -1;
 
+    // Send updated settings including current timer settings to the slideshow
     sendMessageToSlideshow({
         type: 'settings_update',
-        settings: presentationSettings
+        settings: {
+            ...presentationSettings,
+            currentSlideTimerOverride: timerOverrides
+        }
     });
 
     sendMessageToSlideshow({
@@ -854,7 +933,8 @@ function updateControllerView() {
         slideData: {
             title: slide.title,
             imageUrl: slide.imageUrl,
-            contentFile: slide.contentFile
+            contentFile: slide.contentFile,
+            timerOverride: timerOverrides // Also send timer override with slide data
         }
     });
 }
@@ -976,6 +1056,9 @@ function applySettingsAndStart() {
             if (presentationOverTimeInput) presentationOverTimeInput.value = warningMinutes + 1;
         }
     }
+
+    // Update timer reference displays
+    updateTimerReferenceDisplays();
 
     console.log("Controller: Applied presentation settings:", presentationSettings);
     hideSettingsModal();
@@ -1216,6 +1299,9 @@ function advanceToNextBullet() {
                 }
             });
 
+            // Scroll to make the newly revealed bullet fully visible
+            scrollToLatestBullet();
+
             if (controllerWindowRef && !controllerWindowRef.closed) {
                 sendMessageToController({
                     type: 'bullet_advanced',
@@ -1232,6 +1318,31 @@ function advanceToNextBullet() {
     }
 
     return false;
+}
+
+/**
+ * Scrolls the slideshow content to ensure the most recently revealed bullet is fully visible
+ */
+function scrollToLatestBullet() {
+    if (appMode !== 'slideshow' || presentationSettings.displayMode !== 'bullet') return;
+
+    // Get the current bullet that was just revealed
+    if (currentBulletIndex >= 0 && currentBulletIndex < slideBullets.length) {
+        const currentBullet = slideBullets[currentBulletIndex];
+
+        // Ensure the slide content wrapper is scrollable
+        const slideContentWrapper = document.getElementById('slide-content-wrapper');
+        if (!slideContentWrapper) return;
+
+        // Use scrollIntoView with options for smooth scrolling and positioning
+        currentBullet.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest', // 'start', 'center', 'end', or 'nearest'
+            inline: 'nearest'
+        });
+
+        console.log(`Scrolled to bullet index ${currentBulletIndex}`);
+    }
 }
 
 // --- Utility Functions ---
@@ -1277,4 +1388,3 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
-
