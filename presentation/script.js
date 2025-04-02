@@ -8,6 +8,12 @@ const SLIDESHOW_WINDOW_NAME = 'presentationSlideshowWindow';
 const SLIDESHOW_WINDOW_FEATURES = 'width=1024,height=768,resizable=yes,scrollbars=no,status=no,toolbar=no,location=no,menubar=no';
 const DEFAULT_AUTO_ADVANCE_DELAY = 5000; // Default delay for auto-advance in ms
 
+// Timer configuration
+const SLIDE_TIMER_WARNING = 60; // Seconds before slide timer turns amber
+const SLIDE_TIMER_OVER = 120; // Seconds before slide timer turns red
+const PRESENTATION_TIMER_WARNING = 15 * 60; // 15 minutes before presentation timer turns amber
+const PRESENTATION_TIMER_OVER = 20 * 60; // 20 minutes before presentation timer turns red
+
 // --- State Variables ---
 let appMode = 'controller'; // 'controller' or 'slideshow'
 let slidesData = [];
@@ -29,6 +35,14 @@ let presentationSettings = {
 let currentBulletIndex = -1; // -1 means no bullets revealed yet
 let slideBullets = []; // Array to hold bullet point elements
 let autoAdvanceTimer = null; // Timer for auto-advance
+
+// --- Timer State ---
+let presentationTimerStarted = false;
+let presentationTimerValue = 0; // Seconds
+let slideTimerValue = 0; // Seconds
+let timersActive = false;
+let timersPaused = false;
+let timerInterval = null;
 
 // --- DOM Elements ---
 const bodyElement = document.body;
@@ -57,6 +71,11 @@ const notesContentArea = document.getElementById('notes-content-area');
 const notesSlideNumber = document.getElementById('notes-slide-number');
 const notesPrevButton = document.getElementById('notes-prev-slide');
 const notesNextButton = document.getElementById('notes-next-slide');
+
+// Timer Elements
+const slideTimerElement = document.getElementById('slide-timer');
+const presentationTimerElement = document.getElementById('presentation-timer');
+const pauseTimersButton = document.getElementById('pause-timers');
 
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
@@ -113,6 +132,11 @@ function initializeControllerMode() {
         applySettingsButton.addEventListener('click', applySettingsAndStart);
     }
 
+    // Initialize timer controls
+    if (pauseTimersButton) {
+        pauseTimersButton.addEventListener('click', toggleTimersPause);
+    }
+
     window.addEventListener('message', handleControllerMessages);
     document.addEventListener('keydown', handleControllerKeyDown);
 
@@ -148,6 +172,103 @@ function initializeSlideshowMode() {
     if(slideContentElement) slideContentElement.innerHTML = "<h1>Waiting for controller...</h1>";
 }
 
+// --- Timer Functions ---
+
+function startTimers() {
+    if (!presentationTimerStarted) {
+        presentationTimerStarted = true;
+        presentationTimerValue = 0;
+    }
+    
+    slideTimerValue = 0; // Reset slide timer
+    timersActive = true;
+    timersPaused = false;
+    
+    if (pauseTimersButton) {
+        pauseTimersButton.textContent = 'Pause Timers';
+        pauseTimersButton.classList.remove('timer-paused');
+    }
+    
+    // Clear any existing interval
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+    
+    // Update timers every second
+    timerInterval = setInterval(updateTimers, 1000);
+    
+    // Initial update
+    updateTimerDisplay();
+}
+
+function resetSlideTimer() {
+    slideTimerValue = 0;
+    updateTimerDisplay();
+}
+
+function updateTimers() {
+    if (timersActive && !timersPaused) {
+        presentationTimerValue++;
+        slideTimerValue++;
+        updateTimerDisplay();
+    }
+}
+
+function updateTimerDisplay() {
+    if (slideTimerElement) {
+        slideTimerElement.textContent = formatTime(slideTimerValue);
+        
+        // Update slide timer status
+        slideTimerElement.classList.remove('timer-warning', 'timer-over');
+        if (slideTimerValue >= SLIDE_TIMER_OVER) {
+            slideTimerElement.classList.add('timer-over');
+        } else if (slideTimerValue >= SLIDE_TIMER_WARNING) {
+            slideTimerElement.classList.add('timer-warning');
+        }
+    }
+    
+    if (presentationTimerElement) {
+        presentationTimerElement.textContent = formatTime(presentationTimerValue);
+        
+        // Update presentation timer status
+        presentationTimerElement.classList.remove('timer-warning', 'timer-over');
+        if (presentationTimerValue >= PRESENTATION_TIMER_OVER) {
+            presentationTimerElement.classList.add('timer-over');
+        } else if (presentationTimerValue >= PRESENTATION_TIMER_WARNING) {
+            presentationTimerElement.classList.add('timer-warning');
+        }
+    }
+}
+
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
+
+function toggleTimersPause() {
+    if (!timersActive) return;
+    
+    timersPaused = !timersPaused;
+    
+    if (pauseTimersButton) {
+        if (timersPaused) {
+            pauseTimersButton.textContent = 'Resume Timers';
+            pauseTimersButton.classList.add('timer-paused');
+        } else {
+            pauseTimersButton.textContent = 'Pause Timers';
+            pauseTimersButton.classList.remove('timer-paused');
+        }
+    }
+}
+
+function stopTimers() {
+    timersActive = false;
+    if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+    }
+}
 
 // --- Message Handling ---
 
@@ -347,6 +468,9 @@ async function handleStartSlideshow() {
             if (landingPage) landingPage.style.display = 'none';
             if (notesDisplayArea) notesDisplayArea.style.display = 'flex';
 
+            // Start timers when slideshow begins
+            startTimers();
+
             startButton.textContent = 'Waiting for Slideshow...'; // Update status text
             console.log("Controller: Waiting for 'slideshow_ready' message...");
 
@@ -453,6 +577,9 @@ function updateControllerView() {
 
     if (notesPrevButton) notesPrevButton.disabled = currentSlideIndex === 0;
     if (notesNextButton) notesNextButton.disabled = currentSlideIndex >= slidesData.length - 1;
+
+    // Reset slide timer when changing slides
+    resetSlideTimer();
 
     // Reset bullet index when changing slides
     currentBulletIndex = -1;
@@ -653,6 +780,9 @@ function handleSlideshowClose() {
     slideshowWindowRef = null;
     isSlideshowReady = false;
 
+    // Stop timers when slideshow closes
+    stopTimers();
+
     showError("Slideshow window closed. Restart to continue.", loadingErrorElement);
 
     if (notesContentArea) notesContentArea.textContent = "Slideshow window closed.";
@@ -802,4 +932,3 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
-

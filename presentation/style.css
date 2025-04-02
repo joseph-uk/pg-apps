@@ -210,6 +210,8 @@ html, body {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #notes-header h1 {
@@ -218,6 +220,80 @@ html, body {
     margin: 0;
 }
 
+/* Timer Styles */
+#timers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#timer-displays {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.timer-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #fff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.timer-label {
+    font-weight: bold;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.timer {
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Timer states */
+.timer-warning {
+    color: #f39c12;
+    background-color: #fef9e7;
+}
+
+.timer-over {
+    color: #e74c3c;
+    background-color: #fdedeb;
+}
+
+/* Timer button */
+.timer-button {
+    padding: 6px 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.timer-button:hover {
+    background-color: #5a6268;
+}
+
+.timer-button.timer-paused {
+    background-color: #28a745;
+}
+
+.timer-button.timer-paused:hover {
+    background-color: #218838;
+}
+
+/* Adjust notes controls */
 #notes-controls {
     display: flex;
     align-items: center;
@@ -462,4 +538,3 @@ html, body {
     padding: 10px;
     border-radius: 5px;
 }
-

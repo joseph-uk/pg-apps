@@ -82,6 +82,21 @@
     <div id="notes-display-area" style="display: none;">
         <div id="notes-header">
             <h1>Speaker Notes</h1>
+            <div id="timers-container">
+                <div id="timer-controls">
+                    <button id="pause-timers" class="timer-button">Pause Timers</button>
+                </div>
+                <div id="timer-displays">
+                    <div class="timer-wrapper">
+                        <span class="timer-label">Slide:</span>
+                        <span id="slide-timer" class="timer">00:00</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <span class="timer-label">Presentation:</span>
+                        <span id="presentation-timer" class="timer">00:00</span>
+                    </div>
+                </div>
+            </div>
             <div id="notes-controls">
                 <span id="notes-slide-number">Slide: - / -</span>
                 <button id="notes-prev-slide" aria-label="Previous Slide">< Prev</button>

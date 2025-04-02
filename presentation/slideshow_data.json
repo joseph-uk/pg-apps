@@ -22,17 +22,25 @@
   },
   {
     "slideNumber": 4,
-    "title": "Deep Dive: Windy",
+    "title": "Deep Dive: Windy - Overview",
     "imageUrl": "img/4.jpg",
     "notes": "Introduce Windy as the primary forecasting tool. Emphasize the value of Premium and the importance of the UKV model for UK flying.",
     "contentFile": "slide_4.md"
   },
+
   {
-    "slideNumber": 5,
+    "slideNumber": 5.0,
     "title": "Windy Features",
     "imageUrl": "img/5.jpg",
     "notes": "Highlight the key features within Windy that pilots use - Layers, Model Comparison, Soundings etc. Emphasize using the comparison view.",
-    "contentFile": "slide_5.md"
+    "contentFile": "slide_5.0.md"
+  },
+  {
+    "slideNumber": 5.1,
+    "title": "Deep Dive: Windy - Interactive",
+    "imageUrl": "img/5.jpg",
+    "notes": "slide_5.1.notes.md",
+    "contentFile": "slide_5.1.md"
   },
   {
     "slideNumber": 6,
