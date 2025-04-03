@@ -156,10 +156,20 @@ function initializeControllerMode() {
 
         // Add event listeners for slide timer settings to update presentation timer settings
         if (slideWarningTimeInput) {
-            slideWarningTimeInput.addEventListener('input', updatePresentationTimersFromSlideTimers);
+            slideWarningTimeInput.addEventListener('input', () => {
+                if (autoCalculatePresTimers) {
+                    updatePresentationTimersFromSlideTimers()
+                        .catch(err => console.error("Error updating timers:", err));
+                }
+            });
         }
         if (slideOverTimeInput) {
-            slideOverTimeInput.addEventListener('input', updatePresentationTimersFromSlideTimers);
+            slideOverTimeInput.addEventListener('input', () => {
+                if (autoCalculatePresTimers) {
+                    updatePresentationTimersFromSlideTimers()
+                        .catch(err => console.error("Error updating timers:", err));
+                }
+            });
         }
 
         // Add event listeners for presentation timer settings to disable automatic updates
@@ -188,6 +198,11 @@ function initializeControllerMode() {
 
     if(notesDisplayArea) notesDisplayArea.style.display = 'none';
     if(landingPage) landingPage.style.display = 'block'; // Ensure landing is visible
+    
+    // Preload slide data in the background
+    loadSlideData()
+        .then(() => console.log("Slide data preloaded successfully"))
+        .catch(error => console.warn("Could not preload slide data:", error));
 }
 
 function initializeSlideshowMode() {
@@ -238,33 +253,58 @@ function handleSlideshowKeyDown(event) {
 
 // Function to calculate presentation timers based on slide timers and number of slides
 function updatePresentationTimersFromSlideTimers() {
-    if (!autoCalculatePresTimers || !slidesData || slidesData.length === 0) return;
+    if (!autoCalculatePresTimers) return;
     
-    const slideCount = slidesData.length || 10; // Default to 10 if slides data not yet loaded
-    const slideWarning = parseInt(slideWarningTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_WARNING;
-    const slideOver = parseInt(slideOverTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_OVER;
+    // Use Promise to ensure slidesData is loaded before calculation
+    return new Promise((resolve) => {
+        // If slidesData is already loaded, calculate immediately
+        if (slidesData && slidesData.length > 0) {
+            performCalculation(slidesData.length);
+            resolve();
+        } 
+        // Otherwise, load the data first
+        else {
+            loadSlideData()
+                .then(data => {
+                    performCalculation(data.length);
+                    resolve();
+                })
+                .catch(error => {
+                    console.error("Error loading slide data for timer calculation:", error);
+                    // Fallback to default if loading fails
+                    performCalculation(10);
+                    resolve();
+                });
+        }
+    });
     
-    // Calculate total presentation time estimates in seconds
-    const totalWarningTime = slideWarning * slideCount;
-    const totalOverTime = slideOver * slideCount;
-    
-    // Convert to minutes for the input fields
-    const warningMinutes = Math.ceil(totalWarningTime / 60);
-    const overMinutes = Math.ceil(totalOverTime / 60);
-    
-    // Update the presentation timer input fields
-    if (presentationWarningTimeInput) {
-        presentationWarningTimeInput.value = warningMinutes;
+    // Helper function to perform the actual calculation
+    function performCalculation(slideCount) {
+        const slideWarning = parseInt(slideWarningTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_WARNING;
+        const slideOver = parseInt(slideOverTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_OVER;
+        
+        // Calculate total presentation time estimates in seconds
+        const totalWarningTime = slideWarning * slideCount;
+        const totalOverTime = slideOver * slideCount;
+        
+        // Convert to minutes for the input fields
+        const warningMinutes = Math.ceil(totalWarningTime / 60);
+        const overMinutes = Math.ceil(totalOverTime / 60);
+        
+        // Update the presentation timer input fields
+        if (presentationWarningTimeInput) {
+            presentationWarningTimeInput.value = warningMinutes;
+        }
+        
+        if (presentationOverTimeInput) {
+            presentationOverTimeInput.value = overMinutes;
+        }
+        
+        console.log(`Auto-calculated presentation timers: Warning=${warningMinutes}min, Over=${overMinutes}min based on ${slideCount} slides`);
     }
-    
-    if (presentationOverTimeInput) {
-        presentationOverTimeInput.value = overMinutes;
-    }
-    
-    console.log(`Auto-calculated presentation timers: Warning=${warningMinutes}min, Over=${overMinutes}min based on ${slideCount} slides`);
 }
 
-function showSettingsModal() {
+async function showSettingsModal() {
     if (settingsModal) {
         // Initialize settings inputs with current values
         if (slideWarningTimeInput) slideWarningTimeInput.value = presentationSettings.slideTimerWarning;
@@ -273,17 +313,44 @@ function showSettingsModal() {
         // Reset the auto-calculate flag when opening settings
         autoCalculatePresTimers = true;
         
-        // Auto-calculate presentation timers if we have slide data
-        if (slidesData && slidesData.length > 0) {
-            updatePresentationTimersFromSlideTimers();
-        } else {
-            // Use existing values if no slide data yet
-            if (presentationWarningTimeInput) presentationWarningTimeInput.value = Math.floor(presentationSettings.presentationTimerWarning / 60);
-            if (presentationOverTimeInput) presentationOverTimeInput.value = Math.floor(presentationSettings.presentationTimerOver / 60);
+        // Always attempt to load and calculate with latest data
+        try {
+            await updatePresentationTimersFromSlideTimers();
+        } catch (error) {
+            console.error("Failed to update presentation timers:", error);
+            // Fallback to existing values if calculation fails
+            if (presentationWarningTimeInput) {
+                presentationWarningTimeInput.value = Math.floor(presentationSettings.presentationTimerWarning / 60);
+            }
+            if (presentationOverTimeInput) {
+                presentationOverTimeInput.value = Math.floor(presentationSettings.presentationTimerOver / 60);
+            }
         }
         
         settingsModal.classList.add('show');
     }
+}
+
+/**
+ * Load slides data from the JSON file
+ * @returns {Promise<Array>} - Promise that resolves to the slides data array
+ */
+function loadSlideData() {
+    console.log("Loading slide data from:", SLIDESHOW_DATA_URL);
+    return fetch(SLIDESHOW_DATA_URL)
+        .then(response => {
+            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_DATA_URL}`);
+            return response.json();
+        })
+        .then(jsonData => {
+            if (!Array.isArray(jsonData) || jsonData.length === 0) {
+                throw new Error("Slideshow data empty/invalid.");
+            }
+            // Sort by slide number and store in the global variable
+            slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
+            console.log("Slideshow plan loaded:", slidesData.length, "slides");
+            return slidesData;
+        });
 }
 
 async function handleStartSlideshow() {
@@ -321,18 +388,12 @@ async function handleStartSlideshow() {
                 }
             }, 1000);
 
-            const response = await fetch(SLIDESHOW_DATA_URL);
-            if (!response.ok) throw new Error(`HTTP ${response.status} fetching ${SLIDESHOW_DATA_URL}`);
-            const jsonData = await response.json();
-            if (!Array.isArray(jsonData) || jsonData.length === 0) throw new Error("Slideshow data empty/invalid.");
-
-            slidesData = jsonData.sort((a, b) => a.slideNumber - b.slideNumber);
-            console.log("Controller: Slideshow plan loaded:", slidesData.length, "slides");
-            console.debug(slidesData)
+            // Load slide data using the promise-based function
+            await loadSlideData();
             
             // If we're in settings mode, update presentation timers with new slide count
             if (settingsModal && settingsModal.classList.contains('show') && autoCalculatePresTimers) {
-                updatePresentationTimersFromSlideTimers();
+                await updatePresentationTimersFromSlideTimers();
             }
 
             if (landingPage) landingPage.style.display = 'none';
