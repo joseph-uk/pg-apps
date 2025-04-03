@@ -6,6 +6,7 @@ const FADE_TRANSITION_DURATION = 400;
 const SLIDESHOW_WINDOW_NAME = 'presentationSlideshowWindow';
 // REMOVED noopener from features to allow window.opener access
 const SLIDESHOW_WINDOW_FEATURES = 'width=1024,height=768,resizable=yes,scrollbars=no,status=no,toolbar=no,location=no,menubar=no';
+const POPUP_LINK_FEATURES = 'width=800,height=600,resizable=yes,scrollbars=yes,status=no,location=yes';
 const DEFAULT_AUTO_ADVANCE_DELAY = 5000; // Default delay for auto-advance in ms
 
 // Timer configuration - now configurable in settings
@@ -945,6 +946,29 @@ function handleSlideshowMessages(event) {
             }
             scheduleNextBulletOrSlide();
         }
+    } else if (message && message.type === 'open_link') {
+        // Open a link from the notes in the slideshow view
+        if (message.url) {
+            console.log(`Slideshow: Opening URL from notes: ${message.url}`);
+            
+            try {
+                // Ensure the URL is properly formed
+                let url = message.url;
+                
+                // If the URL is a relative path and doesn't start with http/https,
+                // convert it to an absolute URL based on current location
+                if (!url.match(/^(https?:)?\/\//i)) {
+                    const baseUrl = window.location.href.split('/').slice(0, -1).join('/') + '/';
+                    url = new URL(url, baseUrl).href;
+                    console.log(`Converted relative URL to absolute: ${url}`);
+                }
+                
+                // Use the same popup features as in processSlideLinks
+                window.open(url, 'slideContent', POPUP_LINK_FEATURES);
+            } catch (err) {
+                console.error(`Error opening URL: ${message.url}`, err);
+            }
+        }
     } else {
         console.log("Slideshow: Received message of different type or invalid data.");
     }
@@ -1511,9 +1535,8 @@ function processSlideLinks(container) {
             const url = this.getAttribute('href');
             if (!url) return;
             
-            // Open as popup with reasonable dimensions and features
-            const popupFeatures = 'width=800,height=600,resizable=yes,scrollbars=yes,status=no,location=yes';
-            window.open(url, 'slideContent', popupFeatures);
+            // Open as popup with predefined features
+            window.open(url, 'slideContent', POPUP_LINK_FEATURES);
         });
     });
     
@@ -1617,7 +1640,83 @@ function renderMarkdown(markdownText) {
         console.error('Marked library not available');
         return `<pre>${markdownText}</pre>`;
     }
-    return marked.parse(markdownText);
+    
+    let htmlOutput = '';
+    
+    try {
+        // First do the standard markdown parse with no modifications
+        htmlOutput = marked.parse(markdownText);
+        
+        // Now if we're in controller mode, modify the links in the HTML directly
+        if (appMode === 'controller') {
+            console.log('Controller mode: modifying links in parsed HTML');
+            
+            // Create a temporary DOM element to modify the HTML
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = htmlOutput;
+            
+            // Find all links in the parsed HTML
+            const links = tempDiv.querySelectorAll('a');
+            console.log(`Found ${links.length} links to modify in parsed markdown`);
+            
+            // Modify each link for the controller
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href) return;
+                
+                console.log(`Modifying link: ${href}`);
+                
+                // Store the original URL
+                link.setAttribute('data-original-url', href);
+                
+                // Add a title attribute
+                const originalTitle = link.getAttribute('title') || '';
+                link.setAttribute('title', originalTitle ? `${originalTitle} (opens in slideshow)` : 'Opens in slideshow');
+                
+                // Set styling and visual indicators
+                link.style.cursor = 'pointer';
+                link.style.position = 'relative';
+                link.classList.add('notes-popup-link');
+                
+                // Add a small indicator icon to show this will open in slideshow
+                const linkText = link.textContent;
+                link.innerHTML = `${linkText} <span style="font-size:0.8em;color:#666;vertical-align:super;">↗</span>`;
+                
+                // Set a proper onclick handler that uses the proper global variable scope
+                link.setAttribute('onclick', `
+                    event.preventDefault();
+                    event.stopPropagation();
+                    console.log("Link clicked, checking slideshow window...");
+                    
+                    // Check the slideshow window reference - we need to use the true global scope
+                    if (typeof slideshowWindowRef !== 'undefined' && slideshowWindowRef && !slideshowWindowRef.closed) {
+                        console.log("Slideshow window found, sending URL:", this.getAttribute('data-original-url'));
+                        
+                        // Use the global function
+                        sendMessageToSlideshow({
+                            type: 'open_link',
+                            url: this.getAttribute('data-original-url')
+                        });
+                    } else {
+                        console.warn('Slideshow window not available. slideshowWindowRef:', slideshowWindowRef);
+                    }
+                    return false;
+                `);
+                
+                // Set href to javascript:void(0) to prevent navigation
+                link.setAttribute('href', 'javascript:void(0);');
+            });
+            
+            // Get the modified HTML
+            htmlOutput = tempDiv.innerHTML;
+        }
+        
+        return htmlOutput;
+    } catch (error) {
+        console.error('Error rendering markdown:', error);
+        // Fallback to showing raw markdown
+        return `<pre>${markdownText}</pre>`;
+    }
 }
 
 function showError(message, element) {
@@ -1630,5 +1729,7 @@ function showError(message, element) {
     }
     console.error("Error shown to user:", message);
 }
+
+// Nothing here - we now handle links directly in the markdown renderer
 
 console.log("Slideshow script loaded successfully.");
