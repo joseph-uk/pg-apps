@@ -13,7 +13,16 @@ const DEFAULT_SLIDE_TIMER_WARNING = 60; // Seconds before slide timer turns ambe
 const DEFAULT_SLIDE_TIMER_OVER = 120; // Seconds before slide timer turns red
 const DEFAULT_PRESENTATION_TIMER_WARNING = 15 * 60; // 15 minutes before presentation timer turns amber
 const DEFAULT_PRESENTATION_TIMER_OVER = 20 * 60; // 20 minutes before presentation timer turns red
+const DEFAULT_MIN_AVERAGE_PER_SLIDE = DEFAULT_SLIDE_TIMER_WARNING; // Default to slide warning time
 const TIMER_FLASH_DURATION = 3; // Seconds for flash animation before transition
+
+// Average timer status levels
+const AVERAGE_STATUS = {
+    TOO_SHORT: { text: 'Too Fast', class: 'average-too-short' },
+    GOOD: { text: 'Good Pace', class: 'average-good' },
+    BIT_LONG: { text: 'Bit Slow', class: 'average-bit-long' },
+    TOO_LONG: { text: 'Too Slow', class: 'average-too-long' }
+};
 
 // --- State Variables ---
 let appMode = 'controller'; // 'controller' or 'slideshow'
@@ -42,7 +51,8 @@ let presentationSettings = {
     slideTimerWarning: DEFAULT_SLIDE_TIMER_WARNING,
     slideTimerOver: DEFAULT_SLIDE_TIMER_OVER, 
     presentationTimerWarning: DEFAULT_PRESENTATION_TIMER_WARNING,
-    presentationTimerOver: DEFAULT_PRESENTATION_TIMER_OVER
+    presentationTimerOver: DEFAULT_PRESENTATION_TIMER_OVER,
+    minAveragePerSlide: DEFAULT_MIN_AVERAGE_PER_SLIDE
 };
 
 // --- Bullet Points State (for bullet-by-bullet mode) ---
@@ -57,6 +67,10 @@ let slideTimerValue = 0; // Seconds
 let timersActive = false;
 let timersPaused = false;
 let timerInterval = null;
+let slidesVisitedCount = 0; // Number of slides visited (including revisits)
+let totalElapsedTime = 0; // Total time spent on all slides
+let averageTimePerSlide = 0; // Average time per slide
+let averageTimerState = AVERAGE_STATUS.GOOD; // Current state of average timer
 
 // Timer transition state
 let slideTimerState = 'normal'; // 'normal', 'warning', 'over'
@@ -81,6 +95,7 @@ const slideWarningTimeInput = document.getElementById('slide-warning-time');
 const slideOverTimeInput = document.getElementById('slide-over-time');
 const presentationWarningTimeInput = document.getElementById('presentation-warning-time');
 const presentationOverTimeInput = document.getElementById('presentation-over-time');
+const minAverageTimeInput = document.getElementById('min-average-time');
 const cancelSettingsButton = document.getElementById('cancel-settings');
 const applySettingsButton = document.getElementById('apply-settings');
 
@@ -99,8 +114,11 @@ const notesNextButton = document.getElementById('notes-next-slide');
 // Timer Elements
 const slideTimerElement = document.getElementById('slide-timer');
 const presentationTimerElement = document.getElementById('presentation-timer');
+const averageTimerElement = document.getElementById('average-timer');
+const averageStatusElement = document.getElementById('average-status');
 const slideTimerOverRefElement = document.getElementById('slide-timer-over-ref');
 const presentationTimerOverRefElement = document.getElementById('presentation-timer-over-ref');
+const averageTimerRefElement = document.getElementById('average-timer-ref');
 const pauseTimersButton = document.getElementById('pause-timers');
 
 // --- Initialization ---
@@ -157,6 +175,11 @@ function initializeControllerMode() {
         // Add event listeners for slide timer settings to update presentation timer settings
         if (slideWarningTimeInput) {
             slideWarningTimeInput.addEventListener('input', () => {
+                // Update minimum average time to match slide warning time
+                if (minAverageTimeInput) {
+                    minAverageTimeInput.value = slideWarningTimeInput.value;
+                }
+                
                 if (autoCalculatePresTimers) {
                     updatePresentationTimersFromSlideTimers()
                         .catch(err => console.error("Error updating timers:", err));
@@ -259,33 +282,64 @@ function updatePresentationTimersFromSlideTimers() {
     return new Promise((resolve) => {
         // If slidesData is already loaded, calculate immediately
         if (slidesData && slidesData.length > 0) {
-            performCalculation(slidesData.length);
+            performCalculation(slidesData);
             resolve();
         } 
         // Otherwise, load the data first
         else {
             loadSlideData()
                 .then(data => {
-                    performCalculation(data.length);
+                    performCalculation(data);
                     resolve();
                 })
                 .catch(error => {
                     console.error("Error loading slide data for timer calculation:", error);
                     // Fallback to default if loading fails
-                    performCalculation(10);
+                    performCalculation([]);
                     resolve();
                 });
         }
     });
     
     // Helper function to perform the actual calculation
-    function performCalculation(slideCount) {
-        const slideWarning = parseInt(slideWarningTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_WARNING;
-        const slideOver = parseInt(slideOverTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_OVER;
+    function performCalculation(slides) {
+        const slideCount = slides.length || 10; // Default to 10 if no slides
+        const defaultSlideWarning = parseInt(slideWarningTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_WARNING;
+        const defaultSlideOver = parseInt(slideOverTimeInput.value, 10) || DEFAULT_SLIDE_TIMER_OVER;
         
-        // Calculate total presentation time estimates in seconds
-        const totalWarningTime = slideWarning * slideCount;
-        const totalOverTime = slideOver * slideCount;
+        // Calculate total presentation time by summing up each slide's time settings
+        let totalWarningTime = 0;
+        let totalOverTime = 0;
+        
+        // If we have slides data, account for per-slide overrides
+        if (slides.length > 0) {
+            slides.forEach(slide => {
+                // Check if this slide has custom timer settings
+                if (slide.timerOverride) {
+                    // Use the override values if available, otherwise use defaults
+                    const slideWarning = (slide.timerOverride.warning !== undefined) 
+                        ? slide.timerOverride.warning 
+                        : defaultSlideWarning;
+                    
+                    const slideOver = (slide.timerOverride.over !== undefined) 
+                        ? slide.timerOverride.over 
+                        : defaultSlideOver;
+                    
+                    totalWarningTime += slideWarning;
+                    totalOverTime += slideOver;
+                    
+                    console.log(`Using custom timer for slide ${slide.slideNumber}: Warning=${slideWarning}s, Over=${slideOver}s`);
+                } else {
+                    // No override, use the default settings
+                    totalWarningTime += defaultSlideWarning;
+                    totalOverTime += defaultSlideOver;
+                }
+            });
+        } else {
+            // No slides data, use simple multiplication
+            totalWarningTime = defaultSlideWarning * slideCount;
+            totalOverTime = defaultSlideOver * slideCount;
+        }
         
         // Convert to minutes for the input fields
         const warningMinutes = Math.ceil(totalWarningTime / 60);
@@ -300,7 +354,7 @@ function updatePresentationTimersFromSlideTimers() {
             presentationOverTimeInput.value = overMinutes;
         }
         
-        console.log(`Auto-calculated presentation timers: Warning=${warningMinutes}min, Over=${overMinutes}min based on ${slideCount} slides`);
+        console.log(`Auto-calculated presentation timers: Warning=${warningMinutes}min, Over=${overMinutes}min based on ${slideCount} slides with ${slides.filter(s => s.timerOverride).length} overrides`);
     }
 }
 
@@ -309,6 +363,7 @@ async function showSettingsModal() {
         // Initialize settings inputs with current values
         if (slideWarningTimeInput) slideWarningTimeInput.value = presentationSettings.slideTimerWarning;
         if (slideOverTimeInput) slideOverTimeInput.value = presentationSettings.slideTimerOver;
+        if (minAverageTimeInput) minAverageTimeInput.value = presentationSettings.minAveragePerSlide;
         
         // Reset the auto-calculate flag when opening settings
         autoCalculatePresTimers = true;
@@ -503,8 +558,11 @@ function updateTimers() {
     if (timersActive && !timersPaused) {
         presentationTimerValue++;
         slideTimerValue++;
+        totalElapsedTime++;
+        
         checkTimerStateTransitions();
         updateTimerDisplay();
+        updateAverageTimeDisplay();
     }
 }
 
@@ -655,6 +713,77 @@ function formatTime(seconds) {
     return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
 }
 
+/**
+ * Calculates and updates the average time per slide display
+ */
+function updateAverageTimeDisplay() {
+    if (!averageTimerElement || !averageStatusElement) return;
+    
+    // Get parent elements to control visibility
+    const averageTimerParent = averageTimerElement.closest('.timer-wrapper');
+    
+    // First slide or no history yet - hide the average timer
+    if (slidesVisitedCount <= 1 || totalElapsedTime < 5) {
+        if (averageTimerParent) {
+            averageTimerParent.style.display = 'none';
+        }
+        return;
+    }
+    
+    // Show the timer once we have actual history
+    if (averageTimerParent) {
+        averageTimerParent.style.display = 'flex';
+    }
+    
+    // Calculate average time per slide in seconds
+    averageTimePerSlide = Math.round(totalElapsedTime / (slidesVisitedCount - 1)); // Exclude current slide
+    
+    // Update the average timer display
+    averageTimerElement.textContent = formatTime(averageTimePerSlide);
+    
+    // Determine the status based on the average time
+    let newStatus;
+    
+    if (averageTimePerSlide < presentationSettings.minAveragePerSlide * 0.7) {
+        // Too fast - less than 70% of minimum time
+        newStatus = AVERAGE_STATUS.TOO_SHORT;
+    } else if (averageTimePerSlide < presentationSettings.minAveragePerSlide) {
+        // Bit fast - between 70% and 100% of minimum time
+        newStatus = AVERAGE_STATUS.GOOD;
+    } else if (averageTimePerSlide < presentationSettings.minAveragePerSlide * 1.5) {
+        // Good pace - between 100% and 150% of minimum time
+        newStatus = AVERAGE_STATUS.GOOD;
+    } else if (averageTimePerSlide < presentationSettings.minAveragePerSlide * 2) {
+        // Bit slow - between 150% and 200% of minimum time
+        newStatus = AVERAGE_STATUS.BIT_LONG;
+    } else {
+        // Too slow - more than 200% of minimum time
+        newStatus = AVERAGE_STATUS.TOO_LONG;
+    }
+    
+    // Only update if the status has changed
+    if (newStatus !== averageTimerState) {
+        // Remove all status classes
+        averageStatusElement.classList.remove(
+            AVERAGE_STATUS.TOO_SHORT.class,
+            AVERAGE_STATUS.GOOD.class,
+            AVERAGE_STATUS.BIT_LONG.class,
+            AVERAGE_STATUS.TOO_LONG.class
+        );
+        
+        // Add the new status class
+        averageStatusElement.classList.add(newStatus.class);
+        
+        // Update the status text
+        averageStatusElement.textContent = newStatus.text;
+        
+        // Update the state
+        averageTimerState = newStatus;
+        
+        console.log(`Average time per slide: ${averageTimePerSlide}s, Status: ${newStatus.text}`);
+    }
+}
+
 function toggleTimersPause() {
     if (!timersActive) return;
     
@@ -680,7 +809,7 @@ function stopTimers() {
 }
 
 /**
- * Updates the timer reference displays showing the "over time" thresholds
+ * Updates the timer reference displays showing the thresholds
  */
 function updateTimerReferenceDisplays() {
     if (slideTimerOverRefElement) {
@@ -694,6 +823,11 @@ function updateTimerReferenceDisplays() {
         const seconds = presentationSettings.presentationTimerOver % 60;
         const formattedTime = `${minutes}:${seconds.toString().padStart(2, '0')}`;
         presentationTimerOverRefElement.textContent = `Over: ${formattedTime}`;
+    }
+    
+    if (averageTimerRefElement) {
+        // Show minimum average time per slide
+        averageTimerRefElement.textContent = `Min: ${formatTime(presentationSettings.minAveragePerSlide)}`;
     }
 }
 
@@ -887,6 +1021,12 @@ function updateControllerView() {
     const timerOverrides = slide.timerOverride || null;
     console.log("Timer overrides for current slide:", timerOverrides);
     resetSlideTimer(timerOverrides);
+    
+    // Update slide visit count for average calculation
+    if (timersActive && !timersPaused) {
+        slidesVisitedCount++;
+        updateAverageTimeDisplay();
+    }
 
     if (notesContentArea) {
         notesContentArea.innerHTML = '';
@@ -911,18 +1051,9 @@ function updateControllerView() {
                     const bullets = contentDiv.querySelectorAll('li');
                     slideBullets = Array.from(bullets);
                     
-                    // Apply styling based on current bullet index
-                    if (presentationSettings.displayMode === 'bullet') {
-                        bullets.forEach((bullet, index) => {
-                            if (index > currentBulletIndex) {
-                                bullet.classList.add('not-yet-visible');
-                            }
-                        });
-                    }
-                    
                     slidePreviewDiv.appendChild(contentDiv);
                     
-                    // This ensures bullet visibility is updated immediately
+                    // This ensures bullet visibility is updated immediately based on display mode
                     updateBulletVisibilityInNotes();
                 })
                 .catch(error => {
@@ -984,11 +1115,11 @@ function updateControllerView() {
     if (notesPrevButton) notesPrevButton.disabled = currentSlideIndex === 0;
     if (notesNextButton) notesNextButton.disabled = currentSlideIndex >= slidesData.length - 1;
 
-    // Reset slide timer when changing slides
-    resetSlideTimer();
-
-    // Reset bullet index when changing slides
+    // Reset bullet index when changing slides  
     currentBulletIndex = -1;
+    
+    // Note: We don't need to reset slide timer here as it was already handled
+    // at the beginning of this function with any necessary overrides
 
     // Send updated settings including current timer settings to the slideshow
     sendMessageToSlideshow({
@@ -1068,11 +1199,19 @@ function hideSettingsModal() {
 }
 
 function applySettingsAndStart() {
+    // Save the previous display mode to detect changes
+    const previousDisplayMode = presentationSettings.displayMode;
+    
     for (const radio of displayModeRadios) {
         if (radio.checked) {
             presentationSettings.displayMode = radio.value;
             break;
         }
+    }
+    
+    // If display mode has changed, update bullet visibility in notes
+    if (previousDisplayMode !== presentationSettings.displayMode && notesContentArea) {
+        updateBulletVisibilityInNotes();
     }
 
     for (const radio of advanceMethodRadios) {
@@ -1128,6 +1267,23 @@ function applySettingsAndStart() {
             if (presentationOverTimeInput) presentationOverTimeInput.value = warningMinutes + 1;
         }
     }
+
+    // Get minimum average time per slide setting
+    if (minAverageTimeInput) {
+        const minAverage = parseInt(minAverageTimeInput.value, 10);
+        if (!isNaN(minAverage) && minAverage > 0) {
+            presentationSettings.minAveragePerSlide = minAverage;
+        } else {
+            presentationSettings.minAveragePerSlide = DEFAULT_MIN_AVERAGE_PER_SLIDE;
+            if (minAverageTimeInput) minAverageTimeInput.value = DEFAULT_MIN_AVERAGE_PER_SLIDE;
+        }
+    }
+
+    // Reset average time calculation
+    slidesVisitedCount = 0;
+    totalElapsedTime = 0;
+    averageTimePerSlide = 0;
+    averageTimerState = AVERAGE_STATUS.GOOD;
 
     // Update timer reference displays
     updateTimerReferenceDisplays();
@@ -1187,6 +1343,15 @@ function updateBulletVisibilityInNotes() {
     const bullets = slidePreview.querySelectorAll('li');
     console.log(`Updating bullet visibility: current index=${currentBulletIndex}, total=${bullets.length}`);
     
+    // In full slide mode, all bullets should be visible
+    if (presentationSettings.displayMode === 'full') {
+        bullets.forEach(bullet => {
+            bullet.classList.remove('not-yet-visible');
+        });
+        return;
+    }
+    
+    // In bullet mode, show only bullets up to current index
     bullets.forEach((bullet, index) => {
         if (index <= currentBulletIndex) {
             bullet.classList.remove('not-yet-visible');

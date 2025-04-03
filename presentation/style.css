@@ -651,3 +651,33 @@ ol ol {
     color: #888;
     text-align: center;
 }
+
+/* Average timer status styles */
+.average-status {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.average-too-short {
+    background-color: #ff5252;
+    color: white;
+}
+
+.average-good {
+    background-color: #4caf50;
+    color: white;
+}
+
+.average-bit-long {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.average-too-long {
+    background-color: #ff5722;
+    color: white;
+}
