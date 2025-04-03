@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/* Add general list styling to restore natural indentation */
+ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -126,8 +132,18 @@ html, body {
 }
 
 #slide-content ul, #slide-content ol {
-    margin-left: 2rem;
     margin-bottom: 1rem;
+    /* Remove the margin-left as we now have a global setting */
+}
+
+/* Add proper indentation for nested lists - applies everywhere */
+ul ul, 
+ul ol,
+ol ul,
+ol ol {
+    padding-left: 2rem;  /* Additional indentation for nested lists */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 #slide-content strong, #slide-content b {
@@ -409,12 +425,14 @@ html, body {
     padding: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.6;
-    white-space: pre-wrap;
     word-wrap: break-word;
     overflow-y: auto;
     background-color: #ffffff;
     color: #212529;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+.pre-wrap{
+    white-space: pre-wrap;
 }
 
 /* --- Error Messages --- */

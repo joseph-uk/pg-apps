@@ -940,6 +940,10 @@ function updateControllerView() {
         if (slide.notes && typeof slide.notes === 'string' && slide.notes.endsWith('.md')) {
             // It's a file reference, load and parse the markdown
             notesDiv.innerHTML = '<p>Loading notes...</p>';
+            
+            // Remove pre-wrap class for markdown-rendered HTML
+            notesContentArea.classList.remove('pre-wrap');
+            
             loadMarkdownContent(slide.notes)
                 .then(markdownText => {
                     notesDiv.innerHTML = renderMarkdown(markdownText);
@@ -947,6 +951,8 @@ function updateControllerView() {
                 .catch(error => {
                     console.error(`Failed to load notes from file ${slide.notes}:`, error);
                     notesDiv.innerHTML = `<p>Error loading notes: ${error.message}</p>`;
+                    // Add pre-wrap back if there's an error (likely showing plain error text)
+                    notesContentArea.classList.add('pre-wrap');
                 });
         } else {
             // It's direct notes content - also render as markdown for consistency
@@ -954,10 +960,15 @@ function updateControllerView() {
                 const notesContent = slide.notes || "No notes for this slide.";
                 console.log("Rendering inline notes as markdown");
                 notesDiv.innerHTML = renderMarkdown(notesContent);
+                
+                // Remove pre-wrap for inline markdown that's been rendered as HTML
+                notesContentArea.classList.remove('pre-wrap');
             } catch (error) {
                 console.error("Failed to render inline notes as markdown:", error);
                 // Fallback to plain text if markdown rendering fails
                 notesDiv.textContent = slide.notes || "No notes for this slide.";
+                // Add pre-wrap for plain text fallback
+                notesContentArea.classList.add('pre-wrap');
             }
         }
         
@@ -1456,4 +1467,3 @@ function showError(message, element) {
 }
 
 console.log("Slideshow script loaded successfully.");
-
