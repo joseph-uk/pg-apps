@@ -220,6 +220,16 @@ function initializeControllerMode() {
     window.addEventListener('message', handleControllerMessages);
     document.addEventListener('keydown', handleControllerKeyDown);
 
+    // Add protection against accidental navigation away from the page
+    window.addEventListener('beforeunload', function(event) {
+        // Only show confirmation if slideshow is active
+        if (slideshowWindowRef && !slideshowWindowRef.closed) {
+            const message = 'Leaving this page will close the slideshow. Are you sure you want to continue?';
+            event.returnValue = message;
+            return message;
+        }
+    });
+
     if(notesDisplayArea) notesDisplayArea.style.display = 'none';
     if(landingPage) landingPage.style.display = 'block'; // Ensure landing is visible
     
@@ -246,6 +256,13 @@ function initializeSlideshowMode() {
     
     // Setup key events for slideshow
     document.addEventListener('keydown', handleSlideshowKeyDown);
+    
+    // Add protection against accidental navigation away from the slideshow
+    window.addEventListener('beforeunload', function(event) {
+        const message = 'Closing this window will end the presentation. Are you sure you want to continue?';
+        event.returnValue = message;
+        return message;
+    });
     
     // Signal to controller that slideshow is ready
     console.log("Slideshow: Sending 'slideshow_ready' message to controller");
