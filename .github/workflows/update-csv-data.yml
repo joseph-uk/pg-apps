@@ -45,6 +45,7 @@ jobs:
     - name: Calculate changes
       id: calc_changes
       run: |
+        set -x
         if [ -f data/paragliding-apps.csv.old ]; then
           # Save headers for comparison
           head -1 data/paragliding-apps.csv.old > data/old_header.csv
