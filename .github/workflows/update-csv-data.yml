@@ -42,52 +42,52 @@ jobs:
           rm data/paragliding-apps.csv.new data/header.csv data/sorted.csv
         fi
 
-    - name: Calculate changes
-      id: calc_changes
-      run: |
-        set -x
-        if [ -f data/paragliding-apps.csv.old ]; then
-          # Save headers for comparison
-          head -1 data/paragliding-apps.csv.old > data/old_header.csv
-          head -1 data/paragliding-apps.csv > data/new_header.csv
+    # - name: Calculate changes
+    #   id: calc_changes
+    #   run: |
+    #     set -x
+    #     if [ -f data/paragliding-apps.csv.old ]; then
+    #       # Save headers for comparison
+    #       head -1 data/paragliding-apps.csv.old > data/old_header.csv
+    #       head -1 data/paragliding-apps.csv > data/new_header.csv
           
-          # Get data without headers for comparison
-          tail -n +2 data/paragliding-apps.csv.old > data/old_data.csv
-          tail -n +2 data/paragliding-apps.csv > data/new_data.csv
+    #       # Get data without headers for comparison
+    #       tail -n +2 data/paragliding-apps.csv.old > data/old_data.csv
+    #       tail -n +2 data/paragliding-apps.csv > data/new_data.csv
           
-          # Count rows in each file
-          old_count=$(wc -l < data/old_data.csv)
-          new_count=$(wc -l < data/new_data.csv)
+    #       # Count rows in each file
+    #       old_count=$(wc -l < data/old_data.csv)
+    #       new_count=$(wc -l < data/new_data.csv)
           
-          # Find rows added/removed/updated
-          grep -vFxf data/old_data.csv data/new_data.csv > data/added.csv
-          grep -vFxf data/new_data.csv data/old_data.csv > data/removed.csv
+    #       # Find rows added/removed/updated
+    #       grep -vFxf data/old_data.csv data/new_data.csv > data/added.csv
+    #       grep -vFxf data/new_data.csv data/old_data.csv > data/removed.csv
           
-          # Count rows
-          added_count=$(wc -l < data/added.csv)
-          removed_count=$(wc -l < data/removed.csv)
+    #       # Count rows
+    #       added_count=$(wc -l < data/added.csv)
+    #       removed_count=$(wc -l < data/removed.csv)
           
-          # Approximate updated rows (removing exact adds/removals)
-          total_changes=$((added_count + removed_count))
-          updated_count=$((total_changes - added_count - removed_count))
-          if [ "$updated_count" -lt 0 ]; then 
-            updated_count=0
-          fi
+    #       # Approximate updated rows (removing exact adds/removals)
+    #       total_changes=$((added_count + removed_count))
+    #       updated_count=$((total_changes - added_count - removed_count))
+    #       if [ "$updated_count" -lt 0 ]; then 
+    #         updated_count=0
+    #       fi
           
-          # Save counts as outputs
-          echo "added_count=$added_count" >> $GITHUB_OUTPUT
-          echo "removed_count=$removed_count" >> $GITHUB_OUTPUT
-          echo "updated_count=$updated_count" >> $GITHUB_OUTPUT
+    #       # Save counts as outputs
+    #       echo "added_count=$added_count" >> $GITHUB_OUTPUT
+    #       echo "removed_count=$removed_count" >> $GITHUB_OUTPUT
+    #       echo "updated_count=$updated_count" >> $GITHUB_OUTPUT
           
-          # Clean up temporary files
-          rm data/*.old data/old_data.csv data/new_data.csv data/added.csv data/removed.csv data/old_header.csv data/new_header.csv
-        else
-          # First run, all rows are new
-          count=$(tail -n +2 data/paragliding-apps.csv | wc -l)
-          echo "added_count=$count" >> $GITHUB_OUTPUT
-          echo "removed_count=0" >> $GITHUB_OUTPUT
-          echo "updated_count=0" >> $GITHUB_OUTPUT
-        fi
+    #       # Clean up temporary files
+    #       rm data/*.old data/old_data.csv data/new_data.csv data/added.csv data/removed.csv data/old_header.csv data/new_header.csv
+    #     else
+    #       # First run, all rows are new
+    #       count=$(tail -n +2 data/paragliding-apps.csv | wc -l)
+    #       echo "added_count=$count" >> $GITHUB_OUTPUT
+    #       echo "removed_count=0" >> $GITHUB_OUTPUT
+    #       echo "updated_count=0" >> $GITHUB_OUTPUT
+    #     fi
 
     - name: Check for changes
       id: check_changes
@@ -115,26 +115,27 @@ jobs:
         git commit -m "Update CSV data [automated]"
         git push origin $BRANCH_NAME
         
-        # Create change summary
-        CHANGE_SUMMARY="CSV Data Changes Summary:\n\n"
+        # # Create change summary
+        # CHANGE_SUMMARY="CSV Data Changes Summary:\n\n"
         
-        if [ "${{ steps.calc_changes.outputs.added_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="
-        - ${{ steps.calc_changes.outputs.added_count }} rows added
-        "
-        fi
+        # if [ "${{ steps.calc_changes.outputs.added_count }}" -gt 0 ]; then
+        #   CHANGE_SUMMARY+="
+        # - ${{ steps.calc_changes.outputs.added_count }} rows added
+        # "
+        # fi
         
-        if [ "${{ steps.calc_changes.outputs.removed_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="
-        - ${{ steps.calc_changes.outputs.removed_count }} rows removed
-        "
-        fi
+        # if [ "${{ steps.calc_changes.outputs.removed_count }}" -gt 0 ]; then
+        #   CHANGE_SUMMARY+="
+        # - ${{ steps.calc_changes.outputs.removed_count }} rows removed
+        # "
+        # fi
         
-        if [ "${{ steps.calc_changes.outputs.updated_count }}" -gt 0 ]; then
-          CHANGE_SUMMARY+="
-        - ${{ steps.calc_changes.outputs.updated_count }} rows updated
-        "
-        fi
+        # if [ "${{ steps.calc_changes.outputs.updated_count }}" -gt 0 ]; then
+        #   CHANGE_SUMMARY+="
+        # - ${{ steps.calc_changes.outputs.updated_count }} rows updated
+        # "
+        # fi
+        CHANGE_SUMMARY='change summary not working currently'
         
         # Create PR with change summary
         gh pr create \
